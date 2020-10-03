@@ -1,32 +1,88 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'doc-root',
   template: `
-    <!--The content below is only a placeholder and can be replaced.-->
-    <div style="text-align:center" class="content">
-      <h1>
-        Welcome to {{title}}!
-      </h1>
-      <span style="display: block">{{ title }} app is running!</span>
-      <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    <div class="ui visible sidebar inverted vertical menu">
+      <div class="item">
+        <div class="header" routerLink="">Getting Started</div>
+      </div>
+      <div class="item">
+        <div class="header">Elements</div>
+        <div class="menu">
+          <a class="item" routerLink="elements/buttons" routerLinkActive="active">
+            Buttons
+          </a>
+          <a class="item" routerLink="elements/dividers" routerLinkActive="active">
+            Dividers
+          </a>
+          <a class="item" routerLink="elements/flags" routerLinkActive="active">
+            Flags
+          </a>
+          <a class="item" routerLink="elements/headers" routerLinkActive="active">
+            Headers
+          </a>
+          <a class="item" routerLink="elements/icons" routerLinkActive="active">
+            Icons
+          </a>
+          <a class="item" routerLink="elements/inputs" routerLinkActive="active">
+            Inputs
+          </a>
+          <a class="item" routerLink="elements/labels" routerLinkActive="active">
+            Labels
+          </a>
+          <a class="item" routerLink="elements/lists" routerLinkActive="active">
+            Lists
+          </a>
+          <a class="item" routerLink="elements/loaders" routerLinkActive="active">
+            Loaders
+          </a>
+          <a class="item" routerLink="elements/placeholders" routerLinkActive="active">
+            Placeholders
+          </a>
+          <a class="item" routerLink="elements/rails" routerLinkActive="active">
+            Rails
+          </a>
+          <a class="item" routerLink="elements/reveals" routerLinkActive="active">
+            Reveals
+          </a>
+          <a class="item" routerLink="elements/segments" routerLinkActive="active">
+            Segments
+          </a>
+          <a class="item" routerLink="elements/steps" routerLinkActive="active">
+            Steps
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Collections</div>
+        <div class="menu">
+          <a class="item" routerLink="collections/messages" routerLinkActive="active">
+            Messages
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Views</div>
+        <div class="menu">
+          <a class="item" routerLink="views/cards" routerLinkActive="active">
+            Cards
+          </a>
+        </div>
+      </div>
     </div>
-    <h2>Here are some links to help you start: </h2>
-    <ul>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-      </li>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-      </li>
-      <li>
-        <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-      </li>
-    </ul>
-    <router-outlet></router-outlet>
+    <div class="pusher">
+      <div class="page">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   `,
-  styles: []
+  styles: [`
+    .page {
+      margin-left: 15rem;
+      padding: 2rem;
+    }
+  `]
 })
 export class AppComponent {
-  title = 'ngx-semantic-docs';
 }
