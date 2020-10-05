@@ -8,8 +8,7 @@ import {Title} from "@angular/platform-browser";
 })
 export class DividerComponent implements OnInit {
   snippetStandard = `
-  <div sui-divider></div>
-  `;
+  <div sui-divider></div>`;
 
   snippetVertical = `
   <div sui-segment>
@@ -37,8 +36,55 @@ export class DividerComponent implements OnInit {
          suiDirection="vertical">
       and
     </div>
-  </div>
-  `;
+  </div>`;
+
+  snippetVerticalForm = `
+  <div sui-segment
+       suiPlaceholder="true">
+    <div sui-grid
+         suiWidth="two"
+         suiStackable="true"
+         suiRelaxation="very relaxed">
+      <div suiGridColumn>
+        <div sui-form>
+          <div suiFormField>
+            <label>Username</label>
+            <div sui-input
+                 suiIcon="true">
+              <input type="text" placeholder="Username">
+              <i sui-icon
+                 suiIconType="user"></i>
+            </div>
+          </div>
+          <div suiFormField>
+            <label>Password</label>
+            <div sui-input
+                 suiIcon="true">
+              <input type="password">
+              <i sui-icon
+                 suiIconType="lock"></i>
+            </div>
+          </div>
+          <div sui-button
+               suiColour="blue">Login
+          </div>
+        </div>
+      </div>
+      <div suiGridColumn
+           suiAlignment="center aligned">
+        <div sui-button
+             suiSize="big">
+          <i sui-icon
+             suiIconType="signup"></i>
+          Sign Up
+        </div>
+      </div>
+    </div>
+    <div sui-divider
+         suiDirection="vertical">
+      and
+    </div>
+  </div>`;
 
   stdDivider = `
   <div>
