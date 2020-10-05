@@ -84,4 +84,53 @@
       </div>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="divVertical"
+      [code]="snippetVertical">
+    <h3 sui-header>Divider</h3>
+    <p>
+      A divider can segment content vertically
+    </p>
+
+    <div sui-message>
+      Vertical dividers requires position: relative on the element that you would like to contain the divider
+    </div>
+
+    <div sui-message
+         suiState="warning">
+      Due to a change in W3C implementation of absolutely positioned elements in flex containers vertical dividers now
+      currently only support 50/50 splits automatically, and only if not positioned <b>as direct children of flex
+      containers</b> (like grid).
+    </div>
+
+    <ng-template #divVertical>
+      <div sui-segment>
+        <div sui-grid
+             suiRelaxed="true"
+             suiWidth="two">
+          <div suiGridColumn>
+            <div sui-placeholder>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <div sui-placeholder>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+              <p suiPlaceholderLine></p>
+            </div>
+          </div>
+        </div>
+        <div sui-divider
+             suiDirection="vertical">
+          and
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
 </div>

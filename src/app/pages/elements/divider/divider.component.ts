@@ -11,6 +11,35 @@ export class DividerComponent implements OnInit {
   <div sui-divider></div>
   `;
 
+  snippetVertical = `
+  <div sui-segment>
+    <div sui-grid
+         suiRelaxed="true"
+         suiWidth="two">
+      <div suiGridColumn>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </div>
+      <div suiGridColumn>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </div>
+    </div>
+    <div sui-divider
+         suiDirection="vertical">
+      and
+    </div>
+  </div>
+  `;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>
