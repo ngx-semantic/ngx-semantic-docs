@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'doc-divider',
@@ -64,7 +65,9 @@ export class DividerComponent implements OnInit {
   </div>
   `;
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Dividers | NgxSemantic');
+  }
 
   toggleStateMap: any = {};
 
@@ -74,5 +77,4 @@ export class DividerComponent implements OnInit {
   toggleLabel(key: string) {
     this.toggleStateMap[key] = !this.toggleStateMap[key];
   }
-
 }
