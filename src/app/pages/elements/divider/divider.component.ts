@@ -7,6 +7,10 @@ import {Title} from "@angular/platform-browser";
   styleUrls: ['./divider.component.scss']
 })
 export class DividerComponent implements OnInit {
+  snippetStandard = `
+  <div sui-divider></div>
+  `;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>
