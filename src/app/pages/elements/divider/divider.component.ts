@@ -224,6 +224,19 @@ export class DividerComponent implements OnInit {
     </div>
   </div>`;
 
+  snippetDividerClearing = `
+   <div sui-segment>
+    <h1 sui-header
+        suiFloated="right floated">Floated Content</h1>
+    <div sui-divider
+         suiClearing="true"></div>
+    <div sui-placeholder>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+    </div>
+  </div>`;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>
