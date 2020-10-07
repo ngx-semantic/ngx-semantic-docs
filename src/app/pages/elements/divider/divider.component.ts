@@ -205,6 +205,25 @@ export class DividerComponent implements OnInit {
     </div>
   </div>`;
 
+  snippetDividerSection = `
+  <div sui-segment>
+    <h3 sui-header>Section One</h3>
+    <div sui-placeholder>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+    </div>
+    <div sui-divider
+         suiSection="true">
+    </div>
+    <h3 sui-header>Section Two</h3>
+    <div sui-placeholder>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+    </div>
+  </div>`;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>
