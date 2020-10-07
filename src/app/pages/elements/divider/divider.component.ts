@@ -152,6 +152,29 @@ export class DividerComponent implements OnInit {
       </tbody>
     </table>`;
 
+  snippetDividerInverted = `
+  <div sui-segment
+       suiInverted="true">
+    <div sui-placeholder>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+    </div>
+    <div sui-divider
+         suiInverted="true">
+    </div>
+    <div sui-placeholder>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+      <p suiPlaceholderLine></p>
+    </div>
+    <div sui-divider
+         suiInverted="true"
+         suiDirection="horizontal">
+      Horizontal
+    </div>
+  </div>`;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>

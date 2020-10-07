@@ -281,4 +281,40 @@
       </table>
     </ng-template>
   </doc-code-sample>
+
+  <h2 sui-header
+      suiDividing="true">Variations</h2>
+
+  <doc-code-sample
+      [content]="divInverted"
+      [code]="snippetDividerInverted">
+    <h3 sui-header>Inverted</h3>
+    <p>
+      A divider can have its colors inverted
+    </p>
+
+    <ng-template #divInverted>
+      <div sui-segment
+           suiInverted="true">
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-divider
+             suiInverted="true">
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-divider
+             suiInverted="true"
+             suiDirection="horizontal">
+          Horizontal
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
 </div>
