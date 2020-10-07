@@ -24,6 +24,7 @@ import {ViewsComponent} from './pages/views/views.component';
 import {CardsComponent} from './pages/views/cards/cards.component';
 import {CodeSampleComponent} from './components/code-sample.component';
 import {StepsComponent} from './pages/elements/steps/steps.component';
+import {DocPageHeaderComponent} from "./components/doc-page-header.component";
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import {StepsComponent} from './pages/elements/steps/steps.component';
     CollectionsComponent,
     ViewsComponent,
     CardsComponent,
-    StepsComponent
+    StepsComponent,
+    DocPageHeaderComponent
   ],
   imports: [
     BrowserModule,
