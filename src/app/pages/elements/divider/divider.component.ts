@@ -86,6 +86,35 @@ export class DividerComponent implements OnInit {
     </div>
   </div>`;
 
+  snippetHorizontal = `
+  <div sui-segment
+       suiTextAlignment="center aligned"
+       suiBasic="true">
+    <div sui-input
+         suiIcon="true"
+         suiAction="left action">
+      <i sui-icon
+         suiIconType="search"></i>
+      <input type="text" placeholder="Order #">
+      <div sui-button
+           suiColour="blue">
+        Search
+      </div>
+    </div>
+    <div sui-divider
+         suiDirection="horizontal">
+      or
+    </div>
+    <div sui-button
+         suiColour="teal"
+         suiLabeled="labeled"
+         suiIcon="true">
+      Create New Order
+      <i sui-icon
+         suiIconType="add"></i>
+    </div>
+  </div>`;
+
   stdDivider = `
   <div>
     <p> Some content here ...</p>

@@ -192,4 +192,51 @@
       </div>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="divHorizontal"
+      [code]="snippetHorizontal">
+    <h3 sui-header>Horizontal Divider</h3>
+    <p>
+      A divider can segment content horizontally
+    </p>
+
+    <div sui-message>
+      Horizontal dividers can also be used in combination with headers and icons to create different styles of dividers.
+    </div>
+    <div sui-message
+         suiState="info">
+      Dividers will automatically vary the size of their dividing rules to match the length of your text
+    </div>
+
+    <ng-template #divHorizontal>
+      <div sui-segment
+           suiTextAlignment="center aligned"
+           suiBasic="true">
+        <div sui-input
+             suiIcon="true"
+             suiAction="left action">
+          <i sui-icon
+             suiIconType="search"></i>
+          <input type="text" placeholder="Order #">
+          <div sui-button
+               suiColour="blue">
+            Search
+          </div>
+        </div>
+        <div sui-divider
+             suiDirection="horizontal">
+          or
+        </div>
+        <div sui-button
+             suiColour="teal"
+             suiLabeled="labeled"
+             suiIcon="true">
+          Create New Order
+          <i sui-icon
+             suiIconType="add"></i>
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
 </div>
