@@ -239,4 +239,46 @@
       </div>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="divHorizontalTable"
+      [code]="snippetHorizontalTable">
+    <ng-template #divHorizontalTable>
+      <h4 sui-divider
+          suiHeader="true"
+          suiDirection="horizontal">
+        <i sui-icon
+           suiIconType="tag"></i>
+        Description
+      </h4>
+      <p>Doggie treats are good for all times of the year. Proven to be eaten by 99.9% of all dogs worldwide.</p>
+      <h4 sui-divider
+          suiHeader="true"
+          suiDirection="horizontal">
+        <i sui-icon
+           suiIconType="bar chart"></i>
+        Specifications
+      </h4>
+      <table class="ui definition table">
+        <tbody>
+        <tr>
+          <td class="two wide column">Size</td>
+          <td>1" x 2"</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>6 ounces</td>
+        </tr>
+        <tr>
+          <td>Color</td>
+          <td>Yellowish</td>
+        </tr>
+        <tr>
+          <td>Odor</td>
+          <td>Not Much Usually</td>
+        </tr>
+        </tbody>
+      </table>
+    </ng-template>
+  </doc-code-sample>
 </div>
