@@ -43,7 +43,7 @@
     <p>A header can be formatted with different colors</p>
 
     <ng-template #headerColored>
-      <div class="ui segment">
+      <div sui-segment [suiInverted]="false">
         <h4 sui-header suiColour="red" suiInverted="true">Red</h4>
         <h4 sui-header suiColour="orange" suiInverted="true">Orange</h4>
         <h4 sui-header suiColour="yellow" suiInverted="true">Yellow</h4>
@@ -71,7 +71,7 @@
     </div>
 
     <ng-template #headerInverted>
-      <div class="ui inverted segment">
+      <div sui-segment [suiInverted]="true">
         <h4 sui-header suiColour="red" suiInverted="true">Red</h4>
         <h4 sui-header suiColour="orange" suiInverted="true">Orange</h4>
         <h4 sui-header suiColour="yellow" suiInverted="true">Yellow</h4>
