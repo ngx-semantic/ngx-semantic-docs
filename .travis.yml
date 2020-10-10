@@ -21,7 +21,7 @@ deploy:
   # Incremental commit to keep old build/files from previous deployments
   keep-history: true
   # Git repo to push to
-  repo: ngx-semantic/ngx-semantic-docs
+  repo: ngx-semantic/ngx-semantic.github.io
   # Git branch on which it should deploy (master, gh-pages, foo...)
   target_branch: master
   on:
