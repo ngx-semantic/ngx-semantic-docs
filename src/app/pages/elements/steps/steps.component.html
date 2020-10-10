@@ -1,45 +1,57 @@
 <div class="main ui container">
   <h2 sui-header suiDividing="true">Types</h2>
 
-  <div class="example">
-    <div>A single step</div>
+  <doc-code-sample
+    [content]="singleStep"
+    [code]="snippetSingleStep">
+    <h3 sui-header>Step</h3>
+    <p>A single step</p>
 
-    <div sui-steps>
-      <div sui-step>
-        Shipping
+    <ng-template #singleStep>
+      <div sui-steps>
+        <div sui-step>
+          Shipping
+        </div>
       </div>
-    </div>
-  </div>
+    </ng-template>
+  </doc-code-sample>
 
-  <div class="example">
-    <div>A multiple steps</div>
+  <h2 sui-header suiDividing="true">Groups</h2>
 
-    <div sui-steps>
-      <div sui-step
-           suiIcon="truck"
-           [suiContent]="truckContent">
-        <ng-template #truckContent>
-          <div class="title">Shipping</div>
-          <div class="description">Choose your shipping options</div>
-        </ng-template>
+  <doc-code-sample
+    [content]="multiStep"
+    [code]="snippetMultiStep">
+    <h3 sui-header>Steps</h3>
+    <p>A set of steps</p>
+
+    <ng-template #multiStep>
+      <div sui-steps>
+        <div sui-step
+             suiIcon="truck"
+             [suiContent]="truckContent">
+          <ng-template #truckContent>
+            <div class="title">Shipping</div>
+            <div class="description">Choose your shipping options</div>
+          </ng-template>
+        </div>
+        <div sui-step
+             suiIcon="payment"
+             [suiActive]="true"
+             [suiContent]="paymentContent">
+          <ng-template #paymentContent>
+            <div class="title">Billing</div>
+            <div class="description">Enter billing information</div>
+          </ng-template>
+        </div>
+        <div sui-step
+             suiIcon="info"
+             [suiDisabled]="true"
+             [suiContent]="orderContent">
+          <ng-template #orderContent>
+            <div class="title">Confirm Order</div>
+          </ng-template>
+        </div>
       </div>
-      <div sui-step
-           suiIcon="payment"
-           [suiActive]="true"
-           [suiContent]="paymentContent">
-        <ng-template #paymentContent>
-          <div class="title">Billing</div>
-          <div class="description">Enter billing information</div>
-        </ng-template>
-      </div>
-      <div sui-step
-           suiIcon="info"
-           [suiDisabled]="true"
-           [suiContent]="orderContent">
-        <ng-template #orderContent>
-          <div class="title">Confirm Order</div>
-        </ng-template>
-      </div>
-    </div>
-  </div>
+    </ng-template>
+  </doc-code-sample>
 </div>
