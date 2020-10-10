@@ -34,33 +34,26 @@
   <h2 sui-header suiDividing="true">Types</h2>
   <br>
 
-  <div class="example">
-    <h4 class="ui header">Input</h4>
-    <p>An standard input <i class="fitted icon code right floated" (click)="toggleLabel('stdInput')"></i></p>
-    <div *ngIf="toggleStateMap['stdInput']" class="ui label" style="width: 80%;"> Example
-      <hr>
+  <doc-code-sample
+    [content]="stdInput"
+    [code]="snippetInput">
+    <h3 sui-header>Input</h3>
+    <p>An standard input</p>
+
+    <ng-template #stdInput>
       <div sui-input>
         <input type="text" placeholder="Search...">
       </div>
-      <hr>
-      <pre>
-        <code>
-          {{snippetInput}}
-        </code>
-      </pre>
-    </div>
+    </ng-template>
+  </doc-code-sample>
 
-    <div sui-input *ngIf="!toggleStateMap['stdInput']">
-      <input type="text" placeholder="Search...">
-    </div>
-  </div>
+  <doc-code-sample
+    [content]="actionInput"
+    [code]="snippetAction">
+    <h3 sui-header>Action</h3>
+    <p>An input can be formatted to alert the user to an action they may perform </p>
 
-  <div class="example">
-    <h4 class="ui header">Action</h4>
-    <p>An input can be formatted to alert the user to an action they may perform <i class="fitted icon code right floated" (click)="toggleLabel('actionInput')"></i></p>
-    <div *ngIf="toggleStateMap['actionInput']" class="ui label" style="width: 80%;"> Example
-      <hr>
-      <div class="example">
+    <ng-template #actionInput>
       <div sui-input suiAction="left action">
         <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon="true">
           <i sui-icon suiIconType="cart"></i>
@@ -68,9 +61,7 @@
         </button>
         <input type="text" value="$52.03">
       </div>
-    </div>
-
-    <div class="example">
+      <span style="margin-left: 4px; margin-right: 4px;">&nbsp;</span>
       <div sui-input suiAction="right action">
         <input type="text" value="http://www.short.url/c0opq">
         <button sui-button suiColour="teal" suiLocation="right" suiLabeled="true" suiIcon="true">
@@ -78,30 +69,6 @@
           Copy
         </button>
       </div>
-    </div>
-      <hr>
-      <pre>
-        <code>
-          {{snippetAction}}
-        </code>
-      </pre>
-    </div>
-    <div sui-input suiAction="left action" *ngIf="!toggleStateMap['actionInput']">
-      <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon="true">
-        <i sui-icon suiIconType="cart"></i>
-        Checkout
-      </button>
-      <input type="text" value="$52.03">
-    </div>
-  </div>
-
-  <div class="example">
-    <div sui-input suiAction="right action" *ngIf="!toggleStateMap['actionInput']">
-      <input type="text" value="http://www.short.url/c0opq">
-      <button sui-button suiColour="teal" suiLocation="right" suiLabeled="true" suiIcon="true">
-        <i sui-icon suiIconType="copy"></i>
-        Copy
-      </button>
-    </div>
-  </div>
+    </ng-template>
+  </doc-code-sample>
 </div>

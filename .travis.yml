@@ -14,15 +14,15 @@ deploy:
   provider: pages
   # Keep built pages
   skip-cleanup: true
-  # Directory where your generated files are located
+  # Directory where generated files are located
   local_dir: dist
   # Github security/auth token
   github-token: $GITHUB_TOKEN
-  # Incremental commit to keep old build/files from previous deployments
+  # Rewrite history on each deploy so that we dont accumulate built js files
   keep-history: false
   # Git repo to push to
   repo: ngx-semantic/ngx-semantic.github.io
-  # Git branch on which it should deploy (master, gh-pages, foo...)
+  # Git branch on which it should deploy
   target_branch: master
   on:
     # Which branch on commit/push will trigger deployment
