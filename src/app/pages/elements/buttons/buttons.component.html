@@ -7,8 +7,8 @@
       suiDividing="true">Types</h2>
 
   <doc-code-sample
-    [content]="btnStandard"
-    [code]="snippetBtn">
+      [content]="btnStandard"
+      [code]="snippetBtn">
     <h3 sui-header>Button</h3>
     <p>A standard button</p>
 
@@ -28,8 +28,8 @@
   </div>
 
   <doc-code-sample
-    [content]="btnFocusable"
-    [code]="snippetBtnFocusable">
+      [content]="btnFocusable"
+      [code]="snippetBtnFocusable">
     <ng-template #btnFocusable>
       <button sui-button>
         Button
@@ -49,8 +49,8 @@
   </div>
 
   <doc-code-sample
-    [content]="btnEmphasis"
-    [code]="snippetBtnEmphasis">
+      [content]="btnEmphasis"
+      [code]="snippetBtnEmphasis">
     <h3 sui-header>Emphasis</h3>
     <p>A button can be formatted to show different levels of emphasis</p>
 
@@ -66,8 +66,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnSecondaryEmphasis"
-    [code]="snippetBtnSecondaryEmphasis">
+      [content]="btnSecondaryEmphasis"
+      [code]="snippetBtnSecondaryEmphasis">
     <ng-template #btnSecondaryEmphasis>
       <button sui-button
               suiEmphasis="secondary">
@@ -80,8 +80,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnAnimated"
-    [code]="snippetBtnAnimated">
+      [content]="btnAnimated"
+      [code]="snippetBtnAnimated">
     <h3 sui-header>Animated</h3>
     <p>A button can animate to show hidden content</p>
 
@@ -120,8 +120,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnLabeled"
-    [code]="snippetBtnLabeled">
+      [content]="btnLabeled"
+      [code]="snippetBtnLabeled">
     <h3 sui-header>Labeled</h3>
     <p>A button can appear alongside a label</p>
 
@@ -166,8 +166,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnColorLabeled"
-    [code]="snippetBtnColorLabeled">
+      [content]="btnColorLabeled"
+      [code]="snippetBtnColorLabeled">
     <ng-template #btnColorLabeled>
       <div sui-button
            suiLabeled="labeled"
@@ -204,8 +204,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnIcon"
-    [code]="snippetBtnIcon">
+      [content]="btnIcon"
+      [code]="snippetBtnIcon">
     <h3 sui-header>Icon</h3>
     <p>A button can have only an icon</p>
 
@@ -219,8 +219,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnLabeledIcon"
-    [code]="snippetBtnLabeledIcon">
+      [content]="btnLabeledIcon"
+      [code]="snippetBtnLabeledIcon">
     <h3 sui-header>Labeled Icon</h3>
     <p>A button can use an icon as a label</p>
 
@@ -243,8 +243,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnBasic"
-    [code]="snippetBtnBasic">
+      [content]="btnBasic"
+      [code]="snippetBtnBasic">
     <h3 sui-header>Basic</h3>
     <p>A basic button is less pronounced</p>
 
@@ -259,8 +259,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnBasicEmphasis"
-    [code]="snippetBtnBasicEmphasis">
+      [content]="btnBasicEmphasis"
+      [code]="snippetBtnBasicEmphasis">
     <ng-template #btnBasicEmphasis>
       <button sui-button
               suiBasic="true"
@@ -286,8 +286,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnBasicColours"
-    [code]="snippetBtnBasicColours">
+      [content]="btnBasicColours"
+      [code]="snippetBtnBasicColours">
     <ng-template #btnBasicColours>
       <button sui-button
               suiBasic="true"
@@ -358,8 +358,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnInverted"
-    [code]="snippetBtnInverted">
+      [content]="btnInverted"
+      [code]="snippetBtnInverted">
     <h3 sui-header>Inverted</h3>
     <p>
       A button can be formatted to appear on dark backgrounds
@@ -452,8 +452,8 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="btnInvertedBasic"
-    [code]="snippetBtnInvertedBasic">
+      [content]="btnInvertedBasic"
+      [code]="snippetBtnInvertedBasic">
     <ng-template #btnInvertedBasic>
       <div sui-segment
            suiInverted="true">
@@ -570,6 +570,50 @@
         <button sui-button>One</button>
         <button sui-button>Two</button>
         <button sui-button>Three</button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnGroupIcon"
+      [code]="snippetBtnGroupIcon">
+    <h3 sui-header>Icon Buttons</h3>
+    <p>Button groups can show groups of icons</p>
+
+    <ng-template #btnGroupIcon>
+      <div sui-buttons
+           suiIcon="icon">
+        <button sui-button>
+          <i sui-icon
+             suiIconType="align left"></i>
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="align center"></i>
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="align right"></i>
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="align justify"></i>
+        </button>
+      </div>
+      <div sui-buttons
+           suiIcon="icon">
+        <button sui-button>
+          <i sui-icon
+             suiIconType="bold"></i>
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="underline"></i>
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="text width"></i>
+        </button>
       </div>
     </ng-template>
   </doc-code-sample>

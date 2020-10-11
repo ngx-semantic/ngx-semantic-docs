@@ -431,6 +431,42 @@ export class ButtonsComponent {
     <button sui-button>Three</button>
   </div>`;
 
+  snippetBtnGroupIcon = `
+  <div sui-buttons
+       suiIcon="icon">
+    <button sui-button>
+      <i sui-icon
+         suiIconType="align left"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="align center"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="align right"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="align justify"></i>
+    </button>
+  </div>
+  <div sui-buttons
+       suiIcon="icon">
+    <button sui-button>
+      <i sui-icon
+         suiIconType="bold"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="underline"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="text width"></i>
+    </button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
