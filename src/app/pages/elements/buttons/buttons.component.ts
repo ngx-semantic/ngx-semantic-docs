@@ -467,6 +467,16 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnGroupConditional = `
+  <div sui-buttons>
+    <button sui-button>Cancel</button>
+    <div class="or"></div>
+    <button sui-button
+            suiEmphasis="positive">
+      Save
+    </button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }

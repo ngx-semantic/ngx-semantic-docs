@@ -617,4 +617,25 @@
       </div>
     </ng-template>
   </doc-code-sample>
+
+  <h2 sui-header
+      suiDividing="true">Content</h2>
+
+  <doc-code-sample
+      [content]="btnGroupConditionals"
+      [code]="snippetBtnGroupConditional">
+    <h3 sui-header>Conditionals</h3>
+    <p>Button groups can contain conditionals</p>
+
+    <ng-template #btnGroupConditionals>
+      <div sui-buttons>
+        <button sui-button>Cancel</button>
+        <div class="or"></div>
+        <button sui-button
+                suiEmphasis="positive">
+          Save
+        </button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
 </div>
