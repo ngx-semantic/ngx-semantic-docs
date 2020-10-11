@@ -477,6 +477,16 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnGroupConditionalLocalized = `
+  <div sui-buttons>
+    <button sui-button>un</button>
+    <div class="or" data-text="ou"></div>
+    <button sui-button
+            suiEmphasis="positive">
+      deux
+    </button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
