@@ -612,6 +612,61 @@ export class ButtonsComponent {
     Right Floated
   </button>`;
 
+  snippetBtnColours = `
+  <button sui-button
+          suiColour="red">
+   Red
+  </button>
+  <button sui-button
+          suiColour="orange">
+   Orange
+  </button>
+  <button sui-button
+          suiColour="yellow">
+   Yellow
+  </button>
+  <button sui-button
+          suiColour="olive">
+   Olive
+  </button>
+  <button sui-button
+          suiColour="green">
+   Green
+  </button>
+  <button sui-button
+          suiColour="teal">
+   Teal
+  </button>
+  <button sui-button
+          suiColour="blue">
+   Blue
+  </button>
+  <button sui-button
+          suiColour="violet">
+   Violet
+  </button>
+  <button sui-button
+          suiColour="purple">
+   Purple
+  </button>
+  <button sui-button
+          suiColour="pink">
+   Pink
+  </button>
+  <button sui-button
+          suiColour="brown">
+   Brown
+  </button>
+  <button sui-button
+          suiColour="grey">
+   Grey
+  </button>
+  <button sui-button
+          suiColour="black">
+   Black
+  </button>`;
+
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
