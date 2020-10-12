@@ -568,6 +568,40 @@ export class ButtonsComponent {
     YouTube
   </button>`;
 
+  snippetBtnSize = `
+  <button sui-button
+          suiSize="mini">
+    Mini
+  </button>
+  <button sui-button
+          suiSize="tiny">
+    Tiny
+  </button>
+  <button sui-button
+          suiSize="small">
+    Small
+  </button>
+  <button sui-button
+          suiSize="medium">
+    Medium
+  </button>
+  <button sui-button
+          suiSize="large">
+    Large
+  </button>
+  <button sui-button
+          suiSize="big">
+    Big
+  </button>
+  <button sui-button
+          suiSize="huge">
+    Huge
+  </button>
+  <button sui-button
+          suiSize="massive">
+    Massive
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
