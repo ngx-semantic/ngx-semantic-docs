@@ -602,6 +602,16 @@ export class ButtonsComponent {
     Massive
   </button>`;
 
+  snippetBtnFloated = `
+   <button sui-button
+          suiFloated="left floated">
+    Left Floated
+  </button>
+  <button sui-button
+          suiFloated="right floated">
+    Right Floated
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }

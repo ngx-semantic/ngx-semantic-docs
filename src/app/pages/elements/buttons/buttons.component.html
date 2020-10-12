@@ -818,4 +818,24 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnFloated"
+      [code]="snippetBtnFloated">
+    <h3 sui-header>Floated</h3>
+    <p>
+      A button can be aligned to the left or right of its container
+    </p>
+
+    <ng-template #btnFloated>
+      <button sui-button
+              suiFloated="left floated">
+        Left Floated
+      </button>
+      <button sui-button
+              suiFloated="right floated">
+        Right Floated
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>
