@@ -487,6 +487,14 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnActive = `
+  <button sui-button
+          suiActive="true">
+    <i sui-icon
+       suiIconType="user"></i>
+    Follow
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
