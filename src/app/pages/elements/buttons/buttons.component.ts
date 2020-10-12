@@ -707,6 +707,14 @@ export class ButtonsComponent {
     Fits container
   </button>`;
 
+  snippetBtnCircular = `
+   <button sui-button
+          suiIcon="true"
+          suiCircular="true">
+    <i sui-icon
+       suiIconType="settings"></i>
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');

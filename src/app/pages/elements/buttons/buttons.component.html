@@ -993,4 +993,22 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnCircular"
+      [code]="snippetBtnCircular">
+    <h3 sui-header>Circular</h3>
+    <p>
+      A button can be circular
+    </p>
+
+    <ng-template #btnCircular>
+      <button sui-button
+              suiIcon="true"
+              suiCircular="true">
+        <i sui-icon
+           suiIconType="settings"></i>
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>
