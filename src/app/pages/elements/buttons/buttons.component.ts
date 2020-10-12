@@ -701,6 +701,12 @@ export class ButtonsComponent {
     Negative
   </button>`;
 
+  snippetBtnFluid = `
+   <button sui-button
+          suiFluid="true">
+    Fits container
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
