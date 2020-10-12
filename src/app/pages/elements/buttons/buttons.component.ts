@@ -692,7 +692,13 @@ export class ButtonsComponent {
   snippetBtnPositive = `
   <button sui-button
          suiEmphasis="positive">
-    Toggle
+    Positive
+  </button>`;
+
+  snippetBtnNegative = `
+  <button sui-button
+         suiEmphasis="negative">
+    Negative
   </button>`;
 
 

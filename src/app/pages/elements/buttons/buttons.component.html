@@ -957,7 +957,23 @@
     <ng-template #btnPositive>
       <button sui-button
               suiEmphasis="positive">
-        Toggle
+        Positive
+      </button>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnNegative"
+      [code]="snippetBtnNegative">
+    <h3 sui-header>Negative</h3>
+    <p>
+      A button can hint towards a negative consequence
+    </p>
+
+    <ng-template #btnNegative>
+      <button sui-button
+              suiEmphasis="negative">
+        Negative
       </button>
     </ng-template>
   </doc-code-sample>
