@@ -672,4 +672,20 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnDisabled"
+      [code]="snippetBtnDisabled">
+    <h3 sui-header>Disabled</h3>
+    <p>A button can show it is currently unable to be interacted with</p>
+
+    <ng-template #btnDisabled>
+      <button sui-button
+              suiDisabled="true">
+        <i sui-icon
+           suiIconType="user"></i>
+        Followed
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>

@@ -495,6 +495,14 @@ export class ButtonsComponent {
     Follow
   </button>`;
 
+  snippetBtnDisabled = `
+  <button sui-button
+          suiDisabled="true">
+    <i sui-icon
+       suiIconType="user"></i>
+    Followed
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
