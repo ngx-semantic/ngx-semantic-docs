@@ -745,6 +745,25 @@ export class ButtonsComponent {
        suiIconType="google"></i>
   </button>`;
 
+  snippetBtnVertical = `
+   <button sui-button
+          suiAttached="top attached">
+    Top
+  </button>
+  <div sui-segment
+       suiAttached="attached">
+    <div sui-placeholder>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+  </div>
+  <button sui-button
+          suiAttached="bottom attached">
+    Bottom
+  </button>`;
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');

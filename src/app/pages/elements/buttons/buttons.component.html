@@ -1046,4 +1046,34 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnVertical"
+      [code]="snippetBtnVertical">
+    <h3 sui-header>Vertically Attached</h3>
+    <p>
+      A button can be attached to the top or bottom of other content
+    </p>
+
+    <ng-template #btnVertical>
+      <button sui-button
+              suiAttached="top attached">
+        Top
+      </button>
+      <div sui-segment
+           suiAttached="attached">
+        <div sui-placeholder>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+        </div>
+      </div>
+      <button sui-button
+              suiAttached="bottom attached">
+        Bottom
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>
