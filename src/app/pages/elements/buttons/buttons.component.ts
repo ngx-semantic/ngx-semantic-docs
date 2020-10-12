@@ -683,6 +683,12 @@ export class ButtonsComponent {
     Pause
   </button>`;
 
+  snippetBtnToggle = `
+  <button sui-button
+          suiToggle="true">
+    Toggle
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
