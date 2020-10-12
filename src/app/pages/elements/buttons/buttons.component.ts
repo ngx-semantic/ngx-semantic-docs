@@ -524,6 +524,50 @@ export class ButtonsComponent {
     Loading
   </button>`;
 
+  snippetBtnSocial = `
+  <button sui-button
+          suiSocial="facebook">
+    <i sui-icon
+       suiIconType="facebook"></i>
+    Facebook
+  </button>
+  <button sui-button
+          suiSocial="twitter">
+    <i sui-icon
+       suiIconType="twitter"></i>
+    Twitter
+  </button>
+  <button sui-button
+          suiSocial="google">
+    <i sui-icon
+       suiIconType="google"></i>
+    Google Plus
+  </button>
+  <button sui-button
+          suiSocial="vk">
+    <i sui-icon
+       suiIconType="vk"></i>
+    VK
+  </button>
+  <button sui-button
+          suiSocial="linkedin">
+    <i sui-icon
+       suiIconType="linkedin"></i>
+    LinkedIn
+  </button>
+  <button sui-button
+          suiSocial="instagram">
+    <i sui-icon
+       suiIconType="instagram"></i>
+    Instagram
+  </button>
+  <button sui-button
+          suiSocial="youtube">
+    <i sui-icon
+       suiIconType="youtube"></i>
+    YouTube
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
