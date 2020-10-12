@@ -666,6 +666,23 @@ export class ButtonsComponent {
    Black
   </button>`;
 
+  snippetBtnCompact = `
+  <button sui-button
+          suiCompact="true">
+    Hold
+  </button>
+  <button sui-button
+          suiCompact="true">
+    <i sui-icon
+       suiIconType="pause"></i>
+  </button>
+  <button sui-button
+          suiCompact="true">
+    <i sui-icon
+       suiIconType="pause"></i>
+    Pause
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
