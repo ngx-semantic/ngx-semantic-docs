@@ -689,6 +689,12 @@ export class ButtonsComponent {
     Toggle
   </button>`;
 
+  snippetBtnPositive = `
+  <button sui-button
+         suiEmphasis="positive">
+    Toggle
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
