@@ -503,6 +503,27 @@ export class ButtonsComponent {
     Followed
   </button>`;
 
+  snippetBtnLoading = `
+  <button sui-button
+          suiLoading="true">
+    Loading
+  </button>
+  <button sui-button
+          suiLoading="true"
+          suiBasic="true">
+    Loading
+  </button>
+  <button sui-button
+          suiLoading="true"
+          suiEmphasis="primary">
+    Loading
+  </button>
+  <button sui-button
+          suiLoading="true"
+          suiEmphasis="secondary">
+    Loading
+  </button>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }

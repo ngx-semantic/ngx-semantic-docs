@@ -688,4 +688,33 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnLoading"
+      [code]="snippetBtnLoading">
+    <h3 sui-header>Loading</h3>
+    <p>A button can show a loading indicator</p>
+
+    <ng-template #btnLoading>
+      <button sui-button
+              suiLoading="true">
+        Loading
+      </button>
+      <button sui-button
+              suiLoading="true"
+              suiBasic="true">
+        Loading
+      </button>
+      <button sui-button
+              suiLoading="true"
+              suiEmphasis="primary">
+        Loading
+      </button>
+      <button sui-button
+              suiLoading="true"
+              suiEmphasis="secondary">
+        Loading
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>
