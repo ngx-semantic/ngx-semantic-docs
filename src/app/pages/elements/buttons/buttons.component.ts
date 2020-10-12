@@ -715,6 +715,36 @@ export class ButtonsComponent {
        suiIconType="settings"></i>
   </button>`;
 
+  snippetBtnCircularIcons = `
+   <button sui-button
+          suiIcon="true"
+          suiCircular="true"
+          suiSocial="facebook">
+    <i sui-icon
+       suiIconType="facebook"></i>
+  </button>
+  <button sui-button
+          suiIcon="true"
+          suiCircular="true"
+          suiSocial="twitter">
+    <i sui-icon
+       suiIconType="twitter"></i>
+  </button>
+  <button sui-button
+          suiIcon="true"
+          suiCircular="true"
+          suiSocial="linkedin">
+    <i sui-icon
+       suiIconType="linkedin"></i>
+  </button>
+  <button sui-button
+          suiIcon="true"
+          suiCircular="true"
+          suiSocial="google">
+    <i sui-icon
+       suiIconType="google"></i>
+  </button>`;
+
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
