@@ -6,11 +6,12 @@ import {ClipboardService} from 'ngx-clipboard';
   template: `
     <div class="example">
       <div class="toggle-row">
-        <i sui-icon
-           suiIconType="code"
-           title="Toggle Code"
-           class="show-code"
-           (click)="toggleCodeDisplay()"></i>
+        <span data-tooltip="Toggle Code">
+          <i sui-icon
+             suiIconType="code"
+             class="show-code"
+             (click)="toggleCodeDisplay()"></i>
+        </span>
       </div>
 
       <ng-content></ng-content>

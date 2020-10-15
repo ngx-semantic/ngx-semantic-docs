@@ -4798,12 +4798,12 @@ ngx-clipboard@^13.0.1:
   dependencies:
     ngx-window-token ">=3.0.0"
 
-ngx-semantic@^1.0.0-alpha.35:
-  version "1.0.0-alpha.35"
-  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-alpha.35.tgz#4ab60f3100baeca4db4cfeac977e47f84e0fd3ea"
-  integrity sha512-ccN+1FBXvjmT6QyXlwRNmBPtcBkKAKvWoK74K1VS/U+Xy/TCF6rLKABtS75XXdBRjJ8npE2Dwh1Iy2LzxLvIRg==
+ngx-semantic@^1.0.0-alpha.36:
+  version "1.0.0-alpha.36"
+  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-alpha.36.tgz#59864ca974a979cd96bf659fba981ed6ba7aae7e"
+  integrity sha512-a7Sr1GsSIA6XOz6YoUfQcj6SVhAc3HTb9K62axwpkrRR+uRKYmrN9tRecZH2PHL3vFtnW541hAGKHPJbZfbjLQ==
   dependencies:
-    tslib "^2.0.0"
+    tslib "^1.10.0"
 
 ngx-window-token@>=3.0.0:
   version "3.0.0"
@@ -7166,11 +7166,6 @@ tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
-
-tslib@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
-  integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
 tslint@~5.18.0:
   version "5.18.0"
