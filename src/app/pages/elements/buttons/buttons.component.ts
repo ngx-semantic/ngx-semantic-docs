@@ -776,21 +776,38 @@ export class ButtonsComponent {
   </button>`;
 
   snippetBtnGroupVertical = `
+  <div sui-buttons
+       suiVertical="true">
+    <button sui-button>
+      Feed
+    </button>
+    <button sui-button>
+      Messages
+    </button>
+    <button sui-button>
+      Events
+    </button>
+    <button sui-button>
+      Photos
+    </button>
+  </div>`;
+
+  snippetBtnGroupIcons = `
     <div sui-buttons
-         suiVertical="true">
-      <button sui-button>
-        Feed
-      </button>
-      <button sui-button>
-        Messages
-      </button>
-      <button sui-button>
-        Events
-      </button>
-      <button sui-button>
-        Photos
-      </button>
-    </div>`;
+       suiIcon="true">
+    <button sui-button>
+      <i sui-icon
+         suiIconType="play"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="pause"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="shuffle"></i>
+    </button>
+  </div>`;
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
