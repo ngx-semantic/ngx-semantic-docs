@@ -1179,8 +1179,41 @@
         <button sui-button>
           <i sui-icon
              suiIconType="shuffle"></i>
+          Shuffle
         </button>
-        Shuffle
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnGroupMixed"
+      [code]="snippetBtnGroupMixed">
+    <h3 sui-header>Mixed Group</h3>
+    <p>
+      Groups can be formatted to use multiple button types together
+    </p>
+
+    <ng-template #btnGroupMixed>
+      <div sui-buttons>
+        <button sui-button
+                suiLabeled="labeled"
+                suiIcon="true">
+          <i sui-icon
+             suiIconType="left chevron"></i>
+          Back
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="stop"></i>
+          Stop
+        </button>
+        <button sui-button
+                suiLabeled="right labeled"
+                suiIcon="true">
+          Forward
+          <i sui-icon
+             suiIconType="right chevron"></i>
+        </button>
       </div>
     </ng-template>
   </doc-code-sample>

@@ -826,8 +826,31 @@ export class ButtonsComponent {
     <button sui-button>
       <i sui-icon
          suiIconType="shuffle"></i>
+      Shuffle
     </button>
-    Shuffle
+  </div>`;
+
+  snippetBtnGroupMixed = `
+  <div sui-buttons>
+    <button sui-button
+            suiLabeled="labeled"
+            suiIcon="true">
+      <i sui-icon
+         suiIconType="left chevron"></i>
+      Back
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="stop"></i>
+      Stop
+    </button>
+    <button sui-button
+            suiLabeled="right labeled"
+            suiIcon="true">
+      Forward
+      <i sui-icon
+         suiIconType="right chevron"></i>
+    </button>
   </div>`;
 
   constructor(title: Title) {
