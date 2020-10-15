@@ -1137,7 +1137,7 @@
 
     <ng-template #btnGroupIcons>
       <div sui-buttons
-           suiIcon="true">
+           suiIcon="icon">
         <button sui-button>
           <i sui-icon
              suiIconType="play"></i>
@@ -1150,6 +1150,37 @@
           <i sui-icon
              suiIconType="shuffle"></i>
         </button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnGroupLabeledIcons"
+      [code]="snippetBtnGroupLabeledIcons">
+    <h3 sui-header>Labeled Icon Buttons</h3>
+    <p>
+      Groups can be formatted as labeled icons
+    </p>
+
+    <ng-template #btnGroupLabeledIcons>
+      <div sui-buttons
+           suiIcon="labeled icon"
+           suiVertical="true">
+        <button sui-button>
+          <i sui-icon
+             suiIconType="pause"></i>
+          Pause
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="play"></i>
+          Play
+        </button>
+        <button sui-button>
+          <i sui-icon
+             suiIconType="shuffle"></i>
+        </button>
+        Shuffle
       </div>
     </ng-template>
   </doc-code-sample>

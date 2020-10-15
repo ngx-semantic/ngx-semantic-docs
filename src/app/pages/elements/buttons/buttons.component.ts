@@ -793,20 +793,41 @@ export class ButtonsComponent {
   </div>`;
 
   snippetBtnGroupIcons = `
-    <div sui-buttons
-       suiIcon="true">
-    <button sui-button>
-      <i sui-icon
-         suiIconType="play"></i>
-    </button>
+  <div sui-buttons
+     suiIcon="icon">
+  <button sui-button>
+    <i sui-icon
+       suiIconType="play"></i>
+  </button>
+  <button sui-button>
+    <i sui-icon
+       suiIconType="pause"></i>
+  </button>
+  <button sui-button>
+    <i sui-icon
+       suiIconType="shuffle"></i>
+  </button>
+</div>`;
+
+  snippetBtnGroupLabeledIcons = `
+   <div sui-buttons
+       suiIcon="labeled icon"
+       suiVertical="true">
     <button sui-button>
       <i sui-icon
          suiIconType="pause"></i>
+      Pause
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="play"></i>
+      Play
     </button>
     <button sui-button>
       <i sui-icon
          suiIconType="shuffle"></i>
     </button>
+    Shuffle
   </div>`;
 
   constructor(title: Title) {
