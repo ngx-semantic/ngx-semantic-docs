@@ -869,6 +869,14 @@ export class ButtonsComponent {
     <button sui-button>Support</button>
   </div>`;
 
+  snippetBtnGroupColoured = `
+  <div sui-buttons
+       suiColour="blue">
+    <button sui-button>One</button>
+    <button sui-button>Two</button>
+    <button sui-button>Three</button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
