@@ -1076,4 +1076,24 @@
       </button>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnHorizontal"
+      [code]="snippetBtnVHorizontal">
+    <h3 sui-header>Horizontally Attached</h3>
+    <p>
+      A button can be attached to the left or right of other content
+    </p>
+
+    <ng-template #btnHorizontal>
+      <button sui-button
+              suiAttached="left attached">
+        Left
+      </button>
+      <button sui-button
+              suiAttached="right attached">
+        Right
+      </button>
+    </ng-template>
+  </doc-code-sample>
 </div>
