@@ -765,6 +765,30 @@ export class ButtonsComponent {
     Bottom
   </button>`;
 
+  snippetBtnVerticalButtons = `
+   <div sui-buttons
+       class="two"
+       suiAttached="top attached">
+    <div sui-button>One</div>
+    <div sui-button>Two</div>
+  </div>
+  <div sui-segment
+       suiAttached="attached">
+    <div sui-placeholder>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+  </div>
+  <div sui-buttons
+       class="two"
+       suiAttached="bottom attached">
+    <div sui-button>One</div>
+    <div sui-button>Two</div>
+  </div>`;
+
   snippetBtnHorizontal = `
    <button sui-button
           suiAttached="left attached">

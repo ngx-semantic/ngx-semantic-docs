@@ -1056,10 +1056,10 @@
     </p>
 
     <ng-template #btnVertical>
-      <button sui-button
-              suiAttached="top attached">
+      <div sui-button
+           suiAttached="top attached">
         Top
-      </button>
+      </div>
       <div sui-segment
            suiAttached="attached">
         <div sui-placeholder>
@@ -1070,10 +1070,39 @@
           <div suiPlaceholderLine></div>
         </div>
       </div>
-      <button sui-button
-              suiAttached="bottom attached">
+      <div sui-button
+           suiAttached="bottom attached">
         Bottom
-      </button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnVerticalButtons"
+      [code]="snippetBtnVerticalButtons">
+    <ng-template #btnVerticalButtons>
+      <div sui-buttons
+           class="two"
+           suiAttached="top attached">
+        <div sui-button>One</div>
+        <div sui-button>Two</div>
+      </div>
+      <div sui-segment
+           suiAttached="attached">
+        <div sui-placeholder>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+        </div>
+      </div>
+      <div sui-buttons
+           class="two"
+           suiAttached="bottom attached">
+        <div sui-button>One</div>
+        <div sui-button>Two</div>
+      </div>
     </ng-template>
   </doc-code-sample>
 
