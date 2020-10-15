@@ -853,6 +853,22 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnGroupEqualWidth = `
+  <div sui-buttons
+       class="five">
+    <button sui-button>Overview</button>
+    <button sui-button>Specs</button>
+    <button sui-button>Warranty</button>
+    <button sui-button>Reviews</button>
+    <button sui-button>Support</button>
+  </div>
+  <div sui-buttons
+       class="three">
+    <button sui-button>Overview</button>
+    <button sui-button>Specs</button>
+    <button sui-button>Support</button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }

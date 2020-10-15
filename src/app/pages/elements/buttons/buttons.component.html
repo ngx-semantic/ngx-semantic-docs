@@ -1217,4 +1217,30 @@
       </div>
     </ng-template>
   </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnGroupEqualWidth"
+      [code]="snippetBtnGroupEqualWidth">
+    <h3 sui-header>Equal Width</h3>
+    <p>
+      Groups can have their widths divided evenly
+    </p>
+
+    <ng-template #btnGroupEqualWidth>
+      <div sui-buttons
+           class="five">
+        <button sui-button>Overview</button>
+        <button sui-button>Specs</button>
+        <button sui-button>Warranty</button>
+        <button sui-button>Reviews</button>
+        <button sui-button>Support</button>
+      </div>
+      <div sui-buttons
+           class="three">
+        <button sui-button>Overview</button>
+        <button sui-button>Specs</button>
+        <button sui-button>Support</button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
 </div>
