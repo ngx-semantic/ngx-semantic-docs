@@ -877,6 +877,22 @@ export class ButtonsComponent {
     <button sui-button>Three</button>
   </div>`;
 
+  snippetBtnGroupBasic = `
+  <div sui-buttons
+       suiBasic="true">
+    <button sui-button>One</button>
+    <button sui-button>Two</button>
+    <button sui-button>Three</button>
+  </div>
+  <div sui-divider></div>
+  <div sui-buttons
+       suiBasic="true"
+       suiVertical="true">
+    <button sui-button>One</button>
+    <button sui-button>Two</button>
+    <button sui-button>Three</button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }

@@ -1249,12 +1249,38 @@
       [code]="snippetBtnGroupColoured">
     <h3 sui-header>Coloured Buttons</h3>
     <p>
-      Groups can have a shared color
+      Groups can have a shared colour
     </p>
 
     <ng-template #btnGroupColoured>
       <div sui-buttons
            suiColour="blue">
+        <button sui-button>One</button>
+        <button sui-button>Two</button>
+        <button sui-button>Three</button>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample
+      [content]="btnGroupBasic"
+      [code]="snippetBtnGroupBasic">
+    <h3 sui-header>Basic Buttons</h3>
+    <p>
+      A button group can be less pronounced
+    </p>
+
+    <ng-template #btnGroupBasic>
+      <div sui-buttons
+           suiBasic="true">
+        <button sui-button>One</button>
+        <button sui-button>Two</button>
+        <button sui-button>Three</button>
+      </div>
+      <div sui-divider></div>
+      <div sui-buttons
+           suiBasic="true"
+           suiVertical="true">
         <button sui-button>One</button>
         <button sui-button>Two</button>
         <button sui-button>Three</button>
