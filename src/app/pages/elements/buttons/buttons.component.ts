@@ -765,7 +765,7 @@ export class ButtonsComponent {
     Bottom
   </button>`;
 
-  snippetBtnVHorizontal = `
+  snippetBtnHorizontal = `
    <button sui-button
           suiAttached="left attached">
     Left
@@ -774,6 +774,23 @@ export class ButtonsComponent {
           suiAttached="right attached">
     Right
   </button>`;
+
+  snippetBtnGroupVertical = `
+    <div sui-buttons
+         suiVertical="true">
+      <button sui-button>
+        Feed
+      </button>
+      <button sui-button>
+        Messages
+      </button>
+      <button sui-button>
+        Events
+      </button>
+      <button sui-button>
+        Photos
+      </button>
+    </div>`;
 
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
