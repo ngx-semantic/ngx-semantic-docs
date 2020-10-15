@@ -926,6 +926,29 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnGroupSizesIcons = `
+   <div sui-buttons
+       suiSize="small"
+       suiIcon="icon"
+       suiBasic="true">
+    <button sui-button>
+      <i sui-icon
+         suiIconType="file"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="save"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="upload"></i>
+    </button>
+    <button sui-button>
+      <i sui-icon
+         suiIconType="download"></i>
+    </button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
