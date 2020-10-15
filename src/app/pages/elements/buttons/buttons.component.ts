@@ -912,6 +912,20 @@ export class ButtonsComponent {
     </button>
   </div>`;
 
+  snippetBtnGroupSizes = `
+   <div sui-buttons
+       suiSize="large">
+    <button sui-button>
+      One
+    </button>
+    <button sui-button>
+      Two
+    </button>
+    <button sui-button>
+      Three
+    </button>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Buttons | NgxSemantic');
   }
