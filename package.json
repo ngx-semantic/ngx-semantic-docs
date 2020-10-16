@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "lint": "ng lint",
-    "build": "ng build --prod"
+    "build": "ng build --prod --base-href \"https://ngx-semantic.github.io/\""
   },
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
     "@angular/platform-browser-dynamic": "~9.0.5",
     "@angular/router": "~9.0.5",
     "ngx-clipboard": "^13.0.1",
-    "ngx-semantic": "^1.0.0-alpha.36",
+    "ngx-semantic": "^1.0.0-alpha.37",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
