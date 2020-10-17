@@ -25,6 +25,7 @@ import {CardsComponent} from './pages/views/cards/cards.component';
 import {CodeSampleComponent} from './components/code-sample.component';
 import {StepsComponent} from './pages/elements/steps/steps.component';
 import {DocPageHeaderComponent} from "./components/doc-page-header.component";
+import { ContainerComponent } from './pages/elements/container/container.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import {DocPageHeaderComponent} from "./components/doc-page-header.component";
     ViewsComponent,
     CardsComponent,
     StepsComponent,
-    DocPageHeaderComponent
+    DocPageHeaderComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

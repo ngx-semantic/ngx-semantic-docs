@@ -13,6 +13,9 @@ import {Component} from '@angular/core';
           <a class="item" routerLink="elements/buttons" routerLinkActive="active">
             Buttons
           </a>
+          <a class="item" routerLink="elements/container" routerLinkActive="active">
+            Container
+          </a>
           <a class="item" routerLink="elements/dividers" routerLinkActive="active">
             Dividers
           </a>
