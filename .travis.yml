@@ -8,6 +8,7 @@ cache:
     - .cache
 script:
   - yarn build # Generate static HTML files
+  - cp dist/index.html dist/404.html
 
 deploy:
   # Use Github pages deploy process
