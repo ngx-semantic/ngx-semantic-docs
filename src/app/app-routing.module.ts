@@ -20,6 +20,7 @@ import {MessagesComponent} from './pages/collections/messages/messages.component
 import {ViewsComponent} from './pages/views/views.component';
 import {CardsComponent} from './pages/views/cards/cards.component';
 import {StepsComponent} from './pages/elements/steps/steps.component';
+import { ContainerComponent } from './pages/elements/container/container.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: 'buttons',
         component: ButtonsComponent
+      },
+      {
+        path: 'container',
+        component: ContainerComponent
       },
       {
         path: 'dividers',
