@@ -33,16 +33,18 @@
 <div class="main ui container">
   <h2 class="ui dividing header">Definition</h2>
   <br>
-  <div class="example">
-    <h4 class="ui header">Flag</h4>
-    <p>A flag can use the two digit country code, the full name, or a common alias
-      <!-- <i class="fitted icon code right floated"></i> -->
-    </p>
 
-    <div class="ui existing segment">
-      {{snippetFlag}}
-    </div>
-  </div>
+  <doc-code-sample [content]="flag" [code]="snippetFlag">
+    <h3 sui-header>Flag</h3>
+    <p>A flag can use the two digit country code, the full name, or a common alias</p>
+
+    <ng-template #flag>
+      <i class="uae" sui-flag></i>
+      <i class="burkina faso" sui-flag></i>
+      <i class="czech republic" sui-flag></i>
+      <i class="nigeria" sui-flag></i>
+    </ng-template>
+</doc-code-sample>
   <h2 class="ui dividing header">Types</h2>
 
   <div class="ui info message">
