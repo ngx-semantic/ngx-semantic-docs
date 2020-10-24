@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlagsComponent implements OnInit {
   snippetFlag = `
-    <i class="uae" sui-flag></i>
-    <i class="burkina faso" sui-flag></i>
-    <i class="czech republic" sui-flag></i>
+  <i suiCountry="uae" sui-flag></i>
+  <i suiCountry="burkina faso" sui-flag></i>
+  <i suiCountry="czech republic" sui-flag></i>
+  <i suiCountry="nigeria" sui-flag></i>
   `;
 
   constructor() { }
