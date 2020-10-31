@@ -368,7 +368,7 @@ export class LabelsComponent implements OnInit {
 
   snippetImage4 = `
   <a sui-label>
-    <img  src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+    <img  src="/images/avatar/small/stevie.jpg">
     Stevie
   </a>
   `;
@@ -403,7 +403,7 @@ export class LabelsComponent implements OnInit {
 <a sui-label suiBasic="true">Basic</a>
 <a sui-label suiBasic="true" suiPointing="true">Pointing</a>
 <a sui-label suiImage="true" suiBasic="true">
-  <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+  <img src="/images/avatar/small/elliot.jpg">
   Elliot
 </a>
 <a sui-label suiBasic="true" suiPointing="true" suiColour="red">Red Pointing</a>
