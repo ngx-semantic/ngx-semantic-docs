@@ -337,6 +337,52 @@ export class LabelsComponent implements OnInit {
   </div>
   `;
 
+  snippetFloating = `
+  <div sui-menu suiCompact="true">
+    <a class="item">
+      <i sui-icon suiIconType="mail icon"></i> Messages
+      <div suiColour="red" sui-label suiFloating="true">22</div>
+    </a>
+    <a class="item">
+      <i sui-icon suiIconType="users icon"></i> Friends
+      <div suiColour="teal" sui-label suiFloating="true">22</div>
+    </a>
+  </div>
+  `;
+
+  snippetDetail = `
+  <div sui-label> Dogs
+    <div suiDetail="true">214</div>
+  </div>
+  `;
+
+  snippetIcon = `
+  <div sui-label>
+    <i sui-icon suiIconType="mail icon"></i> Mail
+  </div>
+  <div sui-label>
+    Tag
+    <i sui-icon suiIconType="delete icon"></i>
+  </div>
+  `;
+
+  snippetImage4 = `
+  <a sui-label>
+    <img  src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+    Stevie
+  </a>
+  `;
+
+  snippetLink = `
+<div sui-label>
+  <i sui-icon suiIconType="mail icon"></i> 23
+</div>
+<div sui-label>
+  <i sui-icon suiIconType="mail icon"></i> 23
+  <a suiDetail="true">View Mail</a>
+</div>
+  `;
+
   snippetColored = `
   <a sui-label suiColour="red">Red</a>
   <a sui-label suiColour="orange">Orange</a>
@@ -344,11 +390,118 @@ export class LabelsComponent implements OnInit {
   <a sui-label suiColour="olive">Olive</a>
   `;
 
+  snippetColoredEmpty = `
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="orange"></a>
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="yellow"></a>
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="olive"></a>
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="green"></a>
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="teal"></a>
+<a sui-label suiEmpty="true" suiCircular="true" suiColour="blue"></a>
+  `;
+
+  snippetBasic = `
+<a sui-label suiBasic="true">Basic</a>
+<a sui-label suiBasic="true" suiPointing="true">Pointing</a>
+<a sui-label suiImage="true" suiBasic="true">
+  <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+  Elliot
+</a>
+<a sui-label suiBasic="true" suiPointing="true" suiColour="red">Red Pointing</a>
+<a sui-label suiBasic="true" suiColour="blue">Blue</a>
+  `;
+
   snippetCircular = `
   <a sui-label suiColour="red" suiCircular="true">2</a>
   <a sui-label suiColour="orange" suiCircular="true">2</a>
   <a sui-label suiColour="yellow" suiCircular="true">2</a>
   <a sui-label suiColour="olive" suiCircular="true">2</a>
+  `;
+
+  snippetSize = `
+  <a sui-label suiSize="mini">Mini</a>
+  <a sui-label suiSize="tiny">Tiny</a>
+  <a sui-label suiSize="small">Small</a>
+  <a sui-label suiSize="medium">Medium</a>
+  <a sui-label suiSize="large">Large</a>
+  <a sui-label suiSize="big">Big</a>
+  <a sui-label suiSize="huge">Huge</a>
+  <a sui-label suiSize="massive">Massive</a>
+  `;
+
+  snippetGroupSize = `
+  <div sui-labels suiSize="huge">
+    <div sui-label>
+      Fun
+    </div>
+    <div sui-label>
+      Happy
+    </div>
+    <div sui-label>
+      Smart
+    </div>
+    <div sui-label>
+      Witty
+    </div>
+  </div>
+  `;
+
+  snippetGroupColour = `
+<div sui-labels suiColour="blue">
+  <div sui-label>
+    Fun
+    <i sui-icon suiIconType="delete icon"></i>
+  </div>
+  <div sui-label>
+    Happy
+    <a suiDetail="true">22</a>
+  </div>
+  <div sui-label>
+    Smart
+  </div>
+  <div sui-label>
+    Witty
+  </div>
+</div>
+  `;
+
+  snippetGroupTag = `
+<div sui-labels suiTag="true">
+  <a sui-label>
+    $10.00
+  </a>
+  <a sui-label>
+    $19.99
+  </a>
+  <a sui-label>
+    $24.99
+  </a>
+  <a sui-label>
+    $30.99
+  </a>
+  <a sui-label>
+    $10.25
+  </a>
+</div>
+  `;
+
+  snippetGroupCircular = `
+  <div sui-labels suiCircular="true">
+    <a sui-label>
+      11
+    </a>
+    <a sui-label>
+      22
+    </a>
+    <a sui-label>
+      33
+    </a>
+    <a sui-label>
+      44
+    </a>
+    <a sui-label>
+      141
+    </a>
+  </div>
   `;
 
   constructor() {}
