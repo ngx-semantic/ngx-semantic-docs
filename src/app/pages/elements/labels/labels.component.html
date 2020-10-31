@@ -13,11 +13,13 @@
 
       <div class="ui right floated main menu">
 
-        <a class="bug popup icon item" data-content="Submit Bug Report" href="https://github.com/ngx-semantic/ngx-semantic/issues">
+        <a class="bug popup icon item" data-content="Submit Bug Report"
+          href="https://github.com/ngx-semantic/ngx-semantic/issues">
           <i class="bug icon"></i>
         </a>
 
-        <a class="github popup icon item" data-content="View project on GitHub" href="https://github.com/ngx-semantic/ngx-semantic">
+        <a class="github popup icon item" data-content="View project on GitHub"
+          href="https://github.com/ngx-semantic/ngx-semantic">
           <i class="alternate github icon"></i>
         </a>
       </div>
@@ -31,12 +33,531 @@
 <br>
 
 <div class="main ui container">
-  <h2 sui-header suiDividing="true">Variations</h2>
+  <h2 sui-header suiDividing="true">Types</h2>
   <br>
 
-  <doc-code-sample
-    [content]="labelColored"
-    [code]="snippetColored">
+  <doc-code-sample [content]="stdLabel" [code]="snippetStd">
+    <h3 sui-header>Label</h3>
+    <p>A label</p>
+
+    <ng-template #stdLabel>
+      <div sui-label>
+        <i sui-icon suiIconType="mail icon"></i> 23
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="imgLabel" [code]="snippetImg">
+    <h3 sui-header>Image</h3>
+    <p>A label can be formatted to emphasize an image</p>
+
+    <ng-template #imgLabel>
+      <a sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/joe.jpg">
+        Joe
+      </a>
+      <a sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+        Elliot
+      </a>
+      <a sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+        Stevie
+      </a>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="imgLabel2" [code]="snippetImg2">
+    <ng-template #imgLabel2>
+      <a sui-label suiImage='true' suiColour='blue'>
+        <img src="https://semantic-ui.com/images/avatar/small/veronika.jpg">
+        Veronika
+        <div class="detail">Friend</div>
+      </a>
+      <a sui-label suiImage='true' suiColour='teal'>
+        <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
+        Veronika
+        <div class="detail">Student</div>
+      </a>
+      <a sui-label suiColour="yellow" suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+        Helen
+        <div class="detail">Co-worker</div>
+      </a>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="imgLabel3" [code]="snippetImg3">
+    <ng-template #imgLabel3>
+      <div sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/ade.jpg">
+        Adrienne
+        <i sui-icon suiIconType="delete icon"></i>
+      </div>
+      <div sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/zoe.jpg">
+        Zoe
+        <i sui-icon suiIconType="delete icon"></i>
+      </div>
+      <div sui-label suiImage='true'>
+        <img src="https://semantic-ui.com/images/avatar/small/nan.jpg">
+        Nan
+        <i sui-icon suiIconType="delete icon"></i>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="pointingLabel" [code]="snippetPointing">
+    <h3 sui-header>Pointing</h3>
+    <p>A label can point to content next to it</p>
+
+    <ng-template #pointingLabel>
+      <form sui-form class="fluid" _lpchecked="1">
+        <div suiFormField>
+          <input type="text" placeholder="First name"
+            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); cursor: pointer;">
+          <div sui-label suiPointing='true'>
+            Please enter a value
+          </div>
+        </div>
+        <div sui-divider></div>
+        <div suiFormField placeholder="Last Name">
+          <div sui-label suiPointing='below'>
+            Please enter a value
+          </div>
+          <input type="text">
+        </div>
+        <div sui-divider></div>
+        <div suiFormField suiInline='true'>
+          <input type="text" placeholder="Username">
+          <div sui-label suiPointing='left'>
+            That name is taken!
+          </div>
+        </div>
+        <div sui-divider></div>
+        <div suiFormField suiInline='true'>
+          <div sui-label suiPointing='right'>
+            Your password must be 6 characters or more
+          </div>
+          <input type="password"
+            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+        </div>
+      </form>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="pointingLabel2" [code]="snippetPointing2">
+
+    <ng-template #pointingLabel2>
+      <form sui-form class="fluid" _lpchecked="1">
+        <div suiFormField>
+          <input type="text" placeholder="First name"
+            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); cursor: pointer;">
+          <div sui-label suiPointing='true' suiColour='red' suiBasic='true'>
+            Please enter a value
+          </div>
+        </div>
+        <div sui-divider></div>
+        <div suiFormField placeholder="Last Name">
+          <div sui-label suiPointing='below' suiColour='red' suiBasic='true'>
+            Please enter a value
+          </div>
+          <input type="text">
+        </div>
+        <div sui-divider></div>
+        <div suiFormField suiInline='true'>
+          <input type="text" placeholder="Username">
+          <div sui-label suiPointing='left' suiColour='red' suiBasic='true'>
+            That name is taken!
+          </div>
+        </div>
+        <div sui-divider></div>
+        <div suiFormField suiInline='true'>
+          <div sui-label suiPointing='right' suiColour='red' suiBasic='true'>
+            Your password must be 6 characters or more
+          </div>
+          <input type="password"
+            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+        </div>
+      </form>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="cornerLabel" [code]="snippetCorner">
+    <h3 sui-header>Corner</h3>
+    <p>A label can position itself in the corner of an element</p>
+
+    <ng-template #cornerLabel>
+      <div sui-grid suiGridColumn suiWidth="two" class="two">
+        <div class="column">
+          <div sui-image suiFluid="true">
+            <a sui-label suiCorner='left'>
+              <i sui-icon suiIconType="heart icon"></i>
+            </a>
+            <img src="https://semantic-ui.com/images/wireframe/image.png">
+          </div>
+        </div>
+        <div class="column">
+          <div sui-image suiFluid="true">
+            <a sui-label suiCorner='right' suiColour='red'>
+              <i sui-icon suiIconType="save icon"></i>
+            </a>
+            <img src="https://semantic-ui.com/images/wireframe/image.png">
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="tagLabel" [code]="snippetTag">
+    <h3 sui-header>Tag</h3>
+    <p>A label can appear as a tag</p>
+
+    <ng-template #tagLabel>
+      <a sui-label suiTag='true'>New</a>
+      <a sui-label suiTag='true' suiColour="red">Upcoming</a>
+      <a sui-label suiTag='true' suiColour="teal">Featured</a>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="ribbonLabel" [code]="snippetRibbon">
+    <h3 sui-header>Ribbon</h3>
+    <p>A label can appear as a ribbon attaching itself to an element.</p>
+
+    <ng-template #ribbonLabel>
+      <div sui-grid suiGridColumn suiWidth="two" class="two">
+        <div suiGridColumn>
+          <div sui-segment suiRaised="true">
+            <a suiColour="red" sui-label suiRibbon="left">Overview</a>
+            <span>Account Details</span>
+            <div sui-placeholder>
+              <div sui-placeholder-paragraph>
+                <div suiPlaceholderLine suiLength="medium"></div>
+                <div suiPlaceholderLine suiLength="medium"></div>
+              </div>
+            </div>
+            <p></p>
+            <a suiColour="blue" sui-label suiRibbon="left">Community</a> User Reviews
+            <div sui-placeholder>
+              <div sui-placeholder-paragraph>
+                <div suiPlaceholderLine suiLength="medium"></div>
+                <div suiPlaceholderLine suiLength="medium"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div suiGridColumn>
+          <div sui-segment>
+            <a suiColour="orange" sui-label suiRibbon="right">Specs</a>
+            <div sui-placeholder>
+              <div sui-placeholder-paragraph>
+                <div suiPlaceholderLine suiLength="medium"></div>
+                <div suiPlaceholderLine suiLength="medium"></div>
+              </div>
+            </div>
+            <a suiColour="teal" sui-label suiRibbon="right">Reviews</a>
+            <div sui-placeholder>
+              <div sui-placeholder-paragraph>
+                <div suiPlaceholderLine suiLength="medium"></div>
+                <div suiPlaceholderLine suiLength="medium"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="ribbonLabel2" [code]="snippetRibbon2">
+
+    <ng-template #ribbonLabel2>
+      <div sui-grid suiGridColumn suiWidth="two" class="two">
+        <div suiGridColumn>
+          <div sui-image suiFluid="true">
+            <div suiColour="black" sui-label suiRibbon="left">
+              <i sui-icon suiIconType="hotel icon"></i> Hotel
+            </div>
+            <img src="https://semantic-ui.com/images/wireframe/image.png">
+          </div>
+        </div>
+        <div suiGridColumn>
+          <div sui-image suiFluid="true">
+            <div suiColour="blue" sui-label suiRibbon="left">
+              <i sui-icon suiIconType="spoon icon"></i> Food
+            </div>
+            <img src="https://semantic-ui.com/images/wireframe/image.png">
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="attchedLabel" [code]="snippetAttached">
+    <h3 sui-header>Attached</h3>
+    <p>A label can attach to a content segment.</p>
+
+    <ng-template #attchedLabel>
+      <div sui-grid suiGridColumn suiWidth="three" class="three">
+        <div suiGridRow>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="top">HTML</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="bottom">CSS</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="top right">Code</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div suiGridRow>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="top left">View</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="bottom left">User View</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <div sui-segment>
+              <div sui-label suiAttached="bottom right">Admin View</div>
+              <div sui-placeholder>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+                <div sui-placeholder-paragraph>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                  <div suiPlaceholderLine suiLength="large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="horizontalLabel" [code]="snippetHorizontal">
+    <h3 sui-header>Horizontal</h3>
+    <p>A horizontal label is formatted to label content along-side it horizontally</p>
+
+    <ng-template #horizontalLabel>
+      <div sui-list suiDivided="true" suiSelection="true">
+        <a class="item">
+          <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+          Kumquats
+        </a>
+        <a class="item">
+          <div sui-label suiColour="purple" suiHorizontal="true">Candy</div>
+          Ice Cream
+        </a>
+        <a class="item">
+          <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+          Orange
+        </a>
+        <a class="item">
+          <div sui-label suiHorizontal="true">Dog</div>
+          Poodle
+        </a>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="floatingLabel" [code]="snippetFloating">
+    <h3 sui-header>Floating</h3>
+    <p>A label can float above another element.</p>
+
+    <ng-template #floatingLabel>
+      <div sui-menu suiCompact="true">
+        <a class="item">
+          <i sui-icon suiIconType="mail icon"></i> Messages
+          <div suiColour="red" sui-label suiFloating="true">22</div>
+        </a>
+        <a class="item">
+          <i sui-icon suiIconType="users icon"></i> Friends
+          <div suiColour="teal" sui-label suiFloating="true">22</div>
+        </a>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <br>
+  <h2 sui-header suiDividing="true">Content</h2>
+  <br>
+
+  <doc-code-sample [content]="detailLabel" [code]="snippetDetail">
+    <h3 sui-header>Detail</h3>
+    <p>A label can contain a detail</p>
+
+    <ng-template #detailLabel>
+      <div sui-label> Dogs
+        <div suiDetail="true" class="detail">214</div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="iconLabel" [code]="snippetIcon">
+    <h3 sui-header>Icon</h3>
+    <p>A label can include an icon</p>
+
+    <ng-template #iconLabel>
+      <div sui-label>
+        <i sui-icon suiIconType="mail icon"></i> Mail
+      </div>
+      <div sui-label>
+        Tag
+        <i sui-icon suiIconType="delete icon"></i>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="imgLabel4" [code]="snippetImage4">
+    <h3 sui-header>Image</h3>
+    <p>A label can include an image</p>
+
+    <ng-template #imgLabel4>
+      <a sui-label>
+        <img  src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+        Stevie
+      </a>
+    </ng-template>
+  </doc-code-sample>
+
+  <doc-code-sample [content]="stdLink" [code]="snippetLink">
+    <h3 sui-header>Link</h3>
+    <p>A label can be a link or contain an item that links</p>
+
+    <ng-template #stdLink>
+      <div sui-label>
+        <i sui-icon suiIconType="mail icon"></i> 23
+      </div>
+      <div sui-label>
+        <i sui-icon suiIconType="mail icon"></i> 23
+        <a suiDetail="true" class="detail">View Mail</a>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+
+  <br>
+  <h2 sui-header suiDividing="true">Variations</h2>
+  <br>
+  
+    <doc-code-sample [content]="labelCircular" [code]="snippetCircular">
+      <h3 sui-header>Circular</h3>
+      <p>A label can be circular</p>
+  
+      <ng-template #labelCircular>
+        <a sui-label suiColour="red" suiCircular="true">1</a>
+        <a sui-label suiColour="orange" suiCircular="true">2</a>
+        <a sui-label suiColour="yellow" suiCircular="true">3</a>
+        <a sui-label suiColour="olive" suiCircular="true">4</a>
+        <a sui-label suiColour="green" suiCircular="true">5</a>
+        <a sui-label suiColour="teal" suiCircular="true">6</a>
+        <a sui-label suiColour="blue" suiCircular="true">7</a>
+        <a sui-label suiColour="violet" suiCircular="true">8</a>
+        <a sui-label suiColour="purple" suiCircular="true">9</a>
+        <a sui-label suiColour="pink" suiCircular="true">10</a>
+        <a sui-label suiColour="brown" suiCircular="true">11</a>
+        <a sui-label suiColour="grey" suiCircular="true">12</a>
+        <a sui-label suiColour="black" suiCircular="true">13</a>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample [content]="labelColoredEmpty" [code]="snippetColoredEmpty">
+
+      <ng-template #labelColoredEmpty>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="red"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="orange"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="yellow"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="olive"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="green"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="teal"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="blue"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="violet"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="purple"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="pink"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="brown"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="grey"></a>
+        <a sui-label suiEmpty="true" suiCircular="true" suiColour="black"></a>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample [content]="labelBasic" [code]="snippetBasic">
+      <h3 sui-header>Basic</h3>
+      <p>A label can reduce its complexity</p>
+  
+      <ng-template #labelBasic>
+        <a sui-label suiBasic="true">Basic</a>
+        <a sui-label suiBasic="true" suiPointing="true">Pointing</a>
+        <a sui-label suiImage="true" suiBasic="true">
+          <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+          Elliot
+        </a>
+        <a sui-label suiBasic="true" suiPointing="true" suiColour="red">Red Pointing</a>
+        <a sui-label suiBasic="true" suiColour="blue">Blue</a>
+      </ng-template>
+    </doc-code-sample>
+
+  <doc-code-sample [content]="labelColored" [code]="snippetColored">
     <h3 sui-header>Colored</h3>
     <p>A label can have different colors</p>
 
@@ -56,27 +577,120 @@
       <a sui-label suiColour="black">Black</a>
     </ng-template>
   </doc-code-sample>
-  
-  <doc-code-sample
-    [content]="labelCircular"
-    [code]="snippetCircular">
-    <h3 sui-header>Circular</h3>
-    <p>A label can be circular</p>
 
-    <ng-template #labelCircular>
-      <a sui-label suiColour="red" suiCircular="true">1</a>
-      <a sui-label suiColour="orange" suiCircular="true">2</a>
-      <a sui-label suiColour="yellow" suiCircular="true">3</a>
-      <a sui-label suiColour="olive" suiCircular="true">4</a>
-      <a sui-label suiColour="green" suiCircular="true">5</a>
-      <a sui-label suiColour="teal" suiCircular="true">6</a>
-      <a sui-label suiColour="blue" suiCircular="true">7</a>
-      <a sui-label suiColour="violet" suiCircular="true">8</a>
-      <a sui-label suiColour="purple" suiCircular="true">9</a>
-      <a sui-label suiColour="pink" suiCircular="true">10</a>
-      <a sui-label suiColour="brown" suiCircular="true">11</a>
-      <a sui-label suiColour="grey" suiCircular="true">12</a>
-      <a sui-label suiColour="black" suiCircular="true">13</a>
+  <doc-code-sample [content]="labelSize" [code]="snippetSize">
+    <h3 sui-header>Size</h3>
+    <p>A label can be small or large</p>
+
+    <ng-template #labelSize>
+      <a sui-label suiSize="mini">Mini</a>
+      <a sui-label suiSize="tiny">Tiny</a>
+      <a sui-label suiSize="small">Small</a>
+      <a sui-label suiSize="medium">Medium</a>
+      <a sui-label suiSize="large">Large</a>
+      <a sui-label suiSize="big">Big</a>
+      <a sui-label suiSize="huge">Huge</a>
+      <a sui-label suiSize="massive">Massive</a>
     </ng-template>
   </doc-code-sample>
+
+  <br>
+  <h2 sui-header suiDividing="true">Groups</h2>
+  <br>
+  
+  <doc-code-sample [content]="labelGroupSize" [code]="snippetGroupSize">
+    <h3 sui-header>Group Size</h3>
+    <p>Labels can share sizes together</p>
+    
+    <ng-template #labelGroupSize>
+      <div sui-labels suiSize="huge">
+        <div sui-label>
+          Fun
+        </div>
+        <div sui-label>
+          Happy
+        </div>
+        <div sui-label>
+          Smart
+        </div>
+        <div sui-label>
+          Witty
+        </div>
+      </div>
+    </ng-template>
+  </doc-code-sample>
+  
+    <doc-code-sample [content]="labelGroupColour" [code]="snippetGroupColour">
+      <h3 sui-header>Coloured Group</h3>
+      <p>Labels can share colors together</p>
+  
+      <ng-template #labelGroupColour>
+        <div sui-labels suiColour="blue">
+          <div sui-label>
+            Fun
+            <i sui-icon suiIconType="delete icon"></i>
+          </div>
+          <div sui-label>
+            Happy
+            <a suiDetail="true">22</a>
+          </div>
+          <div sui-label>
+            Smart
+          </div>
+          <div sui-label>
+            Witty
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  
+    <doc-code-sample [content]="labelGroupTag" [code]="snippetGroupTag">
+      <h3 sui-header>Tag Group</h3>
+      <p>Labels can share tag formatting</p>
+  
+      <ng-template #labelGroupTag>
+        <div sui-labels suiTag="true">
+          <a sui-label>
+            $10.00
+          </a>
+          <a sui-label>
+            $19.99
+          </a>
+          <a sui-label>
+            $24.99
+          </a>
+          <a sui-label>
+            $30.99
+          </a>
+          <a sui-label>
+            $10.25
+          </a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  
+    <doc-code-sample [content]="labelGroupCircular" [code]="snippetGroupCircular">
+      <h3 sui-header>Circular Group</h3>
+      <p>Labels can share shapes</p>
+  
+      <ng-template #labelGroupCircular>
+        <div sui-labels suiCircular="true">
+          <a sui-label>
+            11
+          </a>
+          <a sui-label>
+            22
+          </a>
+          <a sui-label>
+            33
+          </a>
+          <a sui-label>
+            44
+          </a>
+          <a sui-label>
+            141
+          </a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
 </div>
