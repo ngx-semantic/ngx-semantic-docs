@@ -20,13 +20,7 @@ export class LoadersComponent implements OnInit {
   <div sui-loader suiSize="huge" suiText="true">Loading</div>`;
 
   constructor() { }
-  toggleStateMap: any = {};
 
   ngOnInit(): void {
   }
-
-  toggleLabel(key: string) {
-    this.toggleStateMap[key] = !this.toggleStateMap[key];
-  }
-
 }
