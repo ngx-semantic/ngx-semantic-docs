@@ -14,11 +14,6 @@ export class SegmentsComponent implements OnInit {
   <div sui-segment suiColour="green" [suiInverted]="true">Green</div>`;
 
   constructor() {}
-  toggleStateMap: any = {};
 
   ngOnInit(): void {}
-
-  toggleLabel(key: string) {
-    this.toggleStateMap[key] = !this.toggleStateMap[key];
-  }
 }
