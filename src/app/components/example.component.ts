@@ -2,12 +2,20 @@
  * Created by bolorundurowb on 1/6/2021
  */
 
-import {Component, ContentChild, TemplateRef} from "@angular/core";
+import {
+  AfterContentInit,
+  ChangeDetectionStrategy, ChangeDetectorRef,
+  Component,
+  ContentChild,
+  TemplateRef,
+  ViewContainerRef
+} from "@angular/core";
 import {ClipboardService} from "ngx-clipboard";
 import {CodeDirective} from "./code.directive";
 
 @Component({
   selector: 'doc-example',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="example">
       <div class="toggle-row">
@@ -46,7 +54,7 @@ import {CodeDirective} from "./code.directive";
              suiAttached="bottom attached">
         <pre style="background-color: white;">
           <code class="language-markup">
-<!--            {{code}}-->
+            {{code}}
           </code>
         </pre>
         </div>
@@ -94,16 +102,27 @@ import {CodeDirective} from "./code.directive";
     }
   `]
 })
-export class ExampleComponent {
+export class ExampleComponent implements AfterContentInit {
   @ContentChild(CodeDirective, {static: true, read: TemplateRef}) public codeContent: TemplateRef<any>;
 
+  code: string = '';
   codeShown = false;
 
-  constructor(private clipService: ClipboardService) {
+  constructor(private clipService: ClipboardService, private viewRef: ViewContainerRef,
+              private changeDetector: ChangeDetectorRef) {
+  }
+
+  ngAfterContentInit() {
+    if (this.codeContent) {
+      const view = this.viewRef.createEmbeddedView(this.codeContent)
+      console.log(view.rootNodes);
+      this.code = view.rootNodes[0]?.outerHTML;
+      this.changeDetector.markForCheck();
+    }
   }
 
   copyCode(): void {
-    // this.clipService.copy(this.code);
+    this.clipService.copy(this.code);
   }
 
   toggleCodeDisplay(): void {
