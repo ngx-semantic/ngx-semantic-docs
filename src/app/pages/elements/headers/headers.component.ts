@@ -24,12 +24,7 @@ export class HeadersComponent implements OnInit {
   `;
 
   constructor() { }
-  toggleStateMap: any = {};
 
   ngOnInit(): void {
-  }
-
-  toggleLabel(key: string) {
-    this.toggleStateMap[key] = !this.toggleStateMap[key];
   }
 }
