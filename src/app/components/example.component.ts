@@ -2,8 +2,9 @@
  * Created by bolorundurowb on 1/6/2021
  */
 
-import {Component} from "@angular/core";
+import {Component, ContentChild, TemplateRef} from "@angular/core";
 import {ClipboardService} from "ngx-clipboard";
+import {CodeDirective} from "./code.directive";
 
 @Component({
   selector: 'doc-example',
@@ -21,13 +22,13 @@ import {ClipboardService} from "ngx-clipboard";
       <ng-content></ng-content>
 
       <ng-container *ngIf="!codeShown">
-        <ng-container *ngTemplateOutlet="content"></ng-container>
+        <ng-container *ngTemplateOutlet="codeContent"></ng-container>
       </ng-container>
 
       <div *ngIf="codeShown" sui-segment
            suiAttached="top attached"
            style="padding-top: 3rem;">
-        <ng-container *ngTemplateOutlet="content"></ng-container>
+        <ng-container *ngTemplateOutlet="codeContent"></ng-container>
         <div sui-label
              suiAttached="top">
           Example
@@ -45,7 +46,7 @@ import {ClipboardService} from "ngx-clipboard";
              suiAttached="bottom attached">
         <pre style="background-color: white;">
           <code class="language-markup">
-            {{code}}
+<!--            {{code}}-->
           </code>
         </pre>
         </div>
@@ -94,6 +95,8 @@ import {ClipboardService} from "ngx-clipboard";
   `]
 })
 export class ExampleComponent {
+  @ContentChild(CodeDirective, {static: true, read: TemplateRef}) public codeContent: TemplateRef<any>;
+
   codeShown = false;
 
   constructor(private clipService: ClipboardService) {
