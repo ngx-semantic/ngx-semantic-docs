@@ -26,6 +26,8 @@ import {CodeSampleComponent} from './components/code-sample.component';
 import {StepsComponent} from './pages/elements/steps/steps.component';
 import {DocPageHeaderComponent} from "./components/doc-page-header.component";
 import { ContainerComponent } from './pages/elements/container/container.component';
+import {ExampleComponent} from "./components/example.component";
+import {CodeDirective} from "./components/code.directive";
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ContainerComponent } from './pages/elements/container/container.compone
     CardsComponent,
     StepsComponent,
     DocPageHeaderComponent,
-    ContainerComponent
+    ContainerComponent,
+    ExampleComponent,
+    CodeDirective
   ],
   imports: [
     BrowserModule,
