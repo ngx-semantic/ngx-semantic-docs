@@ -60,8 +60,23 @@ import {Component} from '@angular/core';
       <div class="item">
         <div class="header">Collections</div>
         <div class="menu">
+          <a class="item" routerLink="collections/breadcrumb" routerLinkActive="active">
+            Breadcrumb
+          </a>
+          <a class="item" routerLink="collections/form" routerLinkActive="active">
+            Form
+          </a>
+          <a class="item" routerLink="collections/grid" routerLinkActive="active">
+            Grid
+          </a>
+          <a class="item" routerLink="collections/menu" routerLinkActive="active">
+            Menu
+          </a>
           <a class="item" routerLink="collections/messages" routerLinkActive="active">
             Messages
+          </a>
+          <a class="item" routerLink="collections/table" routerLinkActive="active">
+            Table
           </a>
         </div>
       </div>
