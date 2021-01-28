@@ -20,6 +20,8 @@ import {SegmentsComponent} from "./segments/segments.component";
 import {StepsComponent} from "./steps/steps.component";
 import {CommonModule} from "@angular/common";
 import {ElementsRoutingModule} from "./elements-routing.module";
+import {SharedModule} from "../../shared/shared.module";
+import {NgxSemanticModule} from "ngx-semantic";
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import {ElementsRoutingModule} from "./elements-routing.module";
   ],
   imports: [
     CommonModule,
+    SharedModule,
+    NgxSemanticModule,
     ElementsRoutingModule
   ]
 })

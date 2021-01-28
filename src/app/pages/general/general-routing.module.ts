@@ -7,7 +7,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {QuickStartComponent} from "./quick-start/quick-start.component";
 
 const routes: Routes = [{
-  path: '/',
+  path: '',
   component: QuickStartComponent
 }]
 

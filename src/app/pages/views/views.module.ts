@@ -6,6 +6,8 @@ import {NgModule} from "@angular/core";
 import {CardsComponent} from "./cards/cards.component";
 import {CommonModule} from "@angular/common";
 import {ViewsRoutingModule} from "./views-routing.module";
+import {SharedModule} from "../../shared/shared.module";
+import {NgxSemanticModule} from "ngx-semantic";
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import {ViewsRoutingModule} from "./views-routing.module";
   ],
   imports: [
     CommonModule,
+    SharedModule,
+    NgxSemanticModule,
     ViewsRoutingModule
   ]
 })

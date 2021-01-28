@@ -6,9 +6,8 @@ import {NgxSemanticModule} from 'ngx-semantic';
 import {ElementsComponent} from './pages/elements/elements.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
-import {CodeSampleComponent} from './components/code-sample.component';
-import {DocPageHeaderComponent} from "./components/doc-page-header.component";
 import {GeneralComponent} from "./pages/general/general.component";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -16,12 +15,11 @@ import {GeneralComponent} from "./pages/general/general.component";
     ElementsComponent,
     ViewsComponent,
     CollectionsComponent,
-    GeneralComponent,
-    CodeSampleComponent,
-    DocPageHeaderComponent
+    GeneralComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule,
     NgxSemanticModule
   ],
