@@ -5,13 +5,13 @@ import {Component} from '@angular/core';
   template: `
     <div class="ui visible sidebar inverted vertical menu">
       <div suiMenuItem>
-        <div class="header">
+        <div suiMenuHeader>
           Getting Started
         </div>
       </div>
       <div suiMenuItem>
-        <div class="header">Elements</div>
-        <div class="menu">
+        <div suiMenuHeader>Elements</div>
+        <div suiSubMenu>
           <a suiMenuItem
              routerLink="elements/buttons"
              routerLinkActive="active">
@@ -90,8 +90,8 @@ import {Component} from '@angular/core';
         </div>
       </div>
       <div suiMenuItem>
-        <div class="header">Collections</div>
-        <div class="menu">
+        <div suiMenuHeader>Collections</div>
+        <div suiSubMenu>
           <a suiMenuItem
              routerLink="collections/breadcrumb"
              routerLinkActive="active">
@@ -125,37 +125,71 @@ import {Component} from '@angular/core';
         </div>
       </div>
       <div suiMenuItem>
-        <div class="header">Views</div>
-        <div class="menu">
+        <div suiMenuHeader>Views</div>
+        <div suiSubMenu>
           <a suiMenuItem
              routerLink="views/cards"
              routerLinkActive="active">
             Cards
           </a>
-          <a suiMenuItem
-             routerLink="/"
-             routerLinkActive="active">
+          <a suiMenuItem>
             Comments
           </a>
-          <a suiMenuItem
-             routerLink="/"
-             routerLinkActive="active">
+          <a suiMenuItem>
             Feeds
           </a>
-          <a suiMenuItem
-             routerLink="/"
-             routerLinkActive="active">
+          <a suiMenuItem>
             Items
           </a>
-          <a suiMenuItem
-             routerLink="/"
-             routerLinkActive="active">
+          <a suiMenuItem>
             Statistics
           </a>
-          <a suiMenuItem
-             routerLink="/"
-             routerLinkActive="active">
+          <a suiMenuItem>
             Advertisement
+          </a>
+        </div>
+      </div>
+      <div suiMenuItem>
+        <div suiMenuHeader>Modules</div>
+        <div suiSubMenu>
+          <a suiMenuItem>
+            Accordion
+          </a>
+          <a suiMenuItem>
+            Checkbox
+          </a>
+          <a suiMenuItem>
+            Dimmer
+          </a>
+          <a suiMenuItem>
+            Dropdown
+          </a>
+          <a suiMenuItem>
+            Embed
+          </a>
+          <a suiMenuItem>
+            Modal
+          </a>
+          <a suiMenuItem>
+            Rating
+          </a>
+          <a suiMenuItem>
+            Search
+          </a>
+          <a suiMenuItem>
+            Select
+          </a>
+          <a suiMenuItem>
+            Sidebar
+          </a>
+          <a suiMenuItem>
+            Popup
+          </a>
+          <a suiMenuItem>
+            Progress
+          </a>
+          <a suiMenuItem>
+            Tab
           </a>
         </div>
       </div>
