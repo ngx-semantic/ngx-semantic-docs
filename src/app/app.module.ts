@@ -18,19 +18,13 @@ import {PlaceholdersComponent} from './pages/elements/placeholders/placeholders.
 import {RailsComponent} from './pages/elements/rails/rails.component';
 import {RevealsComponent} from './pages/elements/reveals/reveals.component';
 import {SegmentsComponent} from './pages/elements/segments/segments.component';
-import {MessagesComponent} from './pages/collections/messages/messages.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
 import {CardsComponent} from './pages/views/cards/cards.component';
 import {CodeSampleComponent} from './components/code-sample.component';
 import {StepsComponent} from './pages/elements/steps/steps.component';
 import {DocPageHeaderComponent} from "./components/doc-page-header.component";
-import { ContainerComponent } from './pages/elements/container/container.component';
-import { BreadcrumbComponent } from './pages/collections/breadcrumb/breadcrumb.component';
-import { FormComponent } from './pages/collections/form/form.component';
-import { MenuComponent } from './pages/collections/menu/menu.component';
-import { GridComponent } from './pages/collections/grid/grid.component';
-import { TableComponent } from './pages/collections/table/table.component';
+import {ContainerComponent} from './pages/elements/container/container.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +46,6 @@ import { TableComponent } from './pages/collections/table/table.component';
     CardsComponent,
     RevealsComponent,
     SegmentsComponent,
-    MessagesComponent,
     CodeSampleComponent,
     CollectionsComponent,
     ViewsComponent,
@@ -60,11 +53,6 @@ import { TableComponent } from './pages/collections/table/table.component';
     StepsComponent,
     DocPageHeaderComponent,
     ContainerComponent,
-    BreadcrumbComponent,
-    FormComponent,
-    MenuComponent,
-    GridComponent,
-    TableComponent
   ],
   imports: [
     BrowserModule,

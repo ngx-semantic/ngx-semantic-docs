@@ -1,31 +1,31 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ElementsComponent } from './pages/elements/elements.component';
-import { ButtonsComponent } from './pages/elements/buttons/buttons.component';
-import { QuickStartComponent } from './pages/general/home/quick-start.component';
-import { DividerComponent } from './pages/elements/divider/divider.component';
-import { FlagsComponent } from './pages/elements/flags/flags.component';
-import { HeadersComponent } from './pages/elements/headers/headers.component';
-import { IconsComponent } from './pages/elements/icons/icons.component';
-import { InputsComponent } from './pages/elements/inputs/inputs.component';
-import { LabelsComponent } from './pages/elements/labels/labels.component';
-import { ListsComponent } from './pages/elements/lists/lists.component';
-import { LoadersComponent } from './pages/elements/loaders/loaders.component';
-import { PlaceholdersComponent } from './pages/elements/placeholders/placeholders.component';
-import { RailsComponent } from './pages/elements/rails/rails.component';
-import { RevealsComponent } from './pages/elements/reveals/reveals.component';
-import { SegmentsComponent } from './pages/elements/segments/segments.component';
-import { CollectionsComponent } from './pages/collections/collections.component';
-import { MessagesComponent } from './pages/collections/messages/messages.component';
-import { ViewsComponent } from './pages/views/views.component';
-import { CardsComponent } from './pages/views/cards/cards.component';
-import { StepsComponent } from './pages/elements/steps/steps.component';
-import { ContainerComponent } from './pages/elements/container/container.component';
-import { BreadcrumbComponent } from './pages/collections/breadcrumb/breadcrumb.component';
-import { GridComponent } from './pages/collections/grid/grid.component';
-import { FormComponent } from './pages/collections/form/form.component';
-import { MenuComponent } from './pages/collections/menu/menu.component';
-import { TableComponent } from './pages/collections/table/table.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {ElementsComponent} from './pages/elements/elements.component';
+import {ButtonsComponent} from './pages/elements/buttons/buttons.component';
+import {QuickStartComponent} from './pages/general/home/quick-start.component';
+import {DividerComponent} from './pages/elements/divider/divider.component';
+import {FlagsComponent} from './pages/elements/flags/flags.component';
+import {HeadersComponent} from './pages/elements/headers/headers.component';
+import {IconsComponent} from './pages/elements/icons/icons.component';
+import {InputsComponent} from './pages/elements/inputs/inputs.component';
+import {LabelsComponent} from './pages/elements/labels/labels.component';
+import {ListsComponent} from './pages/elements/lists/lists.component';
+import {LoadersComponent} from './pages/elements/loaders/loaders.component';
+import {PlaceholdersComponent} from './pages/elements/placeholders/placeholders.component';
+import {RailsComponent} from './pages/elements/rails/rails.component';
+import {RevealsComponent} from './pages/elements/reveals/reveals.component';
+import {SegmentsComponent} from './pages/elements/segments/segments.component';
+import {CollectionsComponent} from './pages/collections/collections.component';
+import {MessagesComponent} from './pages/collections/messages/messages.component';
+import {ViewsComponent} from './pages/views/views.component';
+import {CardsComponent} from './pages/views/cards/cards.component';
+import {StepsComponent} from './pages/elements/steps/steps.component';
+import {ContainerComponent} from './pages/elements/container/container.component';
+import {BreadcrumbComponent} from './pages/collections/breadcrumb/breadcrumb.component';
+import {GridComponent} from './pages/collections/grid/grid.component';
+import {FormComponent} from './pages/collections/form/form.component';
+import {MenuComponent} from './pages/collections/menu/menu.component';
+import {TableComponent} from './pages/collections/table/table.component';
 
 const routes: Routes = [
   {
@@ -102,32 +102,7 @@ const routes: Routes = [
   {
     path: 'collections',
     component: CollectionsComponent,
-    children: [
-      {
-        path: 'messages',
-        component: MessagesComponent,
-      },
-      {
-        path: 'breadcrumb',
-        component: BreadcrumbComponent,
-      },
-      {
-        path: 'grid',
-        component: GridComponent,
-      },
-      {
-        path: 'form',
-        component: FormComponent,
-      },
-      {
-        path: 'menu',
-        component: MenuComponent,
-      },
-      {
-        path: 'table',
-        component: TableComponent,
-      },
-    ],
+    loadChildren: () => import('./pages/collections/collections.module').then(m => m.CollectionsModule)
   },
   {
     path: 'views',
@@ -146,7 +121,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, {relativeLinkResolution: 'legacy'})],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
