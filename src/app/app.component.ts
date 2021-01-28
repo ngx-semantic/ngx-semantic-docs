@@ -5,8 +5,23 @@ import {Component} from '@angular/core';
   template: `
     <div class="ui visible sidebar inverted vertical menu">
       <div suiMenuItem>
+        <img sui-image
+             suiSize="mini"
+             suiSpaced="true"
+             src="/assets/images/logo.png"/>
+        <strong>Ngx Semantic</strong>
+      </div>
+      <div suiMenuItem>
         <div suiMenuHeader>
           Getting Started
+        </div>
+        <div suiSubMenu>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact: true}">
+            Quick Start
+          </a>
         </div>
       </div>
       <div suiMenuItem>

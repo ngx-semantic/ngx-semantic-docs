@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ElementsComponent } from './pages/elements/elements.component';
 import { ButtonsComponent } from './pages/elements/buttons/buttons.component';
-import { HomeComponent } from './pages/home/home.component';
+import { QuickStartComponent } from './pages/general/home/quick-start.component';
 import { DividerComponent } from './pages/elements/divider/divider.component';
 import { FlagsComponent } from './pages/elements/flags/flags.component';
 import { HeadersComponent } from './pages/elements/headers/headers.component';
@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: HomeComponent,
+    component: QuickStartComponent,
   },
   {
     path: 'elements',
@@ -141,7 +141,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: HomeComponent,
+    component: QuickStartComponent,
   },
 ];
 

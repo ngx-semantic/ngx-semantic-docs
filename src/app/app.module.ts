@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgxSemanticModule} from 'ngx-semantic';
-import {HomeComponent} from './pages/home/home.component';
+import {QuickStartComponent} from './pages/general/home/quick-start.component';
 import {ButtonsComponent} from './pages/elements/buttons/buttons.component';
 import {ElementsComponent} from './pages/elements/elements.component';
 import {FlagsComponent} from './pages/elements/flags/flags.component';
@@ -37,7 +37,7 @@ import { TableComponent } from './pages/collections/table/table.component';
     AppComponent,
     ButtonsComponent,
     ElementsComponent,
-    HomeComponent,
+    QuickStartComponent,
     DividerComponent,
     FlagsComponent,
     HeadersComponent,
