@@ -9,6 +9,7 @@ import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
 import {CodeSampleComponent} from './components/code-sample.component';
 import {DocPageHeaderComponent} from "./components/doc-page-header.component";
+import {GeneralComponent} from "./pages/general/general.component";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {DocPageHeaderComponent} from "./components/doc-page-header.component";
     CodeSampleComponent,
     CollectionsComponent,
     DocPageHeaderComponent,
+    GeneralComponent
   ],
   imports: [
     BrowserModule,
