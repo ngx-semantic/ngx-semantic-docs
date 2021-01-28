@@ -10,6 +10,7 @@ import {MenuComponent} from "./menu/menu.component";
 import {MessagesComponent} from "./messages/messages.component";
 import {TableComponent} from "./table/table.component";
 import {CommonModule} from "@angular/common";
+import {CollectionsRoutingModule} from "./collections-routing.module";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CommonModule} from "@angular/common";
     TableComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CollectionsRoutingModule
   ]
 })
 export class CollectionsModule {
