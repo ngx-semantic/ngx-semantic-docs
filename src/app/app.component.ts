@@ -4,87 +4,158 @@ import {Component} from '@angular/core';
   selector: 'doc-root',
   template: `
     <div class="ui visible sidebar inverted vertical menu">
-      <div class="item">
-        <div class="header" routerLink="">Getting Started</div>
+      <div suiMenuItem>
+        <div class="header">
+          Getting Started
+        </div>
       </div>
-      <div class="item">
+      <div suiMenuItem>
         <div class="header">Elements</div>
         <div class="menu">
-          <a class="item" routerLink="elements/buttons" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/buttons"
+             routerLinkActive="active">
             Buttons
           </a>
-          <a class="item" routerLink="elements/container" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/container"
+             routerLinkActive="active">
             Container
           </a>
-          <a class="item" routerLink="elements/dividers" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/dividers"
+             routerLinkActive="active">
             Dividers
           </a>
-          <a class="item" routerLink="elements/flags" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/flags"
+             routerLinkActive="active">
             Flags
           </a>
-          <a class="item" routerLink="elements/headers" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/headers"
+             routerLinkActive="active">
             Headers
           </a>
-          <a class="item" routerLink="elements/icons" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/icons"
+             routerLinkActive="active">
             Icons
           </a>
-          <a class="item" routerLink="elements/inputs" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/inputs"
+             routerLinkActive="active">
             Inputs
           </a>
-          <a class="item" routerLink="elements/labels" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/labels"
+             routerLinkActive="active">
             Labels
           </a>
-          <a class="item" routerLink="elements/lists" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/lists"
+             routerLinkActive="active">
             Lists
           </a>
-          <a class="item" routerLink="elements/loaders" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/loaders"
+             routerLinkActive="active">
             Loaders
           </a>
-          <a class="item" routerLink="elements/placeholders" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/placeholders"
+             routerLinkActive="active">
             Placeholders
           </a>
-          <a class="item" routerLink="elements/rails" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/rails"
+             routerLinkActive="active">
             Rails
           </a>
-          <a class="item" routerLink="elements/reveals" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/reveals"
+             routerLinkActive="active">
             Reveals
           </a>
-          <a class="item" routerLink="elements/segments" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/segments"
+             routerLinkActive="active">
             Segments
           </a>
-          <a class="item" routerLink="elements/steps" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="elements/steps"
+             routerLinkActive="active">
             Steps
           </a>
         </div>
       </div>
-      <div class="item">
+      <div suiMenuItem>
         <div class="header">Collections</div>
         <div class="menu">
-          <a class="item" routerLink="collections/breadcrumb" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/breadcrumb"
+             routerLinkActive="active">
             Breadcrumb
           </a>
-          <a class="item" routerLink="collections/form" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/form"
+             routerLinkActive="active">
             Form
           </a>
-          <a class="item" routerLink="collections/grid" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/grid"
+             routerLinkActive="active">
             Grid
           </a>
-          <a class="item" routerLink="collections/menu" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/menu"
+             routerLinkActive="active">
             Menu
           </a>
-          <a class="item" routerLink="collections/messages" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/messages"
+             routerLinkActive="active">
             Messages
           </a>
-          <a class="item" routerLink="collections/table" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="collections/table"
+             routerLinkActive="active">
             Table
           </a>
         </div>
       </div>
-      <div class="item">
+      <div suiMenuItem>
         <div class="header">Views</div>
         <div class="menu">
-          <a class="item" routerLink="views/cards" routerLinkActive="active">
+          <a suiMenuItem
+             routerLink="views/cards"
+             routerLinkActive="active">
             Cards
+          </a>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active">
+            Comments
+          </a>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active">
+            Feeds
+          </a>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active">
+            Items
+          </a>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active">
+            Statistics
+          </a>
+          <a suiMenuItem
+             routerLink="/"
+             routerLinkActive="active">
+            Advertisement
           </a>
         </div>
       </div>
