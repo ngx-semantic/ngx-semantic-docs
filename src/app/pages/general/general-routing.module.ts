@@ -4,7 +4,7 @@
 
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
-import {QuickStartComponent} from "./home/quick-start.component";
+import {QuickStartComponent} from "./quick-start/quick-start.component";
 
 const routes: Routes = [{
   path: '/',

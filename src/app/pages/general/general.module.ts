@@ -3,7 +3,7 @@
  */
 
 import {NgModule} from "@angular/core";
-import {QuickStartComponent} from "./home/quick-start.component";
+import {QuickStartComponent} from "./quick-start/quick-start.component";
 import {CommonModule} from "@angular/common";
 import {GeneralRoutingModule} from "./general-routing.module";
 

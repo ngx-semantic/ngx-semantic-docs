@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {ElementsComponent} from './pages/elements/elements.component';
-import {QuickStartComponent} from './pages/general/home/quick-start.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
+import {GeneralComponent} from "./pages/general/general.component";
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    component: QuickStartComponent,
+    component: GeneralComponent,
+    loadChildren: () => import('./pages/general/general.module').then(m => m.GeneralModule)
   },
   {
     path: 'elements',

@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgxSemanticModule} from 'ngx-semantic';
-import {QuickStartComponent} from './pages/general/home/quick-start.component';
 import {ElementsComponent} from './pages/elements/elements.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
@@ -15,12 +14,11 @@ import {GeneralComponent} from "./pages/general/general.component";
   declarations: [
     AppComponent,
     ElementsComponent,
-    QuickStartComponent,
     ViewsComponent,
-    CodeSampleComponent,
     CollectionsComponent,
-    DocPageHeaderComponent,
-    GeneralComponent
+    GeneralComponent,
+    CodeSampleComponent,
+    DocPageHeaderComponent
   ],
   imports: [
     BrowserModule,
