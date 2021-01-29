@@ -1,1 +1,83 @@
-<p>home works!</p>
+<div class="quick-start">
+  <div class="top-header">
+    <img
+        src="https://raw.githubusercontent.com/ngx-semantic/ngx-semantic-docs/master/src/assets/images/logo.png"
+        alt="NgxSemantic"/>
+    <h1>Ngx Semantic</h1>
+  </div>
+
+  <div class="badges">
+    <a href="https://www.npmjs.com/package/ngx-semantic">
+      <img alt="npm" src="https://img.shields.io/npm/v/ngx-semantic">
+    </a>
+    <a href="https://codecov.io/gh/ngx-semantic/ngx-semantic">
+      <img
+          src="https://codecov.io/gh/ngx-semantic/ngx-semantic/branch/master/graph/badge.svg"
+          alt="codecov"/>
+    </a>
+    <a href="https://github.com/acekyd/made-in-nigeria">
+      <img
+          src="https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square"
+          alt="Made in Nigeria"/>
+    </a>
+  </div>
+
+  <div class="badges">
+    <a href="https://ci.appveyor.com/project/BolorunduroWinnerTimothy/ngx-semantic/branch/master">
+      <img
+          src="https://ci.appveyor.com/api/projects/status/gd04694avya0aa2f/branch/master?svg=true"
+          alt="CI Build"/>
+    </a>
+  </div>
+
+  <h2 sui-header
+      suiDividing="true">
+    Introduction
+  </h2>
+  <p>
+    Angular and jQuery don't go together - this is the fundamental principle of this library. It provides Angular
+    component versions of the Semantic UI elements, views and modules, so that you don't need to add jQuery to your app.
+  </p>
+  <p>
+    <b>NOTE:</b> Unlike most other angular libraries that provide Semantic UI support, this library covers much more
+    than the Semantic UI modules. It also provides Angular wrappers for the Elements, Collections, as well as Views.
+  </p>
+
+  <h2 sui-header
+      suiDividing="true">
+    Installation
+  </h2>
+  <p>
+    First, you'd need to import the Semantic UI CSS styles from a CDN to your <code>index.html</code> file. For best results, make sure you are referencing the latest Semantic UI version.
+  </p>
+  <pre>
+    <code class="language-html">
+      &lt;link  rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/&gt;
+    </code>
+  </pre>
+  <p>
+    Next, you'd need to install the <code>NgxSemantic</code> package as well as the <a href="https://material.angular.io/cdk/categories">Angular CDK</a> from the npm registry
+  </p>
+  <pre>
+    <code class="language-bash">
+      $ npm install @angular/cdk
+      $ npm install ngx-semantic
+      # or
+      $ yarn add @angular/cdk
+      $ yarn add ngx-semantic
+    </code>
+  </pre>
+
+  <h2 sui-header
+      suiDividing="true">
+    Usage
+  </h2>
+  <p>
+    <code>NgxSemantic</code> allows for individual module imports which allows for Ivy to  shake off unused modules in prod builds leading to smaller bundle sizes and faster load times. But, if you want to  import all the goodness that
+  </p>
+  <pre>
+    <code class="language-html">
+      &lt;link  rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/&gt;
+    </code>
+  </pre>
+</div>

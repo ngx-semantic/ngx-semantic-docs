@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'doc-home',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuickStartComponent implements OnInit {
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Quick Start | Ngx Semantic');
+  }
 
   ngOnInit(): void {
   }
