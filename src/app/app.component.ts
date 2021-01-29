@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   styles: [`
     .page {
       margin-left: 15rem;
-      padding: 2rem;
+      padding: 2rem 2rem 2rem 6rem;
     }
   `]
 })

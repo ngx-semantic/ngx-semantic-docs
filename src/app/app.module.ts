@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {NgxSemanticModule} from 'ngx-semantic';
+import {SuiIconModule, SuiImageModule, SuiMenuModule, SuiSidebarModule} from 'ngx-semantic';
 import {ElementsComponent} from './pages/elements/elements.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
@@ -21,7 +21,10 @@ import {SharedModule} from "./shared/shared.module";
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    NgxSemanticModule
+    SuiMenuModule,
+    SuiImageModule,
+    SuiIconModule,
+    SuiSidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

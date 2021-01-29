@@ -9,7 +9,7 @@ import {DocPageHeaderComponent} from "./components/doc-page-header.component";
 import {
   SuiContainerModule,
   SuiDividerModule,
-  SuiGridModule,
+  SuiGridModule, SuiHeaderModule,
   SuiIconModule,
   SuiLabelModule, SuiMenuModule,
   SuiSegmentModule
@@ -24,7 +24,8 @@ import {
     SuiContainerModule,
     SuiGridModule,
     SuiDividerModule,
-    SuiMenuModule
+    SuiMenuModule,
+    SuiHeaderModule
   ],
   declarations: [
     CodeSampleComponent,
