@@ -52,16 +52,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/styles/prism.css"
+              "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/styles/prism.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "src/assets/scripts/prism.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -74,7 +70,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
