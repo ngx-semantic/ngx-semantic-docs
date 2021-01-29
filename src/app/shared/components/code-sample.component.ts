@@ -39,7 +39,7 @@ import {ClipboardService} from 'ngx-clipboard';
            [class.visible]="codeShown">
         <div sui-segment
              suiAttached="bottom attached">
-        <pre style="background-color: white;">
+        <pre>
           <code class="language-markup">
             {{code}}
           </code>
