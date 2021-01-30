@@ -15,7 +15,7 @@ import {Component, Input} from "@angular/core";
             <h1 sui-header>
               {{header}}
               <div sui-sub-header>
-               {{subHeader}}
+                {{subHeader}}
               </div>
             </h1>
           </div>
@@ -50,10 +50,14 @@ import {Component, Input} from "@angular/core";
              suiWidth="two"
              style="margin-top: 2rem; margin-bottom: 1.3rem;">
           <a suiMenuItem
-             suiActive="true">
+             [suiActive]="currentView === 'definitions'"
+             (click)="switchToDefinitions()">
             Definitions
           </a>
-          <a suiMenuItem>
+
+          <a suiMenuItem
+             [suiActive]="currentView === 'api'"
+             (click)="switchToApi()">
             API
           </a>
         </div>
