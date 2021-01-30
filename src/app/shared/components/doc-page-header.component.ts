@@ -64,4 +64,14 @@ import {Component, Input} from "@angular/core";
 export class DocPageHeaderComponent {
   @Input() header: string = null;
   @Input() subHeader: string = null;
+
+  currentView = 'definitions';
+
+  switchToApi(): void {
+    this.currentView = 'api';
+  }
+
+  switchToDefinitions(): void {
+    this.currentView = 'definitions';
+  }
 }
