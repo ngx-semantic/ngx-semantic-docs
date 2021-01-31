@@ -11,7 +11,7 @@ import {
   SuiDividerModule,
   SuiGridModule, SuiHeaderModule,
   SuiIconModule,
-  SuiLabelModule, SuiMenuModule,
+  SuiLabelModule, SuiMenuModule, SuiPopupModule,
   SuiSegmentModule
 } from "ngx-semantic";
 
@@ -25,7 +25,8 @@ import {
     SuiGridModule,
     SuiDividerModule,
     SuiMenuModule,
-    SuiHeaderModule
+    SuiHeaderModule,
+    SuiPopupModule
   ],
   declarations: [
     CodeSampleComponent,

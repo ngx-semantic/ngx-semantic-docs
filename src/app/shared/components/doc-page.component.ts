@@ -2,8 +2,7 @@
  * Created by bolor on 10/7/2020
  */
 
-import {Component, ContentChild, Input} from "@angular/core";
-import {DocDefinitionComponent} from "./doc-definition.component";
+import {Component, Input, Output, EventEmitter} from "@angular/core";
 
 @Component({
   selector: 'doc-page',
@@ -25,19 +24,25 @@ import {DocDefinitionComponent} from "./doc-definition.component";
           <div suiGridColumn
                suiWidth="eight">
             <div class="ui right floated main menu">
-              <a class="bug popup icon item" title="Submit Bug Report"
+              <a class="bug popup icon item"
+                 data-tooltip="Submit Bug Report"
+                 target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic/issues">
                 <i sui-icon
                    suiIconType="bug"></i>
               </a>
 
-              <a class="github popup icon item" title="View project on GitHub"
+              <a class="github popup icon item"
+                 data-tooltip="View project on GitHub"
+                 target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
                    suiIconType="alternate github"></i>
               </a>
 
-              <a class="github popup icon item" title="View on Semantic UI"
+              <a class="github popup icon item"
+                 data-tooltip="View on Semantic UI"
+                 target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
                    suiIconType="book"></i>
@@ -66,27 +71,21 @@ import {DocDefinitionComponent} from "./doc-definition.component";
         </div>
       </div>
     </div>
-    
-    <div sui-container
-         class="main">
-      <ng-container *ngIf="isDefinitions()">
-        <div>hello</div>
-      </ng-container>
-      <ng-container *ngIf="isApi()">
-        <div>hello</div>
-      </ng-container>
+
+    <div class="main"
+         sui-container>
+      <ng-content></ng-content>
     </div>
   `
 })
 export class DocPageComponent {
-  @ContentChild(DocDefinitionComponent)
   @Input() header: string = null;
   @Input() subHeader: string = null;
+  @Output() pageChanged = new EventEmitter<string>();
 
   private definitions = 'definitions';
   private api = 'api';
-
-  currentView = this.definitions;
+  private currentView = this.definitions;
 
   isApi(): boolean {
     return this.currentView === this.api;
@@ -94,6 +93,7 @@ export class DocPageComponent {
 
   switchToApi(): void {
     this.currentView = this.api;
+    this.pageChanged.emit(this.currentView);
   }
 
   isDefinitions(): boolean {
@@ -102,5 +102,6 @@ export class DocPageComponent {
 
   switchToDefinitions(): void {
     this.currentView = this.definitions;
+    this.pageChanged.emit(this.currentView);
   }
 }
