@@ -5,7 +5,7 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {CodeSampleComponent} from "./components/code-sample.component";
-import {DocPageHeaderComponent} from "./components/doc-page-header.component";
+import {DocPageComponent} from "./components/doc-page.component";
 import {
   SuiContainerModule,
   SuiDividerModule,
@@ -29,11 +29,11 @@ import {
   ],
   declarations: [
     CodeSampleComponent,
-    DocPageHeaderComponent
+    DocPageComponent
   ],
   exports: [
     CodeSampleComponent,
-    DocPageHeaderComponent
+    DocPageComponent
   ]
 })
 export class SharedModule {
