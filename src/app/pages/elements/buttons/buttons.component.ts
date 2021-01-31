@@ -7,7 +7,7 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.scss'],
 })
-export class ButtonsComponent implements AfterViewChecked{
+export class ButtonsComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
