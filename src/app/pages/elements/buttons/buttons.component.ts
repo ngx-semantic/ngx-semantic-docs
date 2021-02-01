@@ -7,7 +7,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.scss'],
 })
-export class ButtonsComponent implements AfterViewChecked{
+export class ButtonsComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetBtn = `
   <button sui-button>
     Follow
@@ -992,5 +995,17 @@ export class ButtonsComponent implements AfterViewChecked{
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
   }
 }
