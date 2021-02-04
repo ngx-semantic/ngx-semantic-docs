@@ -8,8 +8,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./flags.component.scss']
 })
 export class FlagsComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
+  // isDefinitionsActive = true;
+  // isApiActive: boolean;
+  isDefinitionsActive:boolean;
+  isApiActive = true;
 
   snippetFlag = `
       <i sui-flag suiCountry="ae"></i>
