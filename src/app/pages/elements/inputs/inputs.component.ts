@@ -14,7 +14,7 @@ export class InputsComponent implements OnInit {
 
   snippetAction = `
    <div sui-input suiAction="left action">
-     <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon="true">
+     <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon>
        <i sui-icon suiIconType="cart"></i>
        Checkout
      </button>
@@ -23,7 +23,7 @@ export class InputsComponent implements OnInit {
 
    <div sui-input suiAction="right action">
      <input type="text" value="http://www.short.url/c0opq">
-     <button sui-button suiColour="teal" suiLocation="right" suiLabeled="true" suiIcon="true">
+     <button sui-button suiColour="teal" suiLocation="right" suiLabeled suiIcon>
        <i sui-icon suiIconType="copy"></i>
        Copy
      </button>

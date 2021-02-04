@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RailsComponent implements OnInit {
   snippetStdRail = `
-  <div sui-rail suiLocation="left" suiDividing="true">
+  <div sui-rail suiLocation="left" suiDividing>
     <div class="ui segment">
       Left Rail Content
     </div>
   </div>
-  <div sui-rail suiLocation="right" suiDividing="true">
+  <div sui-rail suiLocation="right" suiDividing>
     <div class="ui segment">
       Right Rail Content
     </div>

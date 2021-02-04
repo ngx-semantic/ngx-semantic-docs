@@ -133,7 +133,7 @@
   dependencies:
     tslib "^2.0.0"
 
-"@angular/cdk@^11.1.1":
+"@angular/cdk@>=9.0.0", "@angular/cdk@^11.1.1":
   version "11.1.1"
   resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-11.1.1.tgz#87cf1ff8eef898296129742b503bff1f979b7bc1"
   integrity sha512-rIog+eqv6RtpSWKM+iHQ5oHyOALMxRXkeTiJyvPfBCYQ2hzPN16+eNxP/JOR+C4y7pMaJyPur0pC572IZEnCsw==
@@ -5498,11 +5498,12 @@ ngx-clipboard@^13.0.1:
   dependencies:
     ngx-window-token ">=3.0.0"
 
-ngx-semantic@^1.0.0-beta.2:
-  version "1.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.2.tgz#0313d4752322b233b8993f22d3a153ccc94c86e7"
-  integrity sha512-z9EGO+qhlPtPK1wvHlmgb9ORwunGnQOFSiCZYMRwadV77F0TGvK/0yRZXCF9Lj8+w+3Bym2Nttwty9kNrcAMWA==
+ngx-semantic@^1.0.0-beta.5:
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.5.tgz#7bc193b8248fc3f9dbeef827916f337fef97b228"
+  integrity sha512-KBif2IGZ29m7NFc/KRy0XbGTBvkG9pTuimWIPr2vnxOukgVLu6yg2p2iXFL6bwjTBXkFxTAK1oZETtDG1SyFqQ==
   dependencies:
+    "@angular/cdk" ">=9.0.0"
     tslib ">=1.10.0"
 
 ngx-window-token@>=3.0.0:

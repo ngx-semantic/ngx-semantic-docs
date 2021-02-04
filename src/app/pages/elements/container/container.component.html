@@ -3,7 +3,7 @@
     subHeader="A container limits content to a maximum width"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
-    <h2 sui-header suiDividing="true">Types</h2>
+    <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample [content]="stdContainer" [code]="snippetStd">
       <h3 sui-header>Container</h3>
@@ -25,7 +25,7 @@
       <p>A container can reduce its maximum width to more naturally accomodate a single column of text</p>
 
       <ng-template #textContainer>
-        <div sui-container suiText="true">
+        <div sui-container suiText>
           <div sui-placeholder>
             <p suiPlaceholderLine></p>
             <p suiPlaceholderLine></p>
@@ -35,7 +35,7 @@
       </ng-template>
     </doc-code-sample>
 
-    <h2 sui-header suiDividing="true">Variations</h2>
+    <h2 sui-header suiDividing>Variations</h2>
 
     <doc-code-sample [content]="textAlignment" [code]="snippetAligned">
       <h3 sui-header>Text Alignment</h3>
@@ -68,7 +68,7 @@
 
       <ng-template #fluid>
         <div sui-container
-             suiFluid="true">
+             suiFluid>
           Domestic dogs inherited complex behaviors, such as bite inhibition, from their wolf ancestors, which would
           have been pack hunters with complex body language. These sophisticated forms of social cognition and
           communication may account for their trainability, playfulness, and ability to fit into human households and

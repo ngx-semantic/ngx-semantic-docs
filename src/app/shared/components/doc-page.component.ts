@@ -9,14 +9,14 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
   template: `
     <div class="masthead"
          sui-segment
-         suiVertical="true">
+         suiVertical>
       <div sui-container>
         <div sui-grid>
           <div suiGridColumn
                suiWidth="eight">
             <h1 sui-header>
               {{header}}
-              <div sui-sub-header>
+              <div suiSubHeader>
                 {{subHeader}}
               </div>
             </h1>
@@ -52,7 +52,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
         </div>
 
         <div sui-divider
-             suiHidden="true"></div>
+             suiHidden></div>
 
         <div sui-menu
              suiWidth="two"
@@ -85,7 +85,8 @@ export class DocPageComponent {
 
   private definitions = 'definitions';
   private api = 'api';
-  private currentView = this.definitions;
+  // private currentView = this.definitions;
+  private currentView = this.api;
 
   isApi(): boolean {
     return this.currentView === this.api;

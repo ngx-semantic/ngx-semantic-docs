@@ -2,7 +2,7 @@
 </doc-page>
 
 <div sui-container class="main">
-  <h2 sui-header suiDividing="true">Types</h2>
+  <h2 sui-header suiDividing>Types</h2>
   <br>
 
   <doc-code-sample [content]="msgStd" [code]="snippetBasic">
@@ -41,7 +41,7 @@
     <p>A message that the user can choose to hide</p>
 
     <ng-template #msgDissmisable>
-      <div sui-message [suiDismissable]="true">
+      <div sui-message [suiDismissable]>
         <div sui-message-header>
           Welcome back!
         </div>
@@ -52,7 +52,7 @@
 </div>
 
 <div sui-container class="main">
-  <h2 sui-header suiDividing="true">States</h2>
+  <h2 sui-header suiDividing>States</h2>
   <br>
 
   <doc-code-sample [content]="msgHidden" [code]="snippetHidden">
@@ -79,7 +79,7 @@
 </div>
 
 <div sui-container class="main">
-  <h2 sui-header suiDividing="true">Variations</h2>
+  <h2 sui-header suiDividing>Variations</h2>
   <br>
 
   <doc-code-sample [content]="msgFloating" [code]="snippetFloating">
@@ -154,7 +154,7 @@
     <p>A message may be formatted to display warning messages.</p>
 
     <ng-template #msgWarning>
-      <div sui-message suiColour='warning' [suiDismissable]="true">
+      <div sui-message suiColour='warning' [suiDismissable]>
         <div sui-message-header>
           You must register before you can do that!
         </div>
@@ -168,7 +168,7 @@
     <p>A message may be formatted to display information</p>
 
     <ng-template #msgInfo>
-      <div sui-message suiColour='info' [suiDismissable]="true">
+      <div sui-message suiColour='info' [suiDismissable]>
         <div sui-message-header>
           Was this what you wanted?
         </div>
@@ -182,7 +182,7 @@
     <p>A message may be formatted to display a positive message</p>
 
     <ng-template #msgSuccess>
-      <div sui-message suiColour='positive' [suiDismissable]="true">
+      <div sui-message suiColour='positive' [suiDismissable]>
         <div sui-message-header>
           You are eligible for a reward
         </div>
@@ -196,7 +196,7 @@
     <p>A message may be formatted to display a negative message</p>
 
     <ng-template #msgError>
-      <div sui-message suiColour='negative' [suiDismissable]="true">
+      <div sui-message suiColour='negative' [suiDismissable]>
         <div sui-message-header>
           We're sorry we can't apply that discount
         </div>

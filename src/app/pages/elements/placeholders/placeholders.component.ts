@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PlaceholdersComponent implements OnInit {
   snippetStdPlaceholder = `
   <div sui-placeholder>
-    <div sui-placeholder-image suiHeader="true">
+    <div sui-placeholder-image suiHeader>
       <div sui-placeholder-line></div>
       <div sui-placeholder-line></div>
     </div>
@@ -21,7 +21,7 @@ export class PlaceholdersComponent implements OnInit {
 
   snippetHeaderPlaceholder = `
   <div class="ui active placeholder">
-    <div sui-placeholder-image suiHeader="true">
+    <div sui-placeholder-image suiHeader>
       <div sui-placeholder-line></div>
       <div sui-placeholder-line></div>
     </div>
@@ -35,7 +35,7 @@ export class PlaceholdersComponent implements OnInit {
 
   snippetInvertedPlaceholder = `
   <div class="ui active inverted placeholder">
-    <div sui-placeholder-image suiHeader="true">
+    <div sui-placeholder-image suiHeader>
       <div sui-placeholder-line></div>
       <div sui-placeholder-line></div>
     </div>
