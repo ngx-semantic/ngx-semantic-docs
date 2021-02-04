@@ -12,10 +12,10 @@ export class FlagsComponent implements AfterViewChecked {
   isApiActive: boolean;
 
   snippetFlag = `
-  <i suiCountry="uae" sui-flag></i>
-  <i suiCountry="burkina faso" sui-flag></i>
-  <i suiCountry="czech republic" sui-flag></i>
-  <i suiCountry="nigeria" sui-flag></i>
+      <i sui-flag suiCountry="ae"></i>
+      <i sui-flag suiCountry="nigeria"></i>
+      <i sui-flag suiCountry="burkina faso"></i>
+      <i sui-flag suiCountry="czech republic"></i>
   `;
 
   constructor(title: Title, private highlighter: HighlightService) {

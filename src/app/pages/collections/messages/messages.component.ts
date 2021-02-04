@@ -15,7 +15,7 @@ export class MessagesComponent implements OnInit {
     </div>
   `;
   snippetDismissable = `
-  <div sui-message [suiDismissable]>
+  <div sui-message [suiDismissible]>
     <div sui-message-header>
       Welcome back!
     </div>
@@ -100,7 +100,7 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippettWarning = `
-  <div sui-message suiColour='warning' [suiDismissable]>
+  <div sui-message suiColour='warning' [suiDismissible]>
     <div sui-message-header>
       You must register before you can do that!
     </div>
@@ -109,7 +109,7 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippetInfo = `
-  <div sui-message suiColour='info' [suiDismissable]>
+  <div sui-message suiColour='info' [suiDismissible]>
     <div sui-message-header>
       Was this what you wanted?
     </div>
@@ -118,7 +118,7 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippetSuccess = `
-  <div sui-message suiColour='positive' [suiDismissable]>
+  <div sui-message suiColour='positive' [suiDismissible]>
     <div sui-message-header>
     You are eligible for a reward
     </div>
@@ -127,7 +127,7 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippetError = `
-  <div sui-message suiColour='negative' [suiDismissable]>
+  <div sui-message suiColour='negative' [suiDismissible]>
     <div sui-message-header>
     We're sorry we can't apply that discount
     </div>
