@@ -1,4 +1,13 @@
+<doc-page
+    header="Flags"
+    subHeader="A button indicates a possible user action"
+    (pageChanged)="tabChanged($event)">
+  <ng-container *ngIf="isDefinitionsActive">
+  </ng-container>
 
+  <ng-container *ngIf="isApiActive">
+  </ng-container>
+</doc-page>
 
 <div class="ui masthead vertical segment">
   <div class="ui container">
