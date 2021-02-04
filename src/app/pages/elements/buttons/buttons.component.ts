@@ -8,10 +8,8 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./buttons.component.scss'],
 })
 export class ButtonsComponent implements AfterViewChecked {
-  // isDefinitionsActive = true;
-  // isApiActive: boolean;
-  isDefinitionsActive: boolean;
-  isApiActive = true;
+  isDefinitionsActive = true;
+  isApiActive: boolean;
 
   snippetBtn = `
   <button sui-button>
@@ -81,7 +79,7 @@ export class ButtonsComponent implements AfterViewChecked {
          suiIconType="heart"></i> Like
     </div>
     <a sui-label
-       suiBasic="true">
+       suiBasic>
       2,048
     </a>
   </div>
@@ -89,7 +87,7 @@ export class ButtonsComponent implements AfterViewChecked {
        suiLabeled="left labeled"
        tabindex="0">
     <a sui-label
-       suiBasic="true"
+       suiBasic
        suiPointing="right">
       2,048
     </a>
@@ -100,11 +98,11 @@ export class ButtonsComponent implements AfterViewChecked {
   </div>
   <div class="ui left labeled button" tabindex="0">
     <a sui-label
-       suiBasic="true">
+       suiBasic>
       1,048
     </a>
     <div sui-button
-         suiIcon="true">
+         suiIcon>
       <i sui-icon
          suiIconType="fork"></i>
     </div>
@@ -121,7 +119,7 @@ export class ButtonsComponent implements AfterViewChecked {
     </div>
     <a sui-label
        suiColour="red"
-       suiBasic="true"
+       suiBasic
        suiPointing="left">
       1,048
     </a>
@@ -130,14 +128,14 @@ export class ButtonsComponent implements AfterViewChecked {
        suiLabeled="labeled"
        tabindex="0">
     <div sui-button
-         suiBasic="true"
+         suiBasic
          suiColour="blue">
       <i sui-icon
          suiIconType="fork"></i> Fork
     </div>
     <a sui-label
        suiColour="blue"
-       suiBasic="true"
+       suiBasic
        suiPointing="left">
       1,048
     </a>
@@ -145,21 +143,21 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnIcon = `
    <button sui-button
-          suiIcon="true">
+          suiIcon>
     <i sui-icon
        suiIconType="cloud"></i>
   </button>`;
 
   snippetBtnLabeledIcon = `
  <button sui-button
-          suiIcon="true"
+          suiIcon
           suiLabeled="labeled">
     <i sui-icon
        suiIconType="pause"></i>
     Pause
   </button>
   <button sui-button
-          suiIcon="true"
+          suiIcon
           suiLabeled="right labeled">
     <i sui-icon
        suiIconType="right arrow"></i>
@@ -168,7 +166,7 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnBasic = `
    <button sui-button
-          suiBasic="true">
+          suiBasic>
     <i sui-icon
        suiIconType="user"></i>
     Add Friend
@@ -176,255 +174,255 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnBasicEmphasis = `
    <button sui-button
-          suiBasic="true"
+          suiBasic
           suiEmphasis="primary">
     Primary
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiEmphasis="secondary">
     Secondary
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiEmphasis="positive">
     Positive
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiEmphasis="negative">
     Negative
   </button>`;
 
   snippetBtnBasicColours = `
    <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="red">
     Red
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="orange">
     Orange
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="yellow">
     Yellow
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="olive">
     Olive
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="green">
     Green
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="teal">
     Teal
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="blue">
     Blue
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="violet">
     Violet
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="purple">
     Purple
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="pink">
     Pink
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="brown">
     Brown
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="grey">
     Grey
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="black">
     Black
   </button>`;
 
   snippetBtnInverted = `
    <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="red">
     Red
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="orange">
     Orange
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="yellow">
     Yellow
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="olive">
     Olive
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="green">
     Green
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="teal">
     Teal
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="blue">
     Blue
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="violet">
     Violet
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="purple">
     Purple
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="pink">
     Pink
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="brown">
     Brown
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="grey">
     Grey
   </button>
   <button sui-button
-          suiBasic="true"
+          suiBasic
           suiColour="black">
     Black
   </button>`;
 
   snippetBtnInvertedBasic = `
   <div sui-segment
-       suiInverted="true">
+       suiInverted>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true">
+            suiBasic
+            suiInverted>
       Basic
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiEmphasis="primary">
       Primary
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiEmphasis="secondary">
       Secondary
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="red">
       Basic Red
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="orange">
       Basic Orange
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="yellow">
       Basic Yellow
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="olive">
       Basic Olive
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="green">
       Basic Green
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="teal">
       Basic Teal
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="blue">
       Basic Blue
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="violet">
       Basic Violet
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="purple">
       Basic Purple
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="pink">
       Basic Pink
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="brown">
       Basic Brown
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="grey">
       Basic Grey
     </button>
     <button sui-button
-            suiBasic="true"
-            suiInverted="true"
+            suiBasic
+            suiInverted
             suiColour="black">
       Basic Black
     </button>
@@ -495,7 +493,7 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnActive = `
   <button sui-button
-          suiActive="true">
+          suiActive>
     <i sui-icon
        suiIconType="user"></i>
     Follow
@@ -503,7 +501,7 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnDisabled = `
   <button sui-button
-          suiDisabled="true">
+          suiDisabled>
     <i sui-icon
        suiIconType="user"></i>
     Followed
@@ -511,21 +509,21 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnLoading = `
   <button sui-button
-          suiLoading="true">
+          suiLoading>
     Loading
   </button>
   <button sui-button
-          suiLoading="true"
-          suiBasic="true">
+          suiLoading
+          suiBasic>
     Loading
   </button>
   <button sui-button
-          suiLoading="true"
+          suiLoading
           suiEmphasis="primary">
     Loading
   </button>
   <button sui-button
-          suiLoading="true"
+          suiLoading
           suiEmphasis="secondary">
     Loading
   </button>`;
@@ -674,16 +672,16 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnCompact = `
   <button sui-button
-          suiCompact="true">
+          suiCompact>
     Hold
   </button>
   <button sui-button
-          suiCompact="true">
+          suiCompact>
     <i sui-icon
        suiIconType="pause"></i>
   </button>
   <button sui-button
-          suiCompact="true">
+          suiCompact>
     <i sui-icon
        suiIconType="pause"></i>
     Pause
@@ -691,7 +689,7 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnToggle = `
   <button sui-button
-          suiToggle="true">
+          suiToggle>
     Toggle
   </button>`;
 
@@ -709,43 +707,43 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnFluid = `
    <button sui-button
-          suiFluid="true">
+          suiFluid>
     Fits container
   </button>`;
 
   snippetBtnCircular = `
    <button sui-button
-          suiIcon="true"
-          suiCircular="true">
+          suiIcon
+          suiCircular>
     <i sui-icon
        suiIconType="settings"></i>
   </button>`;
 
   snippetBtnCircularIcons = `
    <button sui-button
-          suiIcon="true"
-          suiCircular="true"
+          suiIcon
+          suiCircular
           suiSocial="facebook">
     <i sui-icon
        suiIconType="facebook"></i>
   </button>
   <button sui-button
-          suiIcon="true"
-          suiCircular="true"
+          suiIcon
+          suiCircular
           suiSocial="twitter">
     <i sui-icon
        suiIconType="twitter"></i>
   </button>
   <button sui-button
-          suiIcon="true"
-          suiCircular="true"
+          suiIcon
+          suiCircular
           suiSocial="linkedin">
     <i sui-icon
        suiIconType="linkedin"></i>
   </button>
   <button sui-button
-          suiIcon="true"
-          suiCircular="true"
+          suiIcon
+          suiCircular
           suiSocial="google">
     <i sui-icon
        suiIconType="google"></i>
@@ -807,7 +805,7 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnGroupVertical = `
   <div sui-buttons
-       suiVertical="true">
+       suiVertical>
     <button sui-button>
       Feed
     </button>
@@ -842,7 +840,7 @@ export class ButtonsComponent implements AfterViewChecked {
   snippetBtnGroupLabeledIcons = `
    <div sui-buttons
        suiIcon="labeled icon"
-       suiVertical="true">
+       suiVertical>
     <button sui-button>
       <i sui-icon
          suiIconType="pause"></i>
@@ -864,7 +862,7 @@ export class ButtonsComponent implements AfterViewChecked {
   <div sui-buttons>
     <button sui-button
             suiLabeled="labeled"
-            suiIcon="true">
+            suiIcon>
       <i sui-icon
          suiIconType="left chevron"></i>
       Back
@@ -876,7 +874,7 @@ export class ButtonsComponent implements AfterViewChecked {
     </button>
     <button sui-button
             suiLabeled="right labeled"
-            suiIcon="true">
+            suiIcon>
       Forward
       <i sui-icon
          suiIconType="right chevron"></i>
@@ -909,15 +907,15 @@ export class ButtonsComponent implements AfterViewChecked {
 
   snippetBtnGroupBasic = `
   <div sui-buttons
-       suiBasic="true">
+       suiBasic>
     <button sui-button>One</button>
     <button sui-button>Two</button>
     <button sui-button>Three</button>
   </div>
   <div sui-divider></div>
   <div sui-buttons
-       suiBasic="true"
-       suiVertical="true">
+       suiBasic
+       suiVertical>
     <button sui-button>One</button>
     <button sui-button>Two</button>
     <button sui-button>Three</button>
@@ -926,17 +924,17 @@ export class ButtonsComponent implements AfterViewChecked {
   snippetBtnGroupBasicColoured = `
   <div sui-buttons>
     <button sui-button
-            suiBasic="true"
+            suiBasic
             suiColour="red">
       One
     </button>
     <button sui-button
-            suiBasic="true"
+            suiBasic
             suiColour="blue">
       Two
     </button>
     <button sui-button
-            suiBasic="true"
+            suiBasic
             suiColour="green">
       Three
     </button>
@@ -960,7 +958,7 @@ export class ButtonsComponent implements AfterViewChecked {
    <div sui-buttons
        suiSize="small"
        suiIcon="icon"
-       suiBasic="true">
+       suiBasic>
     <button sui-button>
       <i sui-icon
          suiIconType="file"></i>

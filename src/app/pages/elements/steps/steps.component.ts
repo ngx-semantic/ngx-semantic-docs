@@ -26,7 +26,7 @@ export class StepsComponent implements OnInit {
       </div>
       <div sui-step
            suiIcon="payment"
-           [suiActive]="true"
+           suiActive="true"
            [suiContent]="paymentContent">
         <ng-template #paymentContent>
           <div class="title">Billing</div>
