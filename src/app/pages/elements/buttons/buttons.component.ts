@@ -8,8 +8,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./buttons.component.scss'],
 })
 export class ButtonsComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
+  // isDefinitionsActive = true;
+  // isApiActive: boolean;
+  isDefinitionsActive: boolean;
+  isApiActive = true;
 
   snippetBtn = `
   <button sui-button>

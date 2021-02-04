@@ -85,7 +85,8 @@ export class DocPageComponent {
 
   private definitions = 'definitions';
   private api = 'api';
-  private currentView = this.definitions;
+  // private currentView = this.definitions;
+  private currentView = this.api;
 
   isApi(): boolean {
     return this.currentView === this.api;
