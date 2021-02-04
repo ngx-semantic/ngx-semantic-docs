@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {HighlightService} from "../../../shared/services/highlight.service";
 
@@ -8,10 +8,8 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./flags.component.scss']
 })
 export class FlagsComponent implements AfterViewChecked {
-  // isDefinitionsActive = true;
-  // isApiActive: boolean;
-  isDefinitionsActive:boolean;
-  isApiActive = true;
+  isDefinitionsActive = true;
+  isApiActive: boolean;
 
   snippetFlag = `
       <i sui-flag suiCountry="ae"></i>
