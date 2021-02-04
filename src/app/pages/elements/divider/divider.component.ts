@@ -40,17 +40,17 @@ export class DividerComponent {
 
   snippetVerticalForm = `
   <div sui-segment
-       suiPlaceholder="true">
+       suiPlaceholder>
     <div sui-grid
          suiWidth="two"
-         suiStackable="true"
+         suiStackable
          suiRelaxation="very relaxed">
       <div suiGridColumn>
         <div sui-form>
           <div suiFormField>
             <label>Username</label>
             <div sui-input
-                 suiIcon="true">
+                 suiIcon>
               <input type="text" placeholder="Username">
               <i sui-icon
                  suiIconType="user"></i>
@@ -59,7 +59,7 @@ export class DividerComponent {
           <div suiFormField>
             <label>Password</label>
             <div sui-input
-                 suiIcon="true">
+                 suiIcon>
               <input type="password">
               <i sui-icon
                  suiIconType="lock"></i>
@@ -89,9 +89,9 @@ export class DividerComponent {
   snippetHorizontal = `
   <div sui-segment
        suiTextAlignment="center aligned"
-       suiBasic="true">
+       suiBasic>
     <div sui-input
-         suiIcon="true"
+         suiIcon
          suiAction="left action">
       <i sui-icon
          suiIconType="search"></i>
@@ -108,7 +108,7 @@ export class DividerComponent {
     <div sui-button
          suiColour="teal"
          suiLabeled="labeled"
-         suiIcon="true">
+         suiIcon>
       Create New Order
       <i sui-icon
          suiIconType="add"></i>
@@ -117,7 +117,7 @@ export class DividerComponent {
 
   snippetHorizontalTable = `
   <h4 sui-divider
-        suiHeader="true"
+        suiHeader
         suiDirection="horizontal">
       <i sui-icon
          suiIconType="tag"></i>
@@ -125,7 +125,7 @@ export class DividerComponent {
     </h4>
     <p>Doggie treats are good for all times of the year. Proven to be eaten by 99.9% of all dogs worldwide.</p>
     <h4 sui-divider
-        suiHeader="true"
+        suiHeader
         suiDirection="horizontal">
       <i sui-icon
          suiIconType="bar chart"></i>
@@ -154,14 +154,14 @@ export class DividerComponent {
 
   snippetDividerInverted = `
   <div sui-segment
-       suiInverted="true">
+       suiInverted>
     <div sui-placeholder>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
     </div>
     <div sui-divider
-         suiInverted="true">
+         suiInverted>
     </div>
     <div sui-placeholder>
       <p suiPlaceholderLine></p>
@@ -169,7 +169,7 @@ export class DividerComponent {
       <p suiPlaceholderLine></p>
     </div>
     <div sui-divider
-         suiInverted="true"
+         suiInverted
          suiDirection="horizontal">
       Horizontal
     </div>
@@ -180,7 +180,7 @@ export class DividerComponent {
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
     malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
     <div sui-divider
-         suiFitted="true">
+         suiFitted>
     </div>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
     malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
@@ -195,7 +195,7 @@ export class DividerComponent {
       <p suiPlaceholderLine></p>
     </div>
     <div sui-divider
-         suiHidden="true">
+         suiHidden>
     </div>
     <h3 sui-header>Section Two</h3>
     <div sui-placeholder>
@@ -214,7 +214,7 @@ export class DividerComponent {
       <p suiPlaceholderLine></p>
     </div>
     <div sui-divider
-         suiSection="true">
+         suiSection>
     </div>
     <h3 sui-header>Section Two</h3>
     <div sui-placeholder>
@@ -229,7 +229,7 @@ export class DividerComponent {
     <h1 sui-header
         suiFloated="right floated">Floated Content</h1>
     <div sui-divider
-         suiClearing="true"></div>
+         suiClearing></div>
     <div sui-placeholder>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>

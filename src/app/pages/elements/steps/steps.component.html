@@ -1,5 +1,5 @@
 <div class="main ui container">
-  <h2 sui-header suiDividing="true">Types</h2>
+  <h2 sui-header suiDividing>Types</h2>
 
   <doc-code-sample
     [content]="singleStep"
@@ -16,7 +16,7 @@
     </ng-template>
   </doc-code-sample>
 
-  <h2 sui-header suiDividing="true">Groups</h2>
+  <h2 sui-header suiDividing>Groups</h2>
 
   <doc-code-sample
     [content]="multiStep"
@@ -36,7 +36,7 @@
         </div>
         <div sui-step
              suiIcon="payment"
-             [suiActive]="true"
+             [suiActive]
              [suiContent]="paymentContent">
           <ng-template #paymentContent>
             <div class="title">Billing</div>
@@ -45,7 +45,7 @@
         </div>
         <div sui-step
              suiIcon="info"
-             [suiDisabled]="true"
+             [suiDisabled]
              [suiContent]="orderContent">
           <ng-template #orderContent>
             <div class="title">Confirm Order</div>

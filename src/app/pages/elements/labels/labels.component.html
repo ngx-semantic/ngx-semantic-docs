@@ -33,7 +33,7 @@
 <br>
 
 <div class="main ui container">
-  <h2 sui-header suiDividing="true">Types</h2>
+  <h2 sui-header suiDividing>Types</h2>
   <br>
 
   <doc-code-sample [content]="stdLabel" [code]="snippetStd">
@@ -190,7 +190,7 @@
     <ng-template #cornerLabel>
       <div sui-grid suiGridColumn suiWidth="two" class="two">
         <div class="column">
-          <div sui-image suiFluid="true">
+          <div sui-image suiFluid>
             <a sui-label suiCorner='left'>
               <i sui-icon suiIconType="heart icon"></i>
             </a>
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="column">
-          <div sui-image suiFluid="true">
+          <div sui-image suiFluid>
             <a sui-label suiCorner='right' suiColour='red'>
               <i sui-icon suiIconType="save icon"></i>
             </a>
@@ -227,7 +227,7 @@
     <ng-template #ribbonLabel>
       <div sui-grid suiGridColumn suiWidth="two" class="two">
         <div suiGridColumn>
-          <div sui-segment suiRaised="true">
+          <div sui-segment suiRaised>
             <a suiColour="red" sui-label suiRibbon="left">Overview</a>
             <span>Account Details</span>
             <div sui-placeholder>
@@ -273,7 +273,7 @@
     <ng-template #ribbonLabel2>
       <div sui-grid suiGridColumn suiWidth="two" class="two">
         <div suiGridColumn>
-          <div sui-image suiFluid="true">
+          <div sui-image suiFluid>
             <div suiColour="black" sui-label suiRibbon="left">
               <i sui-icon suiIconType="hotel icon"></i> Hotel
             </div>
@@ -281,7 +281,7 @@
           </div>
         </div>
         <div suiGridColumn>
-          <div sui-image suiFluid="true">
+          <div sui-image suiFluid>
             <div suiColour="blue" sui-label suiRibbon="left">
               <i sui-icon suiIconType="spoon icon"></i> Food
             </div>
@@ -401,21 +401,21 @@
     <p>A horizontal label is formatted to label content along-side it horizontally</p>
 
     <ng-template #horizontalLabel>
-      <div sui-list suiDivided="true" suiSelection="true">
+      <div sui-list suiDivided suiSelection>
         <a class="item">
-          <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+          <div sui-label suiColour="red" suiHorizontal>Fruit</div>
           Kumquats
         </a>
         <a class="item">
-          <div sui-label suiColour="purple" suiHorizontal="true">Candy</div>
+          <div sui-label suiColour="purple" suiHorizontal>Candy</div>
           Ice Cream
         </a>
         <a class="item">
-          <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+          <div sui-label suiColour="red" suiHorizontal>Fruit</div>
           Orange
         </a>
         <a class="item">
-          <div sui-label suiHorizontal="true">Dog</div>
+          <div sui-label suiHorizontal>Dog</div>
           Poodle
         </a>
       </div>
@@ -427,21 +427,21 @@
     <p>A label can float above another element.</p>
 
     <ng-template #floatingLabel>
-      <div sui-menu suiCompact="true">
+      <div sui-menu suiCompact>
         <a class="item">
           <i sui-icon suiIconType="mail icon"></i> Messages
-          <div suiColour="red" sui-label suiFloating="true">22</div>
+          <div suiColour="red" sui-label suiFloating>22</div>
         </a>
         <a class="item">
           <i sui-icon suiIconType="users icon"></i> Friends
-          <div suiColour="teal" sui-label suiFloating="true">22</div>
+          <div suiColour="teal" sui-label suiFloating>22</div>
         </a>
       </div>
     </ng-template>
   </doc-code-sample>
 
   <br>
-  <h2 sui-header suiDividing="true">Content</h2>
+  <h2 sui-header suiDividing>Content</h2>
   <br>
 
   <doc-code-sample [content]="detailLabel" [code]="snippetDetail">
@@ -450,7 +450,7 @@
 
     <ng-template #detailLabel>
       <div sui-label> Dogs
-        <div suiDetail="true" class="detail">214</div>
+        <div suiDetail class="detail">214</div>
       </div>
     </ng-template>
   </doc-code-sample>
@@ -492,68 +492,68 @@
       </div>
       <div sui-label>
         <i sui-icon suiIconType="mail icon"></i> 23
-        <a suiDetail="true" class="detail">View Mail</a>
+        <a suiDetail class="detail">View Mail</a>
       </div>
     </ng-template>
   </doc-code-sample>
 
   <br>
-  <h2 sui-header suiDividing="true">Variations</h2>
+  <h2 sui-header suiDividing>Variations</h2>
   <br>
-  
+
     <doc-code-sample [content]="labelCircular" [code]="snippetCircular">
       <h3 sui-header>Circular</h3>
       <p>A label can be circular</p>
-  
+
       <ng-template #labelCircular>
-        <a sui-label suiColour="red" suiCircular="true">1</a>
-        <a sui-label suiColour="orange" suiCircular="true">2</a>
-        <a sui-label suiColour="yellow" suiCircular="true">3</a>
-        <a sui-label suiColour="olive" suiCircular="true">4</a>
-        <a sui-label suiColour="green" suiCircular="true">5</a>
-        <a sui-label suiColour="teal" suiCircular="true">6</a>
-        <a sui-label suiColour="blue" suiCircular="true">7</a>
-        <a sui-label suiColour="violet" suiCircular="true">8</a>
-        <a sui-label suiColour="purple" suiCircular="true">9</a>
-        <a sui-label suiColour="pink" suiCircular="true">10</a>
-        <a sui-label suiColour="brown" suiCircular="true">11</a>
-        <a sui-label suiColour="grey" suiCircular="true">12</a>
-        <a sui-label suiColour="black" suiCircular="true">13</a>
+        <a sui-label suiColour="red" suiCircular>1</a>
+        <a sui-label suiColour="orange" suiCircular>2</a>
+        <a sui-label suiColour="yellow" suiCircular>3</a>
+        <a sui-label suiColour="olive" suiCircular>4</a>
+        <a sui-label suiColour="green" suiCircular>5</a>
+        <a sui-label suiColour="teal" suiCircular>6</a>
+        <a sui-label suiColour="blue" suiCircular>7</a>
+        <a sui-label suiColour="violet" suiCircular>8</a>
+        <a sui-label suiColour="purple" suiCircular>9</a>
+        <a sui-label suiColour="pink" suiCircular>10</a>
+        <a sui-label suiColour="brown" suiCircular>11</a>
+        <a sui-label suiColour="grey" suiCircular>12</a>
+        <a sui-label suiColour="black" suiCircular>13</a>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample [content]="labelColoredEmpty" [code]="snippetColoredEmpty">
 
       <ng-template #labelColoredEmpty>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="red"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="orange"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="yellow"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="olive"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="green"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="teal"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="blue"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="violet"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="purple"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="pink"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="brown"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="grey"></a>
-        <a sui-label suiEmpty="true" suiCircular="true" suiColour="black"></a>
+        <a sui-label suiEmpty suiCircular suiColour="red"></a>
+        <a sui-label suiEmpty suiCircular suiColour="orange"></a>
+        <a sui-label suiEmpty suiCircular suiColour="yellow"></a>
+        <a sui-label suiEmpty suiCircular suiColour="olive"></a>
+        <a sui-label suiEmpty suiCircular suiColour="green"></a>
+        <a sui-label suiEmpty suiCircular suiColour="teal"></a>
+        <a sui-label suiEmpty suiCircular suiColour="blue"></a>
+        <a sui-label suiEmpty suiCircular suiColour="violet"></a>
+        <a sui-label suiEmpty suiCircular suiColour="purple"></a>
+        <a sui-label suiEmpty suiCircular suiColour="pink"></a>
+        <a sui-label suiEmpty suiCircular suiColour="brown"></a>
+        <a sui-label suiEmpty suiCircular suiColour="grey"></a>
+        <a sui-label suiEmpty suiCircular suiColour="black"></a>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample [content]="labelBasic" [code]="snippetBasic">
       <h3 sui-header>Basic</h3>
       <p>A label can reduce its complexity</p>
-  
+
       <ng-template #labelBasic>
-        <a sui-label suiBasic="true">Basic</a>
-        <a sui-label suiBasic="true" suiPointing="true">Pointing</a>
-        <a sui-label suiImage="true" suiBasic="true">
+        <a sui-label suiBasic>Basic</a>
+        <a sui-label suiBasic suiPointing>Pointing</a>
+        <a sui-label suiImage suiBasic>
           <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
           Elliot
         </a>
-        <a sui-label suiBasic="true" suiPointing="true" suiColour="red">Red Pointing</a>
-        <a sui-label suiBasic="true" suiColour="blue">Blue</a>
+        <a sui-label suiBasic suiPointing suiColour="red">Red Pointing</a>
+        <a sui-label suiBasic suiColour="blue">Blue</a>
       </ng-template>
     </doc-code-sample>
 
@@ -595,13 +595,13 @@
   </doc-code-sample>
 
   <br>
-  <h2 sui-header suiDividing="true">Groups</h2>
+  <h2 sui-header suiDividing>Groups</h2>
   <br>
-  
+
   <doc-code-sample [content]="labelGroupSize" [code]="snippetGroupSize">
     <h3 sui-header>Group Size</h3>
     <p>Labels can share sizes together</p>
-    
+
     <ng-template #labelGroupSize>
       <div sui-labels suiSize="huge">
         <div sui-label>
@@ -619,11 +619,11 @@
       </div>
     </ng-template>
   </doc-code-sample>
-  
+
     <doc-code-sample [content]="labelGroupColour" [code]="snippetGroupColour">
       <h3 sui-header>Coloured Group</h3>
       <p>Labels can share colors together</p>
-  
+
       <ng-template #labelGroupColour>
         <div sui-labels suiColour="blue">
           <div sui-label>
@@ -632,7 +632,7 @@
           </div>
           <div sui-label>
             Happy
-            <a suiDetail="true">22</a>
+            <a suiDetail>22</a>
           </div>
           <div sui-label>
             Smart
@@ -643,13 +643,13 @@
         </div>
       </ng-template>
     </doc-code-sample>
-  
+
     <doc-code-sample [content]="labelGroupTag" [code]="snippetGroupTag">
       <h3 sui-header>Tag Group</h3>
       <p>Labels can share tag formatting</p>
-  
+
       <ng-template #labelGroupTag>
-        <div sui-labels suiTag="true">
+        <div sui-labels suiTag>
           <a sui-label>
             $10.00
           </a>
@@ -668,13 +668,13 @@
         </div>
       </ng-template>
     </doc-code-sample>
-  
+
     <doc-code-sample [content]="labelGroupCircular" [code]="snippetGroupCircular">
       <h3 sui-header>Circular Group</h3>
       <p>Labels can share shapes</p>
-  
+
       <ng-template #labelGroupCircular>
-        <div sui-labels suiCircular="true">
+        <div sui-labels suiCircular>
           <a sui-label>
             11
           </a>

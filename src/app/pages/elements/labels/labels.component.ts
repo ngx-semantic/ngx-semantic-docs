@@ -131,7 +131,7 @@ export class LabelsComponent implements OnInit {
   snippetCorner = `
   <div sui-grid suiGridColumn suiWidth="two">
     <div class="column">
-      <div sui-image suiFluid="true">
+      <div sui-image suiFluid>
         <a sui-label suiCorner='left'>
           <i sui-icon suiIconType="heart icon"></i>
         </a>
@@ -139,7 +139,7 @@ export class LabelsComponent implements OnInit {
       </div>
     </div>
     <div class="column">
-      <div sui-image suiFluid="true">
+      <div sui-image suiFluid>
         <a sui-label suiCorner='right' suiColour='red'>
           <i sui-icon suiIconType="save icon"></i>
         </a>
@@ -158,7 +158,7 @@ export class LabelsComponent implements OnInit {
   snippetRibbon = `
     <div sui-grid suiGridColumn suiWidth="two">
       <div suiGridColumn>
-        <div sui-segment suiRaised="true">
+        <div sui-segment suiRaised>
           <a suiColour="red" sui-label suiRibbon="left">Overview</a>
           <span>Account Details</span>
           <div sui-placeholder>
@@ -201,7 +201,7 @@ export class LabelsComponent implements OnInit {
   snippetRibbon2 = `
   <div sui-grid suiGridColumn suiWidth="two">
     <div suiGridColumn>
-      <div sui-image suiFluid="true">
+      <div sui-image suiFluid>
         <div suiColour="black" sui-label suiRibbon="left">
           <i sui-icon suiIconType="hotel icon"></i> Hotel
         </div>
@@ -209,7 +209,7 @@ export class LabelsComponent implements OnInit {
       </div>
     </div>
     <div suiGridColumn>
-      <div sui-image suiFluid="true">
+      <div sui-image suiFluid>
         <div suiColour="blue" sui-label suiRibbon="left">
           <i sui-icon suiIconType="spoon icon"></i> Food
         </div>
@@ -317,42 +317,42 @@ export class LabelsComponent implements OnInit {
   `;
 
   snippetHorizontal = `
-  <div sui-list suiDivided="true" suiSelection="true">
+  <div sui-list suiDivided suiSelection>
     <a class="item">
-      <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+      <div sui-label suiColour="red" suiHorizontal>Fruit</div>
       Kumquats
     </a>
     <a class="item">
-      <div sui-label suiColour="purple" suiHorizontal="true">Candy</div>
+      <div sui-label suiColour="purple" suiHorizontal>Candy</div>
       Ice Cream
     </a>
     <a class="item">
-      <div sui-label suiColour="red" suiHorizontal="true">Fruit</div>
+      <div sui-label suiColour="red" suiHorizontal>Fruit</div>
       Orange
     </a>
     <a class="item">
-      <div sui-label suiHorizontal="true">Dog</div>
+      <div sui-label suiHorizontal>Dog</div>
       Poodle
     </a>
   </div>
   `;
 
   snippetFloating = `
-  <div sui-menu suiCompact="true">
+  <div sui-menu suiCompact>
     <a class="item">
       <i sui-icon suiIconType="mail icon"></i> Messages
-      <div suiColour="red" sui-label suiFloating="true">22</div>
+      <div suiColour="red" sui-label suiFloating>22</div>
     </a>
     <a class="item">
       <i sui-icon suiIconType="users icon"></i> Friends
-      <div suiColour="teal" sui-label suiFloating="true">22</div>
+      <div suiColour="teal" sui-label suiFloating>22</div>
     </a>
   </div>
   `;
 
   snippetDetail = `
   <div sui-label> Dogs
-    <div suiDetail="true">214</div>
+    <div suiDetail>214</div>
   </div>
   `;
 
@@ -379,7 +379,7 @@ export class LabelsComponent implements OnInit {
 </div>
 <div sui-label>
   <i sui-icon suiIconType="mail icon"></i> 23
-  <a suiDetail="true">View Mail</a>
+  <a suiDetail>View Mail</a>
 </div>
   `;
 
@@ -391,30 +391,30 @@ export class LabelsComponent implements OnInit {
   `;
 
   snippetColoredEmpty = `
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="orange"></a>
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="yellow"></a>
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="olive"></a>
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="green"></a>
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="teal"></a>
-<a sui-label suiEmpty="true" suiCircular="true" suiColour="blue"></a>
+<a sui-label suiEmpty suiCircular suiColour="orange"></a>
+<a sui-label suiEmpty suiCircular suiColour="yellow"></a>
+<a sui-label suiEmpty suiCircular suiColour="olive"></a>
+<a sui-label suiEmpty suiCircular suiColour="green"></a>
+<a sui-label suiEmpty suiCircular suiColour="teal"></a>
+<a sui-label suiEmpty suiCircular suiColour="blue"></a>
   `;
 
   snippetBasic = `
-<a sui-label suiBasic="true">Basic</a>
-<a sui-label suiBasic="true" suiPointing="true">Pointing</a>
-<a sui-label suiImage="true" suiBasic="true">
+<a sui-label suiBasic>Basic</a>
+<a sui-label suiBasic suiPointing>Pointing</a>
+<a sui-label suiImage suiBasic>
   <img src="/images/avatar/small/elliot.jpg">
   Elliot
 </a>
-<a sui-label suiBasic="true" suiPointing="true" suiColour="red">Red Pointing</a>
-<a sui-label suiBasic="true" suiColour="blue">Blue</a>
+<a sui-label suiBasic suiPointing suiColour="red">Red Pointing</a>
+<a sui-label suiBasic suiColour="blue">Blue</a>
   `;
 
   snippetCircular = `
-  <a sui-label suiColour="red" suiCircular="true">2</a>
-  <a sui-label suiColour="orange" suiCircular="true">2</a>
-  <a sui-label suiColour="yellow" suiCircular="true">2</a>
-  <a sui-label suiColour="olive" suiCircular="true">2</a>
+  <a sui-label suiColour="red" suiCircular>2</a>
+  <a sui-label suiColour="orange" suiCircular>2</a>
+  <a sui-label suiColour="yellow" suiCircular>2</a>
+  <a sui-label suiColour="olive" suiCircular>2</a>
   `;
 
   snippetSize = `
@@ -453,7 +453,7 @@ export class LabelsComponent implements OnInit {
   </div>
   <div sui-label>
     Happy
-    <a suiDetail="true">22</a>
+    <a suiDetail>22</a>
   </div>
   <div sui-label>
     Smart
@@ -465,7 +465,7 @@ export class LabelsComponent implements OnInit {
   `;
 
   snippetGroupTag = `
-<div sui-labels suiTag="true">
+<div sui-labels suiTag>
   <a sui-label>
     $10.00
   </a>
@@ -485,7 +485,7 @@ export class LabelsComponent implements OnInit {
   `;
 
   snippetGroupCircular = `
-  <div sui-labels suiCircular="true">
+  <div sui-labels suiCircular>
     <a sui-label>
       11
     </a>

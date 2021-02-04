@@ -8,18 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class HeadersComponent implements OnInit {
   snippetColored = `
   <div class="ui segment">
-    <h4 sui-header suiColour="red" suiInverted="true">Red</h4>
-    <h4 sui-header suiColour="orange" suiInverted="true">Orange</h4>
-    <h4 sui-header suiColour="yellow" suiInverted="true">Yellow</h4>
-    <h4 sui-header suiColour="olive" suiInverted="true">Olive</h4>
+    <h4 sui-header suiColour="red" suiInverted>Red</h4>
+    <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
+    <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
+    <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
   </div>
   `;
   snippetInverted = `
   <div class="ui inverted segment">
-    <h4 sui-header suiColour="teal" suiInverted="true">Teal</h4>
-    <h4 sui-header suiColour="blue" suiInverted="true">Blue</h4>
-    <h4 sui-header suiColour="purple" suiInverted="true">Purple</h4>
-    <h4 sui-header suiColour="violet" suiInverted="true">Violet</h4>
+    <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
+    <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
+    <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
+    <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
   </div>
   `;
 

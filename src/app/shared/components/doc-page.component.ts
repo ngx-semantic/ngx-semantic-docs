@@ -9,7 +9,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
   template: `
     <div class="masthead"
          sui-segment
-         suiVertical="true">
+         suiVertical>
       <div sui-container>
         <div sui-grid>
           <div suiGridColumn
@@ -52,7 +52,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
         </div>
 
         <div sui-divider
-             suiHidden="true"></div>
+             suiHidden></div>
 
         <div sui-menu
              suiWidth="two"
