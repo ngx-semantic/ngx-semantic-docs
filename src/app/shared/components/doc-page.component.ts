@@ -16,7 +16,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
                suiWidth="eight">
             <h1 sui-header>
               {{header}}
-              <div sui-sub-header>
+              <div suiSubHeader>
                 {{subHeader}}
               </div>
             </h1>
