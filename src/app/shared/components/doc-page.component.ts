@@ -23,25 +23,32 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
           </div>
           <div suiGridColumn
                suiWidth="eight">
-            <div class="ui right floated main menu">
-              <a class="bug popup icon item"
-                 data-tooltip="Submit Bug Report"
+            <div class="right floated main"
+                 sui-menu>
+              <a suiMenuItem
+                 sui-popup
+                 suiPopupPlacement="bottom center"
+                 suiPopupContent="Submit Bug Report"
                  target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic/issues">
                 <i sui-icon
                    suiIconType="bug"></i>
               </a>
 
-              <a class="github popup icon item"
-                 data-tooltip="View project on GitHub"
+              <a suiMenuItem
+                 sui-popup
+                 suiPopupPlacement="bottom center"
+                 suiPopupContent="View project on GitHub"
                  target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
                    suiIconType="alternate github"></i>
               </a>
 
-              <a class="github popup icon item"
-                 data-tooltip="View on Semantic UI"
+              <a suiMenuItem
+                 sui-popup
+                 suiPopupPlacement="bottom center"
+                 suiPopupContent="View on Semantic UI"
                  target="_blank"
                  href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
@@ -86,7 +93,6 @@ export class DocPageComponent {
   private definitions = 'definitions';
   private api = 'api';
   private currentView = this.definitions;
-  // private currentView = this.api;
 
   isApi(): boolean {
     return this.currentView === this.api;
