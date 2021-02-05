@@ -3,61 +3,140 @@
     subHeader="A container limits content to a maximum width"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
-    <h2 sui-header suiDividing>Types</h2>
+    <h2 sui-header
+        suiDividing>Types</h2>
 
-    <doc-code-sample [content]="stdContainer" [code]="snippetStd">
+    <doc-code-sample
+        [content]="stdContainer"
+        [code]="snippetStd">
       <h3 sui-header>Container</h3>
       <p>A standard container</p>
 
       <ng-template #stdContainer>
         <div sui-container>
-          <div sui-placeholder>
-            <p suiPlaceholderLine></p>
-            <p suiPlaceholderLine></p>
-            <p suiPlaceholderLine></p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+            vitae, justo. Nullam dictum felis eu pede
+            <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+            nisi.
+          </p>
         </div>
       </ng-template>
     </doc-code-sample>
 
-    <doc-code-sample [content]="textContainer" [code]="snippetText">
+    <doc-code-sample
+        [content]="textContainer"
+        [code]="snippetText">
       <h3 sui-header>Text Container</h3>
-      <p>A container can reduce its maximum width to more naturally accomodate a single column of text</p>
+      <p>A button can be formatted to show different levels of emphasis</p>
 
       <ng-template #textContainer>
-        <div sui-container suiText>
-          <div sui-placeholder>
-            <p suiPlaceholderLine></p>
-            <p suiPlaceholderLine></p>
-            <p suiPlaceholderLine></p>
-          </div>
+        <div sui-container
+             suiText>
+          <h2 sui-header>Header</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+            vitae, justo. Nullam dictum felis eu pede
+            <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+            nisi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+            vitae, justo. Nullam dictum felis eu pede
+            <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+            nisi.
+          </p>
         </div>
       </ng-template>
     </doc-code-sample>
 
-    <h2 sui-header suiDividing>Variations</h2>
+    <h2 sui-header
+        suiDividing>Variations</h2>
 
-    <doc-code-sample [content]="textAlignment" [code]="snippetAligned">
+    <doc-code-sample
+        [content]="textAlignment"
+        [code]="snippetAligned">
       <h3 sui-header>Text Alignment</h3>
       <p>A container can specify its text alignment</p>
 
       <ng-template #textAlignment>
         <div sui-container
              suiAlignment="left aligned">
-          left aligned
+          Left Aligned
         </div>
         <div sui-container
              suiAlignment="center aligned">
-          center aligned
+          Center Aligned
         </div>
         <div sui-container
              suiAlignment="right aligned">
-          right aligned
+          Right Aligned
         </div>
         <div sui-divider></div>
         <div sui-container
              suiAlignment="justified">
-          justified
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+            vitae, justo. Nullam dictum felis eu pede
+            <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+            ultricies nisi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+            vitae, justo. Nullam dictum felis eu pede
+            <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+            imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+            ultricies nisi.
+          </p>
         </div>
       </ng-template>
     </doc-code-sample>
