@@ -175,6 +175,80 @@
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
-    <small>APIs</small>
+    <h2 sui-header
+        suiDividing>sui-container</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiAlignment</td>
+        <td>
+          Align container text. . Allowed values could be
+          <span sui-label>'left aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'center aligned'</span> | <span
+            sui-label>'justified'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiText</td>
+        <td>
+          Reduce maximum width to more naturally accommodate text.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>
+          The container will fill the complete width of its surrounding element
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </ng-container>
 </doc-page>
