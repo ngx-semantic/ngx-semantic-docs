@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-divider',
   templateUrl: './divider.component.html',
   styleUrls: ['./divider.component.scss']
 })
-export class DividerComponent {
+export class DividerComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetStandard = `
   <div sui-divider></div>`;
 
@@ -237,7 +241,23 @@ export class DividerComponent {
     </div>
   </div>`;
 
-  constructor(title: Title) {
-    title.setTitle('Dividers | NgxSemantic');
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Dividers | Ngx Semantic');
+  }
+
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
   }
 }
