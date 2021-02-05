@@ -1,6 +1,7 @@
 <doc-page
     header="Dividers"
-    subHeader="A divider visually segments content into groups">
+    subHeader="A divider visually segments content into groups"
+    (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
     <h2 sui-header
         suiDividing>Types</h2>
@@ -374,5 +375,151 @@
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
+    <h2 sui-header
+        suiDividing>sui-divider</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiDirection</td>
+        <td>
+          Set the divider direction. Allowed values could be
+          <span sui-label>'vertical'</span> | <span sui-label>'horizontal'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiHeader</td>
+        <td>
+          Set whether or not the divider should be of header style
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>
+          Set whether or not to invert the colours
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFitted</td>
+        <td>
+          Set whether or not the divider should limit space above and below
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiHidden</td>
+        <td>
+          Set whether or not the divider should divide without being visible
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSection</td>
+        <td>
+          Set whether or not the divider should increase margins
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiClearing</td>
+        <td>
+          Set whether or not the divider should clear the content above
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </ng-container>
 </doc-page>
