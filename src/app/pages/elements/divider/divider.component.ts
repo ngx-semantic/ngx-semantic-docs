@@ -1,21 +1,43 @@
-import { Component } from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-divider',
   templateUrl: './divider.component.html',
   styleUrls: ['./divider.component.scss']
 })
-export class DividerComponent {
+export class DividerComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetStandard = `
-  <div sui-divider></div>`;
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+  </div>
+  <div sui-divider></div>
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+  </div>`;
 
   snippetVertical = `
   <div sui-segment>
     <div sui-grid
-         suiRelaxation="very relaxed"
-         suiWidth="two">
+         suiWidth="two"
+         suiRelaxation="very relaxed">
       <div suiGridColumn>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
           <p suiPlaceholderLine></p>
@@ -24,6 +46,12 @@ export class DividerComponent {
         </div>
       </div>
       <div suiGridColumn>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
           <p suiPlaceholderLine></p>
@@ -42,8 +70,8 @@ export class DividerComponent {
   <div sui-segment
        suiPlaceholder>
     <div sui-grid
-         suiWidth="two"
          suiStackable
+         suiWidth="two"
          suiRelaxation="very relaxed">
       <div suiGridColumn>
         <div sui-form>
@@ -65,13 +93,14 @@ export class DividerComponent {
                  suiIconType="lock"></i>
             </div>
           </div>
-          <div sui-button
-               suiColour="blue">Login
+          <div sui-button class="submit"
+               suiColour="blue">
+            Login
           </div>
         </div>
       </div>
       <div suiGridColumn
-           suiAlignment="center aligned">
+           suiAlignment="middle aligned">
         <div sui-button
              suiSize="big">
           <i sui-icon
@@ -155,7 +184,8 @@ export class DividerComponent {
   snippetDividerInverted = `
   <div sui-segment
        suiInverted>
-    <div sui-placeholder>
+    <div sui-placeholder
+         suiInverted>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
@@ -163,7 +193,8 @@ export class DividerComponent {
     <div sui-divider
          suiInverted>
     </div>
-    <div sui-placeholder>
+    <div sui-placeholder
+         suiInverted>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
       <p suiPlaceholderLine></p>
@@ -187,41 +218,37 @@ export class DividerComponent {
   </div>`;
 
   snippetDividerHidden = `
-  <div sui-segment>
-    <h3 sui-header>Section One</h3>
-    <div sui-placeholder>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-    </div>
-    <div sui-divider
-         suiHidden>
-    </div>
-    <h3 sui-header>Section Two</h3>
-    <div sui-placeholder>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-    </div>
+  <h3 sui-header>Section One</h3>
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+  </div>
+  <div sui-divider
+       suiHidden>
+  </div>
+  <h3 sui-header>Section Two</h3>
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
   </div>`;
 
   snippetDividerSection = `
-  <div sui-segment>
-    <h3 sui-header>Section One</h3>
-    <div sui-placeholder>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-    </div>
-    <div sui-divider
-         suiSection>
-    </div>
-    <h3 sui-header>Section Two</h3>
-    <div sui-placeholder>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-      <p suiPlaceholderLine></p>
-    </div>
+  <h3 sui-header>Section One</h3>
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+  </div>
+  <div sui-divider
+       suiSection>
+  </div>
+  <h3 sui-header>Section Two</h3>
+  <div sui-placeholder>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
+    <p suiPlaceholderLine></p>
   </div>`;
 
   snippetDividerClearing = `
@@ -237,7 +264,23 @@ export class DividerComponent {
     </div>
   </div>`;
 
-  constructor(title: Title) {
-    title.setTitle('Dividers | NgxSemantic');
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Dividers | Ngx Semantic');
+  }
+
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
   }
 }
