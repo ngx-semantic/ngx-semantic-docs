@@ -256,6 +256,48 @@
     </doc-code-sample>
 
     <doc-code-sample
+        [content]="iconHeader"
+        [code]="snippetImageHeader">
+      <h3 sui-header>Icon</h3>
+      <p>A header may contain an icon</p>
+
+      <ng-template #iconHeader>
+        <h2 sui-header>
+          <i sui-icon
+             suiIconType="plug"></i>
+          <div class="content">
+            Uptime Guarantee
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconSubHeader"
+        [code]="snippetImageHeader">
+      <ng-template #iconSubHeader>
+        <h2 sui-header>
+          <i sui-icon
+             suiIconType="settings"></i>
+          <div class="content">
+            Account Settings
+            <div suiSubHeader>Manage your preferences</div>
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="headerColored"
         [code]="snippetColored">
       <h3 sui-header>Colored</h3>
