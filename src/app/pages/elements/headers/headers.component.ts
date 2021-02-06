@@ -35,6 +35,16 @@ export class HeadersComponent implements AfterViewChecked {
        suiSize="tiny">Tiny Header
   </div>`;
 
+  snippetIconHeader = `
+  <h2 sui-header
+      suiIcon>
+    <i sui-icon suiIconType="settings"></i>
+    <div class="content">
+      Account Settings
+      <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+    </div>
+  </h2>`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>

@@ -97,6 +97,24 @@
     </doc-code-sample>
 
     <doc-code-sample
+        [content]="iconHeaders"
+        [code]="snippetIconHeader">
+      <h3 sui-header>Icon Headers</h3>
+      <p>A header can be formatted to emphasize an icon</p>
+
+      <ng-template #iconHeaders>
+        <h2 sui-header
+            suiIcon>
+          <i sui-icon suiIconType="settings"></i>
+          <div class="content">
+            Account Settings
+            <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+          </div>
+        </h2>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="headerColored"
         [code]="snippetColored">
       <h3 sui-header>Colored</h3>
