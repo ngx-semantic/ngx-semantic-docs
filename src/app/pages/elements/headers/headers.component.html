@@ -115,6 +115,40 @@
     </doc-code-sample>
 
     <doc-code-sample
+        [content]="iconCenterHeaders"
+        [code]="snippetIconCenteredHeader">
+      <ng-template #iconCenterHeaders>
+        <h2 sui-header
+            suiIcon
+            suiAlignment="center aligned">
+          <i sui-icon suiIconType="circular users"></i>
+          Friends
+        </h2>
+        <img sui-image class="wireframe"
+             suiCentered
+             src="https://semantic-ui.com/images/wireframe/centered-paragraph.png" />
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconHeaders"
+        [code]="snippetIconHeader">
+      <h3 sui-header>Icon Headers</h3>
+      <p>A header can be formatted to emphasize an icon</p>
+
+      <ng-template #iconHeaders>
+        <h2 sui-header
+            suiIcon>
+          <i sui-icon suiIconType="settings"></i>
+          <div class="content">
+            Account Settings
+            <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+          </div>
+        </h2>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="headerColored"
         [code]="snippetColored">
       <h3 sui-header>Colored</h3>

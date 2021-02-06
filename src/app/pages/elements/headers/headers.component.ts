@@ -45,6 +45,17 @@ export class HeadersComponent implements AfterViewChecked {
     </div>
   </h2>`;
 
+  snippetIconCenteredHeader = `
+  <h2 sui-header
+      suiIcon
+      suiAlignment="center aligned">
+    <i sui-icon suiIconType="circular users"></i>
+    Friends
+  </h2>
+  <img sui-image class="wireframe"
+       suiCentered
+       src="https://semantic-ui.com/images/wireframe/centered-paragraph.png" />`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>
