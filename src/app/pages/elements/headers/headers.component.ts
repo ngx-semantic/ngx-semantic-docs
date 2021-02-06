@@ -104,6 +104,34 @@ export class HeadersComponent implements AfterViewChecked {
       </div>
     </div>`;
 
+  snippetImageHeader = `
+  <h2 sui-header>
+    <img sui-image src="https://semantic-ui.com/images/icons/school.png">
+    <div class="content">
+      Learn More
+    </div>
+  </h2>`;
+
+  snippetCircularImageHeader = `
+  <h2 sui-header>
+    <img sui-image
+         suiCircular
+         src="https://semantic-ui.com/images/avatar2/large/patrick.png">
+    <div class="content">
+      Patrick
+    </div>
+  </h2>`;
+
+  snippetImageSubHeader = `
+   <h2 sui-header>
+      <img sui-image
+           src="https://semantic-ui.com/images/icons/plugin.png">
+      <div class="content">
+        Plug-ins
+        <div suiSubHeader>Check out our plug-in marketplace</div>
+      </div>
+    </h2>`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>

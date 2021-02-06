@@ -191,6 +191,70 @@
       </ng-template>
     </doc-code-sample>
 
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="imageHeader"
+        [code]="snippetImageHeader">
+      <h3 sui-header>Image</h3>
+      <p>A header may contain an image</p>
+
+      <ng-template #imageHeader>
+        <h2 sui-header>
+          <img sui-image src="https://semantic-ui.com/images/icons/school.png">
+          <div class="content">
+            Learn More
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageCircularHeader"
+        [code]="snippetCircularImageHeader">
+      <ng-template #imageCircularHeader>
+        <h2 sui-header>
+          <img sui-image
+               suiCircular
+               src="https://semantic-ui.com/images/avatar2/large/patrick.png">
+          <div class="content">
+            Patrick
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageSubHeader"
+        [code]="snippetImageSubHeader">
+      <ng-template #imageSubHeader>
+        <h2 sui-header>
+          <img sui-image
+               src="https://semantic-ui.com/images/icons/plugin.png">
+          <div class="content">
+            Plug-ins
+            <div suiSubHeader>Check out our plug-in marketplace</div>
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
     <doc-code-sample
         [content]="headerColored"
         [code]="snippetColored">
