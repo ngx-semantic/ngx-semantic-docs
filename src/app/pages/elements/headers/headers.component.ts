@@ -28,7 +28,7 @@ export class HeadersComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Dividers | Ngx Semantic');
+    title.setTitle('Headers | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
