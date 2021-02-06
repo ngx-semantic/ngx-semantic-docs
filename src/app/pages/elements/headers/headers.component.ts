@@ -164,6 +164,12 @@ export class HeadersComponent implements AfterViewChecked {
       <div suiSubHeader>Sub Header</div>
     </h6>`;
 
+  snippetDisabledHeader = `
+   <div sui-header
+        disabled>
+     Disabled Header
+   </div>`;
+
   snippetColored = `
   <h4 sui-header suiColour="red">Red</h4>
   <h4 sui-header suiColour="orange">Orange</h4>

@@ -347,6 +347,31 @@
       </ng-template>
     </doc-code-sample>
 
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="disabledHeader"
+        [code]="snippetDisabledHeader">
+      <h3 sui-header>Disabled</h3>
+      <p>A header can show that it is inactive</p>
+
+      <ng-template #disabledHeader>
+        <div sui-header
+             disabled>
+          Disabled Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
     <doc-code-sample
         [content]="headerColoured"
         [code]="snippetColored">
