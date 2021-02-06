@@ -18,6 +18,23 @@ export class HeadersComponent implements AfterViewChecked {
   <h4 sui-header>Fourth Header</h4>
   <h5 sui-header>Fifth Header</h5>`;
 
+  snippetContentHeader = `
+  <div sui-header
+       suiSize="huge">Huge Header
+  </div>
+  <div sui-header
+       suiSize="large">Large Header
+  </div>
+  <div sui-header
+       suiSize="medium">Medium Header
+  </div>
+  <div sui-header
+       suiSize="small">Small Header
+  </div>
+  <div sui-header
+       suiSize="tiny">Tiny Header
+  </div>`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>
