@@ -132,21 +132,65 @@ export class HeadersComponent implements AfterViewChecked {
       </div>
     </h2>`;
 
+  snippetHeaderDetails = `
+    <h2 sui-header>
+      Account Settings
+      <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+    </h2>`;
+
+  snippetHeaderSizeDetails = `
+    <h1 sui-header>
+      H1
+      <div suiSubHeader>Sub Header</div>
+    </h1>
+    <h2 sui-header>
+      H2
+      <div suiSubHeader>Sub Header</div>
+    </h2>
+    <h3 sui-header>
+      H3
+      <div suiSubHeader>Sub Header</div>
+    </h3>
+    <h4 sui-header>
+      H4
+      <div suiSubHeader>Sub Header</div>
+    </h4>
+    <h5 sui-header>
+      H5
+      <div suiSubHeader>Sub Header</div>
+    </h5>
+    <h6 sui-header>
+      H6
+      <div suiSubHeader>Sub Header</div>
+    </h6>`;
+
   snippetColored = `
-  <div class="ui segment">
-    <h4 sui-header suiColour="red" suiInverted>Red</h4>
-    <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
-    <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
-    <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
-  </div>`;
+  <h4 sui-header suiColour="red">Red</h4>
+  <h4 sui-header suiColour="orange">Orange</h4>
+  <h4 sui-header suiColour="yellow">Yellow</h4>
+  <h4 sui-header suiColour="olive">Olive</h4>
+  <h4 sui-header suiColour="green">Green</h4>
+  <h4 sui-header suiColour="teal">Teal</h4>
+  <h4 sui-header suiColour="blue">Blue</h4>
+  <h4 sui-header suiColour="purple">Purple</h4>
+  <h4 sui-header suiColour="violet">Violet</h4>
+  <h4 sui-header suiColour="pink">Pink</h4>
+  <h4 sui-header suiColour="brown">Brown</h4>
+  <h4 sui-header suiColour="grey">Grey</h4>`;
 
   snippetInverted = `
-  <div class="ui inverted segment">
-    <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
-    <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
-    <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
-    <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
-  </div>`;
+  <h4 sui-header suiColour="red" suiInverted>Red</h4>
+  <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
+  <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
+  <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
+  <h4 sui-header suiColour="green" suiInverted>Green</h4>
+  <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
+  <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
+  <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
+  <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
+  <h4 sui-header suiColour="pink" suiInverted>Pink</h4>
+  <h4 sui-header suiColour="brown" suiInverted>Brown</h4>
+  <h4 sui-header suiColour="grey" suiInverted>Grey</h4>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Headers | Ngx Semantic');
