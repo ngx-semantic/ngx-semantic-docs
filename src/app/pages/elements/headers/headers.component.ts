@@ -56,6 +56,54 @@ export class HeadersComponent implements AfterViewChecked {
        suiCentered
        src="https://semantic-ui.com/images/wireframe/centered-paragraph.png" />`;
 
+  snippetSubHeader = `
+  <h2 sui-header
+      suiSubHeader>
+    Price
+  </h2>
+  <span>$10.99</span>`;
+
+  snippetSubImageHeader = `
+   <div sui-list
+         suiHorizontal>
+      <div suiListItem>
+        <img sui-image
+             suiCircular
+             suiSize="mini"
+             src="https://semantic-ui.com/images/avatar2/small/molly.png">
+        <div class="content">
+          <div sui-header
+               suiSubHeader>Molly
+          </div>
+          Coordinator
+        </div>
+      </div>
+      <div suiListItem>
+        <img sui-image
+             suiCircular
+             suiSize="mini"
+             src="https://semantic-ui.com/images/avatar2/small/elyse.png">
+        <div class="content">
+          <div sui-header
+               suiSubHeader>Elyse
+          </div>
+          Developer
+        </div>
+      </div>
+      <div suiListItem>
+        <img sui-image
+             suiCircular
+             suiSize="mini"
+             src="https://semantic-ui.com/images/avatar2/small/eve.png">
+        <div class="content">
+          <div sui-header
+               suiSubHeader>Eve
+          </div>
+          Project Manager
+        </div>
+      </div>
+    </div>`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>

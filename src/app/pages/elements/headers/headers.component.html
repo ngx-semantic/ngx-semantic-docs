@@ -126,25 +126,68 @@
         </h2>
         <img sui-image class="wireframe"
              suiCentered
-             src="https://semantic-ui.com/images/wireframe/centered-paragraph.png" />
+             src="https://semantic-ui.com/images/wireframe/centered-paragraph.png"/>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconHeaders"
-        [code]="snippetIconHeader">
-      <h3 sui-header>Icon Headers</h3>
-      <p>A header can be formatted to emphasize an icon</p>
+        [content]="subHeaders"
+        [code]="snippetSubHeader">
+      <h3 sui-header>Sub Headers</h3>
+      <p>Headers may be formatted to label smaller or de-emphasized content.</p>
 
-      <ng-template #iconHeaders>
+      <ng-template #subHeaders>
         <h2 sui-header
-            suiIcon>
-          <i sui-icon suiIconType="settings"></i>
-          <div class="content">
-            Account Settings
-            <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
-          </div>
+            suiSubHeader>
+          Price
         </h2>
+        <span>$10.99</span>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subImageHeaders"
+        [code]="snippetSubImageHeader">
+      <ng-template #subImageHeaders>
+        <div sui-list
+             suiHorizontal>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/molly.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Molly
+              </div>
+              Coordinator
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/elyse.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Elyse
+              </div>
+              Developer
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/eve.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Eve
+              </div>
+              Project Manager
+            </div>
+          </div>
+        </div>
       </ng-template>
     </doc-code-sample>
 
