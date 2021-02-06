@@ -11,6 +11,13 @@ export class HeadersComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
+  snippetPageHeader = `
+  <h1 sui-header>First Header</h1>
+  <h2 sui-header>Second Header</h2>
+  <h3 sui-header>Third Header</h3>
+  <h4 sui-header>Fourth Header</h4>
+  <h5 sui-header>Fifth Header</h5>`;
+
   snippetColored = `
   <div class="ui segment">
     <h4 sui-header suiColour="red" suiInverted>Red</h4>
