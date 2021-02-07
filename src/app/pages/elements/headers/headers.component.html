@@ -478,17 +478,21 @@
       <p>A header can have its text aligned to a side</p>
 
       <ng-template #textAlignmentHeader>
-        <div class="ui segment">
-          <h3 class="ui right aligned header">
+        <div sui-segment>
+          <h3 sui-header
+              suiAlignment="right aligned">
             Right
           </h3>
-          <h3 class="ui left aligned header">
+          <h3 sui-header
+              suiAlignment="left aligned">
             Left
           </h3>
-          <h3 class="ui justified header">
+          <h3 sui-header
+              suiAlignment="justified">
             This should take up the full width even if only one line
           </h3>
-          <h3 class="ui center aligned header">
+          <h3 sui-header
+              suiAlignment="center aligned">
             Center
           </h3>
         </div>
