@@ -385,7 +385,8 @@
           <p suiPlaceholderLine></p>
         </div>
         <div sui-header
-             suiDividing>Dividing Header</div>
+             suiDividing>Dividing Header
+        </div>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
           <p suiPlaceholderLine></p>
@@ -402,11 +403,94 @@
 
       <ng-template #blockHeader>
         <h3 sui-header
-             suiBlock>Block Header</h3>
+            suiBlock>Block Header</h3>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
           <p suiPlaceholderLine></p>
           <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="attachedHeader"
+        [code]="snippetBlockHeader">
+      <h3 sui-header>Attached</h3>
+      <p>A header can be attached to other content, like a segment</p>
+
+      <ng-template #attachedHeader>
+        <h3 sui-header
+            suiAttached="top attached">
+          Top Attached
+        </h3>
+        <div sui-segment
+             suiAttached="attached">
+          <div sui-placeholder>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+          </div>
+        </div>
+        <h3 sui-header
+            suiAttached="attached">
+          Attached
+        </h3>
+        <div sui-segment
+             suiAttached="attached">
+          <div sui-placeholder>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+          </div>
+        </div>
+        <h3 sui-header
+            suiAttached="bottom attached">
+          Bottom Attached
+        </h3>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="floatingHeader"
+        [code]="snippetBlockHeader">
+      <h3 sui-header>Floating</h3>
+      <p>A header can sit to the left or right of other content</p>
+
+      <ng-template #floatingHeader>
+        <div sui-segment
+             suiClearing>
+          <h3 sui-header
+              suiFloated="right floated">
+            Go Forward
+          </h3>
+          <h3 sui-header
+              suiFloated="left floated">
+            Go Back
+          </h3>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="textAlignmentHeader"
+        [code]="snippetBlockHeader">
+      <h3 sui-header>Text Alignment</h3>
+      <p>A header can have its text aligned to a side</p>
+
+      <ng-template #textAlignmentHeader>
+        <div class="ui segment">
+          <h3 class="ui right aligned header">
+            Right
+          </h3>
+          <h3 class="ui left aligned header">
+            Left
+          </h3>
+          <h3 class="ui justified header">
+            This should take up the full width even if only one line
+          </h3>
+          <h3 class="ui center aligned header">
+            Center
+          </h3>
         </div>
       </ng-template>
     </doc-code-sample>
