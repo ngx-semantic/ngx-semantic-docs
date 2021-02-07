@@ -1,90 +1,787 @@
-<div class="ui masthead vertical segment">
-  <div class="ui container">
-    <div class="introduction">
+<doc-page
+    header="Headers"
+    subHeader="A header provides a short summary of content"
+    (pageChanged)="tabChanged($event)">
+  <ng-container *ngIf="isDefinitionsActive">
+    <h2 sui-header
+        suiDividing>Types</h2>
 
-      <h1 class="ui header">
-        Header
-        <div class="sub header">
-          A header provides a short summary of content
+    <doc-code-sample
+        [content]="pageHeaders"
+        [code]="snippetPageHeader">
+      <h3 sui-header>Page Headers</h3>
+      <p>Headers may be oriented to give the hierarchy of a section in the context of the page</p>
+
+      <ng-template #pageHeaders>
+        <h1 sui-header>First Header</h1>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
         </div>
-      </h1>
+        <h2 sui-header>Second Header</h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <h3 sui-header>Third Header</h3>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <h4 sui-header>Fourth Header</h4>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <h5 sui-header>Fifth Header</h5>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
 
-      <div class="ui hidden divider"></div>
+    <doc-code-sample
+        [content]="contentHeaders"
+        [code]="snippetContentHeader">
+      <h3 sui-header>Content Headers</h3>
+      <p>Headers may be oriented to give the importance of a section in the context of the content that surrounds it</p>
 
-      <div class="ui right floated main menu">
+      <ng-template #contentHeaders>
+        <div sui-header
+             suiSize="huge">Huge Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiSize="large">Large Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiSize="medium">Medium Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiSize="small">Small Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiSize="tiny">Tiny Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
 
-        <a class="bug popup icon item" data-content="Submit Bug Report" href="https://github.com/ngx-semantic/ngx-semantic/issues">
-          <i class="bug icon"></i>
-        </a>
+    <doc-code-sample
+        [content]="iconHeaders"
+        [code]="snippetIconHeader">
+      <h3 sui-header>Icon Headers</h3>
+      <p>A header can be formatted to emphasize an icon</p>
 
-        <a class="github popup icon item" data-content="View project on GitHub" href="https://github.com/ngx-semantic/ngx-semantic">
-          <i class="alternate github icon"></i>
-        </a>
+      <ng-template #iconHeaders>
+        <h2 sui-header
+            suiIcon>
+          <i sui-icon suiIconType="settings"></i>
+          <div class="content">
+            Account Settings
+            <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+          </div>
+        </h2>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconCenterHeaders"
+        [code]="snippetIconCenteredHeader">
+      <ng-template #iconCenterHeaders>
+        <h2 sui-header
+            suiIcon
+            suiAlignment="center aligned">
+          <i sui-icon suiIconType="circular users"></i>
+          Friends
+        </h2>
+        <img sui-image class="wireframe"
+             suiCentered
+             src="https://semantic-ui.com/images/wireframe/centered-paragraph.png"/>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subHeaders"
+        [code]="snippetSubHeader">
+      <h3 sui-header>Sub Headers</h3>
+      <p>Headers may be formatted to label smaller or de-emphasized content.</p>
+
+      <ng-template #subHeaders>
+        <h2 sui-header
+            suiSubHeader>
+          Price
+        </h2>
+        <span>$10.99</span>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subImageHeaders"
+        [code]="snippetSubImageHeader">
+      <ng-template #subImageHeaders>
+        <div sui-list
+             suiHorizontal>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/molly.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Molly
+              </div>
+              Coordinator
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/elyse.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Elyse
+              </div>
+              Developer
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image
+                 suiCircular
+                 suiSize="mini"
+                 src="https://semantic-ui.com/images/avatar2/small/eve.png">
+            <div class="content">
+              <div sui-header
+                   suiSubHeader>Eve
+              </div>
+              Project Manager
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="imageHeader"
+        [code]="snippetImageHeader">
+      <h3 sui-header>Image</h3>
+      <p>A header may contain an image</p>
+
+      <ng-template #imageHeader>
+        <h2 sui-header>
+          <img sui-image src="https://semantic-ui.com/images/icons/school.png">
+          <div class="content">
+            Learn More
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageCircularHeader"
+        [code]="snippetCircularImageHeader">
+      <ng-template #imageCircularHeader>
+        <h2 sui-header>
+          <img sui-image
+               suiCircular
+               src="https://semantic-ui.com/images/avatar2/large/patrick.png">
+          <div class="content">
+            Patrick
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageSubHeader"
+        [code]="snippetImageSubHeader">
+      <ng-template #imageSubHeader>
+        <h2 sui-header>
+          <img sui-image
+               src="https://semantic-ui.com/images/icons/plugin.png">
+          <div class="content">
+            Plug-ins
+            <div suiSubHeader>Check out our plug-in marketplace</div>
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconHeader"
+        [code]="snippetImageHeader">
+      <h3 sui-header>Icon</h3>
+      <p>A header may contain an icon</p>
+
+      <ng-template #iconHeader>
+        <h2 sui-header>
+          <i sui-icon
+             suiIconType="plug"></i>
+          <div class="content">
+            Uptime Guarantee
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconSubHeader"
+        [code]="snippetImageHeader">
+      <ng-template #iconSubHeader>
+        <h2 sui-header>
+          <i sui-icon
+             suiIconType="settings"></i>
+          <div class="content">
+            Account Settings
+            <div suiSubHeader>Manage your preferences</div>
+          </div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subHeaderDetails"
+        [code]="snippetHeaderDetails">
+      <h3 sui-header>Subheader</h3>
+      <p>Headers may contain subheaders</p>
+
+      <ng-template #subHeaderDetails>
+        <h2 sui-header>
+          Account Settings
+          <div suiSubHeader>Manage your account settings and set e-mail preferences.</div>
+        </h2>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subHeaderSizesDetails"
+        [code]="snippetHeaderSizeDetails">
+      <ng-template #subHeaderSizesDetails>
+        <h1 sui-header>
+          H1
+          <div suiSubHeader>Sub Header</div>
+        </h1>
+        <h2 sui-header>
+          H2
+          <div suiSubHeader>Sub Header</div>
+        </h2>
+        <h3 sui-header>
+          H3
+          <div suiSubHeader>Sub Header</div>
+        </h3>
+        <h4 sui-header>
+          H4
+          <div suiSubHeader>Sub Header</div>
+        </h4>
+        <h5 sui-header>
+          H5
+          <div suiSubHeader>Sub Header</div>
+        </h5>
+        <h6 sui-header>
+          H6
+          <div suiSubHeader>Sub Header</div>
+        </h6>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="disabledHeader"
+        [code]="snippetDisabledHeader">
+      <h3 sui-header>Disabled</h3>
+      <p>A header can show that it is inactive</p>
+
+      <ng-template #disabledHeader>
+        <div sui-header
+             disabled>
+          Disabled Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="dividingHeader"
+        [code]="snippetDividingHeader">
+      <h3 sui-header>Dividing</h3>
+      <p>A header can be formatted to divide itself from the content below it</p>
+
+      <ng-template #dividingHeader>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiDividing>Dividing Header
+        </div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="blockHeader"
+        [code]="snippetBlockHeader">
+      <h3 sui-header>Block</h3>
+      <p>A header can be formatted to appear inside a content block</p>
+
+      <ng-template #blockHeader>
+        <h3 sui-header
+            suiBlock>Block Header</h3>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="attachedHeader"
+        [code]="snippetAttachedHeader">
+      <h3 sui-header>Attached</h3>
+      <p>A header can be attached to other content, like a segment</p>
+
+      <ng-template #attachedHeader>
+        <h3 sui-header
+            suiAttached="top attached">
+          Top Attached
+        </h3>
+        <div sui-segment
+             suiAttached="attached">
+          <div sui-placeholder>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+          </div>
+        </div>
+        <h3 sui-header
+            suiAttached="attached">
+          Attached
+        </h3>
+        <div sui-segment
+             suiAttached="attached">
+          <div sui-placeholder>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+            <p suiPlaceholderLine></p>
+          </div>
+        </div>
+        <h3 sui-header
+            suiAttached="bottom attached">
+          Bottom Attached
+        </h3>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="floatingHeader"
+        [code]="snippetFloatingHeader">
+      <h3 sui-header>Floating</h3>
+      <p>A header can sit to the left or right of other content</p>
+
+      <ng-template #floatingHeader>
+        <div sui-segment
+             suiClearing>
+          <h3 sui-header
+              suiFloated="right floated">
+            Go Forward
+          </h3>
+          <h3 sui-header
+              suiFloated="left floated">
+            Go Back
+          </h3>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="textAlignmentHeader"
+        [code]="snippetTextAlignmentHeader">
+      <h3 sui-header>Text Alignment</h3>
+      <p>A header can have its text aligned to a side</p>
+
+      <ng-template #textAlignmentHeader>
+        <div sui-segment>
+          <h3 sui-header
+              suiAlignment="right aligned">
+            Right
+          </h3>
+          <h3 sui-header
+              suiAlignment="left aligned">
+            Left
+          </h3>
+          <h3 sui-header
+              suiAlignment="justified">
+            This should take up the full width even if only one line
+          </h3>
+          <h3 sui-header
+              suiAlignment="center aligned">
+            Center
+          </h3>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="headerColoured"
+        [code]="snippetColored">
+      <h3 sui-header>Colored</h3>
+      <p>A header can be formatted with different colors</p>
+
+      <ng-template #headerColoured>
+        <div sui-segment>
+          <h4 sui-header suiColour="red">Red</h4>
+          <h4 sui-header suiColour="orange">Orange</h4>
+          <h4 sui-header suiColour="yellow">Yellow</h4>
+          <h4 sui-header suiColour="olive">Olive</h4>
+          <h4 sui-header suiColour="green">Green</h4>
+          <h4 sui-header suiColour="teal">Teal</h4>
+          <h4 sui-header suiColour="blue">Blue</h4>
+          <h4 sui-header suiColour="purple">Purple</h4>
+          <h4 sui-header suiColour="violet">Violet</h4>
+          <h4 sui-header suiColour="pink">Pink</h4>
+          <h4 sui-header suiColour="brown">Brown</h4>
+          <h4 sui-header suiColour="grey">Grey</h4>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="headerColouredInverted"
+        [code]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A header can have its colors inverted for contrast</p>
+
+      <div sui-message suiState="info">
+        <p>Inverted headers use modified light versions of your site's color scheme that are adapted to have more
+          contrast on dark background</p>
       </div>
 
-      <div sui-button suiEmphasis="primary">
-        Download
-      </div>
-    </div>
-  </div>
-</div>
-<br>
+      <ng-template #headerColouredInverted>
+        <div sui-segment
+             suiInverted>
+          <h4 sui-header suiColour="red" suiInverted>Red</h4>
+          <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
+          <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
+          <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
+          <h4 sui-header suiColour="green" suiInverted>Green</h4>
+          <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
+          <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
+          <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
+          <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
+          <h4 sui-header suiColour="pink" suiInverted>Pink</h4>
+          <h4 sui-header suiColour="brown" suiInverted>Brown</h4>
+          <h4 sui-header suiColour="grey" suiInverted>Grey</h4>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </ng-container>
 
-<div class="main ui container">
-  <h2 sui-header class="dividing">Types</h2>
+  <ng-container *ngIf="isApiActive">
+    <h2 sui-header
+        suiDividing>sui-header</h2>
 
-  <h4 class="ui header">Page Headers</h4>
-  <p>Headers may be oriented to give the hierarchy of a section in the context of the page</p>
+    <h4 sui-header>Properties</h4>
 
-  <doc-code-sample
-    [content]="headerColored"
-    [code]="snippetColored">
-    <h3 sui-header>Colored</h3>
-    <p>A header can be formatted with different colors</p>
-
-    <ng-template #headerColored>
-      <div sui-segment [suiInverted]="false">
-        <h4 sui-header suiColour="red" suiInverted>Red</h4>
-        <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
-        <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
-        <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
-        <h4 sui-header suiColour="green" suiInverted>Green</h4>
-        <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
-        <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
-        <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
-        <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
-        <h4 sui-header suiColour="pink" suiInverted>Pink</h4>
-        <h4 sui-header suiColour="brown" suiInverted>Brown</h4>
-        <h4 sui-header suiColour="grey" suiInverted>Grey</h4>
-      </div>
-    </ng-template>
-  </doc-code-sample>
-
-  <doc-code-sample
-    [content]="headerInverted"
-    [code]="snippetInverted">
-    <h3 sui-header>Inverted</h3>
-    <p>A header can have its colors inverted for contrast</p>
-
-    <div class="ui info message">
-      <p>Inverted headers use modified light versions of your site's color scheme that are adapted to have more contrast on dark background</p>
-    </div>
-
-    <ng-template #headerInverted>
-      <div sui-segment [suiInverted]>
-        <h4 sui-header suiColour="red" suiInverted>Red</h4>
-        <h4 sui-header suiColour="orange" suiInverted>Orange</h4>
-        <h4 sui-header suiColour="yellow" suiInverted>Yellow</h4>
-        <h4 sui-header suiColour="olive" suiInverted>Olive</h4>
-        <h4 sui-header suiColour="green" suiInverted>Green</h4>
-        <h4 sui-header suiColour="teal" suiInverted>Teal</h4>
-        <h4 sui-header suiColour="blue" suiInverted>Blue</h4>
-        <h4 sui-header suiColour="purple" suiInverted>Purple</h4>
-        <h4 sui-header suiColour="violet" suiInverted>Violet</h4>
-        <h4 sui-header suiColour="pink" suiInverted>Pink</h4>
-        <h4 sui-header suiColour="brown" suiInverted>Brown</h4>
-        <h4 sui-header suiColour="grey" suiInverted>Grey</h4>
-      </div>
-    </ng-template>
-  </doc-code-sample>
-
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the header size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>Set the header text alignment. Allowed values could be
+          <span sui-label>'left aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'center aligned'</span> | <span
+              sui-label>'justified'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>Set the header colour. Allowed values could be
+          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
+              sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
+              sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
+              sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
+              sui-label>'black'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>
+          Set the header attachment. Allowed values could be
+          <span sui-label>'attached'</span> | <span sui-label>'top attached'</span> | <span sui-label>'bottom attached'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloated</td>
+        <td>
+          Set the header text float. Allowed values could be
+          <span sui-label>'left floated'</span> | <span sui-label>'right floated'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSubHeader</td>
+        <td>
+          Style this header as a sub header
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Set whether or not to disable this header
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDividing</td>
+        <td>
+          Set whether or not the header should have an underline
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBlock</td>
+        <td>
+          Set whether or not the header should be a styled as a block
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>
+          Set whether or not the header colours should  be inverted
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Set whether or not the header shoukd be stylized to support icons
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</doc-page>
