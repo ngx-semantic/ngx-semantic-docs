@@ -178,6 +178,61 @@ export class HeadersComponent implements AfterViewChecked {
    <h3 sui-header
      suiBlock>Block Header</h3>`;
 
+  snippetAttachedHeader = `
+    <h3 sui-header
+        suiAttached="top attached">
+      Top Attached
+    </h3>
+    <div sui-segment
+         suiAttached="attached">
+      <p></p>
+    </div>
+    <h3 sui-header
+        suiAttached="attached">
+      Attached
+    </h3>
+    <div sui-segment
+         suiAttached="attached">
+      <p></p>
+    </div>
+    <h3 sui-header
+        suiAttached="bottom attached">
+      Bottom Attached
+    </h3>`;
+
+  snippetFloatingHeader = `
+    <div sui-segment
+         suiClearing>
+      <h3 sui-header
+          suiFloated="right floated">
+        Go Forward
+      </h3>
+      <h3 sui-header
+          suiFloated="left floated">
+        Go Back
+      </h3>
+    </div>`;
+
+  snippetTextAlignmentHeader = `
+  <div sui-segment>
+    <h3 sui-header
+        suiAlignment="right aligned">
+      Right
+    </h3>
+    <h3 sui-header
+        suiAlignment="left aligned">
+      Left
+    </h3>
+    <h3 sui-header
+        suiAlignment="justified">
+      This should take up the full width even if only one line
+    </h3>
+    <h3 sui-header
+        suiAlignment="center aligned">
+      Center
+    </h3>
+  </div>`;
+
   snippetColored = `
   <h4 sui-header suiColour="red">Red</h4>
   <h4 sui-header suiColour="orange">Orange</h4>
