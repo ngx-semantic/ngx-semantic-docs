@@ -373,6 +373,45 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
+        [content]="dividingHeader"
+        [code]="snippetDividingHeader">
+      <h3 sui-header>Dividing</h3>
+      <p>A header can be formatted to divide itself from the content below it</p>
+
+      <ng-template #dividingHeader>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+        <div sui-header
+             suiDividing>Dividing Header</div>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="blockHeader"
+        [code]="snippetBlockHeader">
+      <h3 sui-header>Block</h3>
+      <p>A header can be formatted to appear inside a content block</p>
+
+      <ng-template #blockHeader>
+        <h3 sui-header
+             suiBlock>Block Header</h3>
+        <div sui-placeholder>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+          <p suiPlaceholderLine></p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="headerColoured"
         [code]="snippetColored">
       <h3 sui-header>Colored</h3>
