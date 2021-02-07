@@ -555,5 +555,233 @@
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
+    <h2 sui-header
+        suiDividing>sui-header</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the header size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>Set the header text alignment. Allowed values could be
+          <span sui-label>'left aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'center aligned'</span> | <span
+              sui-label>'justified'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>Set the header colour. Allowed values could be
+          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
+              sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
+              sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
+              sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
+              sui-label>'black'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>
+          Set the header attachment. Allowed values could be
+          <span sui-label>'attached'</span> | <span sui-label>'top attached'</span> | <span sui-label>'bottom attached'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloated</td>
+        <td>
+          Set the header text float. Allowed values could be
+          <span sui-label>'left floated'</span> | <span sui-label>'right floated'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSubHeader</td>
+        <td>
+          Style this header as a sub header
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Set whether or not to disable this header
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDividing</td>
+        <td>
+          Set whether or not the header should have an underline
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBlock</td>
+        <td>
+          Set whether or not the header should be a styled as a block
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>
+          Set whether or not the header colours should  be inverted
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Set whether or not the header shoukd be stylized to support icons
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </ng-container>
 </doc-page>

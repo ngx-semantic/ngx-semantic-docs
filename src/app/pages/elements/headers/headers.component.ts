@@ -8,8 +8,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./headers.component.scss']
 })
 export class HeadersComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
+  // isDefinitionsActive = true;
+  // isApiActive: boolean;
+  isDefinitionsActive: boolean;
+  isApiActive = true;
 
   snippetPageHeader = `
   <h1 sui-header>First Header</h1>
