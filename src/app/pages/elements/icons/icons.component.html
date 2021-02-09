@@ -122,6 +122,74 @@
            suiIconType="cloud"></i>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rotated"
+        [code]="snippetIconRotated">
+      <h3 sui-header>Rotated</h3>
+      <p>An icon can be rotated</p>
+
+      <ng-template #rotated>
+        <i sui-icon
+           suiRotation="clockwise"
+           suiIconType="cloud"></i>
+        <i sui-icon
+           suiRotation="counterclockwise"
+           suiIconType="cloud"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="circular"
+        [code]="snippetIconCircular">
+      <h3 sui-header>Circular</h3>
+      <p>An icon can be formatted to appear circular</p>
+
+      <ng-template #circular>
+        <i sui-icon
+           suiCircular
+           suiIconType="users"></i>
+        <i sui-icon
+           suiCircular
+           suiColour="teal"
+           suiIconType="users"></i>
+        <i sui-icon
+           suiCircular
+           suiInverted
+           suiIconType="users"></i>
+        <i sui-icon
+           suiCircular
+           suiInverted
+           suiColour="teal"
+           suiIconType="users"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="bordered"
+        [code]="snippetIconBordered">
+      <h3 sui-header>Bordered</h3>
+      <p>An icon can be formatted to appear bordered</p>
+
+      <ng-template #bordered>
+        <i sui-icon
+           suiBordered
+           suiIconType="users"></i>
+        <i sui-icon
+           suiBordered
+           suiColour="teal"
+           suiIconType="users"></i>
+        <i sui-icon
+           suiBordered
+           suiInverted
+           suiIconType="users"></i>
+        <i sui-icon
+           suiBordered
+           suiInverted
+           suiColour="teal"
+           suiIconType="users"></i>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

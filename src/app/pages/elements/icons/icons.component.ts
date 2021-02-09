@@ -77,6 +77,50 @@ export class IconsComponent implements AfterViewChecked {
      suiFlip="vertical"
      suiIconType="cloud"></i>`;
 
+  snippetIconRotated = `
+  <i sui-icon
+     suiRotation="clockwise"
+     suiIconType="cloud"></i>
+  <i sui-icon
+     suiRotation="counterclockwise"
+     suiIconType="cloud"></i>`;
+
+  snippetIconCircular = `
+  <i sui-icon
+     suiCircular
+     suiIconType="users"></i>
+  <i sui-icon
+     suiCircular
+     suiColour="teal"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiCircular
+     suiInverted
+     suiIconType="users"></i>
+  <i sui-icon
+     suiCircular
+     suiInverted
+     suiColour="teal"
+     suiIconType="users"></i>`;
+
+  snippetIconBordered = `
+  <i sui-icon
+     suiBordered
+     suiIconType="users"></i>
+  <i sui-icon
+     suiBordered
+     suiColour="teal"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiBordered
+     suiInverted
+     suiIconType="users"></i>
+  <i sui-icon
+     suiBordered
+     suiInverted
+     suiColour="teal"
+     suiIconType="users"></i>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Icons | Ngx Semantic');
   }
