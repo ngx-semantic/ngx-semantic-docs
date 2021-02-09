@@ -341,6 +341,63 @@
         </i>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="cornerIcon"
+        [code]="snippetIconsCorner">
+      <h3 sui-header>Corner Icon</h3>
+      <p>A group of icons can display a smaller corner icon</p>
+
+      <ng-template #cornerIcon>
+        <i sui-icons
+           suiSize="huge">
+          <i sui-icon
+             suiIconType="puzzle"></i>
+          <i sui-icon
+             suiCorner="bottom right"
+             suiIconType="add"></i>
+        </i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="cornerIconOptions"
+        [code]="snippetIconsCornerOptions">
+      <ng-template #cornerIconOptions>
+        <i sui-icons
+           suiSize="huge">
+          <i sui-icon
+             suiIconType="puzzle"></i>
+          <i sui-icon
+             suiCorner="top left"
+             suiIconType="add"></i>
+        </i>
+        <i sui-icons
+           suiSize="huge">
+          <i sui-icon
+             suiIconType="puzzle"></i>
+          <i sui-icon
+             suiCorner="top right"
+             suiIconType="add"></i>
+        </i>
+        <i sui-icons
+           suiSize="huge">
+          <i sui-icon
+             suiIconType="puzzle"></i>
+          <i sui-icon
+             suiCorner="bottom left"
+             suiIconType="add"></i>
+        </i>
+        <i sui-icons
+           suiSize="huge">
+          <i sui-icon
+             suiIconType="puzzle"></i>
+          <i sui-icon
+             suiCorner="bottom right"
+             suiIconType="add"></i>
+        </i>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

@@ -240,6 +240,50 @@ export class IconsComponent implements AfterViewChecked {
        suiIconType="user"></i>
   </i>`;
 
+  snippetIconsCorner = `
+  <i sui-icons
+     suiSize="huge">
+    <i sui-icon
+       suiIconType="puzzle"></i>
+    <i sui-icon
+       suiCorner="bottom right"
+       suiIconType="add"></i>
+  </i>`;
+
+  snippetIconsCornerOptions = `
+  <i sui-icons
+     suiSize="huge">
+    <i sui-icon
+       suiIconType="puzzle"></i>
+    <i sui-icon
+       suiCorner="top left"
+       suiIconType="add"></i>
+  </i>
+  <i sui-icons
+     suiSize="huge">
+    <i sui-icon
+       suiIconType="puzzle"></i>
+    <i sui-icon
+       suiCorner="top right"
+       suiIconType="add"></i>
+  </i>
+  <i sui-icons
+     suiSize="huge">
+    <i sui-icon
+       suiIconType="puzzle"></i>
+    <i sui-icon
+       suiCorner="bottom left"
+       suiIconType="add"></i>
+  </i>
+  <i sui-icons
+     suiSize="huge">
+    <i sui-icon
+       suiIconType="puzzle"></i>
+    <i sui-icon
+       suiCorner="bottom right"
+       suiIconType="add"></i>
+  </i>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Icons | Ngx Semantic');
   }
