@@ -6,8 +6,7 @@ import {ClipboardService} from 'ngx-clipboard';
   template: `
     <div class="example">
       <div class="toggle-row">
-        <span sui-popup
-              suiPopupContent="Toggle Code">
+        <span data-tooltip="Toggle Code">
           <i sui-icon
              suiLink
              suiFitted
