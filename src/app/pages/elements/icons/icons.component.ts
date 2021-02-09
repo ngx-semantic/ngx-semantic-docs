@@ -121,6 +121,104 @@ export class IconsComponent implements AfterViewChecked {
      suiColour="teal"
      suiIconType="users"></i>`;
 
+  snippetIconColoured = `
+  <i sui-icon
+     suiColour="red"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="orange"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="yellow"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="olive"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="green"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="teal"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="blue"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="violet"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="purple"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="pink"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="brown"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="grey"
+     suiIconType="users"></i>
+  <i sui-icon
+     suiColour="black"
+     suiIconType="users"></i>`;
+
+  snippetIconInvertedColoured = `
+  <div sui-segment
+       suiInverted>
+    <i sui-icon
+       suiInverted
+       suiColour="red"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="orange"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="yellow"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="olive"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="green"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="teal"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="blue"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="violet"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="purple"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="pink"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="brown"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="grey"
+       suiIconType="users"></i>
+    <i sui-icon
+       suiInverted
+       suiColour="black"
+       suiIconType="users"></i>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Icons | Ngx Semantic');
   }
