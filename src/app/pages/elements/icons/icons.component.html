@@ -1,3 +1,50 @@
+<doc-page
+    header="Flags"
+    subHeader="A button indicates a possible user action"
+    (pageChanged)="tabChanged($event)">
+  <ng-container *ngIf="isDefinitionsActive">
+  </ng-container>
+
+  <ng-container *ngIf="isApiActive">
+    <h2 sui-header
+        suiDividing>sui-flag</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiCountry</td>
+        <td>
+          The ISO code for the country e.g <span sui-label>ng</span> for Nigeria
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-container>
+
 <div class="ui masthead vertical segment">
   <div class="ui container">
     <div class="introduction">
