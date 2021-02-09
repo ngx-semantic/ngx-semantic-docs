@@ -6,10 +6,12 @@ import {ClipboardService} from 'ngx-clipboard';
   template: `
     <div class="example">
       <div class="toggle-row">
-        <span data-tooltip="Toggle Code">
+        <span sui-popup
+              suiPopupContent="Toggle Code">
           <i sui-icon
+             suiLink
+             suiFitted
              suiIconType="code"
-             class="show-code"
              (click)="toggleCodeDisplay()"></i>
         </span>
       </div>
@@ -27,10 +29,12 @@ import {ClipboardService} from 'ngx-clipboard';
         <div sui-label
              suiAttached="top">
           Example
-          <i sui-icon
+          <i class="copy-code"
+             sui-icon
+             suiLink
              suiIconType="copy"
-             title="Copy Code"
-             style="cursor: pointer; float: right;"
+             sui-popup
+             suiPopupContent="Copy Code"
              (click)="copyCode()"></i>
         </div>
       </div>
@@ -60,14 +64,8 @@ import {ClipboardService} from 'ngx-clipboard';
       margin-bottom: 0.8rem;
     }
 
-    .show-code {
-      cursor: pointer;
-      color: gray;
-      font-size: 1.1rem;
-    }
-
-    .show-code:hover {
-      color: rgba(0, 0, 0, .6);
+    .copy-code {
+      float: right;
     }
 
     .code-container {
