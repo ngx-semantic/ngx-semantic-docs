@@ -135,7 +135,7 @@ export class MessagesComponent implements OnInit {
   </div>
   `;
 
-  snippetColored = `
+  snippetColoured = `
   <div sui-message suiColour='red'>Red</div>
   <div sui-message suiColour='orange'>Orange</div>
   <div sui-message suiColour='yellow'>Yellow</div>

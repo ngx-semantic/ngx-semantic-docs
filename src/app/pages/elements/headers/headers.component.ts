@@ -233,7 +233,7 @@ export class HeadersComponent implements AfterViewChecked {
     </h3>
   </div>`;
 
-  snippetColored = `
+  snippetColoured = `
   <h4 sui-header suiColour="red">Red</h4>
   <h4 sui-header suiColour="orange">Orange</h4>
   <h4 sui-header suiColour="yellow">Yellow</h4>

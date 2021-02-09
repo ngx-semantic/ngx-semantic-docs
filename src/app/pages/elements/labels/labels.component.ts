@@ -383,14 +383,14 @@ export class LabelsComponent implements OnInit {
 </div>
   `;
 
-  snippetColored = `
+  snippetColoured = `
   <a sui-label suiColour="red">Red</a>
   <a sui-label suiColour="orange">Orange</a>
   <a sui-label suiColour="yellow">Yellow</a>
   <a sui-label suiColour="olive">Olive</a>
   `;
 
-  snippetColoredEmpty = `
+  snippetColouredEmpty = `
 <a sui-label suiEmpty suiCircular suiColour="orange"></a>
 <a sui-label suiEmpty suiCircular suiColour="yellow"></a>
 <a sui-label suiEmpty suiCircular suiColour="olive"></a>
