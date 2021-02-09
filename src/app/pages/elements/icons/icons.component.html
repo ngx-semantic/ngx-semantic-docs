@@ -398,6 +398,24 @@
         </i>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inlineCornerIcon"
+        [code]="snippetIconsInline">
+      <ng-template #inlineCornerIcon>
+        <div sui-header>
+          <i sui-icons>
+            <i sui-icon
+               suiIconType="twitter"></i>
+            <i sui-icon
+               suiInverted
+               suiCorner="bottom right"
+               suiIconType="add"></i>
+          </i>
+          Add on Twitter
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

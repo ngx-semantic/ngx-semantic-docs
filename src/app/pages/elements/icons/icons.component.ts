@@ -284,6 +284,19 @@ export class IconsComponent implements AfterViewChecked {
        suiIconType="add"></i>
   </i>`;
 
+  snippetIconsInline = `
+  <div sui-header>
+    <i sui-icons>
+      <i sui-icon
+         suiIconType="twitter"></i>
+      <i sui-icon
+         suiInverted
+         suiCorner="bottom right"
+         suiIconType="add"></i>
+    </i>
+    Add on Twitter
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Icons | Ngx Semantic');
   }
