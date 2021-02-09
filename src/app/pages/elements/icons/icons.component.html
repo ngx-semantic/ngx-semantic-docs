@@ -37,6 +37,59 @@
            suiIconType="asterisk"></i>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="fitted"
+        [code]="snippetIconFitted">
+      <h3 sui-header>Fitted</h3>
+      <p>An icon can be fitted, without any space to the left or right of it. </p>
+
+      <ng-template #fitted>
+        <div>
+          Tight Spacing
+          <i sui-icon
+             suiFitted
+             suiIconType="help"></i>
+          Tight Spacing
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="size"
+        [code]="snippetIconSizes">
+      <h3 sui-header>Size</h3>
+      <p>An icon can vary in size r</p>
+
+      <ng-template #size>
+        <i sui-icon
+           suiSize="mini"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="tiny"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="small"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="large"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="big"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="huge"
+           suiIconType="home"></i>
+        <i sui-icon
+           suiSize="massive"
+           suiIconType="home"></i>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
