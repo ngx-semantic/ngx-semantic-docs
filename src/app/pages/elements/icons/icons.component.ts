@@ -61,6 +61,22 @@ export class IconsComponent implements AfterViewChecked {
      suiSize="massive"
      suiIconType="home"></i>`;
 
+  snippetIconLink = `
+  <i sui-icon
+     suiLink
+     suiIconType="close"></i>
+  <i sui-icon
+     suiLink
+     suiIconType="help"></i>`;
+
+  snippetIconFlipped = `
+  <i sui-icon
+     suiFlip="horizontal"
+     suiIconType="cloud"></i>
+  <i sui-icon
+     suiFlip="vertical"
+     suiIconType="cloud"></i>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Icons | Ngx Semantic');
   }

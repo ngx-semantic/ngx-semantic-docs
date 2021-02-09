@@ -62,7 +62,7 @@
         [content]="size"
         [code]="snippetIconSizes">
       <h3 sui-header>Size</h3>
-      <p>An icon can vary in size r</p>
+      <p>An icon can vary in size</p>
 
       <ng-template #size>
         <i sui-icon
@@ -88,6 +88,38 @@
         <i sui-icon
            suiSize="massive"
            suiIconType="home"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="link"
+        [code]="snippetIconLink">
+      <h3 sui-header>Link</h3>
+      <p>An icon can be formatted as a link</p>
+
+      <ng-template #link>
+        <i sui-icon
+           suiLink
+           suiIconType="close"></i>
+        <i sui-icon
+           suiLink
+           suiIconType="help"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="flipped"
+        [code]="snippetIconFlipped">
+      <h3 sui-header>Flipped</h3>
+      <p>An icon can be flipped</p>
+
+      <ng-template #flipped>
+        <i sui-icon
+           suiFlip="horizontal"
+           suiIconType="cloud"></i>
+        <i sui-icon
+           suiFlip="vertical"
+           suiIconType="cloud"></i>
       </ng-template>
     </doc-code-sample>
   </ng-container>
