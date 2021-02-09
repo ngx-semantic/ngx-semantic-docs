@@ -1,8 +1,42 @@
 <doc-page
-    header="Flags"
-    subHeader="A button indicates a possible user action"
+    header="Icon"
+    subHeader="An icon is a glyph used to represent something else"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="disabled"
+        [code]="snippetIconDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>An icon can show that it is disabled</p>
+
+      <ng-template #disabled>
+        <i sui-icon
+           disabled
+           suiIconType="users"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="loading"
+        [code]="snippetIconLoading">
+      <h3 sui-header>Loading</h3>
+      <p>An icon can be used as a simple loader</p>
+
+      <ng-template #loading>
+        <i sui-icon
+           suiLoading
+           suiIconType="spinner"></i>
+        <i sui-icon
+           suiLoading
+           suiIconType="notched circle"></i>
+        <i sui-icon
+           suiLoading
+           suiIconType="asterisk"></i>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
