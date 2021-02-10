@@ -6,6 +6,8 @@ import {NgModule} from "@angular/core";
 import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
+import {SuiHeaderModule, SuiLabelModule, SuiTableModule} from "ngx-semantic";
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +15,11 @@ import {ModulesRoutingModule} from "./modules-routing.module";
   ],
   imports: [
     CommonModule,
-    ModulesRoutingModule
+    ModulesRoutingModule,
+    SuiLabelModule,
+    SharedModule,
+    SuiHeaderModule,
+    SuiTableModule
   ]
 })
 export class ModulesModule {
