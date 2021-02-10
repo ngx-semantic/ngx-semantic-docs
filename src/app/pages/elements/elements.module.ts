@@ -3,6 +3,7 @@
  */
 
 import {NgModule} from "@angular/core";
+import {CommonModule} from "@angular/common";
 import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
@@ -18,10 +19,15 @@ import {RailsComponent} from "./rails/rails.component";
 import {RevealsComponent} from "./reveals/reveals.component";
 import {SegmentsComponent} from "./segments/segments.component";
 import {StepsComponent} from "./steps/steps.component";
-import {CommonModule} from "@angular/common";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
-import {NgxSemanticModule} from "ngx-semantic";
+import {
+  SuiButtonModule, SuiContainerModule, SuiDividerModule, SuiFlagModule, SuiFormModule, SuiGridModule,
+  SuiHeaderModule, SuiIconModule, SuiImageModule, SuiInputModule,
+  SuiLabelModule, SuiListModule,
+  SuiMessageModule, SuiPlaceholderModule, SuiSegmentModule, SuiStepsModule,
+  SuiTableModule
+} from "ngx-semantic";
 
 @NgModule({
   declarations: [
@@ -44,8 +50,24 @@ import {NgxSemanticModule} from "ngx-semantic";
   imports: [
     CommonModule,
     SharedModule,
-    NgxSemanticModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SuiLabelModule,
+    SuiHeaderModule,
+    SuiTableModule,
+    SuiButtonModule,
+    SuiMessageModule,
+    SuiIconModule,
+    SuiSegmentModule,
+    SuiPlaceholderModule,
+    SuiDividerModule,
+    SuiContainerModule,
+    SuiGridModule,
+    SuiFormModule,
+    SuiInputModule,
+    SuiFlagModule,
+    SuiImageModule,
+    SuiListModule,
+    SuiStepsModule
   ]
 })
 export class ElementsModule {
