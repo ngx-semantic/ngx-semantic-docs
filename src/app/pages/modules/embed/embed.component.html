@@ -33,6 +33,20 @@
             suiPlaceHolder="https://semantic-ui.com/images/vimeo-example.jpg"></sui-embed>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="customContent"
+        [code]="snippetCustomContent">
+      <h3 sui-header>Custom Content</h3>
+      <p>An embed can display any web content</p>
+
+      <ng-template #customContent>
+        <sui-embed
+            suiIcon="right circle arrow"
+            suiSourceUrl="http://www.myfav.es/jack"
+            suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
