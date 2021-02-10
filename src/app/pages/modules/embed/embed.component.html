@@ -1,6 +1,6 @@
 <doc-page
-    header="Icon"
-    subHeader="An icon is a glyph used to represent something else"
+    header="Embed"
+    subHeader="An embed displays content from other websites like YouTube videos or Google Maps"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
     <h2 sui-header
@@ -69,7 +69,7 @@
 
   <ng-container *ngIf="isApiActive">
     <h2 sui-header
-        suiDividing>sui-icon</h2>
+        suiDividing>sui-embed</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -86,11 +86,9 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiSize</td>
-        <td>Set the icon size. Allowed values could be
-          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
-              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
-              sui-label>'massive'</span>
+        <td>suiSource</td>
+        <td>Specifies a source to use. Cannot be used together with url. Allowed values could be
+          <span sui-label>'youtube'</span> | <span sui-label>'vimeo'</span>
           | <span sui-label>null</span>
         </td>
         <td>
@@ -101,10 +99,10 @@
         </td>
       </tr>
       <tr>
-        <td>suiFlip</td>
+        <td>suiAspectRatio</td>
         <td>
-          Icon flip direction. Allowed values could be
-          <span sui-label>'horizontal'</span> | <span sui-label>'vertical'</span>
+          An embed can specify an alternative aspect ratio. Allowed values could be
+          <span sui-label>'4:3'</span> | <span sui-label>'16:9'</span> | <span sui-label>'21:9'</span>
           | <span sui-label>null</span>
         </td>
         <td>
@@ -115,11 +113,34 @@
         </td>
       </tr>
       <tr>
-        <td>suiRotation</td>
+        <td>suiIcon </td>
         <td>
-          Icon rotate direction. Allowed values could be
-          <span sui-label>'clockwise'</span> | <span sui-label>'counterclockwise'</span>
-          | <span sui-label>null</span>
+          Specifies an icon to use with placeholder content.
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">video play</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiId</td>
+        <td>
+          Specifies an id for source.
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div> |
+          <div sui-label suiColour="teal">number</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPlaceHolder</td>
+        <td>
+          A placeholder image for embed
         </td>
         <td>
           <div sui-label suiColour="teal">string</div>
@@ -129,15 +150,9 @@
         </td>
       </tr>
       <tr>
-        <td>suiColour</td>
+        <td>suiSourceUrl</td>
         <td>
-          Set the icon colour. Allowed values could be
-          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
-            sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
-            sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
-            sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
-            sui-label>'black'</span>
-          | <span sui-label>null</span>
+          Specifies a url to use for embed. Cannot be used together with source
         </td>
         <td>
           <div sui-label suiColour="teal">string</div>
@@ -147,36 +162,9 @@
         </td>
       </tr>
       <tr>
-        <td>suiCorner</td>
+        <td>suiAutoplay</td>
         <td>
-          Align icon to corner. Allowed values could be
-          <span sui-label>'top left'</span> | <span sui-label>'top right'</span> | <span sui-label>'bottom left'</span>
-          | <span sui-label>'bottom right'</span>
-          | <span sui-label>null</span>
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiIconType</td>
-        <td>
-          The icon name
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>disabled</td>
-        <td>
-          Reducing icon opacity to create "disabled icon" effect.
+          Setting to true or false will force autoplay
         </td>
         <td>
           <div sui-label
@@ -188,133 +176,6 @@
           <div sui-label
                suiColour="grey">
             false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiOutline</td>
-        <td>
-          Set font-family icon to outlined
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiLoading</td>
-        <td>
-          Add rotate animation to icon.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiFitted</td>
-        <td> Icon flip direction.</td>
-        <td>
-          <div sui-label suiColour="teal">boolean</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey"> false</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiLink</td>
-        <td>Add hover animation to icon.</td>
-        <td>
-          <div sui-label suiColour="teal">boolean</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey"> false</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiCircular</td>
-        <td>Add circular border to icon.</td>
-        <td>
-          <div sui-label suiColour="teal">boolean</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey"> false</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiBordered</td>
-        <td>Add squared border to icon.</td>
-        <td>
-          <div sui-label suiColour="teal">boolean</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey"> false</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiInverted</td>
-        <td>Add black background to icon, also change icon color to contrasted variant.</td>
-        <td>
-          <div sui-label suiColour="teal">boolean</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey"> false</div>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>sui-icons</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>suiSize</td>
-        <td>Set the header size. Allowed values could be
-          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
-              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
-              sui-label>'massive'</span>
-          | <span sui-label>null</span>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            string
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            null
           </div>
         </td>
       </tr>
