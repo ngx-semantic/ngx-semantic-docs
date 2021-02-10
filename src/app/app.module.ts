@@ -8,6 +8,7 @@ import {CollectionsComponent} from './pages/collections/collections.component';
 import {ViewsComponent} from './pages/views/views.component';
 import {GeneralComponent} from "./pages/general/general.component";
 import {SharedModule} from "./shared/shared.module";
+import {ModulesComponent} from "./pages/modules/modules.component";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {SharedModule} from "./shared/shared.module";
     ElementsComponent,
     ViewsComponent,
     CollectionsComponent,
-    GeneralComponent
+    GeneralComponent,
+    ModulesComponent
   ],
   imports: [
     BrowserModule,
