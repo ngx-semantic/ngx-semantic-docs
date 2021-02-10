@@ -14,13 +14,13 @@ import {SharedModule} from "../../shared/shared.module";
     EmbedComponent
   ],
   imports: [
-    CommonModule,
-    ModulesRoutingModule,
-    SuiLabelModule,
     SharedModule,
-    SuiHeaderModule,
+    CommonModule,
+    SuiLabelModule,
     SuiTableModule,
-    SuiEmbedModule
+    SuiEmbedModule,
+    SuiHeaderModule,
+    ModulesRoutingModule
   ]
 })
 export class ModulesModule {

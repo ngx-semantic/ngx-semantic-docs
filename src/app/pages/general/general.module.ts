@@ -14,8 +14,8 @@ import {SuiHeaderModule} from "ngx-semantic";
   ],
   imports: [
     CommonModule,
-    GeneralRoutingModule,
-    SuiHeaderModule
+    SuiHeaderModule,
+    GeneralRoutingModule
   ]
 })
 export class GeneralModule {
