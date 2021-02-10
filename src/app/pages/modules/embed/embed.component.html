@@ -3,6 +3,36 @@
     subHeader="An icon is a glyph used to represent something else"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="youtube"
+        [code]="snippetYoutube">
+      <h3 sui-header>YouTube</h3>
+      <p>An embed can be used to display YouTube Content</p>
+
+      <ng-template #youtube>
+        <sui-embed
+            suiSource="youtube"
+            suiId="O6Xo21L0ybE"
+            suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="vimeo"
+        [code]="snippetVimeo">
+      <h3 sui-header>Vimeo</h3>
+      <p>An embed can be used to display Vimeo content.</p>
+
+      <ng-template #vimeo>
+        <sui-embed
+            suiSource="vimeo"
+            suiId="125292332"
+            suiPlaceHolder="https://semantic-ui.com/images/vimeo-example.jpg"></sui-embed>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
@@ -88,7 +118,8 @@
         <td>suiCorner</td>
         <td>
           Align icon to corner. Allowed values could be
-          <span sui-label>'top left'</span> | <span sui-label>'top right'</span> | <span sui-label>'bottom left'</span> | <span sui-label>'bottom right'</span>
+          <span sui-label>'top left'</span> | <span sui-label>'top right'</span> | <span sui-label>'bottom left'</span>
+          | <span sui-label>'bottom right'</span>
           | <span sui-label>null</span>
         </td>
         <td>

@@ -6,7 +6,7 @@ import {NgModule} from "@angular/core";
 import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
-import {SuiHeaderModule, SuiLabelModule, SuiTableModule} from "ngx-semantic";
+import {SuiEmbedModule, SuiHeaderModule, SuiLabelModule, SuiTableModule} from "ngx-semantic";
 import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
@@ -19,7 +19,8 @@ import {SharedModule} from "../../shared/shared.module";
     SuiLabelModule,
     SharedModule,
     SuiHeaderModule,
-    SuiTableModule
+    SuiTableModule,
+    SuiEmbedModule
   ]
 })
 export class ModulesModule {

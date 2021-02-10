@@ -12,6 +12,18 @@ export class EmbedComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
+  snippetYoutube = `
+   <sui-embed
+      suiSource="youtube"
+      suiId="O6Xo21L0ybE"
+      suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>`;
+
+  snippetVimeo = `
+   <sui-embed
+      suiSource="vimeo"
+      suiId="125292332"
+      suiPlaceHolder="https://semantic-ui.com/images/vimeo-example.jpg"></sui-embed>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Embed | Ngx Semantic');
   }
