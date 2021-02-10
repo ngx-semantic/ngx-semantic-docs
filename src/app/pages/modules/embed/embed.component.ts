@@ -30,6 +30,13 @@ export class EmbedComponent implements AfterViewChecked {
       suiSourceUrl="http://www.myfav.es/jack"
       suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>`;
 
+  snippetAspectRatio = `
+   <sui-embed
+      suiAspectRatio="4:3"
+      suiSource="youtube"
+      suiId="HTZudKi36bo"
+      suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Embed | Ngx Semantic');
   }

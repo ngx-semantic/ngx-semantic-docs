@@ -47,6 +47,24 @@
             suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="aspectRatio"
+        [code]="snippetAspectRatio">
+      <h3 sui-header>Aspect Ratio</h3>
+      <p>An embed can specify an alternative aspect ratio</p>
+
+      <ng-template #aspectRatio>
+        <sui-embed
+            suiAspectRatio="4:3"
+            suiSource="youtube"
+            suiId="HTZudKi36bo"
+            suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
