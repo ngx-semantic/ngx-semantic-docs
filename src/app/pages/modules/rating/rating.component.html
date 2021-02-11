@@ -3,6 +3,20 @@
     subHeader="A rating indicates user interest in content"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [code]="snippetBasic">
+      <h3 sui-header>Rating <span sui-label
+                                  suiColour="teal">Flexbox</span></h3>
+      <p>A basic rating</p>
+
+      <ng-template #basic>
+        <sui-rating suiMaxValue="1"></sui-rating>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
@@ -51,7 +65,7 @@
         </td>
       </tr>
       <tr>
-        <td>suiIcon </td>
+        <td>suiIcon</td>
         <td>
           Specifies an icon to use with placeholder content.
         </td>
@@ -68,7 +82,8 @@
           Specifies an id for source.
         </td>
         <td>
-          <div sui-label suiColour="teal">string</div> |
+          <div sui-label suiColour="teal">string</div>
+          |
           <div sui-label suiColour="teal">number</div>
         </td>
         <td>
