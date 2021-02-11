@@ -45,6 +45,65 @@
             suiMaxValue="3"></sui-rating>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="sizes"
+        [code]="snippetBasic">
+      <h3 sui-header>Size</h3>
+      <p>A rating can vary in size</p>
+
+      <ng-template #sizes>
+        <sui-rating
+            suiSize="mini"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="tiny"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="small"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="large"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="huge"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="huge"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+        <br><br>
+        <sui-rating
+            suiSize="massive"
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
