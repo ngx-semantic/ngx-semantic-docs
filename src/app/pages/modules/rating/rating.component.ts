@@ -15,6 +15,18 @@ export class RatingComponent implements AfterViewChecked {
   snippetBasic = `
   <sui-rating suiMaxValue="1"></sui-rating>`;
 
+  snippetStar = `
+  <sui-rating
+    suiType="star"
+    suiValue="3"
+    suiMaxValue="4"></sui-rating>`;
+
+  snippetHeart = `
+  <sui-rating
+    suiType="heart"
+    suiValue="1"
+    suiMaxValue="3"></sui-rating>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Rating | Ngx Semantic');
   }

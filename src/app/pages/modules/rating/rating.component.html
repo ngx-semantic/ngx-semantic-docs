@@ -17,6 +17,34 @@
         <sui-rating suiMaxValue="1"></sui-rating>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="star"
+        [code]="snippetStar">
+      <h3 sui-header>Star</h3>
+      <p>A rating can use a set of star icons</p>
+
+      <ng-template #star>
+        <sui-rating
+            suiType="star"
+            suiValue="3"
+            suiMaxValue="4"></sui-rating>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="heart"
+        [code]="snippetHeart">
+      <h3 sui-header>Heart</h3>
+      <p>A rating can use a set of heart icons</p>
+
+      <ng-template #heart>
+        <sui-rating
+            suiType="heart"
+            suiValue="1"
+            suiMaxValue="3"></sui-rating>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
