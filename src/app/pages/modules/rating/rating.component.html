@@ -108,7 +108,7 @@
 
   <ng-container *ngIf="isApiActive">
     <h2 sui-header
-        suiDividing>sui-embed</h2>
+        suiDividing>sui-rating</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -125,9 +125,30 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiSource</td>
-        <td>Specifies a source to use. Cannot be used together with url. Allowed values could be
-          <span sui-label>'youtube'</span> | <span sui-label>'vimeo'</span>
+        <td>suiSize</td>
+        <td>Set the rating size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiType</td>
+        <td>Specifies a icon to use. Cannot be used together with url. Allowed values could be
+          <span sui-label>'star'</span> | <span sui-label>'heart'</span>
           | <span sui-label>null</span>
         </td>
         <td>
@@ -138,73 +159,9 @@
         </td>
       </tr>
       <tr>
-        <td>suiAspectRatio</td>
+        <td>suiReadOnly </td>
         <td>
-          An embed can specify an alternative aspect ratio. Allowed values could be
-          <span sui-label>'4:3'</span> | <span sui-label>'16:9'</span> | <span sui-label>'21:9'</span>
-          | <span sui-label>null</span>
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiIcon</td>
-        <td>
-          Specifies an icon to use with placeholder content.
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">video play</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiId</td>
-        <td>
-          Specifies an id for source.
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-          |
-          <div sui-label suiColour="teal">number</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiPlaceHolder</td>
-        <td>
-          A placeholder image for embed
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiSourceUrl</td>
-        <td>
-          Specifies a url to use for embed. Cannot be used together with source
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiAutoplay</td>
-        <td>
-          Setting to true or false will force autoplay
+          Setting to true or false will determine if users can change the rating value
         </td>
         <td>
           <div sui-label
@@ -216,6 +173,50 @@
           <div sui-label
                suiColour="grey">
             false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiClearable</td>
+        <td>
+          Setting to true or false will determine if clicking on the value would reset it
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>valueChanged </td>
+        <td>Fired when the rating value is changed. Also supports <code>[(ngModel)]</code> syntax</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
           </div>
         </td>
       </tr>
