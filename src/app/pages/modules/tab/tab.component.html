@@ -1,18 +1,18 @@
 <doc-page
-    header="Embed"
-    subHeader="An embed displays content from other websites like YouTube videos or Google Maps"
+    header="Tab"
+    subHeader="A tab is a hidden section of content activated by a menu"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
     <h2 sui-header
-        suiDividing>States</h2>
+        suiDividing>Type</h2>
 
     <doc-code-sample
-        [content]="youtube"
+        [content]="basic"
         [code]="snippetYoutube">
-      <h3 sui-header>YouTube</h3>
-      <p>An embed can be used to display YouTube Content</p>
+      <h3 sui-header>Tab</h3>
+      <p>A basic tab</p>
 
-      <ng-template #youtube>
+      <ng-template #basic>
         <sui-embed
             suiSource="youtube"
             suiId="O6Xo21L0ybE"

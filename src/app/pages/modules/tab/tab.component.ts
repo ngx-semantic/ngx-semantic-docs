@@ -38,7 +38,7 @@ export class TabComponent implements AfterViewChecked {
       suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Embed | Ngx Semantic');
+    title.setTitle('Tab | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
