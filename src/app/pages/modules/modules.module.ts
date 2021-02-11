@@ -8,10 +8,12 @@ import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
 import {SuiEmbedModule, SuiHeaderModule, SuiLabelModule, SuiTableModule} from "ngx-semantic";
 import {SharedModule} from "../../shared/shared.module";
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
-    EmbedComponent
+    EmbedComponent,
+    RatingComponent
   ],
   imports: [
     SharedModule,
