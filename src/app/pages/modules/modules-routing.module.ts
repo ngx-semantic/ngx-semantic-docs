@@ -6,6 +6,7 @@ import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 import {EmbedComponent} from "./embed/embed.component";
 import {RatingComponent} from "./rating/rating.component";
+import {TabComponent} from "./tab/tab.component";
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'rating',
     component: RatingComponent
+  },
+  {
+    path: 'tab',
+    component: TabComponent
   }
 ];
 
