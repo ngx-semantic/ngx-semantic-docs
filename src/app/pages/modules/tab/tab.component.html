@@ -56,6 +56,31 @@
     </doc-code-sample>
 
     <doc-code-sample
+        [content]="pointingMenu"
+        [code]="snippetPointing">
+      <h3 sui-header>Pointing Menu</h3>
+      <p>A tab menu can point to its tab panes</p>
+
+      <ng-template #pointingMenu>
+        <sui-tabs
+            suiTabType="pointing">
+          <sui-tab
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="vimeo"
         [code]="snippetVimeo">
       <h3 sui-header>Vimeo</h3>

@@ -53,6 +53,23 @@ export class TabComponent implements AfterViewChecked {
       </sui-tab>
     </sui-tabs>`;
 
+  snippetPointing = `
+    <sui-tabs
+        suiTabType="pointing">
+      <sui-tab
+          suiTitle="Circle">
+        Circle
+      </sui-tab>
+      <sui-tab
+          suiTitle="Box">
+        Box
+      </sui-tab>
+      <sui-tab
+          suiTitle="Triangle">
+        Triangle
+      </sui-tab>
+    </sui-tabs>`;
+
   snippetVimeo = `
    <sui-embed
       suiSource="vimeo"
