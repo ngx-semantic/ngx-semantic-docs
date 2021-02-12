@@ -6,7 +6,14 @@ import {NgModule} from "@angular/core";
 import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
-import {SuiEmbedModule, SuiHeaderModule, SuiLabelModule, SuiRatingModule, SuiTableModule} from "ngx-semantic";
+import {
+  SuiEmbedModule,
+  SuiHeaderModule,
+  SuiLabelModule, SuiPlaceholderModule,
+  SuiRatingModule,
+  SuiTableModule,
+  SuiTabsModule
+} from "ngx-semantic";
 import {SharedModule} from "../../shared/shared.module";
 import { RatingComponent } from './rating/rating.component';
 import {TabComponent} from "./tab/tab.component";
@@ -25,7 +32,9 @@ import {TabComponent} from "./tab/tab.component";
     SuiEmbedModule,
     SuiHeaderModule,
     SuiRatingModule,
-    ModulesRoutingModule
+    ModulesRoutingModule,
+    SuiTabsModule,
+    SuiPlaceholderModule
   ]
 })
 export class ModulesModule {
