@@ -81,6 +81,31 @@
     </doc-code-sample>
 
     <doc-code-sample
+        [content]="textMenu"
+        [code]="snippetText">
+      <h3 sui-header>Text Menu</h3>
+      <p>A tab menu can be formatted for text content</p>
+
+      <ng-template #textMenu>
+        <sui-tabs
+            suiTabType="text">
+          <sui-tab
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
         [content]="vimeo"
         [code]="snippetVimeo">
       <h3 sui-header>Vimeo</h3>

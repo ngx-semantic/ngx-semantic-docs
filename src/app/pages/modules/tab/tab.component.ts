@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {HighlightService} from "../../../shared/services/highlight.service";
 
@@ -56,6 +56,23 @@ export class TabComponent implements AfterViewChecked {
   snippetPointing = `
     <sui-tabs
         suiTabType="pointing">
+      <sui-tab
+          suiTitle="Circle">
+        Circle
+      </sui-tab>
+      <sui-tab
+          suiTitle="Box">
+        Box
+      </sui-tab>
+      <sui-tab
+          suiTitle="Triangle">
+        Triangle
+      </sui-tab>
+    </sui-tabs>`;
+
+  snippetText = `
+    <sui-tabs
+        suiTabType="text">
       <sui-tab
           suiTitle="Circle">
         Circle
