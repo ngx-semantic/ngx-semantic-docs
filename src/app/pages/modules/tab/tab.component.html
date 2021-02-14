@@ -1,0 +1,342 @@
+<doc-page
+    header="Tab"
+    subHeader="A tab is a hidden section of content activated by a menu"
+    (pageChanged)="tabChanged($event)">
+  <ng-container *ngIf="isDefinitionsActive">
+    <h2 sui-header
+        suiDividing>Type</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [code]="snippetBasic">
+      <h3 sui-header>Tab</h3>
+      <p>A basic tab</p>
+
+      <ng-template #basic>
+        <sui-tabs>
+          <sui-tab
+              suiTitle="HTML">
+            <h3>HTML</h3>
+            <p>
+              HTML (HyperText Markup Language) is the most basic building block of
+              the Web. It describes and defines the content of a webpage along with
+              the basic layout of the webpage. Other technologies besides HTML are
+              generally used to describe a web page's appearance/presentation (CSS)
+              or functionality/ behavior (JavaScript).
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a>
+          </sui-tab>
+          <sui-tab
+              suiTitle="CSS">
+            <h3>CSS</h3>
+            <p>
+              Cascading Style Sheets (CSS) is a stylesheet language used to describe
+              the presentation of a document written in HTML or XML (including XML
+              dialects such as SVG or XHTML). CSS describes how elements should be
+              rendered on screen, on paper, in speech, or on other media.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">developer.mozilla.org</a>
+          </sui-tab>
+          <sui-tab
+              suiTitle="JavaScript">
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript (JS) is a lightweight interpreted or JIT-compiled
+              programming language with first-class functions. While it is most
+              well-known as the scripting language for Web pages, many non-browser
+              environments also use it, such as Node.js, Apache CouchDB and Adobe
+              Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic
+              language, supporting object-oriented, imperative, and declarative
+              (e.g. functional programming) styles.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">developer.mozilla.org</a>
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="pointingMenu"
+        [code]="snippetPointing">
+      <h3 sui-header>Pointing Menu</h3>
+      <p>A tab menu can point to its tab panes</p>
+
+      <ng-template #pointingMenu>
+        <sui-tabs
+            suiTabType="pointing">
+          <sui-tab
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="textMenu"
+        [code]="snippetText">
+      <h3 sui-header>Text Menu</h3>
+      <p>A tab menu can be formatted for text content</p>
+
+      <ng-template #textMenu>
+        <sui-tabs
+            suiTabType="text">
+          <sui-tab
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="loading"
+        [code]="snippetLoading">
+      <h3 sui-header>Loading</h3>
+      <p>A tab can display a loading indicator.</p>
+
+      <ng-template #loading>
+        <sui-tabs>
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [code]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A tab can be disabled</p>
+
+      <ng-template #disabled>
+        <sui-tabs>
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              disabled
+              suiTitle="Secret Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Menu Variations</h2>
+
+    <doc-code-sample
+        [content]="positioned"
+        [code]="snippetPositioned">
+      <h3 sui-header>Position</h3>
+      <p>A tab can be positioned.</p>
+
+      <ng-template #positioned>
+        <sui-tabs
+            suiTabType="secondary"
+            suiTabMenuPosition="bottom">
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="coloured"
+        [code]="snippetColoured">
+      <h3 sui-header>Coloured</h3>
+      <p>A tab can be coloured.</p>
+
+      <ng-template #coloured>
+        <select name="tab-colour"
+                [(ngModel)]="tabColour">
+          <option *ngFor="let colour of colours"
+                  [value]="colour">{{colour}}</option>
+        </select>
+
+        <sui-tabs
+            suiTabType="pointing"
+            [suiColour]="tabColour">
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+  </ng-container>
+
+  <ng-container *ngIf="isApiActive">
+    <h2 sui-header
+        suiDividing>sui-embed</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSource</td>
+        <td>Specifies a source to use. Cannot be used together with url. Allowed values could be
+          <span sui-label>'youtube'</span> | <span sui-label>'vimeo'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAspectRatio</td>
+        <td>
+          An embed can specify an alternative aspect ratio. Allowed values could be
+          <span sui-label>'4:3'</span> | <span sui-label>'16:9'</span> | <span sui-label>'21:9'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Specifies an icon to use with placeholder content.
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">video play</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiId</td>
+        <td>
+          Specifies an id for source.
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+          |
+          <div sui-label suiColour="teal">number</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPlaceHolder</td>
+        <td>
+          A placeholder image for embed
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSourceUrl</td>
+        <td>
+          Specifies a url to use for embed. Cannot be used together with source
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAutoplay</td>
+        <td>
+          Setting to true or false will force autoplay
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</doc-page>

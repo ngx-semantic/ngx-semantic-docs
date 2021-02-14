@@ -6,12 +6,23 @@ import {NgModule} from "@angular/core";
 import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
-import {SuiEmbedModule, SuiHeaderModule, SuiLabelModule, SuiRatingModule, SuiTableModule} from "ngx-semantic";
+import {
+  SuiButtonModule,
+  SuiEmbedModule,
+  SuiHeaderModule,
+  SuiLabelModule, SuiPlaceholderModule,
+  SuiRatingModule,
+  SuiTableModule,
+  SuiTabsModule
+} from "ngx-semantic";
 import {SharedModule} from "../../shared/shared.module";
 import { RatingComponent } from './rating/rating.component';
+import {TabComponent} from "./tab/tab.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
+    TabComponent,
     EmbedComponent,
     RatingComponent
   ],
@@ -22,8 +33,12 @@ import { RatingComponent } from './rating/rating.component';
     SuiTableModule,
     SuiEmbedModule,
     SuiHeaderModule,
+    SuiRatingModule,
     ModulesRoutingModule,
-    SuiRatingModule
+    SuiTabsModule,
+    SuiPlaceholderModule,
+    SuiButtonModule,
+    FormsModule
   ]
 })
 export class ModulesModule {
