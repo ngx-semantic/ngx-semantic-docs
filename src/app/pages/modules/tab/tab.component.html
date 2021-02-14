@@ -225,7 +225,7 @@
 
   <ng-container *ngIf="isApiActive">
     <h2 sui-header
-        suiDividing>sui-embed</h2>
+        suiDividing>sui-tabs</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -242,25 +242,99 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiSource</td>
-        <td>Specifies a source to use. Cannot be used together with url. Allowed values could be
-          <span sui-label>'youtube'</span> | <span sui-label>'vimeo'</span>
-          | <span sui-label>null</span>
+        <td>suiTabMenuPosition</td>
+        <td>Specifies the menu position. Allowed values could be
+          <span sui-label>'top'</span> | <span sui-label>'bottom'</span>
         </td>
         <td>
-          <div sui-label suiColour="teal"> string</div>
+          <div sui-label suiColour="teal">string</div>
         </td>
         <td>
-          <div sui-label suiColour="grey"> null</div>
+          <div sui-label suiColour="grey">top</div>
         </td>
       </tr>
       <tr>
-        <td>suiAspectRatio</td>
+        <td>suiTabType</td>
         <td>
-          An embed can specify an alternative aspect ratio. Allowed values could be
-          <span sui-label>'4:3'</span> | <span sui-label>'16:9'</span> | <span sui-label>'21:9'</span>
+          Determine the styling for the tab menu. Allowed values could be
+          <span sui-label>'basic'</span> | <span sui-label>'pointing'</span> | <span sui-label>'secondary'</span> | <span sui-label>'text'</span>
           | <span sui-label>null</span>
         </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">basic</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>Set the menu colour. Allowed values could be
+          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
+              sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
+              sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
+              sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
+              sui-label>'black'</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSelectedIndexChanged</td>
+        <td>Fires when the selected tab is changed. Index starts from 0.</td>
+        <td>
+          <div sui-label suiColour="teal">number</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-tab</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiTitle</td>
+        <td>Set the tab title</td>
         <td>
           <div sui-label suiColour="teal">string</div>
         </td>
@@ -270,35 +344,7 @@
       </tr>
       <tr>
         <td>suiIcon</td>
-        <td>
-          Specifies an icon to use with placeholder content.
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">video play</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiId</td>
-        <td>
-          Specifies an id for source.
-        </td>
-        <td>
-          <div sui-label suiColour="teal">string</div>
-          |
-          <div sui-label suiColour="teal">number</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiPlaceHolder</td>
-        <td>
-          A placeholder image for embed
-        </td>
+        <td>Set the tab icon</td>
         <td>
           <div sui-label suiColour="teal">string</div>
         </td>
@@ -307,23 +353,23 @@
         </td>
       </tr>
       <tr>
-        <td>suiSourceUrl</td>
-        <td>
-          Specifies a url to use for embed. Cannot be used together with source
+        <td>suiLoading</td>
+        <td>Show the loading icon<td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
         </td>
         <td>
-          <div sui-label suiColour="teal">string</div>
-        </td>
-        <td>
-          <div sui-label suiColour="grey">null</div>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
         </td>
       </tr>
       <tr>
-        <td>suiAutoplay</td>
-        <td>
-          Setting to true or false will force autoplay
-        </td>
-        <td>
+        <td>disabled</td>
+        <td>Prevent the tab from being activated<td>
           <div sui-label
                suiColour="teal">
             boolean

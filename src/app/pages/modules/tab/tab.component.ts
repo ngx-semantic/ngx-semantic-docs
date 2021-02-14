@@ -12,8 +12,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   `]
 })
 export class TabComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
+  // isDefinitionsActive = true;
+  // isApiActive: boolean;
+  isDefinitionsActive: boolean;
+  isApiActive = true;
 
   colours = ['red', 'orange', 'green', 'blue', 'violet'];
 
