@@ -5,12 +5,20 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 @Component({
   selector: 'doc-tab',
   templateUrl: './tab.component.html',
-  styles: [
-  ]
+  styles: [`
+    select {
+        margin-bottom: 1rem;
+    }
+  `]
 })
 export class TabComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
+
+  colours = ['red', 'orange', 'green', 'blue', 'violet'];
+
+  tabColour = 'blue';
+  isTabDisabled = false;
 
   snippetBasic = `
     <sui-tabs>
@@ -104,24 +112,60 @@ export class TabComponent implements AfterViewChecked {
       </sui-tab>
     </sui-tabs>`;
 
-  snippetVimeo = `
-   <sui-embed
-      suiSource="vimeo"
-      suiId="125292332"
-      suiPlaceHolder="https://semantic-ui.com/images/vimeo-example.jpg"></sui-embed>`;
+  snippetDisabled = `
+    <sui-tabs>
+      <sui-tab
+          suiLoading
+          suiTitle="Circle">
+        Circle
+      </sui-tab>
+      <sui-tab
+          suiTitle="Box">
+        Box
+      </sui-tab>
+      <sui-tab
+          disabled
+          suiTitle="Secret Triangle">
+        Triangle
+      </sui-tab>
+    </sui-tabs>`;
 
-  snippetCustomContent = `
-   <sui-embed
-      suiIcon="right circle arrow"
-      suiSourceUrl="http://www.myfav.es/jack"
-      suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>`;
+  snippetPositioned = `
+    <sui-tabs
+        suiTabType="secondary"
+        suiTabMenuPosition="bottom">
+      <sui-tab
+          suiLoading
+          suiTitle="Circle">
+        Circle
+      </sui-tab>
+      <sui-tab
+          suiTitle="Box">
+        Box
+      </sui-tab>
+      <sui-tab
+          suiTitle="Triangle">
+        Triangle
+      </sui-tab>
+    </sui-tabs>`;
 
-  snippetAspectRatio = `
-   <sui-embed
-      suiAspectRatio="4:3"
-      suiSource="youtube"
-      suiId="HTZudKi36bo"
-      suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>`;
+  snippetColoured = `
+    <sui-tabs
+        suiColour="red">
+      <sui-tab
+          suiLoading
+          suiTitle="Circle">
+        Circle
+      </sui-tab>
+      <sui-tab
+          suiTitle="Box">
+        Box
+      </sui-tab>
+      <sui-tab
+          suiTitle="Triangle">
+        Triangle
+      </sui-tab>
+    </sui-tabs>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Tab | Ngx Semantic');

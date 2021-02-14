@@ -7,6 +7,7 @@ import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
 import {
+  SuiButtonModule,
   SuiEmbedModule,
   SuiHeaderModule,
   SuiLabelModule, SuiPlaceholderModule,
@@ -17,6 +18,7 @@ import {
 import {SharedModule} from "../../shared/shared.module";
 import { RatingComponent } from './rating/rating.component';
 import {TabComponent} from "./tab/tab.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {TabComponent} from "./tab/tab.component";
     SuiRatingModule,
     ModulesRoutingModule,
     SuiTabsModule,
-    SuiPlaceholderModule
+    SuiPlaceholderModule,
+    SuiButtonModule,
+    FormsModule
   ]
 })
 export class ModulesModule {

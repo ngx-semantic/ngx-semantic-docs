@@ -132,6 +132,95 @@
         </sui-tabs>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [code]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A tab can be disabled</p>
+
+      <ng-template #disabled>
+        <sui-tabs>
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              disabled
+              suiTitle="Secret Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Menu Variations</h2>
+
+    <doc-code-sample
+        [content]="positioned"
+        [code]="snippetPositioned">
+      <h3 sui-header>Position</h3>
+      <p>A tab can be positioned.</p>
+
+      <ng-template #positioned>
+        <sui-tabs
+            suiTabType="secondary"
+            suiTabMenuPosition="bottom">
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="coloured"
+        [code]="snippetColoured">
+      <h3 sui-header>Coloured</h3>
+      <p>A tab can be coloured.</p>
+
+      <ng-template #coloured>
+        <select name="tab-colour"
+                [(ngModel)]="tabColour">
+          <option *ngFor="let colour of colours"
+                  [value]="colour">{{colour}}</option>
+        </select>
+
+        <sui-tabs
+            suiTabType="pointing"
+            [suiColour]="tabColour">
+          <sui-tab
+              suiLoading
+              suiTitle="Circle">
+            Circle
+          </sui-tab>
+          <sui-tab
+              suiTitle="Box">
+            Box
+          </sui-tab>
+          <sui-tab
+              suiTitle="Triangle">
+            Triangle
+          </sui-tab>
+        </sui-tabs>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
