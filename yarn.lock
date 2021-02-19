@@ -5498,10 +5498,10 @@ ngx-clipboard@^13.0.1:
   dependencies:
     ngx-window-token ">=3.0.0"
 
-ngx-semantic@^1.0.0-beta.13:
-  version "1.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.13.tgz#b3a49157596d54dfdc54ff2b1d6d40e978bff6e6"
-  integrity sha512-zukaCwrnoYwUu2W4+B/ss9FUV+EeN93eRyH/HLjfmotvzPRK3ylkmqTroMsSH8XkSzKjZ2MLfYT126oVGkLCeQ==
+ngx-semantic@^1.0.0-beta.14:
+  version "1.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.14.tgz#6658aa12c8b5a21463d6bf0b88264f60bad72e10"
+  integrity sha512-9MBdgw0mVAzdKdUCg+zCVQeXpGx+YK7EI4s2xj5GIM7UiN3z4Yh/lDm5LLDuc2O0dmZbvalMdR09GkkXdhXSSw==
   dependencies:
     "@angular/cdk" ">=9.0.0"
     tslib ">=1.10.0"
