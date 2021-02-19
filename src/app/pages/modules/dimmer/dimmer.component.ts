@@ -17,6 +17,7 @@ export class DimmerComponent implements AfterViewChecked {
 
   simpleDimmerVisible = false;
   contentDimmerVisible = false
+  pageDimmerVisible = false;
 
   snippetSimple= `
   <div sui-segment
@@ -67,6 +68,25 @@ export class DimmerComponent implements AfterViewChecked {
   </div>`;
 
   snippetContentTs = `
+  dimmerVisible: boolean = false;`;
+
+  snippetPage= `
+  <div sui-dimmer
+       suiDimmerFullPage
+       [(dimmed)]="pageDimmerVisible">
+    <ng-template suiDimmerContent>
+      <h2 sui-header
+          suiIcon
+          suiInverted>
+        <i sui-icon
+           suiIconType="mail"></i>
+        Dimmed Message
+      </h2>
+      <div suiSubHeader>Dimmer sub-header</div>
+    </ng-template>
+  </div>`;
+
+  snippetPageTs = `
   dimmerVisible: boolean = false;`;
 
   constructor(title: Title, private highlighter: HighlightService) {
