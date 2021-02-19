@@ -8,7 +8,8 @@
 
     <doc-code-sample
         [content]="simple"
-        [code]="snippetDefault">
+        [templateCode]="snippetSimple"
+        [componentCode]="snippetSimpleTs">
       <h3 sui-header>Dimmer</h3>
       <p>A simple dimmer displays no content</p>
 
@@ -33,6 +34,48 @@
               <div suiPlaceholderLine></div>
             </div>
           </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="content"
+        [templateCode]="snippetContent"
+        [componentCode]="snippetContentTs">
+      <h3 sui-header>Content Dimmer</h3>
+      <p>A dimmer can display content</p>
+
+      <ng-template #content>
+        <button sui-button
+                (click)="contentDimmerVisible = !contentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             [(dimmed)]="contentDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderImage suiHeader>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiIcon
+                suiInverted>
+              <i sui-icon
+                 suiIconType="heart"></i>
+              Dimmed Message!
+            </h2>
+          </ng-template>
         </div>
       </ng-template>
     </doc-code-sample>

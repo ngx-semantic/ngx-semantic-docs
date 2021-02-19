@@ -16,11 +16,12 @@ export class DimmerComponent implements AfterViewChecked {
   isApiActive: boolean;
 
   simpleDimmerVisible = false;
+  contentDimmerVisible = false
 
-  snippetDefault = `
+  snippetSimple= `
   <div sui-segment
        sui-dimmer
-       [(dimmed)]="simpleDimmerVisible">
+       [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderImage suiHeader>
@@ -34,6 +35,39 @@ export class DimmerComponent implements AfterViewChecked {
       </div>
     </div>
   </div>`;
+
+  snippetSimpleTs = `
+  dimmerVisible: boolean = false;`;
+
+  snippetContent= `
+  <div sui-segment
+       sui-dimmer
+       [(dimmed)]="contentDimmerVisible">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderImage suiHeader>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+
+    <ng-template suiDimmerContent>
+      <h2 sui-header
+          suiInverted>
+        <i sui-icon
+           suiIconType="heart"></i>
+        Dimmed Message!
+      </h2>
+    </ng-template>
+  </div>`;
+
+  snippetContentTs = `
+  dimmerVisible: boolean = false;`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Dimmer | Ngx Semantic');

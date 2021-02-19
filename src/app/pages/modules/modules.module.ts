@@ -9,7 +9,7 @@ import {ModulesRoutingModule} from "./modules-routing.module";
 import {
   SuiButtonModule, SuiDimmerModule,
   SuiEmbedModule,
-  SuiHeaderModule,
+  SuiHeaderModule, SuiIconModule,
   SuiLabelModule, SuiPlaceholderModule,
   SuiRatingModule, SuiSegmentModule,
   SuiTableModule,
@@ -42,7 +42,8 @@ import { DimmerComponent } from './dimmer/dimmer.component';
     SuiButtonModule,
     FormsModule,
     SuiDimmerModule,
-    SuiSegmentModule
+    SuiSegmentModule,
+    SuiIconModule
   ]
 })
 export class ModulesModule {
