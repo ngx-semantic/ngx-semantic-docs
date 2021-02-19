@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --hmr",
     "lint": "ng lint",
     "build": "ng build --prod --base-href \"https://ngx-semantic.github.io/\""
   },
