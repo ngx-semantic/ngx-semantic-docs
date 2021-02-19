@@ -7,11 +7,11 @@ import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
 import {
-  SuiButtonModule,
+  SuiButtonModule, SuiDimmerModule,
   SuiEmbedModule,
   SuiHeaderModule,
   SuiLabelModule, SuiPlaceholderModule,
-  SuiRatingModule,
+  SuiRatingModule, SuiSegmentModule,
   SuiTableModule,
   SuiTabsModule
 } from "ngx-semantic";
@@ -40,7 +40,9 @@ import { DimmerComponent } from './dimmer/dimmer.component';
     SuiTabsModule,
     SuiPlaceholderModule,
     SuiButtonModule,
-    FormsModule
+    FormsModule,
+    SuiDimmerModule,
+    SuiSegmentModule
   ]
 })
 export class ModulesModule {

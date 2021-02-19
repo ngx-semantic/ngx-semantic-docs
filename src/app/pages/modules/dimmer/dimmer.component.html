@@ -1,57 +1,39 @@
 <doc-page
-    header="Tab"
-    subHeader="A tab is a hidden section of content activated by a menu"
+    header="Dimmer"
+    subHeader="A dimmer hides distractions to focus attention on particular content"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
     <h2 sui-header
-        suiDividing>Type</h2>
+        suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="basic"
-        [code]="snippetBasic">
-      <h3 sui-header>Tab</h3>
-      <p>A basic tab</p>
+        [content]="simple"
+        [code]="snippetDefault">
+      <h3 sui-header>Dimmer</h3>
+      <p>A simple dimmer displays no content</p>
 
-      <ng-template #basic>
-        <sui-tabs>
-          <sui-tab
-              suiTitle="HTML">
-            <h3>HTML</h3>
-            <p>
-              HTML (HyperText Markup Language) is the most basic building block of
-              the Web. It describes and defines the content of a webpage along with
-              the basic layout of the webpage. Other technologies besides HTML are
-              generally used to describe a web page's appearance/presentation (CSS)
-              or functionality/ behavior (JavaScript).
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a>
-          </sui-tab>
-          <sui-tab
-              suiTitle="CSS">
-            <h3>CSS</h3>
-            <p>
-              Cascading Style Sheets (CSS) is a stylesheet language used to describe
-              the presentation of a document written in HTML or XML (including XML
-              dialects such as SVG or XHTML). CSS describes how elements should be
-              rendered on screen, on paper, in speech, or on other media.
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">developer.mozilla.org</a>
-          </sui-tab>
-          <sui-tab
-              suiTitle="JavaScript">
-            <h3>JavaScript</h3>
-            <p>
-              JavaScript (JS) is a lightweight interpreted or JIT-compiled
-              programming language with first-class functions. While it is most
-              well-known as the scripting language for Web pages, many non-browser
-              environments also use it, such as Node.js, Apache CouchDB and Adobe
-              Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic
-              language, supporting object-oriented, imperative, and declarative
-              (e.g. functional programming) styles.
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">developer.mozilla.org</a>
-          </sui-tab>
-        </sui-tabs>
+      <ng-template #simple>
+        <button sui-button
+                (click)="simpleDimmerVisible = !simpleDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             [(dimmed)]="simpleDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderImage suiHeader>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
+        </div>
       </ng-template>
     </doc-code-sample>
   </ng-container>
@@ -90,7 +72,8 @@
         <td>suiTabType</td>
         <td>
           Determine the styling for the tab menu. Allowed values could be
-          <span sui-label>'basic'</span> | <span sui-label>'pointing'</span> | <span sui-label>'secondary'</span> | <span sui-label>'text'</span>
+          <span sui-label>'basic'</span> | <span sui-label>'pointing'</span> | <span sui-label>'secondary'</span> |
+          <span sui-label>'text'</span>
           | <span sui-label>null</span>
         </td>
         <td>
@@ -187,12 +170,13 @@
       </tr>
       <tr>
         <td>suiLoading</td>
-        <td>Show the loading icon<td>
-        <div sui-label
-             suiColour="teal">
-          boolean
-        </div>
-      </td>
+        <td>Show the loading icon
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
         <td>
           <div sui-label
                suiColour="grey">
@@ -202,12 +186,13 @@
       </tr>
       <tr>
         <td>disabled</td>
-        <td>Prevent the tab from being activated<td>
-        <div sui-label
-             suiColour="teal">
-          boolean
-        </div>
-      </td>
+        <td>Prevent the tab from being activated
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
         <td>
           <div sui-label
                suiColour="grey">
@@ -218,3 +203,4 @@
       </tbody>
     </table>
   </ng-container>
+</doc-page>
