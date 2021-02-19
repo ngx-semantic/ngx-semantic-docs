@@ -19,12 +19,14 @@ import {SharedModule} from "../../shared/shared.module";
 import { RatingComponent } from './rating/rating.component';
 import {TabComponent} from "./tab/tab.component";
 import {FormsModule} from "@angular/forms";
+import { DimmerComponent } from './dimmer/dimmer.component';
 
 @NgModule({
   declarations: [
     TabComponent,
     EmbedComponent,
-    RatingComponent
+    RatingComponent,
+    DimmerComponent
   ],
   imports: [
     SharedModule,
