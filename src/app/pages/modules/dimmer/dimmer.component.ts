@@ -19,7 +19,7 @@ export class DimmerComponent implements AfterViewChecked {
   contentDimmerVisible = false
   pageDimmerVisible = false;
 
-  snippetSimple= `
+  snippetSimple = `
   <div sui-segment
        sui-dimmer
        [(dimmed)]="dimmerVisible">
@@ -40,7 +40,7 @@ export class DimmerComponent implements AfterViewChecked {
   snippetSimpleTs = `
   dimmerVisible: boolean = false;`;
 
-  snippetContent= `
+  snippetContent = `
   <div sui-segment
        sui-dimmer
        [(dimmed)]="contentDimmerVisible">
@@ -70,7 +70,7 @@ export class DimmerComponent implements AfterViewChecked {
   snippetContentTs = `
   dimmerVisible: boolean = false;`;
 
-  snippetPage= `
+  snippetPage = `
   <div sui-dimmer
        suiDimmerFullPage
        [(dimmed)]="pageDimmerVisible">
@@ -88,6 +88,44 @@ export class DimmerComponent implements AfterViewChecked {
 
   snippetPageTs = `
   dimmerVisible: boolean = false;`;
+
+  snippetActive = `
+  <div sui-segment
+       sui-dimmer
+       [dimmed]="true">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetDisabled = `
+  <<div sui-segment
+       sui-dimmer
+       disabled>
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Dimmer | Ngx Semantic');
