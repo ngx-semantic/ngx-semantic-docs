@@ -9,7 +9,7 @@
     <doc-code-sample
         [content]="simple"
         [templateCode]="snippetSimple"
-        [componentCode]="snippetSimpleTs">
+        [componentCode]="snippetSharedTs">
       <h3 sui-header>Dimmer</h3>
       <p>A simple dimmer displays no content</p>
 
@@ -41,7 +41,7 @@
     <doc-code-sample
         [content]="content"
         [templateCode]="snippetContent"
-        [componentCode]="snippetContentTs">
+        [componentCode]="snippetSharedTs">
       <h3 sui-header>Content Dimmer</h3>
       <p>A dimmer can display content</p>
 
@@ -83,7 +83,7 @@
     <doc-code-sample
         [content]="page"
         [templateCode]="snippetPage"
-        [componentCode]="snippetPageTs">
+        [componentCode]="snippetSharedTs">
       <h3 sui-header>Page Dimmer</h3>
       <p>A dimmer can be formatted to be fixed to the page</p>
 
@@ -120,9 +120,36 @@
       <p>An active dimmer will dim its parent container</p>
 
       <ng-template #active>
+        <!--        <div sui-segment-->
+        <!--             sui-dimmer-->
+        <!--             dimmed>-->
+        <!--          <div sui-placeholder-->
+        <!--               suiFluid>-->
+        <!--            <div suiPlaceholderParagraph>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--            </div>-->
+        <!--            <div suiPlaceholderParagraph>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--              <div suiPlaceholderLine></div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A disabled dimmer cannot be activated</p>
+
+      <ng-template #disabled>
         <div sui-segment
              sui-dimmer
-             [dimmed]="true">
+             disabled>
           <div sui-placeholder
                suiFluid>
             <div suiPlaceholderParagraph>
@@ -140,16 +167,26 @@
       </ng-template>
     </doc-code-sample>
 
-    <doc-code-sample
-        [content]="disabled"
-        [templateCode]="snippetDisabled">
-      <h3 sui-header>Disabled</h3>
-      <p>A disabled dimmer cannot be activated</p>
+    <h2 sui-header
+        suiDividing>Variations</h2>
 
-      <ng-template #disabled>
+    <doc-code-sample
+        [content]="blurring"
+        [templateCode]="snippetBlurring"
+    [componentCode]="snippetSharedTs">
+      <h3 sui-header>Blurring</h3>
+      <p>A dimmable element can blur its contents</p>
+
+      <ng-template #blurring>
+        <button sui-button
+                (click)="blurringDimmerVisible = !blurringDimmerVisible">
+          Toggle Dimmer
+        </button>
+
         <div sui-segment
              sui-dimmer
-             disabled>
+             suiDimmerBlurring
+             [(dimmed)]="blurringDimmerVisible">
           <div sui-placeholder
                suiFluid>
             <div suiPlaceholderParagraph>

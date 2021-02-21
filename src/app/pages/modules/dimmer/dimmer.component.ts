@@ -18,6 +18,7 @@ export class DimmerComponent implements AfterViewChecked {
   simpleDimmerVisible = false;
   contentDimmerVisible = false
   pageDimmerVisible = false;
+  blurringDimmerVisible = false;
 
   snippetSimple = `
   <div sui-segment
@@ -37,13 +38,13 @@ export class DimmerComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  snippetSimpleTs = `
+  snippetSharedTs = `
   dimmerVisible: boolean = false;`;
 
   snippetContent = `
   <div sui-segment
        sui-dimmer
-       [(dimmed)]="contentDimmerVisible">
+       [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderImage suiHeader>
@@ -67,13 +68,10 @@ export class DimmerComponent implements AfterViewChecked {
     </ng-template>
   </div>`;
 
-  snippetContentTs = `
-  dimmerVisible: boolean = false;`;
-
   snippetPage = `
   <div sui-dimmer
        suiDimmerFullPage
-       [(dimmed)]="pageDimmerVisible">
+       [(dimmed)]="dimmerVisible">
     <ng-template suiDimmerContent>
       <h2 sui-header
           suiIcon
@@ -86,13 +84,10 @@ export class DimmerComponent implements AfterViewChecked {
     </ng-template>
   </div>`;
 
-  snippetPageTs = `
-  dimmerVisible: boolean = false;`;
-
   snippetActive = `
   <div sui-segment
        sui-dimmer
-       [dimmed]="true">
+       dimmed>
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderParagraph>
@@ -112,6 +107,26 @@ export class DimmerComponent implements AfterViewChecked {
   <<div sui-segment
        sui-dimmer
        disabled>
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetBlurring = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerBlurring
+       [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderParagraph>
