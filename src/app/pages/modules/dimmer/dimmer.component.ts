@@ -22,6 +22,7 @@ export class DimmerComponent implements AfterViewChecked {
   blurringDInvertedDimmerVisible = false;
   topAlignmentDimmerVisible = false;
   bottomAlignmentDimmerVisible = false;
+  invertedDimmerVisible = false;
 
   snippetSimple = `
   <div sui-segment
@@ -170,7 +171,7 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        suiDimmerAlignment="top"
-       [(dimmed)]="topAlignmentDimmerVisible">
+       [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderParagraph>
@@ -200,7 +201,7 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        suiDimmerAlignment="top"
-       [(dimmed)]="topAlignmentDimmerVisible">
+       [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>
       <div suiPlaceholderParagraph>
@@ -224,6 +225,26 @@ export class DimmerComponent implements AfterViewChecked {
            suiEmphasis="primary">Add</div>
       <div sui-button>View</div>
     </ng-template>
+  </div>`;
+
+  snippetInverted = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerInverted
+       [(dimmed)]="dimmerVisible">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {

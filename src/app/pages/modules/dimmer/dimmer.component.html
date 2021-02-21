@@ -236,9 +236,6 @@
       </ng-template>
     </doc-code-sample>
 
-    <h2 sui-header
-        suiDividing>Alignment</h2>
-
     <doc-code-sample
         [content]="topAlignment"
         [templateCode]="snippetTopAligned"
@@ -320,6 +317,40 @@
                  suiEmphasis="primary">Add</div>
             <div sui-button>View</div>
           </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Inverted</h3>
+      <p>A dimmer can be formatted to have its colors inverted</p>
+
+      <ng-template #inverted>
+        <button sui-button
+                (click)="invertedDimmerVisible = !invertedDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerInverted
+             [(dimmed)]="invertedDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
         </div>
       </ng-template>
     </doc-code-sample>
