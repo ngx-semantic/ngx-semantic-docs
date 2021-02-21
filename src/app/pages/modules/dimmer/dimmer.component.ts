@@ -19,6 +19,7 @@ export class DimmerComponent implements AfterViewChecked {
   contentDimmerVisible = false
   pageDimmerVisible = false;
   blurringDimmerVisible = false;
+  blurringDInvertedDimmerVisible = false;
 
   snippetSimple = `
   <div sui-segment
@@ -126,6 +127,27 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        suiDimmerBlurring
+       [(dimmed)]="dimmerVisible">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetBlurringInverted = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerBlurring
+       suiDimmerInverted
        [(dimmed)]="dimmerVisible">
     <div sui-placeholder
          suiFluid>

@@ -173,7 +173,7 @@
     <doc-code-sample
         [content]="blurring"
         [templateCode]="snippetBlurring"
-    [componentCode]="snippetSharedTs">
+        [componentCode]="snippetSharedTs">
       <h3 sui-header>Blurring</h3>
       <p>A dimmable element can blur its contents</p>
 
@@ -187,6 +187,38 @@
              sui-dimmer
              suiDimmerBlurring
              [(dimmed)]="blurringDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="blurringInverted"
+        [templateCode]="snippetBlurringInverted"
+        [componentCode]="snippetSharedTs">
+      <ng-template #blurringInverted>
+        <button sui-button
+                (click)="blurringDInvertedDimmerVisible = !blurringDInvertedDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerBlurring
+             suiDimmerInverted
+             [(dimmed)]="blurringDInvertedDimmerVisible">
           <div sui-placeholder
                suiFluid>
             <div suiPlaceholderParagraph>
