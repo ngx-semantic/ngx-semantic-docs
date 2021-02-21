@@ -235,6 +235,94 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Alignment</h2>
+
+    <doc-code-sample
+        [content]="topAlignment"
+        [templateCode]="snippetTopAligned"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Vertical Alignment</h3>
+      <p>A dimmer can have its content top or bottom aligned.</p>
+
+      <ng-template #topAlignment>
+        <button sui-button
+                (click)="topAlignmentDimmerVisible = !topAlignmentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerAlignment="top"
+             [(dimmed)]="topAlignmentDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiInverted>
+              Title
+            </h2>
+            <div sui-button
+                 suiEmphasis="primary">Add</div>
+            <div sui-button>View</div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="bottomAlignment"
+        [templateCode]="snippetBottomAligned"
+        [componentCode]="snippetSharedTs">
+      <ng-template #bottomAlignment>
+        <button sui-button
+                (click)="bottomAlignmentDimmerVisible = !bottomAlignmentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerAlignment="bottom"
+             [(dimmed)]="bottomAlignmentDimmerVisible">
+          <div sui-placeholder
+               suiFluid>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
+          </div>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiInverted>
+              Title
+            </h2>
+            <div sui-button
+                 suiEmphasis="primary">Add</div>
+            <div sui-button>View</div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

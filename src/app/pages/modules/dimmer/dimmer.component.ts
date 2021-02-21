@@ -20,6 +20,8 @@ export class DimmerComponent implements AfterViewChecked {
   pageDimmerVisible = false;
   blurringDimmerVisible = false;
   blurringDInvertedDimmerVisible = false;
+  topAlignmentDimmerVisible = false;
+  bottomAlignmentDimmerVisible = false;
 
   snippetSimple = `
   <div sui-segment
@@ -162,6 +164,66 @@ export class DimmerComponent implements AfterViewChecked {
         <div suiPlaceholderLine></div>
       </div>
     </div>
+  </div>`;
+
+  snippetTopAligned = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerAlignment="top"
+       [(dimmed)]="topAlignmentDimmerVisible">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+
+    <ng-template suiDimmerContent>
+      <h2 sui-header
+          suiInverted>
+        Title
+      </h2>
+      <div sui-button
+           suiEmphasis="primary">Add</div>
+      <div sui-button>View</div>
+    </ng-template>
+  </div>`;
+
+  snippetBottomAligned = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerAlignment="top"
+       [(dimmed)]="topAlignmentDimmerVisible">
+    <div sui-placeholder
+         suiFluid>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+
+    <ng-template suiDimmerContent>
+      <h2 sui-header
+          suiInverted>
+        Title
+      </h2>
+      <div sui-button
+           suiEmphasis="primary">Add</div>
+      <div sui-button>View</div>
+    </ng-template>
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
