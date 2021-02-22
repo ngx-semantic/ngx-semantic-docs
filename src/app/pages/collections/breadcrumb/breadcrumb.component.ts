@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-breadcrumb',
   templateUrl: './breadcrumb.component.html',
   styleUrls: ['./breadcrumb.component.scss'],
 })
-export class BreadcrumbComponent implements OnInit {
+export class BreadcrumbComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetStd = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -122,7 +127,23 @@ export class BreadcrumbComponent implements OnInit {
       <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
   </div>`;
 
-  constructor() {}
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Breadcrumbs | Ngx Semantic');
+  }
 
-  ngOnInit(): void {}
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
+  }
 }
