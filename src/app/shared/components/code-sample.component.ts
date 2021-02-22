@@ -44,10 +44,20 @@ import {ClipboardService} from 'ngx-clipboard';
              suiAttached="bottom attached">
         <pre>
           <code class="language-markup">
-            {{code}}
+            {{templateCode}}
           </code>
         </pre>
         </div>
+        <ng-container *ngIf="componentCode">
+          <div sui-segment
+               suiAttached="bottom attached">
+        <pre>
+          <code class="language-typescript">
+            {{componentCode}}
+          </code>
+        </pre>
+          </div>
+        </ng-container>
       </div>
     </div>
   `,
@@ -88,7 +98,8 @@ import {ClipboardService} from 'ngx-clipboard';
 })
 export class CodeSampleComponent {
   @Input() content: TemplateRef<any>;
-  @Input() code: string;
+  @Input() templateCode: string;
+  @Input() componentCode?: string;
 
   codeShown = false;
 
@@ -96,7 +107,7 @@ export class CodeSampleComponent {
   }
 
   copyCode(): void {
-    this.clipService.copy(this.code);
+    this.clipService.copy(this.templateCode);
   }
 
   toggleCodeDisplay(): void {

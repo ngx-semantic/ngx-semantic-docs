@@ -7,11 +7,11 @@ import {EmbedComponent} from './embed/embed.component';
 import {CommonModule} from "@angular/common";
 import {ModulesRoutingModule} from "./modules-routing.module";
 import {
-  SuiButtonModule,
+  SuiButtonModule, SuiDimmerModule,
   SuiEmbedModule,
-  SuiHeaderModule,
+  SuiHeaderModule, SuiIconModule,
   SuiLabelModule, SuiPlaceholderModule,
-  SuiRatingModule,
+  SuiRatingModule, SuiSegmentModule,
   SuiTableModule,
   SuiTabsModule
 } from "ngx-semantic";
@@ -19,12 +19,14 @@ import {SharedModule} from "../../shared/shared.module";
 import { RatingComponent } from './rating/rating.component';
 import {TabComponent} from "./tab/tab.component";
 import {FormsModule} from "@angular/forms";
+import { DimmerComponent } from './dimmer/dimmer.component';
 
 @NgModule({
   declarations: [
     TabComponent,
     EmbedComponent,
-    RatingComponent
+    RatingComponent,
+    DimmerComponent
   ],
   imports: [
     SharedModule,
@@ -38,7 +40,10 @@ import {FormsModule} from "@angular/forms";
     SuiTabsModule,
     SuiPlaceholderModule,
     SuiButtonModule,
-    FormsModule
+    FormsModule,
+    SuiDimmerModule,
+    SuiSegmentModule,
+    SuiIconModule
   ]
 })
 export class ModulesModule {
