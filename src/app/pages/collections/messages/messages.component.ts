@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.scss'],
 })
-export class MessagesComponent implements OnInit {
+export class MessagesComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetBasic = `
     <div sui-message suiColour="blue" suiSize="large">
       <div sui-message-header>
@@ -15,7 +20,7 @@ export class MessagesComponent implements OnInit {
     </div>
   `;
   snippetDismissable = `
-  <div sui-message [suiDismissible]>
+  <div sui-message suiDismissible>
     <div sui-message-header>
       Welcome back!
     </div>
@@ -24,7 +29,7 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippetIcon1 = `
-  <div sui-message suiIcon='true'>
+  <div sui-message suiIcon>
     <i suiIconType="inbox" sui-icon></i>
     <div sui-message-content>
       <div sui-header>
@@ -36,25 +41,25 @@ export class MessagesComponent implements OnInit {
   `;
 
   snippetHidden = `
-  <div sui-message suiHidden='true'>
+  <div sui-message suiHidden>
     <p>You can't see me</p>
   </div>
   `;
 
   snippetVisible = `
-  <div sui-message suiVisible='true'>
+  <div sui-message suiVisible>
     <p>You can always see me</p>
   </div>
   `;
 
   snippetFloating = `
-  <div sui-message suiFloating='true'>
+  <div sui-message suiFloating>
     <p>Way to go!</p>
   </div>
   `;
 
   snippetCompact = `
-  <div sui-message suiCompact='true'>
+  <div sui-message suiCompact>
     <p>Get all the best inventions in your e-mail every day. Sign up now!</p>
   </div>
   `;
@@ -85,7 +90,7 @@ export class MessagesComponent implements OnInit {
           <label>Password</label>
           <input type="password">
         </div>
-        <div suiFormField suiInline='true'>
+        <div suiFormField suiInline>
           <div class="ui checkbox">
             <input type="checkbox" id="terms">
             <label for="terms">I agree to the terms and conditions</label>
@@ -160,8 +165,23 @@ export class MessagesComponent implements OnInit {
   <div sui-message suiSize='massive'>This is a massive message</div>
   `;
 
-  constructor() {}
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Messages | Ngx Semantic');
+  }
 
-  ngOnInit(): void {}
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
 
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
+  }
 }
