@@ -1,27 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-breadcrumb',
   templateUrl: './breadcrumb.component.html',
   styleUrls: ['./breadcrumb.component.scss'],
 })
-export class BreadcrumbComponent implements OnInit {
+export class BreadcrumbComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetStd = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
       <div suiBreadcrumbDivider> / </div>
       <a suiBreadcrumbSection>Store</a>
       <div suiBreadcrumbDivider> / </div>
-      <div suiBreadcrumbSection suiActive='true'>T-Shirt</div>
+      <div suiBreadcrumbSection suiActive>T-Shirt</div>
   </div>
   `;
   snippetStd1 = `
-  <div sui-breadcrumb suiIcon='true'>
+  <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
       <i suiIconType="right angle" sui-icon suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Store</a>
       <i suiIconType="right angle" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>T-Shirt</div>
+      <div suiBreadcrumbSection suiActive>T-Shirt</div>
   </div>
   `;
   snippetContent1 = `
@@ -30,22 +35,22 @@ export class BreadcrumbComponent implements OnInit {
       <div suiBreadcrumbDivider> / </div>
       <a suiBreadcrumbSection>Registration</a>
       <div suiBreadcrumbDivider> / </div>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetContent2 = `
-  <div sui-breadcrumb suiIcon='true'>
+  <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
 
   snippetSection = `
   <div sui-breadcrumb>
       <span suiBreadcrumbSection>Home</span>
       <div suiBreadcrumbDivider> / </div>
-      <div suiBreadcrumbSection suiActive='true'>Search</div>
+      <div suiBreadcrumbSection suiActive>Search</div>
   </div>
   `;
 
@@ -53,7 +58,7 @@ export class BreadcrumbComponent implements OnInit {
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
       <div suiBreadcrumbDivider> / </div>
-      <div suiBreadcrumbSection suiActive='true'>Search for: <a href="#">paper towels</a></div>
+      <div suiBreadcrumbSection suiActive>Search for: <a href="#">paper towels</a></div>
   </div>
   `;
 
@@ -61,68 +66,84 @@ export class BreadcrumbComponent implements OnInit {
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Products</a>
       <div suiBreadcrumbDivider> / </div>
-      <div suiBreadcrumbSection suiActive='true'>Paper Towels</div>
+      <div suiBreadcrumbSection suiActive>Paper Towels</div>
   </div>
   `;
 
   snippetSize = `
-  <div sui-breadcrumb suiIcon='true' suiSize='mini'>
+  <div sui-breadcrumb suiSize='mini'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize1 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='tiny'>
+  <div sui-breadcrumb suiSize='tiny'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize2 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='small'>
+  <div sui-breadcrumb suiSize='small'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize3 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='large'>
+  <div sui-breadcrumb suiSize='large'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize4 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='big'>
+  <div sui-breadcrumb suiSize='big'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize5 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='huge'>
+  <div sui-breadcrumb suiSize='huge'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
   snippetSize6 = `
-  <div sui-breadcrumb suiIcon='true' suiSize='massive'>
+  <div sui-breadcrumb suiSize='massive'>
       <a suiBreadcrumbSection>Home</a>
-      <i suiIconType="right chevron" sui-icon suiBreadcrumbDivider></i>
+      <i suiIcon='right chevron' suiBreadcrumbDivider></i>
       <a suiBreadcrumbSection>Registration</a>
-      <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-      <div suiBreadcrumbSection suiActive='true'>Personal Information</div>
+      <i suiIcon='right arrow' suiBreadcrumbDivider></i>
+      <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
 
-  constructor() {}
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Breadcrumbs | Ngx Semantic');
+  }
 
-  ngOnInit(): void {}
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
+  }
 }
