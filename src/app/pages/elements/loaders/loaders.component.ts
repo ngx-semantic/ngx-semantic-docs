@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-loaders',
   templateUrl: './loaders.component.html',
   styleUrls: ['./loaders.component.scss']
 })
-export class LoadersComponent implements OnInit {
+export class LoadersComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetStdLoader = ' <div sui-loader suiSize="medium" suiText="false"></div>';
 
   snippetTextLoader = ' <div sui-loader suiSize="medium" suiText>Loading</div>';
@@ -19,8 +24,23 @@ export class LoadersComponent implements OnInit {
   <div sui-loader suiSize="big" suiText>Loading</div>
   <div sui-loader suiSize="huge" suiText>Loading</div>`;
 
-  constructor() { }
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Loaders | Ngx Semantic');
+  }
 
-  ngOnInit(): void {
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
   }
 }
