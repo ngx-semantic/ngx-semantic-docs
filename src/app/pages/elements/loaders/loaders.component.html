@@ -1,22 +1,36 @@
 <doc-page
-    header="Flags"
-    subHeader="A button indicates a possible user action"
+    header="Loaders"
+    subHeader="A loader alerts a user to wait for an activity to complete"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
-    <h2 sui-header suiDividing>Types</h2>
+    <h2 sui-header
+        suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="stdLoader"
+        [content]="basic"
         [templateCode]="snippetStdLoader">
       <h3 sui-header>Loader</h3>
       <p>A loader</p>
 
-      <ng-template #stdLoader>
-        <div sui-segment>
-          <div class="ui active dimmer">
-            <div sui-loader suiSize="medium" suiText="false"></div>
+      <ng-template #basic>
+        <div sui-message
+             suiState="info">
+          Loaders are hidden unless <b><code>active</code></b> or in an <b><code>active dimmer</code></b>
+        </div>
+
+        <div sui-segment
+             sui-dimmer
+             [(dimmed)]="dimmerVisible">
+          <div sui-placeholder>
+            <div suiPlaceholderParagraph>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+              <div suiPlaceholderLine></div>
+            </div>
           </div>
-          <p style="height: 50px"></p>
+          <ng-template suiDimmerContent>
+            <div sui-loader></div>
+          </ng-template>
         </div>
       </ng-template>
     </doc-code-sample>

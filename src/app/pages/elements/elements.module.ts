@@ -22,9 +22,9 @@ import {StepsComponent} from "./steps/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {
-  SuiButtonModule, SuiContainerModule, SuiDividerModule, SuiFlagModule, SuiFormModule, SuiGridModule,
+  SuiButtonModule, SuiContainerModule, SuiDimmerModule, SuiDividerModule, SuiFlagModule, SuiFormModule, SuiGridModule,
   SuiHeaderModule, SuiIconModule, SuiImageModule, SuiInputModule,
-  SuiLabelModule, SuiListModule,
+  SuiLabelModule, SuiListModule, SuiLoaderModule,
   SuiMessageModule, SuiPlaceholderModule, SuiSegmentModule, SuiStepsModule,
   SuiTableModule
 } from "ngx-semantic";
@@ -67,7 +67,9 @@ import {
     SuiSegmentModule,
     SuiPlaceholderModule,
     SuiContainerModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SuiLoaderModule,
+    SuiDimmerModule
   ]
 })
 export class ElementsModule {

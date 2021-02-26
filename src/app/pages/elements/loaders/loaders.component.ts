@@ -11,6 +11,8 @@ export class LoadersComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
+  dimmerVisible = true;
+
   snippetStdLoader = ' <div sui-loader suiSize="medium" suiText="false"></div>';
 
   snippetTextLoader = ' <div sui-loader suiSize="medium" suiText>Loading</div>';
