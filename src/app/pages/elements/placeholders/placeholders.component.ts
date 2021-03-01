@@ -11,6 +11,82 @@ export class PlaceholdersComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
+  snippetBasic = `
+  <div sui-placeholder>
+    <div suiHeader
+         suiPlaceholderImage>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+    <div suiPlaceholderParagraph>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+  </div>`;
+
+  snippetGrid = `
+  <div sui-grid
+       suiStackable
+       suiWidth="three">
+    <div suiGridColumn>
+      <div sui-segment
+           suiRaised>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiHeader>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+            <div suiPlaceholderLine
+                 suiLength="short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div suiGridColumn>
+      <div sui-segment
+           suiRaised>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiHeader>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+            <div suiPlaceholderLine
+                 suiLength="short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div suiGridColumn>
+      <div sui-segment
+           suiRaised>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiHeader>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+            <div suiPlaceholderLine
+                 suiLength="short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   snippetFlag = `
   <div sui-placeholder>
     <div sui-placeholder-image suiHeader>
@@ -53,7 +129,7 @@ export class PlaceholdersComponent implements AfterViewChecked {
   `;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Flags | Ngx Semantic');
+    title.setTitle('Placeholders | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
