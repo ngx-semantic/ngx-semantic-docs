@@ -169,33 +169,68 @@ export class PlaceholdersComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  snippetHeaderPlaceholder = `
-  <div class="ui active placeholder">
-    <div sui-placeholder-image suiHeader>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
-    </div>
-    <div sui-placeholder-paragraph>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
-    </div>
-  </div>
-  `;
+  snippetImage = `
+  <div sui-placeholder>
+    <div suiPlaceholderImage></div>
+  </div>`;
 
-  snippetInvertedPlaceholder = `
-  <div class="ui active inverted placeholder">
-    <div sui-placeholder-image suiHeader>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
+  snippetSquareImage = `
+  <div sui-cards
+       suiWidth="three">
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiSquare></div>
+        </div>
+      </div>
     </div>
-    <div sui-placeholder-paragraph>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
-      <div sui-placeholder-line></div>
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiSquare></div>
+        </div>
+      </div>
     </div>
-  </div>
-  `;
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiSquare></div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetRectangularImage = `
+  <div sui-cards
+       suiWidth="three">
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiRectangular></div>
+        </div>
+      </div>
+    </div>
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiRectangular></div>
+        </div>
+      </div>
+    </div>
+    <div sui-card>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiRectangular></div>
+        </div>
+      </div>
+    </div>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');

@@ -247,6 +247,93 @@
       </ng-template>
     </doc-code-sample>
 
+    <doc-code-sample
+        [content]="image"
+        [templateCode]="snippetImage">
+      <h3 sui-header>Image</h3>
+      <p>A placeholder can contain an image</p>
+
+      <ng-template #image>
+        <div sui-placeholder>
+          <div suiPlaceholderImage></div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="squareImages"
+        [templateCode]="snippetSquareImage">
+      <div sui-message
+           suiState="info">
+        <p>Using <b><code>square</code></b> (1:1) or <b><code>rectangular</code></b> (4:3) will embed an aspect ratio into the image loader so that they modify size correctly with responsive styles.</p>
+      </div>
+
+      <br/>
+
+      <ng-template #squareImages>
+        <div sui-cards
+             suiWidth="three">
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiSquare></div>
+              </div>
+            </div>
+          </div>
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiSquare></div>
+              </div>
+            </div>
+          </div>
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiSquare></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rectangularImages"
+        [templateCode]="snippetRectangularImage">
+      <ng-template #rectangularImages>
+        <div sui-cards
+             suiWidth="three">
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiRectangular></div>
+              </div>
+            </div>
+          </div>
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiRectangular></div>
+              </div>
+            </div>
+          </div>
+          <div sui-card>
+            <div suiCardContent>
+              <div sui-placeholder>
+                <div suiPlaceholderImage
+                     suiRectangular></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
