@@ -162,10 +162,8 @@
 
       <div sui-message
            suiState="info">
-        <p>
-          By default, repeated lines will appear varied in width. However, it may be useful to specify an exact length
-          to make it match up with content more effectively
-        </p>
+        <p> By default, repeated lines will appear varied in width. However, it may be useful to specify an exact length
+          to make it match up with content more effectively </p>
       </div>
 
       <br/>
@@ -177,6 +175,43 @@
           <div suiPlaceholderLine></div>
           <div suiPlaceholderLine></div>
           <div suiPlaceholderLine></div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageHeader"
+        [templateCode]="snippetImageHeader">
+      <h3 sui-header>Headers</h3>
+      <p>A placeholder can contain a header</p>
+
+      <div sui-message
+           suiState="info">
+        <p> Header content will have a slightly larger block size from paragraph </p>
+      </div>
+
+      <br/>
+
+      <ng-template #imageHeader>
+        <div sui-placeholder>
+          <div suiPlaceholderHeader
+               suiImage>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="header"
+        [templateCode]="snippetHeader">
+      <ng-template #header>
+        <div sui-placeholder>
+          <div suiPlaceholderHeader>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
         </div>
       </ng-template>
     </doc-code-sample>
