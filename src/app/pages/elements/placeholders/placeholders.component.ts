@@ -265,6 +265,39 @@ export class PlaceholdersComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetFluid = `
+  <div sui-placeholder
+       suiFluid>
+    <div suiPlaceholderHeader
+         suiImage>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+    <div suiPlaceholderParagraph>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+      <div suiPlaceholderLine></div>
+    </div>
+  </div>`;
+
+  snippetInverted = `
+  <div sui-segment
+       suiInverted>
+    <div sui-placeholder
+         suiInverted>
+      <div suiPlaceholderHeader
+           suiImage>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+      <div suiPlaceholderParagraph>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+        <div suiPlaceholderLine></div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');
   }
