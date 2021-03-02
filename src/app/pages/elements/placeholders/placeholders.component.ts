@@ -87,6 +87,55 @@ export class PlaceholdersComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetCard = `
+  <div sui-grid
+       suiStackable
+       suiDoubling
+       suiWidth="three">
+    <div sui-card>
+      <div suiCardImage>
+        <div sui-placeholder>
+          <div suiPlaceholderImage
+               suiSquare></div>
+        </div>
+      </div>
+      <div suiCardContent>
+        <div sui-placeholder>
+          <div suiCardHeader>
+            <div suiPlaceholderLine
+                 suiLength="very short"></div>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine
+                 suiLength="short"></div>
+          </div>
+        </div>
+      </div>
+      <div suiCardExtra>
+        <div sui-button
+             disabled
+             suiEmphasis="primary">
+          Add
+        </div>
+        <div sui-button
+             disabled>
+          Delete
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetLines = `
+  <div sui-placeholder>
+    <div suiPlaceholderLine></div>
+    <div suiPlaceholderLine></div>
+    <div suiPlaceholderLine></div>
+    <div suiPlaceholderLine></div>
+    <div suiPlaceholderLine></div>
+  </div>`;
+
   snippetFlag = `
   <div sui-placeholder>
     <div sui-placeholder-image suiHeader>

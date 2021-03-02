@@ -107,7 +107,7 @@
 
     <doc-code-sample
         [content]="cardPlaceholder"
-        [templateCode]="snippetGrid">
+        [templateCode]="snippetCard">
       <ng-template #cardPlaceholder>
         <div sui-grid
              suiStackable
@@ -149,6 +149,38 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header>Content</h2>
+
+    <doc-code-sample
+        [content]="lines"
+        [templateCode]="snippetLines">
+      <h3 sui-header>Lines</h3>
+      <p>A placeholder can contain have lines of text</p>
+
+      <div sui-message
+           suiState="info">
+        <p>
+          By default, repeated lines will appear varied in width. However, it may be useful to specify an exact length
+          to make it match up with content more effectively
+        </p>
+      </div>
+
+      <br/>
+
+      <ng-template #lines>
+        <div sui-placeholder>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+          <div suiPlaceholderLine></div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
