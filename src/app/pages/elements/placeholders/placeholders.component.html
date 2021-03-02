@@ -216,6 +216,37 @@
       </ng-template>
     </doc-code-sample>
 
+    <doc-code-sample
+        [content]="paragraph"
+        [templateCode]="snippetParagraph">
+      <h3 sui-header>Paragraph</h3>
+      <p>A placeholder can contain a paragraph</p>
+
+      <div sui-message
+           suiState="info">
+        <p>Paragraphs are used to group lines together.</p>
+      </div>
+
+      <br/>
+
+      <ng-template #paragraph>
+        <div sui-placeholder>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+            <div suiPlaceholderLine></div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
