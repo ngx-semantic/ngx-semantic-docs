@@ -13,8 +13,8 @@ export class PlaceholdersComponent implements AfterViewChecked {
 
   snippetBasic = `
   <div sui-placeholder>
-    <div suiHeader
-         suiPlaceholderImage>
+    <div suiPlaceholderHeader
+         suiImage>
       <div suiPlaceholderLine></div>
       <div suiPlaceholderLine></div>
     </div>
@@ -30,13 +30,13 @@ export class PlaceholdersComponent implements AfterViewChecked {
   snippetGrid = `
   <div sui-grid
        suiStackable
-       suiWidth="three">
+       class="three column">
     <div suiGridColumn>
       <div sui-segment
            suiRaised>
         <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiHeader>
+          <div suiPlaceholderHeader
+               suiImage>
             <div suiPlaceholderLine></div>
             <div suiPlaceholderLine></div>
           </div>
@@ -53,8 +53,8 @@ export class PlaceholdersComponent implements AfterViewChecked {
       <div sui-segment
            suiRaised>
         <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiHeader>
+          <div suiPlaceholderHeader
+               suiImage>
             <div suiPlaceholderLine></div>
             <div suiPlaceholderLine></div>
           </div>
@@ -71,8 +71,8 @@ export class PlaceholdersComponent implements AfterViewChecked {
       <div sui-segment
            suiRaised>
         <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiHeader>
+          <div suiPlaceholderHeader
+               suiImage>
             <div suiPlaceholderLine></div>
             <div suiPlaceholderLine></div>
           </div>
