@@ -265,7 +265,8 @@
         [templateCode]="snippetSquareImage">
       <div sui-message
            suiState="info">
-        <p>Using <b><code>square</code></b> (1:1) or <b><code>rectangular</code></b> (4:3) will embed an aspect ratio into the image loader so that they modify size correctly with responsive styles.</p>
+        <p>Using <b><code>square</code></b> (1:1) or <b><code>rectangular</code></b> (4:3) will embed an aspect ratio
+          into the image loader so that they modify size correctly with responsive styles.</p>
       </div>
 
       <br/>
@@ -330,6 +331,56 @@
                      suiRectangular></div>
               </div>
             </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header>Variations</h2>
+
+    <doc-code-sample
+        [content]="lineLength"
+        [templateCode]="snippetLineLength">
+      <h3 sui-header>Line Length</h3>
+      <p>A line can specify how long its contents should appear</p>
+
+      <ng-template #lineLength>
+        <div sui-placeholder>
+          <div suiPlaceholderLine
+               suiLength="full"></div>
+          <div suiPlaceholderLine
+               suiLength="very long"></div>
+          <div suiPlaceholderLine
+               suiLength="long"></div>
+          <div suiPlaceholderLine
+               suiLength="medium"></div>
+          <div suiPlaceholderLine
+               suiLength="short"></div>
+          <div suiPlaceholderLine
+               suiLength="very short"></div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="complexLineLength"
+        [templateCode]="snippetComplexLineLength">
+      <ng-template #complexLineLength>
+        <div sui-placeholder>
+          <div suiPlaceholderHeader
+               suiImage>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+            <div suiPlaceholderLine
+                 suiLength="full"></div>
+          </div>
+          <div suiPlaceholderParagraph>
+            <div suiPlaceholderLine
+                 suiLength="medium"></div>
+            <div suiPlaceholderLine
+                 suiLength="full"></div>
           </div>
         </div>
       </ng-template>

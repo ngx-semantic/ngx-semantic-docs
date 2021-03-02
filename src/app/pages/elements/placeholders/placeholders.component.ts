@@ -232,6 +232,39 @@ export class PlaceholdersComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetLineLength = `
+  <div sui-placeholder>
+    <div suiPlaceholderLine
+         suiLength="full"></div>
+    <div suiPlaceholderLine
+         suiLength="very long"></div>
+    <div suiPlaceholderLine
+         suiLength="long"></div>
+    <div suiPlaceholderLine
+         suiLength="medium"></div>
+    <div suiPlaceholderLine
+         suiLength="short"></div>
+    <div suiPlaceholderLine
+         suiLength="very short"></div>
+  </div>`;
+
+  snippetComplexLineLength = `
+  <div sui-placeholder>
+    <div suiPlaceholderHeader
+         suiImage>
+      <div suiPlaceholderLine
+           suiLength="medium"></div>
+      <div suiPlaceholderLine
+           suiLength="full"></div>
+    </div>
+    <div suiPlaceholderParagraph>
+      <div suiPlaceholderLine
+           suiLength="medium"></div>
+      <div suiPlaceholderLine
+           suiLength="full"></div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');
   }
