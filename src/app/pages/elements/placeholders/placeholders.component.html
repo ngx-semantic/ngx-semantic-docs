@@ -438,7 +438,7 @@
 
   <ng-container *ngIf="isApiActive">
     <h2 sui-header
-        suiDividing>sui-flag</h2>
+        suiDividing>sui-placeholder</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -455,9 +455,180 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiCountry</td>
+        <td>suiFluid</td>
         <td>
-          The ISO code for the country e.g <span sui-label>ng</span> for Nigeria
+          Determine if the placeholder should fill the width of it's parent container
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiActive</td>
+        <td>
+          Determine if the placeholder has the active attribute
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>
+          Determine if the placeholder has its colours inverted
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderHeader</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiImage</td>
+        <td>
+          Determine if the placeholder header is of image type
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderImage</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSquare</td>
+        <td>
+          Determine if the image should have a 1:1 aspect ratio
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRectangular</td>
+        <td>
+          Determine if the image should have a 4:3 aspect ratio
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderLine</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiLength</td>
+        <td>
+          Determine how long the line should be.  Allowed values could be
+          <span sui-label>'full'</span> | <span sui-label>'very long'</span> |
+          <span sui-label>'long'</span> | <span sui-label>'medium'</span> |
+          <span sui-label>'short'</span> | <span sui-label>'very short'</span> | <span sui-label>null</span>
         </td>
         <td>
           <div sui-label
@@ -473,6 +644,33 @@
         </td>
       </tr>
       </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderParagraph</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
     </table>
   </ng-container>
 </doc-page>
