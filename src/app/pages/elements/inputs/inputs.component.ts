@@ -1,11 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-inputs',
   templateUrl: './inputs.component.html',
   styleUrls: ['./inputs.component.scss']
 })
-export class InputsComponent implements OnInit {
+export class InputsComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
   snippetInput = `
   <div sui-input>
     <input type="text" placeholder="Search...">
@@ -30,9 +35,23 @@ export class InputsComponent implements OnInit {
    </div>
   `;
 
-  constructor() {
+  constructor(title: Title, private highlighter: HighlightService) {
+    title.setTitle('Placeholders | Ngx Semantic');
   }
 
-  ngOnInit(): void {
+  ngAfterViewChecked() {
+    this.highlighter.highlightAll();
+  }
+
+  tabChanged(payload: string): void {
+    if (payload === 'api') {
+      this.isApiActive = true;
+      this.isDefinitionsActive = false;
+    }
+
+    if (payload === 'definitions') {
+      this.isApiActive = false;
+      this.isDefinitionsActive = true;
+    }
   }
 }
