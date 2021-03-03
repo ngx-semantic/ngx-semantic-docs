@@ -42,6 +42,26 @@ export class InputsComponent implements AfterViewChecked {
        suiIconType="search"></i>
   </div>`;
 
+  snippetDisabled = `
+  <div sui-input
+       disabled>
+    <input type="text" placeholder="Search..."/>
+  </div>`;
+
+  snippetDisabledIcon = `
+  <div sui-input
+       disabled
+       suiIcon>
+    <i sui-icon
+       suiIconType="search"></i>
+    <input type="text" placeholder="Search..."/>
+  </div>`;
+
+  snippetDisabledInput = `
+  <div sui-input>
+    <input disabled type="text" placeholder="Search..."/>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');
   }

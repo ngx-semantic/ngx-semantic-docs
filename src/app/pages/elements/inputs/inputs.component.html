@@ -72,6 +72,44 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>An input field can show that it is disabled</p>
+
+      <ng-template #disabled>
+        <div sui-input
+             disabled>
+          <input type="text" placeholder="Search..."/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabledIcon"
+        [templateCode]="snippetDisabledIcon">
+      <ng-template #disabledIcon>
+        <div sui-input
+             disabled
+             suiIcon>
+          <i sui-icon
+             suiIconType="search"></i>
+          <input type="text" placeholder="Search..."/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabledInput"
+        [templateCode]="snippetDisabledInput">
+      <ng-template #disabledInput>
+        <div sui-input>
+          <input disabled type="text" placeholder="Search..."/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">
