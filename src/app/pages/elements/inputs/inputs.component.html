@@ -35,6 +35,43 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="loading"
+        [templateCode]="snippetLoading">
+      <h3 sui-header>Loading</h3>
+      <p>An icon input field can show that it is currently loading data</p>
+
+      <div sui-message>
+        Loading inputs automatically modify the input's icon on loading state to show loading indication
+      </div>
+
+      <ng-template #loading>
+        <div sui-input
+             suiLoading
+             suiIcon
+             suiIconPosition="left">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon
+             suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="loadingRight"
+        [templateCode]="snippetLoadingRight">
+      <ng-template #loadingRight>
+        <div sui-input
+             suiLoading
+             suiIcon
+             suiIconPosition="right">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon
+             suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

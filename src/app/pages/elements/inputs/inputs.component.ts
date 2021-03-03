@@ -22,29 +22,25 @@ export class InputsComponent implements AfterViewChecked {
     <input type="text" placeholder="Search..."/>
   </div>`;
 
-  snippetInput = `
-  <div sui-input>
-    <input type="text" placeholder="Search...">
-  </div>
-  `;
+  snippetLoading = `
+  <div sui-input
+       suiLoading
+       suiIcon
+       suiIconPosition="left">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon
+       suiIconType="search"></i>
+  </div>`;
 
-  snippetAction = `
-   <div sui-input suiAction="left action">
-     <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon>
-       <i sui-icon suiIconType="cart"></i>
-       Checkout
-     </button>
-     <input type="text" value="$52.03">
-   </div>
-
-   <div sui-input suiAction="right action">
-     <input type="text" value="http://www.short.url/c0opq">
-     <button sui-button suiColour="teal" suiLocation="right" suiLabeled suiIcon>
-       <i sui-icon suiIconType="copy"></i>
-       Copy
-     </button>
-   </div>
-  `;
+  snippetLoadingRight = `
+  <div sui-input
+       suiLoading
+       suiIcon
+       suiIconPosition="right">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon
+       suiIconType="search"></i>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');
