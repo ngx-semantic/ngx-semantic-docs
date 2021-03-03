@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {HighlightService} from "../../../shared/services/highlight.service";
 
@@ -10,6 +10,17 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 export class InputsComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
+
+  snippetStandard = `
+  <div sui-input>
+    <input type="text" placeholder="Search..." />
+  </div>`;
+
+  snippetFocus = `
+  <div sui-input
+       suiFocus>
+    <input type="text" placeholder="Search..."/>
+  </div>`;
 
   snippetInput = `
   <div sui-input>

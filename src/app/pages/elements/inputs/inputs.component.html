@@ -1,41 +1,37 @@
 <doc-page
-    header="Placeholders"
-    subHeader="A placeholder is used to reserve splace for content that soon will appear in a layout"
+    header="Input"
+    subHeader="An input is a field used to elicit a response from a user"
     (pageChanged)="tabChanged($event)">
   <ng-container *ngIf="isDefinitionsActive">
-    <h2 sui-header>Types</h2>
+    <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="placeholder"
-        [templateCode]="snippetBasic">
-      <h3 sui-header>Placeholder</h3>
-      <p>A placeholder is used to reserve space for content that soon will appear in a layout.</p>
+        [content]="standard"
+        [templateCode]="snippetStandard">
+      <h3 sui-header>Input</h3>
+      <p>A standard input</p>
 
-      <div sui-message
-           suiState="info">
-        <p>
-          Placeholders can include <b><code>paragraph</code></b>, <b><code>header</code></b>, <b><code>image
-          header</code></b> and <b><code>image</code></b> to let you format the loaders to emulate the content being
-          loaded.
-        </p>
-      </div>
+      <ng-template #standard>
+        <div sui-input>
+          <input type="text" placeholder="Search..."/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
 
-      <br/>
+    <br/>
 
-      <ng-template #placeholder>
-        <div sui-placeholder>
-          <div suiPlaceholderHeader
-               suiImage>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
+    <h2 sui-header suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="focus"
+        [templateCode]="snippetFocus">
+      <h3 sui-header>Focus</h3>
+      <p>An input field can show a user is currently interacting with it</p>
+
+      <ng-template #focus>
+        <div sui-input
+             suiFocus>
+          <input type="text" placeholder="Search..."/>
         </div>
       </ng-template>
     </doc-code-sample>
@@ -230,7 +226,7 @@
       <tr>
         <td>suiLength</td>
         <td>
-          Determine how long the line should be.  Allowed values could be
+          Determine how long the line should be. Allowed values could be
           <span sui-label>'full'</span> | <span sui-label>'very long'</span> |
           <span sui-label>'long'</span> | <span sui-label>'medium'</span> |
           <span sui-label>'short'</span> | <span sui-label>'very short'</span> | <span sui-label>null</span>
@@ -279,78 +275,3 @@
     </table>
   </ng-container>
 </doc-page>
-
-<div class="ui masthead vertical segment">
-  <div class="ui container">
-    <div class="introduction">
-
-      <h1 class="ui header">
-        Input
-        <div class="sub header">
-          An input is a field used to elicit a response from a user
-        </div>
-      </h1>
-
-      <div class="ui hidden divider"></div>
-
-      <div class="ui right floated main menu">
-
-        <a class="bug popup icon item" data-content="Submit Bug Report" href="https://github.com/ngx-semantic/ngx-semantic/issues">
-          <i class="bug icon"></i>
-        </a>
-
-        <a class="github popup icon item" data-content="View project on GitHub" href="https://github.com/ngx-semantic/ngx-semantic">
-          <i class="alternate github icon"></i>
-        </a>
-      </div>
-
-      <div sui-button suiEmphasis="primary">
-        Download
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-
-<div class="main ui container">
-  <h2 sui-header suiDividing>Types</h2>
-  <br>
-
-  <doc-code-sample
-    [content]="stdInput"
-    [templateCode]="snippetInput">
-    <h3 sui-header>Input</h3>
-    <p>An standard input</p>
-
-    <ng-template #stdInput>
-      <div sui-input>
-        <input type="text" placeholder="Search...">
-      </div>
-    </ng-template>
-  </doc-code-sample>
-
-  <doc-code-sample
-    [content]="actionInput"
-    [templateCode]="snippetAction">
-    <h3 sui-header>Action</h3>
-    <p>An input can be formatted to alert the user to an action they may perform </p>
-
-    <ng-template #actionInput>
-      <div sui-input suiAction="left action">
-        <button sui-button suiColour="teal" suiLabeled="labeled" suiIcon>
-          <i sui-icon suiIconType="cart"></i>
-          Checkout
-        </button>
-        <input type="text" value="$52.03">
-      </div>
-      <span style="margin-left: 4px; margin-right: 4px;">&nbsp;</span>
-      <div sui-input suiAction="right action">
-        <input type="text" value="http://www.short.url/c0opq">
-        <button sui-button suiColour="teal" suiLocation="right" suiLabeled suiIcon>
-          <i sui-icon suiIconType="copy"></i>
-          Copy
-        </button>
-      </div>
-    </ng-template>
-  </doc-code-sample>
-</div>

@@ -28,6 +28,7 @@ import {
   SuiMessageModule, SuiPlaceholderModule, SuiSegmentModule, SuiStepsModule,
   SuiTableModule
 } from "ngx-semantic";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {
     SuiPlaceholderModule,
     SuiContainerModule,
     ElementsRoutingModule,
-    SuiCardModule
+    SuiCardModule,
+    FormsModule
   ]
 })
 export class ElementsModule {
