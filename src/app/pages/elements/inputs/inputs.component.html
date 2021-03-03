@@ -46,6 +46,8 @@
         Loading inputs automatically modify the input's icon on loading state to show loading indication
       </div>
 
+      <br/>
+
       <ng-template #loading>
         <div sui-input
              suiLoading
@@ -121,6 +123,73 @@
         <div sui-input
              suiError>
           <input type="text" placeholder="Search..."/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="icon"
+        [templateCode]="snippetIcon">
+      <h3 sui-header>Icon</h3>
+      <p>An input can be formatted with an icon</p>
+
+      <div sui-message>
+        Input icons do not receive <b><code>pointer-events</code></b> unless a <b><code>link icon</code></b> is used.
+      </div>
+
+      <br/>
+
+      <ng-template #icon>
+        <div sui-input
+             suiIcon>
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon
+             suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconPosition"
+        [templateCode]="snippetIconPosition">
+      <ng-template #iconPosition>
+        <div sui-input
+             suiIcon
+             suiIconPosition="left">
+          <input type="text" placeholder="Search users..."/>
+          <i sui-icon
+             suiIconType="users"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconCircular"
+        [templateCode]="snippetIconCircular">
+      <ng-template #iconCircular>
+        <div sui-input
+             suiIcon>
+          <input type="text" placeholder="Search users..."/>
+          <i sui-icon
+             suiIconType="circular search link"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconCircularInverted"
+        [templateCode]="snippetIconCircularInverted">
+      <ng-template #iconCircularInverted>
+        <div sui-input
+             suiIcon>
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon
+             suiInverted
+             suiIconType="circular search link"></i>
         </div>
       </ng-template>
     </doc-code-sample>

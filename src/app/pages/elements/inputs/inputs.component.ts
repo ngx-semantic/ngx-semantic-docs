@@ -68,6 +68,40 @@ export class InputsComponent implements AfterViewChecked {
     <input type="text" placeholder="Search..."/>
   </div>`;
 
+  snippetIcon = `
+  <div sui-input
+       suiIcon>
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon
+       suiIconType="search"></i>
+  </div>`;
+
+  snippetIconPosition = `
+  <div sui-input
+       suiIcon
+       suiIconPosition="left">
+    <input type="text" placeholder="Search users..."/>
+    <i sui-icon
+       suiIconType="users"></i>
+  </div>`;
+
+  snippetIconCircular = `
+  <div sui-input
+       suiIcon>
+    <input type="text" placeholder="Search users..."/>
+    <i sui-icon
+       suiIconType="circular search link"></i>
+  </div>`;
+
+  snippetIconCircularInverted = `
+  <div sui-input
+       suiIcon>
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon
+       suiInverted
+       suiIconType="circular search link"></i>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Placeholders | Ngx Semantic');
   }
