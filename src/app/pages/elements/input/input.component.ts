@@ -11,6 +11,13 @@ export class InputComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
+  selectedOption = 'articles';
+  options = [
+    {value: 'all', text: 'All'},
+    {value: 'articles', text: 'Articles'},
+    {value: 'products', text: 'Products'}
+  ];
+
   snippetStandard = `
   <div sui-input>
     <input type="text" placeholder="Search..." />
@@ -186,6 +193,89 @@ export class InputComponent implements AfterViewChecked {
       <i sui-icon
          suiIconType="asterisk"></i>
     </div>
+  </div>`;
+
+  snippetAction = `
+  <div sui-input
+       suiAction="action">
+    <input type="text" placeholder="Search..."/>
+    <button sui-button>Search</button>
+  </div>`;
+
+  snippetLeftAction = `
+  <div sui-input
+       suiAction="left action">
+    <button sui-button
+            suiIcon
+            suiColour="teal"
+            suiLabeled="labeled">
+      <i sui-icon
+         suiIconType="cart"></i>
+      Checkout
+    </button>
+    <input type="text" value="$52.03"/>
+  </div>`;
+
+  snippetRightAction = `
+  <div sui-input
+       suiIcon
+       suiIconPosition="left"
+       suiAction="right action">
+    <i sui-icon
+       suiIconType="search"></i>
+    <input type="text" placeholder="Search..."/>
+    <div sui-button
+         suiBasic
+         sui-dropdown
+         suiFloating>
+      <div class="text">This Page</div>
+      <i sui-icon
+         suiIconType="dropdown"></i>
+      <div suiDropdownMenu>
+        <div suiDropdownMenuItem>This Organization</div>
+        <div suiDropdownMenuItem>Entire Site</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetCombinedAction = `
+  <div sui-input
+       suiAction="action">
+    <input type="text" placeholder="Search..."/>
+    <sui-select
+        suiCompact
+        suiPlaceholder="All"
+        [suiOptions]="options"
+        [(ngModel)]="selectedOption">
+    </sui-select>
+    <div sui-button>
+      Search
+    </div>
+  </div>`;
+
+  snippetRightLabeledAction = `
+  <div sui-input
+       suiAction="action">
+    <input type="text" value="http://ww.short.url/c0opq"/>
+    <button sui-button
+            suiIcon
+            suiColour="teal"
+            suiLabeled="right labeled">
+      <i sui-icon
+         suiIconType="copy"></i>
+      Copy
+    </button>
+  </div>`;
+
+  snippetIconAction = `
+  <div sui-input
+       suiAction="action">
+    <input type="text" placeholder="Search..."/>
+    <button sui-button
+            suiIcon>
+      <i sui-icon
+         suiIconType="search"></i>
+    </button>
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {

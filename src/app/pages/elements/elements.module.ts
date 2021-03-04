@@ -38,7 +38,7 @@ import {
   SuiListModule,
   SuiMessageModule,
   SuiPlaceholderModule,
-  SuiSegmentModule,
+  SuiSegmentModule, SuiSelectModule,
   SuiStepsModule,
   SuiTableModule
 } from "ngx-semantic";
@@ -85,7 +85,8 @@ import {FormsModule} from "@angular/forms";
     ElementsRoutingModule,
     SuiCardModule,
     FormsModule,
-    SuiDropdownModule
+    SuiDropdownModule,
+    SuiSelectModule
   ]
 })
 export class ElementsModule {
