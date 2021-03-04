@@ -103,7 +103,7 @@ export class InputsComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Placeholders | Ngx Semantic');
+    title.setTitle('Inputs | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

@@ -193,6 +193,115 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="labeled"
+        [templateCode]="snippetIcon">
+      <h3 sui-header>Labeled</h3>
+      <p>An input can be formatted with a label</p>
+
+      <ng-template #labeled>
+        <div sui-input
+             suiLabeled="labeled">
+          <div sui-label>
+            http://
+          </div>
+          <input type="text" placeholder="mysite.com"/>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rightLabeled"
+        [templateCode]="snippetIcon">
+      <ng-template #rightLabeled>
+        <div sui-input
+             suiLabeled="right labeled">
+          <input type="text" placeholder="Find domain"/>
+          <div sui-label
+               sui-dropdown>
+            <div class="text">.com</div>
+            <i sui-icon
+               suiIconType="dropdown"></i>
+            <div suiDropdownMenu>
+              <div suiDropdownMenuItem>.com</div>
+              <div suiDropdownMenuItem>.net</div>
+              <div suiDropdownMenuItem>.org</div>
+            </div>
+          </div>
+
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="basicLabeled"
+        [templateCode]="snippetIcon">
+      <ng-template #basicLabeled>
+        <div sui-input
+             suiLabeled="right labeled">
+          <input type="text" placeholder="Enter weight.."/>
+          <div sui-label
+               suiBasic>
+            kg
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="combinedLabeled"
+        [templateCode]="snippetIcon">
+      <ng-template #combinedLabeled>
+        <div sui-input
+             suiLabeled="right labeled">
+          <label sui-label
+                 for="amount">
+            $
+          </label>
+          <input id="amount" type="text" placeholder="Amount"/>
+          <div sui-label
+               suiBasic>
+            .00
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="angledLabeled"
+        [templateCode]="snippetIcon">
+      <ng-template #angledLabeled>
+        <div sui-input
+             suiIcon
+             suiIconPosition="left"
+             suiLabeled="right labeled">
+          <i sui-icon
+             suiIconType="tags"></i>
+          <input type="text" placeholder="Enter tags"/>
+          <div sui-label
+               suiTag>
+            Add Tag
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="leftCornerLabeled"
+        [templateCode]="snippetIcon">
+      <ng-template #leftCornerLabeled>
+        <div sui-input
+             suiLabeled="right labeled">
+          <input type="text" placeholder="Search..."/>
+          <div sui-label
+               suiCorner="left">
+            <i sui-icon
+               suiIconType="asterisk"></i>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

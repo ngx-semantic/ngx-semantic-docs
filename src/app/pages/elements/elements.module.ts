@@ -22,10 +22,24 @@ import {StepsComponent} from "./steps/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {
-  SuiButtonModule, SuiCardModule, SuiContainerModule, SuiDividerModule, SuiFlagModule, SuiFormModule, SuiGridModule,
-  SuiHeaderModule, SuiIconModule, SuiImageModule, SuiInputModule,
-  SuiLabelModule, SuiListModule,
-  SuiMessageModule, SuiPlaceholderModule, SuiSegmentModule, SuiStepsModule,
+  SuiButtonModule,
+  SuiCardModule,
+  SuiContainerModule,
+  SuiDividerModule,
+  SuiDropdownModule,
+  SuiFlagModule,
+  SuiFormModule,
+  SuiGridModule,
+  SuiHeaderModule,
+  SuiIconModule,
+  SuiImageModule,
+  SuiInputModule,
+  SuiLabelModule,
+  SuiListModule,
+  SuiMessageModule,
+  SuiPlaceholderModule,
+  SuiSegmentModule,
+  SuiStepsModule,
   SuiTableModule
 } from "ngx-semantic";
 import {FormsModule} from "@angular/forms";
@@ -70,7 +84,8 @@ import {FormsModule} from "@angular/forms";
     SuiContainerModule,
     ElementsRoutingModule,
     SuiCardModule,
-    FormsModule
+    FormsModule,
+    SuiDropdownModule
   ]
 })
 export class ElementsModule {
