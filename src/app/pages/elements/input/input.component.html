@@ -196,7 +196,7 @@
 
     <doc-code-sample
         [content]="labeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetLabeled">
       <h3 sui-header>Labeled</h3>
       <p>An input can be formatted with a label</p>
 
@@ -213,7 +213,7 @@
 
     <doc-code-sample
         [content]="rightLabeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetRightLabeled">
       <ng-template #rightLabeled>
         <div sui-input
              suiLabeled="right labeled">
@@ -229,14 +229,13 @@
               <div suiDropdownMenuItem>.org</div>
             </div>
           </div>
-
         </div>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [content]="basicLabeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetBasicLabeled">
       <ng-template #basicLabeled>
         <div sui-input
              suiLabeled="right labeled">
@@ -251,7 +250,7 @@
 
     <doc-code-sample
         [content]="combinedLabeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetCombinedLabeled">
       <ng-template #combinedLabeled>
         <div sui-input
              suiLabeled="right labeled">
@@ -270,7 +269,7 @@
 
     <doc-code-sample
         [content]="angledLabeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetAngledLabeled">
       <ng-template #angledLabeled>
         <div sui-input
              suiIcon
@@ -289,10 +288,26 @@
 
     <doc-code-sample
         [content]="leftCornerLabeled"
-        [templateCode]="snippetIcon">
+        [templateCode]="snippetLeftCornerLabeled">
       <ng-template #leftCornerLabeled>
         <div sui-input
-             suiLabeled="right labeled">
+             suiLabeled="left corner labeled">
+          <input type="text" placeholder="Search..."/>
+          <div sui-label
+               suiCorner="left">
+            <i sui-icon
+               suiIconType="asterisk"></i>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="cornerLabeled"
+        [templateCode]="snippetCornerLabeled">
+      <ng-template #cornerLabeled>
+        <div sui-input
+             suiLabeled="corner labeled">
           <input type="text" placeholder="Search..."/>
           <div sui-label
                suiCorner="left">

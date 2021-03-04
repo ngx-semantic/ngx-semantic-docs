@@ -102,6 +102,92 @@ export class InputComponent implements AfterViewChecked {
        suiIconType="circular search link"></i>
   </div>`;
 
+  snippetLabeled = `
+  <div sui-input
+       suiLabeled="labeled">
+    <div sui-label>
+      http://
+    </div>
+    <input type="text" placeholder="mysite.com"/>
+  </div>`;
+
+  snippetRightLabeled = `
+  <div sui-input
+       suiLabeled="right labeled">
+    <input type="text" placeholder="Find domain"/>
+    <div sui-label
+         sui-dropdown>
+      <div class="text">.com</div>
+      <i sui-icon
+         suiIconType="dropdown"></i>
+      <div suiDropdownMenu>
+        <div suiDropdownMenuItem>.com</div>
+        <div suiDropdownMenuItem>.net</div>
+        <div suiDropdownMenuItem>.org</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetBasicLabeled = `
+  <div sui-input
+       suiLabeled="right labeled">
+    <input type="text" placeholder="Enter weight.."/>
+    <div sui-label
+         suiBasic>
+      kg
+    </div>
+  </div>`;
+
+  snippetCombinedLabeled = `
+  <div sui-input
+       suiLabeled="right labeled">
+    <label sui-label
+           for="amount">
+      $
+    </label>
+    <input id="amount" type="text" placeholder="Amount"/>
+    <div sui-label
+         suiBasic>
+      .00
+    </div>
+  </div>`;
+
+  snippetAngledLabeled = `
+  <div sui-input
+       suiIcon
+       suiIconPosition="left"
+       suiLabeled="right labeled">
+    <i sui-icon
+       suiIconType="tags"></i>
+    <input type="text" placeholder="Enter tags"/>
+    <div sui-label
+         suiTag>
+      Add Tag
+    </div>
+  </div>`;
+
+  snippetLeftCornerLabeled = `
+  <div sui-input
+       suiLabeled="left corner labeled">
+    <input type="text" placeholder="Search..."/>
+    <div sui-label
+         suiCorner="left">
+      <i sui-icon
+         suiIconType="asterisk"></i>
+    </div>
+  </div>`;
+
+  snippetCornerLabeled = `
+  <div sui-input
+       suiLabeled="corner labeled">
+    <input type="text" placeholder="Search..."/>
+    <div sui-label
+         suiCorner="left">
+      <i sui-icon
+         suiIconType="asterisk"></i>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Input | Ngx Semantic');
   }
