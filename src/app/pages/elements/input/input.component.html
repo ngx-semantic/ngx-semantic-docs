@@ -531,6 +531,94 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="miniSize"
+        [templateCode]="snippetMiniSize">
+      <h3 sui-header>Size</h3>
+      <p>An input can vary in sizer</p>
+
+      <div sui-message
+           suiState="info">
+        Inputs will automatically size themselves unless you manually declare a width
+      </div>
+
+      <br/>
+
+      <ng-template #miniSize>
+        <div sui-input
+             suiIcon
+             suiSize="mini">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="smallSize"
+        [templateCode]="snippetSmallSize">
+      <ng-template #smallSize>
+        <div sui-input
+             suiIcon
+             suiSize="small">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="largeSize"
+        [templateCode]="snippetLargeSize">
+      <ng-template #largeSize>
+        <div sui-input
+             suiIcon
+             suiSize="large">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="bigSize"
+        [templateCode]="snippetBigSize">
+      <ng-template #bigSize>
+        <div sui-input
+             suiIcon
+             suiSize="big">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="hugeSize"
+        [templateCode]="snippetHugeSize">
+      <ng-template #hugeSize>
+        <div sui-input
+             suiIcon
+             suiSize="huge">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="massiveSize"
+        [templateCode]="snippetMassiveSize">
+      <ng-template #massiveSize>
+        <div sui-input
+             suiIcon
+             suiSize="massive">
+          <input type="text" placeholder="Search..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

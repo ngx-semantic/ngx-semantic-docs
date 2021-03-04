@@ -348,6 +348,54 @@ export class InputComponent implements AfterViewChecked {
     <button sui-button>Search</button>
   </div>`;
 
+  snippetMiniSize = `
+  <div sui-input
+       suiIcon
+       suiSize="mini">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetSmallSize = `
+  <div sui-input
+       suiIcon
+       suiSize="small">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetLargeSize = `
+  <div sui-input
+       suiIcon
+       suiSize="large">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetBigSize = `
+  <div sui-input
+       suiIcon
+       suiSize="big">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetHugeSize = `
+  <div sui-input
+       suiIcon
+       suiSize="huge">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetMassiveSize = `
+  <div sui-input
+       suiIcon
+       suiSize="massive">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Input | Ngx Semantic');
   }
