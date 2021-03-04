@@ -5,18 +5,18 @@ import {RouterModule, Routes} from "@angular/router";
 import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
-import {FlagsComponent} from "./flags/flags.component";
-import {HeadersComponent} from "./headers/headers.component";
+import {FlagsComponent} from "./flag/flags.component";
+import {HeadersComponent} from "./header/headers.component";
 import {IconsComponent} from "./icons/icons.component";
-import {InputsComponent} from "./inputs/inputs.component";
-import {LabelsComponent} from "./labels/labels.component";
-import {ListsComponent} from "./lists/lists.component";
-import {LoadersComponent} from "./loaders/loaders.component";
-import {PlaceholdersComponent} from "./placeholders/placeholders.component";
-import {RailsComponent} from "./rails/rails.component";
-import {RevealsComponent} from "./reveals/reveals.component";
-import {SegmentsComponent} from "./segments/segments.component";
-import {StepsComponent} from "./steps/steps.component";
+import {InputsComponent} from "./input/inputs.component";
+import {LabelsComponent} from "./label/labels.component";
+import {ListsComponent} from "./list/lists.component";
+import {LoadersComponent} from "./loader/loaders.component";
+import {PlaceholdersComponent} from "./placeholder/placeholders.component";
+import {RailsComponent} from "./rail/rails.component";
+import {RevealsComponent} from "./reveal/reveals.component";
+import {SegmentsComponent} from "./segment/segments.component";
+import {StepsComponent} from "./step/steps.component";
 import {NgModule} from "@angular/core";
 
 const routes: Routes = [
@@ -53,11 +53,11 @@ const routes: Routes = [
     component: LabelsComponent,
   },
   {
-    path: 'lists',
+    path: 'list',
     component: ListsComponent,
   },
   {
-    path: 'loaders',
+    path: 'loader',
     component: LoadersComponent,
   },
   {
@@ -65,11 +65,11 @@ const routes: Routes = [
     component: PlaceholdersComponent,
   },
   {
-    path: 'rails',
+    path: 'rail',
     component: RailsComponent,
   },
   {
-    path: 'reveals',
+    path: 'reveal',
     component: RevealsComponent,
   },
   {
@@ -77,7 +77,7 @@ const routes: Routes = [
     component: SegmentsComponent,
   },
   {
-    path: 'steps',
+    path: 'step',
     component: StepsComponent,
   },
 ];

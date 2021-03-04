@@ -3,7 +3,7 @@
  */
 
 import {NgModule} from "@angular/core";
-import {CardsComponent} from "./cards/cards.component";
+import {CardsComponent} from "./card/cards.component";
 import {CommonModule} from "@angular/common";
 import {ViewsRoutingModule} from "./views-routing.module";
 import {SharedModule} from "../../shared/shared.module";
