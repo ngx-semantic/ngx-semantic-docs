@@ -474,6 +474,63 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>An input can be formatted to appear on dark backgrounds</p>
+
+      <ng-template #inverted>
+        <div sui-segment
+             suiInverted>
+          <div sui-input
+               suiInverted>
+            <input type="text" placeholder="Search..."/>
+          </div>
+          <div sui-divider
+               suiInverted></div>
+          <div sui-input
+               suiInverted
+               suiIcon
+               suiIconPosition="left">
+            <input type="text" placeholder="Search..."/>
+            <i sui-icon suiIconType="search"></i>
+          </div>
+          <div sui-divider
+               suiInverted></div>
+          <div sui-input
+               suiIcon
+               suiInverted
+               suiTransparent>
+            <input type="text" placeholder="Search..."/>
+            <i sui-icon suiIconType="search"></i>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fluid"
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>An input can take the size of its container</p>
+
+      <ng-template #fluid>
+        <div sui-input
+             suiFluid
+             suiIcon>
+          <input type="text" placeholder="Search a very wide input..."/>
+          <i sui-icon suiIconType="search"></i>
+        </div>
+        <div sui-input
+             suiFluid
+             suiAction="action">
+          <input type="text" placeholder="Search..."/>
+          <button sui-button>Search</button>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </ng-container>
 
   <ng-container *ngIf="isApiActive">

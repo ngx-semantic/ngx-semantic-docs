@@ -301,6 +301,53 @@ export class InputComponent implements AfterViewChecked {
     <i sui-icon suiIconType="search"></i>
   </div>`;
 
+  snippetInverted = `
+  <div sui-segment
+       suiInverted>
+    <div sui-input
+         suiInverted>
+      <input type="text" placeholder="Search..."/>
+    </div>
+  </div>
+  <div sui-divider
+       suiInverted></div>
+  <div sui-segment
+       suiInverted>
+    <div sui-input
+         suiInverted
+         suiIcon
+         suiIconPosition="left">
+      <input type="text" placeholder="Search..."/>
+      <i sui-icon suiIconType="search"></i>
+    </div>
+  </div>
+  <div sui-divider
+       suiInverted></div>
+  <div sui-segment
+       suiInverted>
+    <div sui-input
+         suiIcon
+         suiInverted
+         suiTransparent>
+      <input type="text" placeholder="Search..."/>
+      <i sui-icon suiIconType="search"></i>
+    </div>
+  </div>`;
+
+  snippetFluid = `
+  <div sui-input
+       suiFluid
+       suiIcon>
+    <input type="text" placeholder="Search a very wide input..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>
+  <div sui-input
+       suiFluid
+       suiAction="action">
+    <input type="text" placeholder="Search..."/>
+    <button sui-button>Search</button>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Input | Ngx Semantic');
   }
