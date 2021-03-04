@@ -3,7 +3,7 @@ import {Title} from "@angular/platform-browser";
 import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
-  selector: 'doc-inputs',
+  selector: 'doc-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
@@ -103,7 +103,7 @@ export class InputComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Inputs | Ngx Semantic');
+    title.setTitle('Input | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

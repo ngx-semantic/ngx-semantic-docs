@@ -1,6 +1,7 @@
 /**
  * Created by bolorundurowb on 1/28/2021
  */
+
 import {RouterModule, Routes} from "@angular/router";
 import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
@@ -21,7 +22,7 @@ import {NgModule} from "@angular/core";
 
 const routes: Routes = [
   {
-    path: 'buttons',
+    path: 'button',
     component: ButtonsComponent,
   },
   {
@@ -29,27 +30,27 @@ const routes: Routes = [
     component: ContainerComponent,
   },
   {
-    path: 'dividers',
+    path: 'divider',
     component: DividerComponent,
   },
   {
-    path: 'flags',
+    path: 'flag',
     component: FlagsComponent,
   },
   {
-    path: 'headers',
+    path: 'header',
     component: HeadersComponent,
   },
   {
-    path: 'icons',
+    path: 'icon',
     component: IconsComponent,
   },
   {
-    path: 'inputs',
+    path: 'input',
     component: InputComponent,
   },
   {
-    path: 'labels',
+    path: 'label',
     component: LabelsComponent,
   },
   {
@@ -61,7 +62,7 @@ const routes: Routes = [
     component: LoadersComponent,
   },
   {
-    path: 'placeholders',
+    path: 'placeholder',
     component: PlaceholdersComponent,
   },
   {
@@ -73,7 +74,7 @@ const routes: Routes = [
     component: RevealsComponent,
   },
   {
-    path: 'segments',
+    path: 'segment',
     component: SegmentsComponent,
   },
   {
