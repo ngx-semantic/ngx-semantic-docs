@@ -278,6 +278,29 @@ export class InputComponent implements AfterViewChecked {
     </button>
   </div>`;
 
+  snippetTransparent = `
+  <div sui-input
+       suiTransparent>
+    <input type="text" placeholder="Search..."/>
+  </div>`;
+
+  snippetIconTransparent = `
+  <div sui-input
+       suiIcon
+       suiTransparent>
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
+  snippetLeftIconTransparent = `
+  <div sui-input
+       suiIcon
+       suiTransparent
+       suiIconPosition="left">
+    <input type="text" placeholder="Search..."/>
+    <i sui-icon suiIconType="search"></i>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Input | Ngx Semantic');
   }
