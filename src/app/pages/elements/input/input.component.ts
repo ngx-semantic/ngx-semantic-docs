@@ -4,10 +4,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-inputs',
-  templateUrl: './inputs.component.html',
-  styleUrls: ['./inputs.component.scss']
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.scss']
 })
-export class InputsComponent implements AfterViewChecked {
+export class InputComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 

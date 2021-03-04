@@ -10,7 +10,7 @@ import {DividerComponent} from "./divider/divider.component";
 import {FlagsComponent} from "./flag/flags.component";
 import {HeadersComponent} from "./header/headers.component";
 import {IconsComponent} from "./icons/icons.component";
-import {InputsComponent} from "./input/inputs.component";
+import {InputComponent} from "./input/input.component";
 import {LabelsComponent} from "./label/labels.component";
 import {ListsComponent} from "./list/lists.component";
 import {LoadersComponent} from "./loader/loaders.component";
@@ -52,7 +52,7 @@ import {FormsModule} from "@angular/forms";
     RailsComponent,
     IconsComponent,
     LabelsComponent,
-    InputsComponent,
+    InputComponent,
     ButtonsComponent,
     DividerComponent,
     HeadersComponent,
