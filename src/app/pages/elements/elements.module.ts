@@ -7,27 +7,42 @@ import {CommonModule} from "@angular/common";
 import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
-import {FlagsComponent} from "./flags/flags.component";
-import {HeadersComponent} from "./headers/headers.component";
+import {FlagsComponent} from "./flag/flags.component";
+import {HeadersComponent} from "./header/headers.component";
 import {IconsComponent} from "./icons/icons.component";
-import {InputsComponent} from "./inputs/inputs.component";
-import {LabelsComponent} from "./labels/labels.component";
-import {ListsComponent} from "./lists/lists.component";
-import {LoadersComponent} from "./loaders/loaders.component";
-import {PlaceholdersComponent} from "./placeholders/placeholders.component";
-import {RailsComponent} from "./rails/rails.component";
-import {RevealsComponent} from "./reveals/reveals.component";
-import {SegmentsComponent} from "./segments/segments.component";
-import {StepsComponent} from "./steps/steps.component";
+import {InputComponent} from "./input/input.component";
+import {LabelsComponent} from "./label/labels.component";
+import {ListsComponent} from "./list/lists.component";
+import {LoadersComponent} from "./loader/loaders.component";
+import {PlaceholdersComponent} from "./placeholder/placeholders.component";
+import {RailsComponent} from "./rail/rails.component";
+import {RevealsComponent} from "./reveal/reveals.component";
+import {SegmentsComponent} from "./segment/segments.component";
+import {StepsComponent} from "./step/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {
-  SuiButtonModule, SuiCardModule, SuiContainerModule, SuiDividerModule, SuiFlagModule, SuiFormModule, SuiGridModule,
-  SuiHeaderModule, SuiIconModule, SuiImageModule, SuiInputModule,
-  SuiLabelModule, SuiListModule,
-  SuiMessageModule, SuiPlaceholderModule, SuiSegmentModule, SuiStepsModule,
+  SuiButtonModule,
+  SuiCardModule,
+  SuiContainerModule,
+  SuiDividerModule,
+  SuiDropdownModule,
+  SuiFlagModule,
+  SuiFormModule,
+  SuiGridModule,
+  SuiHeaderModule,
+  SuiIconModule,
+  SuiImageModule,
+  SuiInputModule,
+  SuiLabelModule,
+  SuiListModule,
+  SuiMessageModule,
+  SuiPlaceholderModule,
+  SuiSegmentModule, SuiSelectModule,
+  SuiStepsModule,
   SuiTableModule
 } from "ngx-semantic";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -37,7 +52,7 @@ import {
     RailsComponent,
     IconsComponent,
     LabelsComponent,
-    InputsComponent,
+    InputComponent,
     ButtonsComponent,
     DividerComponent,
     HeadersComponent,
@@ -68,7 +83,10 @@ import {
     SuiPlaceholderModule,
     SuiContainerModule,
     ElementsRoutingModule,
-    SuiCardModule
+    SuiCardModule,
+    FormsModule,
+    SuiDropdownModule,
+    SuiSelectModule
   ]
 })
 export class ElementsModule {

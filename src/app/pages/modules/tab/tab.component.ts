@@ -115,7 +115,6 @@ export class TabComponent implements AfterViewChecked {
   snippetDisabled = `
     <sui-tabs>
       <sui-tab
-          suiLoading
           suiTitle="Circle">
         Circle
       </sui-tab>
@@ -135,7 +134,6 @@ export class TabComponent implements AfterViewChecked {
         suiTabType="secondary"
         suiTabMenuPosition="bottom">
       <sui-tab
-          suiLoading
           suiTitle="Circle">
         Circle
       </sui-tab>
@@ -153,7 +151,6 @@ export class TabComponent implements AfterViewChecked {
     <sui-tabs
         suiColour="red">
       <sui-tab
-          suiLoading
           suiTitle="Circle">
         Circle
       </sui-tab>
