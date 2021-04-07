@@ -1,8 +1,7 @@
 <doc-page
     header="Rating"
-    subHeader="A rating indicates user interest in content"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A rating indicates user interest in content">
+  <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>States</h2>
 
@@ -104,9 +103,9 @@
             suiMaxValue="4"></sui-rating>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-rating</h2>
 
@@ -222,5 +221,5 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

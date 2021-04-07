@@ -1,8 +1,7 @@
 <doc-page
     header="Placeholders"
-    subHeader="A placeholder is used to reserve splace for content that soon will appear in a layout"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A placeholder is used to reserve splace for content that soon will appear in a layout">
+  <div *docPageContent="'definition'">
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
@@ -434,9 +433,9 @@
         </div>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-placeholder</h2>
 
@@ -672,5 +671,5 @@
       </tr>
       </tfoot>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

@@ -1,8 +1,7 @@
 <doc-page
     header="Breadcrumb"
-    subHeader="A breadcrumb is used to show hierarchy between content"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A breadcrumb is used to show hierarchy between content">
+  <div *docPageContent="'definition'">
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample [content]="breadcrumbStd" [templateCode]="snippetStd">
@@ -187,8 +186,7 @@
         </div>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
-  </ng-container>
+  <div *docPageContent="'api'"></div>
 </doc-page>

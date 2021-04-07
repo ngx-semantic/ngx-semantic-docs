@@ -1,8 +1,7 @@
 <doc-page
     header="Tab"
-    subHeader="A tab is a hidden section of content activated by a menu"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A tab is a hidden section of content activated by a menu">
+  <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Type</h2>
 
@@ -218,9 +217,9 @@
         </sui-tabs>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-tabs</h2>
 
@@ -381,5 +380,5 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

@@ -1,8 +1,7 @@
 <doc-page
     header="Embed"
-    subHeader="An embed displays content from other websites like YouTube videos or Google Maps"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="An embed displays content from other websites like YouTube videos or Google Maps">
+  <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>States</h2>
 
@@ -65,9 +64,9 @@
             suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-embed</h2>
 
@@ -181,5 +180,5 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

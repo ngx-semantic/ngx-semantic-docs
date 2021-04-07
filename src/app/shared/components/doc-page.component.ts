@@ -2,8 +2,8 @@
  * Created by bolor on 10/7/2020
  */
 
-import {Component, Input, Output, EventEmitter, AfterContentInit, ContentChildren, QueryList} from '@angular/core';
-import {DocPageContentDirective} from './doc-page-content.directive';
+import {Component, Input, ContentChildren, QueryList} from '@angular/core';
+import {DocPageContentDirective} from '../directives/doc-page-content.directive';
 
 @Component({
   selector: 'doc-page',
@@ -87,21 +87,16 @@ import {DocPageContentDirective} from './doc-page-content.directive';
           <ng-container [ngTemplateOutlet]="page.template"></ng-container>
         </ng-container>
       </ng-container>
-
     </div>
   `
 })
-export class DocPageComponent implements AfterContentInit {
+export class DocPageComponent {
   @ContentChildren(DocPageContentDirective) public pages: QueryList<DocPageContentDirective>;
 
   @Input() header: string = null;
   @Input() subHeader: string = null;
-  @Output() pageChanged = new EventEmitter<string>();
 
   public currentView = 'definition';
-
-  ngAfterContentInit() {
-  }
 
   isApi(): boolean {
     return this.currentView === 'api';

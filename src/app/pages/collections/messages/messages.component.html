@@ -1,8 +1,7 @@
 <doc-page
     header="Message"
-    subHeader="A message displays information that explains nearby content"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A message displays information that explains nearby content">
+  <div *docPageContent="'definition'">
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample [content]="msgStd" [templateCode]="snippetBasic">
@@ -234,9 +233,8 @@
         <div sui-message suiSize='massive'>This is a massive message</div>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
-  </ng-container>
+  <div *docPageContent="'api'"></div>
 </doc-page>
 

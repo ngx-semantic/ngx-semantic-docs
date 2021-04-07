@@ -1,8 +1,7 @@
 <doc-page
     header="Dividers"
-    subHeader="A divider visually segments content into groups"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A divider visually segments content into groups">
+  <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Types</h2>
 
@@ -383,9 +382,9 @@
         </div>
       </ng-template>
     </doc-code-sample>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-divider</h2>
 
@@ -532,5 +531,5 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

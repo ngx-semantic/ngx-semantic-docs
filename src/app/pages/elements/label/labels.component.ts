@@ -8,9 +8,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./labels.component.scss'],
 })
 export class LabelsComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   snippetStd = `
   <div sui-label>
     <i sui-icon suiIconType="mail icon"></i> 23
@@ -515,17 +512,5 @@ export class LabelsComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }

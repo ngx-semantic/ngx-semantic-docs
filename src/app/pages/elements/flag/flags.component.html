@@ -1,8 +1,7 @@
 <doc-page
     header="Flags"
-    subHeader="A button indicates a possible user action"
-    (pageChanged)="tabChanged($event)">
-  <ng-container *ngIf="isDefinitionsActive">
+    subHeader="A button indicates a possible user action">
+  <div *docPageContent="'definition'">
     <h2 sui-header>Definition</h2>
 
     <doc-code-sample
@@ -1520,9 +1519,9 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 
-  <ng-container *ngIf="isApiActive">
+  <div *docPageContent="'api'">
     <h2 sui-header
         suiDividing>sui-flag</h2>
 
@@ -1560,5 +1559,5 @@
       </tr>
       </tbody>
     </table>
-  </ng-container>
+  </div>
 </doc-page>

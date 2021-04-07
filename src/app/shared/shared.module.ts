@@ -17,7 +17,7 @@ import {SuiContainerModule} from "ngx-semantic/elements/container";
 
 import {DocPageComponent} from "./components/doc-page.component";
 import {CodeSampleComponent} from "./components/code-sample.component";
-import {DocPageContentDirective} from './components/doc-page-content.directive';
+import {DocPageContentDirective} from './directives/doc-page-content.directive';
 
 @NgModule({
   imports: [
