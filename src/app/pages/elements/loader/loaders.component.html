@@ -114,6 +114,21 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A loader can be disabled or hidden</p>
+
+      <ng-template #disabled>
+        <div sui-segment>
+          <div sui-loader
+               disabled></div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
