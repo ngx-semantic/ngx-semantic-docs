@@ -12,13 +12,13 @@
       <h3 sui-header>Loader</h3>
       <p>A loader</p>
 
-      <ng-template #basic>
-        <div sui-message
-             suiState="info">
-          Loaders are hidden unless <code>active</code> or inside an <a routerLink="/modules/dimmer"><code>active
-          dimmer</code></a>.
-        </div>
+      <div sui-message
+           suiState="info">
+        Loaders are hidden unless <code>active</code> or inside an <a routerLink="/modules/dimmer"><code>active
+        dimmer</code></a>.
+      </div>
 
+      <ng-template #basic>
         <div sui-segment
              sui-dimmer
              dimmed="true">
@@ -91,6 +91,26 @@
               Preparing Files
             </div>
           </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="active"
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>A loader can be active or visible</p>
+
+      <div sui-message
+           suiState="info">
+        An active loader may not be clearly visible without using a <a routerLink="/modules/dimmer"><code>dimmer</code></a>.
+      </div>
+
+      <ng-template #active>
+        <div sui-segment>
+          <div sui-loader
+               suiActive></div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
