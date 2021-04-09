@@ -2,7 +2,8 @@
  * Created by bolor on 10/7/2020
  */
 
-import {Component, Input, Output, EventEmitter} from "@angular/core";
+import {Component, Input, ContentChildren, QueryList} from '@angular/core';
+import {DocPageContentDirective} from '../directives/doc-page-content.directive';
 
 @Component({
   selector: 'doc-page',
@@ -66,13 +67,13 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
              style="margin-top: 2rem; margin-bottom: 1.3rem;">
           <a suiMenuItem
              [suiActive]="isDefinitions()"
-             (click)="switchToDefinitions()">
+             (click)="switchToPage('definition')">
             Definitions
           </a>
 
           <a suiMenuItem
              [suiActive]="isApi()"
-             (click)="switchToApi()">
+             (click)="switchToPage('api')">
             API
           </a>
         </div>
@@ -81,34 +82,31 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
 
     <div class="main"
          sui-container>
-      <ng-content></ng-content>
+      <ng-container *ngFor="let page of pages">
+        <ng-container *ngIf="page.pageType === this.currentView">
+          <ng-container [ngTemplateOutlet]="page.template"></ng-container>
+        </ng-container>
+      </ng-container>
     </div>
   `
 })
 export class DocPageComponent {
+  @ContentChildren(DocPageContentDirective) public pages: QueryList<DocPageContentDirective>;
+
   @Input() header: string = null;
   @Input() subHeader: string = null;
-  @Output() pageChanged = new EventEmitter<string>();
 
-  private definitions = 'definitions';
-  private api = 'api';
-  private currentView = this.definitions;
+  public currentView = 'definition';
 
   isApi(): boolean {
-    return this.currentView === this.api;
-  }
-
-  switchToApi(): void {
-    this.currentView = this.api;
-    this.pageChanged.emit(this.currentView);
+    return this.currentView === 'api';
   }
 
   isDefinitions(): boolean {
-    return this.currentView === this.definitions;
+    return this.currentView === 'definition';
   }
 
-  switchToDefinitions(): void {
-    this.currentView = this.definitions;
-    this.pageChanged.emit(this.currentView);
+  switchToPage(page): void {
+    this.currentView = page;
   }
 }

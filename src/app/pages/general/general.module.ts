@@ -3,10 +3,12 @@
  */
 
 import {NgModule} from "@angular/core";
-import {QuickStartComponent} from "./quick-start/quick-start.component";
 import {CommonModule} from "@angular/common";
+
+import {QuickStartComponent} from "./quick-start/quick-start.component";
 import {GeneralRoutingModule} from "./general-routing.module";
-import {SuiHeaderModule} from "ngx-semantic";
+
+import {SuiHeaderModule} from "ngx-semantic/elements/header";
 
 @NgModule({
   declarations: [

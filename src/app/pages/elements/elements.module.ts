@@ -21,28 +21,29 @@ import {SegmentsComponent} from "./segment/segments.component";
 import {StepsComponent} from "./step/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
-import {
-  SuiButtonModule,
-  SuiCardModule,
-  SuiContainerModule,
-  SuiDividerModule,
-  SuiDropdownModule,
-  SuiFlagModule,
-  SuiFormModule,
-  SuiGridModule,
-  SuiHeaderModule,
-  SuiIconModule,
-  SuiImageModule,
-  SuiInputModule,
-  SuiLabelModule,
-  SuiListModule,
-  SuiMessageModule,
-  SuiPlaceholderModule,
-  SuiSegmentModule, SuiSelectModule,
-  SuiStepsModule,
-  SuiTableModule
-} from "ngx-semantic";
 import {FormsModule} from "@angular/forms";
+import {SuiImageModule} from "ngx-semantic/elements/image";
+import {SuiIconModule} from "ngx-semantic/elements/icon";
+import {SuiCardModule} from "ngx-semantic/views/card";
+import {SuiFormModule} from "ngx-semantic/collections/form";
+import {SuiGridModule} from "ngx-semantic/collections/grid";
+import {SuiFlagModule} from "ngx-semantic/elements/flag";
+import {SuiListModule} from "ngx-semantic/elements/list";
+import {SuiLabelModule} from "ngx-semantic/elements/label";
+import {SuiTableModule} from "ngx-semantic/collections/table";
+import {SuiInputModule} from "ngx-semantic/elements/input";
+import {SuiStepsModule} from "ngx-semantic/elements/steps";
+import {SuiButtonModule} from "ngx-semantic/elements/button";
+import {SuiSelectModule} from "ngx-semantic/modules/select";
+import {SuiHeaderModule} from "ngx-semantic/elements/header";
+import {SuiMessageModule} from "ngx-semantic/collections/message";
+import {SuiDividerModule} from "ngx-semantic/elements/divider";
+import {SuiSegmentModule} from "ngx-semantic/elements/segment";
+import {SuiDropdownModule} from "ngx-semantic/modules/dropdown";
+import {SuiContainerModule} from "ngx-semantic/elements/container";
+import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
+import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
+import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 
 @NgModule({
   declarations: [
@@ -50,9 +51,9 @@ import {FormsModule} from "@angular/forms";
     StepsComponent,
     ListsComponent,
     RailsComponent,
+    InputComponent,
     IconsComponent,
     LabelsComponent,
-    InputComponent,
     ButtonsComponent,
     DividerComponent,
     HeadersComponent,
@@ -63,11 +64,14 @@ import {FormsModule} from "@angular/forms";
     PlaceholdersComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
+    SharedModule,
     SharedModule,
     SuiIconModule,
     SuiGridModule,
     SuiFormModule,
+    SuiCardModule,
     SuiFlagModule,
     SuiListModule,
     SuiLabelModule,
@@ -76,17 +80,17 @@ import {FormsModule} from "@angular/forms";
     SuiInputModule,
     SuiStepsModule,
     SuiButtonModule,
+    SuiSelectModule,
     SuiHeaderModule,
     SuiMessageModule,
     SuiDividerModule,
     SuiSegmentModule,
-    SuiPlaceholderModule,
-    SuiContainerModule,
-    ElementsRoutingModule,
-    SuiCardModule,
-    FormsModule,
     SuiDropdownModule,
-    SuiSelectModule
+    SuiContainerModule,
+    SuiPlaceholderModule,
+    ElementsRoutingModule,
+    SuiDimmerModule,
+    SuiLoaderModule
   ]
 })
 export class ElementsModule {
