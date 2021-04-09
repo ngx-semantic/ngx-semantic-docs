@@ -294,7 +294,7 @@
         [templateCode]="snippetInvertedDimmer">
       <div sui-message
            suiState="info">
-       Loaders will automatically be inverted inside <code>inverted
+        Loaders will automatically be inverted inside <code>inverted
         dimmer</code>.
       </div>
 
@@ -357,7 +357,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-icon</h2>
+        suiDividing>sui-loader</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -375,7 +375,7 @@
       <tbody>
       <tr>
         <td>suiSize</td>
-        <td>Set the icon size. Allowed values could be
+        <td>Set the loader size. Allowed values could be
           <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
               sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
               sui-label>'massive'</span>
@@ -386,6 +386,74 @@
         </td>
         <td>
           <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInline</td>
+        <td>Set the inline features. Allowed values could be
+          <span sui-label>'centered'</span> | <span sui-label>'normal'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiText</td>
+        <td>Determine if the loader is a text loader
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIndeterminate</td>
+        <td>Determine if the loader is indeterminate
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiActive</td>
+        <td>Determine if the loader is active
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determine if the loader is disabled
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>Determine if the loader is inverted
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
         </td>
       </tr>
       </tbody>
