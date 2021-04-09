@@ -73,6 +73,12 @@ export class LoadersComponent implements AfterViewChecked {
     <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
+  snippetInline = `
+  <div sui-loader
+       suiActive
+       suiInline="normal">
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Loaders | Ngx Semantic');
   }
