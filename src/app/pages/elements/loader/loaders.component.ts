@@ -79,6 +79,124 @@ export class LoadersComponent implements AfterViewChecked {
        suiInline="normal">
   </div>`;
 
+  snippetInlineCentered = `
+  <div sui-loader
+       suiActive
+       suiInline="centered">
+  </div>`;
+
+  snippetSizes = `
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="mini">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="tiny">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="small">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="medium">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="large">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="big">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="huge">
+        Loading
+      </div>
+    </ng-template>
+  </div>
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText
+           suiSize="massive">
+        Loading
+      </div>
+    </ng-template>
+  </div>`;
+
+  snippetInverted = `
+  <div sui-segment
+       suiInverted>
+    <div sui-loader
+         suiActive
+         suiInverted>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Loaders | Ngx Semantic');
   }
