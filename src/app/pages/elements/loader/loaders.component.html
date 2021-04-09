@@ -8,21 +8,64 @@
 
     <doc-code-sample
         [content]="basic"
-        [templateCode]="snippetIconDisabled">
+        [templateCode]="snippetBasic">
       <h3 sui-header>Loader</h3>
       <p>A loader</p>
 
       <ng-template #basic>
         <div sui-message
              suiState="info">
-          Loaders are hidden unless <code>active</code> or inside an <a routerLink="/modules/dimmer"><code>active dimmer</code></a>.
+          Loaders are hidden unless <code>active</code> or inside an <a routerLink="/modules/dimmer"><code>active
+          dimmer</code></a>.
         </div>
 
-        <div sui-segment>
-          <p></p>
-          <div class="ui active dimmer">
-            <div class="ui loader"></div>
-          </div>
+        <div sui-segment
+             sui-dimmer
+             dimmed="true">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+          <ng-template suiDimmerContent>
+            <div sui-loader></div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="text"
+        [templateCode]="snippetText">
+      <h3 sui-header>Text Loader</h3>
+      <p>A loader can contain text</p>
+
+      <ng-template #text>
+        <div sui-segment
+             sui-dimmer
+             dimmed="true">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+          <ng-template suiDimmerContent>
+            <div sui-loader
+                 suiText>
+              Loading
+            </div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="textInverted"
+        [templateCode]="snippetTextInverted">
+      <ng-template #textInverted>
+        <div sui-segment
+             sui-dimmer
+             suiDimmerInverted
+             dimmed="true">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+          <ng-template suiDimmerContent>
+            <div sui-loader
+                 suiText>
+              Loading
+            </div>
+          </ng-template>
         </div>
       </ng-template>
     </doc-code-sample>

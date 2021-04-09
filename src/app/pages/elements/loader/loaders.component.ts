@@ -8,10 +8,42 @@ import {HighlightService} from '../../../shared/services/highlight.service';
   styleUrls: ['./loaders.component.scss']
 })
 export class LoadersComponent implements AfterViewChecked {
-  snippetIconDisabled = `
-  <i sui-icon
-     disabled
-     suiIconType="users"></i>`;
+  snippetBasic = `
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader></div>
+    </ng-template>
+  </div>`;
+
+  snippetText = `
+  <div sui-segment
+       sui-dimmer
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText>
+        Loading
+      </div>
+    </ng-template>
+  </div>`;
+
+  snippetTextInverted = `
+  <div sui-segment
+       sui-dimmer
+       suiDimmerInverted
+       dimmed="true">
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+    <ng-template suiDimmerContent>
+      <div sui-loader
+           suiText>
+        Loading
+      </div>
+    </ng-template>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Loaders | Ngx Semantic');

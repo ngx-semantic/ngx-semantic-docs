@@ -42,6 +42,8 @@ import {SuiSegmentModule} from "ngx-semantic/elements/segment";
 import {SuiDropdownModule} from "ngx-semantic/modules/dropdown";
 import {SuiContainerModule} from "ngx-semantic/elements/container";
 import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
+import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
+import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,9 @@ import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
     SuiDropdownModule,
     SuiContainerModule,
     SuiPlaceholderModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SuiDimmerModule,
+    SuiLoaderModule
   ]
 })
 export class ElementsModule {
