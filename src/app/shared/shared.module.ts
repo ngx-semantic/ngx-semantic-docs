@@ -18,6 +18,7 @@ import {SuiContainerModule} from "ngx-semantic/elements/container";
 import {DocPageComponent} from "./components/doc-page.component";
 import {CodeSampleComponent} from "./components/code-sample.component";
 import {DocPageContentDirective} from './directives/doc-page-content.directive';
+import {DocWireframeComponent} from './components/doc-wireframe.component';
 
 @NgModule({
   imports: [
@@ -35,12 +36,14 @@ import {DocPageContentDirective} from './directives/doc-page-content.directive';
   declarations: [
     CodeSampleComponent,
     DocPageComponent,
-    DocPageContentDirective
+    DocPageContentDirective,
+    DocWireframeComponent
   ],
   exports: [
     CodeSampleComponent,
     DocPageComponent,
-    DocPageContentDirective
+    DocPageContentDirective,
+    DocWireframeComponent
   ]
 })
 export class SharedModule {
