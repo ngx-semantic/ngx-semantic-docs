@@ -262,7 +262,7 @@ export class HeadersComponent implements AfterViewChecked {
   <h4 sui-header suiColour="grey" suiInverted>Grey</h4>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Headers | Ngx Semantic');
+    title.setTitle('Header | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

@@ -141,7 +141,7 @@ export class ContainerComponent implements AfterViewChecked {
 </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Containers | Ngx Semantic');
+    title.setTitle('Container | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

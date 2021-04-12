@@ -166,7 +166,7 @@ export class MessagesComponent implements AfterViewChecked {
   `;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Messages | Ngx Semantic');
+    title.setTitle('Message | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

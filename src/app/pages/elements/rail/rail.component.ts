@@ -77,6 +77,32 @@ export class RailComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetAttached = `
+  <div sui-grid
+       suiCentered
+       suiWidth="three">
+    <div suiGridColumn>
+      <div sui-segment>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+
+        <div sui-rail
+             suiAttached
+             suiLocation="left">
+          <div sui-segment>
+            Left Rail Content
+          </div>
+        </div>
+        <div sui-rail
+             suiAttached
+             suiLocation="right">
+          <div sui-segment>
+            Right Rail Content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Rail | Ngx Semantic');
   }

@@ -265,7 +265,7 @@ export class DividerComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Dividers | Ngx Semantic');
+    title.setTitle('Divider | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

@@ -299,7 +299,7 @@ export class PlaceholdersComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Placeholders | Ngx Semantic');
+    title.setTitle('Placeholder | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

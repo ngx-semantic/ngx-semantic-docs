@@ -98,11 +98,48 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="attached"
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>A rail can appear attached to the main viewport</p>
+
+      <ng-template #attached>
+        <div sui-grid
+             suiCentered
+             suiWidth="three">
+          <div suiGridColumn>
+            <div sui-segment>
+              <doc-wireframe type="paragraph"></doc-wireframe>
+
+              <div sui-rail
+                   suiAttached
+                   suiLocation="left">
+                <div sui-segment>
+                  Left Rail Content
+                </div>
+              </div>
+              <div sui-rail
+                   suiAttached
+                   suiLocation="right">
+                <div sui-segment>
+                  Right Rail Content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-loader</h2>
+        suiDividing>sui-rail</h2>
 
     <h4 sui-header>Properties</h4>
 

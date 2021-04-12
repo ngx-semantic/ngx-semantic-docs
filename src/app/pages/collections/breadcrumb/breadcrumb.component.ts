@@ -128,7 +128,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Breadcrumbs | Ngx Semantic');
+    title.setTitle('Breadcrumb | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

@@ -19,7 +19,7 @@ export class FlagsComponent implements AfterViewChecked {
   `;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Flags | Ngx Semantic');
+    title.setTitle('Flag | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

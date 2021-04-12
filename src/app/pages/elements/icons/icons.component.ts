@@ -298,7 +298,7 @@ export class IconsComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Icons | Ngx Semantic');
+    title.setTitle('Icon | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

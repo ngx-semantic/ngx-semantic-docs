@@ -507,7 +507,7 @@ export class LabelsComponent implements AfterViewChecked {
   `;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Labels | Ngx Semantic');
+    title.setTitle('Label | Ngx Semantic');
   }
 
   ngAfterViewChecked() {

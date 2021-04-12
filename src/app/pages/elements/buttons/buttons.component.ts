@@ -990,7 +990,7 @@ export class ButtonsComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Buttons | Ngx Semantic');
+    title.setTitle('Button | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
