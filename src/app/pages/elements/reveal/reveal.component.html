@@ -192,6 +192,66 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="visibleContent"
+        [templateCode]="snippetVisibleContent">
+      <h3 sui-header>Visible Content</h3>
+      <p>A reveal may contain content that is visible before interaction</p>
+
+      <div sui-message
+           suiState="info">
+        Visible and hidden content should be the same aspect ratio
+      </div>
+
+      <ng-template #visibleContent>
+        <div sui-reveal
+             suiFade>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="hiddenContent"
+        [templateCode]="snippetFade">
+      <h3 sui-header>Hidden Content</h3>
+      <p>A reveal may contain content that is hidden before user interaction</p>
+
+      <ng-template #hiddenContent>
+        <div sui-reveal
+             suiFade>
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
