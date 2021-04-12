@@ -12,7 +12,7 @@ import {IconsComponent} from "./icons/icons.component";
 import {InputComponent} from "./input/input.component";
 import {LabelsComponent} from "./label/labels.component";
 import {ListsComponent} from "./list/lists.component";
-import {LoadersComponent} from "./loader/loaders.component";
+import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealsComponent} from "./reveal/reveals.component";
@@ -59,7 +59,7 @@ const routes: Routes = [
   },
   {
     path: 'loader',
-    component: LoadersComponent,
+    component: LoaderComponent,
   },
   {
     path: 'placeholder',

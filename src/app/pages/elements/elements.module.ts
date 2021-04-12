@@ -13,7 +13,7 @@ import {IconsComponent} from "./icons/icons.component";
 import {InputComponent} from "./input/input.component";
 import {LabelsComponent} from "./label/labels.component";
 import {ListsComponent} from "./list/lists.component";
-import {LoadersComponent} from "./loader/loaders.component";
+import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealsComponent} from "./reveal/reveals.component";
@@ -44,6 +44,7 @@ import {SuiContainerModule} from "ngx-semantic/elements/container";
 import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
 import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
+import {SuiRailModule} from 'ngx-semantic/elements/rail';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,7 @@ import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
     ButtonsComponent,
     DividerComponent,
     HeadersComponent,
-    LoadersComponent,
+    LoaderComponent,
     RevealsComponent,
     SegmentsComponent,
     ContainerComponent,
@@ -93,7 +94,8 @@ import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
     SuiLoaderModule,
     ElementsRoutingModule,
     SuiLoaderModule,
-    SuiDimmerModule
+    SuiDimmerModule,
+    SuiRailModule
   ]
 })
 export class ElementsModule {

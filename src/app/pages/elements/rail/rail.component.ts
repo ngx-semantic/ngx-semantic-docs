@@ -9,18 +9,6 @@ import {HighlightService} from '../../../shared/services/highlight.service';
 })
 export class RailComponent implements AfterViewChecked {
   snippetBasic = ``;
-  snippetStdRail = `
-  <div sui-rail suiLocation="left" suiDividing>
-    <div class="ui segment">
-      Left Rail Content
-    </div>
-  </div>
-  <div sui-rail suiLocation="right" suiDividing>
-    <div class="ui segment">
-      Right Rail Content
-    </div>
-  </div>
-  `;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Rail | Ngx Semantic');
