@@ -32,6 +32,6 @@ export class CardsComponent {
   `;
 
   constructor(title: Title) {
-    title.setTitle('Cards | NgxSemantic');
+    title.setTitle('Card | NgxSemantic');
   }
 }

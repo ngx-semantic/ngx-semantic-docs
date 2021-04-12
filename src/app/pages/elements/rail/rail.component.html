@@ -1,0 +1,235 @@
+<doc-page
+    header="Rail"
+    subHeader="A rail is used to show accompanying content outside the boundaries of the main view of a site">
+
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Rail</h3>
+      <p>A rail can be presented on the left or right side of a container</p>
+
+      <ng-template #basic>
+        <div sui-grid
+             suiCentered
+             suiWidth="three">
+          <div suiGridColumn>
+            <div sui-segment>
+              <doc-wireframe type="paragraph"></doc-wireframe>
+
+              <div sui-rail
+                   suiLocation="left">
+                <div sui-segment>
+                  Left Rail Content
+                </div>
+              </div>
+              <div sui-rail
+                   suiLocation="right">
+                <div sui-segment>
+                  Right Rail Content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="internal"
+        [templateCode]="snippetInternal">
+      <h3 sui-header>Internal</h3>
+      <p>A rail can attach itself to the inside of a container</p>
+
+      <ng-template #internal>
+        <div sui-segment
+             sui-container>
+          <div sui-rail
+               suiInternal
+               suiLocation="left">
+            <div sui-segment>
+              Left Rail Content
+            </div>
+          </div>
+          <div sui-rail
+               suiInternal
+               suiLocation="right">
+            <div sui-segment>
+              Right Rail Content
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="dividing"
+        [templateCode]="snippetDividing">
+      <h3 sui-header>Dividing</h3>
+      <p>A rail can create a division between itself and a container</p>
+
+      <ng-template #dividing>
+        <div sui-grid
+             suiCentered
+             suiWidth="three">
+          <div suiGridColumn>
+            <div sui-segment>
+              <doc-wireframe type="paragraph"></doc-wireframe>
+
+              <div sui-rail
+                   suiDividing
+                   suiLocation="left">
+                <div sui-segment>
+                  Left Rail Content
+                </div>
+              </div>
+              <div sui-rail
+                   suiDividing
+                   suiLocation="right">
+                <div sui-segment>
+                  Right Rail Content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="attached"
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>A rail can appear attached to the main viewport</p>
+
+      <ng-template #attached>
+        <div sui-grid
+             suiCentered
+             suiWidth="three">
+          <div suiGridColumn>
+            <div sui-segment>
+              <doc-wireframe type="paragraph"></doc-wireframe>
+
+              <div sui-rail
+                   suiAttached
+                   suiLocation="left">
+                <div sui-segment>
+                  Left Rail Content
+                </div>
+              </div>
+              <div sui-rail
+                   suiAttached
+                   suiLocation="right">
+                <div sui-segment>
+                  Right Rail Content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-rail</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiLocation</td>
+        <td>Set the rail location. Allowed values could be
+          <span sui-label>'left'</span> | <span sui-label>'right'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the rail size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCloseness</td>
+        <td>Set the rail closeness to the parent container. Allowed values could be
+          <span sui-label>'close'</span> | <span sui-label>'very close'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInternal</td>
+        <td>Determine if the rail is internal
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDividing</td>
+        <td>Determine if the rail has a dividing line between it and it's container
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>Determine if the rail should be attached to the container
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>

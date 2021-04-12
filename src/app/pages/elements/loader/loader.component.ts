@@ -4,10 +4,10 @@ import {HighlightService} from '../../../shared/services/highlight.service';
 
 @Component({
   selector: 'doc-loaders',
-  templateUrl: './loaders.component.html',
-  styleUrls: ['./loaders.component.scss']
+  templateUrl: './loader.component.html',
+  styleUrls: ['./loader.component.scss']
 })
-export class LoadersComponent implements AfterViewChecked {
+export class LoaderComponent implements AfterViewChecked {
   snippetBasic = `
   <div sui-segment
        sui-dimmer
@@ -252,7 +252,7 @@ export class LoadersComponent implements AfterViewChecked {
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Loaders | Ngx Semantic');
+    title.setTitle('Loader | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
