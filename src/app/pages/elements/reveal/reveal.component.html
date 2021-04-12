@@ -349,7 +349,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-rail</h2>
+        suiDividing>sui-reveal</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -366,8 +366,35 @@
       </thead>
       <tbody>
       <tr>
+        <td>suiMove</td>
+        <td>Set the reveal direction for the move animation. Allowed values could be
+          <span sui-label>'left'</span> | <span sui-label>'right'</span> | <span sui-label>'up'</span> | <span
+              sui-label>'down'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRotate</td>
+        <td>Set the reveal rotation direction. Allowed values could be
+          <span sui-label>'left'</span> | <span sui-label>'right'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
         <td>suiSize</td>
-        <td>Set the rail size. Allowed values could be
+        <td>Set the reveal size. Allowed values could be
           <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
               sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
               sui-label>'massive'</span>
@@ -381,14 +408,81 @@
         </td>
       </tr>
       <tr>
-        <td>suiAttached</td>
-        <td>Determine if the rail should be attached to the container
+        <td>suiFade</td>
+        <td>Determine if the reveal should use the fade animation
         </td>
         <td>
           <div sui-label suiColour="teal">boolean</div>
         </td>
         <td>
           <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiActive</td>
+        <td>Can be used to programmatically determine if the reveal should display the hidden content or not
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInstant</td>
+        <td>Determine if the reveal should display the hidden content instantly
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determine if the reveal should be disabled and not animate
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiRevealContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiVisible</td>
+        <td>Set the reveal content state. Allowed values could be
+          <span sui-label>'visible'</span> | <span sui-label>'hidden'</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">visible</div>
         </td>
       </tr>
       </tbody>
