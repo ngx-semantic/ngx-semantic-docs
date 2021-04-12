@@ -90,7 +90,10 @@ import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
     SuiPlaceholderModule,
     ElementsRoutingModule,
     SuiDimmerModule,
-    SuiLoaderModule
+    SuiLoaderModule,
+    ElementsRoutingModule,
+    SuiLoaderModule,
+    SuiDimmerModule
   ]
 })
 export class ElementsModule {
