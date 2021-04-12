@@ -143,6 +143,55 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rotate"
+        [templateCode]="snippetRotate">
+      <h3 sui-header>Rotate</h3>
+      <p>An element can rotate to reveal content below</p>
+
+      <ng-template #rotate>
+        <div sui-image
+             suiCircular
+             suiSize="small"
+             sui-reveal
+             suiRotate="right">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rotateLeft"
+        [templateCode]="snippetRotateLeft">
+      <ng-template #rotateLeft>
+        <div sui-image
+             suiCircular
+             suiSize="small"
+             sui-reveal
+             suiRotate="left">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

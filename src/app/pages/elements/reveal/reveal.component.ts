@@ -110,6 +110,42 @@ export class RevealComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetRotate = `
+  <div sui-image
+       suiCircular
+       suiSize="small"
+       sui-reveal
+       suiRotate="right">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
+    </div>
+  </div>`;
+
+  snippetRotateLeft = `
+  <div sui-image
+       suiCircular
+       suiSize="small"
+       sui-reveal
+       suiRotate="left">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Reveal | Ngx Semantic');
   }
