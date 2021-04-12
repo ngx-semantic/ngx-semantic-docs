@@ -15,7 +15,7 @@ import {LabelsComponent} from "./label/labels.component";
 import {ListsComponent} from "./list/lists.component";
 import {LoadersComponent} from "./loader/loaders.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
-import {RailsComponent} from "./rail/rails.component";
+import {RailComponent} from "./rail/rail.component";
 import {RevealsComponent} from "./reveal/reveals.component";
 import {SegmentsComponent} from "./segment/segments.component";
 import {StepsComponent} from "./step/steps.component";
@@ -50,7 +50,7 @@ import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
     FlagsComponent,
     StepsComponent,
     ListsComponent,
-    RailsComponent,
+    RailComponent,
     InputComponent,
     IconsComponent,
     LabelsComponent,
