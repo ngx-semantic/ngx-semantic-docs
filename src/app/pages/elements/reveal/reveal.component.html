@@ -230,7 +230,7 @@
 
     <doc-code-sample
         [content]="hiddenContent"
-        [templateCode]="snippetFade">
+        [templateCode]="snippetHiddenContent">
       <h3 sui-header>Hidden Content</h3>
       <p>A reveal may contain content that is hidden before user interaction</p>
 
@@ -248,6 +248,42 @@
             <img sui-image
                  suiSize="small"
                  src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="active"
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>An active reveal displays its hidden content</p>
+
+      <div sui-message
+           suiState="info">
+        Setting the <code>suiActive</code>  boolean value allows you to show the hidden contents programmatically
+      </div>
+
+      <ng-template #active>
+        <div sui-reveal
+             [suiActive]="true"
+             suiMove="left">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/nan.jpg"/>
           </div>
         </div>
       </ng-template>
