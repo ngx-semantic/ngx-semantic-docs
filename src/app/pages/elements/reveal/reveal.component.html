@@ -33,7 +33,7 @@
 
     <doc-code-sample
         [content]="fadeAlt"
-        [templateCode]="snippetFade">
+        [templateCode]="snippetFadeAlt">
       <ng-template #fadeAlt>
         <div sui-reveal
              suiFade
@@ -48,6 +48,97 @@
                suiVisible="hidden">
             <img sui-image
                  src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="move"
+        [templateCode]="snippetMove">
+      <h3 sui-header>Move</h3>
+      <p>An element can move in a direction to reveal content</p>
+
+      <ng-template #move>
+        <div sui-reveal
+             suiMove="left">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="moveRight"
+        [templateCode]="snippetMoveRight">
+      <ng-template #moveRight>
+        <div sui-reveal
+             suiMove="right">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="moveUp"
+        [templateCode]="snippetMoveUp">
+      <ng-template #moveUp>
+        <div sui-reveal
+             suiMove="up">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="moveDown"
+        [templateCode]="snippetMoveDown">
+      <ng-template #moveDown>
+        <div sui-reveal
+             suiMove="down">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
           </div>
         </div>
       </ng-template>

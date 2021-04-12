@@ -25,6 +25,91 @@ export class RevealComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetFadeAlt = `
+  <div sui-reveal
+       suiFade
+       suiImage
+       suiSize="small">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+    </div>
+  </div>`;
+
+  snippetMove = `
+  <div sui-reveal
+       suiMove="left">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+    </div>
+  </div>`;
+
+  snippetMoveRight = `
+  <div sui-reveal
+             suiMove="right">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+    </div>
+  </div>`;
+
+  snippetMoveUp = `
+  <div sui-reveal
+       suiMove="up">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+    </div>
+  </div>`;
+
+  snippetMoveDown = `
+  <div sui-reveal
+             suiMove="down">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Reveal | Ngx Semantic');
   }
