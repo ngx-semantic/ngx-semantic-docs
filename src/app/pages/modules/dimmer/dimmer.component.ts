@@ -28,18 +28,7 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderImage suiHeader>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   snippetSharedTs = `
@@ -49,18 +38,7 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderImage suiHeader>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
 
     <ng-template suiDimmerContent>
       <h2 sui-header
@@ -92,38 +70,14 @@ export class DimmerComponent implements AfterViewChecked {
   <div sui-segment
        sui-dimmer
        dimmed>
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   snippetDisabled = `
   <<div sui-segment
        sui-dimmer
        disabled>
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   snippetBlurring = `
@@ -131,19 +85,7 @@ export class DimmerComponent implements AfterViewChecked {
        sui-dimmer
        suiDimmerBlurring
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   snippetBlurringInverted = `
@@ -152,19 +94,7 @@ export class DimmerComponent implements AfterViewChecked {
        suiDimmerBlurring
        suiDimmerInverted
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   snippetTopAligned = `
@@ -172,19 +102,7 @@ export class DimmerComponent implements AfterViewChecked {
        sui-dimmer
        suiDimmerAlignment="top"
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
 
     <ng-template suiDimmerContent>
       <h2 sui-header
@@ -202,19 +120,7 @@ export class DimmerComponent implements AfterViewChecked {
        sui-dimmer
        suiDimmerAlignment="top"
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
 
     <ng-template suiDimmerContent>
       <h2 sui-header
@@ -232,19 +138,7 @@ export class DimmerComponent implements AfterViewChecked {
        sui-dimmer
        suiDimmerInverted
        [(dimmed)]="dimmerVisible">
-    <div sui-placeholder
-         suiFluid>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {

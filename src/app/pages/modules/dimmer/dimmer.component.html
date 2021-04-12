@@ -21,18 +21,7 @@
         <div sui-segment
              sui-dimmer
              [(dimmed)]="simpleDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div  suiPlaceholderHeader suiImage>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
@@ -53,18 +42,7 @@
         <div sui-segment
              sui-dimmer
              [(dimmed)]="contentDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderHeader suiImage>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
 
           <ng-template suiDimmerContent>
             <h2 sui-header
@@ -119,23 +97,11 @@
       <p>An active dimmer will dim its parent container</p>
 
       <ng-template #active>
-        <!--        <div sui-segment-->
-        <!--             sui-dimmer-->
-        <!--             dimmed>-->
-        <!--          <div sui-placeholder-->
-        <!--               suiFluid>-->
-        <!--            <div suiPlaceholderParagraph>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--            </div>-->
-        <!--            <div suiPlaceholderParagraph>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--              <div suiPlaceholderLine></div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
+        <div sui-segment
+             sui-dimmer
+             dimmed="true">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
       </ng-template>
     </doc-code-sample>
 
@@ -149,19 +115,7 @@
         <div sui-segment
              sui-dimmer
              disabled>
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
@@ -186,19 +140,7 @@
              sui-dimmer
              suiDimmerBlurring
              [(dimmed)]="blurringDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
@@ -218,19 +160,7 @@
              suiDimmerBlurring
              suiDimmerInverted
              [(dimmed)]="blurringDInvertedDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
@@ -252,19 +182,7 @@
              sui-dimmer
              suiDimmerAlignment="top"
              [(dimmed)]="topAlignmentDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
 
           <ng-template suiDimmerContent>
             <h2 sui-header
@@ -294,19 +212,7 @@
              sui-dimmer
              suiDimmerAlignment="bottom"
              [(dimmed)]="bottomAlignmentDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
 
           <ng-template suiDimmerContent>
             <h2 sui-header
@@ -339,19 +245,7 @@
              sui-dimmer
              suiDimmerInverted
              [(dimmed)]="invertedDimmerVisible">
-          <div sui-placeholder
-               suiFluid>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-            <div suiPlaceholderParagraph>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-              <div suiPlaceholderLine></div>
-            </div>
-          </div>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
