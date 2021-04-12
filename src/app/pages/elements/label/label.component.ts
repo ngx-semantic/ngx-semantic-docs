@@ -4,10 +4,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-labels',
-  templateUrl: './labels.component.html',
-  styleUrls: ['./labels.component.scss'],
+  templateUrl: './label.component.html',
+  styleUrls: ['./label.component.scss'],
 })
-export class LabelsComponent implements AfterViewChecked {
+export class LabelComponent implements AfterViewChecked {
   snippetStd = `
   <div sui-label>
     <i sui-icon suiIconType="mail icon"></i> 23

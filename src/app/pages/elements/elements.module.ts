@@ -11,12 +11,12 @@ import {FlagsComponent} from "./flag/flags.component";
 import {HeadersComponent} from "./header/headers.component";
 import {IconsComponent} from "./icons/icons.component";
 import {InputComponent} from "./input/input.component";
-import {LabelsComponent} from "./label/labels.component";
-import {ListsComponent} from "./list/lists.component";
+import {LabelComponent} from "./label/label.component";
+import {ListComponent} from "./list/list.component";
 import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
-import {RevealsComponent} from "./reveal/reveals.component";
+import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
 import {StepsComponent} from "./step/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
@@ -45,21 +45,22 @@ import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
 import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 import {SuiRailModule} from 'ngx-semantic/elements/rail';
+import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
 
 @NgModule({
   declarations: [
     FlagsComponent,
     StepsComponent,
-    ListsComponent,
+    ListComponent,
     RailComponent,
     InputComponent,
     IconsComponent,
-    LabelsComponent,
+    LabelComponent,
     ButtonsComponent,
     DividerComponent,
     HeadersComponent,
     LoaderComponent,
-    RevealsComponent,
+    RevealComponent,
     SegmentsComponent,
     ContainerComponent,
     PlaceholdersComponent
@@ -95,7 +96,8 @@ import {SuiRailModule} from 'ngx-semantic/elements/rail';
     ElementsRoutingModule,
     SuiLoaderModule,
     SuiDimmerModule,
-    SuiRailModule
+    SuiRailModule,
+    SuiRevealModule
   ]
 })
 export class ElementsModule {
