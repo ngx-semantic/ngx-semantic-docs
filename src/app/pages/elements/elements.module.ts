@@ -45,6 +45,7 @@ import {SuiPlaceholderModule} from "ngx-semantic/elements/placeholder";
 import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 import {SuiRailModule} from 'ngx-semantic/elements/rail';
+import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import {SuiRailModule} from 'ngx-semantic/elements/rail';
     ElementsRoutingModule,
     SuiLoaderModule,
     SuiDimmerModule,
-    SuiRailModule
+    SuiRailModule,
+    SuiRevealModule
   ]
 })
 export class ElementsModule {

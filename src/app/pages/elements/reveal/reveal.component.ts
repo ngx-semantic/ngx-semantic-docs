@@ -8,17 +8,22 @@ import {HighlightService} from '../../../shared/services/highlight.service';
   styleUrls: ['./reveal.component.scss']
 })
 export class RevealComponent implements AfterViewChecked {
-  snippetBasic = `
-  <div sui-reveal suiSize="small" suiMove="right" suiImage>
-    <img sui-reveal-content suiVisible="visible" src="https://semantic-ui.com/images/avatar/large/ade.jpg">
-    <img sui-reveal-content suiVisible="hidden" src="https://semantic-ui.com/images/wireframe/square-image.png">
-  </div>
-
-  <div sui-reveal suiSize="medium" suiRotate="right" suiImage>
-    <img sui-reveal-content suiVisible="visible" src="https://semantic-ui.com/images/avatar/large/ade.jpg">
-    <img sui-reveal-content suiVisible="hidden" src="https://semantic-ui.com/images/wireframe/square-image.png">
-  </div>
-  `;
+  snippetFade = `
+  <div sui-reveal
+       suiFade>
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+    </div>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Reveal | Ngx Semantic');

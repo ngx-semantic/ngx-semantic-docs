@@ -1,38 +1,53 @@
 <doc-page
-    header="Rail"
-    subHeader="A rail is used to show accompanying content outside the boundaries of the main view of a site">
+    header="Reveal"
+    subHeader="A reveal displays additional content in place of previous content when activated">
 
   <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="basic"
-        [templateCode]="snippetBasic">
-      <h3 sui-header>Rail</h3>
-      <p>A rail can be presented on the left or right side of a container</p>
+        [content]="fade"
+        [templateCode]="snippetFade">
+      <h3 sui-header>Fade</h3>
+      <p>An element can disappear to reveal content below</p>
 
-      <ng-template #basic>
-        <div sui-grid
-             suiCentered
-             suiWidth="three">
-          <div suiGridColumn>
-            <div sui-segment>
-              <doc-wireframe type="paragraph"></doc-wireframe>
+      <ng-template #fade>
+        <div sui-reveal
+             suiFade>
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
 
-              <div sui-rail
-                   suiLocation="left">
-                <div sui-segment>
-                  Left Rail Content
-                </div>
-              </div>
-              <div sui-rail
-                   suiLocation="right">
-                <div sui-segment>
-                  Right Rail Content
-                </div>
-              </div>
-            </div>
+    <doc-code-sample
+        [content]="fadeAlt"
+        [templateCode]="snippetFade">
+      <ng-template #fadeAlt>
+        <div sui-reveal
+             suiFade
+             suiImage
+             suiSize="small">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
           </div>
         </div>
       </ng-template>
