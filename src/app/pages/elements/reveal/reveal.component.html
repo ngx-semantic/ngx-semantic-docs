@@ -288,6 +288,63 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="instant"
+        [templateCode]="snippetInstant">
+      <h3 sui-header>Instant</h3>
+      <p>An element can show its content without delay</p>
+
+      <ng-template #instant>
+        <div sui-reveal
+             suiInstant
+             suiMove="left">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A disabled reveal will not animate when hovered</p>
+
+      <ng-template #disabled>
+        <div sui-reveal
+             disabled
+             suiMove="left">
+          <div suiRevealContent
+               suiVisible="visible">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
+          </div>
+          <div suiRevealContent
+               suiVisible="hidden">
+            <img sui-image
+                 suiSize="small"
+                 src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
