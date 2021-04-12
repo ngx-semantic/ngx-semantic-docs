@@ -10,8 +10,8 @@ import {FlagsComponent} from "./flag/flags.component";
 import {HeadersComponent} from "./header/headers.component";
 import {IconsComponent} from "./icons/icons.component";
 import {InputComponent} from "./input/input.component";
-import {LabelsComponent} from "./label/labels.component";
-import {ListsComponent} from "./list/lists.component";
+import {LabelComponent} from "./label/label.component";
+import {ListComponent} from "./list/list.component";
 import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
@@ -51,11 +51,11 @@ const routes: Routes = [
   },
   {
     path: 'label',
-    component: LabelsComponent,
+    component: LabelComponent,
   },
   {
     path: 'list',
-    component: ListsComponent,
+    component: ListComponent,
   },
   {
     path: 'loader',

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'doc-lists',
-  templateUrl: './lists.component.html',
-  styleUrls: ['./lists.component.scss']
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.scss']
 })
-export class ListsComponent implements OnInit {
+export class ListComponent implements OnInit {
   snippetList = `
     <div  sui-list>
       <div class="item">
