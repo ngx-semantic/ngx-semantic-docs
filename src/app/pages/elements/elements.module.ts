@@ -16,7 +16,7 @@ import {ListComponent} from "./list/list.component";
 import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
-import {RevealsComponent} from "./reveal/reveals.component";
+import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
 import {StepsComponent} from "./step/steps.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
@@ -59,7 +59,7 @@ import {SuiRailModule} from 'ngx-semantic/elements/rail';
     DividerComponent,
     HeadersComponent,
     LoaderComponent,
-    RevealsComponent,
+    RevealComponent,
     SegmentsComponent,
     ContainerComponent,
     PlaceholdersComponent
