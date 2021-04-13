@@ -1,31 +1,21 @@
 <doc-page
-    header="Reveal"
-    subHeader="A reveal displays additional content in place of previous content when activated">
+    header="Step"
+    subHeader="A step shows the completion status of an activity in a series of activities">
 
   <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="fade"
-        [templateCode]="snippetFade">
-      <h3 sui-header>Fade</h3>
-      <p>An element can disappear to reveal content below</p>
+        [content]="single"
+        [templateCode]="snippetSingle">
+      <h3 sui-header>Step</h3>
+      <p>A single step</p>
 
-      <ng-template #fade>
-        <div sui-reveal
-             suiFade>
-          <div suiRevealContent
-               suiVisible="visible">
-            <img sui-image
-                 suiSize="small"
-                 src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-          </div>
-          <div suiRevealContent
-               suiVisible="hidden">
-            <img sui-image
-                 suiSize="small"
-                 src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
+      <ng-template #single>
+        <div sui-steps>
+          <div sui-step>
+            Shipping
           </div>
         </div>
       </ng-template>
