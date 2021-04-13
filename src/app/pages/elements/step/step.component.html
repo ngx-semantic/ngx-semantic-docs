@@ -77,6 +77,40 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="ordered"
+        [templateCode]="snippetOrdered">
+      <h3 sui-header>Ordered</h3>
+      <p>A step can show a ordered sequence of steps</p>
+
+      <ng-template #ordered>
+        <div sui-steps
+             suiOrdered>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
