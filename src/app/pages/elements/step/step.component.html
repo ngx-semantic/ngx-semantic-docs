@@ -194,6 +194,58 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="link"
+        [templateCode]="snippetLink">
+      <h3 sui-header>Link</h3>
+      <p>A step can link</p>
+
+      <ng-template #link>
+        <div sui-steps>
+          <a sui-step
+             suiActive>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </a>
+          <a sui-step>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="linkAlt"
+        [templateCode]="snippetLinkAlt">
+      <ng-template #linkAlt>
+        <div sui-steps>
+          <div sui-step
+               suiLink>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiLink>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
