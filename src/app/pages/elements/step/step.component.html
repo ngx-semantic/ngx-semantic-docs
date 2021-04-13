@@ -326,6 +326,50 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="stackable"
+        [templateCode]="snippetStackable">
+      <h3 sui-header>Stackable</h3>
+      <p>A step can stack vertically only on smaller screens</p>
+
+      <ng-template #stackable>
+        <div sui-steps
+             suiTabletStackable>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="plane"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
