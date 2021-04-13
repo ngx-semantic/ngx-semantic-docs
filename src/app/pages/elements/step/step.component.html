@@ -272,6 +272,44 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="completed"
+        [templateCode]="snippetCompleted">
+      <h3 sui-header>Completed</h3>
+      <p>A step can show that a user has completed it</p>
+
+      <ng-template #completed>
+        <div sui-steps>
+          <div sui-step
+               suiCompleted>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="completedAlt"
+        [templateCode]="snippetCompletedAlt">
+      <ng-template #completedAlt>
+        <div sui-steps
+             suiOrdered>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
