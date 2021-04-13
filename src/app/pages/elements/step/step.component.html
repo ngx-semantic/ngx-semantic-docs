@@ -174,6 +174,26 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="icon"
+        [templateCode]="snippetIcon">
+      <h3 sui-header>Icon</h3>
+      <p>A step can contain an icon</p>
+
+      <ng-template #icon>
+        <div sui-steps>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

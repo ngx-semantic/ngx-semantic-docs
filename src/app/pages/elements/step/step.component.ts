@@ -112,6 +112,18 @@ export class StepComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetIcon = `
+  <div sui-steps>
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Step | Ngx Semantic');
   }
