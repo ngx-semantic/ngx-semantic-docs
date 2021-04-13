@@ -410,6 +410,45 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="unstackable"
+        [templateCode]="snippetUnstackable">
+      <h3 sui-header>Unstackable</h3>
+      <p>A step can prevent itself from stacking on mobile</p>
+
+      <ng-template #unstackable>
+        <div sui-steps
+             suiUnstackable>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="plane"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
