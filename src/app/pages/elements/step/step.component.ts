@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'doc-steps',
-  templateUrl: './steps.component.html',
-  styleUrls: ['./steps.component.scss']
+  templateUrl: './step.component.html',
+  styleUrls: ['./step.component.scss']
 })
-export class StepsComponent implements OnInit {
+export class StepComponent implements OnInit {
   snippetSingleStep = `
   <div sui-steps>
     <div sui-step>

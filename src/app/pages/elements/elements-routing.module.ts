@@ -17,7 +17,7 @@ import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
-import {StepsComponent} from "./step/steps.component";
+import {StepComponent} from "./step/step.component";
 import {NgModule} from "@angular/core";
 
 const routes: Routes = [
@@ -79,7 +79,7 @@ const routes: Routes = [
   },
   {
     path: 'step',
-    component: StepsComponent,
+    component: StepComponent,
   },
 ];
 
