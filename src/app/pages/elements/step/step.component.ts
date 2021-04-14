@@ -418,6 +418,179 @@ export class StepComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetSizeMini = `
+  <div sui-steps
+       suiSize="mini">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="dollar"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+        <div suiStepDescription>Enter billing information</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info circle"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+        <div suiStepDescription>Verify order details</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeTiny = `
+  <div sui-steps
+       suiSize="tiny">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="dollar"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+        <div suiStepDescription>Enter billing information</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info circle"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+        <div suiStepDescription>Verify order details</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeSmall = `
+  <div sui-steps
+       suiSize="small">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="dollar"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+        <div suiStepDescription>Enter billing information</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info circle"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+        <div suiStepDescription>Verify order details</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeLarge = `
+  <div sui-steps
+       suiSize="large">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeBig = `
+  <div sui-steps
+       suiSize="big">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeHuge = `
+  <div sui-steps
+       suiSize="huge">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeMassive = `
+  <div sui-steps
+       suiSize="massive">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Step | Ngx Semantic');
   }
