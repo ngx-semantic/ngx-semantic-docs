@@ -1,0 +1,1077 @@
+<doc-page
+    header="Step"
+    subHeader="A step shows the completion status of an activity in a series of activities">
+
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="single"
+        [templateCode]="snippetSingle">
+      <h3 sui-header>Step</h3>
+      <p>A single step</p>
+
+      <ng-template #single>
+        <div sui-steps>
+          <div sui-step>
+            Shipping
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Groups</h2>
+
+    <doc-code-sample
+        [content]="set"
+        [templateCode]="snippetSet">
+      <h3 sui-header>Steps</h3>
+      <p>A set of steps</p>
+
+      <br/>
+
+      <div class="ignored"
+           sui-message
+           suiIcon
+           suiState="positive">
+        <i sui-icon
+           suiIconType="mobile"></i>
+        <div suiMessageContent>
+          <h3 suiMessageHeader>Responsive Element</h3>
+          <p>Steps will automatically stack on mobile. To make steps automatically stack for tablet use the <code>tablet
+            stackable</code> variation.</p>
+        </div>
+      </div>
+
+      <ng-template #set>
+        <div sui-steps>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="ordered"
+        [templateCode]="snippetOrdered">
+      <h3 sui-header>Ordered</h3>
+      <p>A step can show a ordered sequence of steps</p>
+
+      <ng-template #ordered>
+        <div sui-steps
+             suiOrdered>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="vertical"
+        [templateCode]="snippetVertical">
+      <h3 sui-header>Vertical</h3>
+      <p>A step can be displayed stacked vertically</p>
+
+      <ng-template #vertical>
+        <div sui-steps
+             suiVertical>
+          <div sui-step
+               suiCompleted>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiCompleted>
+            <i sui-icon
+               suiIconType="credit card"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="description"
+        [templateCode]="snippetDescription">
+      <h3 sui-header>Description</h3>
+      <p>A step can contain a description</p>
+
+      <ng-template #description>
+        <div sui-steps>
+          <div sui-step>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="icon"
+        [templateCode]="snippetIcon">
+      <h3 sui-header>Icon</h3>
+      <p>A step can contain an icon</p>
+
+      <ng-template #icon>
+        <div sui-steps>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="link"
+        [templateCode]="snippetLink">
+      <h3 sui-header>Link</h3>
+      <p>A step can link</p>
+
+      <ng-template #link>
+        <div sui-steps>
+          <a sui-step
+             suiActive>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </a>
+          <a sui-step>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="linkAlt"
+        [templateCode]="snippetLinkAlt">
+      <ng-template #linkAlt>
+        <div sui-steps>
+          <div sui-step
+               suiLink>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiLink>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="active"
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>A step can be highlighted as active</p>
+
+      <ng-template #active>
+        <div sui-steps>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="completed"
+        [templateCode]="snippetCompleted">
+      <h3 sui-header>Completed</h3>
+      <p>A step can show that a user has completed it</p>
+
+      <ng-template #completed>
+        <div sui-steps>
+          <div sui-step
+               suiCompleted>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="completedAlt"
+        [templateCode]="snippetCompletedAlt">
+      <ng-template #completedAlt>
+        <div sui-steps
+             suiOrdered>
+          <div sui-step
+               suiCompleted>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A step can show that it cannot be selected</p>
+
+      <ng-template #disabled>
+        <div sui-steps>
+          <div sui-step
+               disabled>
+            Billing
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="stackable"
+        [templateCode]="snippetStackable">
+      <h3 sui-header>Stackable</h3>
+      <p>A step can stack vertically only on smaller screens</p>
+
+      <ng-template #stackable>
+        <div sui-steps
+             suiTabletStackable>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="plane"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fluid"
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>A fluid step takes up the width of its container</p>
+
+      <ng-template #fluid>
+        <div sui-grid
+             suiWidth="two">
+          <div suiGridColumn>
+            <div sui-steps
+                 suiFluid
+                 suiVertical>
+              <div sui-step
+                   suiCompleted>
+                <i sui-icon
+                   suiIconType="truck"></i>
+                <div suiStepContent>
+                  <div suiStepTitle>Shipping</div>
+                  <div suiStepDescription>Choose your shipping options</div>
+                </div>
+              </div>
+              <div sui-step
+                   suiActive>
+                <i sui-icon
+                   suiIconType="dollar"></i>
+                <div suiStepContent>
+                  <div suiStepTitle>Billing</div>
+                  <div suiStepDescription>Enter billing information</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div suiGridColumn>
+            <p>The steps take up the entire column width</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="unstackable"
+        [templateCode]="snippetUnstackable">
+      <h3 sui-header>Unstackable</h3>
+      <p>A step can prevent itself from stacking on mobile</p>
+
+      <ng-template #unstackable>
+        <div sui-steps
+             suiUnstackable>
+          <div sui-step>
+            <i sui-icon
+               suiIconType="plane"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="attached"
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>Steps can be attached to other elements</p>
+
+      <ng-template #attached>
+        <div sui-steps
+             suiWidth="three"
+             suiAttached="top attached">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+        <div sui-segment
+             suiAttached="attached">
+          <doc-wireframe type="paragraph"></doc-wireframe>
+        </div>
+        <div sui-steps
+             suiWidth="three"
+             suiAttached="bottom attached">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="evenlyDivided"
+        [templateCode]="snippetEvenlyDivided">
+      <h3 sui-header>Evenly Divided</h3>
+      <p>Steps can be divided evenly inside their parent</p>
+
+      <ng-template #evenlyDivided>
+        <div sui-steps
+             suiWidth="three">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="evenlyDividedAlt"
+        [templateCode]="snippetEvenlyDividedAlt">
+      <ng-template #evenlyDividedAlt>
+        <div sui-steps
+             suiWidth="two">
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeMini"
+        [templateCode]="snippetSizeMini">
+      <h3 sui-header>Size</h3>
+      <p>Steps can have different sizes</p>
+
+      <ng-template #sizeMini>
+        <div sui-steps
+             suiSize="mini">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeTiny"
+        [templateCode]="snippetSizeTiny">
+      <ng-template #sizeTiny>
+        <div sui-steps
+             suiSize="tiny">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeSmall"
+        [templateCode]="snippetSizeSmall">
+      <ng-template #sizeSmall>
+        <div sui-steps
+             suiSize="small">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+              <div suiStepDescription>Choose your shipping options</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="dollar"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+              <div suiStepDescription>Enter billing information</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info circle"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+              <div suiStepDescription>Verify order details</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeLarge"
+        [templateCode]="snippetSizeLarge">
+      <ng-template #sizeLarge>
+        <div sui-steps
+             suiSize="large">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeBig"
+        [templateCode]="snippetSizeBig">
+      <ng-template #sizeBig>
+        <div sui-steps
+             suiSize="big">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeHuge"
+        [templateCode]="snippetSizeHuge">
+      <ng-template #sizeHuge>
+        <div sui-steps
+             suiSize="huge">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeMassive"
+        [templateCode]="snippetSizeMassive">
+      <ng-template #sizeMassive>
+        <div sui-steps
+             suiSize="massive">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-step</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiActive</td>
+        <td>Determine if the step is active
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determine if the step is disabled
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompleted</td>
+        <td>Determine if the step is completed
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLink</td>
+        <td>Determine if the step is a link
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>sui-steps</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>Set the steps content width. Allowed values could be
+          <span sui-label>'one'</span> | <span sui-label>'two'</span> | <span sui-label>'three'</span> | <span
+              sui-label>'four'</span> | <span sui-label>'five'</span> | <span sui-label>'six'</span> | <span
+              sui-label>'seven'</span> |
+          <span sui-label>'eight'</span> | <span sui-label>'nine'</span> | <span sui-label>'ten'</span> | <span
+              sui-label>'eleven'</span> | <span sui-label>'twelve'</span> | <span sui-label>'thirteen'</span> | <span
+              sui-label>'fourteen'</span>| <span sui-label>'fifteen'</span> | <span
+              sui-label>'sixteen'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>Set the steps attachment position. Allowed values could be
+          <span sui-label>'top attached'</span> | <span sui-label>'bottom attached'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the steps size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiOrdered</td>
+        <td>Determine if the steps are ordered
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVertical</td>
+        <td>Determine if the steps are vertical
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>Determine if the steps are fluid
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiUnstackable</td>
+        <td>Determine if the steps are unstackable
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiTabletStackable</td>
+        <td>Determine if the steps are tablet stackable
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepTitle</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepDescription</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>

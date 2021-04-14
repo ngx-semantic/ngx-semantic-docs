@@ -18,7 +18,7 @@ import {PlaceholdersComponent} from "./placeholder/placeholders.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
-import {StepsComponent} from "./step/steps.component";
+import {StepComponent} from "./step/step.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {FormsModule} from "@angular/forms";
@@ -50,7 +50,7 @@ import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
 @NgModule({
   declarations: [
     FlagsComponent,
-    StepsComponent,
+    StepComponent,
     ListComponent,
     RailComponent,
     InputComponent,
