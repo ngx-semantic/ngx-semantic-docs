@@ -303,6 +303,72 @@ export class StepComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetAttached = `
+  <div sui-steps
+       suiWidth="three"
+       suiAttached="top attached">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+        <div suiStepDescription>Enter billing information</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info circle"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+        <div suiStepDescription>Verify order details</div>
+      </div>
+    </div>
+  </div>
+  <div sui-segment
+       suiAttached="attached">
+    <doc-wireframe type="paragraph"></doc-wireframe>
+  </div>
+  <div sui-steps
+       suiWidth="three"
+       suiAttached="bottom attached">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+        <div suiStepDescription>Choose your shipping options</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+        <div suiStepDescription>Enter billing information</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info circle"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+        <div suiStepDescription>Verify order details</div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Step | Ngx Semantic');
   }
