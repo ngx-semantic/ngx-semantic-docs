@@ -369,6 +369,55 @@ export class StepComponent implements AfterViewChecked {
     </div>
   </div>`;
 
+  snippetEvenlyDivided = `
+  <div sui-steps
+       suiWidth="three">
+    <div sui-step>
+      <i sui-icon
+         suiIconType="truck"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Shipping</div>
+      </div>
+    </div>
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetEvenlyDividedAlt = `
+  <div sui-steps
+       suiWidth="two">
+    <div sui-step
+         suiActive>
+      <i sui-icon
+         suiIconType="payment"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Billing</div>
+      </div>
+    </div>
+    <div sui-step
+         disabled>
+      <i sui-icon
+         suiIconType="info"></i>
+      <div suiStepContent>
+        <div suiStepTitle>Confirm Order</div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Step | Ngx Semantic');
   }

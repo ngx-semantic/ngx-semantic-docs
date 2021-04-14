@@ -523,6 +523,68 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="evenlyDivided"
+        [templateCode]="snippetEvenlyDivided">
+      <h3 sui-header>Evenly Divided</h3>
+      <p>Steps can be divided evenly inside their parent</p>
+
+      <ng-template #evenlyDivided>
+        <div sui-steps
+             suiWidth="three">
+          <div sui-step>
+            <i sui-icon
+               suiIconType="truck"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Shipping</div>
+            </div>
+          </div>
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="evenlyDividedAlt"
+        [templateCode]="snippetEvenlyDividedAlt">
+      <ng-template #evenlyDividedAlt>
+        <div sui-steps
+             suiWidth="two">
+          <div sui-step
+               suiActive>
+            <i sui-icon
+               suiIconType="payment"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Billing</div>
+            </div>
+          </div>
+          <div sui-step
+               disabled>
+            <i sui-icon
+               suiIconType="info"></i>
+            <div suiStepContent>
+              <div suiStepTitle>Confirm Order</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
