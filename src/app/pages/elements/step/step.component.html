@@ -800,7 +800,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-reveal</h2>
+        suiDividing>sui-step</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -817,8 +817,106 @@
       </thead>
       <tbody>
       <tr>
+        <td>suiActive</td>
+        <td>Determine if the step is active
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determine if the step is disabled
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompleted</td>
+        <td>Determine if the step is completed
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLink</td>
+        <td>Determine if the step is a link
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>sui-steps</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>Set the steps content width. Allowed values could be
+          <span sui-label>'one'</span> | <span sui-label>'two'</span> | <span sui-label>'three'</span> | <span
+              sui-label>'four'</span> | <span sui-label>'five'</span> | <span sui-label>'six'</span> | <span
+              sui-label>'seven'</span> |
+          <span sui-label>'eight'</span> | <span sui-label>'nine'</span> | <span sui-label>'ten'</span> | <span
+              sui-label>'eleven'</span> | <span sui-label>'twelve'</span> | <span sui-label>'thirteen'</span> | <span
+              sui-label>'fourteen'</span>| <span sui-label>'fifteen'</span> | <span
+              sui-label>'sixteen'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>Set the steps attachment position. Allowed values could be
+          <span sui-label>'top attached'</span> | <span sui-label>'bottom attached'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
         <td>suiSize</td>
-        <td>Set the reveal size. Allowed values could be
+        <td>Set the steps size. Allowed values could be
           <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
               sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
               sui-label>'massive'</span>
@@ -832,8 +930,52 @@
         </td>
       </tr>
       <tr>
-        <td>suiFade</td>
-        <td>Determine if the reveal should use the fade animation
+        <td>suiOrdered</td>
+        <td>Determine if the steps are ordered
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVertical</td>
+        <td>Determine if the steps are vertical
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>Determine if the steps are fluid
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiUnstackable</td>
+        <td>Determine if the steps are unstackable
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiTabletStackable</td>
+        <td>Determine if the steps are tablet stackable
         </td>
         <td>
           <div sui-label suiColour="teal">boolean</div>
@@ -843,6 +985,93 @@
         </td>
       </tr>
       </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepTitle</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiStepDescription</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
     </table>
   </div>
 </doc-page>
