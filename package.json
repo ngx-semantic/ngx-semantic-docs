@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "~11.2.8",
     "@angular/router": "~11.2.8",
     "ngx-clipboard": "^14.0.1",
-    "ngx-semantic": "^1.0.0-beta.37",
+    "ngx-semantic": "^1.0.0-beta.40",
     "prismjs": "^1.23.0",
     "rxjs": "~6.6.7",
     "tslib": "^2.0.0",

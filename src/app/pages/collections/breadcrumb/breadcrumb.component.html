@@ -32,6 +32,8 @@
       </ng-template>
     </doc-code-sample>
 
+    <br/>
+
     <h2 sui-header suiDividing>Content</h2>
 
     <doc-code-sample [content]="breadcrumbContent" [templateCode]="snippetContent1">
@@ -87,8 +89,9 @@
       </ng-template>
     </doc-code-sample>
 
+    <br/>
+
     <h2 sui-header suiDividing>States</h2>
-    <br>
 
     <doc-code-sample [content]="breadcrumbActive" [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
@@ -103,15 +106,16 @@
       </ng-template>
     </doc-code-sample>
 
+    <br/>
+
     <h2 sui-header suiDividing>Variations</h2>
-    <br>
 
     <doc-code-sample [content]="breadcrumbSize" [templateCode]="snippetSize">
       <h3 sui-header>Size</h3>
       <p>A breadcrumb can vary in size</p>
 
       <ng-template #breadcrumbSize>
-        <div sui-breadcrumb suiIcon suiSize='mini'>
+        <div sui-breadcrumb suiSize='mini'>
           <a suiBreadcrumbSection>Home</a>
           <i suiIcon='right chevron' suiBreadcrumbDivider></i>
           <a suiBreadcrumbSection>Registration</a>
@@ -122,7 +126,7 @@
     </doc-code-sample>
     <doc-code-sample [content]="breadcrumbSize1" [templateCode]="snippetSize1">
       <ng-template #breadcrumbSize1>
-        <div sui-breadcrumb suiIcon suiSize='tiny'>
+        <div sui-breadcrumb suiSize='tiny'>
           <a suiBreadcrumbSection>Home</a>
           <i suiIcon='right chevron' suiBreadcrumbDivider></i>
           <a suiBreadcrumbSection>Registration</a>
