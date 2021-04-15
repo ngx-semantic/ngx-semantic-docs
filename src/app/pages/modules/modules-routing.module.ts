@@ -4,10 +4,12 @@
 
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
+
+import {DimmerComponent} from "./dimmer/dimmer.component";
 import {EmbedComponent} from "./embed/embed.component";
 import {RatingComponent} from "./rating/rating.component";
+import {SearchComponent} from './search/search.component';
 import {TabComponent} from "./tab/tab.component";
-import {DimmerComponent} from "./dimmer/dimmer.component";
 
 const routes: Routes = [
   {
@@ -21,6 +23,10 @@ const routes: Routes = [
   {
     path: 'rating',
     component: RatingComponent
+  },
+  {
+    path: 'search',
+    component: SearchComponent
   },
   {
     path: 'tab',

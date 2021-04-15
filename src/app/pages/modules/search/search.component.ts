@@ -9,7 +9,7 @@ import {HighlightService} from '../../../shared/services/highlight.service';
 export class SearchComponent implements AfterViewChecked {
 
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Tab | Ngx Semantic');
+    title.setTitle('Search | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
