@@ -7,6 +7,7 @@ import {HighlightService} from '../../../shared/services/highlight.service';
   templateUrl: './search.component.html'
 })
 export class SearchComponent implements AfterViewChecked {
+  snippetBasic = ``;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Search | Ngx Semantic');

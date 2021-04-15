@@ -25,6 +25,7 @@ import {SuiButtonModule} from "ngx-semantic/elements/button";
 import {SuiSegmentModule} from "ngx-semantic/elements/segment";
 import {SuiIconModule} from "ngx-semantic/elements/icon";
 import {SearchComponent} from './search/search.component';
+import {SuiSearchModule} from 'ngx-semantic/modules/search';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {SearchComponent} from './search/search.component';
     FormsModule,
     SuiDimmerModule,
     SuiSegmentModule,
-    SuiIconModule
+    SuiIconModule,
+    SuiSearchModule
   ]
 })
 export class ModulesModule {

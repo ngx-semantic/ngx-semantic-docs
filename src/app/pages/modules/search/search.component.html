@@ -1,1 +1,63 @@
-<p>search works!</p>
+<doc-page
+    header="Search"
+    subHeader="A tab is a hidden section of content activated by a menu">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Type</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Search</h3>
+      <p>A basic search element</p>
+
+      <ng-template #basic>
+       <sui-search
+         suiPlaceholder="Common passwords..."></sui-search>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-tabs</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the rating size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>
