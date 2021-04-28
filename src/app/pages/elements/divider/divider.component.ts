@@ -78,7 +78,7 @@ export class DividerComponent implements AfterViewChecked {
           <div suiFormField>
             <label>Username</label>
             <div sui-input
-                 suiIcon>
+                 suiIcon="left icon">
               <input type="text" placeholder="Username">
               <i sui-icon
                  suiIconType="user"></i>
@@ -87,13 +87,14 @@ export class DividerComponent implements AfterViewChecked {
           <div suiFormField>
             <label>Password</label>
             <div sui-input
-                 suiIcon>
+                 suiIcon="left icon">
               <input type="password">
               <i sui-icon
                  suiIconType="lock"></i>
             </div>
           </div>
-          <div sui-button class="submit"
+          <div sui-button
+               class="submit"
                suiColour="blue">
             Login
           </div>
@@ -111,21 +112,21 @@ export class DividerComponent implements AfterViewChecked {
     </div>
     <div sui-divider
          suiDirection="vertical">
-      and
+      or
     </div>
   </div>`;
 
   snippetHorizontal = `
   <div sui-segment
-       suiTextAlignment="center aligned"
-       suiBasic>
+       suiBasic
+       suiTextAlignment="center aligned">
     <div sui-input
-         suiIcon
-         suiAction="left action">
+         suiIcon="left icon"
+         suiAction="action">
       <i sui-icon
          suiIconType="search"></i>
       <input type="text" placeholder="Order #">
-      <div sui-button
+      <div sui-button class="submit"
            suiColour="blue">
         Search
       </div>
@@ -135,9 +136,9 @@ export class DividerComponent implements AfterViewChecked {
       or
     </div>
     <div sui-button
+         suiIcon
          suiColour="teal"
-         suiLabeled="labeled"
-         suiIcon>
+         suiLabeled="labeled">
       Create New Order
       <i sui-icon
          suiIconType="add"></i>
