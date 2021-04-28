@@ -7,7 +7,18 @@ import {HighlightService} from '../../../shared/services/highlight.service';
   templateUrl: './search.component.html'
 })
 export class SearchComponent implements AfterViewChecked {
-  snippetBasic = ``;
+  options = [];
+
+  snippetBasic = `
+   <sui-search
+     suiPlaceholder="Common passwords...">         
+   </sui-search>`;
+
+  snippetBasicAlt = `
+  <sui-search
+      suiShowIcon
+      suiPlaceholder="Common passwords...">
+  </sui-search>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Search | Ngx Semantic');

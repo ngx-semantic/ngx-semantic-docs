@@ -12,8 +12,20 @@
       <p>A basic search element</p>
 
       <ng-template #basic>
-       <sui-search
-         suiPlaceholder="Common passwords..."></sui-search>
+        <sui-search
+            suiPlaceholder="Common passwords...">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="basicAlt"
+        [templateCode]="snippetBasicAlt">
+      <ng-template #basicAlt>
+        <sui-search
+            suiShowIcon
+            suiPlaceholder="Common passwords...">
+        </sui-search>
       </ng-template>
     </doc-code-sample>
   </div>
