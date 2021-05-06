@@ -1,0 +1,163 @@
+<doc-page
+    header="Image"
+    subHeader="An image is a graphic representation of something">
+  <div *docPageContent="'definition'">
+    <h2 sui-header suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Image</h3>
+      <p>An image</p>
+
+      <div sui-message>
+        Unless a size is specified, images will use the original dimensions of the image up to the size of its
+        container.
+      </div>
+
+      <br/>
+
+      <div sui-message
+           suiState="info">
+        You can specify an <code>img</code> or <code>svg</code> as a <code>sui-image</code> or use a child element.
+      </div>
+
+      <br/>
+
+      <ng-template #basic>
+        <img sui-image
+             suiSize="small"
+             src="https://semantic-ui.com/images/wireframe/image.png">
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="basicInnerImg"
+        [templateCode]="snippetBasicInnerImg">
+      <ng-template #basicInnerImg>
+        <div sui-image
+             suiSize="small">
+          <img src="https://semantic-ui.com/images/wireframe/image.png">
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="basicInnerSvg"
+        [templateCode]="snippetBasicInnerSvg">
+      <ng-template #basicInnerSvg>
+        <div sui-image
+             suiSize="small">
+          <svg width="150" height="150">
+            <image xlink:href="https://semantic-ui.com/images/wireframe/image.png" x="0" y="0" width="100%" height="100%"></image>
+          </svg>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-placeholder</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiInverted</td>
+        <td>
+          Determine if the placeholder has its colours inverted
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderHeader</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiImage</td>
+        <td>
+          Determine if the placeholder header is of image type
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiPlaceholderParagraph</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>
