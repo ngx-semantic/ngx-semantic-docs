@@ -89,6 +89,20 @@
              src="https://semantic-ui.com/images/wireframe/image.png">
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>An image can show that it is disabled and cannot be selected</p>
+
+      <ng-template #disabled>
+        <img sui-image
+             disabled
+             suiSize="medium"
+             src="https://semantic-ui.com/images/wireframe/image.png">
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

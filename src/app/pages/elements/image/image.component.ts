@@ -39,6 +39,12 @@ export class ImageComponent implements AfterViewChecked {
      suiHidden
      src="https://semantic-ui.com/images/wireframe/image.png">`;
 
+  snippetDisabled = `
+  <img sui-image
+     disabled
+     suiSize="medium"
+     src="https://semantic-ui.com/images/wireframe/image.png">`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
   }
