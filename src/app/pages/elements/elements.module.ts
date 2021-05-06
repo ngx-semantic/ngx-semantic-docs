@@ -46,6 +46,7 @@ import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 import {SuiRailModule} from 'ngx-semantic/elements/rail';
 import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
     RevealComponent,
     SegmentsComponent,
     ContainerComponent,
-    PlaceholdersComponent
+    PlaceholdersComponent,
+    ImageComponent
   ],
   imports: [
     FormsModule,
