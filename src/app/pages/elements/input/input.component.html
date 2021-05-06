@@ -50,8 +50,7 @@
       <ng-template #loading>
         <div sui-input
              suiLoading
-             suiIcon
-             suiIconPosition="left">
+             suiIcon="left icon">
           <input type="text" placeholder="Search..."/>
           <i sui-icon
              suiIconType="search"></i>
@@ -65,8 +64,7 @@
       <ng-template #loadingRight>
         <div sui-input
              suiLoading
-             suiIcon
-             suiIconPosition="right">
+             suiIcon="icon">
           <input type="text" placeholder="Search..."/>
           <i sui-icon
              suiIconType="search"></i>
@@ -94,7 +92,7 @@
       <ng-template #disabledIcon>
         <div sui-input
              disabled
-             suiIcon>
+             suiIcon="icon">
           <i sui-icon
              suiIconType="search"></i>
           <input type="text" placeholder="Search..."/>
@@ -144,7 +142,7 @@
 
       <ng-template #icon>
         <div sui-input
-             suiIcon>
+             suiIcon="icon">
           <input type="text" placeholder="Search..."/>
           <i sui-icon
              suiIconType="search"></i>
@@ -157,8 +155,7 @@
         [templateCode]="snippetIconPosition">
       <ng-template #iconPosition>
         <div sui-input
-             suiIcon
-             suiIconPosition="left">
+             suiIcon="left icon">
           <input type="text" placeholder="Search users..."/>
           <i sui-icon
              suiIconType="users"></i>
@@ -171,7 +168,7 @@
         [templateCode]="snippetIconCircular">
       <ng-template #iconCircular>
         <div sui-input
-             suiIcon>
+             suiIcon="icon">
           <input type="text" placeholder="Search users..."/>
           <i sui-icon
              suiIconType="circular search link"></i>
@@ -184,7 +181,7 @@
         [templateCode]="snippetIconCircularInverted">
       <ng-template #iconCircularInverted>
         <div sui-input
-             suiIcon>
+             suiIcon="icon">
           <input type="text" placeholder="Search..."/>
           <i sui-icon
              suiInverted
@@ -271,8 +268,7 @@
         [templateCode]="snippetAngledLabeled">
       <ng-template #angledLabeled>
         <div sui-input
-             suiIcon
-             suiIconPosition="left"
+             suiIcon="left icon"
              suiLabeled="right labeled">
           <i sui-icon
              suiIconType="tags"></i>
@@ -356,8 +352,7 @@
         [templateCode]="snippetRightAction">
       <ng-template #rightAction>
         <div sui-input
-             suiIcon
-             suiIconPosition="left"
+             suiIcon="left icon"
              suiAction="right action">
           <i sui-icon
              suiIconType="search"></i>
@@ -452,7 +447,7 @@
         [templateCode]="snippetIconTransparent">
       <ng-template #iconTransparent>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiTransparent>
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -465,7 +460,7 @@
         [templateCode]="snippetLeftIconTransparent">
       <ng-template #leftIconTransparent>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiTransparent
              suiIconPosition="left">
           <input type="text" placeholder="Search..."/>
@@ -491,15 +486,14 @@
                suiInverted></div>
           <div sui-input
                suiInverted
-               suiIcon
-               suiIconPosition="left">
+               suiIcon="left icon">
             <input type="text" placeholder="Search..."/>
             <i sui-icon suiIconType="search"></i>
           </div>
           <div sui-divider
                suiInverted></div>
           <div sui-input
-               suiIcon
+               suiIcon="icon"
                suiInverted
                suiTransparent>
             <input type="text" placeholder="Search..."/>
@@ -518,10 +512,13 @@
       <ng-template #fluid>
         <div sui-input
              suiFluid
-             suiIcon>
+             suiIcon="icon">
           <input type="text" placeholder="Search a very wide input..."/>
           <i sui-icon suiIconType="search"></i>
         </div>
+
+        <br/>
+
         <div sui-input
              suiFluid
              suiAction="action">
@@ -546,7 +543,7 @@
 
       <ng-template #miniSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="mini">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -559,7 +556,7 @@
         [templateCode]="snippetSmallSize">
       <ng-template #smallSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="small">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -572,7 +569,7 @@
         [templateCode]="snippetLargeSize">
       <ng-template #largeSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="large">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -585,7 +582,7 @@
         [templateCode]="snippetBigSize">
       <ng-template #bigSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="big">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -598,7 +595,7 @@
         [templateCode]="snippetHugeSize">
       <ng-template #hugeSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="huge">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>
@@ -611,7 +608,7 @@
         [templateCode]="snippetMassiveSize">
       <ng-template #massiveSize>
         <div sui-input
-             suiIcon
+             suiIcon="icon"
              suiSize="massive">
           <input type="text" placeholder="Search..."/>
           <i sui-icon suiIconType="search"></i>

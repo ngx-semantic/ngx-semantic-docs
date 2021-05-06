@@ -8,9 +8,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   selectedOption = 'articles';
   options = [
     {value: 'all', text: 'All'},
@@ -32,8 +29,7 @@ export class InputComponent implements AfterViewChecked {
   snippetLoading = `
   <div sui-input
        suiLoading
-       suiIcon
-       suiIconPosition="left">
+       suiIcon="left icon">
     <input type="text" placeholder="Search..."/>
     <i sui-icon
        suiIconType="search"></i>
@@ -42,8 +38,7 @@ export class InputComponent implements AfterViewChecked {
   snippetLoadingRight = `
   <div sui-input
        suiLoading
-       suiIcon
-       suiIconPosition="right">
+       suiIcon="icon">
     <input type="text" placeholder="Search..."/>
     <i sui-icon
        suiIconType="search"></i>
@@ -85,8 +80,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetIconPosition = `
   <div sui-input
-       suiIcon
-       suiIconPosition="left">
+       suiIcon="left icon">
     <input type="text" placeholder="Search users..."/>
     <i sui-icon
        suiIconType="users"></i>
@@ -161,8 +155,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetAngledLabeled = `
   <div sui-input
-       suiIcon
-       suiIconPosition="left"
+       suiIcon="left icon"
        suiLabeled="right labeled">
     <i sui-icon
        suiIconType="tags"></i>
@@ -218,8 +211,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetRightAction = `
   <div sui-input
-       suiIcon
-       suiIconPosition="left"
+       suiIcon="left icon"
        suiAction="right action">
     <i sui-icon
        suiIconType="search"></i>
@@ -286,7 +278,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetIconTransparent = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiTransparent>
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -294,7 +286,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetLeftIconTransparent = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiTransparent
        suiIconPosition="left">
     <input type="text" placeholder="Search..."/>
@@ -350,7 +342,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetMiniSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="mini">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -358,7 +350,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetSmallSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="small">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -366,7 +358,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetLargeSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="large">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -374,7 +366,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetBigSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="big">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -382,7 +374,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetHugeSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="huge">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -390,7 +382,7 @@ export class InputComponent implements AfterViewChecked {
 
   snippetMassiveSize = `
   <div sui-input
-       suiIcon
+       suiIcon="icon"
        suiSize="massive">
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
@@ -402,17 +394,5 @@ export class InputComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }
