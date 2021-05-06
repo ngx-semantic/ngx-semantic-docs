@@ -19,6 +19,7 @@ import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
 import {StepComponent} from "./step/step.component";
 import {NgModule} from "@angular/core";
+import {ImageComponent} from './image/image.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
   {
     path: 'icon',
     component: IconsComponent,
+  },
+  {
+    path: 'image',
+    component: ImageComponent,
   },
   {
     path: 'input',
