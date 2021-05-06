@@ -74,6 +74,25 @@ export class ImageComponent implements AfterViewChecked {
      suiSize="medium"
      src="https://semantic-ui.com/images/wireframe/square-image.png">`;
 
+  snippetAlignment = `
+  <img sui-image
+       suiSize="tiny"
+       suiAlignment="top aligned"
+       src="https://semantic-ui.com/images/wireframe/square-image.png">
+  <span>Top Aligned</span>
+  <div sui-divider></div>
+  <img sui-image
+       suiSize="tiny"
+       suiAlignment="middle aligned"
+       src="https://semantic-ui.com/images/wireframe/square-image.png">
+  <span>Middle Aligned</span>
+  <div sui-divider></div>
+  <img sui-image
+       suiSize="tiny"
+       suiAlignment="bottom aligned"
+       src="https://semantic-ui.com/images/wireframe/square-image.png">
+  <span>Bottom Aligned</span>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
   }

@@ -177,6 +177,33 @@
              src="https://semantic-ui.com/images/wireframe/square-image.png">
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="verticalAligned"
+        [templateCode]="snippetAlignment">
+      <h3 sui-header>Vertically Aligned</h3>
+      <p>An image can specify its vertical alignment</p>
+
+      <ng-template #verticalAligned>
+        <img sui-image
+             suiSize="tiny"
+             suiAlignment="top aligned"
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+        <span>Top Aligned</span>
+        <div sui-divider></div>
+        <img sui-image
+             suiSize="tiny"
+             suiAlignment="middle aligned"
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+        <span>Middle Aligned</span>
+        <div sui-divider></div>
+        <img sui-image
+             suiSize="tiny"
+             suiAlignment="bottom aligned"
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+        <span>Bottom Aligned</span>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
