@@ -2,7 +2,8 @@
     header="Image"
     subHeader="An image is a graphic representation of something">
   <div *docPageContent="'definition'">
-    <h2 sui-header suiDividing>Types</h2>
+    <h2 sui-header
+        suiDividing>Types</h2>
 
     <doc-code-sample
         [content]="basic"
@@ -68,6 +69,24 @@
            href="https://google.com">
           <img src="https://semantic-ui.com/images/wireframe/image-text.png">
         </a>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="hidden"
+        [templateCode]="snippetHidden">
+      <h3 sui-header>Hidden</h3>
+      <p>An image can be hidden</p>
+
+      <ng-template #hidden>
+        <img sui-image
+             suiHidden
+             src="https://semantic-ui.com/images/wireframe/image.png">
       </ng-template>
     </doc-code-sample>
   </div>
