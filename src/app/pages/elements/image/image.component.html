@@ -122,6 +122,20 @@
         <span>Username</span>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="bordered"
+        [templateCode]="snippetBordered">
+      <h3 sui-header>Bordered</h3>
+      <p>An image may include a border to emphasize the edges of white or transparent content</p>
+
+      <ng-template #bordered>
+        <img sui-image
+             suiBordered
+             suiSize="medium"
+             src="https://semantic-ui.com/images/wireframe/white-image.png">
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
