@@ -49,9 +49,25 @@
         <div sui-image
              suiSize="small">
           <svg width="150" height="150">
-            <image xlink:href="https://semantic-ui.com/images/wireframe/image.png" x="0" y="0" width="100%" height="100%"></image>
+            <image xlink:href="https://semantic-ui.com/images/wireframe/image.png" x="0" y="0" width="100%"
+                   height="100%"></image>
           </svg>
         </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageLink"
+        [templateCode]="snippetImageLink">
+      <h3 sui-header>Image Link</h3>
+      <p>An image can be formatted to link to other content</p>
+
+      <ng-template #imageLink>
+        <a sui-image
+           suiSize="medium"
+           href="https://google.com">
+          <img src="https://semantic-ui.com/images/wireframe/image-text.png">
+        </a>
       </ng-template>
     </doc-code-sample>
   </div>

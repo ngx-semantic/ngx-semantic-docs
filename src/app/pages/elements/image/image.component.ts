@@ -27,8 +27,15 @@ export class ImageComponent implements AfterViewChecked {
     </svg>
   </div>`;
 
+  snippetImageLink = `
+  <a sui-image
+     suiSize="medium"
+     href="https://google.com">
+    <img src="https://semantic-ui.com/images/wireframe/image-text.png">
+  </a>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
-    title.setTitle('Input | Ngx Semantic');
+    title.setTitle('Image | Ngx Semantic');
   }
 
   ngAfterViewChecked() {
