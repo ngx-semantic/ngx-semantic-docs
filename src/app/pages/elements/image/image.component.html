@@ -149,6 +149,34 @@
              src="https://semantic-ui.com/images/wireframe/image.png">
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="rounded"
+        [templateCode]="snippetRounded">
+      <h3 sui-header>Rounded</h3>
+      <p>An image may appear rounded</p>
+
+      <ng-template #rounded>
+        <img sui-image
+             suiRounded
+             suiSize="medium"
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="circular"
+        [templateCode]="snippetCircular">
+      <h3 sui-header>Circular</h3>
+      <p>An image may appear circular</p>
+
+      <ng-template #circular>
+        <img sui-image
+             suiCircular
+             suiSize="medium"
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
