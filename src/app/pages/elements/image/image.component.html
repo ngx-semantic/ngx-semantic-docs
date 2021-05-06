@@ -103,6 +103,25 @@
              src="https://semantic-ui.com/images/wireframe/image.png">
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="avatar"
+        [templateCode]="snippetAvatar">
+      <h3 sui-header>Avatar</h3>
+      <p>An image may be formatted to appear inline with text as an avatar</p>
+
+      <ng-template #avatar>
+        <img sui-image
+             suiAvatar
+             src="https://semantic-ui.com/images/wireframe/square-image.png">
+        <span>Username</span>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

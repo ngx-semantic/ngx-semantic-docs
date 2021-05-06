@@ -45,6 +45,12 @@ export class ImageComponent implements AfterViewChecked {
      suiSize="medium"
      src="https://semantic-ui.com/images/wireframe/image.png">`;
 
+  snippetAvatar = `
+  <img sui-image
+       suiAvatar
+       src="https://semantic-ui.com/images/wireframe/square-image.png">
+  <span>Username</span>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
   }
