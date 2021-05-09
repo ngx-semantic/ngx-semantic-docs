@@ -4,7 +4,7 @@
 
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {ButtonsComponent} from "./buttons/buttons.component";
+import {ButtonComponent} from "./buttons/button.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
 import {FlagComponent} from "./flag/flag.component";
@@ -57,7 +57,7 @@ import { ImageComponent } from './image/image.component';
     InputComponent,
     IconComponent,
     LabelComponent,
-    ButtonsComponent,
+    ButtonComponent,
     DividerComponent,
     HeaderComponent,
     LoaderComponent,

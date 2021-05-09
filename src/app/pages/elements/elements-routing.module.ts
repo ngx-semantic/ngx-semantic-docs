@@ -3,7 +3,7 @@
  */
 
 import {RouterModule, Routes} from "@angular/router";
-import {ButtonsComponent} from "./buttons/buttons.component";
+import {ButtonComponent} from "./buttons/button.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
 import {FlagComponent} from "./flag/flag.component";
@@ -24,7 +24,7 @@ import {ImageComponent} from './image/image.component';
 const routes: Routes = [
   {
     path: 'button',
-    component: ButtonsComponent,
+    component: ButtonComponent,
   },
   {
     path: 'container',
