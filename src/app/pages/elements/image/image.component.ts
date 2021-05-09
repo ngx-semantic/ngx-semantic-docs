@@ -115,6 +115,18 @@ export class ImageComponent implements AfterViewChecked {
       postulant per id.</p>
   </div>`;
 
+  snippetSpaced = `
+  <div sui-segment>
+    <p>
+      Te eum doming eirmod, nominati pertinacia <img sui-image
+                                                     suiSpaced
+                                                     suiSize="mini"
+                                                     src="https://semantic-ui.com/images/wireframe/image.png">
+      argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur
+      at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim
+      dolorum definiebas an. Mei ex natum rebum iisque.</p>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
   }
