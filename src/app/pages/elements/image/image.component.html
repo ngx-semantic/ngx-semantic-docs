@@ -399,7 +399,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-placeholder</h2>
+        suiDividing>sui-image</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -416,9 +416,213 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiInverted</td>
+        <td>suiSize</td>
+        <td>Set the image size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
         <td>
-          Determine if the placeholder has its colours inverted
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>Set the image alignment. Allowed values could be
+          <span sui-label>top aligned</span> | <span sui-label>bottom aligned</span> | <span
+              sui-label>middle aligned</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloated</td>
+        <td>Set the image floatation. Allowed values could be
+          <span sui-label>left floated</span> | <span sui-label>right floated</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSpaced</td>
+        <td>Set the image space. Allowed values could be
+          <span sui-label>left spaced</span> | <span sui-label>right spaced</span> | <span sui-label>spaced</span> |
+          <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiHidden</td>
+        <td>
+          Determine if the image is hidden
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determine if the image is disabled
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAvatar</td>
+        <td>
+          Determine if the image is an avatar
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBordered</td>
+        <td>
+          Determine if the image is bordered
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>
+          Determine if the image is fluid
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRounded</td>
+        <td>
+          Determine if the image is rounded
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCircular</td>
+        <td>
+          Determine if the image is circular
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCentered</td>
+        <td>
+          Determine if the image is centered
         </td>
         <td>
           <div sui-label
@@ -437,7 +641,7 @@
     </table>
 
     <h2 sui-header
-        suiDividing>suiPlaceholderHeader</h2>
+        suiDividing>sui-images</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -454,51 +658,27 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiImage</td>
-        <td>
-          Determine if the placeholder header is of image type
+        <td>suiSize</td>
+        <td>Set the image group size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
         </td>
         <td>
           <div sui-label
                suiColour="teal">
-            boolean
+            string
           </div>
         </td>
         <td>
           <div sui-label
                suiColour="grey">
-            false
+            null
           </div>
         </td>
       </tr>
       </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>suiPlaceholderParagraph</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      </tbody>
-      <tfoot class="full-width">
-      <tr>
-        <th colspan="4">
-          <div style="text-align: center">No properties for this directive</div>
-        </th>
-      </tr>
-      </tfoot>
     </table>
   </div>
 </doc-page>
