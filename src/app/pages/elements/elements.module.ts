@@ -7,7 +7,7 @@ import {CommonModule} from "@angular/common";
 import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
-import {FlagsComponent} from "./flag/flags.component";
+import {FlagComponent} from "./flag/flag.component";
 import {HeaderComponent} from "./header/header.component";
 import {IconComponent} from "./icon/icon.component";
 import {InputComponent} from "./input/input.component";
@@ -50,7 +50,7 @@ import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
-    FlagsComponent,
+    FlagComponent,
     StepComponent,
     ListComponent,
     RailComponent,
