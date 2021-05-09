@@ -126,9 +126,7 @@ export class ImageComponent implements AfterViewChecked {
   </div>`;
 
   snippetSpacedAlt = `
-  <p><img sui-image
-          suiSpaced="right spaced"
-          suiSize="mini"
+  <p><img sui-image suiSize="mini" suiSpaced="right spaced"
           src="https://semantic-ui.com/images/wireframe/image.png">Audiam quaerendum eu sea, pro omittam
     definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te
     phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.
@@ -136,10 +134,24 @@ export class ImageComponent implements AfterViewChecked {
   <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum
     aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi
     everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per
-    id.<img sui-image
-            suiSpaced="left spaced"
-            suiSize="mini"
+    id.<img sui-image suiSize="mini" suiSpaced="left spaced"
             src="https://semantic-ui.com/images/wireframe/image.png"></p>`;
+
+  snippetFloated = `
+  <div sui-segment>
+    <img sui-image suiSize="small" suiFloated="left floated" src="https://semantic-ui.com/images/wireframe/text-image.png">
+    <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem
+      aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque
+      electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+    <img sui-image suiSize="small" suiFloated="right floated" src="https://semantic-ui.com/images/wireframe/text-image.png">
+    <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo.
+      Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide
+      phaedrum, vim vivendum maiestatis in.</p>
+    <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no
+      illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te
+      eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum
+      postulant per id.</p>
+  </div>`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
