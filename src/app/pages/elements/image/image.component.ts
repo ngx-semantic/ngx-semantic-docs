@@ -1,6 +1,7 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import {HighlightService} from '../../../shared/services/highlight.service';
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-image',
@@ -12,7 +13,7 @@ import {HighlightService} from '../../../shared/services/highlight.service';
     }
   `]
 })
-export class ImageComponent implements AfterViewChecked {
+export class ImageComponent extends BasePageComponent {
   snippetBasic = `
   <img sui-image
      suiSize="small"
@@ -186,11 +187,8 @@ export class ImageComponent implements AfterViewChecked {
     <img sui-image src="https://semantic-ui.com/images/wireframe/image.png">
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Image | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
