@@ -4,10 +4,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-headers',
-  templateUrl: './headers.component.html',
-  styleUrls: ['./headers.component.scss']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class HeadersComponent implements AfterViewChecked {
+export class HeaderComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 

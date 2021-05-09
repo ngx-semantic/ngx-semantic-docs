@@ -8,8 +8,8 @@ import {ButtonsComponent} from "./buttons/buttons.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
 import {FlagsComponent} from "./flag/flags.component";
-import {HeadersComponent} from "./header/headers.component";
-import {IconComponent} from "./icons/icon.component";
+import {HeaderComponent} from "./header/header.component";
+import {IconComponent} from "./icon/icon.component";
 import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
@@ -59,7 +59,7 @@ import { ImageComponent } from './image/image.component';
     LabelComponent,
     ButtonsComponent,
     DividerComponent,
-    HeadersComponent,
+    HeaderComponent,
     LoaderComponent,
     RevealComponent,
     SegmentsComponent,
