@@ -4,12 +4,12 @@
 
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {ButtonsComponent} from "./buttons/buttons.component";
+import {ButtonComponent} from "./buttons/button.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
-import {FlagsComponent} from "./flag/flags.component";
-import {HeadersComponent} from "./header/headers.component";
-import {IconsComponent} from "./icons/icons.component";
+import {FlagComponent} from "./flag/flag.component";
+import {HeaderComponent} from "./header/header.component";
+import {IconComponent} from "./icon/icon.component";
 import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
@@ -46,24 +46,26 @@ import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 import {SuiRailModule} from 'ngx-semantic/elements/rail';
 import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
-    FlagsComponent,
+    FlagComponent,
     StepComponent,
     ListComponent,
     RailComponent,
     InputComponent,
-    IconsComponent,
+    IconComponent,
     LabelComponent,
-    ButtonsComponent,
+    ButtonComponent,
     DividerComponent,
-    HeadersComponent,
+    HeaderComponent,
     LoaderComponent,
     RevealComponent,
     SegmentsComponent,
     ContainerComponent,
-    PlaceholdersComponent
+    PlaceholdersComponent,
+    ImageComponent
   ],
   imports: [
     FormsModule,

@@ -4,13 +4,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-buttons',
-  templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss'],
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
 })
-export class ButtonsComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
+export class ButtonComponent implements AfterViewChecked {
   snippetBtn = `
   <button sui-button>
     Follow
@@ -995,17 +992,5 @@ export class ButtonsComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }

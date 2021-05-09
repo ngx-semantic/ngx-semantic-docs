@@ -8,9 +8,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./placeholders.component.scss']
 })
 export class PlaceholdersComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   snippetBasic = `
   <div sui-placeholder>
     <div suiPlaceholderHeader
@@ -304,17 +301,5 @@ export class PlaceholdersComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }
