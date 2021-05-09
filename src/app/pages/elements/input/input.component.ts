@@ -107,7 +107,7 @@ export class InputComponent implements AfterViewChecked {
   <div sui-input
        suiLabeled="labeled">
     <div sui-label>
-      http://
+      https://
     </div>
     <input type="text" placeholder="mysite.com"/>
   </div>`;
@@ -248,7 +248,7 @@ export class InputComponent implements AfterViewChecked {
   snippetRightLabeledAction = `
   <div sui-input
        suiAction="action">
-    <input type="text" value="http://ww.short.url/c0opq"/>
+    <input type="text" value="https://www.short.url/c0opq"/>
     <button sui-button
             suiIcon
             suiColour="teal"
@@ -287,8 +287,7 @@ export class InputComponent implements AfterViewChecked {
   snippetLeftIconTransparent = `
   <div sui-input
        suiIcon="icon"
-       suiTransparent
-       suiIconPosition="left">
+       suiTransparent>
     <input type="text" placeholder="Search..."/>
     <i sui-icon suiIconType="search"></i>
   </div>`;
@@ -307,8 +306,7 @@ export class InputComponent implements AfterViewChecked {
        suiInverted>
     <div sui-input
          suiInverted
-         suiIcon
-         suiIconPosition="left">
+         suiIcon="left icon">
       <input type="text" placeholder="Search..."/>
       <i sui-icon suiIconType="search"></i>
     </div>

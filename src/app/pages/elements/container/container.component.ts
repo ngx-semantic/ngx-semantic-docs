@@ -8,9 +8,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./container.component.scss'],
 })
 export class ContainerComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   snippetStd = `
   <div sui-container>
     <p>
@@ -146,17 +143,5 @@ export class ContainerComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }
