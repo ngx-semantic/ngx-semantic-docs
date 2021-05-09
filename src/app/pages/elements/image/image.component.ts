@@ -5,7 +5,12 @@ import {HighlightService} from '../../../shared/services/highlight.service';
 @Component({
   selector: 'doc-image',
   templateUrl: './image.component.html',
-  styles: []
+  styles: [`
+    .image-sizes img {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  `]
 })
 export class ImageComponent implements AfterViewChecked {
   snippetBasic = `
@@ -152,6 +157,16 @@ export class ImageComponent implements AfterViewChecked {
       eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum
       postulant per id.</p>
   </div>`;
+
+  snippetSize = `
+  <img sui-image suiSize="mini" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="tiny" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="small" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="medium" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="large" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="big" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="huge" src="https://semantic-ui.com/images/wireframe/image.png">
+  <img sui-image suiSize="massive" src="https://semantic-ui.com/images/wireframe/image.png">`;
 
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Image | Ngx Semantic');
