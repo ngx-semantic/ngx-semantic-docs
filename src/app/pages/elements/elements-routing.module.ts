@@ -8,7 +8,7 @@ import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
 import {FlagsComponent} from "./flag/flags.component";
 import {HeadersComponent} from "./header/headers.component";
-import {IconsComponent} from "./icons/icons.component";
+import {IconComponent} from "./icons/icon.component";
 import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
@@ -44,7 +44,7 @@ const routes: Routes = [
   },
   {
     path: 'icon',
-    component: IconsComponent,
+    component: IconComponent,
   },
   {
     path: 'image',

@@ -9,7 +9,7 @@ import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
 import {FlagsComponent} from "./flag/flags.component";
 import {HeadersComponent} from "./header/headers.component";
-import {IconsComponent} from "./icons/icons.component";
+import {IconComponent} from "./icons/icon.component";
 import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
@@ -55,7 +55,7 @@ import { ImageComponent } from './image/image.component';
     ListComponent,
     RailComponent,
     InputComponent,
-    IconsComponent,
+    IconComponent,
     LabelComponent,
     ButtonsComponent,
     DividerComponent,
