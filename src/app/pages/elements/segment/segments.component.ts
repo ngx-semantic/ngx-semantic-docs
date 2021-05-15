@@ -10,19 +10,8 @@ import {Title} from '@angular/platform-browser';
 })
 export class SegmentsComponent extends BasePageComponent {
   snippetBasic = `
-  <div sui-placeholder>
-    <div suiPlaceholderHeader
-         suiImage>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
+  <div sui-segment>
+    <p></p>
   </div>`;
 
   constructor(title: Title, highlighter: HighlightService) {

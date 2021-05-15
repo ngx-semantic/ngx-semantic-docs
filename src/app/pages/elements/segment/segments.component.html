@@ -1,40 +1,18 @@
 <doc-page
-    header="Placeholders"
-    subHeader="A placeholder is used to reserve space for content that soon will appear in a layout">
+    header="Segment"
+    subHeader="A segment is used to create a grouping of related content">
   <div *docPageContent="'definition'">
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="placeholder"
+        [content]="segment"
         [templateCode]="snippetBasic">
-      <h3 sui-header>Placeholder</h3>
-      <p>A placeholder is used to reserve space for content that soon will appear in a layout.</p>
+      <h3 sui-header>Segment</h3>
+      <p>A segment of content</p>
 
-      <div sui-message
-           suiState="info">
-        <p>
-          Placeholders can include <b><code>paragraph</code></b>, <b><code>header</code></b>, <b><code>image
-          header</code></b> and <b><code>image</code></b> to let you format the loaders to emulate the content being
-          loaded.
-        </p>
-      </div>
-
-      <br/>
-
-      <ng-template #placeholder>
-        <div sui-placeholder>
-          <div suiPlaceholderHeader
-               suiImage>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
+      <ng-template #segment>
+        <div sui-segment>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
       </ng-template>
     </doc-code-sample>
