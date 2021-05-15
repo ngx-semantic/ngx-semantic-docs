@@ -1,6 +1,7 @@
 /**
  * Created by bolorundurowb on 5/9/2021
  */
+
 import {AfterViewChecked, Directive} from '@angular/core';
 import {HighlightService} from '../services/highlight.service';
 
