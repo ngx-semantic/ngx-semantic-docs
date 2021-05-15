@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 import {HighlightService} from '../../../shared/services/highlight.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-segments',
@@ -24,7 +25,8 @@ export class SegmentsComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  constructor(highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
+    title.setTitle('Segment | Ngx Semantic');
   }
 }

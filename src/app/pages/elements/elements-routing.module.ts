@@ -13,7 +13,7 @@ import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
 import {LoaderComponent} from "./loader/loader.component";
-import {PlaceholdersComponent} from "./placeholder/placeholders.component";
+import {PlaceholderComponent} from "./placeholder/placeholder.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealComponent} from "./reveal/reveal.component";
 import {SegmentsComponent} from "./segment/segments.component";
@@ -68,7 +68,7 @@ const routes: Routes = [
   },
   {
     path: 'placeholder',
-    component: PlaceholdersComponent,
+    component: PlaceholderComponent,
   },
   {
     path: 'rail',

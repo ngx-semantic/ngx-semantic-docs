@@ -1,13 +1,14 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {HighlightService} from "../../../shared/services/highlight.service";
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-placeholders',
-  templateUrl: './placeholders.component.html',
-  styleUrls: ['./placeholders.component.scss']
+  templateUrl: './placeholder.component.html',
+  styleUrls: ['./placeholder.component.scss']
 })
-export class PlaceholdersComponent implements AfterViewChecked {
+export class PlaceholderComponent extends BasePageComponent {
   snippetBasic = `
   <div sui-placeholder>
     <div suiPlaceholderHeader
@@ -295,11 +296,8 @@ export class PlaceholdersComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Placeholder | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
