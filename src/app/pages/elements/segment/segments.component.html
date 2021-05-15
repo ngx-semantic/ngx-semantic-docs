@@ -8,11 +8,35 @@
         [content]="segment"
         [templateCode]="snippetBasic">
       <h3 sui-header>Segment</h3>
-      <p>A segment of content</p>
+      <p>A segment of content.</p>
 
       <ng-template #segment>
         <div sui-segment>
           <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="placeholder"
+        [templateCode]="snippetPlaceholder">
+      <h3 sui-header>Placeholder Segment</h3>
+      <p>A segment can be used to reserve space for conditionally displayed content.</p>
+
+      <ng-template #placeholder>
+        <div sui-segment
+             suiPlaceholder>
+          <div sui-header
+               suiIcon>
+            <i sui-icon
+               suiOutline
+               suiIconType="pdf file"></i>
+            No documents are listed for this customer.
+          </div>
+          <div sui-button
+               suiEmphasis="primary">
+            Add Document
+          </div>
         </div>
       </ng-template>
     </doc-code-sample>
