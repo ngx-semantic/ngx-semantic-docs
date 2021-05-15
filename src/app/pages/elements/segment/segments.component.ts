@@ -30,6 +30,27 @@ export class SegmentsComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetPlaceholderAlt = `
+  <div sui-segment
+       suiPlaceholder>
+    <div sui-header
+         suiIcon>
+      <i sui-icon
+         suiOutline
+         suiIconType="pdf file"></i>
+      No documents are listed for this customer.
+    </div>
+    <div suiSegmentInline>
+      <div sui-button
+           suiEmphasis="primary">
+        Clear Query
+      </div>
+      <div sui-button>
+        Add Document
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
