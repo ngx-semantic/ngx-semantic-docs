@@ -27,7 +27,7 @@ export class PlaceholdersComponent implements AfterViewChecked {
   snippetGrid = `
   <div sui-grid
        suiStackable
-       class="three column">
+       suiWidth="three">
     <div suiGridColumn>
       <div sui-segment
            suiRaised>
