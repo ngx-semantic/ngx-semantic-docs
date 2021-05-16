@@ -487,6 +487,16 @@ export class SegmentComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetFloated = `  
+  <div sui-segment
+       suiFloated="right floated">
+    <p>This segment will appear to the right
+    </p></div>
+  <div sui-segment
+       suiFloated="left floated">
+    This segment will appear to the left
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
