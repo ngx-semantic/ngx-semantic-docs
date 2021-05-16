@@ -51,6 +51,44 @@ export class SegmentsComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetPlaceholderAltToo = `
+  <div sui-segment
+       suiPlaceholder>
+    <div sui-grid
+         suiStackable
+         suiWidth="two"
+         suiAlignment="center aligned">
+      <div sui-divider suiDirection="vertical">Or</div>
+      <div suiGridRow
+           suiAlignment="center aligned">
+        <div suiGridColumn>
+          <div sui-header
+               suiIcon>
+            <i sui-icon
+               suiIconType="search"></i>
+            Find Country
+          </div>
+          <div suiFormField>
+            <sui-search
+                suiShowIcon
+                suiPlaceholder="Search countries..."></sui-search>
+          </div>
+        </div>
+        <div suiGridColumn>
+          <div sui-header
+               suiIcon>
+            <i sui-icon
+               suiIconType="world"></i>
+            Add New Country
+          </div>
+          <div sui-button>
+            Create
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');

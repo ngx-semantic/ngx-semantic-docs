@@ -47,6 +47,7 @@ import {SuiLoaderModule} from 'ngx-semantic/elements/loader';
 import {SuiRailModule} from 'ngx-semantic/elements/rail';
 import {SuiRevealModule} from 'ngx-semantic/elements/reveal';
 import { ImageComponent } from './image/image.component';
+import {SuiSearchModule} from 'ngx-semantic/modules/search';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,9 @@ import { ImageComponent } from './image/image.component';
     SuiLoaderModule,
     SuiDimmerModule,
     SuiRailModule,
-    SuiRevealModule
+    SuiRevealModule,
+    SuiDividerModule,
+    SuiSearchModule
   ]
 })
 export class ElementsModule {
