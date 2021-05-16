@@ -236,13 +236,27 @@ export class SegmentComponent extends BasePageComponent {
   <div sui-segments
        suiHorizontal>
     <div sui-segment>
-      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <p></p>
     </div>
     <div sui-segment>
-      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <p></p>
     </div>
     <div sui-segment>
-      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <p></p>
+    </div>
+  </div>`;
+
+  snippetRaisedGroup = `  
+  <div sui-segments
+       suiRaised>
+    <div sui-segment>
+      <p>Top</p>
+    </div>
+    <div sui-segment>
+      <p>Middle</p>
+    </div>
+    <div sui-segment>
+      <p>Bottom</p>
     </div>
   </div>`;
 

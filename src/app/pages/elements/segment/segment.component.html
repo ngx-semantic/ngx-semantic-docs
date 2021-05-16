@@ -341,6 +341,28 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="raisedGroup"
+        [templateCode]="snippetRaisedGroup">
+      <h3 sui-header>Raised Segments</h3>
+      <p>A group of segments can be raised.</p>
+
+      <ng-template #raisedGroup>
+        <div sui-segments
+             suiRaised>
+          <div sui-segment>
+            <p>Top</p>
+          </div>
+          <div sui-segment>
+            <p>Middle</p>
+          </div>
+          <div sui-segment>
+            <p>Bottom</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
