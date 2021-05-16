@@ -129,6 +129,20 @@ export class SegmentsComponent extends BasePageComponent {
       postulant per id.</p>
   </div>`;
 
+  snippetVertical = `
+  <div sui-segment
+       suiVertical>
+    <p></p>
+  </div>
+  <div sui-segment
+       suiVertical>
+    <p></p>
+  </div>
+  <div sui-segment
+       suiVertical>
+    <p></p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');

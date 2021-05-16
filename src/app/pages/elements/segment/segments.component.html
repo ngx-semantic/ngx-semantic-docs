@@ -178,6 +178,28 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="vertical"
+        [templateCode]="snippetVertical">
+      <h3 sui-header>Vertical Segment</h3>
+      <p>A vertical segment formats content to be aligned as part of a vertical group.</p>
+
+      <ng-template #vertical>
+        <div sui-segment
+             suiVertical>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+        <div sui-segment
+             suiVertical>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+        <div sui-segment
+             suiVertical>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
