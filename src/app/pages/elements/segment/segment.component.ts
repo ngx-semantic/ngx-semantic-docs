@@ -321,6 +321,39 @@ export class SegmentComponent extends BasePageComponent {
     <p>This segment is on bottom</p>
   </div>`;
 
+  snippetAttachedAlt = `  
+  <h5 sui-header
+      suiAttached="top attached">
+    Dogs
+  </h5>
+  <div sui-segment
+       suiAttached="attached">
+    <p>Dogs are one type of animal</p>
+  </div>
+  <h5 sui-header
+      suiAttached="attached">
+    Cats
+  </h5>
+  <div sui-segment
+       suiAttached="attached">
+    <p>Cats are thought of as being related to dogs, but only humans think this.</p>
+  </div>
+  <h5 sui-header
+      suiAttached="attached">
+    Lions
+  </h5>
+  <div sui-segment
+       suiAttached="attached">
+    <p>Humans don't think of lions as being like cats, but they are.</p>
+  </div>
+  <div sui-message
+       suiState="warning"
+       suiAttached="bottom attached">
+    <i sui-icon
+       suiIconType="warning"></i>
+    You've reached the end of this content segment!
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
