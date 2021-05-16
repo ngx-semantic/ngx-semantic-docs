@@ -307,6 +307,20 @@ export class SegmentComponent extends BasePageComponent {
     <p>I'm here to tell you something, and you will probably read me first.</p>
   </div>`;
 
+  snippetAttached = `  
+  <div sui-segment
+       suiAttached="top attached">
+    <p>This segment is on top</p>
+  </div>
+  <div sui-segment
+       suiAttached="attached">
+    <p>This segment is attached on both sides</p>
+  </div>
+  <div sui-segment
+       suiAttached="bottom attached">
+    <p>This segment is on bottom</p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
