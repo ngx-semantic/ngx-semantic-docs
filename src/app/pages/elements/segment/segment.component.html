@@ -720,6 +720,22 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="clearing"
+        [templateCode]="snippetClearing">
+      <h3 sui-header>Clearing</h3>
+      <p>A segment can clear floated content.</p>
+
+      <ng-template #clearing>
+        <div sui-segment
+             suiClearing>
+          <div sui-button
+               suiFloated="right floated">Floated
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
