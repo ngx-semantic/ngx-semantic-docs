@@ -497,6 +497,20 @@ export class SegmentComponent extends BasePageComponent {
     This segment will appear to the left
   </div>`;
 
+  snippetTextAlignment = `  
+  <div sui-segment
+       suiTextAlignment="right aligned">
+    Right
+  </div>
+  <div sui-segment
+       suiTextAlignment="left aligned">
+    Left
+  </div>
+  <div sui-segment
+       suiTextAlignment="center aligned">
+    Center
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
