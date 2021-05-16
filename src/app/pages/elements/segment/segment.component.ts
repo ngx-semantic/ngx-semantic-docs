@@ -461,6 +461,24 @@ export class SegmentComponent extends BasePageComponent {
     <p>If you notice me you must be looking very hard.</p>
   </div>`;
 
+  snippetCircular = `  
+  <div sui-segment
+       suiCircular>
+    <h2 sui-header>
+      Buy Now
+      <div suiSubHeader>$10.99</div>
+    </h2>
+  </div>
+  <div sui-segment
+       suiCircular
+       suiInverted>
+    <h2 sui-header
+        suiInverted>
+      Buy Now
+      <div suiSubHeader>$10.99</div>
+    </h2>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
