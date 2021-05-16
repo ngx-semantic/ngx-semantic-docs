@@ -9,7 +9,7 @@ import {Title} from '@angular/platform-browser';
   styleUrls: ['./segment.component.scss'],
 })
 export class SegmentComponent extends BasePageComponent {
-  snippetBasic = `
+  snippetSegment = `
   <div sui-segment>
     <p></p>
   </div>`;
@@ -509,6 +509,14 @@ export class SegmentComponent extends BasePageComponent {
   <div sui-segment
        suiTextAlignment="center aligned">
     Center
+  </div>`;
+
+  snippetBasic = `  
+  <div sui-segment
+       suiBasic>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+      tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+      semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
   </div>`;
 
   constructor(title: Title, highlighter: HighlightService) {
