@@ -551,6 +551,36 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="compact"
+        [templateCode]="snippetCompact">
+      <h3 sui-header>Compact</h3>
+      <p>A segment may take up only as much space as is necessary.</p>
+
+      <ng-template #compact>
+        <div sui-segment
+             suiCompact>
+          <p>Pellentesque habitant morbi</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="compactAlt"
+        [templateCode]="snippetCompactAlt">
+      <ng-template #compactAlt>
+        <div sui-segments
+             suiCompact>
+          <div sui-segment>
+            <p>Pellentesque habitant morbi</p>
+          </div>
+          <div sui-segment>
+            <p>Pellentesque habitant morbi</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

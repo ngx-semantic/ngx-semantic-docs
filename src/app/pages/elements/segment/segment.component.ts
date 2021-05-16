@@ -366,6 +366,23 @@ export class SegmentComponent extends BasePageComponent {
     <p></p>
   </div>`;
 
+  snippetCompact = `  
+  <div sui-segment
+       suiCompact>
+    <p>Pellentesque habitant morbi</p>
+  </div>`;
+
+  snippetCompactAlt = `  
+  <div sui-segments
+       suiCompact>
+    <div sui-segment>
+      <p>Pellentesque habitant morbi</p>
+    </div>
+    <div sui-segment>
+      <p>Pellentesque habitant morbi</p>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
