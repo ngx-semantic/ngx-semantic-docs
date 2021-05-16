@@ -288,6 +288,12 @@ export class SegmentComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetDisabled = `  
+  <div sui-segment
+       disabled>
+    <p></p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
