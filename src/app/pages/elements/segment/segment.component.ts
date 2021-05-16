@@ -295,10 +295,16 @@ export class SegmentComponent extends BasePageComponent {
   </div>`;
 
   snippetLoading = `  
- <div sui-segment
+  <div sui-segment
        suiLoading>
     <p></p>
     <p></p>
+  </div>`;
+
+  snippetInverted = `  
+  <div sui-segment
+       suiInverted>
+    <p>I'm here to tell you something, and you will probably read me first.</p>
   </div>`;
 
   constructor(title: Title, highlighter: HighlightService) {

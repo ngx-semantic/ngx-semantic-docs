@@ -440,6 +440,24 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A segment can have its colors inverted for contrast.</p>
+
+      <ng-template #inverted>
+        <div sui-segment
+             suiInverted>
+          <p>I'm here to tell you something, and you will probably read me first.</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
