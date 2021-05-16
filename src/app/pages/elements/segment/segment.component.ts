@@ -4,11 +4,11 @@ import {HighlightService} from '../../../shared/services/highlight.service';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-segments',
-  templateUrl: './segments.component.html',
-  styleUrls: ['./segments.component.scss'],
+  selector: 'doc-segment',
+  templateUrl: './segment.component.html',
+  styleUrls: ['./segment.component.scss'],
 })
-export class SegmentsComponent extends BasePageComponent {
+export class SegmentComponent extends BasePageComponent {
   snippetBasic = `
   <div sui-segment>
     <p></p>
@@ -229,6 +229,20 @@ export class SegmentsComponent extends BasePageComponent {
     </div>
     <div sui-segment>
       <p>Bottom</p>
+    </div>
+  </div>`;
+
+  snippetHorizontal = `  
+  <div sui-segments
+       suiHorizontal>
+    <div sui-segment>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+    </div>
+    <div sui-segment>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+    </div>
+    <div sui-segment>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
     </div>
   </div>`;
 

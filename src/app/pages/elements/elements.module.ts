@@ -17,7 +17,7 @@ import {LoaderComponent} from "./loader/loader.component";
 import {PlaceholderComponent} from "./placeholder/placeholder.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealComponent} from "./reveal/reveal.component";
-import {SegmentsComponent} from "./segment/segments.component";
+import {SegmentComponent} from "./segment/segment.component";
 import {StepComponent} from "./step/step.component";
 import {ElementsRoutingModule} from "./elements-routing.module";
 import {SharedModule} from "../../shared/shared.module";
@@ -63,7 +63,7 @@ import {SuiSearchModule} from 'ngx-semantic/modules/search';
     HeaderComponent,
     LoaderComponent,
     RevealComponent,
-    SegmentsComponent,
+    SegmentComponent,
     ContainerComponent,
     PlaceholderComponent,
     ImageComponent
