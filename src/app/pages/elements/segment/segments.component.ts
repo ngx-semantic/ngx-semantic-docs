@@ -143,6 +143,25 @@ export class SegmentsComponent extends BasePageComponent {
     <p></p>
   </div>`;
 
+  snippetSegments = `
+  <div sui-segments>
+    <div sui-segment>
+      <p>Top</p>
+    </div>
+    <div sui-segment>
+      <p>Middle</p>
+    </div>
+    <div sui-segment>
+      <p>Middle</p>
+    </div>
+    <div sui-segment>
+      <p>Middle</p>
+    </div>
+    <div sui-segment>
+      <p>Bottomp>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
