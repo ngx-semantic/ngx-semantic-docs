@@ -109,6 +109,22 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="raised"
+        [templateCode]="snippetRaised">
+      <h3 sui-header>Raised</h3>
+      <p>A segment may be formatted to raise above the page.</p>
+
+      <ng-template #raised>
+        <div sui-segment
+             suiRaised>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
