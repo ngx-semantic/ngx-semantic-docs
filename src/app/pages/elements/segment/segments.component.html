@@ -233,9 +233,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="colouredSegments"
+        [content]="coloured"
         [templateCode]="snippetColouredSegments">
-      <ng-template #colouredSegments>
+      <ng-template #coloured>
         <div sui-segments>
           <div sui-segment>
             <p>Top</p>
@@ -255,6 +255,22 @@
           <div sui-segment
                suiColour="yellow">
             <p>Bottom</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="secondary"
+        [templateCode]="snippetSecondary">
+      <ng-template #secondary>
+        <div sui-segments>
+          <div sui-segment>
+            <p>Top</p>
+          </div>
+          <div sui-segment
+               suiSecondary>
+            <p>Secondary Content</p>
           </div>
         </div>
       </ng-template>
