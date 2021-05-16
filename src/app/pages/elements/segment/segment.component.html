@@ -796,7 +796,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-placeholder</h2>
+        suiDividing>sui-segment</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -813,9 +813,121 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiFluid</td>
+        <td>suiColour</td>
+        <td>Set the segment colour. Allowed values could be
+          <span sui-label>red</span> | <span sui-label>orange</span> | <span sui-label>yellow</span> | <span
+              sui-label>olive</span> | <span sui-label>green</span> | <span sui-label>teal</span> | <span
+              sui-label>blue</span> | <span sui-label>violet</span> | <span sui-label>purple</span> | <span
+              sui-label>pink</span> | <span sui-label>brown</span> | <span sui-label>grey</span> | <span
+              sui-label>black</span>
+          | <span sui-label>null</span></td>
         <td>
-          Determine if the placeholder should fill the width of it's parent container
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>Set the segment attachment. Allowed values could be
+          <span sui-label>top attached</span> | <span sui-label>attached</span> | <span sui-label>bottom attached</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStacked</td>
+        <td>Set the segment stack. Allowed values could be
+          <span sui-label>stacked</span> | <span sui-label>tall stacked</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPadding</td>
+        <td>Set the segment padding. Allowed values could be
+          <span sui-label>padded</span> | <span sui-label>very padded</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiTextAlignment</td>
+        <td>Set the segment text alignment. Allowed values could be
+          <span sui-label>left aligned</span> | <span sui-label>center aligned</span> | <span sui-label>right aligned</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloated</td>
+        <td>Set the segment float. Allowed values could be
+          <span sui-label>left floated</span> | <span sui-label>right floated</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPlaceholder</td>
+        <td>
+          Determine if the segment is a placeholder
         </td>
         <td>
           <div sui-label
@@ -831,9 +943,45 @@
         </td>
       </tr>
       <tr>
-        <td>suiActive</td>
+        <td>suiRaised</td>
         <td>
-          Determine if the placeholder has the active attribute
+          Determine if the segment is raised
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPiled</td>
+        <td>
+          Determine if the segment is piled
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVertical</td>
+        <td>
+          Determine if the segment is vertical
         </td>
         <td>
           <div sui-label
@@ -851,7 +999,151 @@
       <tr>
         <td>suiInverted</td>
         <td>
-          Determine if the placeholder has its colours inverted
+          Determine if the segment is inverted
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determine if the segment is disabled
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLoading</td>
+        <td>
+          Determine if the segment is shown as loading
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompact</td>
+        <td>
+          Determine if the segment is compact
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCircular</td>
+        <td>
+          Determine if the segment is circular
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBasic</td>
+        <td>
+          Determine if the segment is basic
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiClearing</td>
+        <td>
+          Determine if the segment is spaced
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSecondary</td>
+        <td>
+          Determine if the segment is secondary
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiTertiary</td>
+        <td>
+          Determine if the segment is tertiary
         </td>
         <td>
           <div sui-label
