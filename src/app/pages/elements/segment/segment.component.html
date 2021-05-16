@@ -526,6 +526,31 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="padded"
+        [templateCode]="snippetPadded">
+      <h3 sui-header>Padded</h3>
+      <p>A segment can increase its padding.</p>
+
+      <ng-template #padded>
+        <div sui-segment
+             suiPadding="padded">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="paddingAlt"
+        [templateCode]="snippetPaddedAlt">
+      <ng-template #paddingAlt>
+        <div sui-segment
+             suiPadding="very padded">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

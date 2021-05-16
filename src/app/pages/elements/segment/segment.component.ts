@@ -354,6 +354,18 @@ export class SegmentComponent extends BasePageComponent {
     You've reached the end of this content segment!
   </div>`;
 
+  snippetPadded = `  
+  <div sui-segment
+       suiPadding="padded">
+    <p></p>
+  </div>`;
+
+  snippetPaddedAlt = `  
+  <div sui-segment
+       suiPadding="very padded">
+    <p></p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
