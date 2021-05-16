@@ -398,6 +398,21 @@ export class SegmentComponent extends BasePageComponent {
   <div sui-segment suiColour="grey">Grey</div>
   <div sui-segment suiColour="black">Black</div>`;
 
+  snippetColouredInverted = `  
+  <div sui-segment suiInverted suiColour="red">Red</div>
+  <div sui-segment suiInverted suiColour="orange">Orange</div>
+  <div sui-segment suiInverted suiColour="yellow">Yellow</div>
+  <div sui-segment suiInverted suiColour="olive">Olive</div>
+  <div sui-segment suiInverted suiColour="green">Green</div>
+  <div sui-segment suiInverted suiColour="teal">Teal</div>
+  <div sui-segment suiInverted suiColour="blue">Blue</div>
+  <div sui-segment suiInverted suiColour="violet">Violet</div>
+  <div sui-segment suiInverted suiColour="purple">Purple</div>
+  <div sui-segment suiInverted suiColour="pink">Pink</div>
+  <div sui-segment suiInverted suiColour="brown">Brown</div>
+  <div sui-segment suiInverted suiColour="grey">Grey</div>
+  <div sui-segment suiInverted suiColour="black">Black</div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
