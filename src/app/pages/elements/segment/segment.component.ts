@@ -294,6 +294,13 @@ export class SegmentComponent extends BasePageComponent {
     <p></p>
   </div>`;
 
+  snippetLoading = `  
+ <div sui-segment
+       suiLoading>
+    <p></p>
+    <p></p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
