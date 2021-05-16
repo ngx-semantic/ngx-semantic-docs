@@ -413,6 +413,54 @@ export class SegmentComponent extends BasePageComponent {
   <div sui-segment suiInverted suiColour="grey">Grey</div>
   <div sui-segment suiInverted suiColour="black">Black</div>`;
 
+  snippetEmphasis = `  
+  <div sui-segment>
+    <p>I'm here to tell you something, and you will probably read me first.</p>
+  </div>
+  <div sui-segment
+       suiSecondary>
+    <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+  </div>
+  <div sui-segment
+       suiTertiary>
+    <p>If you notice me you must be looking very hard.</p>
+  </div>`;
+
+  snippetEmphasisInverted = `  
+  <div sui-segment
+       suiInverted>
+    <p>I'm here to tell you something, and you will probably read me first.</p>
+  </div>
+  <div sui-segment
+       suiInverted
+       suiSecondary>
+    <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+  </div>
+  <div sui-segment
+       suiInverted
+       suiTertiary>
+    <p>If you notice me you must be looking very hard.</p>
+  </div>`;
+
+  snippetEmphasisInvertedColoured = `  
+  <div sui-segment
+       suiInverted
+       suiColour="red">
+    <p>I'm here to tell you something, and you will probably read me first.</p>
+  </div>
+  <div sui-segment
+       suiInverted
+       suiSecondary
+       suiColour="red">
+    <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+  </div>
+  <div sui-segment
+       suiInverted
+       suiTertiary
+       suiColour="red">
+    <p>If you notice me you must be looking very hard.</p>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');

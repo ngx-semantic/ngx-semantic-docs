@@ -626,6 +626,74 @@
         <div sui-segment suiInverted suiColour="black">Black</div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="emphasis"
+        [templateCode]="snippetEmphasis">
+      <h3 sui-header>Emphasis</h3>
+      <p>A segment can be formatted to appear more or less noticeable.</p>
+
+      <ng-template #emphasis>
+        <div sui-segment>
+          <p>I'm here to tell you something, and you will probably read me first.</p>
+        </div>
+        <div sui-segment
+             suiSecondary>
+          <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+        </div>
+        <div sui-segment
+             suiTertiary>
+          <p>If you notice me you must be looking very hard.</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="emphasisInverted"
+        [templateCode]="snippetEmphasisInverted">
+      <p>Inverted colors may also be more or less noticeable.</p>
+
+      <ng-template #emphasisInverted>
+        <div sui-segment
+             suiInverted>
+          <p>I'm here to tell you something, and you will probably read me first.</p>
+        </div>
+        <div sui-segment
+             suiInverted
+             suiSecondary>
+          <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+        </div>
+        <div sui-segment
+             suiInverted
+             suiTertiary>
+          <p>If you notice me you must be looking very hard.</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="emphasisInvertedColoured"
+        [templateCode]="snippetEmphasisInvertedColoured">
+      <ng-template #emphasisInvertedColoured>
+        <div sui-segment
+             suiInverted
+             suiColour="red">
+          <p>I'm here to tell you something, and you will probably read me first.</p>
+        </div>
+        <div sui-segment
+             suiInverted
+             suiSecondary
+             suiColour="red">
+          <p>I am pretty noticeable but you might check out other content before you look at me.</p>
+        </div>
+        <div sui-segment
+             suiInverted
+             suiTertiary
+             suiColour="red">
+          <p>If you notice me you must be looking very hard.</p>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
