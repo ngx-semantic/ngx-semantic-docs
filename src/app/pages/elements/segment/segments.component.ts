@@ -196,6 +196,42 @@ export class SegmentsComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetNested = `
+  <div sui-segments>
+    <div sui-segment>
+      <p>Top</p>
+    </div>
+    <div sui-segments>
+      <div sui-segment>
+        <p>Nested Top</p>
+      </div>
+      <div sui-segment>
+        <p>Nested Middle</p>
+      </div>
+      <div sui-segment>
+        <p>Nested Bottom</p>
+      </div>
+    </div>
+    <div sui-segment>
+      <p>Middle</p>
+    </div>
+    <div sui-segments
+         suiHorizontal>
+      <div sui-segment>
+        <p>Top</p>
+      </div>
+      <div sui-segment>
+        <p>Middle</p>
+      </div>
+      <div sui-segment>
+        <p>Bottom</p>
+      </div>
+    </div>
+    <div sui-segment>
+      <p>Bottom</p>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Segment | Ngx Semantic');
