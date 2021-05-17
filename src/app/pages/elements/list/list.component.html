@@ -15,25 +15,44 @@
 
       <ng-template #divStandard>
         <div  sui-list>
-          <div class="item">
+          <div suiListItem>
+            Apples
+          </div>
+          <div suiListItem>
+            Pears
+          </div>
+          <div suiListItem>
+            Oranges
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="divStandard1"
+        [templateCode]="snippetList1">
+
+      <ng-template #divStandard1>
+        <div  sui-list>
+          <div suiListItem>
             <i sui-icon suiIconType="users"></i>
             <div class="content">
               Semantic UI
             </div>
           </div>
-          <div class="item">
+          <div suiListItem>
             <i sui-icon suiIconType="marker"></i>
             <div class="content">
               New York, NY
             </div>
           </div>
-          <div class="item">
+          <div suiListItem>
             <i sui-icon suiIconType="mail"></i>
             <div class="content">
               <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
             </div>
           </div>
-          <div class="item">
+          <div suiListItem>
             <i sui-icon suiIconType="linkify"></i>
             <div class="content">
               <a href="http://www.semantic-ui.com">semantic-ui.com</a>
@@ -42,6 +61,37 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    </div>
+    
+    <doc-code-sample
+        [content]="divStandard2"
+        [templateCode]="snippetList2">
+
+      <ng-template #divStandard2>
+        <div sui-list suiDivided="true" SuiListRelaxation="relaxed">
+          <div suiListItem>
+            <i sui-icon suiIconType="github" suiSize="large"></i>
+            <div class="content">
+              <a sui-header suiSize="small">Semantic-Org/Semantic-UI</a>
+              <div class="description">Updated 10 mins ago</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <i sui-icon suiIconType="github" suiSize="large"></i>
+            <div class="content">
+              <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Docs</a>
+              <div class="description">Updated 22 mins ago</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <i sui-icon suiIconType="github" suiSize="large"></i>
+            <div class="content">
+              <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Meteor</a>
+              <div class="description">Updated 34 mins ago</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
 
 </doc-page>
