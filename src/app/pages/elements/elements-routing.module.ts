@@ -3,27 +3,28 @@
  */
 
 import {RouterModule, Routes} from "@angular/router";
-import {ButtonsComponent} from "./buttons/buttons.component";
+import {ButtonComponent} from "./buttons/button.component";
 import {ContainerComponent} from "./container/container.component";
 import {DividerComponent} from "./divider/divider.component";
-import {FlagsComponent} from "./flag/flags.component";
-import {HeadersComponent} from "./header/headers.component";
-import {IconsComponent} from "./icons/icons.component";
+import {FlagComponent} from "./flag/flag.component";
+import {HeaderComponent} from "./header/header.component";
+import {IconComponent} from "./icon/icon.component";
 import {InputComponent} from "./input/input.component";
 import {LabelComponent} from "./label/label.component";
 import {ListComponent} from "./list/list.component";
 import {LoaderComponent} from "./loader/loader.component";
-import {PlaceholdersComponent} from "./placeholder/placeholders.component";
+import {PlaceholderComponent} from "./placeholder/placeholder.component";
 import {RailComponent} from "./rail/rail.component";
 import {RevealComponent} from "./reveal/reveal.component";
-import {SegmentsComponent} from "./segment/segments.component";
+import {SegmentComponent} from "./segment/segment.component";
 import {StepComponent} from "./step/step.component";
 import {NgModule} from "@angular/core";
+import {ImageComponent} from './image/image.component';
 
 const routes: Routes = [
   {
     path: 'button',
-    component: ButtonsComponent,
+    component: ButtonComponent,
   },
   {
     path: 'container',
@@ -35,15 +36,19 @@ const routes: Routes = [
   },
   {
     path: 'flag',
-    component: FlagsComponent,
+    component: FlagComponent,
   },
   {
     path: 'header',
-    component: HeadersComponent,
+    component: HeaderComponent,
   },
   {
     path: 'icon',
-    component: IconsComponent,
+    component: IconComponent,
+  },
+  {
+    path: 'image',
+    component: ImageComponent,
   },
   {
     path: 'input',
@@ -63,7 +68,7 @@ const routes: Routes = [
   },
   {
     path: 'placeholder',
-    component: PlaceholdersComponent,
+    component: PlaceholderComponent,
   },
   {
     path: 'rail',
@@ -75,7 +80,7 @@ const routes: Routes = [
   },
   {
     path: 'segment',
-    component: SegmentsComponent,
+    component: SegmentComponent,
   },
   {
     path: 'step',

@@ -4,10 +4,10 @@ import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-icons',
-  templateUrl: './icons.component.html',
-  styleUrls: ['./icons.component.scss']
+  templateUrl: './icon.component.html',
+  styleUrls: ['./icon.component.scss']
 })
-export class IconsComponent implements AfterViewChecked {
+export class IconComponent implements AfterViewChecked {
   isDefinitionsActive = true;
   isApiActive: boolean;
 

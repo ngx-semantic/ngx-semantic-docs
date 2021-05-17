@@ -11,6 +11,8 @@ export type DocWireframeType = 'paragraph' | 'short-paragraph';
     img {
       width: 100%;
       border-style: none;
+        margin-top: 0.5rem;
+        margin-bottom: 0.4rem;
     }
   `]
 })

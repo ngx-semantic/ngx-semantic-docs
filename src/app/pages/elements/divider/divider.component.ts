@@ -8,9 +8,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styleUrls: ['./divider.component.scss']
 })
 export class DividerComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   snippetStandard = `
   <div sui-placeholder>
     <p suiPlaceholderLine></p>
