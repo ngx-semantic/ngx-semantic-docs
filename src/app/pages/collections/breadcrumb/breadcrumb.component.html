@@ -4,7 +4,9 @@
   <div *docPageContent="'definition'">
     <h2 sui-header suiDividing>Types</h2>
 
-    <doc-code-sample [content]="breadcrumbStd" [templateCode]="snippetStd">
+    <doc-code-sample
+        [content]="breadcrumbStd"
+        [templateCode]="snippetStd">
       <h3 sui-header>Breadcrumb</h3>
       <p>A standard breadcrumb</p>
 
@@ -18,6 +20,7 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
     <doc-code-sample
         [content]="breadcrumbStd1"
         [templateCode]="snippetStd1">
@@ -36,7 +39,9 @@
 
     <h2 sui-header suiDividing>Content</h2>
 
-    <doc-code-sample [content]="breadcrumbContent" [templateCode]="snippetContent1">
+    <doc-code-sample
+        [content]="breadcrumbContent"
+        [templateCode]="snippetContent1">
       <h3 sui-header>Divider</h3>
       <p>A breadcrumb can contain a divider to show the relationship between sections, this can be formatted as an
         icon or text</p>
@@ -51,7 +56,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbContent1" [templateCode]="snippetContent2">
+
+    <doc-code-sample
+        [content]="breadcrumbContent1"
+        [templateCode]="snippetContent2">
       <ng-template #breadcrumbContent1>
         <div sui-breadcrumb>
           <a suiBreadcrumbSection>Home</a>
@@ -63,7 +71,9 @@
       </ng-template>
     </doc-code-sample>
 
-    <doc-code-sample [content]="breadcrumbSection" [templateCode]="snippetSection">
+    <doc-code-sample
+        [content]="breadcrumbSection"
+        [templateCode]="snippetSection">
       <h3 sui-header>Section</h3>
       <p>A breadcrumb can contain sections that can either be formatted as a link or text</p>
 
@@ -76,7 +86,9 @@
       </ng-template>
     </doc-code-sample>
 
-    <doc-code-sample [content]="breadcrumbLink" [templateCode]="snippetLink">
+    <doc-code-sample
+        [content]="breadcrumbLink"
+        [templateCode]="snippetLink">
       <h3 sui-header>Link</h3>
       <p>A section may be linkable or contain a link</p>
 
@@ -93,7 +105,9 @@
 
     <h2 sui-header suiDividing>States</h2>
 
-    <doc-code-sample [content]="breadcrumbActive" [templateCode]="snippetActive">
+    <doc-code-sample
+        [content]="breadcrumbActive"
+        [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
       <p>A section can be active</p>
 
@@ -110,7 +124,9 @@
 
     <h2 sui-header suiDividing>Variations</h2>
 
-    <doc-code-sample [content]="breadcrumbSize" [templateCode]="snippetSize">
+    <doc-code-sample
+        [content]="breadcrumbSize"
+        [templateCode]="snippetSize">
       <h3 sui-header>Size</h3>
       <p>A breadcrumb can vary in size</p>
 
@@ -124,7 +140,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize1" [templateCode]="snippetSize1">
+
+    <doc-code-sample
+        [content]="breadcrumbSize1"
+        [templateCode]="snippetSize1">
       <ng-template #breadcrumbSize1>
         <div sui-breadcrumb suiSize='tiny'>
           <a suiBreadcrumbSection>Home</a>
@@ -135,7 +154,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize2" [templateCode]="snippetSize2">
+
+    <doc-code-sample
+        [content]="breadcrumbSize2"
+        [templateCode]="snippetSize2">
       <ng-template #breadcrumbSize2>
         <div sui-breadcrumb suiSize='small'>
           <a suiBreadcrumbSection>Home</a>
@@ -146,7 +168,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize3" [templateCode]="snippetSize3">
+
+    <doc-code-sample
+        [content]="breadcrumbSize3"
+        [templateCode]="snippetSize3">
       <ng-template #breadcrumbSize3>
         <div sui-breadcrumb suiSize='large'>
           <a suiBreadcrumbSection>Home</a>
@@ -157,7 +182,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize4" [templateCode]="snippetSize4">
+
+    <doc-code-sample
+        [content]="breadcrumbSize4"
+        [templateCode]="snippetSize4">
       <ng-template #breadcrumbSize4>
         <div sui-breadcrumb suiSize='big'>
           <a suiBreadcrumbSection>Home</a>
@@ -168,7 +196,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize5" [templateCode]="snippetSize5">
+
+    <doc-code-sample
+        [content]="breadcrumbSize5"
+        [templateCode]="snippetSize5">
       <ng-template #breadcrumbSize5>
         <div sui-breadcrumb suiSize='huge'>
           <a suiBreadcrumbSection>Home</a>
@@ -179,7 +210,10 @@
         </div>
       </ng-template>
     </doc-code-sample>
-    <doc-code-sample [content]="breadcrumbSize6" [templateCode]="snippetSize6">
+
+    <doc-code-sample
+        [content]="breadcrumbSize6"
+        [templateCode]="snippetSize6">
       <ng-template #breadcrumbSize6>
         <div sui-breadcrumb suiSize='massive'>
           <a suiBreadcrumbSection>Home</a>
@@ -192,5 +226,126 @@
     </doc-code-sample>
   </div>
 
-  <div *docPageContent="'api'"></div>
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-breadcrumb</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the breadcrumb size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiBreadcrumbDivider</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Determine the icon to be used as the divider
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            ''
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiBreadcrumbSection</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiActive</td>
+        <td>
+          Determine whether or not the breadcrumb section is active
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </doc-page>

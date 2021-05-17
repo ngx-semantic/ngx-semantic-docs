@@ -19,6 +19,8 @@ import {SuiMessageModule} from "ngx-semantic/collections/message";
 import {SuiHeaderModule} from "ngx-semantic/elements/header";
 import {SuiIconModule} from "ngx-semantic/elements/icon";
 import {SuiBreadcrumbModule} from "ngx-semantic/collections/breadcrumb";
+import {SuiTableModule} from 'ngx-semantic/collections/table';
+import {SuiLabelModule} from 'ngx-semantic/elements/label';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import {SuiBreadcrumbModule} from "ngx-semantic/collections/breadcrumb";
     SuiHeaderModule,
     SuiMessageModule,
     CollectionsRoutingModule,
-    SuiBreadcrumbModule
+    SuiBreadcrumbModule,
+    SuiTableModule,
+    SuiLabelModule
   ]
 })
 export class CollectionsModule {
