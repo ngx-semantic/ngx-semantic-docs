@@ -1,12 +1,13 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import {HighlightService} from '../../../shared/services/highlight.service';
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-search',
   templateUrl: './search.component.html'
 })
-export class SearchComponent implements AfterViewChecked {
+export class SearchComponent extends BasePageComponent {
   options = [];
 
   snippetBasic = `
@@ -20,11 +21,8 @@ export class SearchComponent implements AfterViewChecked {
       suiPlaceholder="Common passwords...">
   </sui-search>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Search | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
