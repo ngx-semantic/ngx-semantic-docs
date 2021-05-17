@@ -224,5 +224,126 @@
     </doc-code-sample>
   </div>
 
-  <div *docPageContent="'api'"></div>
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-breadcrumb</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the breadcrumb size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiBreadcrumbDivider</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Determine the icon to be used as the divider
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            ''
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiBreadcrumbSection</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiActive</td>
+        <td>
+          Determine whether or not the breadcrumb section is active
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </doc-page>
