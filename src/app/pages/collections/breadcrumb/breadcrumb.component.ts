@@ -1,16 +1,14 @@
-import {AfterViewChecked, Component} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
+import {Component} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+import {HighlightService} from '../../../shared/services/highlight.service';
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-breadcrumb',
   templateUrl: './breadcrumb.component.html',
   styleUrls: ['./breadcrumb.component.scss'],
 })
-export class BreadcrumbComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
+export class BreadcrumbComponent extends BasePageComponent {
   snippetStd = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -18,8 +16,8 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <a suiBreadcrumbSection>Store</a>
       <div suiBreadcrumbDivider> / </div>
       <div suiBreadcrumbSection suiActive>T-Shirt</div>
-  </div>
-  `;
+  </div>`;
+
   snippetStd1 = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -27,8 +25,8 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <a suiBreadcrumbSection>Store</a>
       <i suiIconType="right angle" sui-icon suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>T-Shirt</div>
-  </div>
-  `;
+  </div>`;
+
   snippetContent1 = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -37,6 +35,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <div suiBreadcrumbDivider> / </div>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetContent2 = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -51,24 +50,21 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <span suiBreadcrumbSection>Home</span>
       <div suiBreadcrumbDivider> / </div>
       <div suiBreadcrumbSection suiActive>Search</div>
-  </div>
-  `;
+  </div>`;
 
   snippetLink = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
       <div suiBreadcrumbDivider> / </div>
       <div suiBreadcrumbSection suiActive>Search for: <a href="#">paper towels</a></div>
-  </div>
-  `;
+  </div>`;
 
   snippetActive = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Products</a>
       <div suiBreadcrumbDivider> / </div>
       <div suiBreadcrumbSection suiActive>Paper Towels</div>
-  </div>
-  `;
+  </div>`;
 
   snippetSize = `
   <div sui-breadcrumb suiSize='mini'>
@@ -78,6 +74,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize1 = `
   <div sui-breadcrumb suiSize='tiny'>
       <a suiBreadcrumbSection>Home</a>
@@ -86,6 +83,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize2 = `
   <div sui-breadcrumb suiSize='small'>
       <a suiBreadcrumbSection>Home</a>
@@ -94,6 +92,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize3 = `
   <div sui-breadcrumb suiSize='large'>
       <a suiBreadcrumbSection>Home</a>
@@ -102,6 +101,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize4 = `
   <div sui-breadcrumb suiSize='big'>
       <a suiBreadcrumbSection>Home</a>
@@ -110,6 +110,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize5 = `
   <div sui-breadcrumb suiSize='huge'>
       <a suiBreadcrumbSection>Home</a>
@@ -118,6 +119,7 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <i suiIcon='right arrow' suiBreadcrumbDivider></i>
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
+
   snippetSize6 = `
   <div sui-breadcrumb suiSize='massive'>
       <a suiBreadcrumbSection>Home</a>
@@ -127,23 +129,8 @@ export class BreadcrumbComponent implements AfterViewChecked {
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Breadcrumb | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }
