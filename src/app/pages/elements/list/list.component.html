@@ -333,6 +333,31 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="itemList"
+        [templateCode]="snippetItem">
+      <h3 sui-header>Item</h3>
+      <p>
+        A list item can contain a set of items
+      </p>
+
+      <ng-template #itemList>
+        <div sui-list>
+          <div suiListItem>
+            1
+          </div>
+          <div suiListItem>
+            2
+          </div>
+          <div suiListItem>
+            3
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>

@@ -238,6 +238,19 @@ export class ListComponent implements OnInit {
     <a suiListItem>Team</a>
   </div>
   `;
+  snippetItem = `
+  <div sui-list>
+    <div suiListItem>
+      1
+    </div>
+    <div suiListItem>
+      2
+    </div>
+    <div suiListItem>
+      3
+    </div>
+  </div>
+  `;
 
   constructor() { }
 
