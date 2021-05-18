@@ -251,6 +251,28 @@ export class ListComponent implements OnInit {
     </div>
   </div>
   `;
+  snippetIcon = `
+  <div sui-list>
+    <a suiListItem>
+      <i sui-icon suiIconType="help"></i>
+      <div class="content">
+        <div sui-header suiSize="small">Floated Icon</div>
+        <div>This text will always have a left margin to make sure it sits alongside your icon</div>
+      </div>
+    </a>
+    <a suiListItem>
+      <i sui-icon suiIconType="right triangle"></i>
+      <div class="content">
+        <div sui-header suiSize="small">Icon Alignment</div>
+        <div>Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
+      </div>
+    </a>
+    <div suiListItem>
+      <i sui-icon suiIconType="help"></i>
+      Inline Text
+    </div>
+  </div>
+  `;
 
   constructor() { }
 
