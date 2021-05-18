@@ -187,6 +187,57 @@ export class ListComponent implements OnInit {
     </a>
   </div>
   `;
+  snippetOrdered = `
+  <div sui-list suiOrdered="true">
+    <a suiListItem>Getting Started</a>
+    <a suiListItem>Introduction</a>
+    <div suiListItem>
+      <a>Languages</a>
+      <div sui-list>
+        <a suiListItem>HTML</a>
+        <a suiListItem>Javascript</a>
+        <a suiListItem>CSS</a>
+      </div>
+    </div>
+    <a suiListItem>Review</a>
+  </div>
+  `;
+  snippetOrdered1 = `
+  <ol sui-list>
+    <li>Signing Up</li>
+    <li>User Benefits</li>
+    <li>User Types
+      <ol>
+        <li>Admin</li>
+        <li>Power User</li>
+        <li>Regular User</li>
+      </ol>
+    </li>
+    <li>Deleting Your Account</li>
+  </ol>
+  `;
+  snippetOrdered2 = `
+  <ol sui-list>
+    <li value="*">Signing Up</li>
+    <li value="*">User Benefits</li>
+    <li value="*">User Types
+      <ol>
+        <li value="-">Admin</li>
+        <li value="-">Power User</li>
+        <li value="-">Regular User</li>
+      </ol>
+    </li>
+    <li value="*">Deleting Your Account</li>
+  </ol>
+  `;
+  snippetLink = `
+  <div sui-list suiLink="true">
+    <div suiListItem suiLinkActive>Home</div>
+    <a suiListItem>About</a>
+    <a suiListItem>Jobs</a>
+    <a suiListItem>Team</a>
+  </div>
+  `;
 
   constructor() { }
 

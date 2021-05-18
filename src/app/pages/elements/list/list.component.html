@@ -240,6 +240,99 @@
         </div>
       </ng-template>
     </doc-code-sample>
+    
+    <doc-code-sample
+        [content]="orderedList"
+        [templateCode]="snippetOrdered">
+      <h3 sui-header>Ordered</h3>
+      <p>
+        A list can be ordered numerically
+      </p>
+
+      <ng-template #orderedList>
+        <div sui-list suiOrdered="true">
+          <a suiListItem>Getting Started</a>
+          <a suiListItem>Introduction</a>
+          <div suiListItem>
+            <a>Languages</a>
+            <div sui-list>
+              <a suiListItem>HTML</a>
+              <a suiListItem>Javascript</a>
+              <a suiListItem>CSS</a>
+            </div>
+          </div>
+          <a suiListItem>Review</a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+    
+    <doc-code-sample
+        [content]="orderedList1"
+        [templateCode]="snippetOrdered1">
+
+      <div sui-message
+        suiState="info">
+        An ordered list can also use the <code><b>ol</b></code> tag.
+     </div>
+
+      <ng-template #orderedList1>
+        <ol sui-list>
+          <li>Signing Up</li>
+          <li>User Benefits</li>
+          <li>User Types
+            <ol>
+              <li>Admin</li>
+              <li>Power User</li>
+              <li>Regular User</li>
+            </ol>
+          </li>
+          <li>Deleting Your Account</li>
+        </ol>
+      </ng-template>
+    </doc-code-sample>
+    
+    <doc-code-sample
+        [content]="orderedList2"
+        [templateCode]="snippetOrdered2">
+
+      <div sui-message
+        suiState="info">
+        You can also manually specify a value for an ordered list using <code><b>data-value</b></code> on a <code><b>div</b></code>, or <code><b>value</b></code> on a <code><b>li</b></code>
+     </div>
+
+      <ng-template #orderedList2>
+        <ol sui-list>
+          <li value="*">Signing Up</li>
+          <li value="*">User Benefits</li>
+          <li value="*">User Types
+            <ol>
+              <li value="-">Admin</li>
+              <li value="-">Power User</li>
+              <li value="-">Regular User</li>
+            </ol>
+          </li>
+          <li value="*">Deleting Your Account</li>
+        </ol>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="linkList"
+        [templateCode]="snippetLink">
+      <h3 sui-header>Link</h3>
+      <p>
+        A list can be specially formatted for navigation links
+      </p>
+
+      <ng-template #linkList>
+        <div sui-list suiLink="true">
+          <div suiListItem class="active">Home</div>
+          <a suiListItem>About</a>
+          <a suiListItem>Jobs</a>
+          <a suiListItem>Team</a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>
