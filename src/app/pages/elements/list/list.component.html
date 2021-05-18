@@ -390,6 +390,48 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="imageList"
+        [templateCode]="snippetImage">
+      <h3 sui-header>Image</h3>
+      <p>
+        A list item can contain an image
+      </p>
+
+      <ng-template #imageList>
+        <div sui-list>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+            <div class="content">
+              <a sui-header suiSize="small">Rachel</a>
+              <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
+            <div class="content">
+              <a sui-header suiSize="small">Lindsay</a>
+              <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/matthew.png">
+            <div class="content">
+              <a sui-header suiSize="small">Matthew</a>
+              <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
+            <div class="content">
+              <a sui-header suiSize="small">Jenny Hess</a>
+              <div>Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>

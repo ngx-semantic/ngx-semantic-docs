@@ -255,14 +255,14 @@ export class ListComponent implements OnInit {
   <div sui-list>
     <a suiListItem>
       <i sui-icon suiIconType="help"></i>
-      <div class="content">
+      <div suiListContent>
         <div sui-header suiSize="small">Floated Icon</div>
         <div>This text will always have a left margin to make sure it sits alongside your icon</div>
       </div>
     </a>
     <a suiListItem>
       <i sui-icon suiIconType="right triangle"></i>
-      <div class="content">
+      <div suiListContent>
         <div sui-header suiSize="small">Icon Alignment</div>
         <div>Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
       </div>
@@ -270,6 +270,38 @@ export class ListComponent implements OnInit {
     <div suiListItem>
       <i sui-icon suiIconType="help"></i>
       Inline Text
+    </div>
+  </div>
+  `;
+  snippetImage = `
+  <div sui-list>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar2/small/rachel.png">
+      <div suiListContent>
+        <a sui-header suiSize="small">Rachel</a>
+        <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar2/small/lindsay.png">
+      <div suiListContent>
+        <a sui-header suiSize="small">Lindsay</a>
+        <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar2/small/matthew.png">
+      <div suiListContent>
+        <a sui-header suiSize="small">Matthew</a>
+        <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/jenny.jpg">
+      <div suiListContent>
+        <a sui-header suiSize="small">Jenny Hess</a>
+        <div>Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
+      </div>
     </div>
   </div>
   `;
