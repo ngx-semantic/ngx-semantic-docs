@@ -48,7 +48,7 @@ export class ListComponent implements OnInit {
   </div>
   `;
   snippetList2= `
-  <div sui-list suiDivided="true" SuiListRelaxation="relaxed">
+  <div sui-list suiDivided="true" SuiRelaxation="relaxed">
     <div suiListItem>
       <i sui-icon suiIconType="github" suiSize="large"></i>
       <div suiMessageContent>
@@ -453,7 +453,7 @@ export class ListComponent implements OnInit {
 
   snippetInverted = `
   <div sui-segment suiInverted="true">
-    <div sui-list suiListRelaxation="relaxed" suiDivided="true" suiInverted="true">
+    <div sui-list suiRelaxation="relaxed" suiDivided="true" suiInverted="true">
       <div suiListItem>
         <div suiMessageContent>
           <div sui-header suiSize="small">Snickerdoodle</div>
@@ -517,6 +517,81 @@ export class ListComponent implements OnInit {
       <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
       <div suiMessageContent>
         <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetRelaxed = `
+  <div sui-list suiRelaxed="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Daniel Louise</a>
+        <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Stevie Feliciano</a>
+        <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Elliot Fu</a>
+        <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetRelaxed1 = `
+  <div sui-list suiRelaxed="true" suiHorizontal="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Daniel Louise</a>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Stevie Feliciano</a>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Elliot Fu</a>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetRelaxed2 = `
+  <div sui-list suiRelaxed="true" suiRelaxation="very relaxed">
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Daniel Louise</a>
+        <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Stevie Feliciano</a>
+        <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Elliot Fu</a>
+        <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
       </div>
     </div>
   </div>
