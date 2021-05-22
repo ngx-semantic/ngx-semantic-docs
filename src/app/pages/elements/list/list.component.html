@@ -579,6 +579,91 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="horizontalList1"
+        [templateCode]="snippetHorizontal1">
+
+      <ng-template #horizontalList1>
+        <div sui-list suiHorizontal="true" suiOrdered="true">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Tom</div>
+              Top Contributor
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian Rocha</div>
+              Admin
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/matt.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Matt</div>
+              Top Rated User
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="horizontalList2"
+        [templateCode]="snippetHorizontal2">
+
+      <ng-template #horizontalList2>
+        <div sui-list suiHorizontal="true" suiBulleted="true" suiLink="true">
+          <a suiListItem>
+            Terms and Conditions
+          </a>
+          <a suiListItem>
+            Privacy Policy
+          </a>
+          <a suiListItem>
+            Contact Us
+          </a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="horizontalList"
+        [templateCode]="snippetHorizontal">
+      <h3 sui-header>Horizontal</h3>
+      <p>
+        A list can be formatted to have items appear horizontally
+      </p>
+
+      <ng-template #horizontalList>
+        <div sui-list suiHorizontal="true">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Tom</div>
+              Top Contributor
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian Rocha</div>
+              Admin
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/matt.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Matt</div>
+              Top Rated User
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>

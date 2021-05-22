@@ -411,6 +411,46 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetHorizontal1 = `
+  <div sui-list suiHorizontal="true" suiOrdered="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/tom.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Tom</div>
+        Top Contributor
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian Rocha</div>
+        Admin
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/matt.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Matt</div>
+        Top Rated User
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetHorizontal2 = `
+  <div sui-list suiHorizontal="true" suiBulleted="true" suiLink="true">
+    <a suiListItem>
+      Terms and Conditions
+    </a>
+    <a suiListItem>
+      Privacy Policy
+    </a>
+    <a suiListItem>
+      Contact Us
+    </a>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {
