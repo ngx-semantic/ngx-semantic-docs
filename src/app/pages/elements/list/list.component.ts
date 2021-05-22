@@ -852,6 +852,83 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetVertical = `
+  <div sui-list suiHorizontal="true">
+    <div suiListItem>
+      <img sui-image suiAvatar suiAlignment="top aligned" src="/images/wireframe/square-image.png">
+      <div suiMessageContent>
+        Top Aligned
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar suiAlignment="middle aligned" src="/images/wireframe/square-image.png">
+      <div suiMessageContent>
+        Middle
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar suiAlignment="bottom aligned" src="/images/wireframe/square-image.png">
+      <div suiMessageContent>
+        Bottom
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetFloated = `
+  <div sui-list suiAlignment="middle aligned" suiDivided="true">
+    <div suiListItem>
+      <div suiMessageContent>
+        <div sui-button suiFloated="right floated">Add</div>
+      </div>
+      <img sui-image suiAvatar src="/images/avatar2/small/lena.png">
+      <div suiMessageContent>
+        Lena
+      </div>
+    </div>
+    <div suiListItem>
+      <div suiMessageContent>
+        <div sui-button suiFloated="right floated">Add</div>
+      </div>
+      <img sui-image suiAvatar src="/images/avatar2/small/lindsay.png">
+      <div suiMessageContent>
+        Lindsay
+      </div>
+    </div>
+    <div suiListItem>
+      <div suiMessageContent>
+        <div sui-button suiFloated="right floated">Add</div>
+      </div>
+      <img sui-image suiAvatar src="/images/avatar2/small/mark.png">
+      <div suiMessageContent>
+        Mark
+      </div>
+    </div>
+    <div suiListItem>
+      <div suiMessageContent>
+        <div sui-button suiFloated="right floated">Add</div>
+      </div>
+      <img sui-image suiAvatar src="/images/avatar2/small/molly.png">
+      <div suiMessageContent>
+        Molly
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetFloated1 = `
+  <div sui-list suiHorizontal="true" suiFloated="right floated">
+    <div suiListItem href="#">© GitHub, Inc.</div>
+    <a suiListItem href="#">Terms</a>
+    <a suiListItem href="#">Privacy</a>
+    <a suiListItem href="#">Contact</a>
+  </div>
+  <div sui-list suiHorizontal="true">
+    <a suiListItem href="#">About Us</a>
+    <a suiListItem href="#">Jobs</a>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {
