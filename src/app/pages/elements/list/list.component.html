@@ -921,6 +921,236 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="celledList1"
+        [templateCode]="snippetCelled1">
+      <ng-template #celledList1>
+        <div sui-list suiOrdered="true" suiCelled="true">
+          <div suiListItem>Cats</div>
+          <div suiListItem>Horses</div>
+          <div suiListItem>Dogs
+            <div sui-list>
+              <div suiListItem>Labradoodles</div>
+              <div suiListItem>Shiba Inu</div>
+              <div suiListItem>Mastiff</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="celledList2"
+        [templateCode]="snippetCelled2">
+      <ng-template #celledList2>
+        <div sui-list suiCelled="true" suiHorizontal="true">
+          <div suiListItem>About Us</div>
+          <div suiListItem>Contact</div>
+          <div suiListItem>Support</div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedList"
+        [templateCode]="snippetSizeMini">
+      <h3 sui-header>Size</h3>
+      <p>
+        A list can vary in size
+      </p>
+
+      <ng-template #sizedList>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="mini">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListTiny"
+        [templateCode]="snippetSizeTiny">
+
+      <ng-template #sizedListTiny>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="tiny">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListSmall"
+        [templateCode]="snippetSizeSmall">
+
+      <ng-template #sizedListSmall>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="small">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListLarge"
+        [templateCode]="snippetSizeLarge">
+
+      <ng-template #sizedListLarge>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="large">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListBig"
+        [templateCode]="snippetSizeBig">
+
+      <ng-template #sizedListBig>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="big">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListHuge"
+        [templateCode]="snippetSizeHuge">
+
+      <ng-template #sizedListHuge>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="huge">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizedListMassive"
+        [templateCode]="snippetSizeMassive">
+
+      <ng-template #sizedListMassive>
+        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="massive">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Helen</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Christian</div>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Daniel</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>

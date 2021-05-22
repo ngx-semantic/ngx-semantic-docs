@@ -646,24 +646,207 @@ export class ListComponent implements OnInit {
   snippetCelled = `
   <div sui-list suiCelled="true">
     <div suiListItem>
-      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
       <div suiMessageContent>
         <div sui-header suiSize="small">Snickerdoodle</div>
         An excellent companion
       </div>
     </div>
     <div suiListItem>
-      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <img sui-image suiAvatar src="/images/avatar/small/stevie.jpg">
       <div suiMessageContent>
         <div sui-header suiSize="small">Poodle</div>
         A poodle, its pretty basic
       </div>
     </div>
     <div suiListItem>
-      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <img sui-image suiAvatar src="/images/avatar/small/elliot.jpg">
       <div suiMessageContent>
         <div sui-header suiSize="small">Paulo</div>
         He's also a dog
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetCelled1 = `
+  <div sui-list suiOrdered="true" suiCelled="true">
+    <div suiListItem>Cats</div>
+    <div suiListItem>Horses</div>
+    <div suiListItem>Dogs
+      <div sui-list>
+        <div suiListItem>Labradoodles</div>
+        <div suiListItem>Shiba Inu</div>
+        <div suiListItem>Mastiff</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetCelled2 = `
+  <div sui-list suiCelled="true" suiHorizontal="true">
+    <div suiListItem>About Us</div>
+    <div suiListItem>Contact</div>
+    <div suiListItem>Support</div>
+  </div>
+  `;
+
+  snippetSizeMini = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="mini">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeTiny = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="tiny">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeSmall = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="small">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeLarge = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="large">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeBig = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="big">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeHuge = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="huge">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetSizeMassive = `
+  <div sui-list suiHorizontal="true" suiDivided="true" suiSize="massive">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
       </div>
     </div>
   </div>
