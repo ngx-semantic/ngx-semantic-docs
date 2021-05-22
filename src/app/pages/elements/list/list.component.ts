@@ -476,6 +476,52 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetSelection = `
+  <div sui-list suiSelection="true" suiAlignment="middle aligned">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetAnimated = `
+  <div sui-list suiSelection="true" suiAlignment="middle aligned" suiAnimated="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/helen.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Helen</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/christian.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Christian</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Daniel</div>
+      </div>
+    </div>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {
