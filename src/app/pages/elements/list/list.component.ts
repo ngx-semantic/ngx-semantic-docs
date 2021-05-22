@@ -571,6 +571,29 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetRelaxed3 = `
+  <div sui-list suiRelaxed="true" suiHorizontal="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Daniel Louise</a>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Stevie Feliciano</a>
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Elliot Fu</a>
+      </div>
+    </div>
+  </div>
+  `;
+
   snippetRelaxed2 = `
   <div sui-list suiRelaxed="true" suiRelaxation="very relaxed">
     <div suiListItem>
