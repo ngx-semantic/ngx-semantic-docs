@@ -13,7 +13,8 @@
 
       <ng-template #basic>
         <sui-search
-            suiPlaceholder="Common passwords...">
+            suiPlaceholder="Common passwords..."
+            [suiOptionsLookup]="searchText">
         </sui-search>
       </ng-template>
     </doc-code-sample>
@@ -24,7 +25,8 @@
       <ng-template #basicAlt>
         <sui-search
             suiShowIcon
-            suiPlaceholder="Common passwords...">
+            suiPlaceholder="Common passwords..."
+            [suiOptionsLookup]="searchText">
         </sui-search>
       </ng-template>
     </doc-code-sample>

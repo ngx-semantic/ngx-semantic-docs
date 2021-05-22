@@ -25,4 +25,11 @@ export class SearchComponent extends BasePageComponent {
     super(highlighter);
     title.setTitle('Search | Ngx Semantic');
   }
+
+  public async searchText(query): Promise<Array<any>> {
+    const queryUrl = `https://api.semantic-ui.com/search/${query}`;
+    const response = await fetch(queryUrl);
+    const json = await response.json();
+    return json.results;
+  }
 }
