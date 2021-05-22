@@ -643,6 +643,32 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetCelled = `
+  <div sui-list suiCelled="true">
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Snickerdoodle</div>
+        An excellent companion
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Poodle</div>
+        A poodle, its pretty basic
+      </div>
+    </div>
+    <div suiListItem>
+      <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+      <div suiMessageContent>
+        <div sui-header suiSize="small">Paulo</div>
+        He's also a dog
+      </div>
+    </div>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {

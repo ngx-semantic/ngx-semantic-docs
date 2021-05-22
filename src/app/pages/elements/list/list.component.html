@@ -886,6 +886,41 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="celledList"
+        [templateCode]="snippetCelled">
+      <h3 sui-header>Celled</h3>
+      <p>
+        A list can divide its items into cells
+      </p>
+
+      <ng-template #celledList>
+        <div sui-list suiCelled="true">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Snickerdoodle</div>
+              An excellent companion
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Poodle</div>
+              A poodle, its pretty basic
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+            <div suiMessageContent>
+              <div sui-header suiSize="small">Paulo</div>
+              He's also a dog
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>
