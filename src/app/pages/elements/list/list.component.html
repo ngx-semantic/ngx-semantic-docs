@@ -854,6 +854,38 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="dividedList"
+        [templateCode]="snippetDivided">
+      <h3 sui-header>Divided</h3>
+      <p>
+        A list can show divisions between content
+      </p>
+
+      <ng-template #dividedList>
+        <div sui-list suiDivided="true" suiAlignment="middle aligned">
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
+            <div suiMessageContent>
+              <a sui-header suiSize="small">Daniel Louise</a>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+            <div suiMessageContent>
+              <a sui-header suiSize="small">Stevie Feliciano</a>
+            </div>
+          </div>
+          <div suiListItem>
+            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+            <div suiMessageContent>
+              <a sui-header suiSize="small">Elliot Fu</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>
