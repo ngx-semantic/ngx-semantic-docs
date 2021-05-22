@@ -631,34 +631,33 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="horizontalList"
-        [templateCode]="snippetHorizontal">
-      <h3 sui-header>Horizontal</h3>
+        [content]="invertedList"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
       <p>
-        A list can be formatted to have items appear horizontally
+        A list can be inverted to appear on a dark background
       </p>
 
-      <ng-template #horizontalList>
-        <div sui-list suiHorizontal="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Tom</div>
-              Top Contributor
+      <ng-template #invertedList>
+        <div sui-segment suiInverted="true">
+          <div sui-list suiListRelaxation="relaxed" suiDivided="true" suiInverted="true">
+            <div suiListItem>
+              <div suiMessageContent>
+                <div sui-header suiSize="small">Snickerdoodle</div>
+                An excellent companion
+              </div>
             </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian Rocha</div>
-              Admin
+            <div suiListItem>
+              <div suiMessageContent>
+                <div sui-header suiSize="small">Poodle</div>
+                A poodle, its pretty basic
+              </div>
             </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/matt.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Matt</div>
-              Top Rated User
+            <div suiListItem>
+              <div suiMessageContent>
+                <div sui-header suiSize="small">Paulo</div>
+                He's also a dog
+              </div>
             </div>
           </div>
         </div>

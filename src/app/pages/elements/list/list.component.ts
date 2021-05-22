@@ -451,6 +451,31 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetInverted = `
+  <div sui-segment suiInverted="true">
+    <div sui-list suiListRelaxation="relaxed" suiDivided="true" suiInverted="true">
+      <div suiListItem>
+        <div suiMessageContent>
+          <div sui-header suiSize="small">Snickerdoodle</div>
+          An excellent companion
+        </div>
+      </div>
+      <div suiListItem>
+        <div suiMessageContent>
+          <div sui-header suiSize="small">Poodle</div>
+          A poodle, its pretty basic
+        </div>
+      </div>
+      <div suiListItem>
+        <div suiMessageContent>
+          <div sui-header suiSize="small">Paulo</div>
+          He's also a dog
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {
