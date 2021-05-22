@@ -23,25 +23,25 @@ export class ListComponent implements OnInit {
   <div  sui-list>
     <div suiListItem>
       <i sui-icon suiIconType="users"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         Semantic UI
       </div>
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="marker"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         New York, NY
       </div>
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="mail"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
       </div>
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="linkify"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <a href="http://www.semantic-ui.com">semantic-ui.com</a>
       </div>
     </div>
@@ -51,21 +51,21 @@ export class ListComponent implements OnInit {
   <div sui-list suiDivided="true" SuiListRelaxation="relaxed">
     <div suiListItem>
       <i sui-icon suiIconType="github" suiSize="large"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Semantic-Org/Semantic-UI</a>
         <div>Updated 10 mins ago</div>
       </div>
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="github" suiSize="large"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Docs</a>
         <div>Updated 22 mins ago</div>
       </div>
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="github" suiSize="large"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Meteor</a>
         <div>Updated 34 mins ago</div>
       </div>
@@ -76,33 +76,33 @@ export class ListComponent implements OnInit {
   <div sui-list>
     <div suiListItem>
       <i sui-icon suiIconType="folder"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <div sui-header suiSize="tiny">src</div>
         <div>Source files for project</div>
         <div sui-list>
           <div suiListItem>
             <i sui-icon suiIconType="folder"></i>
-            <div suiListContent>
+            <div suiMessageContent>
               <div sui-header suiSize="tiny">site</div>
               <div>Your site's theme</div>
             </div>
           </div>
           <div suiListItem>
             <i sui-icon suiIconType="folder"></i>
-            <div suiListContent>
+            <div suiMessageContent>
               <div sui-header suiSize="tiny">themes</div>
               <div>Packaged theme files</div>
               <div sui-list>
                 <div suiListItem>
                   <i sui-icon suiIconType="folder"></i>
-                  <div suiListContent>
+                  <div suiMessageContent>
                     <div sui-header suiSize="tiny">default</div>
                     <div>Default packaged theme</div>
                   </div>
                 </div>
                 <div suiListItem>
                   <i sui-icon suiIconType="folder"></i>
-                  <div suiListContent>
+                  <div suiMessageContent>
                     <div sui-header suiSize="tiny">my_theme</div>
                     <div>Packaged themes are also available in this folder</div>
                   </div>
@@ -112,7 +112,7 @@ export class ListComponent implements OnInit {
           </div>
           <div suiListItem>
             <i sui-icon suiIconType="file"></i>
-            <div suiListContent>
+            <div suiMessageContent>
               <div sui-header suiSize="tiny">theme.config</div>
               <div>Config file for setting packaged themes</div>
             </div>
@@ -122,13 +122,13 @@ export class ListComponent implements OnInit {
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="folder"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <div sui-header suiSize="tiny">dist</div>
         <div>Compiled CSS and JS files</div>
         <div sui-list>
           <div suiListItem>
             <i sui-icon suiIconType="folder"></i>
-            <div suiListContent>
+            <div suiMessageContent>
               <div sui-header suiSize="tiny">components</div>
               <div>Individual component CSS and JS</div>
             </div>
@@ -138,7 +138,7 @@ export class ListComponent implements OnInit {
     </div>
     <div suiListItem>
       <i sui-icon suiIconType="file"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <div sui-header suiSize="tiny">semantic.json</div>
         <div>Contains build settings for gulp</div>
       </div>
@@ -255,14 +255,14 @@ export class ListComponent implements OnInit {
   <div sui-list>
     <a suiListItem>
       <i sui-icon suiIconType="help"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <div sui-header suiSize="small">Floated Icon</div>
         <div>This text will always have a left margin to make sure it sits alongside your icon</div>
       </div>
     </a>
     <a suiListItem>
       <i sui-icon suiIconType="right triangle"></i>
-      <div suiListContent>
+      <div suiMessageContent>
         <div sui-header suiSize="small">Icon Alignment</div>
         <div>Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
       </div>
@@ -277,28 +277,28 @@ export class ListComponent implements OnInit {
   <div sui-list>
     <div suiListItem>
       <img sui-image suiAvatar src="/images/avatar2/small/rachel.png">
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Rachel</a>
         <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
       </div>
     </div>
     <div suiListItem>
       <img sui-image suiAvatar src="/images/avatar2/small/lindsay.png">
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Lindsay</a>
         <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
       </div>
     </div>
     <div suiListItem>
       <img sui-image suiAvatar src="/images/avatar2/small/matthew.png">
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Matthew</a>
         <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
       </div>
     </div>
     <div suiListItem>
       <img sui-image suiAvatar src="/images/avatar/small/jenny.jpg">
-      <div suiListContent>
+      <div suiMessageContent>
         <a sui-header suiSize="small">Jenny Hess</a>
         <div>Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
       </div>
@@ -348,6 +348,39 @@ export class ListComponent implements OnInit {
     <div suiListItem>
       <div sui-header suiSize="small">San Francisco</div>
       What a lovely city
+    </div>
+  </div>
+  `;
+
+  snippetDescription = `
+  <div sui-list>
+    <div suiListItem>
+      <i sui-icon suiIconType="map marker"></i>
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Krolewskie Jadlo</a>
+        <div>An excellent polish restaurant, quick delivery and hearty, filling meals.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <i sui-icon suiIconType="map marker"></i>
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Xian Famous Foods</a>
+        <div>A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles and lamb burgers.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <i sui-icon suiIconType="map marker"></i>
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Sapporo Haru</a>
+        <div>Greenpoint's best choice for quick and delicious sushi.</div>
+      </div>
+    </div>
+    <div suiListItem>
+      <i sui-icon suiIconType="map marker"></i>
+      <div suiMessageContent>
+        <a sui-header suiSize="small">Enid's</a>
+        <div>At night a bar, during the day a delicious brunch spot.</div>
+      </div>
     </div>
   </div>
   `;
