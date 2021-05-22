@@ -432,6 +432,74 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="linkList1"
+        [templateCode]="snippetLink1">
+      <h3 sui-header>Link</h3>
+      <p>
+        A list can contain links
+      </p>
+
+      <ng-template #linkList1>
+        <div sui-list>
+          <a suiListItem>What is a FAQ?</a>
+          <a suiListItem>Who is our user?</a>
+          <a suiListItem>Where is our office located?</a>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="linkList2"
+        [templateCode]="snippetLink2">
+      <ng-template #linkList2>
+        <div sui-list>
+          <div suiListItem>
+            <a sui-header suiSize="small">Header</a>
+            <div>
+              Click a link in our <a>description</a>.
+            </div>
+          </div>
+          <div suiListItem>
+            <a sui-header suiSize="small">Learn More</a>
+            <div>
+              Learn more about this site on <a>our FAQ page</a>.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="headerList"
+        [templateCode]="snippetHeader">
+      <h3 sui-header>Header</h3>
+      <p>
+        A list item can contain a header
+      </p>
+
+      <ng-template #headerList>
+        <div sui-list>
+          <div suiListItem>
+            <div sui-header suiSize="small">New York City</div>
+            A lovely city
+          </div>
+          <div suiListItem>
+            <div sui-header suiSize="small">Chicago</div>
+            Also quite a lovely city
+          </div>
+          <div suiListItem>
+            <div sui-header suiSize="small">Los Angeles</div>
+            Sometimes can be a lovely city
+          </div>
+          <div suiListItem>
+            <div sui-header suiSize="small">San Francisco</div>
+            What a lovely city
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
 </doc-page>

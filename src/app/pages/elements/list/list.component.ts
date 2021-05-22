@@ -306,6 +306,52 @@ export class ListComponent implements OnInit {
   </div>
   `;
 
+  snippetLink1 = `
+  <div sui-list>
+    <a suiListItem>What is a FAQ?</a>
+    <a suiListItem>Who is our user?</a>
+    <a suiListItem>Where is our office located?</a>
+  </div>
+  `;
+
+  snippetLink2 = `
+  <div sui-list>
+    <div suiListItem>
+      <a sui-header suiSize="small">Header</a>
+      <div>
+        Click a link in our <a>description</a>.
+      </div>
+    </div>
+    <div suiListItem>
+      <a sui-header suiSize="small">Learn More</a>
+      <div>
+        Learn more about this site on <a>our FAQ page</a>.
+      </div>
+    </div>
+  </div>
+  `;
+
+  snippetHeader = `
+  <div sui-list>
+    <div suiListItem>
+      <div sui-header suiSize="small">New York City</div>
+      A lovely city
+    </div>
+    <div suiListItem>
+      <div sui-header suiSize="small">Chicago</div>
+      Also quite a lovely city
+    </div>
+    <div suiListItem>
+      <div sui-header suiSize="small">Los Angeles</div>
+      Sometimes can be a lovely city
+    </div>
+    <div suiListItem>
+      <div sui-header suiSize="small">San Francisco</div>
+      What a lovely city
+    </div>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit(): void {
