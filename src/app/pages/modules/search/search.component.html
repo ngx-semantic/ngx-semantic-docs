@@ -30,6 +30,21 @@
         </sui-search>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="category"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Category</h3>
+      <p>A search can display results from remote content ordered by categories</p>
+
+      <ng-template #category>
+        <sui-search
+            suiShowIcon
+            suiPlaceholder="Common animals..."
+            [suiOptionsLookup]="searchCategories">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

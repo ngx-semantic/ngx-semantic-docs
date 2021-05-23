@@ -32,4 +32,11 @@ export class SearchComponent extends BasePageComponent {
     const json = await response.json();
     return json.results;
   }
+
+  public async searchCategories(query): Promise<Array<any>> {
+    const queryUrl = `https://api.semantic-ui.com/search/category/${query}`;
+    const response = await fetch(queryUrl);
+    const json = await response.json();
+    return json.results;
+  }
 }
