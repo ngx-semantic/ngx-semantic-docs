@@ -34,6 +34,21 @@ export class SearchComponent extends BasePageComponent {
     { title: 'Bahrain' },
     { title: 'Burundi' }
   ];
+  categoryContent = [
+    { category: 'South America', title: 'Brazil' },
+    { category: 'South America', title: 'Peru' },
+    { category: 'North America', title: 'Canada' },
+    { category: 'Asia', title: 'South Korea' },
+    { category: 'Asia', title: 'Japan' },
+    { category: 'Asia', title: 'China' },
+    { category: 'Europe', title: 'Denmark' },
+    { category: 'Europe', title: 'England' },
+    { category: 'Europe', title: 'France' },
+    { category: 'Europe', title: 'Germany' },
+    { category: 'Africa', title: 'Ethiopia' },
+    { category: 'Africa', title: 'Nigeria' },
+    { category: 'Africa', title: 'Zimbabwe' }
+  ];
 
   snippetBasic = `
    <sui-search
@@ -85,6 +100,30 @@ export class SearchComponent extends BasePageComponent {
     { title: 'Bulgaria' },
     { title: 'Bahrain' },
     { title: 'Burundi' }
+  ];`;
+
+  snippetLocalCategorySearch = `
+  <sui-search
+      suiShowIcon
+      suiPlaceholder="Search countries..."
+      [suiOptions]="categoryContent">
+  </sui-search>`;
+
+  snippetLocalCategorySearchTs = `
+  categoryContent = [
+    { category: 'South America', title: 'Brazil' },
+    { category: 'South America', title: 'Peru' },
+    { category: 'North America', title: 'Canada' },
+    { category: 'Asia', title: 'South Korea' },
+    { category: 'Asia', title: 'Japan' },
+    { category: 'Asia', title: 'China' },
+    { category: 'Europe', title: 'Denmark' },
+    { category: 'Europe', title: 'England' },
+    { category: 'Europe', title: 'France' },
+    { category: 'Europe', title: 'Germany' },
+    { category: 'Africa', title: 'Ethiopia' },
+    { category: 'Africa', title: 'Nigeria' },
+    { category: 'Africa', title: 'Zimbabwe' }
   ];`;
 
   constructor(title: Title, highlighter: HighlightService) {

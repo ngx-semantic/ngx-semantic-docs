@@ -61,6 +61,22 @@
         </sui-search>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="localCategorySearch"
+        [templateCode]="snippetLocalCategorySearch"
+        [componentCode]="snippetLocalCategorySearchTs">
+      <h3 sui-header>Local Category Search</h3>
+      <p>A search can look for category results inside a static local source.</p>
+
+      <ng-template #localCategorySearch>
+        <sui-search
+            suiShowIcon
+            suiPlaceholder="Search countries..."
+            [suiOptions]="categoryContent">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
