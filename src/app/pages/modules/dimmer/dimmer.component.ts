@@ -12,9 +12,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   `]
 })
 export class DimmerComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   simpleDimmerVisible = false;
   contentDimmerVisible = false
   pageDimmerVisible = false;

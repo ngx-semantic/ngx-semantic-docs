@@ -33,7 +33,7 @@
 
     <doc-code-sample
         [content]="category"
-        [templateCode]="snippetBasic">
+        [templateCode]="snippetCategory">
       <h3 sui-header>Category</h3>
       <p>A search can display results from remote content ordered by categories</p>
 
@@ -42,6 +42,22 @@
             suiShowIcon
             suiPlaceholder="Common animals..."
             [suiOptionsLookup]="searchCategories">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="localSearch"
+        [templateCode]="snippetLocalSearch"
+        [componentCode]="snippetLocalSearchTs">
+      <h3 sui-header>Local Search</h3>
+      <p>A search can look for results inside a static local source.</p>
+
+      <ng-template #localSearch>
+        <sui-search
+            suiShowIcon
+            suiPlaceholder="Search countries..."
+            [suiOptions]="countries">
         </sui-search>
       </ng-template>
     </doc-code-sample>
