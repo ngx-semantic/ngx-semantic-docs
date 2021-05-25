@@ -337,28 +337,17 @@
         <th>Property</th>
         <th>Description</th>
         <th>Type</th>
-        <th>Default</th>
       </tr>
       </thead>
       <tbody>
       <tr>
-        <td>suiSize</td>
-        <td>Set the rating size. Allowed values could be
-          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
-              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
-              sui-label>'massive'</span>
-          | <span sui-label>null</span>
+        <td>suiResultSelected</td>
+        <td>Fired when a result is selected.
         </td>
         <td>
           <div sui-label
                suiColour="teal">
-            string
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            null
+            &#123;title: string, category: string (optional), description: string (optional)&#125;
           </div>
         </td>
       </tr>
