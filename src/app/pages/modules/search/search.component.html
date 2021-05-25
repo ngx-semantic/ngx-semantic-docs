@@ -154,9 +154,180 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-tabs</h2>
+        suiDividing>sui-search</h2>
 
     <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiAlignment</td>
+        <td>Set the search result alignment. Allowed values could be
+          <span sui-label>right</span> |  <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPlaceholder</td>
+        <td>Set the search input placeholder text.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSearchDelay</td>
+        <td>Set the delay (in milliseconds) before a search is started.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            200
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiShowIcon</td>
+        <td>Determine whether or not to show the search icon
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determine whether or not to disable the search functionality
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>Determine whether or not the search results fill the width of their container
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLoading</td>
+        <td>Determine whether or not to manually override the loading icon display
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiOptions</td>
+        <td>The options available to search. Cannot be used in conjunction with <code>suiOptionsLookup</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            Array&lt;&#123;title: string, category: string (optional), description: string (optional)&#125;&gt;
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiOptionsLookup</td>
+        <td>A function to asynchronously search a remote resource with the provided query. Cannot be used in conjunction with <code>suiOptions</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            (query: string) => Promise&lt;Array&lt;&#123;title: string, category: string (optional), description: string (optional)&#125;&gt;&gt;
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
 
     <table sui-table
            suiCelled
