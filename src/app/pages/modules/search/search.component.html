@@ -77,6 +77,26 @@
         </sui-search>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="loading"
+        [templateCode]="snippetLoading">
+      <h3 sui-header>Loading</h3>
+      <p>A search can show a loading indicator</p>
+
+      <ng-template #loading>
+        <sui-search
+            suiLoading
+            suiPlaceholder="Search..."
+            [suiOptions]="blankOptions">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

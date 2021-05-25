@@ -8,6 +8,7 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
   templateUrl: './search.component.html'
 })
 export class SearchComponent extends BasePageComponent {
+  blankOptions = [];
   countries = [
     { title: 'Andorra' },
     { title: 'United Arab Emirates' },
@@ -126,6 +127,12 @@ export class SearchComponent extends BasePageComponent {
     { category: 'Africa', title: 'Zimbabwe' }
   ];`;
 
+  snippetLoading = `
+  <sui-search
+      suiLoading
+      suiPlaceholder="Search...">
+  </sui-search>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Search | Ngx Semantic');
@@ -133,15 +140,21 @@ export class SearchComponent extends BasePageComponent {
 
   public async searchText(query): Promise<Array<any>> {
     const queryUrl = `https://api.semantic-ui.com/search/${query}`;
-    const response = await fetch(queryUrl);
-    const json = await response.json();
-    return json.results;
+    return this.callUrl(queryUrl);
   }
 
   public async searchCategories(query): Promise<Array<any>> {
     const queryUrl = `https://api.semantic-ui.com/search/category/${query}`;
-    const response = await fetch(queryUrl);
-    const json = await response.json();
-    return json.results;
+    return this.callUrl(queryUrl);
+  }
+
+  private async callUrl(url) {
+    try {
+      const response = await fetch(url);
+      const json = await response.json();
+      return json.results;
+    } catch (err) {
+      return [];
+    }
   }
 }
