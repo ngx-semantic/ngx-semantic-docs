@@ -133,6 +133,13 @@ export class SearchComponent extends BasePageComponent {
       suiPlaceholder="Search...">
   </sui-search>`;
 
+  snippetDisabled = `
+  <sui-search
+      disabled
+      suiShowIcon
+      suiPlaceholder="Search animals...">
+  </sui-search>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Search | Ngx Semantic');

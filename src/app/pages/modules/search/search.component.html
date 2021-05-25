@@ -97,6 +97,27 @@
         </sui-search>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A search can show it is currently unable to be interacted with</p>
+
+      <ng-template #disabled>
+        <sui-search
+            disabled
+            suiShowIcon
+            suiPlaceholder="Search animals..."
+            [suiOptions]="blankOptions">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
