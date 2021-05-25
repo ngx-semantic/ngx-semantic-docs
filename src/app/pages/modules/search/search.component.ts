@@ -142,9 +142,15 @@ export class SearchComponent extends BasePageComponent {
 
   snippetFluid = `
   <sui-search
-      disabled
       suiFluid
       suiShowIcon
+      suiPlaceholder="Search animals...">
+  </sui-search>`;
+
+  snippetAligned = `
+  <sui-search
+      suiShowIcon
+      suiAlignment="right"
       suiPlaceholder="Search animals...">
   </sui-search>`;
 
@@ -155,15 +161,15 @@ export class SearchComponent extends BasePageComponent {
 
   public async searchText(query): Promise<Array<any>> {
     const queryUrl = `https://api.semantic-ui.com/search/${query}`;
-    return this.callUrl(queryUrl);
+    return SearchComponent.callUrl(queryUrl);
   }
 
   public async searchCategories(query): Promise<Array<any>> {
     const queryUrl = `https://api.semantic-ui.com/search/category/${query}`;
-    return this.callUrl(queryUrl);
+    return SearchComponent.callUrl(queryUrl);
   }
 
-  private async callUrl(url) {
+  private static async callUrl(url) {
     try {
       const response = await fetch(url);
       const json = await response.json();

@@ -127,9 +127,24 @@
 
       <ng-template #fluid>
         <sui-search
-            disabled
             suiFluid
             suiShowIcon
+            suiPlaceholder="Search animals..."
+            [suiOptionsLookup]="searchCategories">
+        </sui-search>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="aligned"
+        [templateCode]="snippetAligned">
+      <h3 sui-header>Aligned</h3>
+      <p>A search can have its results aligned to its left or right container edge.</p>
+
+      <ng-template #aligned>
+        <sui-search
+            suiShowIcon
+            suiAlignment="right"
             suiPlaceholder="Search animals..."
             [suiOptionsLookup]="searchCategories">
         </sui-search>
