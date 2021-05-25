@@ -12,9 +12,6 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   `]
 })
 export class DimmerComponent implements AfterViewChecked {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   simpleDimmerVisible = false;
   contentDimmerVisible = false
   pageDimmerVisible = false;
@@ -147,17 +144,5 @@ export class DimmerComponent implements AfterViewChecked {
 
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
-  }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
   }
 }

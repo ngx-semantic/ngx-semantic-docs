@@ -24,13 +24,16 @@ import {SuiDimmerModule} from "ngx-semantic/modules/dimmer";
 import {SuiButtonModule} from "ngx-semantic/elements/button";
 import {SuiSegmentModule} from "ngx-semantic/elements/segment";
 import {SuiIconModule} from "ngx-semantic/elements/icon";
+import {SearchComponent} from './search/search.component';
+import {SuiSearchModule} from 'ngx-semantic/modules/search';
 
 @NgModule({
   declarations: [
     TabComponent,
     EmbedComponent,
     RatingComponent,
-    DimmerComponent
+    DimmerComponent,
+    SearchComponent
   ],
   imports: [
     SharedModule,
@@ -47,7 +50,8 @@ import {SuiIconModule} from "ngx-semantic/elements/icon";
     FormsModule,
     SuiDimmerModule,
     SuiSegmentModule,
-    SuiIconModule
+    SuiIconModule,
+    SuiSearchModule
   ]
 })
 export class ModulesModule {

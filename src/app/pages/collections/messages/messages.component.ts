@@ -172,16 +172,4 @@ export class MessagesComponent implements AfterViewChecked {
   ngAfterViewChecked() {
     this.highlighter.highlightAll();
   }
-
-  tabChanged(payload: string): void {
-    if (payload === 'api') {
-      this.isApiActive = true;
-      this.isDefinitionsActive = false;
-    }
-
-    if (payload === 'definitions') {
-      this.isApiActive = false;
-      this.isDefinitionsActive = true;
-    }
-  }
 }

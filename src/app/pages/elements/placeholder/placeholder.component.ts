@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
+import {Title} from '@angular/platform-browser';
+import {HighlightService} from '../../../shared/services/highlight.service';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
