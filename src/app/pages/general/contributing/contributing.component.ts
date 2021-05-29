@@ -1,20 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'doc-contributing',
-  template: `
-    <p>
-      contributing works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './contributing.component.html'
 })
-export class ContributingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ContributingComponent {
 }
