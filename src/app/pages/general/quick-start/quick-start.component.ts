@@ -1,5 +1,5 @@
-import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import {AfterViewChecked, Component} from '@angular/core';
 import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
