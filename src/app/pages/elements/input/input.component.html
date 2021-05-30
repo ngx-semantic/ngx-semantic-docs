@@ -619,7 +619,7 @@
 
   <div *docPageContent="'api'">
     <h2 sui-header
-        suiDividing>sui-placeholder</h2>
+        suiDividing>sui-input</h2>
 
     <h4 sui-header>Properties</h4>
 
@@ -638,7 +638,7 @@
       <tr>
         <td>suiFluid</td>
         <td>
-          Determine if the placeholder should fill the width of it's parent container
+          Determine if the input should fill the width of it's parent container
         </td>
         <td>
           <div sui-label
@@ -654,9 +654,9 @@
         </td>
       </tr>
       <tr>
-        <td>suiActive</td>
+        <td>suiTransparent</td>
         <td>
-          Determine if the placeholder has the active attribute
+          Determine if the input has a background or not
         </td>
         <td>
           <div sui-label
@@ -674,83 +674,7 @@
       <tr>
         <td>suiInverted</td>
         <td>
-          Determine if the placeholder has its colours inverted
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>suiPlaceholderHeader</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>suiImage</td>
-        <td>
-          Determine if the placeholder header is of image type
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>suiPlaceholderImage</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>suiSquare</td>
-        <td>
-          Determine if the image should have a 1:1 aspect ratio
+          Determine if the input has its colours inverted
         </td>
         <td>
           <div sui-label
@@ -766,9 +690,9 @@
         </td>
       </tr>
       <tr>
-        <td>suiRectangular</td>
+        <td>suiFocus</td>
         <td>
-          Determine if the image should have a 4:3 aspect ratio
+          Determine if the input is currently being interacted with
         </td>
         <td>
           <div sui-label
@@ -783,33 +707,121 @@
           </div>
         </td>
       </tr>
-      </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>suiPlaceholderLine</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
       <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>suiLength</td>
+        <td>suiLoading</td>
         <td>
-          Determine how long the line should be. Allowed values could be
-          <span sui-label>'full'</span> | <span sui-label>'very long'</span> |
-          <span sui-label>'long'</span> | <span sui-label>'medium'</span> |
-          <span sui-label>'short'</span> | <span sui-label>'very short'</span> | <span sui-label>null</span>
+          Determine if the input is currently loading data
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiError</td>
+        <td>
+          Determine if data in the input element contains errors
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determine if the input is disabled or not
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>Determine the input size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAction</td>
+        <td>Determine the formatting of the action element(s) on an input. Allowed values could be
+          <span sui-label>'action'</span> | <span sui-label>'left action'</span> | <span sui-label>'right action'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLabeled</td>
+        <td>Determine the formatting of an input label. Allowed values could be
+          <span sui-label>'labeled'</span> | <span sui-label>'left labeled'</span> | <span sui-label>'right labeled'</span> | <span sui-label>'corner labeled'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIcon</td>
+        <td>Determine the formatting of an input icon. Allowed values could be
+          <span sui-label>'icon'</span> | <span sui-label>'left icon'</span> | <span sui-label>null</span>
         </td>
         <td>
           <div sui-label
@@ -825,33 +837,6 @@
         </td>
       </tr>
       </tbody>
-    </table>
-
-    <h2 sui-header
-        suiDividing>suiPlaceholderParagraph</h2>
-
-    <h4 sui-header>Properties</h4>
-
-    <table sui-table
-           suiCelled
-           suiDefinition>
-      <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
-      </tr>
-      </thead>
-      <tbody>
-      </tbody>
-      <tfoot class="full-width">
-      <tr>
-        <th colspan="4">
-          <div style="text-align: center">No properties for this directive</div>
-        </th>
-      </tr>
-      </tfoot>
     </table>
   </div>
 </doc-page>
