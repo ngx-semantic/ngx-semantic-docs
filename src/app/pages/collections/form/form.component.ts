@@ -190,6 +190,40 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetRadio = `
+  <div sui-form>
+    <div suiFormFields>
+      <label for="fruit">Select your favorite fruit:</label>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Apples</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Oranges</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Pears</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
+      </div>
+    </div>
+    <div suiFormFields suiGrouped>
+      <label for="fruit">Select your second favorite fruit:</label>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Apples</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Oranges</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Pears</sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');

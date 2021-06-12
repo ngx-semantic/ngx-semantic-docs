@@ -250,6 +250,48 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="radio"
+        [templateCode]="snippetRadio">
+      <h3 sui-header>Radio Checkbox</h3>
+      <p>A form can contain a <a routerLink="/modules/checkbox">radio checkbox</a></p>
+
+      <ng-template #radio>
+        <div sui-form>
+          <div suiFormFields>
+            <label for="fruit">Select your favorite fruit:</label>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Apples</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Oranges</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Pears</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
+            </div>
+          </div>
+          <div suiFormFields suiGrouped>
+            <label for="fruit">Select your second favorite fruit:</label>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Apples</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Oranges</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Pears</sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
