@@ -321,6 +321,22 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="multipleSelect"
+        [templateCode]="snippetMultipleSelect">
+      <h3 sui-header>Multiple Select</h3>
+      <p>A multiple select is used to include several choices with one form field</p>
+
+      <ng-template #multipleSelect>
+        <div sui-form>
+          <div suiFormField>
+            <label>Country</label>
+            <sui-select suiMultiple suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

@@ -9,7 +9,7 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
 })
 export class FormComponent extends BasePageComponent {
   states = [{text: 'Alabama', value: 'al'}];
-  countries = [{text: 'Albania', value: 'al', flag: 'al'}];
+  countries = [{text: 'Albania', value: 'al', flag: 'al'},{text: 'Nigeria', value: 'ng', flag: 'ng'}];
   months = [{text: 'January', value: 'jan'}];
   cards = [{text: 'Visa', value: 'visa'}];
   contacts = [{text: 'Justen Kitsune', image: { avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg'}}];
@@ -238,6 +238,14 @@ export class FormComponent extends BasePageComponent {
     <div suiFormField>
       <label>Country</label>
       <sui-select suiSearch suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
+    </div>
+  </div>`;
+
+  snippetMultipleSelect = `
+  <div sui-form>
+    <div suiFormField>
+      <label>Country</label>
+      <sui-select suiMultiple suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
     </div>
   </div>`;
 
