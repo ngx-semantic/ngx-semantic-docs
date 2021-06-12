@@ -130,6 +130,24 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetFieldsWidth = `
+  <div sui-form>
+    <div suiFormFields suiWidth="three">
+      <div suiFormField>
+        <label>First name</label>
+        <input type="text" placeholder="First Name">
+      </div>
+      <div suiFormField>
+        <label>Middle name</label>
+        <input type="text" placeholder="Middle Name">
+      </div>
+      <div suiFormField>
+        <label>Last name</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
