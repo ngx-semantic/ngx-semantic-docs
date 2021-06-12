@@ -176,6 +176,20 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetCheckbox = `
+  <div sui-form>
+    <div suiFormField suiInline>
+      <sui-checkbox>Checkbox</sui-checkbox>
+    </div>
+    <div suiFormField suiInline>
+      <sui-checkbox suiType="slider">Slider</sui-checkbox>
+      <label></label>
+    </div>
+    <div suiFormField suiInline>
+      <sui-checkbox suiType="toggle">Toggle</sui-checkbox>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
