@@ -179,6 +179,27 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fieldsInline"
+        [templateCode]="snippetFieldsInline">
+      <ng-template #fieldsInline>
+        <div sui-form>
+          <div suiFormFields suiInline>
+            <div suiFormField suiWidth="eight">
+              <label>Name</label>
+              <input type="text" placeholder="First Name">
+            </div>
+            <div suiFormField suiWidth="three">
+              <input type="text" placeholder="Middle Name">
+            </div>
+            <div suiFormField suiWidth="five">
+              <input type="text" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
