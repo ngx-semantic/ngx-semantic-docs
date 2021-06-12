@@ -23,6 +23,8 @@ import {SuiTableModule} from 'ngx-semantic/collections/table';
 import {SuiLabelModule} from 'ngx-semantic/elements/label';
 import {SuiCheckboxModule} from 'ngx-semantic/modules/checkbox';
 import {SuiButtonModule} from 'ngx-semantic/elements/button';
+import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
+import {SuiSelectModule} from 'ngx-semantic/modules/select';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import {SuiButtonModule} from 'ngx-semantic/elements/button';
     SuiTableModule,
     SuiLabelModule,
     SuiCheckboxModule,
-    SuiButtonModule
+    SuiButtonModule,
+    SuiSegmentModule,
+    SuiSelectModule
   ]
 })
 export class CollectionsModule {
