@@ -1,13 +1,13 @@
 import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import {HighlightService} from '../../../shared/services/highlight.service';
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-reveals',
-  templateUrl: './reveal.component.html',
-  styleUrls: ['./reveal.component.scss']
+  templateUrl: './reveal.component.html'
 })
-export class RevealComponent implements AfterViewChecked {
+export class RevealComponent extends BasePageComponent {
   snippetFade = `
   <div sui-reveal
        suiFade>
@@ -234,11 +234,8 @@ export class RevealComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Reveal | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
