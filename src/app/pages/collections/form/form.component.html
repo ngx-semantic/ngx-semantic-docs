@@ -1,1 +1,33 @@
-form works
+<doc-page
+    header="Form"
+    subHeader="A form displays a set of related user input fields in a structured way">
+  <div *docPageContent="'definition'">
+    <h2 sui-header suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Form</h3>
+      <p>A form</p>
+
+      <ng-template #basic>
+        <form sui-form>
+          <div suiFormField>
+            <label>First Name</label>
+            <input type="text" name="first-name" placeholder="First Name">
+          </div>
+          <div suiFormField>
+            <label>Last Name</label>
+            <input type="text" name="last-name" placeholder="Last Name">
+          </div>
+          <div suiFormField>
+            <sui-checkbox>I agree to the terms and conditions</sui-checkbox>
+          </div>
+          <button sui-button type="submit">Submit</button>
+        </form>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+  <div *docPageContent="'api'">
+  </div>
+</doc-page>
