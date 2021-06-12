@@ -13,6 +13,7 @@ export class FormComponent extends BasePageComponent {
   months = [{text: 'January', value: 'jan'}];
   cards = [{text: 'Visa', value: 'visa'}];
   contacts = [{text: 'Justen Kitsune', image: { avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg'}}];
+  gender = [{text: 'Male'}, {text: 'Female'}];
 
   snippetBasic = `
   <form sui-form>
@@ -221,6 +222,22 @@ export class FormComponent extends BasePageComponent {
       <div suiFormField>
         <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
       </div>
+    </div>
+  </div>`;
+
+  snippetDropdown = `
+  <div sui-form>
+    <div suiFormField>
+      <label>Gender</label>
+      <sui-select suiPlaceholder="Gender" [suiOptions]="gender"></sui-select>
+    </div>
+  </div>`;
+
+  snippetDropdownAlt = `
+  <div sui-form>
+    <div suiFormField>
+      <label>Country</label>
+      <sui-select suiSearch suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
     </div>
   </div>`;
 

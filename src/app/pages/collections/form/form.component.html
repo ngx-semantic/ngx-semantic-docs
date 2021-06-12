@@ -292,6 +292,35 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="dropdown"
+        [templateCode]="snippetDropdown">
+      <h3 sui-header>Dropdown</h3>
+      <p>A form can contain a <a routerLink="/modules/dropdown">dropdown</a></p>
+
+      <ng-template #dropdown>
+        <div sui-form>
+          <div suiFormField>
+            <label>Gender</label>
+            <sui-select suiPlaceholder="Gender" [suiOptions]="gender"></sui-select>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="dropdownAlt"
+        [templateCode]="snippetDropdownAlt">
+      <ng-template #dropdownAlt>
+        <div sui-form>
+          <div suiFormField>
+            <label>Country</label>
+            <sui-select suiSearch suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
