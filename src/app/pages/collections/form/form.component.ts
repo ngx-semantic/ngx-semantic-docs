@@ -104,6 +104,14 @@ export class FormComponent extends BasePageComponent {
     <div sui-button tabindex="0">Submit Order</div>
   </form>`;
 
+  snippetUserInput = `
+  <div sui-form>
+    <div suiFormField>
+      <label>User Input</label>
+      <input type="text">
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
