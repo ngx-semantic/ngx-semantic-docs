@@ -249,6 +249,17 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetHtmlSelect = `
+  <div sui-form>
+    <div suiFormField>
+      <select>
+        <option value="">Gender</option>
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');

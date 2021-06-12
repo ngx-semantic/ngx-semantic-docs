@@ -337,6 +337,25 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="htmlSelect"
+        [templateCode]="snippetHtmlSelect">
+      <h3 sui-header>HTML Select</h3>
+      <p>A multiple select is used to include several choices with one form field</p>
+
+      <ng-template #htmlSelect>
+        <div sui-form>
+          <div suiFormField>
+            <select>
+              <option value="">Gender</option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
