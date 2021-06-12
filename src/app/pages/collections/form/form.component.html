@@ -200,6 +200,30 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="textArea"
+        [templateCode]="snippetTextArea">
+      <h3 sui-header>Text Area</h3>
+      <p>A textarea can be used to allow for extended user input.</p>
+
+      <div sui-message suiState="info">
+        To specify an approximate text area size use the rows attribute.
+      </div>
+
+      <ng-template #textArea>
+        <div sui-form>
+          <div suiFormField>
+            <label>Text</label>
+            <textarea></textarea>
+          </div>
+          <div suiFormField>
+            <label>Short Text</label>
+            <textarea rows="2"></textarea>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
