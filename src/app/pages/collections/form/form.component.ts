@@ -358,6 +358,20 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetReadOnly = `
+  <div sui-form>
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="Read Only" readonly="" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Read Only" readonly="" type="text">
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
