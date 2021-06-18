@@ -271,6 +271,15 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetLoading = `
+  <div sui-form suiLoading>
+    <div suiFormField>
+      <label>E-mail</label>
+      <input type="email" placeholder="joe@schmoe.com">
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');

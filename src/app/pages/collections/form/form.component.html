@@ -260,7 +260,7 @@
       <ng-template #radio>
         <div sui-form>
           <div suiFormFields>
-            <label for="fruit">Select your favorite fruit:</label>
+            <label>Select your favorite fruit:</label>
             <div suiFormField>
               <sui-checkbox suiType="radio">Apples</sui-checkbox>
             </div>
@@ -275,7 +275,7 @@
             </div>
           </div>
           <div suiFormFields suiGrouped>
-            <label for="fruit">Select your second favorite fruit:</label>
+            <label>Select your second favorite fruit:</label>
             <div suiFormField>
               <sui-checkbox suiType="radio">Apples</sui-checkbox>
             </div>
@@ -365,7 +365,8 @@
 
       <div sui-message
            suiState="info">
-        Any <code>info</code>, <code>error</code>, <code>success</code>, or <code>warning</code> message blocks found inside a form are hidden by default.
+        Any <code>info</code>, <code>error</code>, <code>success</code>, or <code>warning</code> message blocks found
+        inside a form are hidden by default.
       </div>
 
       <ng-template #message>
@@ -377,6 +378,27 @@
               <li>Please enter your last name</li>
             </ul>
           </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header suiDividing>State</h2>
+
+    <doc-code-sample
+        [content]="loading"
+        [templateCode]="snippetLoading">
+      <h3 sui-header>Loading</h3>
+      <p>If a form is in loading state, it will automatically show a loading indicator.</p>
+
+      <ng-template #loading>
+        <div sui-form suiLoading>
+          <div suiFormField>
+            <label>E-mail</label>
+            <input type="email" placeholder="joe@schmoe.com">
+          </div>
+          <div sui-button>Submit</div>
         </div>
       </ng-template>
     </doc-code-sample>
