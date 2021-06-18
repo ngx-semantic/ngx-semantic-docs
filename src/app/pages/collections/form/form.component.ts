@@ -344,6 +344,20 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetDisabled = `
+  <div sui-form>
+    <div suiFormFields suiWidth="two">
+      <div suiFormField disabled>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField disabled>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
