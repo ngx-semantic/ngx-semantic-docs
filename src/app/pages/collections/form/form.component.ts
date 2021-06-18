@@ -321,6 +321,29 @@ export class FormComponent extends BasePageComponent {
     <div sui-button>Submit</div>
   </div>`;
 
+  snippetFieldError = `
+  <div sui-form>
+    <div suiFormFields suiWidth="two">
+      <div suiFormField suiError>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div suiFormField suiError>
+      <label>Gender</label>
+      <sui-select suiPlaceholder="Gender" [suiOptions]="gender"></sui-select>
+    </div>
+    <div suiFormField suiError suiInline>
+      <sui-checkbox>
+        I agree to the Terms and Conditions
+      </sui-checkbox>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
