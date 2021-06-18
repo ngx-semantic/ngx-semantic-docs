@@ -5568,10 +5568,10 @@ ngx-clipboard@^14.0.1:
     ngx-window-token ">=4.0.0"
     tslib "^2.0.0"
 
-ngx-semantic@^1.0.0-beta.60:
-  version "1.0.0-beta.60"
-  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.60.tgz#de9081ce2e2c10367240d073225e499a9d95e70e"
-  integrity sha512-dexXTPX+KOJkwCQwl4rYuRCqk3JBXZ/Gh+OX7BXOxOqNiCXdpoQC+c9YfYQb0HbQrybrLxuqifq7oLmRLKi2vQ==
+ngx-semantic@^1.0.0-beta.63:
+  version "1.0.0-beta.63"
+  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-1.0.0-beta.63.tgz#174fa1dd841e9d3d173cf9ddbdb732f2a7a7cd8b"
+  integrity sha512-krdV2evl7JFEPqTIn3HKTtIFIuI3ze5W0BWNueLtnYoPEWYSBQNDjwa+uXxabh7T0Wlkm/gyEMpnZbNkSqvKNA==
   dependencies:
     tslib ">=1.10.0"
 
