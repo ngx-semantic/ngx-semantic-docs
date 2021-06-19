@@ -761,7 +761,7 @@
 
     <doc-code-sample
         [content]="inline"
-        [templateCode]="snippetSizeMini">
+        [templateCode]="snippetInline">
       <h3 sui-header>Inline Field</h3>
       <p>A field can have its label next to instead of above it.</p>
 
@@ -770,6 +770,25 @@
           <div suiFormField suiInline>
             <label>Last name</label>
             <input type="text" placeholder="Full Name">
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="required"
+        [templateCode]="snippetSizeMini">
+      <h3 sui-header>Required</h3>
+      <p>A field can show that input is mandatory</p>
+
+      <ng-template #required>
+        <div sui-form>
+          <div suiFormField suiRequired>
+            <label>Last name</label>
+            <input type="text" placeholder="Full Name">
+          </div>
+          <div suiFormField suiInline suiRequired>
+            <sui-checkbox>I agree to terms and conditions</sui-checkbox>
           </div>
         </div>
       </ng-template>

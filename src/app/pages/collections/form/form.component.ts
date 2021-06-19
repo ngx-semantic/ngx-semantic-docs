@@ -525,6 +525,14 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetInline = `
+  <div sui-form>
+    <div suiFormField suiInline>
+      <label>Last name</label>
+      <input type="text" placeholder="Full Name">
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
