@@ -9,10 +9,10 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
 })
 export class FormComponent extends BasePageComponent {
   states = [{text: 'Alabama', value: 'al'}];
-  countries = [{text: 'Albania', value: 'al', flag: 'al'},{text: 'Nigeria', value: 'ng', flag: 'ng'}];
+  countries = [{text: 'Albania', value: 'al', flag: 'al'}, {text: 'Nigeria', value: 'ng', flag: 'ng'}];
   months = [{text: 'January', value: 'jan'}];
   cards = [{text: 'Visa', value: 'visa'}];
-  contacts = [{text: 'Justen Kitsune', image: { avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg'}}];
+  contacts = [{text: 'Justen Kitsune', image: {avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg'}}];
   gender = [{text: 'Male'}, {text: 'Female'}];
 
   snippetBasic = `
@@ -370,6 +370,186 @@ export class FormComponent extends BasePageComponent {
         <input placeholder="Read Only" readonly="" type="text">
       </div>
     </div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeTiny = `
+  <div sui-form suiSize="tiny">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeSmall = `
+  <div sui-form suiSize="small">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeLarge = `
+  <div sui-form suiSize="large">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeBig = `
+  <div sui-form suiSize="big">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeHuge = `
+  <div sui-form suiSize="huge">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMassive = `
+  <div sui-form suiSize="massive">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
+  </div>`;
+
+  snippetSizeMini = `
+  <div sui-form suiSize="mini">
+    <div suiFormFields suiWidth="two">
+      <div suiFormField>
+        <label>First Name</label>
+        <input placeholder="First Name" type="text">
+      </div>
+      <div suiFormField>
+        <label>Last Name</label>
+        <input placeholder="Last Name" type="text">
+      </div>
+    </div>
+    <div sui-button>Submit</div>
   </div>`;
 
   constructor(title: Title, highlighter: HighlightService) {
