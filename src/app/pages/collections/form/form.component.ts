@@ -533,6 +533,57 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetWidth = `
+  <div sui-form>
+    <div suiFormFields>
+      <div suiFormField suiWidth="six">
+        <label>First name</label>
+        <input type="text" placeholder="First Name">
+      </div>
+      <div suiFormField suiWidth="four">
+        <label>Middle</label>
+        <input type="text" placeholder="Middle Name">
+      </div>
+      <div suiFormField suiWidth="six">
+        <label>Last name</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+    </div>
+    <div suiFormFields>
+      <div suiFormField suiWidth="two">
+        <input type="text" placeholder="2 Wide">
+      </div>
+      <div suiFormField suiWidth="twelve">
+        <input type="text" placeholder="12 Wide">
+      </div>
+      <div suiFormField suiWidth="two">
+        <input type="text" placeholder="2 Wide">
+      </div>
+    </div>
+    <div suiFormFields>
+      <div suiFormField suiWidth="eight">
+        <input type="text" placeholder="8 Wide">
+      </div>
+      <div suiFormField suiWidth="six">
+        <input type="text" placeholder="6 Wide">
+      </div>
+      <div suiFormField suiWidth="two">
+        <input type="text" placeholder="2 Wide">
+      </div>
+    </div>
+  </div>`;
+
+  snippetRequired = `
+  <div sui-form>
+    <div suiFormField suiRequired>
+      <label>Last name</label>
+      <input type="text" placeholder="Full Name">
+    </div>
+    <div suiFormField suiInline suiRequired>
+      <sui-checkbox>I agree to terms and conditions</sui-checkbox>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
