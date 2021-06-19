@@ -505,6 +505,26 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetInverted = `
+  <div sui-segment suiInverted>
+    <div sui-form suiInverted>
+      <div suiFormFields suiWidth="two">
+        <div suiFormField>
+          <label>Username</label>
+          <input type="text" placeholder="Username">
+        </div>
+        <div suiFormField>
+          <label>Password</label>
+          <input type="password">
+        </div>
+      </div>
+      <div suiFormField suiInline>
+        <sui-checkbox>I agree to terms and conditions</sui-checkbox>
+      </div>
+      <div sui-button>Submit</div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Form | Ngx Semantic');
