@@ -52,6 +52,18 @@ export class MessagesComponent implements AfterViewChecked {
   </div>
   `;
 
+  snippetIcon2 = `
+  <div sui-message suiIcon>
+    <i suiIconType="notched circle" suiLoading sui-icon></i>
+    <div suiMessageContent>
+      <div sui-header>
+        Just one second
+      </div>
+      <p>We're fetching that content for you.</p>
+    </div>
+  </div>
+  `;
+
   snippetHidden = `
   <div sui-message suiHidden>
     <p>You can't see me</p>

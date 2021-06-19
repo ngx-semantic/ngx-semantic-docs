@@ -52,6 +52,20 @@
       </ng-template>
     </doc-code-sample>
 
+    <doc-code-sample [content]="msgIcon2" [templateCode]="snippetIcon2">
+      <ng-template #msgIcon2>
+        <div sui-message suiIcon>
+          <i suiIconType="notched circle" suiLoading sui-icon></i>
+          <div suiMessageContent>
+            <div sui-header>
+              Just one second
+            </div>
+            <p>We're fetching that content for you.</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
     <doc-code-sample [content]="msgDissmisable" [templateCode]="snippetDismissable">
       <h3 sui-header>Dissmissable Block</h3>
       <p>A message that the user can choose to hide</p>
