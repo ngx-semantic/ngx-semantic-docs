@@ -28,6 +28,18 @@ export class MessagesComponent implements AfterViewChecked {
   </div>
   `;
 
+  snippetList = `
+  <div sui-message>
+    <div suiMessageHeader>
+      New Site Features
+    </div>
+    <ul suiMessageList>
+      <li>You can now have cover images on blog pages</li>
+      <li>Drafts will now auto-save while writing</li>
+    </ul>
+  </div>
+  `;
+
   snippetIcon1 = `
   <div sui-message suiIcon>
     <i suiIconType="inbox" sui-icon></i>
