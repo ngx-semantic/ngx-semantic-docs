@@ -841,6 +841,36 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header suiDividing>Group Variations</h2>
+
+    <doc-code-sample
+        [content]="evenlyDivided"
+        [templateCode]="snippetEvenlyDivided">
+      <h3 sui-header>Evenly Divided</h3>
+      <p>Fields can have their widths divided evenly.</p>
+
+      <ng-template #evenlyDivided>
+        <div sui-form>
+          <div suiFormFields suiWidth="three">
+            <div suiFormField>
+              <label>First name</label>
+              <input type="text" placeholder="First Name">
+            </div>
+            <div suiFormField>
+              <label>Middle name</label>
+              <input type="text" placeholder="Middle Name">
+            </div>
+            <div suiFormField>
+              <label>Last name</label>
+              <input type="text" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
