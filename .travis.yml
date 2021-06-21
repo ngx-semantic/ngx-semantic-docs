@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 node_js:
   - '14'
 cache:
@@ -11,16 +13,17 @@ script:
   - cp dist/index.html dist/404.html
 
 deploy:
+  strategy: git
   # Use Github pages deploy process
   provider: pages
   # Keep built pages
-  skip-cleanup: true
+  skip_cleanup: true
   # Directory where generated files are located
   local_dir: dist
   # Github security/auth token
-  github-token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   # Rewrite history on each deploy so that we dont accumulate built js files
-  keep-history: false
+  keep_history: false
   # Git repo to push to
   repo: ngx-semantic/ngx-semantic.github.io
   # Git branch on which it should deploy
