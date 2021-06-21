@@ -6,7 +6,12 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
 @Component({
   selector: 'doc-placeholders',
   templateUrl: './placeholder.component.html',
-  styleUrls: ['./placeholder.component.scss']
+  styles: [`
+    div [class*="right floated"] {
+      float: right;
+      margin-right: 0.25em;
+    }
+  `]
 })
 export class PlaceholderComponent extends BasePageComponent {
   snippetBasic = `

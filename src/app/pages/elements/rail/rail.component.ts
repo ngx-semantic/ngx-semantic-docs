@@ -1,13 +1,19 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import {HighlightService} from '../../../shared/services/highlight.service';
+import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-rail',
   templateUrl: './rail.component.html',
-  styleUrls: ['./rail.component.scss']
+  styles: [`
+    .container {
+      min-height: 300px;
+      width: 960px;
+    }
+  `]
 })
-export class RailComponent implements AfterViewChecked {
+export class RailComponent extends BasePageComponent {
   snippetBasic = `
   <div sui-grid
        suiCentered
@@ -103,11 +109,8 @@ export class RailComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title, highlighter: HighlightService) {
+    super(highlighter);
     title.setTitle('Rail | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
