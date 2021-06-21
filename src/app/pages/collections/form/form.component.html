@@ -907,12 +907,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="equalWidth"
-        [templateCode]="snippetEqualWidth">
+        [content]="equalWidthGroup"
+        [templateCode]="snippetEqualWidthGroup">
       <h3 sui-header>Equal Width Fields</h3>
       <p>Fields can automatically divide fields to be equal width.</p>
 
-      <ng-template #equalWidth>
+      <ng-template #equalWidthGroup>
         <div sui-form>
           <div suiFormFields>
             <div suiFormField>
@@ -936,6 +936,62 @@
             <div suiFormField>
               <label>Last name</label>
               <input type="text" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inlineGroup"
+        [templateCode]="snippetInlineGroup">
+      <h3 sui-header>Inline Fields</h3>
+      <p>Multiple fields may be inline in a row.</p>
+
+      <ng-template #inlineGroup>
+        <div sui-form>
+          <div suiFormFields suiInline>
+            <label>Phone Number</label>
+            <div suiFormField>
+              <input type="text" placeholder="(xxx)">
+            </div>
+            <div suiFormField>
+              <input type="text" placeholder="xxx">
+            </div>
+            <div suiFormField>
+              <input type="text" placeholder="xxxx">
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inlineGroupAlt"
+        [templateCode]="snippetInlineGroupAlt">
+      <ng-template #inlineGroupAlt>
+        <div sui-form>
+          <div suiFormFields suiInline>
+            <label>What's your favourite fruit?</label>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">
+                Apples
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">
+                Oranges
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">
+                Pears
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox suiType="radio">
+                Grapefruit
+              </sui-checkbox>
             </div>
           </div>
         </div>

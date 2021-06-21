@@ -628,7 +628,7 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  snippetEqualWidth = `
+  snippetEqualWidthGroup = `
   <div sui-form>
     <div suiFormFields>
       <div suiFormField>
@@ -652,6 +652,49 @@ export class FormComponent extends BasePageComponent {
       <div suiFormField>
         <label>Last name</label>
         <input type="text" placeholder="Last Name">
+      </div>
+    </div>
+  </div>`;
+
+  snippetInlineGroup = `
+  <div sui-form>
+    <div suiFormFields suiInline>
+      <label>Phone Number</label>
+      <div suiFormField>
+        <input type="text" placeholder="(xxx)">
+      </div>
+      <div suiFormField>
+        <input type="text" placeholder="xxx">
+      </div>
+      <div suiFormField>
+        <input type="text" placeholder="xxxx">
+      </div>
+    </div>
+  </div>`;
+
+  snippetInlineGroupAlt = `
+  <div sui-form>
+    <div suiFormFields suiInline>
+      <label>What's your favourite fruit?</label>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">
+          Apples
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">
+          Oranges
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">
+          Pears
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox suiType="radio">
+          Grapefruit
+        </sui-checkbox>
       </div>
     </div>
   </div>`;
