@@ -101,7 +101,6 @@ import {PlaceholderComponent} from './placeholder/placeholder.component';
     SuiDropdownModule,
     SuiContainerModule,
     SuiPlaceholderModule,
-    ElementsRoutingModule,
     ElementsRoutingModule
   ]
 })

@@ -18,6 +18,23 @@
       </ng-template>
     </doc-code-sample>
 
+    <doc-code-sample [content]="msgList" [templateCode]="snippetList">
+      <h3 sui-header>List Message</h3>
+      <p>A message with a list</p>
+
+      <ng-template #msgList>
+        <div sui-message>
+          <div suiMessageHeader>
+            New Site Features
+          </div>
+          <ul suiMessageList>
+            <li>You can now have cover images on blog pages</li>
+            <li>Drafts will now auto-save while writing</li>
+          </ul>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
     <doc-code-sample [content]="msgIcon" [templateCode]="snippetIcon1">
       <h3 sui-header>Icon Message</h3>
       <p>A message can contain an icon</p>
@@ -35,12 +52,26 @@
       </ng-template>
     </doc-code-sample>
 
+    <doc-code-sample [content]="msgIcon2" [templateCode]="snippetIcon2">
+      <ng-template #msgIcon2>
+        <div sui-message suiIcon>
+          <i suiIconType="notched circle" suiLoading sui-icon></i>
+          <div suiMessageContent>
+            <div sui-header>
+              Just one second
+            </div>
+            <p>We're fetching that content for you.</p>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
     <doc-code-sample [content]="msgDissmisable" [templateCode]="snippetDismissable">
       <h3 sui-header>Dissmissable Block</h3>
       <p>A message that the user can choose to hide</p>
 
       <ng-template #msgDissmisable>
-        <div sui-message [suiDismissible]>
+        <div sui-message suiDismissible>
           <div suiMessageHeader>
             Welcome back!
           </div>
@@ -148,7 +179,7 @@
       <p>A message may be formatted to display warning messages.</p>
 
       <ng-template #msgWarning>
-        <div sui-message suiColour='warning' [suiDismissible]>
+        <div sui-message suiColour='warning' suiDismissible>
           <div suiMessageHeader>
             You must register before you can do that!
           </div>
@@ -162,7 +193,7 @@
       <p>A message may be formatted to display information</p>
 
       <ng-template #msgInfo>
-        <div sui-message suiColour='info' [suiDismissible]>
+        <div sui-message suiColour='info' suiDismissible>
           <div suiMessageHeader>
             Was this what you wanted?
           </div>
@@ -176,7 +207,7 @@
       <p>A message may be formatted to display a positive message</p>
 
       <ng-template #msgSuccess>
-        <div sui-message suiColour='positive' [suiDismissible]>
+        <div sui-message suiColour='positive' suiDismissible>
           <div suiMessageHeader>
             You are eligible for a reward
           </div>
@@ -190,7 +221,7 @@
       <p>A message may be formatted to display a negative message</p>
 
       <ng-template #msgError>
-        <div sui-message suiColour='negative' [suiDismissible]>
+        <div sui-message suiColour='negative' suiDismissible>
           <div suiMessageHeader>
             We're sorry we can't apply that discount
           </div>
@@ -235,6 +266,299 @@
     </doc-code-sample>
   </div>
 
-  <div *docPageContent="'api'"></div>
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-message</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiAttached</td>
+        <td>
+          Attach a message to other content. Allowed values could be
+          <span sui-label>attached</span> | <span sui-label>bottom attached</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>Set the message colour. Allowed values could be
+          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
+              sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
+              sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
+              sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
+              sui-label>'black'</span>
+          | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiState</td>
+        <td>Set a message to either visible or hidden states.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the breadcrumb size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDismissable</td>
+        <td>
+          Determine whether or not a message can be dismissed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIcon</td>
+        <td>
+          Determine whether or not a message can contain an icon
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiHidden</td>
+        <td>
+          Prevent a message from displaying.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVisible</td>
+        <td>
+          Present the message to the display
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloating</td>
+        <td>
+          Determine whether or not a message will float over the content it is related to
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompact</td>
+        <td>
+          Setup the message to take up just as much space as its content
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiMessageHeader</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiMessageContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiMessageList</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
 </doc-page>
 
