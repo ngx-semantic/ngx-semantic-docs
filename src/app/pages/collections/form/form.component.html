@@ -417,7 +417,7 @@
           </div>
           <div sui-message suiState="success">
             <div suiMessageHeader>Form Completed</div>
-            <p>You're all signed up for the newsletter.</p>
+            <p>Youre all signed up for the newsletter.</p>
           </div>
           <div sui-button>Submit</div>
         </div>
@@ -972,7 +972,7 @@
       <ng-template #inlineGroupAlt>
         <div sui-form>
           <div suiFormFields suiInline>
-            <label>What's your favourite fruit?</label>
+            <label>Whats your favourite fruit?</label>
             <div suiFormField>
               <sui-checkbox suiType="radio">
                 Apples
@@ -1133,13 +1133,13 @@
       <tr>
         <td>suiWidth</td>
         <td>Set the fields width. Allowed values could be
-          <span sui-label>'one'</span> | <span sui-label>'two'</span> | <span sui-label>'three'</span> | <span
-              sui-label>'four'</span> | <span sui-label>'five'</span> | <span sui-label>'six'</span> | <span
-              sui-label>'seven'</span> |
-          <span sui-label>'eight'</span> | <span sui-label>'nine'</span> | <span sui-label>'ten'</span> | <span
-              sui-label>'eleven'</span> | <span sui-label>'twelve'</span> | <span sui-label>'thirteen'</span> | <span
-              sui-label>'fourteen'</span>| <span sui-label>'fifteen'</span> | <span
-              sui-label>'sixteen'</span>
+          <span sui-label>one</span> | <span sui-label>two</span> | <span sui-label>three</span> | <span
+              sui-label>four</span> | <span sui-label>five</span> | <span sui-label>six</span> | <span
+              sui-label>seven</span> |
+          <span sui-label>eight</span> | <span sui-label>nine</span> | <span sui-label>ten</span> | <span
+              sui-label>eleven</span> | <span sui-label>twelve</span> | <span sui-label>thirteen</span> | <span
+              sui-label>fourteen</span>| <span sui-label>fifteen</span> | <span
+              sui-label>sixteen</span>
           | <span sui-label>null</span>
         </td>
         <td>
@@ -1189,6 +1189,119 @@
         <td>suiEqualWidth</td>
         <td>
           Determine whether or not the field contents are equal width
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>suiFormField</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>Set the fields width. Allowed values could be
+          <span sui-label>one</span> | <span sui-label>two</span> | <span sui-label>three</span> | <span
+              sui-label>four</span> | <span sui-label>five</span> | <span sui-label>six</span> | <span
+              sui-label>seven</span> |
+          <span sui-label>eight</span> | <span sui-label>nine</span> | <span sui-label>ten</span> | <span
+              sui-label>eleven</span> | <span sui-label>twelve</span> | <span sui-label>thirteen</span> | <span
+              sui-label>fourteen</span>| <span sui-label>fifteen</span> | <span
+              sui-label>sixteen</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal"> string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey"> null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiError</td>
+        <td>
+          Determine whether or not the field is in an error state
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInline</td>
+        <td>
+          Determine whether or not the field is inline
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determine whether or not the field is disabled
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRequired</td>
+        <td>
+          Determine whether or not the field is required
         </td>
         <td>
           <div sui-label
