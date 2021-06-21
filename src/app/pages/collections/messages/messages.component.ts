@@ -28,6 +28,18 @@ export class MessagesComponent implements AfterViewChecked {
   </div>
   `;
 
+  snippetList = `
+  <div sui-message>
+    <div suiMessageHeader>
+      New Site Features
+    </div>
+    <ul suiMessageList>
+      <li>You can now have cover images on blog pages</li>
+      <li>Drafts will now auto-save while writing</li>
+    </ul>
+  </div>
+  `;
+
   snippetIcon1 = `
   <div sui-message suiIcon>
     <i suiIconType="inbox" sui-icon></i>
@@ -36,6 +48,18 @@ export class MessagesComponent implements AfterViewChecked {
         Have you heard about our mailing list?
       </div>
       <p>Get the best news in your e-mail every day.</p>
+    </div>
+  </div>
+  `;
+
+  snippetIcon2 = `
+  <div sui-message suiIcon>
+    <i suiIconType="notched circle" suiLoading sui-icon></i>
+    <div suiMessageContent>
+      <div sui-header>
+        Just one second
+      </div>
+      <p>We're fetching that content for you.</p>
     </div>
   </div>
   `;
