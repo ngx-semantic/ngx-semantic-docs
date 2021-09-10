@@ -31,6 +31,30 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="divided"
+        [templateCode]="snippetDivided">
+      <h3 sui-header>Divided</h3>
+      <p>A grid can have dividers between its columns</p>
+
+      <ng-template #divided>
+        <div sui-grid
+             suiWidth="three"
+             suiDivided="divided">
+          <div suiGridRow>
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+          </div>
+          <div suiGridRow>
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

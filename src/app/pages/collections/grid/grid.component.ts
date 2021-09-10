@@ -19,7 +19,40 @@ import {BasePageComponent} from "../../../shared/components/base-page.component"
 })
 export class GridComponent extends BasePageComponent {
   snippetBasic = `
-  `;
+  <div sui-grid>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+    <div suiGridColumn></div>
+  </div>`;
+
+  snippetDivided = `
+  <div sui-grid
+       suiWidth="three"
+       suiDivided="divided">
+    <div suiGridRow>
+      <div suiGridColumn></div>
+      <div suiGridColumn></div>
+      <div suiGridColumn></div>
+    </div>
+    <div suiGridRow>
+      <div suiGridColumn></div>
+      <div suiGridColumn></div>
+      <div suiGridColumn></div>
+    </div>
+  </div>`;
 
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
