@@ -60,7 +60,7 @@
         [content]="verticallyDivided"
         [templateCode]="snippetVerticallyDivided">
       <h3 sui-header>Vertically Divided</h3>
-      <p>A grid can have dividers between row</p>
+      <p>A grid can have dividers between rows</p>
 
       <ng-template #verticallyDivided>
         <div sui-grid
@@ -75,6 +75,28 @@
             <div suiGridColumn></div>
             <div suiGridColumn></div>
             <div suiGridColumn></div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="celled"
+        [templateCode]="snippetCelled">
+      <h3 sui-header>Celled</h3>
+      <p>A grid can have rows divided into cells</p>
+
+      <ng-template #celled>
+        <div sui-grid
+             suiCelled="celled">
+          <div suiGridRow>
+            <div suiGridColumn suiWidth="three"></div>
+            <div suiGridColumn suiWidth="thirteen"></div>
+          </div>
+          <div suiGridRow>
+            <div suiGridColumn suiWidth="three"></div>
+            <div suiGridColumn suiWidth="ten"></div>
+            <div suiGridColumn suiWidth="three"></div>
           </div>
         </div>
       </ng-template>

@@ -26,6 +26,7 @@ import {SuiButtonModule} from 'ngx-semantic/elements/button';
 import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
 import {SuiSelectModule} from 'ngx-semantic/modules/select';
 import {SuiGridModule} from "ngx-semantic/collections/grid";
+import {SuiImageModule} from 'ngx-semantic/elements/image';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {SuiGridModule} from "ngx-semantic/collections/grid";
     SuiButtonModule,
     SuiSegmentModule,
     SuiSelectModule,
-    SuiGridModule
+    SuiGridModule,
+    SuiImageModule
   ]
 })
 export class CollectionsModule {
