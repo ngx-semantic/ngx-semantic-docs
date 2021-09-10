@@ -25,6 +25,7 @@ import {SuiCheckboxModule} from 'ngx-semantic/modules/checkbox';
 import {SuiButtonModule} from 'ngx-semantic/elements/button';
 import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
 import {SuiSelectModule} from 'ngx-semantic/modules/select';
+import {SuiGridModule} from "ngx-semantic/collections/grid";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {SuiSelectModule} from 'ngx-semantic/modules/select';
     SuiCheckboxModule,
     SuiButtonModule,
     SuiSegmentModule,
-    SuiSelectModule
+    SuiSelectModule,
+    SuiGridModule
   ]
 })
 export class CollectionsModule {
