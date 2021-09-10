@@ -55,6 +55,30 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="verticallyDivided"
+        [templateCode]="snippetVerticallyDivided">
+      <h3 sui-header>Vertically Divided</h3>
+      <p>A grid can have dividers between row</p>
+
+      <ng-template #verticallyDivided>
+        <div sui-grid
+             suiDivided="vertically divided">
+          <div suiGridRow
+               suiWidth="two">
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+          </div>
+          <div suiGridRow
+               suiWidth="three">
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+            <div suiGridColumn></div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
