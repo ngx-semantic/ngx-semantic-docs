@@ -84,6 +84,21 @@ export class GridComponent extends BasePageComponent {
     </div>
   </div>`;
 
+  snippetInternallyCelled = `
+  <div sui-grid
+       suiCelled="internally celled">
+    <div suiGridRow>
+      <div suiGridColumn suiWidth="three"></div>
+      <div suiGridColumn suiWidth="ten"></div>
+      <div suiGridColumn suiWidth="three"></div>
+    </div>
+    <div suiGridRow>
+      <div suiGridColumn suiWidth="three"></div>
+      <div suiGridColumn suiWidth="ten"></div>
+      <div suiGridColumn suiWidth="three"></div>
+    </div>
+  </div>`;
+
   constructor(title: Title, highlighter: HighlightService) {
     super(highlighter);
     title.setTitle('Grid | Ngx Semantic');
