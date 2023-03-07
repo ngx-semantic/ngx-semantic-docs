@@ -105,7 +105,7 @@ export class ButtonComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  snippetBtnColorLabeled = `
+  snippetBtnColourLabeled = `
   <div sui-button
        suiLabeled="labeled"
        tabindex="0">

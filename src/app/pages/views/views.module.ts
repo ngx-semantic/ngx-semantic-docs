@@ -8,10 +8,12 @@ import {CommonModule} from "@angular/common";
 import {ViewsRoutingModule} from "./views-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {NgxSemanticModule} from "ngx-semantic";
+import {StatisticsComponent} from './statistic/statistics.component';
 
 @NgModule({
   declarations: [
-    CardsComponent
+    CardsComponent,
+    StatisticsComponent
   ],
   imports: [
     CommonModule,
