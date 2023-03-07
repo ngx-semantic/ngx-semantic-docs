@@ -1,8 +1,8 @@
 language: node_js
 os: linux
-dist: xenial
+dist: jammy
 node_js:
-  - '14'
+  - '19'
 cache:
   yarn: true
   directories:
@@ -20,9 +20,9 @@ deploy:
   skip_cleanup: true
   # Directory where generated files are located
   local_dir: dist
-  # Github security/auth token
+  # GitHub security/auth token
   token: $GITHUB_TOKEN
-  # Rewrite history on each deploy so that we dont accumulate built js files
+  # Rewrite history on each deploy so that we don't accumulate built js files
   keep_history: false
   # Git repo to push to
   repo: ngx-semantic/ngx-semantic.github.io
