@@ -21,4 +21,4 @@ jobs:
           git add .
           git commit -m "Deploy updated docs via CircleCI"
           # Push quietly to prevent showing the token in log
-          git push -f -q https://${GITHUB_PERSONAL_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git master
+          git push -f -q https://${CI_GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git master
