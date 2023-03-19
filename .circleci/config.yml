@@ -12,3 +12,13 @@ jobs:
           yarn install
           yarn build
           cp dist/index.html dist/404.html
+          
+          cd dist
+          git config credential.helper 'cache --timeout=120'
+          git config user.email "indexz3ro@aol.com"
+          git config user.name "CI deploy bot"
+          git init
+          git add .
+          git commit -m "Deploy updated docs via CircleCI"
+          # Push quietly to prevent showing the token in log
+          git push -f -q https://${GITHUB_PERSONAL_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git master
