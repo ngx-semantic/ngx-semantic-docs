@@ -9,10 +9,12 @@ import {ViewsRoutingModule} from "./views-routing.module";
 import {SharedModule} from "../../shared/shared.module";
 import {NgxSemanticModule} from "ngx-semantic";
 import {StatisticsComponent} from './statistic/statistics.component';
+import {ItemsComponent} from "./item/items.component";
 
 @NgModule({
   declarations: [
     CardsComponent,
+    ItemsComponent,
     StatisticsComponent
   ],
   imports: [
