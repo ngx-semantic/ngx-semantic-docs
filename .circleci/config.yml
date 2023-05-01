@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  github: circleci/github@v2
 jobs:
   build:
     docker:
@@ -34,3 +36,8 @@ jobs:
           git add .
           git commit -m "Auto-deployed from CircleCI"
           git push origin master
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
