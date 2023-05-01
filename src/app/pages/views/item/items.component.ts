@@ -8,6 +8,15 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styles: []
 })
 export class ItemsComponent implements AfterViewChecked {
+  isDefinitionsActive = true;
+  isApiActive: boolean;
+
+  snippetBasic = `
+  <div sui-statistic>
+    <div suiStatValue>5,550</div>
+    <div suiStatLabel>Downloads</div>
+  </div>`;
+
   constructor(title: Title, private highlighter: HighlightService) {
     title.setTitle('Item | Ngx Semantic');
   }
