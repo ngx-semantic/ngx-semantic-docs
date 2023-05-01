@@ -22,7 +22,7 @@ jobs:
           yarn build
           cp dist/index.html dist/404.html
       - run: |
-          git config --global user.email ${{ github.event.head_commit.author.email }}
+          git config --global user.email "indexz3ro@aol.com"
           git config --global user.name "CircleCI"
           
           git clone https://github.com/ngx-semantic/ngx-semantic.github.io.git
@@ -34,6 +34,7 @@ jobs:
           git add .
           git commit -m "Auto-deployed from CircleCI"
           git push origin master
+
 workflows:
   version: 2
   build-and-deploy:
