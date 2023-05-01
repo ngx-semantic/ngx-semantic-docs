@@ -1,6 +1,4 @@
 version: 2.1
-orbs:
-  github: circleci/github@v2.3.0
 jobs:
   build:
     docker:
