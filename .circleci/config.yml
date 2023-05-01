@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "indexz3ro@aol.com"
           git config --global user.name "CircleCI"
 
-          git clone https://bolorundurowb:${CI_GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.gitk
+          git clone https://bolorundurowb:${CI_GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
           cd ngx-semantic.github.io
           git checkout master          
 
