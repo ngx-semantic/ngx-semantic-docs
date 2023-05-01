@@ -3,24 +3,34 @@ jobs:
   build:
     docker:
       - image: cimg/node:19.7.0
+    working_directory: ~/repo
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+      - run: yarn install --frozen-lockfile
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
       - run: |
           node --version
           yarn --version
-          npm install -g @angular/cli
-          yarn install
+      - run: |
           yarn build
           cp dist/index.html dist/404.html
+      - run: |
+          git config --global user.email ${{ github.event.head_commit.author.email }}
+          git config --global user.name "CircleCI"
           
-          cd dist
-          git init
-          git config credential.helper 'cache --timeout=120'
-          git config user.email "indexz3ro@aol.com"
-          git config user.name "CI deploy bot"
+          git clone https://github.com/ngx-semantic/ngx-semantic.github.io.git
+          cd ngx-semantic.github.io
+          git checkout master
+          
+          cp -r ~/repo/dist/* .
+          
           git add .
-          git commit -m "Deploy updated docs via CircleCI"
-          # Push quietly to prevent showing the token in log
-          
-          git remote set-url origin https://bolorundurowb:${CI_GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
-          git push -f -q origin master
+          git commit -m "Auto-deployed from CircleCI"
+          git push origin master
