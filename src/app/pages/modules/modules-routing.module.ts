@@ -10,6 +10,7 @@ import {EmbedComponent} from "./embed/embed.component";
 import {RatingComponent} from "./rating/rating.component";
 import {SearchComponent} from './search/search.component';
 import {TabComponent} from "./tab/tab.component";
+import {ModalComponent} from "./modal/modal.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'tab',
     component: TabComponent
+  },
+  {
+    path: 'modal',
+    component: ModalComponent
   }
 ];
 
