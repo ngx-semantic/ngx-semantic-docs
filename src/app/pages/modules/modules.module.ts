@@ -3,7 +3,7 @@
  */
 
 import {NgModule} from "@angular/core";
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 
 import {EmbedComponent} from './embed/embed.component';
@@ -26,6 +26,8 @@ import {SuiSegmentModule} from "ngx-semantic/elements/segment";
 import {SuiIconModule} from "ngx-semantic/elements/icon";
 import {SearchComponent} from './search/search.component';
 import {SuiSearchModule} from 'ngx-semantic/modules/search';
+import { ModalComponent } from './modal/modal.component';
+import {NgxSemanticModule} from "ngx-semantic";
 
 @NgModule({
   declarations: [
@@ -33,26 +35,29 @@ import {SuiSearchModule} from 'ngx-semantic/modules/search';
     EmbedComponent,
     RatingComponent,
     DimmerComponent,
-    SearchComponent
+    SearchComponent,
+    ModalComponent
   ],
-  imports: [
-    SharedModule,
-    CommonModule,
-    SuiLabelModule,
-    SuiTableModule,
-    SuiEmbedModule,
-    SuiHeaderModule,
-    SuiRatingModule,
-    ModulesRoutingModule,
-    SuiTabsModule,
-    SuiPlaceholderModule,
-    SuiButtonModule,
-    FormsModule,
-    SuiDimmerModule,
-    SuiSegmentModule,
-    SuiIconModule,
-    SuiSearchModule
-  ]
+    imports: [
+        SharedModule,
+        CommonModule,
+        SuiLabelModule,
+        SuiTableModule,
+        SuiEmbedModule,
+        SuiHeaderModule,
+        SuiRatingModule,
+        ModulesRoutingModule,
+        SuiTabsModule,
+        SuiPlaceholderModule,
+        SuiButtonModule,
+        FormsModule,
+        SuiDimmerModule,
+        SuiSegmentModule,
+        SuiIconModule,
+        SuiSearchModule,
+        NgxSemanticModule,
+        NgOptimizedImage
+    ]
 })
 export class ModulesModule {
 }
