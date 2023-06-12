@@ -2,42 +2,23 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:19.7.0
-    working_directory: ~/repo
+      - image: circleci/node:18
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "yarn.lock" }}
-            - v1-dependencies-
-      - run: yarn install --frozen-lockfile
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "yarn.lock" }}
-      - run: |
-          node --version
-          yarn --version
-      - run: |
-          yarn build
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
+          name: Run build
+          command: yarn build
   deploy:
     docker:
-      - image: cimg/node:19.7.0
-    working_directory: ~/repo
+      - image: circleci/node:18
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "yarn.lock" }}
-            - v1-dependencies-
-      - run: yarn install --frozen-lockfile
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "yarn.lock" }}
-      - run: |
-          node --version
-          yarn --version
+      - run:
+          name: Install dependencies
+          command: yarn install
       - run: |
           yarn build
           cp dist/index.html dist/404.html
@@ -62,13 +43,9 @@ workflows:
     jobs:
       - build:
           filters:
-            tags:
-              only: /.*/
-            pull_requests:
-              branches:
-                - master
+            branches:
+              ignore: master
       - deploy:
           filters:
             branches:
-              only:
-                - master
+              only: master
