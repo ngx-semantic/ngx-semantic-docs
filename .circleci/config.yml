@@ -23,8 +23,6 @@ jobs:
           yarn build
           cp dist/index.html dist/404.html
       - run: |
-          pwd
-          ls -al
           git config --global user.email "indexz3ro@aol.com"
           git config --global user.name "CircleCI"
 
