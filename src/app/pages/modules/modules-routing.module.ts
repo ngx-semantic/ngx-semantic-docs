@@ -11,15 +11,24 @@ import {RatingComponent} from "./rating/rating.component";
 import {SearchComponent} from './search/search.component';
 import {TabComponent} from "./tab/tab.component";
 import {ModalComponent} from "./modal/modal.component";
+import { AccordionPage } from './accordion/accordion.page';
 
 const routes: Routes = [
+  {
+    path: 'accordion',
+    component: AccordionPage
+  },
+  {
+    path: 'dimmer',
+    component: DimmerComponent
+  },
   {
     path: 'embed',
     component: EmbedComponent
   },
   {
-    path: 'dimmer',
-    component: DimmerComponent
+    path: 'modal',
+    component: ModalComponent
   },
   {
     path: 'rating',
@@ -33,10 +42,6 @@ const routes: Routes = [
     path: 'tab',
     component: TabComponent
   },
-  {
-    path: 'modal',
-    component: ModalComponent
-  }
 ];
 
 @NgModule({
