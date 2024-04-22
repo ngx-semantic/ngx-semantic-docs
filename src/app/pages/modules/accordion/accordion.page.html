@@ -14,6 +14,7 @@
       <ng-template #standard>
         <sui-accordion>
           <sui-accordion-panel
+              isOpen="true"
               suiTitle="What is a dog?">
             <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
               welcome guest in many households across the world.</p>
@@ -132,5 +133,136 @@
   </div>
 
   <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-accordion</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiStyled</td>
+        <td>
+          Determines if the styled variation of the accordion is rendered
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>
+          Determines if the styled variation of the accordion is rendered
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>
+          Determines if the styled variation of the accordion is rendered
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>Determine if the accordion should invert it's colours</td>
+        <td>
+          <div sui-label suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCloseOthers</td>
+        <td>Determines if the accordion should close other open panels when a panel is open</td>
+        <td>
+          <div sui-label suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">true
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-accordion-panel</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiTitle</td>
+        <td>
+          What title the accordion panel should gave
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determines if a panel should be disabled meaning it cannot be interacted with
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>isOpen</td>
+        <td>A bindable field to determine and notify whether a panel is open or not</td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </doc-page>
