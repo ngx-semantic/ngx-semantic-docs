@@ -1,0 +1,41 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Copy build to another repository
+        uses: actions/checkout@v2
+        with:
+          repository: ngx-semantic/ngx-semantic.github.io
+          ref: master
+          token: ${{ secrets.GH_IO_ACCESS_TOKEN }}
+
+      - name: Replace content
+        run: |
+          cp dist/index.html dist/404.html
+          cp -r dist/* ngx-semantic.github.io/
+          cd ngx-semantic.github.io/
+          git add .
+          git commit -m "Auo-deployed from GitHub Actions"
+          git push origin master
+
