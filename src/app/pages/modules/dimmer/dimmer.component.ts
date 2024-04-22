@@ -1,19 +1,19 @@
-import {AfterViewChecked, Component} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
+import { AfterViewChecked, Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { HighlightService } from '../../../shared/services/highlight.service';
 
 @Component({
   selector: 'doc-dimmer',
   templateUrl: './dimmer.component.html',
-  styles: [`
-    button {
-      margin-bottom: 1.2rem !important;
-    }
-  `]
+  styles: [ `
+      button {
+          margin-bottom: 1.2rem !important;
+      }
+  ` ]
 })
 export class DimmerComponent implements AfterViewChecked {
   simpleDimmerVisible = false;
-  contentDimmerVisible = false
+  contentDimmerVisible = false;
   pageDimmerVisible = false;
   blurringDimmerVisible = false;
   blurringDInvertedDimmerVisible = false;

@@ -1,12 +1,12 @@
-import {Component, Input, TemplateRef} from '@angular/core';
-import {ClipboardService} from 'ngx-clipboard';
+import { Component, Input, TemplateRef } from '@angular/core';
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'doc-code-sample',
   template: `
     <div class="example">
       <div class="toggle-row">
-        <span>
+        <span sui-popup suiPopupInverted suiPopupContent="Show Source">
           <i sui-icon
              suiLink
              suiFitted
@@ -33,6 +33,7 @@ import {ClipboardService} from 'ngx-clipboard';
              suiLink
              suiIconType="copy"
              sui-popup
+             suiPopupInverted
              suiPopupContent="Copy Code"
              (click)="copyCode()"></i>
         </div>
@@ -44,7 +45,7 @@ import {ClipboardService} from 'ngx-clipboard';
              suiAttached="bottom attached">
         <pre>
           <code class="language-markup">
-            {{templateCode}}
+            {{ templateCode }}
           </code>
         </pre>
         </div>
@@ -53,7 +54,7 @@ import {ClipboardService} from 'ngx-clipboard';
                suiAttached="bottom attached">
         <pre>
           <code class="language-typescript">
-            {{componentCode}}
+            {{ componentCode }}
           </code>
         </pre>
           </div>
@@ -61,40 +62,42 @@ import {ClipboardService} from 'ngx-clipboard';
       </div>
     </div>
   `,
-  styles: [`
-    .example {
-      margin-bottom: 1.5rem;
-      margin-top: 1.0rem;
-    }
+  styles: [ `
+      .example {
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+      }
 
-    .toggle-row {
-      display: flex;
-      flex-direction: row-reverse;
-      margin-bottom: 0.8rem;
-    }
+      .toggle-row {
+          display: flex;
+          flex-direction: row-reverse;
+          margin-bottom: -3.5rem;
+      }
 
-    .copy-code {
-      float: right;
-    }
+      .copy-code {
+          float: right;
+      }
 
-    .code-container {
-      margin-top: -1px;
-    }
+      .code-container {
+          margin-top: -1px;
+      }
 
-    .code-container.hidden {
-      display: none;
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
+      .code-container.hidden {
+          display: none;
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+      }
 
-    .code-container.visible {
-      display: block;
-      visibility: visible;
-      opacity: 1;
-      transition: opacity 0.6s ease-in-out;
-    }
-  `]
+      .code-container.visible {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 0.6s ease-in-out;
+      }
+  ` ]
 })
 export class CodeSampleComponent {
   @Input() content: TemplateRef<any>;

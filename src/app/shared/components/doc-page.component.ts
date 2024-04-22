@@ -2,8 +2,8 @@
  * Created by bolor on 10/7/2020
  */
 
-import {Component, Input, ContentChildren, QueryList} from '@angular/core';
-import {DocPageContentDirective} from '../directives/doc-page-content.directive';
+import { Component, Input, ContentChildren, QueryList } from '@angular/core';
+import { DocPageContentDirective } from '../directives/doc-page-content.directive';
 
 @Component({
   selector: 'doc-page',
@@ -16,9 +16,9 @@ import {DocPageContentDirective} from '../directives/doc-page-content.directive'
           <div suiGridColumn
                suiWidth="eight">
             <h1 sui-header>
-              {{header}}
+              {{ header }}
               <div suiSubHeader>
-                {{subHeader}}
+                {{ subHeader }}
               </div>
             </h1>
           </div>
@@ -68,7 +68,7 @@ import {DocPageContentDirective} from '../directives/doc-page-content.directive'
           <a suiMenuItem
              [suiActive]="isDefinitions()"
              (click)="switchToPage('definition')">
-            Definitions
+            Definition
           </a>
 
           <a suiMenuItem
@@ -106,7 +106,7 @@ export class DocPageComponent {
     return this.currentView === 'definition';
   }
 
-  switchToPage(page): void {
+  switchToPage(page: string): void {
     this.currentView = page;
   }
 }
