@@ -32,7 +32,9 @@ jobs:
 
       - name: Replace content
         run: |
+          pwd
           ls
+          cd ..
           cp dist/index.html dist/404.html
           cp -r dist/* ngx-semantic.github.io/
           cd ngx-semantic.github.io/
