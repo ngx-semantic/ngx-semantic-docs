@@ -1,9 +1,134 @@
 <doc-page
-  header="Accordion"
-  subHeader="An accordion allows users to toggle the display of sections of content">
+    header="Accordion"
+    subHeader="An accordion allows users to toggle the display of sections of content">
   <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard">
+      <h3 sui-header>Accordion</h3>
+      <p>A standard accordion</p>
+
+      <ng-template #standard>
+        <sui-accordion>
+          <sui-accordion-panel
+              suiTitle="What is a dog?">
+            <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+              welcome guest in many households across the world.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="What kinds of dogs are there?">
+            <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of
+              dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="How do you acquire a dog?">
+            <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+              shelters.</p>
+            <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to
+              assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog
+              from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+          </sui-accordion-panel>
+        </sui-accordion>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="styled"
+        [templateCode]="snippetStyled">
+      <h3 sui-header>Styled</h3>
+      <p>A styled accordion adds basic formatting</p>
+
+      <ng-template #styled>
+        <sui-accordion suiStyled="true">
+          <sui-accordion-panel
+              suiTitle="What is a dog?">
+            <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+              welcome guest in many households across the world.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="What kinds of dogs are there?">
+            <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of
+              dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="How do you acquire a dog?">
+            <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+              shelters.</p>
+            <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to
+              assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog
+              from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+          </sui-accordion-panel>
+        </sui-accordion>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="styledFluid"
+        [templateCode]="snippetStyledFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>An accordion can take up the width of its container</p>
+
+      <ng-template #styledFluid>
+        <sui-accordion suiStyled="true" suiFluid="true">
+          <sui-accordion-panel
+              suiTitle="What is a dog?">
+            <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+              welcome guest in many households across the world.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="What kinds of dogs are there?">
+            <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of
+              dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+          </sui-accordion-panel>
+          <sui-accordion-panel
+              suiTitle="How do you acquire a dog?">
+            <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+              shelters.</p>
+            <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to
+              assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog
+              from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+          </sui-accordion-panel>
+        </sui-accordion>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>An accordion can be formatted to appear on dark backgrounds</p>
+
+      <ng-template #inverted>
+        <div sui-segment suiInverted="true">
+          <sui-accordion suiInverted="true">
+            <sui-accordion-panel
+                suiTitle="What is a dog?">
+              <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+                welcome guest in many households across the world.</p>
+            </sui-accordion-panel>
+            <sui-accordion-panel
+                suiTitle="What kinds of dogs are there?">
+              <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed
+                of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+            </sui-accordion-panel>
+            <sui-accordion-panel
+                suiTitle="How do you acquire a dog?">
+              <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+                shelters.</p>
+              <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to
+                assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog
+                from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+            </sui-accordion-panel>
+          </sui-accordion>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
