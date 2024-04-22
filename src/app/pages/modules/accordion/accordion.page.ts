@@ -25,7 +25,7 @@ export class AccordionPage implements AfterContentChecked {
   </sui-accordion>`;
 
   snippetStyled = `
-  <sui-accordion suiStyled="true">
+  <sui-accordion suiStyled>
     <sui-accordion-panel
       suiTitle="What is a dog?">
       <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
@@ -42,7 +42,7 @@ export class AccordionPage implements AfterContentChecked {
   </sui-accordion>`;
 
   snippetStyledFluid = `
-  <sui-accordion suiStyled="true" suiFluid="true">
+  <sui-accordion suiStyled suiFluid>
     <sui-accordion-panel
         suiTitle="What is a dog?">
       <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
@@ -64,8 +64,8 @@ export class AccordionPage implements AfterContentChecked {
   </sui-accordion>`;
 
   snippetInverted = `
-  <div sui-segment suiInverted="true">
-    <sui-accordion suiInverted="true">
+  <div sui-segment suiInverted>
+    <sui-accordion suiInverted>
       <sui-accordion-panel
           suiTitle="What is a dog?">
         <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a

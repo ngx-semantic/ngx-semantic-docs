@@ -14,7 +14,7 @@
       <ng-template #standard>
         <sui-accordion>
           <sui-accordion-panel
-              isOpen="true"
+              isOpen
               suiTitle="What is a dog?">
             <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
               welcome guest in many households across the world.</p>
@@ -43,7 +43,7 @@
       <p>A styled accordion adds basic formatting</p>
 
       <ng-template #styled>
-        <sui-accordion suiStyled="true">
+        <sui-accordion suiStyled>
           <sui-accordion-panel
               suiTitle="What is a dog?">
             <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
@@ -76,7 +76,7 @@
       <p>An accordion can take up the width of its container</p>
 
       <ng-template #styledFluid>
-        <sui-accordion suiStyled="true" suiFluid="true">
+        <sui-accordion suiStyled suiFluid>
           <sui-accordion-panel
               suiTitle="What is a dog?">
             <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
@@ -106,8 +106,8 @@
       <p>An accordion can be formatted to appear on dark backgrounds</p>
 
       <ng-template #inverted>
-        <div sui-segment suiInverted="true">
-          <sui-accordion suiInverted="true">
+        <div sui-segment suiInverted>
+          <sui-accordion suiInverted=>
             <sui-accordion-panel
                 suiTitle="What is a dog?">
               <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
