@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: 'feed.page.html',
 })
 export class FeedPage {
-
+  snippetBasic = ``;
 }

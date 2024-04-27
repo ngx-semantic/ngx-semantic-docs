@@ -10,6 +10,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { NgxSemanticModule } from 'ngx-semantic';
 import { StatisticsComponent } from './statistic/statistics.component';
 import { FeedPage } from './feed/feed.page';
+import { SuiFeedModule } from 'ngx-semantic/views/feed';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeedPage } from './feed/feed.page';
     CommonModule,
     SharedModule,
     NgxSemanticModule,
-    ViewsRoutingModule
+    ViewsRoutingModule,
+    SuiFeedModule
   ]
 })
 export class ViewsModule {
