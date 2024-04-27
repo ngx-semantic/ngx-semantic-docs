@@ -23,4 +23,8 @@ export class CodeSampleComponent {
   toggleCodeDisplay(): void {
     this.codeShown = !this.codeShown;
   }
+
+  formatCode(code?: string): string {
+    return `  ${code?.trim()}`;
+  }
 }

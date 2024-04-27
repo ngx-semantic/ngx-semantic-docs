@@ -51,8 +51,12 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
   ],
   providers: [
     provideHighlightOptions({
-      fullLibraryLoader: () => import('highlight.js'),
-      lineNumbersLoader: () => import('ngx-highlightjs/line-numbers')
+      coreLibraryLoader: () => import('highlight.js/lib/core'),
+      languages: {
+        typescript: () => import('highlight.js/lib/languages/typescript'),
+        css: () => import('highlight.js/lib/languages/css'),
+        html: () => import('highlight.js/lib/languages/vbscript-html.js')
+      },
     }),
   ],
 })
