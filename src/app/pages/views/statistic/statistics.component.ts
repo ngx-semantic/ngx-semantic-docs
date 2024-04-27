@@ -1,15 +1,11 @@
-import { AfterViewChecked, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-statistics',
   templateUrl: './statistics.component.html',
-  styles: []
 })
 export class StatisticsComponent {
-  isDefinitionsActive = true;
-  isApiActive: boolean;
-
   snippetBasic = `
   <div sui-statistic>
     <div suiStatValue>5,550</div>

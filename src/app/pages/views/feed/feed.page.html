@@ -1,0 +1,590 @@
+<doc-page
+    header="Feed"
+    subHeader="A feed presents user activity chronologically">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Feed</h3>
+      <p>A feed</p>
+
+      <ng-template #basic>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/elliot.jpg">
+            <div suiFeedSummary>
+              <a suiFeedUser>
+                Elliot Fu
+              </a> added you as a friend
+              <div suiFeedDate>
+                1 Hour Ago
+              </div>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 4 Likes
+              </a>
+            </div>
+          </div>
+
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/helen.jpg">
+            <div suiFeedSummary>
+              <a>Helen Troy</a> added <a>2 new illustrations</a>
+              <div suiFeedDate>
+                4 days ago
+              </div>
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="images">
+              <a><img src="/assets/images/wireframes/image.png"></a>
+              <a><img src="/assets/images/wireframes/image.png"></a>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 1 Like
+              </a>
+            </div>
+          </div>
+
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/jenny.jpg">
+            <div suiFeedSummary>
+              <a suiFeedUser>
+                Jenny Hess
+              </a> added you as a friend
+              <div suiFeedDate>
+                2 Days Ago
+              </div>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 8 Likes
+              </a>
+            </div>
+          </div>
+
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/joe.jpg">
+            <div suiFeedSummary>
+              <a>Joe Henderson</a> posted on his page
+              <div suiFeedDate>
+                3 days ago
+              </div>
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="text">
+              Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting
+              all over again. Even if we don't run extra laps that day, we surely will come back for more of the same
+              another day soon.
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 5 Likes
+              </a>
+            </div>
+          </div>
+
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/justen.jpg">
+            <div suiFeedSummary>
+              <a>Justen Kitsune</a> added <a>2 new photos</a> of you
+              <div suiFeedDate>
+                4 days ago
+              </div>
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="images">
+              <a><img src="/assets/images/wireframes/image.png"></a>
+              <a><img src="/assets/images/wireframes/image.png"></a>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 41 Likes
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="imageLabel"
+        [templateCode]="snippetImageLabel">
+      <h3 sui-header>Label</h3>
+      <p>An event can contain an image or icon label</p>
+
+      <ng-template #imageLabel>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/elliot.jpg">
+            You added Elliot Fu to the group <a>Coworkers</a>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconLabel"
+        [templateCode]="snippetIconLabel">
+      <ng-template #iconLabel>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelIcon="pencil">
+            <div suiFeedSummary>
+              You posted on your friend <a>Stevie Feliciano's</a> wall.
+              <div suiFeedDate>Today</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="headerDate"
+        [templateCode]="snippetHeaderDateLabel">
+      <h3 sui-header>Date</h3>
+      <p>An event or an event summary can contain a date</p>
+
+      <ng-template #headerDate>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/jenny.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subscriptDate"
+        [templateCode]="snippetSubscriptDateLabel">
+      <ng-template #subscriptDate>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/jenny.jpg">
+            <div suiFeedSummary>
+              You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+              <div suiFeedDate>
+                3 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="additionalInformation"
+        [templateCode]="snippetAdditionalInformation">
+      <h3 sui-header>Additional Information</h3>
+      <p>An event can contain additional information like a set of images or text</p>
+
+      <ng-template #additionalInformation>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/helen.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              <a>Helen Troy</a> added 2 photos
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="images">
+              <a><img src="/assets/images/wireframes/image.png"></a>
+              <a><img src="/assets/images/wireframes/image.png"></a>
+            </div>
+          </div>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/laura.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              <a>Laura Faucet</a> created a post
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="text">
+              Have you seen what's going on in Israel? Can you believe it.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="sizeSmall"
+        [templateCode]="snippetSizeSmall">
+      <h3 sui-header>Size</h3>
+      <p>A feed can have different sizes</p>
+
+      <ng-template #sizeSmall>
+        <div sui-feed suiSize="small">
+          <div suiFeedEvent>
+            <div suiFeedSummary>
+              <a>Elliot Fu</a> added <a>Jenny Hess</a> as a friend
+            </div>
+          </div>
+          <div suiFeedEvent>
+            <div suiFeedSummary>
+              <a>Stevie Feliciano</a> added <a>Elliot Fu</a> as a friend
+            </div>
+          </div>
+          <div suiFeedEvent>
+            <div suiFeedSummary>
+              <a>Helen Troy</a> added <a>Christian Rocha</a> as a friend
+            </div>
+          </div>
+          <div suiFeedEvent>
+            <div suiFeedSummary>
+              <a>Christian Rocha</a> signed up for the site.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeLarge"
+        [templateCode]="snippetSizeLarge">
+      <ng-template #sizeLarge>
+        <div sui-feed suiSize="large">
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/elliot.jpg">
+            <div suiFeedSummary>
+              <a suiFeedUser>Elliot Fu</a> added you as a friend
+              <div suiFeedDate>
+                1 Hour Ago
+              </div>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 4 Likes
+              </a>
+            </div>
+          </div>
+          <div suiFeedEvent
+               suiLabelIcon="pencil">
+            <div suiFeedSummary>
+              You submitted a new post to the page
+              <div suiFeedDate>
+                3 days ago
+              </div>
+            </div>
+            <div suiFeedExtra suiExtraType="text">
+              I'm having a BBQ this weekend. Come by around 4pm if you can.
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 11 Likes
+              </a>
+            </div>
+          </div>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/helen.jpg">
+            <div suiFeedDate>
+              4 days ago
+            </div>
+            <div suiFeedSummary>
+              <a>Helen Troy</a> added <a>2 new illustrations</a>
+            </div>
+            <div suiFeedExtra suiExtraType="images">
+              <a><img src="/assets/images/wireframes/image.png"></a>
+              <a><img src="/assets/images/wireframes/image.png"></a>
+            </div>
+            <div suiFeedMeta>
+              <a suiFeedLike>
+                <i sui-icon suiIconType="like"></i> 1 Like
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-feed</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the feed size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> | <span
+              sui-label>medium</span> | <span sui-label>big</span> | <span sui-label>huge</span> | <span
+              sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedEvent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiLabelIcon</td>
+        <td>If provided, set the feed's label icon type
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLabelImageUrl</td>
+        <td>If provided, set the feed's label image URL. Should not be combines with the suiLabelIcon
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedExtra</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiExtraType</td>
+        <td>
+          Can be one of two values <span sui-label>text</span> | <span sui-label>images</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedDate</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedLike</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedMeta</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedSummary</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiFeedUser</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>

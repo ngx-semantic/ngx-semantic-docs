@@ -21,7 +21,7 @@
     "highlight.js": "^11.9.0",
     "ngx-clipboard": "^16.0.0",
     "ngx-highlightjs": "^11.0.0-beta.1",
-    "ngx-semantic": "^2.0.1-beta.1",
+    "ngx-semantic": "^2.0.2-beta.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.4"
