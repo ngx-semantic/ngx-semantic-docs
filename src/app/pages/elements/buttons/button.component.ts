@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-buttons',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })
-export class ButtonComponent implements AfterViewChecked {
+export class ButtonComponent {
   snippetBtn = `
   <button sui-button>
     Follow
@@ -986,11 +985,7 @@ export class ButtonComponent implements AfterViewChecked {
     </button>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Button | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

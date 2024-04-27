@@ -1,12 +1,11 @@
-import { AfterContentChecked, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { HighlightService } from '../../../shared/services/highlight.service';
 
 @Component({
   selector: 'doc-accordion',
   templateUrl: './accordion.page.html'
 })
-export class AccordionPage implements AfterContentChecked {
+export class AccordionPage {
   snippetStandard = `
   <sui-accordion>
     <sui-accordion-panel
@@ -87,11 +86,7 @@ export class AccordionPage implements AfterContentChecked {
     </sui-accordion>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Accordion | Ngx Semantic');
-  }
-
-  ngAfterContentChecked() {
-    this.highlighter.highlightAll();
   }
 }

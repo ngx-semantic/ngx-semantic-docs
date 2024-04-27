@@ -1,6 +1,5 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-tab',
@@ -11,7 +10,7 @@ import {HighlightService} from "../../../shared/services/highlight.service";
     }
   `]
 })
-export class TabComponent implements AfterViewChecked {
+export class TabComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -164,11 +163,7 @@ export class TabComponent implements AfterViewChecked {
       </sui-tab>
     </sui-tabs>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Tab | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

@@ -1,13 +1,12 @@
 import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-reveals',
   templateUrl: './reveal.component.html'
 })
-export class RevealComponent extends BasePageComponent {
+export class RevealComponent {
   snippetFade = `
   <div sui-reveal
        suiFade>
@@ -234,8 +233,7 @@ export class RevealComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Reveal | Ngx Semantic');
   }
 }

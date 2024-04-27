@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-icons',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss']
 })
-export class IconComponent implements AfterViewChecked {
+export class IconComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -297,11 +296,7 @@ export class IconComponent implements AfterViewChecked {
     Add on Twitter
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Icon | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

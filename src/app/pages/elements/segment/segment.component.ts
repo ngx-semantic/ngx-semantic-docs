@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
-import {HighlightService} from '../../../shared/services/highlight.service';
 import {Title} from '@angular/platform-browser';
 
 @Component({
@@ -8,7 +7,7 @@ import {Title} from '@angular/platform-browser';
   templateUrl: './segment.component.html',
   styleUrls: ['./segment.component.scss'],
 })
-export class SegmentComponent extends BasePageComponent {
+export class SegmentComponent {
   snippetSegment = `
   <div sui-segment>
     <p></p>
@@ -519,8 +518,7 @@ export class SegmentComponent extends BasePageComponent {
       semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Segment | Ngx Semantic');
   }
 }

@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-divider',
   templateUrl: './divider.component.html',
   styleUrls: ['./divider.component.scss']
 })
-export class DividerComponent implements AfterViewChecked {
+export class DividerComponent {
   snippetStandard = `
   <div sui-placeholder>
     <p suiPlaceholderLine></p>
@@ -262,11 +261,7 @@ export class DividerComponent implements AfterViewChecked {
     </div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Divider | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

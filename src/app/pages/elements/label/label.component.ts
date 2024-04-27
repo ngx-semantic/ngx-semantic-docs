@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-labels',
   templateUrl: './label.component.html',
   styleUrls: ['./label.component.scss'],
 })
-export class LabelComponent implements AfterViewChecked {
+export class LabelComponent {
   snippetStd = `
   <div sui-label>
     <i sui-icon suiIconType="mail icon"></i> 23
@@ -506,11 +505,7 @@ export class LabelComponent implements AfterViewChecked {
   </div>
   `;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Label | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

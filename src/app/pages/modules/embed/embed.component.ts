@@ -1,6 +1,5 @@
 import {AfterViewChecked, Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-embed',
@@ -8,7 +7,7 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styles: [
   ]
 })
-export class EmbedComponent implements AfterViewChecked {
+export class EmbedComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -37,11 +36,7 @@ export class EmbedComponent implements AfterViewChecked {
       suiId="HTZudKi36bo"
       suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Embed | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

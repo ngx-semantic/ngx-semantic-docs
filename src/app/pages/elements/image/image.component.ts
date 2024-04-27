@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
@@ -13,7 +12,7 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
     }
   `]
 })
-export class ImageComponent extends BasePageComponent {
+export class ImageComponent {
   snippetBasic = `
   <img sui-image
      suiSize="small"
@@ -187,8 +186,7 @@ export class ImageComponent extends BasePageComponent {
     <img sui-image src="https://semantic-ui.com/images/wireframe/image.png">
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Image | Ngx Semantic');
   }
 }

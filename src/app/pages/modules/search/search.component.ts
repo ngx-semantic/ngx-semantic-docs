@@ -1,13 +1,12 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-search',
   templateUrl: './search.component.html'
 })
-export class SearchComponent extends BasePageComponent {
+export class SearchComponent {
   blankOptions = [];
   countries = [
     { title: 'Andorra' },
@@ -154,8 +153,7 @@ export class SearchComponent extends BasePageComponent {
       suiPlaceholder="Search animals...">
   </sui-search>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Search | Ngx Semantic');
   }
 

@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-headers',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements AfterViewChecked {
+export class HeaderComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -261,11 +260,7 @@ export class HeaderComponent implements AfterViewChecked {
   <h4 sui-header suiColour="brown" suiInverted>Brown</h4>
   <h4 sui-header suiColour="grey" suiInverted>Grey</h4>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Header | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

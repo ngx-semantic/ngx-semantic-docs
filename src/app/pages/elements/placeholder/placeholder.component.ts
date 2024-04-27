@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
 import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
@@ -13,7 +12,7 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
     }
   `]
 })
-export class PlaceholderComponent extends BasePageComponent {
+export class PlaceholderComponent {
   snippetBasic = `
   <div sui-placeholder>
     <div suiPlaceholderHeader
@@ -301,8 +300,7 @@ export class PlaceholderComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Placeholder | Ngx Semantic');
   }
 }

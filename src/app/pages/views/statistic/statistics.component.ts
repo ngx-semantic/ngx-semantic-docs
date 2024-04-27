@@ -1,13 +1,12 @@
-import {AfterViewChecked, Component} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
+import { AfterViewChecked, Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-statistics',
   templateUrl: './statistics.component.html',
   styles: []
 })
-export class StatisticsComponent implements AfterViewChecked {
+export class StatisticsComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -295,11 +294,7 @@ export class StatisticsComponent implements AfterViewChecked {
     <div suiStatLabel>Views</div>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Statistic | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }
