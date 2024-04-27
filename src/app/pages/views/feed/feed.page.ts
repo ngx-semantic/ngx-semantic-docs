@@ -149,6 +149,114 @@ export class FeedPage {
     </div>
   </div>`;
 
+  snippetAdditionalInformation = `
+  <div sui-feed>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/helen.jpg">
+      <div suiFeedDate>
+        3 days ago
+      </div>
+      <div suiFeedSummary>
+        <a>Helen Troy</a> added 2 photos
+      </div>
+      <div suiFeedExtra
+           suiExtraType="images">
+        <a><img src="/assets/images/wireframes/image.png"></a>
+        <a><img src="/assets/images/wireframes/image.png"></a>
+      </div>
+    </div>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/laura.jpg">
+      <div suiFeedDate>
+        3 days ago
+      </div>
+      <div suiFeedSummary>
+        <a>Laura Faucet</a> created a post
+      </div>
+      <div suiFeedExtra
+           suiExtraType="text">
+        Have you seen what's going on in Israel? Can you believe it.
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeSmall = `
+  <div sui-feed suiSize="small">
+    <div suiFeedEvent>
+      <div suiFeedSummary>
+        <a>Elliot Fu</a> added <a>Jenny Hess</a> as a friend
+      </div>
+    </div>
+    <div suiFeedEvent>
+      <div suiFeedSummary>
+        <a>Stevie Feliciano</a> added <a>Elliot Fu</a> as a friend
+      </div>
+    </div>
+    <div suiFeedEvent>
+      <div suiFeedSummary>
+        <a>Helen Troy</a> added <a>Christian Rocha</a> as a friend
+      </div>
+    </div>
+    <div suiFeedEvent>
+      <div suiFeedSummary>
+        <a>Christian Rocha</a> signed up for the  site.
+      </div>
+    </div>
+  </div>`;
+
+  snippetSizeLarge = `
+  <div sui-feed suiSize="large">
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/elliot.jpg">
+      <div suiFeedSummary>
+        <a suiFeedUser>Elliot Fu</a> added you as a friend
+        <div suiFeedDate>
+          1 Hour Ago
+        </div>
+      </div>
+      <div suiFeedMeta>
+        <a suiFeedLike>
+          <i sui-icon suiIconType="like"></i> 4 Likes
+        </a>
+      </div>
+    </div>
+    <div suiFeedEvent
+         suiLabelIcon="pencil">
+      <div suiFeedSummary>
+        You submitted a new post to the page
+        <div suiFeedDate>
+          3 days ago
+        </div>
+      </div>
+      <div suiFeedExtra suiExtraType="text">
+        I'm having a BBQ this weekend. Come by around 4pm if you can.
+      </div>
+      <div suiFeedMeta>
+        <a suiFeedLike>
+          <i sui-icon suiIconType="like"></i> 11 Likes
+        </a>
+      </div>
+    </div>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/helen.jpg">
+      <div suiFeedDate>
+        4 days ago
+      </div>
+      <div suiFeedSummary>
+        <a>Helen Troy</a> added <a>2 new illustrations</a>
+      </div>
+      <div suiFeedExtra suiExtraType="images">
+        <a><img src="/assets/images/wireframes/image.png"></a>
+        <a><img src="/assets/images/wireframes/image.png"></a>
+      </div>
+      <div suiFeedMeta>
+        <a suiFeedLike>
+          <i sui-icon suiIconType="like"></i> 1 Like
+        </a>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Feed | Ngx Semantic');
   }
