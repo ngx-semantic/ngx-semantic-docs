@@ -1,0 +1,61 @@
+<div class="example">
+  <div class="toggle-row">
+        <span sui-popup
+              suiPopupInverted
+              suiPopupContent="Show Source">
+          <i sui-icon
+             suiLink
+             suiFitted
+             suiIconType="code"
+             (click)="toggleCodeDisplay()"></i>
+        </span>
+  </div>
+
+  <ng-content></ng-content>
+
+  <ng-container *ngIf="!codeShown">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </ng-container>
+
+  <div *ngIf="codeShown" sui-segment
+       suiAttached="top attached"
+       style="padding-top: 3rem;">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+    <div sui-label
+         suiAttached="top">
+      Example
+      <i class="copy-code"
+         sui-icon
+         suiLink
+         suiIconType="copy"
+         sui-popup
+         suiPopupInverted
+         suiPopupContent="Copy Code"
+         (click)="copyCode()"></i>
+    </div>
+  </div>
+  <div class="code-container"
+       [class.hidden]="!codeShown"
+       [class.visible]="codeShown">
+    <div sui-segment
+         suiAttached="bottom attached">
+        <pre>
+          <code lineNumbers
+                language="html"
+                [highlight]="templateCode?.trim()">
+          </code>
+        </pre>
+    </div>
+    <ng-container *ngIf="componentCode">
+      <div sui-segment
+           suiAttached="bottom attached">
+        <pre>
+          <code lineNumbers
+                language="ts"
+                [highlight]="componentCode?.trim()">
+          </code>
+        </pre>
+      </div>
+    </ng-container>
+  </div>
+</div>

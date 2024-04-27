@@ -16,7 +16,7 @@ import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiContainerModule } from 'ngx-semantic/elements/container';
 
 import { DocPageComponent } from './components/doc-page.component';
-import { CodeSampleComponent } from './components/code-sample.component';
+import { CodeSampleComponent } from './components/code-sample/code-sample.component';
 import { DocPageContentDirective } from './directives/doc-page-content.directive';
 import { DocWireframeComponent } from './components/doc-wireframe.component';
 import { Highlight, provideHighlightOptions } from 'ngx-highlightjs';
