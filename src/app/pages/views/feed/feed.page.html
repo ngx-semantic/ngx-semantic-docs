@@ -110,6 +110,119 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="imageLabel"
+        [templateCode]="snippetImageLabel">
+      <h3 sui-header>Label</h3>
+      <p>An event can contain an image or icon label</p>
+
+      <ng-template #imageLabel>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/elliot.jpg">
+            You added Elliot Fu to the group <a>Coworkers</a>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="iconLabel"
+        [templateCode]="snippetIconLabel">
+      <ng-template #iconLabel>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelIcon="pencil">
+            <div suiFeedSummary>
+              You posted on your friend <a>Stevie Feliciano's</a> wall.
+              <div suiFeedDate>Today</div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="headerDate"
+        [templateCode]="snippetHeaderDateLabel">
+      <h3 sui-header>Date</h3>
+      <p>An event or an event summary can contain a date</p>
+
+      <ng-template #headerDate>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/jenny.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="subscriptDate"
+        [templateCode]="snippetSubscriptDateLabel">
+      <ng-template #subscriptDate>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/jenny.jpg">
+            <div suiFeedSummary>
+              You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+              <div suiFeedDate>
+                3 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="additionalInformation"
+        [templateCode]="snippetHeaderDateLabel">
+      <h3 sui-header>Additional Information</h3>
+      <p>An event can contain additional information like a set of images or text</p>
+
+      <ng-template #additionalInformation>
+        <div sui-feed>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/helen.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              <a>Helen Troy</a> added 2 photos
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="images">
+              <a><img src="/assets/images/wireframes/image.png"></a>
+              <a><img src="/assets/images/wireframes/image.png"></a>
+            </div>
+          </div>
+          <div suiFeedEvent
+               suiLabelImageUrl="/assets/images/laura.jpg">
+            <div suiFeedDate>
+              3 days ago
+            </div>
+            <div suiFeedSummary>
+              <a>Laura Faucet</a> created a post
+            </div>
+            <div suiFeedExtra
+                 suiExtraType="text">
+              Have you seen what's going on in Israel? Can you believe it.
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

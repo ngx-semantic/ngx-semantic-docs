@@ -104,6 +104,51 @@ export class FeedPage {
     </div>
   </div>`;
 
+  snippetImageLabel = `
+  <div sui-feed>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/elliot.jpg">
+      You added Elliot Fu to the group <a>Coworkers</a>
+    </div>
+  </div>`;
+
+  snippetIconLabel = `
+  <div sui-feed>
+    <div suiFeedEvent
+         suiLabelIcon="pencil">
+      <div suiFeedSummary>
+        You posted on your friend <a>Stevie Feliciano's</a> wall.
+        <div suiFeedDate>Today</div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetHeaderDateLabel = `
+  <div sui-feed>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/jenny.jpg">
+      <div suiFeedDate>
+        3 days ago
+      </div>
+      <div suiFeedSummary>
+        You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+      </div>
+    </div>
+  </div>`;
+
+  snippetSubscriptDateLabel = `
+  <div sui-feed>
+    <div suiFeedEvent
+         suiLabelImageUrl="/assets/images/jenny.jpg">
+      <div suiFeedSummary>
+        You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+        <div suiFeedDate>
+          3 days ago
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Feed | Ngx Semantic');
   }
