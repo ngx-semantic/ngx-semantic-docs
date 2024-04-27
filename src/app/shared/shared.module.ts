@@ -19,7 +19,8 @@ import { DocPageComponent } from './components/doc-page.component';
 import { CodeSampleComponent } from './components/code-sample.component';
 import { DocPageContentDirective } from './directives/doc-page-content.directive';
 import { DocWireframeComponent } from './components/doc-wireframe.component';
-import { provideHighlightOptions } from 'ngx-highlightjs';
+import { Highlight, provideHighlightOptions } from 'ngx-highlightjs';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 
 @NgModule({
   imports: [
@@ -32,7 +33,9 @@ import { provideHighlightOptions } from 'ngx-highlightjs';
     SuiDividerModule,
     SuiMenuModule,
     SuiHeaderModule,
-    SuiPopupModule
+    SuiPopupModule,
+    HighlightLineNumbers,
+    Highlight
   ],
   declarations: [
     CodeSampleComponent,

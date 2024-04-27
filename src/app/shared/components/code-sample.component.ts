@@ -6,7 +6,9 @@ import { ClipboardService } from 'ngx-clipboard';
   template: `
     <div class="example">
       <div class="toggle-row">
-        <span sui-popup suiPopupInverted suiPopupContent="Show Source">
+        <span sui-popup
+              suiPopupInverted
+              suiPopupContent="Show Source">
           <i sui-icon
              suiLink
              suiFitted
@@ -44,8 +46,9 @@ import { ClipboardService } from 'ngx-clipboard';
         <div sui-segment
              suiAttached="bottom attached">
         <pre>
-          <code class="language-markup">
-            {{ templateCode }}
+          <code lineNumbers
+                language="html"
+                [highlight]="templateCode">
           </code>
         </pre>
         </div>
@@ -53,8 +56,9 @@ import { ClipboardService } from 'ngx-clipboard';
           <div sui-segment
                suiAttached="bottom attached">
         <pre>
-          <code class="language-typescript">
-            {{ componentCode }}
+          <code lineNumbers
+                language="ts"
+                [highlight]="componentCode">
           </code>
         </pre>
           </div>
