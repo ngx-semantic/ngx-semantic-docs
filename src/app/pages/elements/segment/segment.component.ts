@@ -1,11 +1,10 @@
-import {Component} from '@angular/core';
-import {BasePageComponent} from '../../../shared/components/base-page.component';
-import {Title} from '@angular/platform-browser';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-segment',
   templateUrl: './segment.component.html',
-  styleUrls: ['./segment.component.scss'],
+  styleUrls: [ './segment.component.scss' ],
 })
 export class SegmentComponent {
   snippetSegment = `

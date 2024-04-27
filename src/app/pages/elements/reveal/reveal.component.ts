@@ -1,6 +1,5 @@
 import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-reveals',
