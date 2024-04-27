@@ -1,6 +1,5 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-rating',
@@ -8,7 +7,7 @@ import {HighlightService} from "../../../shared/services/highlight.service";
   styles: [
   ]
 })
-export class RatingComponent implements AfterViewChecked {
+export class RatingComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -68,11 +67,7 @@ export class RatingComponent implements AfterViewChecked {
       suiValue="3"
       suiMaxValue="4"></sui-rating>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Rating | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

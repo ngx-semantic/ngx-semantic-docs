@@ -1,6 +1,5 @@
 import { AfterViewChecked, Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { HighlightService } from '../../../shared/services/highlight.service';
 
 @Component({
   selector: 'doc-dimmer',
@@ -11,7 +10,7 @@ import { HighlightService } from '../../../shared/services/highlight.service';
       }
   ` ]
 })
-export class DimmerComponent implements AfterViewChecked {
+export class DimmerComponent {
   simpleDimmerVisible = false;
   contentDimmerVisible = false;
   pageDimmerVisible = false;
@@ -138,11 +137,7 @@ export class DimmerComponent implements AfterViewChecked {
     <doc-wireframe type="short-paragraph"></doc-wireframe>
   </div>`;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Dimmer | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

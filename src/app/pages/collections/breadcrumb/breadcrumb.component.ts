@@ -1,14 +1,12 @@
-import {Component} from '@angular/core';
-import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
-import {BasePageComponent} from '../../../shared/components/base-page.component';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-breadcrumb',
   templateUrl: './breadcrumb.component.html',
-  styleUrls: ['./breadcrumb.component.scss'],
+  styleUrls: [ './breadcrumb.component.scss' ],
 })
-export class BreadcrumbComponent extends BasePageComponent {
+export class BreadcrumbComponent {
   snippetStd = `
   <div sui-breadcrumb>
       <a suiBreadcrumbSection>Home</a>
@@ -129,8 +127,7 @@ export class BreadcrumbComponent extends BasePageComponent {
       <div suiBreadcrumbSection suiActive>Personal Information</div>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Breadcrumb | Ngx Semantic');
   }
 }

@@ -1,13 +1,12 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {HighlightService} from "../../../shared/services/highlight.service";
 
 @Component({
   selector: 'doc-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.scss'],
 })
-export class MessagesComponent implements AfterViewChecked {
+export class MessagesComponent {
   isDefinitionsActive = true;
   isApiActive: boolean;
 
@@ -189,11 +188,7 @@ export class MessagesComponent implements AfterViewChecked {
   <div sui-message suiSize='massive'>This is a massive message</div>
   `;
 
-  constructor(title: Title, private highlighter: HighlightService) {
+  constructor(title: Title) {
     title.setTitle('Message | Ngx Semantic');
-  }
-
-  ngAfterViewChecked() {
-    this.highlighter.highlightAll();
   }
 }

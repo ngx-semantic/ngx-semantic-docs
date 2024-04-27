@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
-import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-rail',
@@ -13,7 +11,7 @@ import {BasePageComponent} from '../../../shared/components/base-page.component'
     }
   `]
 })
-export class RailComponent extends BasePageComponent {
+export class RailComponent {
   snippetBasic = `
   <div sui-grid
        suiCentered
@@ -109,8 +107,7 @@ export class RailComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Rail | Ngx Semantic');
   }
 }

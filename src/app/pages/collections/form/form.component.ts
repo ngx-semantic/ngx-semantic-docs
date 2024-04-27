@@ -1,13 +1,11 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {HighlightService} from '../../../shared/services/highlight.service';
-import {BasePageComponent} from '../../../shared/components/base-page.component';
 
 @Component({
   selector: 'doc-form',
   templateUrl: './form.component.html'
 })
-export class FormComponent extends BasePageComponent {
+export class FormComponent {
   states = [{text: 'Alabama', value: 'al'}];
   countries = [{text: 'Albania', value: 'al', flag: 'al'}, {text: 'Nigeria', value: 'ng', flag: 'ng'}];
   months = [{text: 'January', value: 'jan'}];
@@ -699,8 +697,7 @@ export class FormComponent extends BasePageComponent {
     </div>
   </div>`;
 
-  constructor(title: Title, highlighter: HighlightService) {
-    super(highlighter);
+  constructor(title: Title) {
     title.setTitle('Form | Ngx Semantic');
   }
 }
