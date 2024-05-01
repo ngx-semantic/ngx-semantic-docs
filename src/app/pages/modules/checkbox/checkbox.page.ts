@@ -8,6 +8,7 @@ import { Title } from '@angular/platform-browser';
 export class CheckboxPage {
   inlineRadioValue: string;
   groupedRadioValue: string;
+  groupedSliderValue: string;
 
   snippetStandard =`
   <sui-checkbox>
@@ -23,6 +24,7 @@ export class CheckboxPage {
   snippetInlineRadio =`
   <div sui-form>
     <div suiFormFields suiInline>
+      <label>How often do you use checkboxes?</label>
       <div suiFormField>
         <sui-checkbox
             suiType="radio"
@@ -63,6 +65,7 @@ export class CheckboxPage {
   snippetGroupedRadio =`
   <div sui-form>
     <div suiFormFields suiGrouped>
+      <label>How often do you use checkboxes?</label>
       <div suiFormField>
         <sui-checkbox
             suiType="radio"
@@ -99,6 +102,93 @@ export class CheckboxPage {
   </div>`;
   snippetGroupedRadioTs = `
   groupedRadioValue: string = null;`;
+
+  snippetGroupedSlider =`
+  <div sui-form>
+    <div suiFormFields suiGrouped>
+      <label>Outbound Throughput</label>
+      <div suiFormField>
+        <sui-checkbox
+            suiType="slider"
+            suiValue="20mb"
+            [(ngModel)]="groupedSliderValue">
+          20 mbps max
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox
+            suiType="slider"
+            suiValue="10mb"
+            [(ngModel)]="groupedSliderValue">
+          10 mbps max
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox
+            suiType="slider"
+            suiValue="5mb"
+            [(ngModel)]="groupedSliderValue">
+          5 mbps max
+        </sui-checkbox>
+      </div>
+      <div suiFormField>
+        <sui-checkbox
+            suiType="slider"
+            suiValue="~mb"
+            [(ngModel)]="groupedSliderValue">
+          Unmetered
+        </sui-checkbox>
+      </div>
+    </div>
+  </div>`;
+  snippetGroupedSliderTs = `
+  groupedSliderValue: string = null;`;
+
+  snippetToggle = `
+  <sui-checkbox
+      suiType="toggle">
+    Subscribe to weekly newsletter
+  </sui-checkbox>`;
+
+  snippetReadOnly = `
+  <sui-checkbox
+      suiReadOnly>
+    Read Only
+  </sui-checkbox>`;
+
+  snippetChecked = `
+  <sui-checkbox
+      [checked]="true">
+    Active
+  </sui-checkbox>`;
+
+  snippetIndeterminate = `
+  <sui-checkbox>
+    Indeterminate
+  </sui-checkbox>`;
+
+  snippetDisabled = `
+  <div>
+    <sui-checkbox disabled>
+      Disabled
+    </sui-checkbox>
+  </div>
+  <div>
+    <sui-checkbox disabled suiType="toggle">
+      Disabled
+    </sui-checkbox>
+  </div>`;
+
+  snippetFitted = `
+  <div sui-segment suiCompact suiFloated="left floated">
+    <sui-checkbox suiFitted></sui-checkbox>
+  </div>
+  <div sui-segment suiCompact suiFloated="left floated">
+    <sui-checkbox suiFitted suiType="slider"></sui-checkbox>
+  </div>
+  <div sui-segment suiCompact suiFloated="left floated">
+    <sui-checkbox suiFitted suiType="toggle"></sui-checkbox>
+  </div>`;
 
   constructor(title: Title) {
     title.setTitle('Checkbox | Ngx Semantic');
