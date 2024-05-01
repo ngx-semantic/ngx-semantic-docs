@@ -29,6 +29,7 @@ import { SuiSearchModule } from 'ngx-semantic/modules/search';
 import { ModalComponent } from './modal/modal.component';
 import { NgxSemanticModule } from 'ngx-semantic';
 import { AccordionPage } from './accordion/accordion.page';
+import { CheckboxPage } from './checkbox/checkbox.page';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AccordionPage } from './accordion/accordion.page';
     DimmerComponent,
     SearchComponent,
     ModalComponent,
-    AccordionPage
+    AccordionPage,
+    CheckboxPage,
   ],
   imports: [
     SharedModule,
