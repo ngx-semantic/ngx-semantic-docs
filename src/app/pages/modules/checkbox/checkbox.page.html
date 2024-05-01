@@ -1,5 +1,127 @@
 <doc-page
-  header="Checkbox"
-  subHeader="v">
+    header="Checkbox"
+    subHeader="A checkbox allows a user to select a value from a small set of options, often binary">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
 
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard">
+      <h3 sui-header>Checkbox</h3>
+      <p>A standard checkbox</p>
+
+      <ng-template #standard>
+        <sui-checkbox>
+          Make my profile visible
+        </sui-checkbox>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="basicRadio"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Radio</h3>
+      <p>A checkbox can be formatted as a radio element. This means it is an exclusive option.</p>
+
+      <ng-template #basicRadio>
+        <sui-checkbox
+            suiType="radio">
+          Radio choice
+        </sui-checkbox>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inlineRadio"
+        [templateCode]="snippetInlineRadio"
+        [componentCode]="snippetInlineRadioTs">
+      <ng-template #inlineRadio>
+        <div sui-form>
+          <div suiFormFields suiInline>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="once-a-week"
+                  [(ngModel)]="inlineRadioValue">
+                Once a week
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="2-3-a-week"
+                  [(ngModel)]="inlineRadioValue">
+                2-3 times a week
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="once-a-day"
+                  [(ngModel)]="inlineRadioValue">
+                Once a day
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="twice-a-day"
+                  [(ngModel)]="inlineRadioValue">
+                Twice a day
+              </sui-checkbox>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="groupedRadio"
+        [templateCode]="snippetGroupedRadio"
+    [componentCode]="snippetGroupedRadioTs">
+      <ng-template #groupedRadio>
+        <div sui-form>
+          <div suiFormFields suiGrouped>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="once-a-week"
+                  [(ngModel)]="groupedRadioValue">
+                Once a week
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="2-3-a-week"
+                  [(ngModel)]="groupedRadioValue">
+                2-3 times a week
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="once-a-day"
+                  [(ngModel)]="groupedRadioValue">
+                Once a day
+              </sui-checkbox>
+            </div>
+            <div suiFormField>
+              <sui-checkbox
+                  suiType="radio"
+                  suiValue="twice-a-day"
+                  [(ngModel)]="groupedRadioValue">
+                Twice a day
+              </sui-checkbox>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+
+  </div>
 </doc-page>
