@@ -52,24 +52,20 @@
     results, make sure you are referencing the latest Semantic UI version.
   </p>
   <pre>
-    <code class="language-html">
-      &lt;link  rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/&gt;
-    </code>
+    <code lineNumbers singleLine="true" [highlightAuto]="snippetCssLink"></code>
   </pre>
   <p>
     Next, you'd need to install the <code>NgxSemantic</code> package as well as the <a
       href="https://material.angular.io/cdk/categories">Angular CDK</a> from the npm registry
   </p>
   <pre>
-    <code class="language-bash">
-      $ npm install &#64;angular/cdk
-      $ npm install ngx-semantic
-
-      # or
-
-      $ yarn add &#64;angular/cdk
-      $ yarn add ngx-semantic
-    </code>
+    <code lineNumbers [highlightAuto]="snippetNpmInstaller"></code>
+  </pre>
+  <p>
+    or if you're into yarn
+  </p>
+  <pre>
+    <code lineNumbers [highlightAuto]="snippetYarnInstaller"></code>
   </pre>
 
   <h2 sui-header
@@ -82,25 +78,13 @@
     <code>NgxSemantic</code> offers, then include the root module in your <code>app.module.ts</code> file
   </p>
   <pre>
-    <code class="language-typescript">
-      import &#123;NgxSemanticModule&#125; from "ngx-semantic";
-      ...
-
-      &#64;NgModule(&#123;
-        declarations: [AppComponent, ...],
-        imports: [NgxSemanticModule, ...],
-        bootstrap: [AppComponent]
-      &#125;)
-      export class AppModule  &#123; &#125;
-    </code>
+    <code lineNumbers [highlightAuto]="snippetAllImport"></code>
   </pre>
   <p>
     Note that you can also import the modules individually.
   </p>
   <pre>
-    <code class="language-typescript">
-      import &#123;SuiSegmentModule, SuiLabelModule, SuiIconModule&#125; from "ngx-semantic";
-    </code>
+    <code lineNumbers [highlightAuto]="snippetIndividualImport"></code>
   </pre>
   <p>
     You're good to go.

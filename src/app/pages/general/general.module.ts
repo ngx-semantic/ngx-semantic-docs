@@ -10,6 +10,8 @@ import {GeneralRoutingModule} from "./general-routing.module";
 
 import {SuiHeaderModule} from "ngx-semantic/elements/header";
 import { ContributingComponent } from './contributing/contributing.component';
+import { Highlight, HighlightAuto } from 'ngx-highlightjs';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { ContributingComponent } from './contributing/contributing.component';
   imports: [
     CommonModule,
     SuiHeaderModule,
-    GeneralRoutingModule
+    GeneralRoutingModule,
+    Highlight,
+    HighlightAuto,
+    HighlightLineNumbers
   ]
 })
 export class GeneralModule {
