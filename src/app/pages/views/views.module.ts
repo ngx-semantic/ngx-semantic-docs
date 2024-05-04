@@ -11,6 +11,14 @@ import { StatisticsComponent } from './statistic/statistics.component';
 import { FeedPage } from './feed/feed.page';
 import { SuiFeedModule } from 'ngx-semantic/views/feed';
 import { AdvertisementPage } from './advertisement/advertisement.page';
+import { SuiHeaderModule } from 'ngx-semantic/elements/header';
+import { SuiTableModule } from 'ngx-semantic/collections/table';
+import { SuiLabelModule } from 'ngx-semantic/elements/label';
+import { SuiIconModule } from 'ngx-semantic/elements/icon';
+import { SuiCardModule } from 'ngx-semantic/views/card';
+import { SuiStatisticModule } from 'ngx-semantic/views/statistics';
+import { SuiImageModule } from 'ngx-semantic/elements/image';
+import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 
 @NgModule({
   declarations: [
@@ -23,7 +31,15 @@ import { AdvertisementPage } from './advertisement/advertisement.page';
     CommonModule,
     SharedModule,
     ViewsRoutingModule,
-    SuiFeedModule
+    SuiFeedModule,
+    SuiHeaderModule,
+    SuiTableModule,
+    SuiLabelModule,
+    SuiIconModule,
+    SuiCardModule,
+    SuiImageModule,
+    SuiSegmentModule,
+    SuiStatisticModule,
   ]
 })
 export class ViewsModule {
