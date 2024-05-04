@@ -43,4 +43,11 @@ export class AdvertisementPage {
       </script>
     !-->
   </div>`;
+
+  snippetCommonUnits = `
+  <div sui-advertisement suiTest suiSize="medium" suiType="rectangle" data-text="Medium Rectangle"></div>
+  <div sui-advertisement suiTest suiType="banner" data-text="Banner"></div>
+  <div sui-advertisement suiTest suiType="leaderboard" data-text="Leaderboard"></div>
+  <div sui-advertisement suiTest suiSize="large" suiType="rectangle" data-text="Large Rectangle"></div>
+  <div sui-advertisement suiTest suiHalf suiType="page" data-text="Half Page"></div>`;
 }

@@ -22,5 +22,25 @@
              suiType="banner"></div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="commonUnits"
+        [templateCode]="snippetCommonUnits">
+      <h3 sui-header>Common Units</h3>
+      <p>An advertisement can appear in common ad unit sizes</p>
+
+      <div sui-message
+           suiState="info">
+        These additional examples use the <code>suiTest</code> variation to appear on the page.
+        <code>sui-advertisement</code> is best used as a wrapper for third party ad network content like <a
+          href="https://www.google.com/adsense/start/">AdSense</a> or <a
+          href="https://www.google.com/doubleclick/publishers/welcome/">DoubleClick</a>.
+      </div>
+
+      <ng-template #commonUnits>
+        <div sui-advertisement suiTest suiType="banner" data-text="Banner"></div>
+        <div sui-advertisement suiTest suiHalf suiType="page" data-text="Half Page"></div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>
