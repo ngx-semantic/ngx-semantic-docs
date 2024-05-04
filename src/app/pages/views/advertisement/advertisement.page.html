@@ -1,1 +1,26 @@
-<div>Hello</div>
+<doc-page
+    header="Advertisement"
+    subHeader="An ad displays third-party promotional content">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard">
+      <h3 sui-header>Ad</h3>
+      <p>A standard ad</p>
+
+      <div sui-message>
+        The following example uses a basic <a
+          href="https://support.google.com/adsense/answer/181947?ctx=as2&rd=2&ref_topic=29033">AdSense
+        implementation</a>. Your code will vary depending on your ad network.
+      </div>
+
+      <ng-template #standard>
+        <div sui-advertisement
+             suiType="banner"></div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+</doc-page>

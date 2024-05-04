@@ -19,6 +19,8 @@ import { SuiCardModule } from 'ngx-semantic/views/card';
 import { SuiStatisticModule } from 'ngx-semantic/views/statistics';
 import { SuiImageModule } from 'ngx-semantic/elements/image';
 import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
+import { SuiMessageModule } from 'ngx-semantic/collections/message';
+import { SuiAdvertisementModule } from 'ngx-semantic/views/advertisement';
 
 @NgModule({
   declarations: [
@@ -38,8 +40,10 @@ import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
     SuiIconModule,
     SuiCardModule,
     SuiImageModule,
+    SuiMessageModule,
     SuiSegmentModule,
     SuiStatisticModule,
+    SuiAdvertisementModule,
   ]
 })
 export class ViewsModule {
