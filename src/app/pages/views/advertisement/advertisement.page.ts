@@ -82,6 +82,13 @@ export class AdvertisementPage {
   snippetNetboard = `
   <div sui-advertisement suiTest suiType="netboard"></div>`;
 
+  snippetCentered = `
+  <div sui-advertisement suiTest suiCentered suiType="banner"></div>`;
+
+  snippetTest = `
+  <div sui-advertisement suiTest suiSize="medium" suiType="rectangle" data-text="Ad Unit 1"></div>
+  <div sui-advertisement suiTest suiSize="medium" suiType="rectangle" data-text="Ad Unit 2"></div>`;
+
   constructor(title: Title) {
     title.setTitle('Advertisement | Ngx Semantic');
   }
