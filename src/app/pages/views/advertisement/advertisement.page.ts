@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-advertisement',
@@ -50,4 +51,12 @@ export class AdvertisementPage {
   <div sui-advertisement suiTest suiType="leaderboard" data-text="Leaderboard"></div>
   <div sui-advertisement suiTest suiSize="large" suiType="rectangle" data-text="Large Rectangle"></div>
   <div sui-advertisement suiTest suiHalf suiType="page" data-text="Half Page"></div>`;
+
+  snippetMobile = `
+  <div sui-advertisement suiTest suiMobile suiType="leaderboard" data-text="Mobile Leaderboard"></div>
+  <div sui-advertisement suiTest suiMobile suiType="banner" data-text="Mobile Banner"></div>`;
+
+  constructor(title: Title) {
+    title.setTitle('Advertisement | Ngx Semantic');
+  }
 }

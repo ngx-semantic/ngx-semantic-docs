@@ -42,5 +42,20 @@
         <div sui-advertisement suiTest suiHalf suiType="page" data-text="Half Page"></div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="mobile"
+        [templateCode]="snippetMobile">
+      <h3 sui-header>Mobile</h3>
+      <p>An ad can use common mobile ad sizes</p>
+
+      <div sui-message
+           suiState="info">
+        Mobile ads will automatically only appear on mobile browser viewports.
+      </div>
+
+      <ng-template #mobile>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>
