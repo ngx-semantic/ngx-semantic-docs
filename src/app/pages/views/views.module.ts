@@ -7,13 +7,14 @@ import { CardsComponent } from './card/cards.component';
 import { CommonModule } from '@angular/common';
 import { ViewsRoutingModule } from './views-routing.module';
 import { SharedModule } from '../../shared/shared.module';
-import { NgxSemanticModule } from 'ngx-semantic';
 import { StatisticsComponent } from './statistic/statistics.component';
 import { FeedPage } from './feed/feed.page';
 import { SuiFeedModule } from 'ngx-semantic/views/feed';
+import { AdvertisementPage } from './advertisement/advertisement.page';
 
 @NgModule({
   declarations: [
+    AdvertisementPage,
     CardsComponent,
     FeedPage,
     StatisticsComponent
@@ -21,7 +22,6 @@ import { SuiFeedModule } from 'ngx-semantic/views/feed';
   imports: [
     CommonModule,
     SharedModule,
-    NgxSemanticModule,
     ViewsRoutingModule,
     SuiFeedModule
   ]

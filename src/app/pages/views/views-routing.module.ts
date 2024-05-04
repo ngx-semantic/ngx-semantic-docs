@@ -6,8 +6,13 @@ import { CardsComponent } from './card/cards.component';
 import { NgModule } from '@angular/core';
 import { StatisticsComponent } from './statistic/statistics.component';
 import { FeedPage } from './feed/feed.page';
+import { AdvertisementPage } from './advertisement/advertisement.page';
 
 const routes: Routes = [
+  {
+    path: 'advertisement',
+    component: AdvertisementPage,
+  },
   {
     path: 'card',
     component: CardsComponent,
