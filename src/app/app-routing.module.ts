@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {ElementsComponent} from './pages/elements/elements.component';
-import {CollectionsComponent} from './pages/collections/collections.component';
-import {ViewsComponent} from './pages/views/views.component';
-import {GeneralComponent} from "./pages/general/general.component";
-import {ModulesComponent} from "./pages/modules/modules.component";
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ElementsComponent } from './pages/elements/elements.component';
+import { CollectionsComponent } from './pages/collections/collections.component';
+import { ViewsComponent } from './pages/views/views.component';
+import { GeneralComponent } from './pages/general/general.component';
+import { ModulesComponent } from './pages/modules/modules.component';
 
 const routes: Routes = [
   {
@@ -39,8 +39,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule],
+  imports: [ RouterModule.forRoot(routes, {}) ],
+  exports: [ RouterModule ],
 })
 export class AppRoutingModule {
 }
