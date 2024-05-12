@@ -20,27 +20,51 @@
       </ng-template>
     </doc-code-sample>
 
+    <div>
+      <div sui-buttons>
+        <button sui-button suiIcon suiBasic suiColour="red" (click)="addToStandard(-11)">
+          <i sui-icon suiIconType="minus"></i>
+        </button>
+        <button sui-button suiIcon suiBasic suiColour="green" (click)="addToStandard(11)">
+          <i sui-icon suiIconType="plus"></i>
+        </button>
+      </div>
+    </div>
+
     <doc-code-sample
         [content]="indicating"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetIndicating"
+        [componentCode]="snippetIndicatingTs">
       <h3 sui-header>Indicating</h3>
       <p>An indicating progress bar visually indicates the current level of progress of a task</p>
 
       <ng-template #indicating>
         <sui-progress
             suiIndicating
+            suiState="active"
             [suiValue]="indicatingValue">
-          {{indicatingValue}}% Funded
+          {{ indicatingValue }}% Funded
         </sui-progress>
       </ng-template>
     </doc-code-sample>
+
+    <div>
+      <div sui-buttons>
+        <button sui-button suiIcon suiBasic suiColour="red" (click)="addToIndicating(-13)">
+          <i sui-icon suiIconType="minus"></i>
+        </button>
+        <button sui-button suiIcon suiBasic suiColour="green" (click)="addToIndicating(13)">
+          <i sui-icon suiIconType="plus"></i>
+        </button>
+      </div>
+    </div>
 
     <h2 sui-header
         suiDividing>Content</h2>
 
     <doc-code-sample
         [content]="bar"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetBar">
       <h3 sui-header>Bar</h3>
       <p>A progress element can contain a bar visually indicating progress</p>
 
@@ -53,7 +77,7 @@
 
     <doc-code-sample
         [content]="progress"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetProgress">
       <h3 sui-header>Progress</h3>
       <p>A progress bar can contain a text value indicating current progress</p>
 
@@ -85,7 +109,7 @@
 
     <doc-code-sample
         [content]="active"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
       <p>A progress bar can show activity</p>
 
@@ -100,7 +124,7 @@
 
     <doc-code-sample
         [content]="success"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetSuccess">
       <h3 sui-header>Success</h3>
       <p>A progress bar can show a success state</p>
 
@@ -115,7 +139,7 @@
 
     <doc-code-sample
         [content]="warning"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetWarning">
       <h3 sui-header>Warning</h3>
       <p>A progress bar can show a warning state</p>
 
@@ -130,7 +154,7 @@
 
     <doc-code-sample
         [content]="error"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetError">
       <h3 sui-header>Error</h3>
       <p>A progress bar can show an error state</p>
 
@@ -145,7 +169,7 @@
 
     <doc-code-sample
         [content]="disabled"
-        [templateCode]="snippetStandard">
+        [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A progress bar can show an error state</p>
 
