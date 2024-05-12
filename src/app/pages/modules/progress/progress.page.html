@@ -375,8 +375,8 @@
     <doc-code-sample
         [content]="invertedColour"
         [templateCode]="snippetInvertedColour">
-      <h3 sui-header>Colours</h3>
-      <p>Can have different colours</p>
+      <h3 sui-header>Inverted Colours</h3>
+      <p>These colors can also be inverted for improved contrast on dark backgrounds</p>
 
       <ng-template #invertedColour>
         <div sui-segment suiInverted>
@@ -464,5 +464,139 @@
   </div>
 
   <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-progress</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiColour</td>
+        <td>Set the progress colour. Allowed values could be
+          <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span
+              sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span
+              sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span
+              sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span
+              sui-label>'black'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>Set the progress size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiState</td>
+        <td>
+          Determines the progress' state. Allowed values could be
+          <span sui-label>'active'</span> | <span sui-label>'success'</span> | <span sui-label>'warning'</span> | <span
+            sui-label>'error'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAttached</td>
+        <td>
+          Determines the progress' attachment position. Allowed values could be
+          <span sui-label>'bottom'</span> | <span sui-label>'top'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIndicating</td>
+        <td>
+          Determines if the progress is indicating
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>
+          Determines if the progress is disabled
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInverted</td>
+        <td>Determines whether the progress bar uses inverted colours</td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiShowProgress</td>
+        <td>Determines whether the progress percentage is displayed</td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </doc-page>
