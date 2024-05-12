@@ -31,6 +31,10 @@ import { NgxSemanticModule } from 'ngx-semantic';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
+import { SuiProgressModule } from 'ngx-semantic/modules/progress';
+import { SuiModalModule } from 'ngx-semantic/modules/modal';
+import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
+import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 
 @NgModule({
   declarations: [
@@ -45,24 +49,26 @@ import { ProgressPage } from './progress/progress.page';
     ProgressPage,
   ],
   imports: [
-    SharedModule,
     CommonModule,
+    FormsModule,
+    ModulesRoutingModule,
+    SharedModule,
     SuiLabelModule,
     SuiTableModule,
     SuiEmbedModule,
     SuiHeaderModule,
     SuiRatingModule,
-    ModulesRoutingModule,
     SuiTabsModule,
     SuiPlaceholderModule,
     SuiButtonModule,
-    FormsModule,
     SuiDimmerModule,
     SuiSegmentModule,
     SuiIconModule,
     SuiSearchModule,
-    NgxSemanticModule,
-    NgOptimizedImage
+    SuiProgressModule,
+    SuiModalModule,
+    SuiCheckboxModule,
+    SuiAccordionModule,
   ]
 })
 export class ModulesModule {
