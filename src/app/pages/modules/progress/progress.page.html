@@ -180,6 +180,97 @@
         </sui-progress>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A progress bar can have its colors inverted</p>
+
+      <ng-template #inverted>
+        <div sui-segment suiInverted>
+          <sui-progress
+              suiInverted
+              suiShowProgress
+              [suiValue]="15">
+            Uploading Files
+          </sui-progress>
+          <sui-progress
+              suiInverted
+              suiShowProgress
+              suiState="success"
+              [suiValue]="100">
+            Success
+          </sui-progress>
+          <sui-progress
+              suiInverted
+              suiShowProgress
+              suiState="warning"
+              [suiValue]="100">
+            Warning
+          </sui-progress>
+          <sui-progress
+              suiInverted
+              suiShowProgress
+              suiState="error"
+              [suiValue]="100">
+            Error
+          </sui-progress>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="attached"
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>AA progress bar can show progress of an element</p>
+
+      <ng-template #attached>
+        <div sui-segment>
+          <sui-progress
+              suiAttached="top"
+              [suiValue]="21">
+          </sui-progress>
+          <p style="margin: 20px">La la la la</p>
+          <sui-progress
+              suiAttached="bottom"
+              [suiValue]="31">
+          </sui-progress>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="cardAttached"
+        [templateCode]="snippetCardAttached">
+      <ng-template #cardAttached>
+        <div sui-card>
+          <div suiCardImage>
+            <img src="/assets/images/wireframes/image.png" />
+          </div>
+          <div suiCardContent>
+            <a suiCardHeader>Project</a>
+            <div suiCardMeta>
+              <span class="date">Started in 2014</span>
+            </div>
+          </div>
+          <div suiCardExtra>
+            <a>
+              <i sui-icon suiIconType="user"></i>
+              22 Friends
+            </a>
+          </div>
+          <sui-progress
+              suiAttached="bottom"
+              [suiValue]="31">
+          </sui-progress>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

@@ -68,6 +68,71 @@ export class ProgressPage {
       [suiValue]="38">
   </sui-progress>`;
 
+  snippetInverted = `
+  <sui-progress
+      suiInverted
+      suiShowProgress
+      [suiValue]="15">
+    Uploading Files
+  </sui-progress>
+  <sui-progress
+      suiInverted
+      suiShowProgress
+      suiState="success"
+      [suiValue]="100">
+    Success
+  </sui-progress>
+  <sui-progress
+      suiInverted
+      suiShowProgress
+      suiState="warning"
+      [suiValue]="100">
+    Warning
+  </sui-progress>
+  <sui-progress
+      suiInverted
+      suiShowProgress
+      suiState="error"
+      [suiValue]="100">
+    Error
+  </sui-progress>`;
+
+  snippetAttached = `
+  <div sui-segment>
+    <sui-progress
+        suiAttached="top"
+        [suiValue]="21">
+    </sui-progress>
+    <p>La la la la</p>
+    <sui-progress
+        suiAttached="bottom"
+        [suiValue]="31">
+    </sui-progress>
+  </div>`;
+
+  snippetCardAttached = `
+  <div sui-card>
+    <div suiCardImage>
+      <img src="/assets/images/wireframes/image.png" />
+    </div>
+    <div suiCardContent>
+      <a suiCardHeader>Project</a>
+      <div suiCardMeta>
+        <span class="date">Started in 2014</span>
+      </div>
+    </div>
+    <div suiCardExtra>
+      <a>
+        <i sui-icon suiIconType="user"></i>
+        22 Friends
+      </a>
+    </div>
+    <sui-progress
+        suiAttached="bottom"
+        [suiValue]="31">
+    </sui-progress>
+  </div>`;
+
   standardValue = 31;
   indicatingValue = 40;
 

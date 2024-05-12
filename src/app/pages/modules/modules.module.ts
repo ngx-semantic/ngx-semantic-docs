@@ -35,6 +35,7 @@ import { SuiProgressModule } from 'ngx-semantic/modules/progress';
 import { SuiModalModule } from 'ngx-semantic/modules/modal';
 import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
+import { SuiCardModule } from 'ngx-semantic/views/card';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
     SharedModule,
     SuiLabelModule,
     SuiTableModule,
+    SuiCardModule,
     SuiEmbedModule,
     SuiHeaderModule,
     SuiRatingModule,
