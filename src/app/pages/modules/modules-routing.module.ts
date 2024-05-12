@@ -13,6 +13,7 @@ import { TabComponent } from './tab/tab.component';
 import { ModalComponent } from './modal/modal.component';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
+import { ProgressPage } from './progress/progress.page';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'modal',
     component: ModalComponent
+  },
+  {
+    path: 'progress',
+    component: ProgressPage
   },
   {
     path: 'rating',

@@ -10,18 +10,18 @@ export class CheckboxPage {
   groupedRadioValue: string;
   groupedSliderValue: string;
 
-  snippetStandard =`
+  snippetStandard = `
   <sui-checkbox>
     Make my profile visible
   </sui-checkbox>`;
 
-  snippetBasic =`
+  snippetBasic = `
   <sui-checkbox
       suiType="radio">
     Radio choice
   </sui-checkbox>`;
 
-  snippetInlineRadio =`
+  snippetInlineRadio = `
   <div sui-form>
     <div suiFormFields suiInline>
       <label>How often do you use checkboxes?</label>
@@ -62,7 +62,7 @@ export class CheckboxPage {
   snippetInlineRadioTs = `
   inlineRadioValue: string = null;`;
 
-  snippetGroupedRadio =`
+  snippetGroupedRadio = `
   <div sui-form>
     <div suiFormFields suiGrouped>
       <label>How often do you use checkboxes?</label>
@@ -103,7 +103,7 @@ export class CheckboxPage {
   snippetGroupedRadioTs = `
   groupedRadioValue: string = null;`;
 
-  snippetGroupedSlider =`
+  snippetGroupedSlider = `
   <div sui-form>
     <div suiFormFields suiGrouped>
       <label>Outbound Throughput</label>

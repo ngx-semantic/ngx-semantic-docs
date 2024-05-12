@@ -30,6 +30,13 @@ import { ModalComponent } from './modal/modal.component';
 import { NgxSemanticModule } from 'ngx-semantic';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
+import { ProgressPage } from './progress/progress.page';
+import { SuiProgressModule } from 'ngx-semantic/modules/progress';
+import { SuiModalModule } from 'ngx-semantic/modules/modal';
+import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
+import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
+import { SuiCardModule } from 'ngx-semantic/views/card';
+import { SuiMessageModule } from 'ngx-semantic/collections/message';
 
 @NgModule({
   declarations: [
@@ -41,26 +48,31 @@ import { CheckboxPage } from './checkbox/checkbox.page';
     ModalComponent,
     AccordionPage,
     CheckboxPage,
+    ProgressPage,
   ],
   imports: [
-    SharedModule,
     CommonModule,
+    FormsModule,
+    ModulesRoutingModule,
+    SharedModule,
     SuiLabelModule,
     SuiTableModule,
+    SuiCardModule,
     SuiEmbedModule,
     SuiHeaderModule,
     SuiRatingModule,
-    ModulesRoutingModule,
     SuiTabsModule,
     SuiPlaceholderModule,
     SuiButtonModule,
-    FormsModule,
     SuiDimmerModule,
     SuiSegmentModule,
     SuiIconModule,
     SuiSearchModule,
-    NgxSemanticModule,
-    NgOptimizedImage
+    SuiProgressModule,
+    SuiModalModule,
+    SuiMessageModule,
+    SuiCheckboxModule,
+    SuiAccordionModule,
   ]
 })
 export class ModulesModule {
