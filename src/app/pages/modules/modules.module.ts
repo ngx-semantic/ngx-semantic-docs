@@ -30,6 +30,7 @@ import { ModalComponent } from './modal/modal.component';
 import { NgxSemanticModule } from 'ngx-semantic';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
+import { ProgressPage } from './progress/progress.page';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CheckboxPage } from './checkbox/checkbox.page';
     ModalComponent,
     AccordionPage,
     CheckboxPage,
+    ProgressPage,
   ],
   imports: [
     SharedModule,
