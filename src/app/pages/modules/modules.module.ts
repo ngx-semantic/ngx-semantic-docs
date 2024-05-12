@@ -36,6 +36,7 @@ import { SuiModalModule } from 'ngx-semantic/modules/modal';
 import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiCardModule } from 'ngx-semantic/views/card';
+import { SuiMessageModule } from 'ngx-semantic/collections/message';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { SuiCardModule } from 'ngx-semantic/views/card';
     SuiSearchModule,
     SuiProgressModule,
     SuiModalModule,
+    SuiMessageModule,
     SuiCheckboxModule,
     SuiAccordionModule,
   ]
