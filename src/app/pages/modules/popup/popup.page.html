@@ -224,4 +224,164 @@
       </ng-template>
     </doc-code-sample>
   </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-popup</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiPopupPlacement</td>
+        <td>Set the popup's position. Allowed values could be
+          <span sui-label>'top left'</span> | <span sui-label>'top center'</span> | <span sui-label>'top right'</span> | <span
+              sui-label>'bottom left'</span> | <span sui-label>'bottom center'</span> | <span sui-label>'bottom right'</span> | <span
+              sui-label>'right center'</span> | <span sui-label>'left center'</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            top left
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupSize</td>
+        <td>Set the popup size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupWidth</td>
+        <td>
+          Determines the popup's width. Allowed values could be
+          <span sui-label>'wide'</span> | <span sui-label>'very wide'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupTrigger</td>
+        <td>
+          Determines the popup's trigger. Allowed values could be
+          <span sui-label>'hover'</span> | <span sui-label>'click'</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">hover</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupTitle</td>
+        <td>
+          What should get rendered as the popup's title/header
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupContent</td>
+        <td>
+          What should get rendered as the popup's content. Could be a string or a template reference
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div> |
+          <div sui-label suiColour="teal">TemplateRef&lt;any&gt;</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupInverted</td>
+        <td>
+          Determines if the popup uses inverted colours
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupFluid</td>
+        <td>
+          Determines if the popup uses fluid styling
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupFlowing</td>
+        <td>
+          Determines if the popup uses flowing styling
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupBasic</td>
+        <td>Determines whether the popup uses basic styling and renders without the arrow</td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </doc-page>
