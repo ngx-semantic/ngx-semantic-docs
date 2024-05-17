@@ -96,6 +96,45 @@ export class PopupPage {
      sui-popup suiPopupSize="huge"
      suiPopupContent="Hello. This is a huge popup"></i>`;
 
+  snippetFlowing = `
+  <div sui-button
+       sui-popup suiPopupFlowing [suiPopupContent]="flowingTemplate">
+    Show flowing popup
+  </div>
+  <ng-template #flowingTemplate>
+    <div sui-grid suiDivided="divided" suiAlignment="center aligned" suiWidth="three">
+      <div suiGridColumn>
+        <div sui-header>Basic Plan</div>
+        <p><b>2</b> projects, $10 a month</p>
+        <div sui-button>Choose</div>
+      </div>
+      <div suiGridColumn>
+        <div sui-header>Business Plan</div>
+        <p><b>5</b> projects, $20 a month</p>
+        <div sui-button>Choose</div>
+      </div>
+      <div suiGridColumn>
+        <div sui-header>Premium Plan</div>
+        <p><b>8</b> projects, $25 a month</p>
+        <div sui-button>Choose</div>
+      </div>
+    </div>
+  </ng-template>`;
+
+  snippetInverted = `
+  <i sui-icon suiCircular suiLink suiIconType="heart"
+     sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup"></i>
+  <button sui-button suiIcon
+          sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup">
+    <i sui-icon suiIconType="add"></i>
+  </button>`;
+
+  snippetPosition = `
+  <i sui-icon suiCircular suiColour="red" suiSize="big" suiIconType="heart"
+     sui-popup suiPopupPlacement="bottom left" suiPopupContent="This is a bottom left popup"></i>
+  <i sui-icon suiCircular suiColour="teal" suiSize="big" suiIconType="heart"
+     sui-popup suiPopupPlacement="top right" suiPopupContent="This is a top right popup"></i>`;
+
   constructor(title: Title) {
     title.setTitle('Popup | Ngx Semantic');
   }

@@ -160,5 +160,68 @@
            suiPopupContent="Hello. This is a huge popup"></i>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="flowing"
+        [templateCode]="snippetFlowing">
+      <h3 sui-header>Flowing</h3>
+      <p>A popup can have no maximum width and continue to flow to fit its content</p>
+
+      <ng-template #flowing>
+        <div sui-button
+             sui-popup suiPopupFlowing [suiPopupContent]="flowingTemplate">
+          Show flowing popup
+        </div>
+        <ng-template #flowingTemplate>
+          <div sui-grid suiDivided="divided" suiAlignment="center aligned" suiWidth="three">
+            <div suiGridColumn>
+              <div sui-header>Basic Plan</div>
+              <p><b>2</b> projects, $10 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+            <div suiGridColumn>
+              <div sui-header>Business Plan</div>
+              <p><b>5</b> projects, $20 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+            <div suiGridColumn>
+              <div sui-header>Premium Plan</div>
+              <p><b>8</b> projects, $25 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A popup can have its colors inverted</p>
+
+      <ng-template #inverted>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup"></i>
+        <button sui-button suiIcon
+                sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup">
+          <i sui-icon suiIconType="add"></i>
+        </button>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="position"
+        [templateCode]="snippetPosition">
+      <h3 sui-header>Position</h3>
+      <p>A popup can be position around its trigger</p>
+
+      <ng-template #position>
+        <i sui-icon suiCircular suiColour="red" suiSize="big" suiIconType="heart"
+           sui-popup suiPopupPlacement="bottom left" suiPopupContent="This is a bottom left popup"></i>
+        <i sui-icon suiCircular suiColour="teal" suiSize="big" suiIconType="heart"
+           sui-popup suiPopupPlacement="top right" suiPopupContent="This is a top right popup"></i>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>
