@@ -37,6 +37,10 @@ import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiCardModule } from 'ngx-semantic/views/card';
 import { SuiMessageModule } from 'ngx-semantic/collections/message';
+import { PopupPage } from './popup/popup.page';
+import { SuiPopupModule } from 'ngx-semantic/modules/popup';
+import { SuiImageModule } from 'ngx-semantic/elements/image';
+import { SuiGridModule } from 'ngx-semantic/collections/grid';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,7 @@ import { SuiMessageModule } from 'ngx-semantic/collections/message';
     AccordionPage,
     CheckboxPage,
     ProgressPage,
+    PopupPage,
   ],
   imports: [
     CommonModule,
@@ -62,17 +67,20 @@ import { SuiMessageModule } from 'ngx-semantic/collections/message';
     SuiHeaderModule,
     SuiRatingModule,
     SuiTabsModule,
-    SuiPlaceholderModule,
     SuiButtonModule,
     SuiDimmerModule,
-    SuiSegmentModule,
     SuiIconModule,
-    SuiSearchModule,
-    SuiProgressModule,
+    SuiGridModule,
+    SuiImageModule,
     SuiModalModule,
+    SuiPopupModule,
+    SuiSearchModule,
+    SuiSegmentModule,
     SuiMessageModule,
+    SuiProgressModule,
     SuiCheckboxModule,
     SuiAccordionModule,
+    SuiPlaceholderModule,
   ]
 })
 export class ModulesModule {

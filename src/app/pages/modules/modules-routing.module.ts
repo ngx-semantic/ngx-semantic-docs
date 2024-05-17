@@ -14,6 +14,7 @@ import { ModalComponent } from './modal/modal.component';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
+import { PopupPage } from './popup/popup.page';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'modal',
     component: ModalComponent
+  },
+  {
+    path: 'popup',
+    component: PopupPage
   },
   {
     path: 'progress',

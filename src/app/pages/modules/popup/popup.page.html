@@ -1,0 +1,387 @@
+<doc-page
+    header="Popup"
+    subHeader="A popup displays additional information on top of a page">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard">
+      <h3 sui-header>Popup</h3>
+      <p>An element can specify popup content to appear</p>
+
+      <div sui-message suiState="info">
+        Popup relies on <a href="https://www.npmjs.com/package/@angular/cdk">Angular CDK</a>. Ensure that you have the
+        latest version compatible with your Angular version
+      </div>
+
+      <ng-template #standard>
+        <button sui-button suiIcon
+                sui-popup suiPopupContent="Add users to your feed">
+          <i sui-icon suiIconType="add"></i>
+        </button>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="titled"
+        [templateCode]="snippetTitled">
+      <h3 sui-header>Titled</h3>
+      <p>An element can specify popup content with a title</p>
+
+      <ng-template #titled>
+        <img sui-image suiAvatar
+             sui-popup suiPopupTitle="Elliot Fu" suiPopupContent="Elliot has been a member since July 2012"
+             src="/assets/images/elliot.jpg"/>
+        <img sui-image suiAvatar
+             sui-popup suiPopupTitle="Stevie Feliciano" suiPopupContent="Stevie has been a member since August 2013"
+             src="/assets/images/stevie.jpg"/>
+        <img sui-image suiAvatar
+             sui-popup suiPopupTitle="Matt" suiPopupContent="Matt has been a member since July 2014"
+             src="/assets/images/matt.jpg"/>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="html"
+        [templateCode]="snippetHtml">
+      <h3 sui-header>HTML</h3>
+      <p>An element can specify template HTML for a popup</p>
+
+      <ng-template #html>
+        <div sui-card
+             sui-popup suiPopupTitle="User Rating" [suiPopupContent]="popupContent">
+          <div suiCardImage>
+            <img src="https://semantic-ui.com/images/movies/watchmen-horizontal.jpg"/>
+          </div>
+          <div suiCardContent>
+            <div suiCardHeader>Watchmen</div>
+            <div suiCardDescription>
+              In a gritty and alternate 1985 the glory days of costumed vigilantes have been brought to a close by a
+              government crackdown, but after one of the masked veterans is brutally murdered an investigation into the
+              killer is initiated.
+            </div>
+          </div>
+          <div sui-buttons suiAttached suiWidth="two" suiAttachedPosition="bottom">
+            <div sui-button>
+              <i sui-icon suiIconType="add"></i>
+              Queue
+            </div>
+            <div sui-button suiEmphasis="primary">
+              <i sui-icon suiIconType="play"></i>
+              Watch
+            </div>
+          </div>
+        </div>
+
+        <ng-template #popupContent>
+          <sui-rating suiValue="3" suiMaxValue="5"></sui-rating>
+        </ng-template>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="basic"
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Basic</h3>
+      <p>A popup can provide more basic formatting</p>
+
+      <ng-template #basic>
+        <button sui-button suiIcon
+                sui-popup suiPopupBasic suiPopupContent="The default theme's basic popup removes the pointing arrow.">
+          <i sui-icon suiIconType="add"></i>
+        </button>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="width"
+        [templateCode]="snippetWidth">
+      <h3 sui-header>Width</h3>
+      <p>A popup can be extra wide to allow for longer content</p>
+
+      <ng-template #width>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupWidth="wide"
+           suiPopupContent="Hello. This is a wide pop-up which allows for lots of content with additional space. You can fit a lot of words here and the paragraphs will be pretty wide."></i>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupWidth="very wide"
+           suiPopupContent="Hello. This is a very wide pop-up which allows for lots of content with additional space. You can fit a lot of words here and the paragraphs will be pretty wide."></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fluid"
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>A fluid popup will take up the entire width of its offset container</p>
+
+      <ng-template #fluid>
+        <div sui-button
+             sui-popup [suiPopupContent]="fluidPopup">
+          Show fluid popup
+        </div>
+        <ng-template #fluidPopup>
+          <div sui-grid suiDivided="divided" suiAlignment="center aligned" suiWidth="four">
+            <div suiGridColumn>1</div>
+            <div suiGridColumn>2</div>
+            <div suiGridColumn>3</div>
+            <div suiGridColumn>4</div>
+          </div>
+        </ng-template>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="size"
+        [templateCode]="snippetSize">
+      <h3 sui-header>Size</h3>
+      <p>A popup can vary in size</p>
+
+      <ng-template #size>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupSize="mini"
+           suiPopupContent="Hello. This is a mini popup"></i>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupSize="tiny"
+           suiPopupContent="Hello. This is a tiny popup"></i>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupSize="small"
+           suiPopupContent="Hello. This is a small popup"></i>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupSize="large"
+           suiPopupContent="Hello. This is a large popup"></i>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupSize="huge"
+           suiPopupContent="Hello. This is a huge popup"></i>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="flowing"
+        [templateCode]="snippetFlowing">
+      <h3 sui-header>Flowing</h3>
+      <p>A popup can have no maximum width and continue to flow to fit its content</p>
+
+      <ng-template #flowing>
+        <div sui-button
+             sui-popup suiPopupFlowing [suiPopupContent]="flowingTemplate">
+          Show flowing popup
+        </div>
+        <ng-template #flowingTemplate>
+          <div sui-grid suiDivided="divided" suiAlignment="center aligned" suiWidth="three">
+            <div suiGridColumn>
+              <div sui-header>Basic Plan</div>
+              <p><b>2</b> projects, $10 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+            <div suiGridColumn>
+              <div sui-header>Business Plan</div>
+              <p><b>5</b> projects, $20 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+            <div suiGridColumn>
+              <div sui-header>Premium Plan</div>
+              <p><b>8</b> projects, $25 a month</p>
+              <div sui-button>Choose</div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A popup can have its colors inverted</p>
+
+      <ng-template #inverted>
+        <i sui-icon suiCircular suiLink suiIconType="heart"
+           sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup"></i>
+        <button sui-button suiIcon
+                sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup">
+          <i sui-icon suiIconType="add"></i>
+        </button>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="position"
+        [templateCode]="snippetPosition">
+      <h3 sui-header>Position</h3>
+      <p>A popup can be position around its trigger</p>
+
+      <ng-template #position>
+        <i sui-icon suiCircular suiColour="red" suiSize="big" suiIconType="heart"
+           sui-popup suiPopupPlacement="bottom left" suiPopupContent="This is a bottom left popup"></i>
+        <i sui-icon suiCircular suiColour="teal" suiSize="big" suiIconType="heart"
+           sui-popup suiPopupPlacement="top right" suiPopupContent="This is a top right popup"></i>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-popup</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiPopupPlacement</td>
+        <td>Set the popup's position. Allowed values could be
+          <span sui-label>'top left'</span> | <span sui-label>'top center'</span> | <span sui-label>'top right'</span> | <span
+              sui-label>'bottom left'</span> | <span sui-label>'bottom center'</span> | <span sui-label>'bottom right'</span> | <span
+              sui-label>'right center'</span> | <span sui-label>'left center'</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            top left
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupSize</td>
+        <td>Set the popup size. Allowed values could be
+          <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span
+              sui-label>'medium'</span> | <span sui-label>'big'</span> | <span sui-label>'huge'</span> | <span
+              sui-label>'massive'</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupWidth</td>
+        <td>
+          Determines the popup's width. Allowed values could be
+          <span sui-label>'wide'</span> | <span sui-label>'very wide'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupTrigger</td>
+        <td>
+          Determines the popup's trigger. Allowed values could be
+          <span sui-label>'hover'</span> | <span sui-label>'click'</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">hover</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupTitle</td>
+        <td>
+          What should get rendered as the popup's title/header
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupContent</td>
+        <td>
+          What should get rendered as the popup's content. Could be a string or a template reference
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div> |
+          <div sui-label suiColour="teal">TemplateRef&lt;any&gt;</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupInverted</td>
+        <td>
+          Determines if the popup uses inverted colours
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupFluid</td>
+        <td>
+          Determines if the popup uses fluid styling
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupFlowing</td>
+        <td>
+          Determines if the popup uses flowing styling
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPopupBasic</td>
+        <td>Determines whether the popup uses basic styling and renders without the arrow</td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>

@@ -4438,10 +4438,10 @@ ngx-highlightjs@^11.0.0-beta.1:
   dependencies:
     tslib "^2.3.0"
 
-ngx-semantic@^2.0.3-beta.7:
-  version "2.0.3-beta.7"
-  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-2.0.3-beta.7.tgz#546f50e1872222ad1208a91bd8dcf133280dc807"
-  integrity sha512-JJs6YBFRSlxKfCPiPSLSAkgf/viUrBdetgBCDYpBuyNUPyZ1OvSi0918Ff9Se/4PgJawoSuO8Oy0yIiFuJrQaw==
+ngx-semantic@^2.0.4-beta.2:
+  version "2.0.4-beta.2"
+  resolved "https://registry.yarnpkg.com/ngx-semantic/-/ngx-semantic-2.0.4-beta.2.tgz#2f66efcc3097add13ff0b0e6ad701b2251c5fc08"
+  integrity sha512-IKYgvBVBlVrZXFeXFHMGa1vZfL3Ie5I2BV25h1JY9AVOcJd/PGvvxtnuzak6uBToTTXMUyFr/lzNQ5V0oh8fFg==
   dependencies:
     tslib ">=1.10.0"
 
