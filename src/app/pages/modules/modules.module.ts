@@ -37,6 +37,7 @@ import { SuiCheckboxModule } from 'ngx-semantic/modules/checkbox';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiCardModule } from 'ngx-semantic/views/card';
 import { SuiMessageModule } from 'ngx-semantic/collections/message';
+import { PopupPage } from './popup/popup.page';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { SuiMessageModule } from 'ngx-semantic/collections/message';
     AccordionPage,
     CheckboxPage,
     ProgressPage,
+    PopupPage,
   ],
   imports: [
     CommonModule,
