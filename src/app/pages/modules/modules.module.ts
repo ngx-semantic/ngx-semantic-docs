@@ -41,6 +41,8 @@ import { PopupPage } from './popup/popup.page';
 import { SuiPopupModule } from 'ngx-semantic/modules/popup';
 import { SuiImageModule } from 'ngx-semantic/elements/image';
 import { SuiGridModule } from 'ngx-semantic/collections/grid';
+import { SelectPage } from './select/select.page';
+import { SuiSelectModule } from 'ngx-semantic/modules/select';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import { SuiGridModule } from 'ngx-semantic/collections/grid';
     CheckboxPage,
     ProgressPage,
     PopupPage,
+    SelectPage,
   ],
   imports: [
     CommonModule,
@@ -75,6 +78,7 @@ import { SuiGridModule } from 'ngx-semantic/collections/grid';
     SuiModalModule,
     SuiPopupModule,
     SuiSearchModule,
+    SuiSelectModule,
     SuiSegmentModule,
     SuiMessageModule,
     SuiProgressModule,

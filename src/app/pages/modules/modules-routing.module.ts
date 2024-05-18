@@ -15,6 +15,7 @@ import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
 import { PopupPage } from './popup/popup.page';
+import { SelectPage } from './select/select.page';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent
+  },
+  {
+    path: 'select',
+    component: SelectPage
   },
   {
     path: 'tab',
