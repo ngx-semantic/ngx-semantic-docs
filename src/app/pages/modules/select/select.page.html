@@ -4,6 +4,100 @@
   <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Type</h2>
+
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard"
+        [componentCode]="snippetStandardTs">
+      <h3 sui-header>Select</h3>
+      <p>A standard select can be used to pick between choices in a form</p>
+
+      <ng-template #standard>
+        <sui-select
+            suiPlaceholder="Gender"
+            [suiOptions]="genderOptions">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fluid"
+        [templateCode]="snippetFluid"
+        [componentCode]="snippetStandardTs">
+      <ng-template #fluid>
+        <sui-select
+            suiFluid
+            name="fluid"
+            suiPlaceholder="Gender"
+            [suiOptions]="genderOptions">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="multiple"
+        [templateCode]="snippetMultiple"
+        [componentCode]="snippetMultipleTs">
+      <h3 sui-header>Multiple Selection</h3>
+      <p>A selection dropdown can allow multiple selections</p>
+
+      <ng-template #multiple>
+        <sui-select
+            name="multiple"
+            suiPlaceholder="State"
+            [suiOptions]="states">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="multipleSearch"
+        [templateCode]="snippetMultipleSearch"
+        [componentCode]="snippetMultipleTs">
+      <h3 sui-header>Multiple Search Selection</h3>
+      <p>A selection dropdown can allow multiple search selections</p>
+
+      <ng-template #multipleSearch>
+        <sui-select
+            suiSearch
+            name="multiple-search"
+            suiPlaceholder="State"
+            [suiOptions]="states">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="flag"
+        [templateCode]="snippetFlags"
+        [componentCode]="snippetFlagsTs">
+      <h3 sui-header>Flag Selection</h3>
+      <p>A selection can include flag icons</p>
+
+      <ng-template #flag>
+        <sui-select
+            name="flag"
+            suiPlaceholder="Select Country"
+            [suiOptions]="countries">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="images"
+        [templateCode]="snippetImages"
+        [componentCode]="snippetImagesTs">
+      <h3 sui-header>Image Selection</h3>
+      <p>A selection can include images</p>
+
+      <ng-template #images>
+        <sui-select
+            name="images"
+            suiPlaceholder="Select User"
+            [suiOptions]="persons">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

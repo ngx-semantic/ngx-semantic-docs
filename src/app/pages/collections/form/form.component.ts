@@ -1,17 +1,20 @@
-import {Component} from '@angular/core';
-import {Title} from '@angular/platform-browser';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-form',
   templateUrl: './form.component.html'
 })
 export class FormComponent {
-  states = [{text: 'Alabama', value: 'al'}];
-  countries = [{text: 'Albania', value: 'al', flag: 'al'}, {text: 'Nigeria', value: 'ng', flag: 'ng'}];
-  months = [{text: 'January', value: 'jan'}];
-  cards = [{text: 'Visa', value: 'visa'}];
-  contacts = [{text: 'Justen Kitsune', image: {avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg'}}];
-  gender = [{text: 'Male'}, {text: 'Female'}];
+  states = [ { text: 'Alabama', value: 'al' } ];
+  countries = [ { text: 'Albania', value: 'al', flag: 'al' }, { text: 'Nigeria', value: 'ng', flag: 'ng' } ];
+  months = [ { text: 'January', value: 'jan' } ];
+  cards = [ { text: 'Visa', value: 'visa' } ];
+  contacts = [ {
+    text: 'Justen Kitsune',
+    image: { avatar: true, src: 'https://semantic-ui.com/images/avatar/small/stevie.jpg' }
+  } ];
+  gender = [ { text: 'Male' }, { text: 'Female' } ];
 
   snippetBasic = `
   <form sui-form>
