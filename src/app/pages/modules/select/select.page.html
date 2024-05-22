@@ -1,0 +1,501 @@
+<doc-page
+    header="Select"
+    subHeader="A tab is a hidden section of content activated by a menu">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Type</h2>
+
+    <doc-code-sample
+        [content]="standard"
+        [templateCode]="snippetStandard"
+        [componentCode]="snippetStandardTs">
+      <h3 sui-header>Select</h3>
+      <p>A standard select can be used to pick between choices in a form</p>
+
+      <ng-template #standard>
+        <sui-select
+            suiPlaceholder="Gender"
+            [suiOptions]="genderOptions">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="fluid"
+        [templateCode]="snippetFluid"
+        [componentCode]="snippetStandardTs">
+      <ng-template #fluid>
+        <sui-select
+            suiFluid
+            name="fluid"
+            suiPlaceholder="Gender"
+            [suiOptions]="genderOptions">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="multiple"
+        [templateCode]="snippetMultiple"
+        [componentCode]="snippetMultipleTs">
+      <h3 sui-header>Multiple Selection</h3>
+      <p>A selection dropdown can allow multiple selections</p>
+
+      <ng-template #multiple>
+        <sui-select
+            name="multiple"
+            suiPlaceholder="State"
+            [suiOptions]="states">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="multipleSearch"
+        [templateCode]="snippetMultipleSearch"
+        [componentCode]="snippetMultipleTs">
+      <h3 sui-header>Multiple Search Selection</h3>
+      <p>A selection dropdown can allow multiple search selections</p>
+
+      <ng-template #multipleSearch>
+        <sui-select
+            suiSearch
+            name="multiple-search"
+            suiPlaceholder="State"
+            [suiOptions]="states">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="flag"
+        [templateCode]="snippetFlags"
+        [componentCode]="snippetFlagsTs">
+      <h3 sui-header>Flag Selection</h3>
+      <p>A selection can include flag icons</p>
+
+      <ng-template #flag>
+        <sui-select
+            name="flag"
+            suiPlaceholder="Select Country"
+            [suiOptions]="countries">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="images"
+        [templateCode]="snippetImages"
+        [componentCode]="snippetImagesTs">
+      <h3 sui-header>Image Selection</h3>
+      <p>A selection can include images</p>
+
+      <ng-template #images>
+        <sui-select
+            name="images"
+            suiPlaceholder="Select User"
+            [suiOptions]="persons">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="loading"
+        [templateCode]="snippetLoading"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #loading>
+        <sui-select
+            suiFluid
+            suiMultiple
+            suiLoading
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="error"
+        [templateCode]="snippetError"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #error>
+        <sui-select
+            suiError
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #disabled>
+        <sui-select
+            disabled
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-select</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiPlaceholder</td>
+        <td>The select's placeholder
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSearch</td>
+        <td>Determines if the select supports searching.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>Determines if the select is rendered as fluid.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInline</td>
+        <td>Determines if the select is rendered inline.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLoading</td>
+        <td>Determines if the select is rendered as loading.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiError</td>
+        <td>Determines if the select is rendered to depict an error.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determines if the select is disabled.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrolling</td>
+        <td>Determines if the select is rendered as scrollable.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMultiple</td>
+        <td>Determines if the select allows for multiple selection.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompact</td>
+        <td>Determines if the select is rendered as compact.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>The components name.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSelectionChanged</td>
+        <td>Fired when a the selection is changed.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            any
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiSelectMenu</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiDirection</td>
+        <td>Set the select's direction. Allowed values could be
+          <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrolling</td>
+        <td>Determines if the menu is scrollable or not
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiSelectMenuItem</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiValue</td>
+        <td>
+          The value to be emitted if this menu item is selected.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            any
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMultiple</td>
+        <td>Determines if this menu allows for selecting multiple items
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>
