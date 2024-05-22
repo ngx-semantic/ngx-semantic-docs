@@ -98,6 +98,59 @@
         </sui-select>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="loading"
+        [templateCode]="snippetLoading"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #loading>
+        <sui-select
+            suiFluid
+            suiMultiple
+            suiLoading
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="error"
+        [templateCode]="snippetError"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #error>
+        <sui-select
+            suiError
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled"
+        [componentCode]="snippetStatesTs">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data</p>
+
+      <ng-template #disabled>
+        <sui-select
+            disabled
+            suiPlaceholder="Dropdown"
+            [suiOptions]="options">
+        </sui-select>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">

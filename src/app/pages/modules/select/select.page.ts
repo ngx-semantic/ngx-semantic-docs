@@ -32,6 +32,11 @@ export class SelectPage {
     { text: 'Matt', value: null, image: { avatar: true, src: '/assets/images/matt.jpg'} },
     { text: 'Stevie', value: null, image: { avatar: true, src: '/assets/images/stevie.jpg'} },
   ];
+  options: ISelectOption[] = [
+    { text: 'Option 1', value: 'one' },
+    { text: 'Option 2', value: 'two' },
+    { text: 'Option 3', value: 'three' },
+  ];
 
   snippetStandard = `
   <sui-select
@@ -103,6 +108,36 @@ export class SelectPage {
     { text: 'Matt', value: null, image: { avatar: true, src: '/assets/images/matt.jpg'} },
     { text: 'Stevie', value: null, image: { avatar: true, src: '/assets/images/stevie.jpg'} },
   ];`;
+
+  snippetLoading = `
+  <sui-select
+      suiFluid
+      suiMultiple
+      suiLoading
+      suiPlaceholder="Dropdown"
+      [suiOptions]="options">
+  </sui-select>`;
+
+  snippetStatesTs = `
+  options: ISelectOption[] = [
+    { text: 'Option 1', value: 'one' },
+    { text: 'Option 2', value: 'two' },
+    { text: 'Option 3', value: 'three' },
+  ];`;
+
+  snippetError = `
+  <sui-select
+      suiError
+      suiPlaceholder="Dropdown"
+      [suiOptions]="options">
+  </sui-select>`;
+
+  snippetDisabled = `
+  <sui-select
+      disabled
+      suiPlaceholder="Dropdown"
+      [suiOptions]="options">
+  </sui-select>`;
 
   constructor(title: Title) {
     title.setTitle('Select | Ngx Semantic');
