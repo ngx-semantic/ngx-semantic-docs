@@ -1,16 +1,16 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'doc-modal',
-    templateUrl: './modal.component.html',
-    styles: []
+  selector: 'doc-modal',
+  templateUrl: './modal.page.html',
+  styles: []
 })
-export class ModalComponent {
-    isStandardModalVisible = false;
-    isScrollingModalVisible = false;
-    dummyList = Array(10).fill(0).map((x, i) => i);
+export class ModalPage {
+  isStandardModalVisible = false;
+  isScrollingModalVisible = false;
+  dummyList = Array(10).fill(0).map((x, i) => i);
 
-    snippetStandard = `
+  snippetStandard = `
     <sui-modal [visible]="isStandardModalVisible" [suiClosable]="true"
                suiHeaderText="Select a Photo"
                (visibleChange)="isStandardModalVisible = $event">
@@ -37,7 +37,7 @@ export class ModalComponent {
         </div>
     </sui-modal>`;
 
-    snippetScrolling = `
+  snippetScrolling = `
     <sui-modal visible
                suiClosable
                suiHeaderText="Feed">

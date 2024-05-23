@@ -10,12 +10,12 @@ import { EmbedComponent } from './embed/embed.component';
 import { RatingComponent } from './rating/rating.component';
 import { SearchComponent } from './search/search.component';
 import { TabComponent } from './tab/tab.component';
-import { ModalComponent } from './modal/modal.component';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
 import { PopupPage } from './popup/popup.page';
 import { SelectPage } from './select/select.page';
+import { ModalPage } from './modal/modal.page';
 
 const routes: Routes = [
   {
@@ -36,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: 'modal',
-    component: ModalComponent
+    component: ModalPage
   },
   {
     path: 'popup',

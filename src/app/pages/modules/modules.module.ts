@@ -3,7 +3,7 @@
  */
 
 import { NgModule } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { EmbedComponent } from './embed/embed.component';
@@ -26,8 +26,6 @@ import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiIconModule } from 'ngx-semantic/elements/icon';
 import { SearchComponent } from './search/search.component';
 import { SuiSearchModule } from 'ngx-semantic/modules/search';
-import { ModalComponent } from './modal/modal.component';
-import { NgxSemanticModule } from 'ngx-semantic';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
@@ -43,6 +41,7 @@ import { SuiImageModule } from 'ngx-semantic/elements/image';
 import { SuiGridModule } from 'ngx-semantic/collections/grid';
 import { SelectPage } from './select/select.page';
 import { SuiSelectModule } from 'ngx-semantic/modules/select';
+import { ModalPage } from './modal/modal.page';
 
 @NgModule({
   declarations: [
@@ -51,7 +50,7 @@ import { SuiSelectModule } from 'ngx-semantic/modules/select';
     RatingComponent,
     DimmerComponent,
     SearchComponent,
-    ModalComponent,
+    ModalPage,
     AccordionPage,
     CheckboxPage,
     ProgressPage,
