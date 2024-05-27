@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'doc-modal',
@@ -7,68 +8,129 @@ import { Component } from '@angular/core';
 })
 export class ModalPage {
   isStandardModalVisible = false;
+  isBasicModalVisible = false;
+  isFullScreenModalVisible = false;
   isScrollingModalVisible = false;
+
   dummyList = Array(10).fill(0).map((x, i) => i);
 
   snippetStandard = `
-    <sui-modal [visible]="isStandardModalVisible" [suiClosable]="true"
-               suiHeaderText="Select a Photo"
-               (visibleChange)="isStandardModalVisible = $event">
-        <div sui-image suiModalContent>
-            <div sui-image suiSize="medium">
-                <img src="https://semantic-ui.com/images/avatar/large/chris.jpg">
-            </div>
-            <div suiCardDescription>
-                <div sui-header>We've auto-chosen a profile image for you.</div>
-                <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
-                                                                 target="_blank">gravatar</a> image
-                    associated with your registered e-mail address.</p>
-                <p>Is it okay to use this photo?</p>
-            </div>
+  <sui-modal
+      suiHeaderText="Select a Photo"
+      [(visible)]="isStandardModalVisible">
+    <div sui-image suiModalContent>
+      <div sui-image suiSize="medium">
+        <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
+      </div>
+      <div suiCardDescription>
+        <div sui-header>We've auto-chosen a profile image for you.</div>
+        <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
+                                                         target="_blank">gravatar</a> image
+          associated with your registered e-mail address.</p>
+        <p>Is it okay to use this photo?</p>
+      </div>
+    </div>
+    <div suiModalActions>
+      <div sui-button suiEmphasis="secondary" suiColour="black">
+        Nope
+      </div>
+      <div sui-button suiEmphasis="positive" suiIcon suiLabeled="right labeled">
+        Yep, that's me
+        <i sui-icon suiIconType="checkmark"></i>
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetStandardTs = `
+  isStandardModalVisible = true;`;
+
+  snippetBasic = `
+  <sui-modal
+      suiBasic
+      suiHeaderIcon="archive"
+      suiHeaderText="Archive Old Messages"
+      [(visible)]="isBasicModalVisible">
+    <div sui-image suiModalContent>
+      <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+    </div>
+    <div suiModalActions>
+      <div sui-button suiBasic suiInverted suiColour="red">
+        <i sui-icon suiIconType="remove"></i>
+        No
+      </div>
+      <div sui-button suiInverted suiColour="green" (click)="isStandardModalVisible = false">
+        <i sui-icon suiIconType="checkmark"></i>
+        Yes
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetBasicTs = `
+  isBasicModalVisible = true;`;
+
+  snippetFullScreen = `
+  <sui-modal
+      suiFullScreen
+      suiHeaderText="Update Your Settings"
+      [(visible)]="isFullScreenModalVisible">
+    <div suiModalContent>
+      <div sui-form>
+        <h4 sui-header suiDividing>Give us your feedback</h4>
+        <div suiFormField>
+          <label>Feedback</label>
+          <textarea></textarea>
         </div>
-        <div suiModalActions>
-            <div class="black deny" sui-button suiEmphasis="secondary">
-                Nope
-            </div>
-            <div sui-button suiEmphasis="positive" suiIcon suiLabeled="right labeled">
-                Yep, that's me
-                <i sui-icon suiIconType="checkmark"></i>
-            </div>
+        <div suiFormField>
+          <sui-checkbox [checked]="true">It's okay to contact me.</sui-checkbox>
         </div>
-    </sui-modal>`;
+      </div>
+    </div>
+    <div suiModalActions>
+      <div sui-button>
+        Cancel
+      </div>
+      <div sui-button suiEmphasis="positive">
+        Send
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetFullScreenTs = `
+  isFullScreenModalVisible = true;`;
 
   snippetScrolling = `
-    <sui-modal visible
-               suiClosable
-               suiHeaderText="Feed">
-        <div sui-image suiModalContent suiScrollable>
-            <div sui-grid
-                 suiStackable
-                 suiWidth="one">
-                <div suiGridColumn>
-                    <div sui-segment
-                         suiRaised>
-                        <div sui-placeholder>
-                            <div suiPlaceholderHeader
-                                 suiImage>
-                                <div suiPlaceholderLine></div>
-                                <div suiPlaceholderLine></div>
-                            </div>
-                            <div suiPlaceholderParagraph>
-                                <div suiPlaceholderLine
-                                     suiLength="medium"></div>
-                                <div suiPlaceholderLine
-                                     suiLength="short"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div suiModalActions>
-            <div class="black deny" sui-button suiEmphasis="secondary">
-                Close
-            </div>
-        </div>
-    </sui-modal>`;
+  <sui-modal
+      suiHeaderText="Profile Picture"
+      [(visible)]="isScrollingModalVisible">
+    <div suiModalContent suiScrollable suiImage>
+      <div sui-image suiSize="medium">
+        <img src="/assets/images/wireframes/image.png" />
+      </div>
+      <div suiModalDescription>
+        <div sui-header>Modal Header</div>
+        <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
+
+        <img sui-image src="/assets/images/wireframes/paragraph.png" />
+          <div sui-divider></div>
+          <img sui-image src="/assets/images/wireframes/paragraph.png" />
+          <div sui-divider></div>
+          <img sui-image src="/assets/images/wireframes/paragraph.png" />
+          <div sui-divider></div>
+          <img sui-image src="/assets/images/wireframes/paragraph.png" />
+      </div>
+    </div>
+    <div suiModalActions>
+      <div class="black deny" sui-button suiEmphasis="secondary"
+           (click)="isScrollingModalVisible = false">
+        Close
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetScrollingTs = `
+  isScrollingModalVisible = true;`;
+
+  constructor(title: Title) {
+    title.setTitle('Modal | Ngx Semantic');
+  }
 }

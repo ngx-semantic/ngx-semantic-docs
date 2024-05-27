@@ -42,6 +42,8 @@ import { SuiGridModule } from 'ngx-semantic/collections/grid';
 import { SelectPage } from './select/select.page';
 import { SuiSelectModule } from 'ngx-semantic/modules/select';
 import { ModalPage } from './modal/modal.page';
+import { SuiFormModule } from 'ngx-semantic/collections/form';
+import { SuiDividerModule } from 'ngx-semantic/elements/divider';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,7 @@ import { ModalPage } from './modal/modal.page';
     SuiTableModule,
     SuiCardModule,
     SuiEmbedModule,
+    SuiFormModule,
     SuiHeaderModule,
     SuiRatingModule,
     SuiTabsModule,
@@ -73,6 +76,7 @@ import { ModalPage } from './modal/modal.page';
     SuiDimmerModule,
     SuiIconModule,
     SuiGridModule,
+    SuiDividerModule,
     SuiImageModule,
     SuiModalModule,
     SuiPopupModule,
