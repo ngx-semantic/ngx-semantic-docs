@@ -10,7 +10,10 @@ export class ModalPage {
   isStandardModalVisible = false;
   isBasicModalVisible = false;
   isFullScreenModalVisible = false;
+  isSizeModalVisible = false;
   isScrollingModalVisible = false;
+  isClosableModalVisible = false;
+  isMaskClosableModalVisible = false;
 
   dummyList = Array(10).fill(0).map((x, i) => i);
 
@@ -58,7 +61,7 @@ export class ModalPage {
         <i sui-icon suiIconType="remove"></i>
         No
       </div>
-      <div sui-button suiInverted suiColour="green" (click)="isStandardModalVisible = false">
+      <div sui-button suiInverted suiColour="green">
         <i sui-icon suiIconType="checkmark"></i>
         Yes
       </div>
@@ -129,6 +132,72 @@ export class ModalPage {
 
   snippetScrollingTs = `
   isScrollingModalVisible = true;`;
+
+  snippetSize = `
+  <sui-modal
+      suiSize="mini"
+      suiHeaderText="Delete Your Account"
+      [(visible)]="isSizeModalVisible">
+    <div suiModalContent>
+      <p>Are you sure you want to delete your account</p>
+    </div>
+    <div suiModalActions>
+      <div sui-button suiColour="red">
+        No
+      </div>
+      <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
+        Yes
+        <i sui-icon suiIconType="checkmark"></i>
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetSizeTs = `
+  isSizeModalVisible = true;`;
+
+  snippetClosable = `
+  <sui-modal
+      suiClosable="false"
+      suiHeaderText="Delete Your Account"
+      [(visible)]="isClosableModalVisible">
+    <div suiModalContent>
+      <p>Are you sure you want to delete your account</p>
+    </div>
+    <div suiModalActions>
+      <div sui-button suiColour="red">
+        No
+      </div>
+      <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
+        Yes
+        <i sui-icon suiIconType="checkmark"></i>
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetClosableTs = `
+  isClosableModalVisible = true;`;
+
+  snippetMaskClosable = `
+  <sui-modal
+      suiMaskClosable="false"
+      suiHeaderText="Delete Your Account"
+      [(visible)]="isMaskClosableModalVisible">
+    <div suiModalContent>
+      <p>Are you sure you want to delete your account</p>
+    </div>
+    <div suiModalActions>
+      <div sui-button suiColour="red">
+        No
+      </div>
+      <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
+        Yes
+        <i sui-icon suiIconType="checkmark"></i>
+      </div>
+    </div>
+  </sui-modal>`;
+
+  snippetMaskClosableTs = `
+  isMaskClosableModalVisible = true;`;
 
   constructor(title: Title) {
     title.setTitle('Modal | Ngx Semantic');
