@@ -187,7 +187,8 @@
         [templateCode]="snippetClosable"
         [componentCode]="snippetClosableTs">
       <h3 sui-header>Closable</h3>
-      <p>By default, a modal is rendered with a close icon in the top right corner. The modal can be rendered without the close button</p>
+      <p>By default, a modal is rendered with a close icon in the top right corner. The modal can be rendered without
+        the close button</p>
       <button sui-button (click)="isClosableModalVisible = true">Show Modal</button>
 
       <ng-template #closable>
@@ -216,7 +217,8 @@
         [templateCode]="snippetMaskClosable"
         [componentCode]="snippetMaskClosableTs">
       <h3 sui-header>Mask Closable</h3>
-      <p>By default, a modal can be closed by clicking on the background. If that isn't the desired behaviour, that is configurable</p>
+      <p>By default, a modal can be closed by clicking on the background. If that isn't the desired behaviour, that is
+        configurable</p>
       <button sui-button (click)="isMaskClosableModalVisible = true">Show Modal</button>
 
       <ng-template #maskClosable>
@@ -239,5 +241,344 @@
         </sui-modal>
       </ng-template>
     </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-modal</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiHeaderText</td>
+        <td>The modal header</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiHeaderIcon</td>
+        <td>The modal header icon type</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSize</td>
+        <td>
+          Set the modal's size. Allowed values could be
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span>
+          | <span sui-label>large</span>  | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScroll</td>
+        <td>
+          Determines if the modal is scrollable. Allowed values could be
+          <span sui-label>full</span> | <span sui-label>medium</span> | <span sui-label>none</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            none
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBasic</td>
+        <td>Determines if the modal is rendered as basic</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiClosable</td>
+        <td>Determines if the close icon is rendered on the modal</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCentered</td>
+        <td>Determines if the modal is rendered vertically centered</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiBlurring</td>
+        <td>Determines if the modal uses a dimmer background</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFullScreen</td>
+        <td>Determines if the modal is rendered to fill the screen horizontally</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMaskClosable</td>
+        <td>Determines if the modal is dismissable by clicking on the background</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>visible</td>
+        <td>Determines if the modal is visible or not</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>visibleChange</td>
+        <td>Fired when a the modal's visibility changes
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiModalContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiImage</td>
+        <td>Determines if the content can contain an image        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrollable</td>
+        <td>Determines if the content is scrollable or not
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiModalActions</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiModalDescription</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
   </div>
 </doc-page>
