@@ -21,13 +21,15 @@ import { SuiImageModule } from 'ngx-semantic/elements/image';
 import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiMessageModule } from 'ngx-semantic/collections/message';
 import { SuiAdvertisementModule } from 'ngx-semantic/views/advertisement';
+import { ItemPage } from './item/item.page';
 
 @NgModule({
   declarations: [
     AdvertisementPage,
     CardsComponent,
     FeedPage,
-    StatisticsComponent
+    StatisticsComponent,
+    ItemPage,
   ],
   imports: [
     CommonModule,
