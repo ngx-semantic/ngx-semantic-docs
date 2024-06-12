@@ -119,6 +119,92 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetMetadata = `
+  <div sui-items suiDivided>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Arrowhead Valley Camp</a>
+        <div suiItemMeta>
+          <span>$1200</span>
+          <span>1 Month</span>
+        </div>
+        <div suiItemDescription>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Buck's Homebrew Stayaway</a>
+        <div suiItemMeta>
+          <span>$1000</span>
+          <span>2 Weeks</span>
+        </div>
+        <div suiItemDescription>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Astrology Camp</a>
+        <div suiItemMeta>
+          <span>$1600</span>
+          <span>6 Weeks</span>
+        </div>
+        <div suiItemDescription>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetLink = `
+  <div sui-items>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Stevie Feliciano</a>
+        <div suiItemDescription>
+          <p>Stevie Feliciano is a <a>library scientist</a> living in New York City. She likes to spend her time reading, running, and writing.</p>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Veronika Ossi</a>
+        <div suiItemDescription>
+          <p>Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.</p>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Jenny Hess</a>
+        <div suiItemDescription>
+          <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.</p>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
