@@ -22,6 +22,8 @@ import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiMessageModule } from 'ngx-semantic/collections/message';
 import { SuiAdvertisementModule } from 'ngx-semantic/views/advertisement';
 import { ItemPage } from './item/item.page';
+import { SuiItemsModule } from 'ngx-semantic/views/items';
+import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { ItemPage } from './item/item.page';
     SuiLabelModule,
     SuiIconModule,
     SuiCardModule,
+    SuiItemsModule,
     SuiImageModule,
     SuiMessageModule,
     SuiSegmentModule,
