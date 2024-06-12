@@ -205,6 +205,22 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetDescription = `
+  <div sui-items>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Cute Dog</a>
+        <div suiItemDescription>
+          <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
+          <p>Many people also have their own barometers for what makes a cute dog.</p>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }

@@ -166,6 +166,7 @@
         [templateCode]="snippetMetadata">
       <h3 sui-header>Metadata</h3>
       <p>An item can contain content metadata</p>
+
       <div sui-message suiState="info">
         <i sui-icon suiIconType="info"></i>
         You can include an arbitrary amount of metadata using your own class conventions, all child elements will
@@ -228,6 +229,7 @@
         [templateCode]="snippetLink">
       <h3 sui-header>Link</h3>
       <p>An item can contain links as images, headers, or inside content</p>
+
       <div sui-message  suiColour="yellow">
         <i sui-icon suiIconType="star"></i>
         To make the entire content of an item link, check out the link variation below
@@ -265,6 +267,30 @@
               <a suiItemHeader>Jenny Hess</a>
               <div suiItemDescription>
                 <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="description"
+        [templateCode]="snippetDescription">
+      <h3 sui-header>Description</h3>
+      <p>An item can contain a description with a single or multiple paragraphs</p>
+
+      <ng-template #description>
+        <div sui-items>
+          <div sui-item>
+            <div sui-image suiSize="small">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent>
+              <a suiItemHeader>Cute Dog</a>
+              <div suiItemDescription>
+                <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
+                <p>Many people also have their own barometers for what makes a cute dog.</p>
               </div>
             </div>
           </div>
