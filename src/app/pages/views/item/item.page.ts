@@ -221,6 +221,48 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetExtraContent = `
+  <div sui-items>
+    <div sui-item>
+      <div suiItemContent>
+        <a suiItemHeader>Cute Dog</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <i sui-icon suiIconType="green check"></i>
+          121 Votes
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  snippetRating = `
+  <div sui-items>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>
+          <i sui-icon suiIconType="like"></i>
+          Veronika Ossi
+        </a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/justen.jpg"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>
+          <i sui-icon suiIconType="favorite"></i>
+          Justen Kitsune
+        </a>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
