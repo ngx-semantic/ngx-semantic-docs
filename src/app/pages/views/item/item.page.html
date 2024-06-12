@@ -359,5 +359,55 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+
+    <doc-code-sample
+        [content]="unstackable"
+        [templateCode]="snippetUnstackable">
+      <h3 sui-header>Stacking</h3>
+      <p>A table can specify how it stacks items responsively</p>
+
+      <ng-template #unstackable>
+        <div sui-items suiUnstackable>
+          <div sui-item>
+            <div suiItemImage>
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent>
+              <a suiItemHeader>Header</a>
+              <div suiItemMeta>
+                <span>Description</span>
+              </div>
+              <div suiItemDescription>
+                <img src="/assets/images/wireframes/short-paragraph.png"/>
+              </div>
+              <div suiItemExtra>
+                Additional Details
+              </div>
+            </div>
+          </div>
+          <div sui-item>
+            <div suiItemImage>
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent>
+              <a suiItemHeader>Header</a>
+              <div suiItemMeta>
+                <span>Description</span>
+              </div>
+              <div suiItemDescription>
+                <img src="/assets/images/wireframes/short-paragraph.png"/>
+              </div>
+              <div suiItemExtra>
+                Additional Details
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>

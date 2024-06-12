@@ -263,6 +263,44 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetUnstackable = `
+  <div sui-items suiUnstackable>
+    <div sui-item>
+      <div suiItemImage>
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Header</a>
+        <div suiItemMeta>
+          <span>Description</span>
+        </div>
+        <div suiItemDescription>
+          <p></p>
+        </div>
+        <div suiItemExtra>
+          Additional Details
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div suiItemImage>
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Header</a>
+        <div suiItemMeta>
+          <span>Description</span>
+        </div>
+        <div suiItemDescription>
+          <p></p>
+        </div>
+        <div suiItemExtra>
+          Additional Details
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
