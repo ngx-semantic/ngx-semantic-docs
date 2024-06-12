@@ -91,6 +91,34 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetHeader = `
+  <div sui-items suiDivided>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>12 Years a Slave</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>My Neighbour Totoro</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>Watchmen</a>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }

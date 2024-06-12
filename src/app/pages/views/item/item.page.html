@@ -124,5 +124,41 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="header"
+        [templateCode]="snippetHeader">
+      <h3 sui-header>Header</h3>
+      <p>An item can contain a header</p>
+
+      <ng-template #header>
+        <div sui-items suiDivided>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              <a suiItemHeader>12 Years a Slave</a>
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              <a suiItemHeader>My Neighbour Totoro</a>
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              <a suiItemHeader>Watchmen</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>
