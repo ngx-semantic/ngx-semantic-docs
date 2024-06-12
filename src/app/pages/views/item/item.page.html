@@ -88,5 +88,41 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="content"
+        [templateCode]="snippetContent">
+      <h3 sui-header>Content</h3>
+      <p>An item can contain content</p>
+
+      <ng-template #content>
+        <div sui-items suiDivided>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              Content A
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              Content B
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="tiny">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              Content C
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>

@@ -63,6 +63,34 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetContent = `
+  <div sui-items suiDivided>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        Content A
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        Content B
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        Content C
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
