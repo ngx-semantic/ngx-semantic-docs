@@ -420,6 +420,43 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetLinkItem = `
+  <div sui-items suiLink>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Stevie Feliciano</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Veronika Ossi</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Jenny Hess</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
