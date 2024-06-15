@@ -364,6 +364,62 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetRelaxed = `
+  <div sui-items suiRelaxed="relaxed">
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>12 Years a Slave</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>My Neighbor Totoro</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>Watchmen</a>
+      </div>
+    </div>
+  </div>`;
+
+  snippetVeryRelaxed = `
+  <div sui-items suiRelaxed="very relaxed">
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>12 Years a Slave</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>My Neighbor Totoro</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="tiny">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>Watchmen</a>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
