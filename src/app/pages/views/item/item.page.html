@@ -593,5 +593,113 @@
         </div>
       </ng-template>
     </doc-code-sample>
+
+    <doc-code-sample
+        [content]="verticalAlignment"
+        [templateCode]="snippetVerticalAlignment">
+      <h3 sui-header>Vertical Alignment</h3>
+      <p>Content can specify its vertical alignment</p>
+
+      <div sui-message suiState="info">
+        <i sui-icon suiIconType="info"></i>
+        You can include an arbitrary amount of metadata using your own class conventions, all child elements will
+        automatically be spaced
+      </div>
+
+      <ng-template #verticalAlignment>
+        <div sui-items>
+          <div sui-item>
+            <div sui-image suiSize="small">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent>
+              <a suiItemHeader>Top Aligned</a>
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="small">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="middle aligned">
+              <a suiItemHeader>Middle Aligned</a>
+            </div>
+          </div>
+          <div sui-item>
+            <div sui-image suiSize="small">
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
+            <div suiItemContent suiAlignment="bottom aligned">
+              <a suiItemHeader>Bottom Aligned</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="floatedContent"
+        [templateCode]="snippetFloatedContent">
+      <h3 sui-header>Floated Content</h3>
+      <p>Any content element can be floated left or right</p>
+
+      <div sui-message suiState="info">
+        <i sui-icon suiIconType="info"></i>
+        You can include an arbitrary amount of metadata using your own class conventions, all child elements will
+        automatically be spaced
+      </div>
+
+      <ng-template #floatedContent>
+        <div sui-items>
+          <div sui-item>
+            <div suiItemImage>
+            <img src="/assets/images/wireframes/image.png"/>
+          </div>
+            <div suiItemContent>
+              <a suiItemHeader>Content A</a>
+              <div suiItemDescription>
+                <img src="/assets/images/wireframes/short-paragraph.png"/>
+              </div>
+              <div suiItemExtra>
+                <div sui-button suiFloated="right floated">
+                  Action
+                </div>
+              </div>
+            </div>
+          </div>
+          <div sui-item>
+            <div suiItemImage>
+            <img src="/assets/images/wireframes/image.png"/>
+          </div>
+            <div suiItemContent>
+              <a suiItemHeader>Content B</a>
+              <div suiItemDescription>
+                <img src="/assets/images/wireframes/short-paragraph.png"/>
+              </div>
+              <div suiItemExtra>
+                <div sui-button suiFloated="right floated">
+                  Action
+                </div>
+              </div>
+            </div>
+          </div>
+          <div sui-item>
+            <div suiItemImage>
+            <img src="/assets/images/wireframes/image.png"/>
+          </div>
+            <div suiItemContent>
+              <a suiItemHeader>Content C</a>
+              <div suiItemDescription>
+                <img src="/assets/images/wireframes/short-paragraph.png"/>
+              </div>
+              <div suiItemExtra>
+                <div sui-button suiFloated="right floated">
+                  Action
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
 </doc-page>

@@ -457,6 +457,86 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetVerticalAlignment = `
+  <div sui-items>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Top Aligned</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="middle aligned">
+        <a suiItemHeader>Middle Aligned</a>
+      </div>
+    </div>
+    <div sui-item>
+      <div sui-image suiSize="small">
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent suiAlignment="bottom aligned">
+        <a suiItemHeader>Bottom Aligned</a>
+      </div>
+    </div>
+  </div>`;
+
+  snippetFloatedContent = `
+  <div sui-items>
+    <div sui-item>
+      <div suiItemImage>
+      <img src="/assets/images/wireframes/image.png"/>
+    </div>
+      <div suiItemContent>
+        <a suiItemHeader>Content A</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-button suiFloated="right floated">
+            Action
+          </div>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div suiItemImage>
+      <img src="/assets/images/wireframes/image.png"/>
+    </div>
+      <div suiItemContent>
+        <a suiItemHeader>Content B</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-button suiFloated="right floated">
+            Action
+          </div>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div suiItemImage>
+      <img src="/assets/images/wireframes/image.png"/>
+    </div>
+      <div suiItemContent>
+        <a suiItemHeader>Content C</a>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-button suiFloated="right floated">
+            Action
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }
