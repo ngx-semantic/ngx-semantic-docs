@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { StatisticsComponent } from './statistic/statistics.component';
 import { FeedPage } from './feed/feed.page';
 import { AdvertisementPage } from './advertisement/advertisement.page';
+import { ItemPage } from './item/item.page';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'card',
     component: CardsComponent,
+  },
+  {
+    path: 'item',
+    component: ItemPage,
   },
   {
     path: 'feed',
