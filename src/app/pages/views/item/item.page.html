@@ -230,7 +230,7 @@
       <h3 sui-header>Link</h3>
       <p>An item can contain links as images, headers, or inside content</p>
 
-      <div sui-message  suiColour="yellow">
+      <div sui-message suiColour="yellow">
         <i sui-icon suiIconType="star"></i>
         To make the entire content of an item link, check out the link variation below
       </div>
@@ -244,7 +244,8 @@
             <div suiItemContent>
               <a suiItemHeader>Stevie Feliciano</a>
               <div suiItemDescription>
-                <p>Stevie Feliciano is a <a>library scientist</a> living in New York City. She likes to spend her time reading, running, and writing.</p>
+                <p>Stevie Feliciano is a <a>library scientist</a> living in New York City. She likes to spend her time
+                  reading, running, and writing.</p>
               </div>
             </div>
           </div>
@@ -266,7 +267,8 @@
             <div suiItemContent>
               <a suiItemHeader>Jenny Hess</a>
               <div suiItemDescription>
-                <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.</p>
+                <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.
+                </p>
               </div>
             </div>
           </div>
@@ -289,7 +291,8 @@
             <div suiItemContent>
               <a suiItemHeader>Cute Dog</a>
               <div suiItemDescription>
-                <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
+                <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces,
+                  others for their tiny stature, and even others for their massive size.</p>
                 <p>Many people also have their own barometers for what makes a cute dog.</p>
               </div>
             </div>
@@ -328,7 +331,7 @@
       <h3 sui-header>Rating</h3>
       <p>An item can contain icons signifying a 'like' or 'favorite' action</p>
 
-      <div sui-message  suiState="info">
+      <div sui-message suiState="info">
         You can use the rating component to attach events to like and favorite icons
       </div>
 
@@ -652,8 +655,8 @@
         <div sui-items>
           <div sui-item>
             <div suiItemImage>
-            <img src="/assets/images/wireframes/image.png"/>
-          </div>
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
             <div suiItemContent>
               <a suiItemHeader>Content A</a>
               <div suiItemDescription>
@@ -668,8 +671,8 @@
           </div>
           <div sui-item>
             <div suiItemImage>
-            <img src="/assets/images/wireframes/image.png"/>
-          </div>
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
             <div suiItemContent>
               <a suiItemHeader>Content B</a>
               <div suiItemDescription>
@@ -684,8 +687,8 @@
           </div>
           <div sui-item>
             <div suiItemImage>
-            <img src="/assets/images/wireframes/image.png"/>
-          </div>
+              <img src="/assets/images/wireframes/image.png"/>
+            </div>
             <div suiItemContent>
               <a suiItemHeader>Content C</a>
               <div suiItemDescription>
@@ -701,5 +704,274 @@
         </div>
       </ng-template>
     </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-items</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiRelaxed</td>
+        <td>
+          Determines if the items are rendered with increased spacing. Allowed values could be
+          <span sui-label>relaxed</span> | <span sui-label>very relaxed</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDivided</td>
+        <td>
+          Determines if the items are divided
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiUnstackable</td>
+        <td>
+          Determines if the items are unstackable
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLink</td>
+        <td>
+          Determine if the items should be rendered as links
+        </td>
+        <td>
+          <div sui-label suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">false</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-item</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiRelaxed</td>
+        <td>
+          Determines the vertical alignment of the item content. Allowed values could be
+          <span sui-label>middle aligned</span> | <span sui-label>bottom aligned</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">null</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemDescription</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemExtra</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemHeader</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemImage</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiItemMeta</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
   </div>
 </doc-page>
