@@ -301,6 +301,69 @@ export class ItemPage {
     </div>
   </div>`;
 
+  snippetDivided = `
+  <div sui-items suiDivided>
+    <div sui-item>
+      <div suiItemImage>
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>12 Years a Slave</a>
+        <div suiItemMeta>
+          <span>Union Square 14</span>
+        </div>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-label>IMAX</div>
+          <div sui-label><i sui-icon suiIconType="globe"></i> Additional Languages</div>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div suiItemImage>
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>My Neighbor Totoro</a>
+        <div suiItemMeta>
+          <span>IFC Cinema</span>
+        </div>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-button suiEmphasis="primary" suiFloated="right floated">
+            Buy tickets
+            <i sui-icon suiIconType="right chevron"></i>
+          </div>
+          <div sui-label>Limited</div>
+        </div>
+      </div>
+    </div>
+    <div sui-item>
+      <div suiItemImage>
+        <img src="/assets/images/wireframes/image.png"/>
+      </div>
+      <div suiItemContent>
+        <a suiItemHeader>Watchmen</a>
+        <div suiItemMeta>
+          <span>IFC</span>
+        </div>
+        <div suiItemDescription>
+          <img src="/assets/images/wireframes/short-paragraph.png"/>
+        </div>
+        <div suiItemExtra>
+          <div sui-button suiEmphasis="primary" suiFloated="right floated">
+            Buy tickets
+            <i sui-icon suiIconType="right chevron"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
   constructor(title: Title) {
     title.setTitle('Item | Ngx Semantic');
   }

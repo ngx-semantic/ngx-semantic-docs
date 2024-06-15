@@ -24,6 +24,7 @@ import { SuiAdvertisementModule } from 'ngx-semantic/views/advertisement';
 import { ItemPage } from './item/item.page';
 import { SuiItemsModule } from 'ngx-semantic/views/items';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
+import { SuiButtonModule } from 'ngx-semantic/elements/button';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
     SharedModule,
     ViewsRoutingModule,
     SuiFeedModule,
+    SuiButtonModule,
     SuiHeaderModule,
     SuiTableModule,
     SuiLabelModule,
