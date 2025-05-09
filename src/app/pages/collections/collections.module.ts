@@ -5,13 +5,13 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 
-import {FormComponent} from "./form/form.component";
-import {GridComponent} from "./grid/grid.component";
-import {MenuComponent} from "./menu/menu.component";
-import {TableComponent} from "./table/table.component";
+import {FormComponent} from './form/form.page';
+import {GridComponent} from './grid/grid.page';
+import {MenuComponent} from './menu/menu.page';
+import {TableComponent} from './table/table.page';
 import {SharedModule} from "../../shared/shared.module";
-import {MessagesComponent} from "./messages/messages.component";
-import {BreadcrumbComponent} from "./breadcrumb/breadcrumb.component";
+import {MessagesComponent} from './messages/messages.page';
+import {BreadcrumbComponent} from './breadcrumb/breadcrumb.page';
 import {CollectionsRoutingModule} from "./collections-routing.module";
 
 import {SuiFormModule} from "ngx-semantic/collections/form";
@@ -54,3 +54,4 @@ import {SuiSelectModule} from 'ngx-semantic/modules/select';
 })
 export class CollectionsModule {
 }
+

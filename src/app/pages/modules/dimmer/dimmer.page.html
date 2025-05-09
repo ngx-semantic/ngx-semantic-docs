@@ -1,0 +1,415 @@
+<doc-page
+    header="Dimmer"
+    subHeader="A dimmer hides distractions to focus attention on particular content">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="simple"
+        [templateCode]="snippetSimple"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Dimmer</h3>
+      <p>A simple dimmer displays no content</p>
+
+      <ng-template #simple>
+        <button sui-button
+                (click)="simpleDimmerVisible = !simpleDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             [(dimmed)]="simpleDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="content"
+        [templateCode]="snippetContent"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Content Dimmer</h3>
+      <p>A dimmer can display content</p>
+
+      <ng-template #content>
+        <button sui-button
+                (click)="contentDimmerVisible = !contentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             [(dimmed)]="contentDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiIcon
+                suiInverted>
+              <i sui-icon
+                 suiIconType="heart"></i>
+              Dimmed Message!
+            </h2>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="page"
+        [templateCode]="snippetPage"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Page Dimmer</h3>
+      <p>A dimmer can be formatted to be fixed to the page</p>
+
+      <ng-template #page>
+        <button sui-button
+                (click)="pageDimmerVisible = !pageDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-dimmer
+             suiDimmerFullPage
+             [(dimmed)]="pageDimmerVisible">
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiIcon
+                suiInverted>
+              <i sui-icon
+                 suiIconType="mail"></i>
+              Dimmed Message
+            </h2>
+            <div suiSubHeader>Dimmer sub-header</div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="active"
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>An active dimmer will dim its parent container</p>
+
+      <ng-template #active>
+        <div sui-segment
+             sui-dimmer
+             dimmed="true">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="disabled"
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A disabled dimmer cannot be activated</p>
+
+      <ng-template #disabled>
+        <div sui-segment
+             sui-dimmer
+             disabled>
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="blurring"
+        [templateCode]="snippetBlurring"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Blurring</h3>
+      <p>A dimmable element can blur its contents</p>
+
+      <ng-template #blurring>
+        <button sui-button
+                (click)="blurringDimmerVisible = !blurringDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerBlurring
+             [(dimmed)]="blurringDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="blurringInverted"
+        [templateCode]="snippetBlurringInverted"
+        [componentCode]="snippetSharedTs">
+      <ng-template #blurringInverted>
+        <button sui-button
+                (click)="blurringDInvertedDimmerVisible = !blurringDInvertedDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerBlurring
+             suiDimmerInverted
+             [(dimmed)]="blurringDInvertedDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="topAlignment"
+        [templateCode]="snippetTopAligned"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Vertical Alignment</h3>
+      <p>A dimmer can have its content top or bottom aligned.</p>
+
+      <ng-template #topAlignment>
+        <button sui-button
+                (click)="topAlignmentDimmerVisible = !topAlignmentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerAlignment="top"
+             [(dimmed)]="topAlignmentDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiInverted>
+              Title
+            </h2>
+            <div sui-button
+                 suiEmphasis="primary">Add
+            </div>
+            <div sui-button>View</div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="bottomAlignment"
+        [templateCode]="snippetBottomAligned"
+        [componentCode]="snippetSharedTs">
+      <ng-template #bottomAlignment>
+        <button sui-button
+                (click)="bottomAlignmentDimmerVisible = !bottomAlignmentDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerAlignment="bottom"
+             [(dimmed)]="bottomAlignmentDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+
+          <ng-template suiDimmerContent>
+            <h2 sui-header
+                suiInverted>
+              Title
+            </h2>
+            <div sui-button
+                 suiEmphasis="primary">Add
+            </div>
+            <div sui-button>View</div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="inverted"
+        [templateCode]="snippetInverted"
+        [componentCode]="snippetSharedTs">
+      <h3 sui-header>Inverted</h3>
+      <p>A dimmer can be formatted to have its colours inverted</p>
+
+      <ng-template #inverted>
+        <button sui-button
+                (click)="invertedDimmerVisible = !invertedDimmerVisible">
+          Toggle Dimmer
+        </button>
+
+        <div sui-segment
+             sui-dimmer
+             suiDimmerInverted
+             [(dimmed)]="invertedDimmerVisible">
+          <doc-wireframe type="short-paragraph"></doc-wireframe>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-dimmer</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiDimmerAlignment</td>
+        <td>Specifies the dimmer content position. Allowed values could be
+          <span sui-label>'top'</span> | <span sui-label>'bottom'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label suiColour="teal">string</div>
+        </td>
+        <td>
+          <div sui-label suiColour="grey">top</div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDimmerBlurring</td>
+        <td>Determine if the dimmer should blur the background</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDimmerInverted</td>
+        <td>Determine if the dimmer should invert its colours</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDimmerSimple</td>
+        <td>Show a simple dimmer</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDimmerFullPage</td>
+        <td>Determine if the dimmer should cover the entire page</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCloseOnClick</td>
+        <td>Determine if the dimmer should be closed when the mask or any other location is clicked</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Stop the dimmer from responding to actions</td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>dimmed</td>
+        <td>Determines if the dimmer is shown or not. This field supports two way binding following the
+          <code>[(dimmed)]</code> syntax.
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiDimmerContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>
+

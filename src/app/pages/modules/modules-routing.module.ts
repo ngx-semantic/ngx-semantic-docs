@@ -5,11 +5,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DimmerComponent } from './dimmer/dimmer.component';
-import { EmbedComponent } from './embed/embed.component';
-import { RatingComponent } from './rating/rating.component';
-import { SearchComponent } from './search/search.component';
-import { TabComponent } from './tab/tab.component';
+import { DimmerComponent } from './dimmer/dimmer.page';
+import { EmbedComponent } from './embed/embed.page';
+import { RatingComponent } from './rating/rating.page';
+import { SearchComponent } from './search/search.page';
+import { TabComponent } from './tab/tab.page';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
 import { ProgressPage } from './progress/progress.page';
@@ -70,3 +70,4 @@ const routes: Routes = [
 })
 export class ModulesRoutingModule {
 }
+

@@ -3,11 +3,11 @@
  */
 
 import { NgModule } from '@angular/core';
-import { CardsComponent } from './card/cards.component';
+import { CardsComponent } from './card/cards.page';
 import { CommonModule } from '@angular/common';
 import { ViewsRoutingModule } from './views-routing.module';
 import { SharedModule } from '../../shared/shared.module';
-import { StatisticsComponent } from './statistic/statistics.component';
+import { StatisticsComponent } from './statistic/statistics.page';
 import { FeedPage } from './feed/feed.page';
 import { SuiFeedModule } from 'ngx-semantic/views/feed';
 import { AdvertisementPage } from './advertisement/advertisement.page';
@@ -55,3 +55,4 @@ import { SuiButtonModule } from 'ngx-semantic/elements/button';
 })
 export class ViewsModule {
 }
+

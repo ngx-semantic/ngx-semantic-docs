@@ -6,12 +6,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { EmbedComponent } from './embed/embed.component';
+import { EmbedComponent } from './embed/embed.page';
 import { ModulesRoutingModule } from './modules-routing.module';
 import { SharedModule } from '../../shared/shared.module';
-import { RatingComponent } from './rating/rating.component';
-import { TabComponent } from './tab/tab.component';
-import { DimmerComponent } from './dimmer/dimmer.component';
+import { RatingComponent } from './rating/rating.page';
+import { TabComponent } from './tab/tab.page';
+import { DimmerComponent } from './dimmer/dimmer.page';
 
 import { SuiLabelModule } from 'ngx-semantic/elements/label';
 import { SuiHeaderModule } from 'ngx-semantic/elements/header';
@@ -24,7 +24,7 @@ import { SuiDimmerModule } from 'ngx-semantic/modules/dimmer';
 import { SuiButtonModule } from 'ngx-semantic/elements/button';
 import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiIconModule } from 'ngx-semantic/elements/icon';
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './search/search.page';
 import { SuiSearchModule } from 'ngx-semantic/modules/search';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
@@ -92,3 +92,4 @@ import { SuiDividerModule } from 'ngx-semantic/elements/divider';
 })
 export class ModulesModule {
 }
+

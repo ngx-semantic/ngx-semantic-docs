@@ -3,23 +3,23 @@
  */
 
 import {RouterModule, Routes} from "@angular/router";
-import {ButtonComponent} from "./buttons/button.component";
-import {ContainerComponent} from "./container/container.component";
-import {DividerComponent} from "./divider/divider.component";
-import {FlagComponent} from "./flag/flag.component";
-import {HeaderComponent} from "./header/header.component";
-import {IconComponent} from "./icon/icon.component";
-import {InputComponent} from "./input/input.component";
-import {LabelComponent} from "./label/label.component";
-import {ListComponent} from "./list/list.component";
-import {LoaderComponent} from "./loader/loader.component";
-import {PlaceholderComponent} from "./placeholder/placeholder.component";
-import {RailComponent} from "./rail/rail.component";
-import {RevealComponent} from "./reveal/reveal.component";
-import {SegmentComponent} from "./segment/segment.component";
-import {StepComponent} from "./step/step.component";
+import {ButtonComponent} from './buttons/button.page';
+import {ContainerComponent} from './container/container.page';
+import {DividerComponent} from './divider/divider.page';
+import {FlagComponent} from './flag/flag.page';
+import {HeaderComponent} from './header/header.page';
+import {IconComponent} from './icon/icon.page';
+import {InputComponent} from './input/input.page';
+import {LabelComponent} from './label/label.page';
+import {ListComponent} from './list/list.page';
+import {LoaderComponent} from './loader/loader.page';
+import {PlaceholderComponent} from './placeholder/placeholder.page';
+import {RailComponent} from './rail/rail.page';
+import {RevealComponent} from './reveal/reveal.page';
+import {SegmentComponent} from './segment/segment.page';
+import {StepComponent} from './step/step.page';
 import {NgModule} from "@angular/core";
-import {ImageComponent} from './image/image.component';
+import {ImageComponent} from './image/image.page';
 
 const routes: Routes = [
   {
@@ -94,3 +94,4 @@ const routes: Routes = [
 })
 export class ElementsRoutingModule {
 }
+

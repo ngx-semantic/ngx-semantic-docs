@@ -4,8 +4,8 @@
 
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {QuickStartComponent} from './quick-start/quick-start.component';
-import {ContributingComponent} from './contributing/contributing.component';
+import {QuickStartComponent} from './quick-start/quick-start.page';
+import {ContributingComponent} from './contributing/contributing.page';
 
 const routes: Routes = [
   {
@@ -24,3 +24,4 @@ const routes: Routes = [
 })
 export class GeneralRoutingModule {
 }
+

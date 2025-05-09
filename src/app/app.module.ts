@@ -2,17 +2,17 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {SharedModule} from "./shared/shared.module";
+import {SharedModule} from './shared/shared.module';
 import {AppRoutingModule} from './app-routing.module';
-import {SuiIconModule} from "ngx-semantic/elements/icon";
-import {SuiImageModule} from "ngx-semantic/elements/image";
-import {SuiMenuModule} from "ngx-semantic/collections/menu";
-import {ViewsComponent} from './pages/views/views.component';
-import {SuiSidebarModule} from "ngx-semantic/modules/sidebar";
-import {ModulesComponent} from "./pages/modules/modules.component";
-import {GeneralComponent} from "./pages/general/general.component";
-import {ElementsComponent} from './pages/elements/elements.component';
-import {CollectionsComponent} from './pages/collections/collections.component';
+import {SuiIconModule} from 'ngx-semantic/elements/icon';
+import {SuiImageModule} from 'ngx-semantic/elements/image';
+import {SuiMenuModule} from 'ngx-semantic/collections/menu';
+import {SuiSidebarModule} from 'ngx-semantic/modules/sidebar';
+import { ElementsComponent } from './pages/elements/elements.page';
+import { CollectionsComponent } from './pages/collections/collections.page';
+import { ViewsComponent } from './pages/views/views.page';
+import { GeneralComponent } from './pages/general/general.page';
+import { ModulesComponent } from './pages/modules/modules.page';
 
 @NgModule({
   declarations: [

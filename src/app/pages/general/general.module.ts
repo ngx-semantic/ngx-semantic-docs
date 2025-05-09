@@ -5,11 +5,11 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 
-import {QuickStartComponent} from "./quick-start/quick-start.component";
+import {QuickStartComponent} from './quick-start/quick-start.page';
 import {GeneralRoutingModule} from "./general-routing.module";
 
 import {SuiHeaderModule} from "ngx-semantic/elements/header";
-import { ContributingComponent } from './contributing/contributing.component';
+import { ContributingComponent } from './contributing/contributing.page';
 import { Highlight, HighlightAuto } from 'ngx-highlightjs';
 import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 
@@ -29,3 +29,4 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 })
 export class GeneralModule {
 }
+
