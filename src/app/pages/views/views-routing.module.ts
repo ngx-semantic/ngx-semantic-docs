@@ -8,6 +8,7 @@ import { StatisticsComponent } from './statistic/statistics.page';
 import { FeedPage } from './feed/feed.page';
 import { AdvertisementPage } from './advertisement/advertisement.page';
 import { ItemPage } from './item/item.page';
+import { CommentPage } from './comment/comment.page';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'card',
     component: CardsComponent,
+  },
+  {
+    path: 'comment',
+    component: CommentPage,
   },
   {
     path: 'item',

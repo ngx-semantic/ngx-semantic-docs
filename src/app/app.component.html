@@ -1,13 +1,13 @@
 <sui-sidebar-container>
   <div
       sui-menu
-      suiVertical="true"
-      suiInverted="true"
+      suiVertical
+      suiInverted
       sui-sidebar
       [visible]>
     <div suiMenuItem>
       <img sui-image
-           suiSpaced
+           suiSpaced="spaced"
            suiSize="mini"
            src="/assets/images/logo.png"/>
       <strong>Ngx Semantic</strong>
@@ -179,8 +179,10 @@
            routerLinkActive="active">
           Card
         </a>
-        <a suiMenuItem>
-          Comment
+        <a suiMenuItem
+           routerLink="views/comment"
+           routerLinkActive="active">
+        Comment
         </a>
         <a suiMenuItem
            routerLink="views/feed"
@@ -217,8 +219,10 @@
            routerLinkActive="active">
           Dimmer
         </a>
-        <a suiMenuItem>
-          Dropdown
+        <a suiMenuItem
+           routerLink="modules/dropdown"
+           routerLinkActive="active">
+        Dropdown
         </a>
         <a suiMenuItem
            routerLink="modules/embed"
@@ -255,8 +259,10 @@
            routerLinkActive="active">
           Select
         </a>
-        <a suiMenuItem>
-          Sidebar
+        <a suiMenuItem
+           routerLink="modules/sidebar"
+           routerLinkActive="active">
+        Sidebar
         </a>
         <a suiMenuItem
            routerLink="modules/tab"

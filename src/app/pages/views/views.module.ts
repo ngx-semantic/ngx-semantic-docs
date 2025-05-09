@@ -25,14 +25,16 @@ import { ItemPage } from './item/item.page';
 import { SuiItemsModule } from 'ngx-semantic/views/items';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiButtonModule } from 'ngx-semantic/elements/button';
+import { CommentPage } from './comment/comment.page';
 
 @NgModule({
   declarations: [
     AdvertisementPage,
     CardsComponent,
+    CommentPage,
     FeedPage,
-    StatisticsComponent,
     ItemPage,
+    StatisticsComponent,
   ],
   imports: [
     CommonModule,
