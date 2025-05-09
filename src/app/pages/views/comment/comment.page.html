@@ -1,10 +1,101 @@
 <doc-page
-header="Comment"
+    header="Comment"
     subHeader="A comment displays user feedback to site content">>
   <div *docPageContent="'definition'">
     <h2 sui-header
         suiDividing>Types</h2>
+
+    <doc-code-sample
+    [content]="basic">
+      <h3 sui-header>Comment</h3>
+      <p>A basic list of comments</p>
+
+      <ng-template #basic>
+        <div sui-comments>
+          <h3 sui-header suiDividing>Comments</h3>
+          <div sui-comment>
+            <a suiCommentAvatar>
+              <img src="/images/avatar/small/matt.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Matt</a>
+              <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+              </div>
+              <div class="text">
+                How artistic!
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+          <div sui-comment>
+            <a class="avatar">
+              <img src="/images/avatar/small/elliot.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Elliot Fu</a>
+              <div class="metadata">
+                <span class="date">Yesterday at 12:30AM</span>
+              </div>
+              <div class="text">
+                <p>This has been very useful for my research. Thanks as well!</p>
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+            <div sui-comments>
+              <div sui-comment>
+                <a class="avatar">
+                  <img src="/images/avatar/small/jenny.jpg">
+                </a>
+                <div class="content">
+                  <a class="author">Jenny Hess</a>
+                  <div class="metadata">
+                    <span class="date">Just now</span>
+                  </div>
+                  <div class="text">
+                    Elliot you are always so right :)
+                  </div>
+                  <div class="actions">
+                    <a class="reply">Reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div sui-comment>
+            <a class="avatar">
+              <img src="/images/avatar/small/joe.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Joe Henderson</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Dude, this is awesome. Thanks so much
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+          <form sui-form class="reply">
+            <div class="field">
+              <textarea></textarea>
+            </div>
+            <div sui-button suiColour="blue" suiLabeled="labeled" suiIcon>
+              <i sui-icon suiIconType="edit"></i> Add Reply
+            </div>
+          </form>
+        </div>
+      </ng-template>
+    </doc-code-sample>
   </div>
+
   <div *docPageContent="'api'">
   </div>
 </doc-page>

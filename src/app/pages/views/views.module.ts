@@ -26,6 +26,8 @@ import { SuiItemsModule } from 'ngx-semantic/views/items';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiButtonModule } from 'ngx-semantic/elements/button';
 import { CommentPage } from './comment/comment.page';
+import { SuiCommentModule } from 'ngx-semantic/views/comment';
+import { SuiFormModule } from 'ngx-semantic/collections/form';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { CommentPage } from './comment/comment.page';
     SuiSegmentModule,
     SuiStatisticModule,
     SuiAdvertisementModule,
+    SuiCommentModule,
+    SuiFormModule,
   ]
 })
 export class ViewsModule {
