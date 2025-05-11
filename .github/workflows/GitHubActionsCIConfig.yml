@@ -41,9 +41,12 @@ jobs:
       - name: Install dependencies
         run: yarn install
         
-      - name: Build and copy 404
+      - name: Build
         run: |
           yarn build
+        
+      - name: Create 404 page
+        run: |
           cp dist/browser/index.html dist/browser/404.html
           
       - name: Deploy to GitHub Pages
@@ -51,7 +54,7 @@ jobs:
           OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "bolorundurowb@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
