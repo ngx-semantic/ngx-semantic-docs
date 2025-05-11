@@ -46,7 +46,11 @@ jobs:
           OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
         run: |
           yarn build
+          pwd
           ls -al
+          cd dist
+          ls -al
+          cd ..
           cp ${OUTPUT_DIR}/dist/index.html ${OUTPUT_DIR}/dist/404.html
           
       - name: Deploy to GitHub Pages
