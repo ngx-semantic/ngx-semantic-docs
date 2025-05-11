@@ -44,11 +44,7 @@ jobs:
       - name: Build and copy 404
         run: |
           yarn build
-          cd dist/browser
-          ls -al
-          cd ..
-          cd ..
-          cp /dist/browser/index.html /dist/browser/404.html
+          cp dist/browser/index.html dist/browser/404.html
           
       - name: Deploy to GitHub Pages
         env:
