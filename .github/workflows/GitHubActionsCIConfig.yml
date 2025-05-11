@@ -1,0 +1,65 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - '**'  # matches all branches
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.0.0'
+          cache: 'yarn'  # added caching for better performance
+          
+      - name: Install dependencies
+        run: yarn install
+        
+      - name: Build
+        run: yarn build
+
+  deploy:
+    needs: build  # ensures build succeeds before deploying
+    if: github.ref == 'refs/heads/master'  # only deploy on master branch
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.0.0'
+          cache: 'yarn'
+          
+      - name: Install dependencies
+        run: yarn install
+        
+      - name: Build and copy 404
+        run: |
+          yarn build
+          cp dist/index.html dist/404.html
+          
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
+          cd ngx-semantic.github.io
+          git checkout master
+          
+          rm -r *
+          cp -r ../dist/* .
+          
+          git add .
+          git commit -m "Auto-deployed from GitHub Actions"
+          git push origin master
