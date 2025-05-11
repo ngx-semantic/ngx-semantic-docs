@@ -52,9 +52,9 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_IO_ACCESS_TOKEN }}
         run: |
-          git config --global user.email "bolorundurowb@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
