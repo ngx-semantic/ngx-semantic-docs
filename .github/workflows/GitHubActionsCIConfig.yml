@@ -42,12 +42,15 @@ jobs:
         run: yarn install
         
       - name: Build and copy 404
+        env:
+          OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
         run: |
           yarn build
-          cp ./dist/index.html ./dist/404.html
+          cp ${OUTPUT_DIR}/dist/index.html ${OUTPUT_DIR}/dist/404.html
           
       - name: Deploy to GitHub Pages
         env:
+          OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
