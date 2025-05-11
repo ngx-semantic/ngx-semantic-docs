@@ -44,10 +44,9 @@ jobs:
       - name: Build and copy 404
         run: |
           yarn build
-          pwd
+          cd dist/browser
           ls -al
-          cd dist
-          ls -al
+          cd ..
           cd ..
           cp /dist/browser/index.html /dist/browser/404.html
           
