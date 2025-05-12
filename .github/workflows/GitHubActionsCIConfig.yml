@@ -54,10 +54,10 @@ jobs:
           OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
           GITHUB_TOKEN: ${{ secrets.GH_IO_ACCESS_TOKEN }}
         run: |
-          git config --global user.email "indexz3ro@aol.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           
-          git clone https://bolorundurowb:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
           cd ngx-semantic.github.io
           git checkout master
           
