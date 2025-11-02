@@ -8,19 +8,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22.0.0'
           cache: 'yarn'  # added caching for better performance
-          
+
       - name: Install dependencies
         run: yarn install
-        
+
       - name: Build
         run: yarn build
 
@@ -28,27 +28,27 @@ jobs:
     needs: build  # ensures build succeeds before deploying
     if: github.ref == 'refs/heads/master'  # only deploy on master branch
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22.0.0'
           cache: 'yarn'
-          
+
       - name: Install dependencies
         run: yarn install
-        
+
       - name: Build
         run: |
           yarn build
-        
+
       - name: Create 404 page
         run: |
           cp dist/browser/index.html dist/browser/404.html
-          
+
       - name: Deploy to GitHub Pages
         env:
           OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
@@ -56,14 +56,14 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          
+
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
           cd ngx-semantic.github.io
           git checkout master
-          
+
           rm -r *
           cp -r ../dist/browser/* .
-          
+
           git add .
           git commit -m "Auto-deployed from GitHub Actions"
           git push origin master
