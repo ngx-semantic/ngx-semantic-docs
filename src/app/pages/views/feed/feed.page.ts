@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-feed',
-  templateUrl: 'feed.page.html',
+    selector: 'doc-feed',
+    templateUrl: 'feed.page.html',
+    standalone: false
 })
 export class FeedPage {
   snippetBasic = `

@@ -2,9 +2,10 @@ import { Title } from '@angular/platform-browser';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'doc-home',
-  templateUrl: './quick-start.component.html',
-  styleUrls: [ './quick-start.component.scss' ]
+    selector: 'doc-home',
+    templateUrl: './quick-start.component.html',
+    styleUrls: ['./quick-start.component.scss'],
+    standalone: false
 })
 export class QuickStartComponent {
   snippetCssLink = `  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`;

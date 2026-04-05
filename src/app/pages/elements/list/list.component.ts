@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'doc-lists',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+    selector: 'doc-lists',
+    templateUrl: './list.component.html',
+    styleUrls: ['./list.component.scss'],
+    standalone: false
 })
 export class ListComponent implements OnInit {
   snippetList = `

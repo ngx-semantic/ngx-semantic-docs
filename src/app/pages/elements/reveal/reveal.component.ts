@@ -2,8 +2,9 @@ import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-reveals',
-  templateUrl: './reveal.component.html'
+    selector: 'doc-reveals',
+    templateUrl: './reveal.component.html',
+    standalone: false
 })
 export class RevealComponent {
   snippetFade = `

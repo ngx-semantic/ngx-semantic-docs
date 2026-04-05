@@ -3,8 +3,9 @@ import { Title } from '@angular/platform-browser';
 import { ISelectOption } from 'ngx-semantic/modules/select';
 
 @Component({
-  selector: 'doc-select',
-  templateUrl: 'select.page.html'
+    selector: 'doc-select',
+    templateUrl: 'select.page.html',
+    standalone: false
 })
 export class SelectPage {
   genderOptions: ISelectOption[] = [ { text: 'Male', value: 0 }, { text: 'Female', value: 1 } ];

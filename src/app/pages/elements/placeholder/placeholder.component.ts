@@ -2,14 +2,15 @@ import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-placeholders',
-  templateUrl: './placeholder.component.html',
-  styles: [`
+    selector: 'doc-placeholders',
+    templateUrl: './placeholder.component.html',
+    styles: [`
     div [class*="right floated"] {
       float: right;
       margin-right: 0.25em;
     }
-  `]
+  `],
+    standalone: false
 })
 export class PlaceholderComponent {
   snippetBasic = `

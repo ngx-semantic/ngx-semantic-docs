@@ -2,9 +2,10 @@ import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-flags',
-  templateUrl: './flag.component.html',
-  styleUrls: ['./flag.component.scss']
+    selector: 'doc-flags',
+    templateUrl: './flag.component.html',
+    styleUrls: ['./flag.component.scss'],
+    standalone: false
 })
 export class FlagComponent {
   snippetFlag = `

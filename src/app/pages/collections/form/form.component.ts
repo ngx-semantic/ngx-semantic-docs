@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-form',
-  templateUrl: './form.component.html'
+    selector: 'doc-form',
+    templateUrl: './form.component.html',
+    standalone: false
 })
 export class FormComponent {
   states = [ { text: 'Alabama', value: 'al' } ];

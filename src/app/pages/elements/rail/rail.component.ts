@@ -2,14 +2,15 @@ import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-rail',
-  templateUrl: './rail.component.html',
-  styles: [`
+    selector: 'doc-rail',
+    templateUrl: './rail.component.html',
+    styles: [`
     .container {
       min-height: 300px;
       width: 960px;
     }
-  `]
+  `],
+    standalone: false
 })
 export class RailComponent {
   snippetBasic = `

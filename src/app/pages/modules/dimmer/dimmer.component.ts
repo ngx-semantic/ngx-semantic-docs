@@ -2,13 +2,14 @@ import { AfterViewChecked, Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-dimmer',
-  templateUrl: './dimmer.component.html',
-  styles: [ `
+    selector: 'doc-dimmer',
+    templateUrl: './dimmer.component.html',
+    styles: [`
       button {
           margin-bottom: 1.2rem !important;
       }
-  ` ]
+  `],
+    standalone: false
 })
 export class DimmerComponent {
   simpleDimmerVisible = false;

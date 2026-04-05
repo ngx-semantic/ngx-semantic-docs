@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+    selector: 'doc-input',
+    templateUrl: './input.component.html',
+    styleUrls: ['./input.component.scss'],
+    standalone: false
 })
 export class InputComponent {
   selectedOption = 'articles';

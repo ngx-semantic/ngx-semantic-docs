@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-divider',
-  templateUrl: './divider.component.html',
-  styleUrls: ['./divider.component.scss']
+    selector: 'doc-divider',
+    templateUrl: './divider.component.html',
+    styleUrls: ['./divider.component.scss'],
+    standalone: false
 })
 export class DividerComponent {
   snippetStandard = `

@@ -2,10 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-rating',
-  templateUrl: './rating.component.html',
-  styles: [
-  ]
+    selector: 'doc-rating',
+    templateUrl: './rating.component.html',
+    styles: [],
+    standalone: false
 })
 export class RatingComponent {
   isDefinitionsActive = true;

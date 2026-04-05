@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-modal',
-  templateUrl: './modal.page.html',
-  styles: []
+    selector: 'doc-modal',
+    templateUrl: './modal.page.html',
+    styles: [],
+    standalone: false
 })
 export class ModalPage {
   isStandardModalVisible = false;

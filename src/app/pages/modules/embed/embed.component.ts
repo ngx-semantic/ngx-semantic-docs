@@ -2,10 +2,10 @@ import {AfterViewChecked, Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-embed',
-  templateUrl: './embed.component.html',
-  styles: [
-  ]
+    selector: 'doc-embed',
+    templateUrl: './embed.component.html',
+    styles: [],
+    standalone: false
 })
 export class EmbedComponent {
   isDefinitionsActive = true;

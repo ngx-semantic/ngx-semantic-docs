@@ -2,14 +2,15 @@ import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-image',
-  templateUrl: './image.component.html',
-  styles: [`
+    selector: 'doc-image',
+    templateUrl: './image.component.html',
+    styles: [`
     .image-sizes img {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
     }
-  `]
+  `],
+    standalone: false
 })
 export class ImageComponent {
   snippetBasic = `

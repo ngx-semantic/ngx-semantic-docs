@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-buttons',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+    selector: 'doc-buttons',
+    templateUrl: './button.component.html',
+    styleUrls: ['./button.component.scss'],
+    standalone: false
 })
 export class ButtonComponent {
   snippetBtn = `

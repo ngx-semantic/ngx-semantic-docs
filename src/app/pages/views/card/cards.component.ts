@@ -2,8 +2,9 @@ import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-cards',
-  templateUrl: './cards.component.html',
+    selector: 'doc-cards',
+    templateUrl: './cards.component.html',
+    standalone: false
 })
 export class CardsComponent {
   snippetSimpleCard = `

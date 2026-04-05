@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-statistics',
-  templateUrl: './statistics.component.html',
+    selector: 'doc-statistics',
+    templateUrl: './statistics.component.html',
+    standalone: false
 })
 export class StatisticsComponent {
   snippetBasic = `

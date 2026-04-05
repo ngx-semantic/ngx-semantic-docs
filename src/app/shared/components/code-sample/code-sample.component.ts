@@ -2,9 +2,10 @@ import { Component, Input, TemplateRef } from '@angular/core';
 import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-  selector: 'doc-code-sample',
-  templateUrl: 'code-sample.component.html',
-  styleUrl: 'code-sample.component.scss',
+    selector: 'doc-code-sample',
+    templateUrl: 'code-sample.component.html',
+    styleUrl: 'code-sample.component.scss',
+    standalone: false
 })
 export class CodeSampleComponent {
   @Input() content: TemplateRef<any>;
