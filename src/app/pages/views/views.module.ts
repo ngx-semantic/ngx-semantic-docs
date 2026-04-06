@@ -22,7 +22,9 @@ import { SuiSegmentModule } from 'ngx-semantic/elements/segment';
 import { SuiMessageModule } from 'ngx-semantic/collections/message';
 import { SuiAdvertisementModule } from 'ngx-semantic/views/advertisement';
 import { ItemPage } from './item/item.page';
+import { CommentPage } from './comment/comment.page';
 import { SuiItemsModule } from 'ngx-semantic/views/items';
+import { SuiCommentModule } from 'ngx-semantic/views/comment';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiButtonModule } from 'ngx-semantic/elements/button';
 
@@ -30,6 +32,7 @@ import { SuiButtonModule } from 'ngx-semantic/elements/button';
   declarations: [
     AdvertisementPage,
     CardsComponent,
+    CommentPage,
     FeedPage,
     StatisticsComponent,
     ItemPage,
@@ -46,6 +49,7 @@ import { SuiButtonModule } from 'ngx-semantic/elements/button';
     SuiIconModule,
     SuiCardModule,
     SuiItemsModule,
+    SuiCommentModule,
     SuiImageModule,
     SuiMessageModule,
     SuiSegmentModule,
