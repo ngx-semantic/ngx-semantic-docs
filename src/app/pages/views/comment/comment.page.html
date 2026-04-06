@@ -1,0 +1,918 @@
+<doc-page
+    header="Comment"
+    subHeader="A comment displays user feedback to site content">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [content]="comments"
+        [templateCode]="snippetComments">
+      <h3 sui-header>Comments</h3>
+      <p>A basic list of comments.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>
+            The Semantic UI examples often wrap content in <span sui-label>ui segment</span>; that is optional.
+            UI views provide structured layouts but do not wire up site-specific behavior. You will need your own logic
+            to show or hide reply forms—for example, when the user clicks Reply.
+          </p>
+        </div>
+      </div>
+
+      <ng-template #comments>
+          <div sui-comments>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Matt">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Matt</a>
+                <div suiCommentMetadata>
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div suiCommentText>How artistic!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Jenny Hess</a>
+                <div suiCommentMetadata>
+                  <span class="date">Just now</span>
+                </div>
+                <div suiCommentText>Elliot you are always so right :)</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">5 days ago</span>
+                </div>
+                <div suiCommentText>Dude, this is awesome. Thanks so much</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [content]="avatar"
+        [templateCode]="snippetAvatar">
+      <h3 sui-header>Comment</h3>
+      <h4 sui-header>Avatar</h4>
+      <p>A comment can contain an image or avatar.</p>
+
+      <ng-template #avatar>
+          <div sui-comments>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="metadata"
+        [templateCode]="snippetMetadata">
+      <h4 sui-header>Metadata</h4>
+      <p>A comment can contain metadata about the comment; you may add any number of metadata items.</p>
+
+      <ng-template #metadata>
+          <div sui-comments>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/helen.jpg" alt="Stevie Feliciano">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Stevie Feliciano</a>
+                <div suiCommentMetadata>
+                  <span class="date">2 days ago</span>
+                  <span class="rating">
+                    <i sui-icon suiIconType="star"></i> 5 Faves
+                  </span>
+                </div>
+                <div suiCommentText>Hey guys, I hope this example comment is helping you read this documentation.</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="actions"
+        [templateCode]="snippetActions">
+      <h4 sui-header>Actions</h4>
+      <p>A comment can contain actions the user may perform related to this comment.</p>
+
+      <ng-template #actions>
+          <div sui-comments>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/laura.jpg" alt="Tom Lukic">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Tom Lukic</a>
+                <div suiCommentText>This will be great for business reports. I will definitely download this.</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                  <a>Save</a>
+                  <a>Hide</a>
+                  <a>
+                    <i sui-icon suiIconType="expand"></i> Full-screen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="replyForm"
+        [templateCode]="snippetReplyForm">
+      <h4 sui-header>Reply form</h4>
+      <p>
+        A comment can contain a form to reply to a comment. Content can be arbitrary.
+        If a comment form is inside a <span sui-label>ui comment</span>, it is styled as a nested reply form.
+        If the form appears after all comments, it is styled as a normal reply form.
+      </p>
+
+      <ng-template #replyForm>
+          <div sui-comments>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Steve Jobes">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Steve Jobes</a>
+                <div suiCommentMetadata>
+                  <span class="date">2 days ago</span>
+                </div>
+                <div suiCommentText>Revolutionary!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+                <form suiCommentReply class="ui form">
+                  <div class="field">
+                    <textarea rows="3" placeholder="Add a reply..."></textarea>
+                  </div>
+                  <button sui-button type="button">Add Reply</button>
+                </form>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">1 day ago</span>
+                </div>
+                <div suiCommentText>
+                  The hours, minutes and seconds stand as visible reminders that your effort put them all there.
+                  Preserve until your next run, when the watch lets you see how Impermanent your efforts are.
+                </div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/helen.jpg" alt="Christian Rocha">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Christian Rocha</a>
+                <div suiCommentMetadata>
+                  <span class="date">2 days ago</span>
+                </div>
+                <div suiCommentText>I re-tweeted this.</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form suiCommentReply class="ui form">
+            <div class="field">
+              <textarea rows="3" placeholder="Add a comment..."></textarea>
+            </div>
+            <button sui-button type="button">Add Comment</button>
+          </form>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [content]="collapsed"
+        [templateCode]="snippetCollapsed">
+      <h3 sui-header>Collapsed</h3>
+      <p>Comments can be collapsed, or hidden from view.</p>
+
+      <ng-template #collapsed>
+          <div sui-comments suiCollapsed>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/helen.jpg" alt="Christian Rocha">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Christian Rocha</a>
+                <div suiCommentMetadata>
+                  <span class="date">2 days ago</span>
+                </div>
+                <div suiCommentText>
+                  I'm very interested in this motherboard. Do you know if it'd work in a Intel LGA775 CPU socket?
+                </div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">1 day ago</span>
+                </div>
+                <div suiCommentText>No, it wont</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Jenny Hess</a>
+                <div suiCommentMetadata>
+                  <span class="date">20 minutes ago</span>
+                </div>
+                <div suiCommentText>Maybe it would.</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [content]="threaded"
+        [templateCode]="snippetThreaded">
+      <h3 sui-header>Threaded</h3>
+      <p>A comment list can be threaded to show the relationship between conversations.</p>
+
+      <ng-template #threaded>
+          <div sui-comments suiThreaded>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Matt">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Matt</a>
+                <div suiCommentMetadata>
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div suiCommentText>How artistic!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+              <div class="comments">
+                <div sui-comment>
+                  <a suiCommentAvatar>
+                    <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+                  </a>
+                  <div suiCommentContent>
+                    <a suiCommentAuthor>Elliot Fu</a>
+                    <div suiCommentMetadata>
+                      <span class="date">Yesterday at 12:30AM</span>
+                    </div>
+                    <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                    <div suiCommentActions>
+                      <a class="reply">Reply</a>
+                    </div>
+                  </div>
+                  <div class="comments">
+                    <div sui-comment>
+                      <a suiCommentAvatar>
+                        <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+                      </a>
+                      <div suiCommentContent>
+                        <a suiCommentAuthor>Jenny Hess</a>
+                        <div suiCommentMetadata>
+                          <span class="date">Just now</span>
+                        </div>
+                        <div suiCommentText>Elliot you are always so right :)</div>
+                        <div suiCommentActions>
+                          <a class="reply">Reply</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">5 days ago</span>
+                </div>
+                <div suiCommentText>Dude, this is awesome. Thanks so much</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="minimal"
+        [templateCode]="snippetMinimal">
+      <h3 sui-header>Minimal</h3>
+      <p>Comments can hide extra information unless a user shows intent to interact with a comment.</p>
+
+      <ng-template #minimal>
+          <div sui-comments suiMinimal>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Matt">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Matt</a>
+                <div suiCommentMetadata>
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div suiCommentText>How artistic!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Jenny Hess</a>
+                <div suiCommentMetadata>
+                  <span class="date">Just now</span>
+                </div>
+                <div suiCommentText>Elliot you are always so right :)</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">5 days ago</span>
+                </div>
+                <div suiCommentText>Dude, this is awesome. Thanks so much</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeSmall"
+        [templateCode]="snippetSizeSmall">
+      <h3 sui-header>Size</h3>
+      <p>Comments can have different sizes.</p>
+
+      <ng-template #sizeSmall>
+          <div sui-comments suiSize="small">
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Matt">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Matt</a>
+                <div suiCommentMetadata>
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div suiCommentText>How artistic!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Jenny Hess</a>
+                <div suiCommentMetadata>
+                  <span class="date">Just now</span>
+                </div>
+                <div suiCommentText>Elliot you are always so right :)</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">5 days ago</span>
+                </div>
+                <div suiCommentText>Dude, this is awesome. Thanks so much</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [content]="sizeLarge"
+        [templateCode]="snippetSizeLarge">
+      <ng-template #sizeLarge>
+          <div sui-comments suiSize="large">
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/justen.jpg" alt="Matt">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Matt</a>
+                <div suiCommentMetadata>
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div suiCommentText>How artistic!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/elliot.jpg" alt="Elliot Fu">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Elliot Fu</a>
+                <div suiCommentMetadata>
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div suiCommentText>This has been very useful for my research. Thanks as well!</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/jenny.jpg" alt="Jenny Hess">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Jenny Hess</a>
+                <div suiCommentMetadata>
+                  <span class="date">Just now</span>
+                </div>
+                <div suiCommentText>Elliot you are always so right :)</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div sui-comment>
+              <a suiCommentAvatar>
+                <img src="/assets/images/joe.jpg" alt="Joe Henderson">
+              </a>
+              <div suiCommentContent>
+                <a suiCommentAuthor>Joe Henderson</a>
+                <div suiCommentMetadata>
+                  <span class="date">5 days ago</span>
+                </div>
+                <div suiCommentText>Dude, this is awesome. Thanks so much</div>
+                <div suiCommentActions>
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-comments</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiSize</td>
+        <td>
+          Sets the comment list size. Allowed values are
+          <span sui-label>mini</span> | <span sui-label>tiny</span> | <span sui-label>small</span> |
+          <span sui-label>medium</span> | <span sui-label>large</span> | <span sui-label>big</span> |
+          <span sui-label>huge</span> | <span sui-label>massive</span>
+          | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiThreaded</td>
+        <td>When true, displays comments in a threaded layout.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMinimal</td>
+        <td>When true, hides extra information until the user interacts with a comment.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCollapsed</td>
+        <td>When true, applies the collapsed state (comments hidden from view until expanded with your own logic).</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-comment</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentAvatar</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentAuthor</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentMetadata</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentContent</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentText</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentActions</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCommentReply</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>
