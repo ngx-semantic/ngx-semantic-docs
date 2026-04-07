@@ -5,10 +5,11 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'doc-views',
-  template: `
+    selector: 'doc-views',
+    template: `
     <router-outlet></router-outlet>
-  `
+  `,
+    standalone: false
 })
 export class ViewsComponent {
 }

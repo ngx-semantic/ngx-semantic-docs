@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-breadcrumb',
-  templateUrl: './breadcrumb.component.html',
-  styleUrls: [ './breadcrumb.component.scss' ],
+    selector: 'doc-breadcrumb',
+    templateUrl: './breadcrumb.component.html',
+    styleUrls: ['./breadcrumb.component.scss'],
+    standalone: false
 })
 export class BreadcrumbComponent {
   snippetStd = `

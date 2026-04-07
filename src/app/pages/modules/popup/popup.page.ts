@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-popup',
-  templateUrl: 'popup.page.html'
+    selector: 'doc-popup',
+    templateUrl: 'popup.page.html',
+    standalone: false
 })
 export class PopupPage {
   snippetStandard = `

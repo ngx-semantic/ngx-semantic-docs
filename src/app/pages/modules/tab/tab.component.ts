@@ -2,13 +2,14 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-tab',
-  templateUrl: './tab.component.html',
-  styles: [`
+    selector: 'doc-tab',
+    templateUrl: './tab.component.html',
+    styles: [`
     select {
         margin-bottom: 1rem;
     }
-  `]
+  `],
+    standalone: false
 })
 export class TabComponent {
   isDefinitionsActive = true;

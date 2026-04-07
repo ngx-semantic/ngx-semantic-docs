@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.scss'],
+    selector: 'doc-messages',
+    templateUrl: './messages.component.html',
+    styleUrls: ['./messages.component.scss'],
+    standalone: false
 })
 export class MessagesComponent {
   isDefinitionsActive = true;

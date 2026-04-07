@@ -5,9 +5,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'doc-collections',
-  template: `
-    <router-outlet></router-outlet>`
+    selector: 'doc-collections',
+    template: `
+    <router-outlet></router-outlet>`,
+    standalone: false
 })
 export class CollectionsComponent {
 }

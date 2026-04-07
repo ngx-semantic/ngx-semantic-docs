@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-labels',
-  templateUrl: './label.component.html',
-  styleUrls: ['./label.component.scss'],
+    selector: 'doc-labels',
+    templateUrl: './label.component.html',
+    styleUrls: ['./label.component.scss'],
+    standalone: false
 })
 export class LabelComponent {
   snippetStd = `

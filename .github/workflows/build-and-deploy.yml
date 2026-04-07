@@ -3,7 +3,10 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - '**'  # matches all branches
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,18 +18,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.0.0'
-          cache: 'yarn'  # added caching for better performance
+          node-version: '24'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci
 
       - name: Build
-        run: yarn build
+        run: npm run build
 
   deploy:
-    needs: build  # ensures build succeeds before deploying
-    if: github.ref == 'refs/heads/master'  # only deploy on master branch
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:
@@ -35,19 +38,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.0.0'
-          cache: 'yarn'
+          node-version: '24'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci
 
       - name: Build
-        run: |
-          yarn build
+        run: npm run build
 
       - name: Create 404 page
-        run: |
-          cp dist/browser/index.html dist/browser/404.html
+        run: cp dist/browser/index.html dist/browser/404.html
 
       - name: Deploy to GitHub Pages
         env:
@@ -65,5 +66,5 @@ jobs:
           cp -r ../dist/browser/* .
 
           git add .
-          git commit -m "Auto-deployed from GitHub Actions"
+          git commit -m "deploy: ${{ github.sha }} - ${{ github.event.head_commit.message }}"
           git push origin master

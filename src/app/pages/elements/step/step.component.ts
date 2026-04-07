@@ -2,9 +2,10 @@ import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-steps',
-  templateUrl: './step.component.html',
-  styleUrls: ['./step.component.scss']
+    selector: 'doc-steps',
+    templateUrl: './step.component.html',
+    styleUrls: ['./step.component.scss'],
+    standalone: false
 })
 export class StepComponent {
   snippetSingle = `

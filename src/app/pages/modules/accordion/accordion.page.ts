@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-accordion',
-  templateUrl: './accordion.page.html'
+    selector: 'doc-accordion',
+    templateUrl: './accordion.page.html',
+    standalone: false
 })
 export class AccordionPage {
   snippetStandard = `

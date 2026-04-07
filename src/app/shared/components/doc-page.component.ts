@@ -6,15 +6,15 @@ import { Component, Input, ContentChildren, QueryList } from '@angular/core';
 import { DocPageContentDirective } from '../directives/doc-page-content.directive';
 
 @Component({
-  selector: 'doc-page',
-  template: `
+    selector: 'doc-page',
+    template: `
     <div class="masthead"
-         sui-segment
-         suiVertical>
+      sui-segment
+      suiVertical>
       <div sui-container>
         <div sui-grid>
           <div suiGridColumn
-               suiWidth="eight">
+            suiWidth="eight">
             <h1 sui-header>
               {{ header }}
               <div suiSubHeader>
@@ -23,72 +23,73 @@ import { DocPageContentDirective } from '../directives/doc-page-content.directiv
             </h1>
           </div>
           <div suiGridColumn
-               suiWidth="eight">
+            suiWidth="eight">
             <div class="right floated main"
-                 sui-menu>
+              sui-menu>
               <a suiMenuItem
-                 sui-popup
-                 suiPopupPlacement="bottom center"
-                 suiPopupContent="Submit Bug Report"
-                 target="_blank"
-                 href="https://github.com/ngx-semantic/ngx-semantic/issues">
+                sui-popup
+                suiPopupPlacement="bottom center"
+                suiPopupContent="Submit Bug Report"
+                target="_blank"
+                href="https://github.com/ngx-semantic/ngx-semantic/issues">
                 <i sui-icon
-                   suiIconType="bug"></i>
+                suiIconType="bug"></i>
               </a>
-
+    
               <a suiMenuItem
-                 sui-popup
-                 suiPopupPlacement="bottom center"
-                 suiPopupContent="View project on GitHub"
-                 target="_blank"
-                 href="https://github.com/ngx-semantic/ngx-semantic">
+                sui-popup
+                suiPopupPlacement="bottom center"
+                suiPopupContent="View project on GitHub"
+                target="_blank"
+                href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
-                   suiIconType="alternate github"></i>
+                suiIconType="alternate github"></i>
               </a>
-
+    
               <a suiMenuItem
-                 sui-popup
-                 suiPopupPlacement="bottom center"
-                 suiPopupContent="View on Semantic UI"
-                 target="_blank"
-                 href="https://github.com/ngx-semantic/ngx-semantic">
+                sui-popup
+                suiPopupPlacement="bottom center"
+                suiPopupContent="View on Semantic UI"
+                target="_blank"
+                href="https://github.com/ngx-semantic/ngx-semantic">
                 <i sui-icon
-                   suiIconType="book"></i>
+                suiIconType="book"></i>
               </a>
             </div>
           </div>
         </div>
-
+    
         <div sui-divider
-             suiHidden></div>
-
+        suiHidden></div>
+    
         <div sui-menu
-             suiWidth="two"
-             style="margin-top: 2rem; margin-bottom: 1.3rem;">
+          suiWidth="two"
+          style="margin-top: 2rem; margin-bottom: 1.3rem;">
           <a suiMenuItem
-             [suiActive]="isDefinitions()"
-             (click)="switchToPage('definition')">
+            [suiActive]="isDefinitions()"
+            (click)="switchToPage('definition')">
             Definition
           </a>
-
+    
           <a suiMenuItem
-             [suiActive]="isApi()"
-             (click)="switchToPage('api')">
+            [suiActive]="isApi()"
+            (click)="switchToPage('api')">
             API
           </a>
         </div>
       </div>
     </div>
-
+    
     <div class="main"
-         sui-container>
-      <ng-container *ngFor="let page of pages">
-        <ng-container *ngIf="page.pageType === this.currentView">
+      sui-container>
+      @for (page of pages; track page) {
+        @if (page.pageType === this.currentView) {
           <ng-container [ngTemplateOutlet]="page.template"></ng-container>
-        </ng-container>
-      </ng-container>
+        }
+      }
     </div>
-  `
+    `,
+    standalone: false
 })
 export class DocPageComponent {
   @ContentChildren(DocPageContentDirective) public pages: QueryList<DocPageContentDirective>;

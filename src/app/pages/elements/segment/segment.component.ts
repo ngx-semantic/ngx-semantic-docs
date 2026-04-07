@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-segment',
-  templateUrl: './segment.component.html',
-  styleUrls: [ './segment.component.scss' ],
+    selector: 'doc-segment',
+    templateUrl: './segment.component.html',
+    styleUrls: ['./segment.component.scss'],
+    standalone: false
 })
 export class SegmentComponent {
   snippetSegment = `

@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-checkbox',
-  templateUrl: 'checkbox.page.html'
+    selector: 'doc-checkbox',
+    templateUrl: 'checkbox.page.html',
+    standalone: false
 })
 export class CheckboxPage {
   inlineRadioValue: string;

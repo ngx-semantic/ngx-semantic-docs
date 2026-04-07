@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'doc-grid',
-  templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.scss'],
+    selector: 'doc-grid',
+    templateUrl: './grid.component.html',
+    styleUrls: ['./grid.component.scss'],
+    standalone: false
 })
 export class GridComponent implements OnInit {
 

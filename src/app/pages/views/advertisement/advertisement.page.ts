@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-advertisement',
-  templateUrl: 'advertisement.page.html'
+    selector: 'doc-advertisement',
+    templateUrl: 'advertisement.page.html',
+    standalone: false
 })
 export class AdvertisementPage {
   snippetStandard = `

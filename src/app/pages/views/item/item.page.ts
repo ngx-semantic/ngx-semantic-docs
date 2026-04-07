@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'doc-item',
-  templateUrl: 'item.page.html'
+    selector: 'doc-item',
+    templateUrl: 'item.page.html',
+    standalone: false
 })
 export class ItemPage {
   snippetStandard = `

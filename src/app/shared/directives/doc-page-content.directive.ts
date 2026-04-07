@@ -3,7 +3,8 @@ import {Directive, Input, TemplateRef} from '@angular/core';
 export type DocPageType = 'api' | 'definition';
 
 @Directive({
-  selector: '[docPageContent]'
+    selector: '[docPageContent]',
+    standalone: false
 })
 export class DocPageContentDirective {
   @Input('docPageContent') pageType: DocPageType;

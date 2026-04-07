@@ -5,10 +5,11 @@
 import {Component} from "@angular/core";
 
 @Component({
-  selector: 'doc-general',
-  template: `
+    selector: 'doc-general',
+    template: `
     <router-outlet></router-outlet>
-  `
+  `,
+    standalone: false
 })
 export class GeneralComponent {
 }

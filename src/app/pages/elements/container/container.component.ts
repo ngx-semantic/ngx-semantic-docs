@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-container',
-  templateUrl: './container.component.html',
-  styleUrls: ['./container.component.scss'],
+    selector: 'doc-container',
+    templateUrl: './container.component.html',
+    styleUrls: ['./container.component.scss'],
+    standalone: false
 })
 export class ContainerComponent {
   snippetStd = `

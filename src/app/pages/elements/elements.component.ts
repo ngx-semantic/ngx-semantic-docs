@@ -5,9 +5,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'doc-elements',
-  template: `
-    <router-outlet></router-outlet>`
+    selector: 'doc-elements',
+    template: `
+    <router-outlet></router-outlet>`,
+    standalone: false
 })
 export class ElementsComponent {
 }

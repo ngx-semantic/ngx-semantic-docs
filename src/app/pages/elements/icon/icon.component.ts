@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-icons',
-  templateUrl: './icon.component.html',
-  styleUrls: ['./icon.component.scss']
+    selector: 'doc-icons',
+    templateUrl: './icon.component.html',
+    styleUrls: ['./icon.component.scss'],
+    standalone: false
 })
 export class IconComponent {
   isDefinitionsActive = true;

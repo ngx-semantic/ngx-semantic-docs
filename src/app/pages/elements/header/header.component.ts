@@ -2,9 +2,10 @@ import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-  selector: 'doc-headers',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'doc-headers',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    standalone: false
 })
 export class HeaderComponent {
   isDefinitionsActive = true;
