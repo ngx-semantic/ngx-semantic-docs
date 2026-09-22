@@ -13,43 +13,49 @@
 
   <ng-content></ng-content>
 
-  @if (!codeShown) {
-    <ng-container *ngTemplateOutlet="content"></ng-container>
-  }
+  <div class="live-demo">
+    <ng-container *ngTemplateOutlet="demo?.template"></ng-container>
+  </div>
 
   @if (codeShown) {
     <div sui-segments>
-      <div sui-segment
-        style="padding-top: 3rem;">
-        <ng-container *ngTemplateOutlet="content"></ng-container>
+      <div sui-segment>
         <div sui-label
           suiAttached="top">
-          Example
+          HTML
           <i class="copy-code"
             sui-icon
             suiLink
             suiIconType="copy"
             sui-popup
             suiPopupInverted
-            suiPopupContent="Copy Code"
-          (click)="copyCode()"></i>
+            suiPopupContent="Copy HTML"
+          (click)="copyCode('html')"></i>
         </div>
-      </div>
-      <div sui-segment>
         <pre>
           <code lineNumbers
             language="html"
-            singleLine="true"
             [highlight]="formatCode(templateCode)">
           </code>
         </pre>
       </div>
       @if (componentCode) {
         <div sui-segment>
+          <div sui-label
+            suiAttached="top">
+            TypeScript
+            <i class="copy-code"
+              sui-icon
+              suiLink
+              suiIconType="copy"
+              sui-popup
+              suiPopupInverted
+              suiPopupContent="Copy TypeScript"
+            (click)="copyCode('ts')"></i>
+          </div>
           <pre>
             <code lineNumbers
               language="ts"
-              singleLine="true"
               [highlight]="formatCode(componentCode)">
             </code>
           </pre>

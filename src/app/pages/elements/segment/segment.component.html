@@ -5,12 +5,11 @@
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="segment"
         [templateCode]="snippetSegment">
       <h3 sui-header>Segment</h3>
       <p>A segment of content.</p>
 
-      <ng-template #segment>
+      <ng-template docDemo #segment>
         <div sui-segment>
           <doc-wireframe type="short-paragraph"></doc-wireframe>
         </div>
@@ -18,12 +17,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="placeholder"
         [templateCode]="snippetPlaceholder">
       <h3 sui-header>Placeholder Segment</h3>
       <p>A segment can be used to reserve space for conditionally displayed content.</p>
 
-      <ng-template #placeholder>
+      <ng-template docDemo #placeholder>
         <div sui-segment
              suiPlaceholder>
           <div sui-header
@@ -42,9 +40,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="placeholderAlt"
         [templateCode]="snippetPlaceholderAlt">
-      <ng-template #placeholderAlt>
+      <ng-template docDemo #placeholderAlt>
         <div sui-segment
              suiPlaceholder>
           <div sui-header
@@ -68,9 +65,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="placeholderAltToo"
         [templateCode]="snippetPlaceholderAltToo">
-      <ng-template #placeholderAltToo>
+      <ng-template docDemo #placeholderAltToo>
         <div sui-segment
              suiPlaceholder>
           <div sui-grid
@@ -111,12 +107,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="raised"
         [templateCode]="snippetRaised">
       <h3 sui-header>Raised</h3>
       <p>A segment may be formatted to raise above the page.</p>
 
-      <ng-template #raised>
+      <ng-template docDemo #raised>
         <div sui-segment
              suiRaised>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
@@ -127,12 +122,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="stacked"
         [templateCode]="snippetStacked">
       <h3 sui-header>Stacked</h3>
       <p>A segment can be formatted to show it contains multiple pages.</p>
 
-      <ng-template #stacked>
+      <ng-template docDemo #stacked>
         <div sui-segment
              suiStacked="stacked">
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
@@ -143,9 +137,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="tallStacked"
         [templateCode]="snippetTallStacked">
-      <ng-template #tallStacked>
+      <ng-template docDemo #tallStacked>
         <div sui-segment
              suiStacked="tall stacked">
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
@@ -156,12 +149,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="piled"
         [templateCode]="snippetPiled">
       <h3 sui-header>Piled</h3>
       <p>A segment can be formatted to look like a pile of pages.</p>
 
-      <ng-template #piled>
+      <ng-template docDemo #piled>
         <div sui-segment
              suiPiled>
           <h4 sui-header>A header</h4>
@@ -180,12 +172,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="vertical"
         [templateCode]="snippetVertical">
       <h3 sui-header>Vertical Segment</h3>
       <p>A vertical segment formats content to be aligned as part of a vertical group.</p>
 
-      <ng-template #vertical>
+      <ng-template docDemo #vertical>
         <div sui-segment
              suiVertical>
           <doc-wireframe type="short-paragraph"></doc-wireframe>
@@ -206,12 +197,11 @@
     <h2 sui-header suiDividing>Groups</h2>
 
     <doc-code-sample
-        [content]="segments"
         [templateCode]="snippetSegments">
       <h3 sui-header>Vertical Segment</h3>
       <p>A vertical segment formats content to be aligned as part of a vertical group.</p>
 
-      <ng-template #segments>
+      <ng-template docDemo #segments>
         <div sui-segments>
           <div sui-segment>
             <p>Top</p>
@@ -233,9 +223,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="colouredGroup"
         [templateCode]="snippetColouredSegments">
-      <ng-template #colouredGroup>
+      <ng-template docDemo #colouredGroup>
         <div sui-segments>
           <div sui-segment>
             <p>Top</p>
@@ -261,9 +250,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="secondary"
         [templateCode]="snippetSecondary">
-      <ng-template #secondary>
+      <ng-template docDemo #secondary>
         <div sui-segments>
           <div sui-segment>
             <p>Top</p>
@@ -277,12 +265,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="nested"
         [templateCode]="snippetNested">
       <h3 sui-header>Nested Segments</h3>
       <p>A group of segments can be nested in another group of segments.</p>
 
-      <ng-template #nested>
+      <ng-template docDemo #nested>
         <div sui-segments>
           <div sui-segment>
             <p>Top</p>
@@ -321,12 +308,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="horizontal"
         [templateCode]="snippetHorizontal">
       <h3 sui-header>Horizontal Segments</h3>
       <p>A segment group can appear horizontally.</p>
 
-      <ng-template #horizontal>
+      <ng-template docDemo #horizontal>
         <div sui-segments
              suiHorizontal>
           <div sui-segment>
@@ -343,12 +329,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="raisedGroup"
         [templateCode]="snippetRaisedGroup">
       <h3 sui-header>Raised Segments</h3>
       <p>A group of segments can be raised.</p>
 
-      <ng-template #raisedGroup>
+      <ng-template docDemo #raisedGroup>
         <div sui-segments
              suiRaised>
           <div sui-segment>
@@ -365,12 +350,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="stackedGroup"
         [templateCode]="snippetStackedGroup">
       <h3 sui-header>Stacked Segments</h3>
       <p>A group of segments can be stacked.</p>
 
-      <ng-template #stackedGroup>
+      <ng-template docDemo #stackedGroup>
         <div sui-segments
              suiStacked>
           <div sui-segment>
@@ -387,12 +371,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="piledGroup"
         [templateCode]="snippetPiledGroup">
       <h3 sui-header>Piled Segments</h3>
       <p>A group of segments can be piled.</p>
 
-      <ng-template #piledGroup>
+      <ng-template docDemo #piledGroup>
         <div sui-segments
              suiPiled>
           <div sui-segment>
@@ -413,12 +396,11 @@
     <h2 sui-header suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A segment may show its content is disabled.</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-segment
              disabled>
           <doc-wireframe type="short-paragraph"></doc-wireframe>
@@ -427,12 +409,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="loading"
         [templateCode]="snippetLoading">
       <h3 sui-header>Loading</h3>
       <p>A segment may show its content is being loaded.</p>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <div sui-segment
              suiLoading>
           <doc-wireframe type="paragraph"></doc-wireframe>
@@ -446,12 +427,11 @@
     <h2 sui-header suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>A segment can have its colours inverted for contrast.</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment
              suiInverted>
           <p>I'm here to tell you something, and you will probably read me first.</p>
@@ -460,7 +440,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="attached"
         [templateCode]="snippetAttached">
       <h3 sui-header>Attached</h3>
       <p>A segment can be attached to other content on a page.</p>
@@ -473,7 +452,7 @@
 
       <br/>
 
-      <ng-template #attached>
+      <ng-template docDemo #attached>
         <div sui-segment
              suiAttached="top attached">
           <p>This segment is on top</p>
@@ -490,9 +469,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="attachedAlt"
         [templateCode]="snippetAttachedAlt">
-      <ng-template #attachedAlt>
+      <ng-template docDemo #attachedAlt>
         <h5 sui-header
             suiAttached="top attached">
           Dogs
@@ -528,12 +506,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="padded"
         [templateCode]="snippetPadded">
       <h3 sui-header>Padded</h3>
       <p>A segment can increase its padding.</p>
 
-      <ng-template #padded>
+      <ng-template docDemo #padded>
         <div sui-segment
              suiPadding="padded">
           <doc-wireframe type="short-paragraph"></doc-wireframe>
@@ -542,9 +519,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="paddingAlt"
         [templateCode]="snippetPaddedAlt">
-      <ng-template #paddingAlt>
+      <ng-template docDemo #paddingAlt>
         <div sui-segment
              suiPadding="very padded">
           <doc-wireframe type="short-paragraph"></doc-wireframe>
@@ -553,12 +529,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="compact"
         [templateCode]="snippetCompact">
       <h3 sui-header>Compact</h3>
       <p>A segment may take up only as much space as is necessary.</p>
 
-      <ng-template #compact>
+      <ng-template docDemo #compact>
         <div sui-segment
              suiCompact>
           <p>Pellentesque habitant morbi</p>
@@ -567,9 +542,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="compactAlt"
         [templateCode]="snippetCompactAlt">
-      <ng-template #compactAlt>
+      <ng-template docDemo #compactAlt>
         <div sui-segments
              suiCompact>
           <div sui-segment>
@@ -583,12 +557,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="coloured"
         [templateCode]="snippetColoured">
       <h3 sui-header>Coloured</h3>
       <p>A segment can be coloured.</p>
 
-      <ng-template #coloured>
+      <ng-template docDemo #coloured>
         <div sui-segment suiColour="red">Red</div>
         <div sui-segment suiColour="orange">Orange</div>
         <div sui-segment suiColour="yellow">Yellow</div>
@@ -606,11 +579,10 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="colouredInverted"
         [templateCode]="snippetColouredInverted">
       <p>These colours can be inverted.</p>
 
-      <ng-template #colouredInverted>
+      <ng-template docDemo #colouredInverted>
         <div sui-segment suiInverted suiColour="red">Red</div>
         <div sui-segment suiInverted suiColour="orange">Orange</div>
         <div sui-segment suiInverted suiColour="yellow">Yellow</div>
@@ -628,12 +600,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="emphasis"
         [templateCode]="snippetEmphasis">
       <h3 sui-header>Emphasis</h3>
       <p>A segment can be formatted to appear more or less noticeable.</p>
 
-      <ng-template #emphasis>
+      <ng-template docDemo #emphasis>
         <div sui-segment>
           <p>I'm here to tell you something, and you will probably read me first.</p>
         </div>
@@ -649,11 +620,10 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="emphasisInverted"
         [templateCode]="snippetEmphasisInverted">
       <p>Inverted colours may also be more or less noticeable.</p>
 
-      <ng-template #emphasisInverted>
+      <ng-template docDemo #emphasisInverted>
         <div sui-segment
              suiInverted>
           <p>I'm here to tell you something, and you will probably read me first.</p>
@@ -672,9 +642,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="emphasisInvertedColoured"
         [templateCode]="snippetEmphasisInvertedColoured">
-      <ng-template #emphasisInvertedColoured>
+      <ng-template docDemo #emphasisInvertedColoured>
         <div sui-segment
              suiInverted
              suiColour="red">
@@ -696,12 +665,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="circular"
         [templateCode]="snippetCircular">
       <h3 sui-header>Circular</h3>
       <p>A segment can be formatted to appear more or less noticeable.</p>
 
-      <ng-template #circular>
+      <ng-template docDemo #circular>
         <div sui-segment
              suiCircular>
           <h2 sui-header>
@@ -722,12 +690,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="clearing"
         [templateCode]="snippetClearing">
       <h3 sui-header>Clearing</h3>
       <p>A segment can clear floated content.</p>
 
-      <ng-template #clearing>
+      <ng-template docDemo #clearing>
         <div sui-segment
              suiClearing>
           <div sui-button
@@ -738,12 +705,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floated"
         [templateCode]="snippetFloated">
       <h3 sui-header>Floated</h3>
       <p>A segment can appear to the left or right of other content.</p>
 
-      <ng-template #floated>
+      <ng-template docDemo #floated>
         <div sui-segment
              suiFloated="right floated">
           <p>This segment will appear to the right
@@ -756,12 +722,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="textAlignment"
         [templateCode]="snippetTextAlignment">
       <h3 sui-header>Text Alignment</h3>
       <p>A segment can have its text aligned to a side</p>
 
-      <ng-template #textAlignment>
+      <ng-template docDemo #textAlignment>
         <div sui-segment
              suiTextAlignment="right aligned">
           Right
@@ -778,12 +743,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Basic</h3>
       <p>A basic segment has no special formatting.</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <div sui-segment
              suiBasic>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum

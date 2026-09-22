@@ -6,12 +6,11 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Statistic</h3>
       <p>A statistic can display a value with a label above or below it.</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <div sui-statistic>
           <div suiStatValue>5,550</div>
           <div suiStatLabel>Downloads</div>
@@ -20,9 +19,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicAlternate"
         [templateCode]="snippetBasicAlternate">
-      <ng-template #basicAlternate>
+      <ng-template docDemo #basicAlternate>
         <div sui-statistic>
           <div suiStatLabel>Views</div>
           <div suiStatValue>40,509</div>
@@ -31,12 +29,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="group"
         [templateCode]="snippetGroup">
       <h3 sui-header>Statistic Group</h3>
       <p>A group of statistics.</p>
 
-      <ng-template #group>
+      <ng-template docDemo #group>
         <div sui-statistics>
           <div sui-statistic>
             <div suiStatValue>22</div>
@@ -58,12 +55,11 @@
         suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="value"
         [templateCode]="snippetValue">
       <h3 sui-header>Value</h3>
       <p>A statistic can contain a numeric, icon, image, or text value.</p>
 
-      <ng-template #value>
+      <ng-template docDemo #value>
         <div sui-statistics>
           <div sui-statistic>
             <div suiStatValue>22</div>
@@ -92,12 +88,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="label"
         [templateCode]="snippetLabel">
       <h3 sui-header>Label</h3>
       <p>A statistic can contain a label to help provide context for the presented value.</p>
 
-      <ng-template #label>
+      <ng-template docDemo #label>
         <div sui-statistic>
           <div suiStatValue>2,204</div>
           <div suiStatLabel>Views</div>
@@ -109,12 +104,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="horizontalStat"
         [templateCode]="snippetHorizontal">
       <h3 sui-header>Horizontal Statistic</h3>
       <p>A statistic can present its measurement horizontally.</p>
 
-      <ng-template #horizontalStat>
+      <ng-template docDemo #horizontalStat>
         <div sui-statistic suiHorizontal>
           <div suiStatValue>2,204</div>
           <div suiStatLabel>Views</div>
@@ -123,9 +117,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="horizontalStatGroup"
         [templateCode]="snippetHorizontalGroup">
-      <ng-template #horizontalStatGroup>
+      <ng-template docDemo #horizontalStatGroup>
         <div sui-statistics suiHorizontal>
           <div sui-statistic>
             <div suiStatValue>2,204</div>
@@ -144,12 +137,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="coloured"
         [templateCode]="snippetColoured">
       <h3 sui-header>Coloured</h3>
       <p>A statistic can be formatted to be different colours.</p>
 
-      <ng-template #coloured>
+      <ng-template docDemo #coloured>
         <div sui-statistics>
           <div sui-statistic suiColour="red">
             <div suiStatValue>27</div>
@@ -204,12 +196,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>A statistic can be formatted to fit on a dark background.</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment suiInverted>
           <div sui-statistic suiInverted>
             <div suiStatValue>54</div>
@@ -268,12 +259,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="evenlyDivided"
         [templateCode]="snippetEvenlyDivided">
       <h3 sui-header>Evenly Divided</h3>
       <p>A statistic group can have its items divided evenly.</p>
 
-      <ng-template #evenlyDivided>
+      <ng-template docDemo #evenlyDivided>
         <div sui-statistics suiWidth="four">
           <div sui-statistic>
             <div suiStatValue>22</div>
@@ -302,12 +292,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floated"
         [templateCode]="snippetFloated">
       <h3 sui-header>Floated</h3>
       <p>An statistic can sit to the left or right of other content.</p>
 
-      <ng-template #floated>
+      <ng-template docDemo #floated>
         <div sui-segment>
           <div sui-statistic suiFloated="right">
             <div suiStatValue>2,204</div>
@@ -335,12 +324,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="size"
         [templateCode]="snippetSizes">
       <h3 sui-header>Size</h3>
       <p>A statistic can vary in size.</p>
 
-      <ng-template #size>
+      <ng-template docDemo #size>
         <div sui-statistic suiSize="mini">
           <div suiStatValue>2,204</div>
           <div suiStatLabel>Views</div>
@@ -369,9 +357,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeHorizontal"
         [templateCode]="snippetHorizontalSizes">
-      <ng-template #sizeHorizontal>
+      <ng-template docDemo #sizeHorizontal>
         <div sui-statistic suiHorizontal suiSize="mini">
           <div suiStatValue>2,204</div>
           <div suiStatLabel>Views</div>

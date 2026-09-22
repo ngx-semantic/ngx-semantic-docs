@@ -5,12 +5,11 @@
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Form</h3>
       <p>A form</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <form sui-form>
           <div suiFormField>
             <label>First Name</label>
@@ -29,9 +28,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicAlt"
         [templateCode]="snippetBasicAlt">
-      <ng-template #basicAlt>
+      <ng-template docDemo #basicAlt>
         <form sui-form>
           <h4 sui-header suiDividing>Shipping Information</h4>
           <div suiFormField>
@@ -112,12 +110,11 @@
     <h2 sui-header suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="userInput"
         [templateCode]="snippetUserInput">
       <h3 sui-header>Field</h3>
       <p>A field is a form element containing a label and an input</p>
 
-      <ng-template #userInput>
+      <ng-template docDemo #userInput>
         <div sui-form>
           <div suiFormField>
             <label>User Input</label>
@@ -128,7 +125,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fields"
         [templateCode]="snippetFields">
       <h3 sui-header>Fields</h3>
       <p>A set of fields can appear grouped together</p>
@@ -137,7 +133,7 @@
         Field groups automatically receive responsive styling, swapping to one field per row on mobile devices.
       </div>
 
-      <ng-template #fields>
+      <ng-template docDemo #fields>
         <div sui-form>
           <div suiFormFields>
             <div suiFormField>
@@ -158,9 +154,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fieldsWidth"
         [templateCode]="snippetFieldsWidth">
-      <ng-template #fieldsWidth>
+      <ng-template docDemo #fieldsWidth>
         <div sui-form>
           <div suiFormFields suiWidth="three">
             <div suiFormField>
@@ -181,9 +176,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fieldsInline"
         [templateCode]="snippetFieldsInline">
-      <ng-template #fieldsInline>
+      <ng-template docDemo #fieldsInline>
         <div sui-form>
           <div suiFormFields suiInline>
             <div suiFormField suiWidth="eight">
@@ -202,7 +196,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="textArea"
         [templateCode]="snippetTextArea">
       <h3 sui-header>Text Area</h3>
       <p>A textarea can be used to allow for extended user input.</p>
@@ -211,7 +204,7 @@
         To specify an approximate text area size use the rows attribute.
       </div>
 
-      <ng-template #textArea>
+      <ng-template docDemo #textArea>
         <div sui-form>
           <div suiFormField>
             <label>Text</label>
@@ -226,7 +219,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="checkbox"
         [templateCode]="snippetCheckbox">
       <h3 sui-header>Checkbox</h3>
       <p>A form can contain a <a routerLink="/modules/checkbox">checkbox</a></p>
@@ -235,7 +227,7 @@
         UI checkbox are special, styled versions of standard HTML checkboxes
       </div>
 
-      <ng-template #checkbox>
+      <ng-template docDemo #checkbox>
         <div sui-form>
           <div suiFormField suiInline>
             <sui-checkbox>Checkbox</sui-checkbox>
@@ -252,12 +244,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="radio"
         [templateCode]="snippetRadio">
       <h3 sui-header>Radio Checkbox</h3>
       <p>A form can contain a <a routerLink="/modules/checkbox">radio checkbox</a></p>
 
-      <ng-template #radio>
+      <ng-template docDemo #radio>
         <div sui-form>
           <div suiFormFields>
             <label>Select your favorite fruit:</label>
@@ -294,12 +285,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="dropdown"
         [templateCode]="snippetDropdown">
       <h3 sui-header>Dropdown</h3>
       <p>A form can contain a <a routerLink="/modules/dropdown">dropdown</a></p>
 
-      <ng-template #dropdown>
+      <ng-template docDemo #dropdown>
         <div sui-form>
           <div suiFormField>
             <label>Gender</label>
@@ -310,9 +300,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="dropdownAlt"
         [templateCode]="snippetDropdownAlt">
-      <ng-template #dropdownAlt>
+      <ng-template docDemo #dropdownAlt>
         <div sui-form>
           <div suiFormField>
             <label>Country</label>
@@ -323,12 +312,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="multipleSelect"
         [templateCode]="snippetMultipleSelect">
       <h3 sui-header>Multiple Select</h3>
       <p>A multiple select is used to include several choices with one form field</p>
 
-      <ng-template #multipleSelect>
+      <ng-template docDemo #multipleSelect>
         <div sui-form>
           <div suiFormField>
             <label>Country</label>
@@ -339,12 +327,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="htmlSelect"
         [templateCode]="snippetHtmlSelect">
       <h3 sui-header>HTML Select</h3>
       <p>A multiple select is used to include several choices with one form field</p>
 
-      <ng-template #htmlSelect>
+      <ng-template docDemo #htmlSelect>
         <div sui-form>
           <div suiFormField>
             <select>
@@ -358,7 +345,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="message"
         [templateCode]="snippetMessage">
       <h3 sui-header>Message</h3>
       <p>A form can contain a <a routerLink="/collections/message">message</a></p>
@@ -369,7 +355,7 @@
         inside a form are hidden by default.
       </div>
 
-      <ng-template #message>
+      <ng-template docDemo #message>
         <div sui-form>
           <div sui-message>
             <div class="header">We had some issues</div>
@@ -387,12 +373,11 @@
     <h2 sui-header suiDividing>State</h2>
 
     <doc-code-sample
-        [content]="loading"
         [templateCode]="snippetLoading">
       <h3 sui-header>Loading</h3>
       <p>If a form is in loading state, it will automatically show a loading indicator.</p>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <div sui-form suiLoading>
           <div suiFormField>
             <label>E-mail</label>
@@ -404,12 +389,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="success"
         [templateCode]="snippetSuccess">
       <h3 sui-header>Success</h3>
       <p>If a form is in an success state, it will automatically show any success message blocks.</p>
 
-      <ng-template #success>
+      <ng-template docDemo #success>
         <div sui-form suiState="success">
           <div suiFormField>
             <label>E-mail</label>
@@ -425,12 +409,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="error"
         [templateCode]="snippetError">
       <h3 sui-header>Error</h3>
       <p>If a form is in an error state, it will automatically show any error message blocks.</p>
 
-      <ng-template #error>
+      <ng-template docDemo #error>
         <div sui-form suiState="error">
           <div suiFormField>
             <label>E-mail</label>
@@ -446,12 +429,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="warning"
         [templateCode]="snippetWarning">
       <h3 sui-header>Warning</h3>
       <p>If a form is in warning state, it will automatically show any warning message block.</p>
 
-      <ng-template #warning>
+      <ng-template docDemo #warning>
         <div sui-form suiState="warning">
           <div suiFormField>
             <label>E-mail</label>
@@ -470,12 +452,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fieldError"
         [templateCode]="snippetFieldError">
       <h3 sui-header>Field Error</h3>
       <p>Individual fields may display an error state</p>
 
-      <ng-template #fieldError>
+      <ng-template docDemo #fieldError>
         <div sui-form>
           <div suiFormFields suiWidth="two">
             <div suiFormField suiError>
@@ -501,12 +482,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled Field</h3>
       <p>Individual fields may be disabled</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-form>
           <div suiFormFields suiWidth="two">
             <div suiFormField disabled>
@@ -523,12 +503,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="readOnly"
         [templateCode]="snippetReadOnly">
       <h3 sui-header>Read-Only Field</h3>
       <p>Individual fields may be read only</p>
 
-      <ng-template #readOnly>
+      <ng-template docDemo #readOnly>
         <div sui-form>
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -549,12 +528,11 @@
     <h2 sui-header suiDividing>Form Variations</h2>
 
     <doc-code-sample
-        [content]="sizeMini"
         [templateCode]="snippetSizeMini">
       <h3 sui-header>Size</h3>
       <p>A form can vary in size</p>
 
-      <ng-template #sizeMini>
+      <ng-template docDemo #sizeMini>
         <div sui-form suiSize="mini">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -572,9 +550,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeTiny"
         [templateCode]="snippetSizeTiny">
-      <ng-template #sizeTiny>
+      <ng-template docDemo #sizeTiny>
         <div sui-form suiSize="tiny">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -592,9 +569,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeSmall"
         [templateCode]="snippetSizeSmall">
-      <ng-template #sizeSmall>
+      <ng-template docDemo #sizeSmall>
         <div sui-form suiSize="small">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -612,9 +588,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeLarge"
         [templateCode]="snippetSizeLarge">
-      <ng-template #sizeLarge>
+      <ng-template docDemo #sizeLarge>
         <div sui-form suiSize="large">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -632,9 +607,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeBig"
         [templateCode]="snippetSizeBig">
-      <ng-template #sizeBig>
+      <ng-template docDemo #sizeBig>
         <div sui-form suiSize="big">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -652,9 +626,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeHuge"
         [templateCode]="snippetSizeHuge">
-      <ng-template #sizeHuge>
+      <ng-template docDemo #sizeHuge>
         <div sui-form suiSize="huge">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -672,9 +645,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeMassive"
         [templateCode]="snippetSizeMassive">
-      <ng-template #sizeMassive>
+      <ng-template docDemo #sizeMassive>
         <div sui-form suiSize="massive">
           <div suiFormFields suiWidth="two">
             <div suiFormField>
@@ -692,12 +664,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="equalWidth"
         [templateCode]="snippetEqualWidth">
       <h3 sui-header>Equal Width Form</h3>
       <p>Forms can automatically divide fields to be equal width</p>
 
-      <ng-template #equalWidth>
+      <ng-template docDemo #equalWidth>
         <div sui-form suiEqualWidth>
           <div suiFormFields>
             <div suiFormField>
@@ -728,12 +699,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>A form on a dark background may have to invert its colour scheme</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment suiInverted>
           <div sui-form suiInverted>
             <div suiFormFields suiWidth="two">
@@ -760,12 +730,11 @@
     <h2 sui-header suiDividing>Field Variations</h2>
 
     <doc-code-sample
-        [content]="inline"
         [templateCode]="snippetInline">
       <h3 sui-header>Inline Field</h3>
       <p>A field can have its label next to instead of above it.</p>
 
-      <ng-template #inline>
+      <ng-template docDemo #inline>
         <div sui-form>
           <div suiFormField suiInline>
             <label>Last name</label>
@@ -776,12 +745,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="width"
         [templateCode]="snippetWidth">
       <h3 sui-header>Width</h3>
       <p>A field can specify its width in grid columns</p>
 
-      <ng-template #width>
+      <ng-template docDemo #width>
         <div sui-form>
           <div suiFormFields>
             <div suiFormField suiWidth="six">
@@ -824,12 +792,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="required"
         [templateCode]="snippetRequired">
       <h3 sui-header>Required</h3>
       <p>A field can show that input is mandatory</p>
 
-      <ng-template #required>
+      <ng-template docDemo #required>
         <div sui-form>
           <div suiFormField suiRequired>
             <label>Last name</label>
@@ -847,12 +814,11 @@
     <h2 sui-header suiDividing>Group Variations</h2>
 
     <doc-code-sample
-        [content]="evenlyDivided"
         [templateCode]="snippetEvenlyDivided">
       <h3 sui-header>Evenly Divided</h3>
       <p>Fields can have their widths divided evenly.</p>
 
-      <ng-template #evenlyDivided>
+      <ng-template docDemo #evenlyDivided>
         <div sui-form>
           <div suiFormFields suiWidth="three">
             <div suiFormField>
@@ -873,12 +839,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="grouped"
         [templateCode]="snippetGrouped">
       <h3 sui-header>Grouped Fields</h3>
       <p>Fields can show related choices.</p>
 
-      <ng-template #grouped>
+      <ng-template docDemo #grouped>
         <div sui-form>
           <div suiFormFields suiGrouped>
             <div suiFormField>
@@ -907,12 +872,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="equalWidthGroup"
         [templateCode]="snippetEqualWidthGroup">
       <h3 sui-header>Equal Width Fields</h3>
       <p>Fields can automatically divide fields to be equal width.</p>
 
-      <ng-template #equalWidthGroup>
+      <ng-template docDemo #equalWidthGroup>
         <div sui-form>
           <div suiFormFields>
             <div suiFormField>
@@ -943,12 +907,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inlineGroup"
         [templateCode]="snippetInlineGroup">
       <h3 sui-header>Inline Fields</h3>
       <p>Multiple fields may be inline in a row.</p>
 
-      <ng-template #inlineGroup>
+      <ng-template docDemo #inlineGroup>
         <div sui-form>
           <div suiFormFields suiInline>
             <label>Phone Number</label>
@@ -967,9 +930,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inlineGroupAlt"
         [templateCode]="snippetInlineGroupAlt">
-      <ng-template #inlineGroupAlt>
+      <ng-template docDemo #inlineGroupAlt>
         <div sui-form>
           <div suiFormFields suiInline>
             <label>What's your favourite fruit?</label>

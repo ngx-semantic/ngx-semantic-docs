@@ -6,12 +6,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="youtube"
         [templateCode]="snippetYoutube">
       <h3 sui-header>YouTube</h3>
       <p>An embed can be used to display YouTube Content</p>
 
-      <ng-template #youtube>
+      <ng-template docDemo #youtube>
         <sui-embed
             suiSource="youtube"
             suiId="O6Xo21L0ybE"
@@ -20,12 +19,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="vimeo"
         [templateCode]="snippetVimeo">
       <h3 sui-header>Vimeo</h3>
       <p>An embed can be used to display Vimeo content.</p>
 
-      <ng-template #vimeo>
+      <ng-template docDemo #vimeo>
         <sui-embed
             suiSource="vimeo"
             suiId="125292332"
@@ -34,12 +32,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="customContent"
         [templateCode]="snippetCustomContent">
       <h3 sui-header>Custom Content</h3>
       <p>An embed can display any web content</p>
 
-      <ng-template #customContent>
+      <ng-template docDemo #customContent>
         <sui-embed
             suiIcon="right circle arrow"
             suiSourceUrl="http://www.myfav.es/jack"
@@ -51,12 +48,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="aspectRatio"
         [templateCode]="snippetAspectRatio">
       <h3 sui-header>Aspect Ratio</h3>
       <p>An embed can specify an alternative aspect ratio</p>
 
-      <ng-template #aspectRatio>
+      <ng-template docDemo #aspectRatio>
         <sui-embed
             suiAspectRatio="4:3"
             suiSource="youtube"

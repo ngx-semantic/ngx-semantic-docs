@@ -6,7 +6,6 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="divStandard"
         [templateCode]="snippetStandard">
       <h3 sui-header>Divider</h3>
       <p>
@@ -18,7 +17,7 @@
         To add a divider between parts of a grid use a <code>divided grid</code> variation.
       </div>
 
-      <ng-template #divStandard>
+      <ng-template docDemo #divStandard>
         <doc-wireframe type="short-paragraph"></doc-wireframe>
         <div sui-divider></div>
         <doc-wireframe type="short-paragraph"></doc-wireframe>
@@ -26,7 +25,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divVertical"
         [templateCode]="snippetVertical">
       <h3 sui-header>Vertical Divider</h3>
       <p>
@@ -44,7 +42,7 @@
         containers</b> (like grid).
       </div>
 
-      <ng-template #divVertical>
+      <ng-template docDemo #divVertical>
         <div sui-segment>
           <div sui-grid
                suiWidth="two"
@@ -87,7 +85,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divVerticalForm"
         [templateCode]="snippetVerticalForm">
       <div sui-message
            suiState="info">
@@ -96,7 +93,7 @@
           grid</code>
       </div>
 
-      <ng-template #divVerticalForm>
+      <ng-template docDemo #divVerticalForm>
         <div sui-segment
              suiPlaceholder>
           <div sui-grid
@@ -149,7 +146,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divHorizontal"
         [templateCode]="snippetHorizontal">
       <h3 sui-header>Horizontal Divider</h3>
       <p>
@@ -165,7 +161,7 @@
         Dividers will automatically vary the size of their dividing rules to match the length of your text
       </div>
 
-      <ng-template #divHorizontal>
+      <ng-template docDemo #divHorizontal>
         <div sui-segment
              suiBasic
              suiTextAlignment="center aligned">
@@ -197,9 +193,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divHorizontalTable"
         [templateCode]="snippetHorizontalTable">
-      <ng-template #divHorizontalTable>
+      <ng-template docDemo #divHorizontalTable>
         <h4 sui-divider
             suiHeader
             suiDirection="horizontal">
@@ -242,14 +237,13 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="divInverted"
         [templateCode]="snippetDividerInverted">
       <h3 sui-header>Inverted</h3>
       <p>
         A divider can have its colours inverted
       </p>
 
-      <ng-template #divInverted>
+      <ng-template docDemo #divInverted>
         <div sui-segment
              suiInverted>
           <div sui-placeholder
@@ -277,14 +271,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divFitted"
         [templateCode]="snippetDividerFitted">
       <h3 sui-header>Fitted</h3>
       <p>
         A divider can be fitted, without any space above or below it.
       </p>
 
-      <ng-template #divFitted>
+      <ng-template docDemo #divFitted>
         <div sui-segment>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
           malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
@@ -298,14 +291,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divHidden"
         [templateCode]="snippetDividerHidden">
       <h3 sui-header>Hidden</h3>
       <p>
         A hidden divider divides content without creating a dividing line
       </p>
 
-      <ng-template #divHidden>
+      <ng-template docDemo #divHidden>
         <h3 sui-header>Section One</h3>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
@@ -325,14 +317,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divSection"
         [templateCode]="snippetDividerSection">
       <h3 sui-header>Section</h3>
       <p>
         A divider can provide greater margins to divide sections of content
       </p>
 
-      <ng-template #divSection>
+      <ng-template docDemo #divSection>
         <h3 sui-header>Section One</h3>
         <div sui-placeholder>
           <p suiPlaceholderLine></p>
@@ -352,14 +343,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divClearing"
         [templateCode]="snippetDividerClearing">
       <h3 sui-header>Clearing</h3>
       <p>
         A divider can clear the contents above it
       </p>
 
-      <ng-template #divClearing>
+      <ng-template docDemo #divClearing>
         <div sui-segment>
           <h1 sui-header
               suiFloated="right floated">Floated Content</h1>

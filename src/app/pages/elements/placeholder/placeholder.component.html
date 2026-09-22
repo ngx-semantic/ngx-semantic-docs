@@ -5,7 +5,6 @@
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="placeholder"
         [templateCode]="snippetBasic">
       <h3 sui-header>Placeholder</h3>
       <p>A placeholder is used to reserve space for content that soon will appear in a layout.</p>
@@ -21,7 +20,7 @@
 
       <br/>
 
-      <ng-template #placeholder>
+      <ng-template docDemo #placeholder>
         <div sui-placeholder>
           <div suiPlaceholderHeader
                suiImage>
@@ -40,9 +39,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="gridPlaceholder"
         [templateCode]="snippetGrid">
-      <ng-template #gridPlaceholder>
+      <ng-template docDemo #gridPlaceholder>
         <div sui-grid
              suiStackable
              suiWidth="three">
@@ -105,9 +103,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="cardPlaceholder"
         [templateCode]="snippetCard">
-      <ng-template #cardPlaceholder>
+      <ng-template docDemo #cardPlaceholder>
         <div sui-grid
              suiStackable
              suiDoubling
@@ -154,7 +151,6 @@
     <h2 sui-header>Content</h2>
 
     <doc-code-sample
-        [content]="lines"
         [templateCode]="snippetLines">
       <h3 sui-header>Lines</h3>
       <p>A placeholder can contain have lines of text</p>
@@ -167,7 +163,7 @@
 
       <br/>
 
-      <ng-template #lines>
+      <ng-template docDemo #lines>
         <div sui-placeholder>
           <div suiPlaceholderLine></div>
           <div suiPlaceholderLine></div>
@@ -179,7 +175,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="imageHeader"
         [templateCode]="snippetImageHeader">
       <h3 sui-header>Headers</h3>
       <p>A placeholder can contain a header</p>
@@ -191,7 +186,7 @@
 
       <br/>
 
-      <ng-template #imageHeader>
+      <ng-template docDemo #imageHeader>
         <div sui-placeholder>
           <div suiPlaceholderHeader
                suiImage>
@@ -203,9 +198,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="header"
         [templateCode]="snippetHeader">
-      <ng-template #header>
+      <ng-template docDemo #header>
         <div sui-placeholder>
           <div suiPlaceholderHeader>
             <div suiPlaceholderLine></div>
@@ -216,7 +210,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="paragraph"
         [templateCode]="snippetParagraph">
       <h3 sui-header>Paragraph</h3>
       <p>A placeholder can contain a paragraph</p>
@@ -228,7 +221,7 @@
 
       <br/>
 
-      <ng-template #paragraph>
+      <ng-template docDemo #paragraph>
         <div sui-placeholder>
           <div suiPlaceholderParagraph>
             <div suiPlaceholderLine></div>
@@ -247,12 +240,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="image"
         [templateCode]="snippetImage">
       <h3 sui-header>Image</h3>
       <p>A placeholder can contain an image</p>
 
-      <ng-template #image>
+      <ng-template docDemo #image>
         <div sui-placeholder>
           <div suiPlaceholderImage></div>
         </div>
@@ -260,7 +252,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="squareImages"
         [templateCode]="snippetSquareImage">
       <div sui-message
            suiState="info">
@@ -270,7 +261,7 @@
 
       <br/>
 
-      <ng-template #squareImages>
+      <ng-template docDemo #squareImages>
         <div sui-cards
              suiWidth="three">
           <div sui-card>
@@ -302,9 +293,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rectangularImages"
         [templateCode]="snippetRectangularImage">
-      <ng-template #rectangularImages>
+      <ng-template docDemo #rectangularImages>
         <div sui-cards
              suiWidth="three">
           <div sui-card>
@@ -340,12 +330,11 @@
     <h2 sui-header>Variations</h2>
 
     <doc-code-sample
-        [content]="lineLength"
         [templateCode]="snippetLineLength">
       <h3 sui-header>Line Length</h3>
       <p>A line can specify how long its contents should appear</p>
 
-      <ng-template #lineLength>
+      <ng-template docDemo #lineLength>
         <div sui-placeholder>
           <div suiPlaceholderLine
                suiLength="full"></div>
@@ -364,9 +353,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="complexLineLength"
         [templateCode]="snippetComplexLineLength">
-      <ng-template #complexLineLength>
+      <ng-template docDemo #complexLineLength>
         <div sui-placeholder>
           <div suiPlaceholderHeader
                suiImage>
@@ -386,12 +374,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>A fluid placeholder takes up the width of its container</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <div sui-placeholder
              suiFluid>
           <div suiPlaceholderHeader
@@ -409,12 +396,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>A placeholder can have their colours inverted.</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment
              suiInverted>
           <div sui-placeholder

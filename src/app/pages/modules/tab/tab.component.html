@@ -6,12 +6,11 @@
     suiDividing>Type</h2>
 
     <doc-code-sample
-      [content]="basic"
       [templateCode]="snippetBasic">
       <h3 sui-header>Tab</h3>
       <p>A basic tab</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <sui-tabs>
           <sui-tab
             suiTitle="HTML">
@@ -55,12 +54,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-      [content]="pointingMenu"
       [templateCode]="snippetPointing">
       <h3 sui-header>Pointing Menu</h3>
       <p>A tab menu can point to its tab panes</p>
 
-      <ng-template #pointingMenu>
+      <ng-template docDemo #pointingMenu>
         <sui-tabs
           suiTabType="pointing">
           <sui-tab
@@ -80,12 +78,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-      [content]="textMenu"
       [templateCode]="snippetText">
       <h3 sui-header>Text Menu</h3>
       <p>A tab menu can be formatted for text content</p>
 
-      <ng-template #textMenu>
+      <ng-template docDemo #textMenu>
         <sui-tabs
           suiTabType="text">
           <sui-tab
@@ -110,12 +107,11 @@
     suiDividing>States</h2>
 
     <doc-code-sample
-      [content]="loading"
       [templateCode]="snippetLoading">
       <h3 sui-header>Loading</h3>
       <p>A tab can display a loading indicator.</p>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <sui-tabs>
           <sui-tab
             suiLoading
@@ -135,12 +131,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-      [content]="disabled"
       [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A tab can be disabled</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <sui-tabs>
           <sui-tab
             suiTitle="Circle">
@@ -165,12 +160,11 @@
     suiDividing>Menu Variations</h2>
 
     <doc-code-sample
-      [content]="positioned"
       [templateCode]="snippetPositioned">
       <h3 sui-header>Position</h3>
       <p>A tab can be positioned.</p>
 
-      <ng-template #positioned>
+      <ng-template docDemo #positioned>
         <sui-tabs
           suiTabType="secondary"
           suiTabMenuPosition="bottom">
@@ -191,12 +185,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-      [content]="coloured"
       [templateCode]="snippetColoured">
       <h3 sui-header>Coloured</h3>
       <p>A tab can be coloured.</p>
 
-      <ng-template #coloured>
+      <ng-template docDemo #coloured>
         <select name="tab-colour"
           [(ngModel)]="tabColour">
           @for (colour of colours; track colour) {

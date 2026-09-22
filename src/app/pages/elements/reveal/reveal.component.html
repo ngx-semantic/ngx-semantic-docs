@@ -7,12 +7,11 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="fade"
         [templateCode]="snippetFade">
       <h3 sui-header>Fade</h3>
       <p>An element can disappear to reveal content below</p>
 
-      <ng-template #fade>
+      <ng-template docDemo #fade>
         <div sui-reveal
              suiFade>
           <div suiRevealContent
@@ -32,9 +31,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fadeAlt"
         [templateCode]="snippetFadeAlt">
-      <ng-template #fadeAlt>
+      <ng-template docDemo #fadeAlt>
         <div sui-image
              sui-reveal
              suiFade
@@ -54,12 +52,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="move"
         [templateCode]="snippetMove">
       <h3 sui-header>Move</h3>
       <p>An element can move in a direction to reveal content</p>
 
-      <ng-template #move>
+      <ng-template docDemo #move>
         <div sui-reveal
              suiMove="left">
           <div suiRevealContent
@@ -79,9 +76,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="moveRight"
         [templateCode]="snippetMoveRight">
-      <ng-template #moveRight>
+      <ng-template docDemo #moveRight>
         <div sui-reveal
              suiMove="right">
           <div suiRevealContent
@@ -101,9 +97,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="moveUp"
         [templateCode]="snippetMoveUp">
-      <ng-template #moveUp>
+      <ng-template docDemo #moveUp>
         <div sui-reveal
              suiMove="up">
           <div suiRevealContent
@@ -123,9 +118,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="moveDown"
         [templateCode]="snippetMoveDown">
-      <ng-template #moveDown>
+      <ng-template docDemo #moveDown>
         <div sui-reveal
              suiMove="down">
           <div suiRevealContent
@@ -145,12 +139,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rotate"
         [templateCode]="snippetRotate">
       <h3 sui-header>Rotate</h3>
       <p>An element can rotate to reveal content below</p>
 
-      <ng-template #rotate>
+      <ng-template docDemo #rotate>
         <div sui-image
              suiCircular
              suiSize="small"
@@ -171,9 +164,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rotateLeft"
         [templateCode]="snippetRotateLeft">
-      <ng-template #rotateLeft>
+      <ng-template docDemo #rotateLeft>
         <div sui-image
              suiCircular
              suiSize="small"
@@ -199,7 +191,6 @@
         suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="visibleContent"
         [templateCode]="snippetVisibleContent">
       <h3 sui-header>Visible Content</h3>
       <p>A reveal may contain content that is visible before interaction</p>
@@ -209,7 +200,7 @@
         Visible and hidden content should be the same aspect ratio
       </div>
 
-      <ng-template #visibleContent>
+      <ng-template docDemo #visibleContent>
         <div sui-reveal
              suiFade>
           <div suiRevealContent
@@ -229,12 +220,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="hiddenContent"
         [templateCode]="snippetHiddenContent">
       <h3 sui-header>Hidden Content</h3>
       <p>A reveal may contain content that is hidden before user interaction</p>
 
-      <ng-template #hiddenContent>
+      <ng-template docDemo #hiddenContent>
         <div sui-reveal
              suiFade>
           <div suiRevealContent
@@ -259,7 +249,6 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="active"
         [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
       <p>An active reveal displays its hidden content</p>
@@ -269,7 +258,7 @@
         Setting the <code>suiActive</code>  boolean value allows you to show the hidden contents programmatically
       </div>
 
-      <ng-template #active>
+      <ng-template docDemo #active>
         <div sui-reveal
              [suiActive]="true"
              suiMove="left">
@@ -295,12 +284,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="instant"
         [templateCode]="snippetInstant">
       <h3 sui-header>Instant</h3>
       <p>An element can show its content without delay</p>
 
-      <ng-template #instant>
+      <ng-template docDemo #instant>
         <div sui-reveal
              suiInstant
              suiMove="left">
@@ -321,12 +309,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A disabled reveal will not animate when hovered</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-reveal
              disabled
              suiMove="left">

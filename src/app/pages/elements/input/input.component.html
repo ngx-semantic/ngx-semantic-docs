@@ -5,12 +5,11 @@
     <h2 sui-header suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="standard"
         [templateCode]="snippetStandard">
       <h3 sui-header>Input</h3>
       <p>A standard input</p>
 
-      <ng-template #standard>
+      <ng-template docDemo #standard>
         <div sui-input>
           <input type="text" placeholder="Search..."/>
         </div>
@@ -22,12 +21,11 @@
     <h2 sui-header suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="focus"
         [templateCode]="snippetFocus">
       <h3 sui-header>Focus</h3>
       <p>An input field can show a user is currently interacting with it</p>
 
-      <ng-template #focus>
+      <ng-template docDemo #focus>
         <div sui-input
              suiFocus>
           <input type="text" placeholder="Search..."/>
@@ -36,7 +34,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="loading"
         [templateCode]="snippetLoading">
       <h3 sui-header>Loading</h3>
       <p>An icon input field can show that it is currently loading data</p>
@@ -47,7 +44,7 @@
 
       <br/>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <div sui-input
              suiLoading
              suiIcon="left icon">
@@ -59,9 +56,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="loadingRight"
         [templateCode]="snippetLoadingRight">
-      <ng-template #loadingRight>
+      <ng-template docDemo #loadingRight>
         <div sui-input
              suiLoading
              suiIcon="icon">
@@ -73,12 +69,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>An input field can show that it is disabled</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-input
              disabled>
           <input type="text" placeholder="Search..."/>
@@ -87,9 +82,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabledIcon"
         [templateCode]="snippetDisabledIcon">
-      <ng-template #disabledIcon>
+      <ng-template docDemo #disabledIcon>
         <div sui-input
              disabled
              suiIcon="icon">
@@ -101,9 +95,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabledInput"
         [templateCode]="snippetDisabledInput">
-      <ng-template #disabledInput>
+      <ng-template docDemo #disabledInput>
         <div sui-input>
           <input disabled type="text" placeholder="Search..."/>
         </div>
@@ -111,12 +104,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="error"
         [templateCode]="snippetError">
       <h3 sui-header>Error</h3>
       <p>An input field can show the data contains errors</p>
 
-      <ng-template #error>
+      <ng-template docDemo #error>
         <div sui-input
              suiError>
           <input type="text" placeholder="Search..."/>
@@ -129,7 +121,6 @@
     <h2 sui-header suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="icon"
         [templateCode]="snippetIcon">
       <h3 sui-header>Icon</h3>
       <p>An input can be formatted with an icon</p>
@@ -140,7 +131,7 @@
 
       <br/>
 
-      <ng-template #icon>
+      <ng-template docDemo #icon>
         <div sui-input
              suiIcon="icon">
           <input type="text" placeholder="Search..."/>
@@ -151,9 +142,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconPosition"
         [templateCode]="snippetIconPosition">
-      <ng-template #iconPosition>
+      <ng-template docDemo #iconPosition>
         <div sui-input
              suiIcon="left icon">
           <input type="text" placeholder="Search users..."/>
@@ -164,9 +154,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconCircular"
         [templateCode]="snippetIconCircular">
-      <ng-template #iconCircular>
+      <ng-template docDemo #iconCircular>
         <div sui-input
              suiIcon="icon">
           <input type="text" placeholder="Search users..."/>
@@ -177,9 +166,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconCircularInverted"
         [templateCode]="snippetIconCircularInverted">
-      <ng-template #iconCircularInverted>
+      <ng-template docDemo #iconCircularInverted>
         <div sui-input
              suiIcon="icon">
           <input type="text" placeholder="Search..."/>
@@ -191,12 +179,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="labeled"
         [templateCode]="snippetLabeled">
       <h3 sui-header>Labeled</h3>
       <p>An input can be formatted with a label</p>
 
-      <ng-template #labeled>
+      <ng-template docDemo #labeled>
         <div sui-input
              suiLabeled="labeled">
           <div sui-label>
@@ -208,9 +195,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rightLabeled"
         [templateCode]="snippetRightLabeled">
-      <ng-template #rightLabeled>
+      <ng-template docDemo #rightLabeled>
         <div sui-input
              suiLabeled="right labeled">
           <input type="text" placeholder="Find domain"/>
@@ -230,9 +216,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicLabeled"
         [templateCode]="snippetBasicLabeled">
-      <ng-template #basicLabeled>
+      <ng-template docDemo #basicLabeled>
         <div sui-input
              suiLabeled="right labeled">
           <input type="text" placeholder="Enter weight.."/>
@@ -245,9 +230,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="combinedLabeled"
         [templateCode]="snippetCombinedLabeled">
-      <ng-template #combinedLabeled>
+      <ng-template docDemo #combinedLabeled>
         <div sui-input
              suiLabeled="right labeled">
           <label sui-label
@@ -264,9 +248,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="angledLabeled"
         [templateCode]="snippetAngledLabeled">
-      <ng-template #angledLabeled>
+      <ng-template docDemo #angledLabeled>
         <div sui-input
              suiIcon="left icon"
              suiLabeled="right labeled">
@@ -282,9 +265,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="leftCornerLabeled"
         [templateCode]="snippetLeftCornerLabeled">
-      <ng-template #leftCornerLabeled>
+      <ng-template docDemo #leftCornerLabeled>
         <div sui-input
              suiLabeled="left corner labeled">
           <input type="text" placeholder="Search..."/>
@@ -298,9 +280,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="cornerLabeled"
         [templateCode]="snippetCornerLabeled">
-      <ng-template #cornerLabeled>
+      <ng-template docDemo #cornerLabeled>
         <div sui-input
              suiLabeled="corner labeled">
           <input type="text" placeholder="Search..."/>
@@ -314,12 +295,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="action"
         [templateCode]="snippetAction">
       <h3 sui-header>Action</h3>
       <p>An input can be formatted to alert the user to an action they may perform</p>
 
-      <ng-template #action>
+      <ng-template docDemo #action>
         <div sui-input
              suiAction="action">
           <input type="text" placeholder="Search..."/>
@@ -329,9 +309,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="leftAction"
         [templateCode]="snippetLeftAction">
-      <ng-template #leftAction>
+      <ng-template docDemo #leftAction>
         <div sui-input
              suiAction="left action">
           <button sui-button
@@ -348,9 +327,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rightAction"
         [templateCode]="snippetRightAction">
-      <ng-template #rightAction>
+      <ng-template docDemo #rightAction>
         <div sui-input
              suiIcon="left icon"
              suiAction="right action">
@@ -374,9 +352,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="combinedAction"
         [templateCode]="snippetCombinedAction">
-      <ng-template #combinedAction>
+      <ng-template docDemo #combinedAction>
         <div sui-input
              suiAction="action">
           <input type="text" placeholder="Search..."/>
@@ -394,9 +371,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rightLabelAction"
         [templateCode]="snippetRightLabeledAction">
-      <ng-template #rightLabelAction>
+      <ng-template docDemo #rightLabelAction>
         <div sui-input
              suiAction="action">
           <input type="text" value="http://ww.short.url/c0opq"/>
@@ -413,9 +389,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconAction"
         [templateCode]="snippetIconAction">
-      <ng-template #iconAction>
+      <ng-template docDemo #iconAction>
         <div sui-input
              suiAction="action">
           <input type="text" placeholder="Search..."/>
@@ -429,12 +404,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="transparent"
         [templateCode]="snippetTransparent">
       <h3 sui-header>Transparent</h3>
       <p>A transparent input has no background</p>
 
-      <ng-template #transparent>
+      <ng-template docDemo #transparent>
         <div sui-input
              suiTransparent>
           <input type="text" placeholder="Search..."/>
@@ -443,9 +417,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconTransparent"
         [templateCode]="snippetIconTransparent">
-      <ng-template #iconTransparent>
+      <ng-template docDemo #iconTransparent>
         <div sui-input
              suiIcon="icon"
              suiTransparent>
@@ -456,9 +429,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="leftIconTransparent"
         [templateCode]="snippetLeftIconTransparent">
-      <ng-template #leftIconTransparent>
+      <ng-template docDemo #leftIconTransparent>
         <div sui-input
              suiIcon="icon"
              suiTransparent
@@ -470,12 +442,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>An input can be formatted to appear on dark backgrounds</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment
              suiInverted>
           <div sui-input
@@ -504,12 +475,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>An input can take the size of its container</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <div sui-input
              suiFluid
              suiIcon="icon">
@@ -529,7 +499,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="miniSize"
         [templateCode]="snippetMiniSize">
       <h3 sui-header>Size</h3>
       <p>An input can vary in sizer</p>
@@ -541,7 +510,7 @@
 
       <br/>
 
-      <ng-template #miniSize>
+      <ng-template docDemo #miniSize>
         <div sui-input
              suiIcon="icon"
              suiSize="mini">
@@ -552,9 +521,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="smallSize"
         [templateCode]="snippetSmallSize">
-      <ng-template #smallSize>
+      <ng-template docDemo #smallSize>
         <div sui-input
              suiIcon="icon"
              suiSize="small">
@@ -565,9 +533,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="largeSize"
         [templateCode]="snippetLargeSize">
-      <ng-template #largeSize>
+      <ng-template docDemo #largeSize>
         <div sui-input
              suiIcon="icon"
              suiSize="large">
@@ -578,9 +545,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bigSize"
         [templateCode]="snippetBigSize">
-      <ng-template #bigSize>
+      <ng-template docDemo #bigSize>
         <div sui-input
              suiIcon="icon"
              suiSize="big">
@@ -591,9 +557,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="hugeSize"
         [templateCode]="snippetHugeSize">
-      <ng-template #hugeSize>
+      <ng-template docDemo #hugeSize>
         <div sui-input
              suiIcon="icon"
              suiSize="huge">
@@ -604,9 +569,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="massiveSize"
         [templateCode]="snippetMassiveSize">
-      <ng-template #massiveSize>
+      <ng-template docDemo #massiveSize>
         <div sui-input
              suiIcon="icon"
              suiSize="massive">

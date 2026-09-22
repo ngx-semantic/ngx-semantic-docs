@@ -6,13 +6,12 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="simple"
         [templateCode]="snippetSimple"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Dimmer</h3>
       <p>A simple dimmer displays no content</p>
 
-      <ng-template #simple>
+      <ng-template docDemo #simple>
         <button sui-button
                 (click)="simpleDimmerVisible = !simpleDimmerVisible">
           Toggle Dimmer
@@ -27,13 +26,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="content"
         [templateCode]="snippetContent"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Content Dimmer</h3>
       <p>A dimmer can display content</p>
 
-      <ng-template #content>
+      <ng-template docDemo #content>
         <button sui-button
                 (click)="contentDimmerVisible = !contentDimmerVisible">
           Toggle Dimmer
@@ -58,13 +56,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="page"
         [templateCode]="snippetPage"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Page Dimmer</h3>
       <p>A dimmer can be formatted to be fixed to the page</p>
 
-      <ng-template #page>
+      <ng-template docDemo #page>
         <button sui-button
                 (click)="pageDimmerVisible = !pageDimmerVisible">
           Toggle Dimmer
@@ -91,12 +88,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="active"
         [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
       <p>An active dimmer will dim its parent container</p>
 
-      <ng-template #active>
+      <ng-template docDemo #active>
         <div sui-segment
              sui-dimmer
              dimmed="true">
@@ -106,12 +102,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A disabled dimmer cannot be activated</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-segment
              sui-dimmer
              disabled>
@@ -124,13 +119,12 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="blurring"
         [templateCode]="snippetBlurring"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Blurring</h3>
       <p>A dimmable element can blur its contents</p>
 
-      <ng-template #blurring>
+      <ng-template docDemo #blurring>
         <button sui-button
                 (click)="blurringDimmerVisible = !blurringDimmerVisible">
           Toggle Dimmer
@@ -146,10 +140,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="blurringInverted"
         [templateCode]="snippetBlurringInverted"
         [componentCode]="snippetSharedTs">
-      <ng-template #blurringInverted>
+      <ng-template docDemo #blurringInverted>
         <button sui-button
                 (click)="blurringDInvertedDimmerVisible = !blurringDInvertedDimmerVisible">
           Toggle Dimmer
@@ -166,13 +159,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="topAlignment"
         [templateCode]="snippetTopAligned"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Vertical Alignment</h3>
       <p>A dimmer can have its content top or bottom aligned.</p>
 
-      <ng-template #topAlignment>
+      <ng-template docDemo #topAlignment>
         <button sui-button
                 (click)="topAlignmentDimmerVisible = !topAlignmentDimmerVisible">
           Toggle Dimmer
@@ -199,10 +191,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bottomAlignment"
         [templateCode]="snippetBottomAligned"
         [componentCode]="snippetSharedTs">
-      <ng-template #bottomAlignment>
+      <ng-template docDemo #bottomAlignment>
         <button sui-button
                 (click)="bottomAlignmentDimmerVisible = !bottomAlignmentDimmerVisible">
           Toggle Dimmer
@@ -229,13 +220,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted"
         [componentCode]="snippetSharedTs">
       <h3 sui-header>Inverted</h3>
       <p>A dimmer can be formatted to have its colours inverted</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <button sui-button
                 (click)="invertedDimmerVisible = !invertedDimmerVisible">
           Toggle Dimmer

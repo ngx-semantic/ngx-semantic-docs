@@ -6,14 +6,13 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="divStandard"
         [templateCode]="snippetList">
       <h3 sui-header>List</h3>
       <p>
         A list groups related content
       </p>
 
-      <ng-template #divStandard>
+      <ng-template docDemo #divStandard>
         <div  sui-list>
           <div suiListItem>
             Apples
@@ -29,10 +28,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divStandard1"
         [templateCode]="snippetList1">
 
-      <ng-template #divStandard1>
+      <ng-template docDemo #divStandard1>
         <div  sui-list>
           <div suiListItem>
             <i sui-icon suiIconType="users"></i>
@@ -63,10 +61,9 @@
     </doc-code-sample>
     
     <doc-code-sample
-        [content]="divStandard2"
         [templateCode]="snippetList2">
 
-      <ng-template #divStandard2>
+      <ng-template docDemo #divStandard2>
         <div sui-list suiDivided="true" SuiRelaxation="relaxed">
           <div suiListItem>
             <i sui-icon suiIconType="github" suiSize="large"></i>
@@ -94,10 +91,9 @@
     </doc-code-sample>
     
     <doc-code-sample
-        [content]="divStandard3"
         [templateCode]="snippetList3">
 
-      <ng-template #divStandard3>
+      <ng-template docDemo #divStandard3>
         <div sui-list>
           <div suiListItem>
             <i sui-icon suiIconType="folder"></i>
@@ -173,14 +169,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bulletedList"
         [templateCode]="snippetBulleted">
       <h3 sui-header>Bulleted</h3>
       <p>
         A list can mark items with a bullet
       </p>
 
-      <ng-template #bulletedList>
+      <ng-template docDemo #bulletedList>
         <div sui-list suiBulleted="true">
           <div suiListItem>Gaining Access</div>
           <div suiListItem>Inviting Friends</div>
@@ -198,7 +193,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bulletedList1"
         [templateCode]="snippetBulleted1">
 
       <div sui-message
@@ -206,7 +200,7 @@
         For convenience, a simple bulleted list can also use <code><b>ul</b></code> tag.
       </div>
 
-      <ng-template #bulletedList1>
+      <ng-template docDemo #bulletedList1>
         <ul sui-list>
           <li>Gaining Access</li>
           <li>Inviting Friends</li>
@@ -223,10 +217,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bulletedList2"
         [templateCode]="snippetBulleted2">
 
-      <ng-template #bulletedList2>
+      <ng-template docDemo #bulletedList2>
         <div sui-list suiBulleted="true" suiHorizontal="true">
           <a suiListItem>
             About Us
@@ -242,14 +235,13 @@
     </doc-code-sample>
     
     <doc-code-sample
-        [content]="orderedList"
         [templateCode]="snippetOrdered">
       <h3 sui-header>Ordered</h3>
       <p>
         A list can be ordered numerically
       </p>
 
-      <ng-template #orderedList>
+      <ng-template docDemo #orderedList>
         <div sui-list suiOrdered="true">
           <a suiListItem>Getting Started</a>
           <a suiListItem>Introduction</a>
@@ -267,7 +259,6 @@
     </doc-code-sample>
     
     <doc-code-sample
-        [content]="orderedList1"
         [templateCode]="snippetOrdered1">
 
       <div sui-message
@@ -275,7 +266,7 @@
         An ordered list can also use the <code><b>ol</b></code> tag.
      </div>
 
-      <ng-template #orderedList1>
+      <ng-template docDemo #orderedList1>
         <ol sui-list>
           <li>Signing Up</li>
           <li>User Benefits</li>
@@ -292,7 +283,6 @@
     </doc-code-sample>
     
     <doc-code-sample
-        [content]="orderedList2"
         [templateCode]="snippetOrdered2">
 
       <div sui-message
@@ -300,7 +290,7 @@
         You can also manually specify a value for an ordered list using <code><b>data-value</b></code> on a <code><b>div</b></code>, or <code><b>value</b></code> on a <code><b>li</b></code>
      </div>
 
-      <ng-template #orderedList2>
+      <ng-template docDemo #orderedList2>
         <ol sui-list>
           <li value="*">Signing Up</li>
           <li value="*">User Benefits</li>
@@ -317,14 +307,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="linkList"
         [templateCode]="snippetLink">
       <h3 sui-header>Link</h3>
       <p>
         A list can be specially formatted for navigation links
       </p>
 
-      <ng-template #linkList>
+      <ng-template docDemo #linkList>
         <div sui-list suiLink="true">
           <div suiListItem class="active">Home</div>
           <a suiListItem>About</a>
@@ -337,14 +326,13 @@
     <h2 sui-header suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="itemList"
         [templateCode]="snippetItem">
       <h3 sui-header>Item</h3>
       <p>
         A list item can contain a set of items
       </p>
 
-      <ng-template #itemList>
+      <ng-template docDemo #itemList>
         <div sui-list>
           <div suiListItem>
             1
@@ -360,14 +348,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="iconList"
         [templateCode]="snippetIcon">
       <h3 sui-header>Icon</h3>
       <p>
         A list item can contain an icon
       </p>
 
-      <ng-template #iconList>
+      <ng-template docDemo #iconList>
         <div sui-list>
           <a suiListItem>
             <i sui-icon suiIconType="help"></i>
@@ -392,14 +379,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="imageList"
         [templateCode]="snippetImage">
       <h3 sui-header>Image</h3>
       <p>
         A list item can contain an image
       </p>
 
-      <ng-template #imageList>
+      <ng-template docDemo #imageList>
         <div sui-list>
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/rachel.png">
@@ -434,14 +420,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="linkList1"
         [templateCode]="snippetLink1">
       <h3 sui-header>Link</h3>
       <p>
         A list can contain links
       </p>
 
-      <ng-template #linkList1>
+      <ng-template docDemo #linkList1>
         <div sui-list>
           <a suiListItem>What is a FAQ?</a>
           <a suiListItem>Who is our user?</a>
@@ -451,9 +436,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="linkList2"
         [templateCode]="snippetLink2">
-      <ng-template #linkList2>
+      <ng-template docDemo #linkList2>
         <div sui-list>
           <div suiListItem>
             <a sui-header suiSize="small">Header</a>
@@ -472,14 +456,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="headerList"
         [templateCode]="snippetHeader">
       <h3 sui-header>Header</h3>
       <p>
         A list item can contain a header
       </p>
 
-      <ng-template #headerList>
+      <ng-template docDemo #headerList>
         <div sui-list>
           <div suiListItem>
             <div sui-header suiSize="small">New York City</div>
@@ -502,14 +485,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="descriptionList"
         [templateCode]="snippetDescription">
       <h3 sui-header>Description</h3>
       <p>
         A list item can contain a description
       </p>
 
-      <ng-template #descriptionList>
+      <ng-template docDemo #descriptionList>
         <div sui-list>
           <div suiListItem>
             <i sui-icon suiIconType="map marker"></i>
@@ -546,14 +528,13 @@
     <h2 sui-header suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="horizontalList"
         [templateCode]="snippetHorizontal">
       <h3 sui-header>Horizontal</h3>
       <p>
         A list can be formatted to have items appear horizontally
       </p>
 
-      <ng-template #horizontalList>
+      <ng-template docDemo #horizontalList>
         <div sui-list suiHorizontal="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
@@ -581,10 +562,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="horizontalList1"
         [templateCode]="snippetHorizontal1">
 
-      <ng-template #horizontalList1>
+      <ng-template docDemo #horizontalList1>
         <div sui-list suiHorizontal="true" suiOrdered="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
@@ -612,10 +592,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="horizontalList2"
         [templateCode]="snippetHorizontal2">
 
-      <ng-template #horizontalList2>
+      <ng-template docDemo #horizontalList2>
         <div sui-list suiHorizontal="true" suiBulleted="true" suiLink="true">
           <a suiListItem>
             Terms and Conditions
@@ -631,14 +610,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="invertedList"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>
         A list can be inverted to appear on a dark background
       </p>
 
-      <ng-template #invertedList>
+      <ng-template docDemo #invertedList>
         <div sui-segment suiInverted="true">
           <div sui-list suiRelaxation="relaxed" suiDivided="true" suiInverted="true">
             <div suiListItem>
@@ -665,14 +643,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="selectionList"
         [templateCode]="snippetSelection">
       <h3 sui-header>Selection</h3>
       <p>
         A selection list formats list items as possible choices
       </p>
 
-      <ng-template #selectionList>
+      <ng-template docDemo #selectionList>
         <div sui-list suiSelection="true" suiAlignment="middle aligned">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -697,7 +674,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="animatedList"
         [templateCode]="snippetAnimated">
       <h3 sui-header>Animated</h3>
       <p>
@@ -709,7 +685,7 @@
          Be sure content can fit on one line when using the animated variation, otherwise text content will reflow when hovered.
       </div>
 
-      <ng-template #animatedList>
+      <ng-template docDemo #animatedList>
         <div sui-list suiSelection="true" suiAlignment="middle aligned" suiAnimated="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -734,14 +710,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="relaxedList"
         [templateCode]="snippetRelaxed">
       <h3 sui-header>Relaxed</h3>
       <p>
         A list can relax its padding to provide more negative space
       </p>
 
-      <ng-template #relaxedList>
+      <ng-template docDemo #relaxedList>
         <div sui-list suiRelaxed="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -769,10 +744,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="relaxedList1"
         [templateCode]="snippetRelaxed1">
 
-      <ng-template #relaxedList1>
+      <ng-template docDemo #relaxedList1>
         <div sui-list suiRelaxed="true" suiHorizontal="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -797,10 +771,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="relaxedList2"
         [templateCode]="snippetRelaxed2">
 
-      <ng-template #relaxedList2>
+      <ng-template docDemo #relaxedList2>
         <div sui-list suiRelaxed="true" suiRelaxation="very relaxed">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -828,10 +801,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="relaxedList3"
         [templateCode]="snippetRelaxed3">
 
-      <ng-template #relaxedList3>
+      <ng-template docDemo #relaxedList3>
         <div sui-list suiRelaxed="true" suiHorizontal="true" suiRelaxation="very relaxed">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -856,14 +828,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="dividedList"
         [templateCode]="snippetDivided">
       <h3 sui-header>Divided</h3>
       <p>
         A list can show divisions between content
       </p>
 
-      <ng-template #dividedList>
+      <ng-template docDemo #dividedList>
         <div sui-list suiDivided="true" suiAlignment="middle aligned">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -888,14 +859,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="celledList"
         [templateCode]="snippetCelled">
       <h3 sui-header>Celled</h3>
       <p>
         A list can divide its items into cells
       </p>
 
-      <ng-template #celledList>
+      <ng-template docDemo #celledList>
         <div sui-list suiCelled="true">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
@@ -923,9 +893,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="celledList1"
         [templateCode]="snippetCelled1">
-      <ng-template #celledList1>
+      <ng-template docDemo #celledList1>
         <div sui-list suiOrdered="true" suiCelled="true">
           <div suiListItem>Cats</div>
           <div suiListItem>Horses</div>
@@ -941,9 +910,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="celledList2"
         [templateCode]="snippetCelled2">
-      <ng-template #celledList2>
+      <ng-template docDemo #celledList2>
         <div sui-list suiCelled="true" suiHorizontal="true">
           <div suiListItem>About Us</div>
           <div suiListItem>Contact</div>
@@ -953,14 +921,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedList"
         [templateCode]="snippetSizeMini">
       <h3 sui-header>Size</h3>
       <p>
         A list can vary in size
       </p>
 
-      <ng-template #sizedList>
+      <ng-template docDemo #sizedList>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="mini">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -985,10 +952,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListTiny"
         [templateCode]="snippetSizeTiny">
 
-      <ng-template #sizedListTiny>
+      <ng-template docDemo #sizedListTiny>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="tiny">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1013,10 +979,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListSmall"
         [templateCode]="snippetSizeSmall">
 
-      <ng-template #sizedListSmall>
+      <ng-template docDemo #sizedListSmall>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="small">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1041,10 +1006,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListLarge"
         [templateCode]="snippetSizeLarge">
 
-      <ng-template #sizedListLarge>
+      <ng-template docDemo #sizedListLarge>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="large">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1069,10 +1033,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListBig"
         [templateCode]="snippetSizeBig">
 
-      <ng-template #sizedListBig>
+      <ng-template docDemo #sizedListBig>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="big">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1097,10 +1060,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListHuge"
         [templateCode]="snippetSizeHuge">
 
-      <ng-template #sizedListHuge>
+      <ng-template docDemo #sizedListHuge>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="huge">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1125,10 +1087,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizedListMassive"
         [templateCode]="snippetSizeMassive">
 
-      <ng-template #sizedListMassive>
+      <ng-template docDemo #sizedListMassive>
         <div sui-list suiHorizontal="true" suiDivided="true" suiSize="massive">
           <div suiListItem>
             <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
@@ -1155,14 +1116,13 @@
     <h2 sui-header suiDividing>Content Variations</h2>
 
     <doc-code-sample
-        [content]="verticalList"
         [templateCode]="snippetVertical">
       <h3 sui-header>Vertically Aligned</h3>
       <p>
         An element inside a list can be vertically aligned
       </p>
 
-      <ng-template #verticalList>
+      <ng-template docDemo #verticalList>
         <div sui-list suiHorizontal="true">
           <div suiListItem>
             <img sui-image suiAvatar suiAlignment="top aligned" src="https://semantic-ui.com/images/wireframe/square-image.png">
@@ -1187,14 +1147,13 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floatedList"
         [templateCode]="snippetFloated">
       <h3 sui-header>Floated</h3>
       <p>
         A list, or an element inside a list can be floated left or right
       </p>
 
-      <ng-template #floatedList>
+      <ng-template docDemo #floatedList>
         <div sui-list suiAlignment="middle aligned" suiDivided="true">
           <div suiListItem>
             <div suiMessageContent>
@@ -1237,10 +1196,9 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floatedList1"
         [templateCode]="snippetFloated1">
 
-      <ng-template #floatedList1>
+      <ng-template docDemo #floatedList1>
         <div sui-list suiHorizontal="true" suiFloated="right floated">
           <div suiListItem href="#">© GitHub, Inc.</div>
           <a suiListItem href="#">Terms</a>

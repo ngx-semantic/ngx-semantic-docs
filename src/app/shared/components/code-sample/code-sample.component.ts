@@ -1,5 +1,6 @@
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, ContentChild, Input } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
+import { DocDemoDirective } from '../../directives/doc-demo.directive';
 
 @Component({
     selector: 'doc-code-sample',
@@ -8,7 +9,7 @@ import { Clipboard } from '@angular/cdk/clipboard';
     standalone: false
 })
 export class CodeSampleComponent {
-  @Input() content: TemplateRef<any>;
+  @ContentChild(DocDemoDirective) demo?: DocDemoDirective;
   @Input() templateCode: string;
   @Input() componentCode?: string;
 
@@ -17,11 +18,15 @@ export class CodeSampleComponent {
   constructor(private clipboard: Clipboard) {
   }
 
-  copyCode(): void {
-    const html = this.templateCode ?? '';
-    const text = this.componentCode
-      ? `${html.trim()}\n\n${this.componentCode.trim()}`
-      : html;
+  copyCode(which: 'html' | 'ts' | 'all' = 'all'): void {
+    const html = this.templateCode?.trim() ?? '';
+    const ts = this.componentCode?.trim() ?? '';
+    let text = html;
+    if (which === 'ts') {
+      text = ts;
+    } else if (which === 'all' && ts) {
+      text = `${html}\n\n${ts}`;
+    }
     this.clipboard.copy(text);
   }
 
