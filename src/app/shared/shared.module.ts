@@ -4,6 +4,7 @@
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 import { SuiIconModule } from 'ngx-semantic/elements/icon';
 import { SuiPopupModule } from 'ngx-semantic/modules/popup';
@@ -25,6 +26,7 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 @NgModule({
   imports: [
     CommonModule,
+    ClipboardModule,
     SuiSegmentModule,
     SuiLabelModule,
     SuiIconModule,
