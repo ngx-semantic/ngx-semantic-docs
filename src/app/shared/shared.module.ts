@@ -19,6 +19,7 @@ import { SuiContainerModule } from 'ngx-semantic/elements/container';
 import { DocPageComponent } from './components/doc-page.component';
 import { CodeSampleComponent } from './components/code-sample/code-sample.component';
 import { DocPageContentDirective } from './directives/doc-page-content.directive';
+import { DocDemoDirective } from './directives/doc-demo.directive';
 import { DocWireframeComponent } from './components/doc-wireframe.component';
 import { Highlight, provideHighlightOptions } from 'ngx-highlightjs';
 import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
@@ -43,12 +44,14 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
     CodeSampleComponent,
     DocPageComponent,
     DocPageContentDirective,
+    DocDemoDirective,
     DocWireframeComponent
   ],
   exports: [
     CodeSampleComponent,
     DocPageComponent,
     DocPageContentDirective,
+    DocDemoDirective,
     DocWireframeComponent
   ],
   providers: [

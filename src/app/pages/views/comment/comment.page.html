@@ -6,7 +6,6 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="comments"
         [templateCode]="snippetComments">
       <h3 sui-header>Comments</h3>
       <p>A basic list of comments.</p>
@@ -21,7 +20,7 @@
         </div>
       </div>
 
-      <ng-template #comments>
+      <ng-template docDemo #comments>
           <div sui-comments>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -91,13 +90,12 @@
         suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="avatar"
         [templateCode]="snippetAvatar">
       <h3 sui-header>Comment</h3>
       <h4 sui-header>Avatar</h4>
       <p>A comment can contain an image or avatar.</p>
 
-      <ng-template #avatar>
+      <ng-template docDemo #avatar>
           <div sui-comments>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -119,12 +117,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="metadata"
         [templateCode]="snippetMetadata">
       <h4 sui-header>Metadata</h4>
       <p>A comment can contain metadata about the comment; you may add any number of metadata items.</p>
 
-      <ng-template #metadata>
+      <ng-template docDemo #metadata>
           <div sui-comments>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -149,12 +146,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="actions"
         [templateCode]="snippetActions">
       <h4 sui-header>Actions</h4>
       <p>A comment can contain actions the user may perform related to this comment.</p>
 
-      <ng-template #actions>
+      <ng-template docDemo #actions>
           <div sui-comments>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -178,7 +174,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="replyForm"
         [templateCode]="snippetReplyForm">
       <h4 sui-header>Reply form</h4>
       <p>
@@ -187,7 +182,7 @@
         If the form appears after all comments, it is styled as a normal reply form.
       </p>
 
-      <ng-template #replyForm>
+      <ng-template docDemo #replyForm>
           <div sui-comments>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -257,12 +252,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="collapsed"
         [templateCode]="snippetCollapsed">
       <h3 sui-header>Collapsed</h3>
       <p>Comments can be collapsed, or hidden from view.</p>
 
-      <ng-template #collapsed>
+      <ng-template docDemo #collapsed>
           <div sui-comments suiCollapsed>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -319,12 +313,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="threaded"
         [templateCode]="snippetThreaded">
       <h3 sui-header>Threaded</h3>
       <p>A comment list can be threaded to show the relationship between conversations.</p>
 
-      <ng-template #threaded>
+      <ng-template docDemo #threaded>
           <div sui-comments suiThreaded>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -395,12 +388,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="minimal"
         [templateCode]="snippetMinimal">
       <h3 sui-header>Minimal</h3>
       <p>Comments can hide extra information unless a user shows intent to interact with a comment.</p>
 
-      <ng-template #minimal>
+      <ng-template docDemo #minimal>
           <div sui-comments suiMinimal>
             <div sui-comment>
               <a suiCommentAvatar>
@@ -467,12 +459,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeSmall"
         [templateCode]="snippetSizeSmall">
       <h3 sui-header>Size</h3>
       <p>Comments can have different sizes.</p>
 
-      <ng-template #sizeSmall>
+      <ng-template docDemo #sizeSmall>
           <div sui-comments suiSize="small">
             <div sui-comment>
               <a suiCommentAvatar>
@@ -539,9 +530,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeLarge"
         [templateCode]="snippetSizeLarge">
-      <ng-template #sizeLarge>
+      <ng-template docDemo #sizeLarge>
           <div sui-comments suiSize="large">
             <div sui-comment>
               <a suiCommentAvatar>

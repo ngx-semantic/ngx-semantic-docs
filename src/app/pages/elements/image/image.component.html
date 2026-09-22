@@ -6,7 +6,6 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Image</h3>
       <p>An image</p>
@@ -25,7 +24,7 @@
 
       <br/>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <img sui-image
              suiSize="small"
              src="https://semantic-ui.com/images/wireframe/image.png">
@@ -33,9 +32,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicInnerImg"
         [templateCode]="snippetBasicInnerImg">
-      <ng-template #basicInnerImg>
+      <ng-template docDemo #basicInnerImg>
         <div sui-image
              suiSize="small">
           <img src="https://semantic-ui.com/images/wireframe/image.png">
@@ -44,9 +42,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicInnerSvg"
         [templateCode]="snippetBasicInnerSvg">
-      <ng-template #basicInnerSvg>
+      <ng-template docDemo #basicInnerSvg>
         <div sui-image
              suiSize="small">
           <svg width="150" height="150">
@@ -58,12 +55,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="imageLink"
         [templateCode]="snippetImageLink">
       <h3 sui-header>Image Link</h3>
       <p>An image can be formatted to link to other content</p>
 
-      <ng-template #imageLink>
+      <ng-template docDemo #imageLink>
         <a sui-image
            suiSize="medium"
            href="https://google.com">
@@ -78,12 +74,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="hidden"
         [templateCode]="snippetHidden">
       <h3 sui-header>Hidden</h3>
       <p>An image can be hidden</p>
 
-      <ng-template #hidden>
+      <ng-template docDemo #hidden>
         <img sui-image
              suiHidden
              src="https://semantic-ui.com/images/wireframe/image.png">
@@ -91,12 +86,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>An image can show that it is disabled and cannot be selected</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <img sui-image
              disabled
              suiSize="medium"
@@ -110,12 +104,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="avatar"
         [templateCode]="snippetAvatar">
       <h3 sui-header>Avatar</h3>
       <p>An image may be formatted to appear inline with text as an avatar</p>
 
-      <ng-template #avatar>
+      <ng-template docDemo #avatar>
         <img sui-image
              suiAvatar
              src="https://semantic-ui.com/images/wireframe/square-image.png">
@@ -124,12 +117,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bordered"
         [templateCode]="snippetBordered">
       <h3 sui-header>Bordered</h3>
       <p>An image may include a border to emphasize the edges of white or transparent content</p>
 
-      <ng-template #bordered>
+      <ng-template docDemo #bordered>
         <img sui-image
              suiBordered
              suiSize="medium"
@@ -138,12 +130,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>An image can take up the width of its container</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <img sui-image
              suiFluid
              src="https://semantic-ui.com/images/wireframe/image.png">
@@ -151,12 +142,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rounded"
         [templateCode]="snippetRounded">
       <h3 sui-header>Rounded</h3>
       <p>An image may appear rounded</p>
 
-      <ng-template #rounded>
+      <ng-template docDemo #rounded>
         <img sui-image
              suiRounded
              suiSize="medium"
@@ -165,12 +155,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="circular"
         [templateCode]="snippetCircular">
       <h3 sui-header>Circular</h3>
       <p>An image may appear circular</p>
 
-      <ng-template #circular>
+      <ng-template docDemo #circular>
         <img sui-image
              suiCircular
              suiSize="medium"
@@ -179,12 +168,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="verticalAligned"
         [templateCode]="snippetAlignment">
       <h3 sui-header>Vertically Aligned</h3>
       <p>An image can specify its vertical alignment</p>
 
-      <ng-template #verticalAligned>
+      <ng-template docDemo #verticalAligned>
         <img sui-image
              suiSize="tiny"
              suiAlignment="top aligned"
@@ -206,12 +194,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="centered"
         [templateCode]="snippetCentered">
       <h3 sui-header>Centered</h3>
       <p>An image can appear centered in a content block</p>
 
-      <ng-template #centered>
+      <ng-template docDemo #centered>
         <div sui-segment>
           <img sui-image
                suiCentered
@@ -236,12 +223,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="spaced"
         [templateCode]="snippetSpaced">
       <h3 sui-header>Spaced</h3>
       <p>An image can specify that it needs an additional spacing to separate it from nearby content</p>
 
-      <ng-template #spaced>
+      <ng-template docDemo #spaced>
         <div sui-segment>
           <p>
             Te eum doming eirmod, nominati pertinacia <img sui-image suiSize="mini" suiSpaced="spaced"
@@ -254,9 +240,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="spacedAlt"
         [templateCode]="snippetSpacedAlt">
-      <ng-template #spacedAlt>
+      <ng-template docDemo #spacedAlt>
         <p><img sui-image suiSize="mini" suiSpaced="right spaced"
                 src="https://semantic-ui.com/images/wireframe/image.png">Audiam quaerendum eu sea, pro omittam
           definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te
@@ -271,12 +256,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floated"
         [templateCode]="snippetFloated">
       <h3 sui-header>Floated</h3>
       <p>An image can sit to the left or right of other content</p>
 
-      <ng-template #floated>
+      <ng-template docDemo #floated>
         <div sui-segment>
           <img sui-image suiSize="small" suiFloated="left floated"
                src="https://semantic-ui.com/images/wireframe/text-image.png">
@@ -297,7 +281,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="size"
         [templateCode]="snippetSize">
       <h3 sui-header>Size</h3>
       <p>An image can sit to the left or right of other content</p>
@@ -307,7 +290,7 @@
         with values used in your project in <code>image.variables</code>.
       </div>
 
-      <ng-template #size>
+      <ng-template docDemo #size>
         <table sui-table
                suiDefinition>
           <thead>
@@ -366,12 +349,11 @@
         suiDividing>Groups</h2>
 
     <doc-code-sample
-        [content]="groupSize"
         [templateCode]="snippetGroupSize">
       <h3 sui-header>Size</h3>
       <p>A group of images can be formatted to have the same size</p>
 
-      <ng-template #groupSize>
+      <ng-template docDemo #groupSize>
         <div sui-images
              suiSize="tiny">
           <img sui-image src="https://semantic-ui.com/images/wireframe/image.png">
@@ -383,9 +365,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="groupSizeAlt"
         [templateCode]="snippetGroupSizeAlt">
-      <ng-template #groupSizeAlt>
+      <ng-template docDemo #groupSizeAlt>
         <div sui-images
              suiSize="small">
           <img sui-image src="https://semantic-ui.com/images/wireframe/image.png">

@@ -6,12 +6,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetIconDisabled">
       <h3 sui-header>Disabled</h3>
       <p>An icon can show that it is disabled</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <i sui-icon
            disabled
            suiIconType="users"></i>
@@ -19,12 +18,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="loading"
         [templateCode]="snippetIconLoading">
       <h3 sui-header>Loading</h3>
       <p>An icon can be used as a simple loader</p>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <i sui-icon
            suiLoading
            suiIconType="spinner"></i>
@@ -41,12 +39,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="fitted"
         [templateCode]="snippetIconFitted">
       <h3 sui-header>Fitted</h3>
       <p>An icon can be fitted, without any space to the left or right of it. </p>
 
-      <ng-template #fitted>
+      <ng-template docDemo #fitted>
         <div>
           Tight Spacing
           <i sui-icon
@@ -58,12 +55,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="size"
         [templateCode]="snippetIconSizes">
       <h3 sui-header>Size</h3>
       <p>An icon can vary in size</p>
 
-      <ng-template #size>
+      <ng-template docDemo #size>
         <i sui-icon
            suiSize="mini"
            suiIconType="home"></i>
@@ -91,12 +87,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="link"
         [templateCode]="snippetIconLink">
       <h3 sui-header>Link</h3>
       <p>An icon can be formatted as a link</p>
 
-      <ng-template #link>
+      <ng-template docDemo #link>
         <i sui-icon
            suiLink
            suiIconType="close"></i>
@@ -107,12 +102,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="flipped"
         [templateCode]="snippetIconFlipped">
       <h3 sui-header>Flipped</h3>
       <p>An icon can be flipped</p>
 
-      <ng-template #flipped>
+      <ng-template docDemo #flipped>
         <i sui-icon
            suiFlip="horizontal"
            suiIconType="cloud"></i>
@@ -123,12 +117,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rotated"
         [templateCode]="snippetIconRotated">
       <h3 sui-header>Rotated</h3>
       <p>An icon can be rotated</p>
 
-      <ng-template #rotated>
+      <ng-template docDemo #rotated>
         <i sui-icon
            suiRotation="clockwise"
            suiIconType="cloud"></i>
@@ -139,12 +132,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="circular"
         [templateCode]="snippetIconCircular">
       <h3 sui-header>Circular</h3>
       <p>An icon can be formatted to appear circular</p>
 
-      <ng-template #circular>
+      <ng-template docDemo #circular>
         <i sui-icon
            suiCircular
            suiIconType="users"></i>
@@ -165,12 +157,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="bordered"
         [templateCode]="snippetIconBordered">
       <h3 sui-header>Bordered</h3>
       <p>An icon can be formatted to appear bordered</p>
 
-      <ng-template #bordered>
+      <ng-template docDemo #bordered>
         <i sui-icon
            suiBordered
            suiIconType="users"></i>
@@ -191,12 +182,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="coloured"
         [templateCode]="snippetIconColoured">
       <h3 sui-header>Coloured</h3>
       <p>An icon can be formatted with different colours</p>
 
-      <ng-template #coloured>
+      <ng-template docDemo #coloured>
         <i sui-icon
            suiColour="red"
            suiIconType="users"></i>
@@ -240,12 +230,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="invertedColoured"
         [templateCode]="snippetIconInvertedColoured">
       <h3 sui-header>Inverted</h3>
       <p>An icon can have its colours inverted for contrast</p>
 
-      <ng-template #invertedColoured>
+      <ng-template docDemo #invertedColoured>
         <div sui-segment
              suiInverted>
           <i sui-icon
@@ -308,12 +297,11 @@
         suiDividing>Groups</h2>
 
     <doc-code-sample
-        [content]="firstIconGroup"
         [templateCode]="snippetIconsFirst">
       <h3 sui-header>Icons</h3>
       <p>Several icons can be used together as a group</p>
 
-      <ng-template #firstIconGroup>
+      <ng-template docDemo #firstIconGroup>
         <i sui-icons
            suiSize="huge">
           <i sui-icon
@@ -326,9 +314,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="secondIconGroup"
         [templateCode]="snippetIconsSecond">
-      <ng-template #secondIconGroup>
+      <ng-template docDemo #secondIconGroup>
         <i sui-icons
            suiSize="huge">
           <i sui-icon
@@ -342,12 +329,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="cornerIcon"
         [templateCode]="snippetIconsCorner">
       <h3 sui-header>Corner Icon</h3>
       <p>A group of icons can display a smaller corner icon</p>
 
-      <ng-template #cornerIcon>
+      <ng-template docDemo #cornerIcon>
         <i sui-icons
            suiSize="huge">
           <i sui-icon
@@ -360,9 +346,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="cornerIconOptions"
         [templateCode]="snippetIconsCornerOptions">
-      <ng-template #cornerIconOptions>
+      <ng-template docDemo #cornerIconOptions>
         <i sui-icons
            suiSize="huge">
           <i sui-icon
@@ -399,9 +384,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inlineCornerIcon"
         [templateCode]="snippetIconsInline">
-      <ng-template #inlineCornerIcon>
+      <ng-template docDemo #inlineCornerIcon>
         <div sui-header>
           <i sui-icons>
             <i sui-icon

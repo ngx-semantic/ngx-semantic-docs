@@ -6,12 +6,11 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="standard"
         [templateCode]="snippetStandard">
       <h3 sui-header>Accordion</h3>
       <p>A standard accordion</p>
 
-      <ng-template #standard>
+      <ng-template docDemo #standard>
         <sui-accordion>
           <sui-accordion-panel
               isOpen
@@ -37,12 +36,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="styled"
         [templateCode]="snippetStyled">
       <h3 sui-header>Styled</h3>
       <p>A styled accordion adds basic formatting</p>
 
-      <ng-template #styled>
+      <ng-template docDemo #styled>
         <sui-accordion suiStyled>
           <sui-accordion-panel
               suiTitle="What is a dog?">
@@ -70,12 +68,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="styledFluid"
         [templateCode]="snippetStyledFluid">
       <h3 sui-header>Fluid</h3>
       <p>An accordion can take up the width of its container</p>
 
-      <ng-template #styledFluid>
+      <ng-template docDemo #styledFluid>
         <sui-accordion suiStyled suiFluid>
           <sui-accordion-panel
               suiTitle="What is a dog?">
@@ -100,12 +97,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>An accordion can be formatted to appear on dark backgrounds</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <div sui-segment suiInverted>
           <sui-accordion suiInverted=>
             <sui-accordion-panel

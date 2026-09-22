@@ -6,24 +6,22 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Rating <span sui-label
                                   suiColour="teal">Flexbox</span></h3>
       <p>A basic rating</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <sui-rating suiMaxValue="1"></sui-rating>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="star"
         [templateCode]="snippetStar">
       <h3 sui-header>Star</h3>
       <p>A rating can use a set of star icons</p>
 
-      <ng-template #star>
+      <ng-template docDemo #star>
         <sui-rating
             suiType="star"
             suiValue="3"
@@ -32,12 +30,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="heart"
         [templateCode]="snippetHeart">
       <h3 sui-header>Heart</h3>
       <p>A rating can use a set of heart icons</p>
 
-      <ng-template #heart>
+      <ng-template docDemo #heart>
         <sui-rating
             suiType="heart"
             suiValue="1"
@@ -49,12 +46,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="sizes"
         [templateCode]="snippetSizes">
       <h3 sui-header>Size</h3>
       <p>A rating can vary in size</p>
 
-      <ng-template #sizes>
+      <ng-template docDemo #sizes>
         <sui-rating
             suiSize="mini"
             suiType="star"

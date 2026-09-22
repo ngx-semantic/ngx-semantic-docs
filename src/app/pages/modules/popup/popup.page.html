@@ -6,7 +6,6 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="standard"
         [templateCode]="snippetStandard">
       <h3 sui-header>Popup</h3>
       <p>An element can specify popup content to appear</p>
@@ -16,7 +15,7 @@
         latest version compatible with your Angular version
       </div>
 
-      <ng-template #standard>
+      <ng-template docDemo #standard>
         <button sui-button suiIcon
                 sui-popup suiPopupContent="Add users to your feed">
           <i sui-icon suiIconType="add"></i>
@@ -25,12 +24,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="titled"
         [templateCode]="snippetTitled">
       <h3 sui-header>Titled</h3>
       <p>An element can specify popup content with a title</p>
 
-      <ng-template #titled>
+      <ng-template docDemo #titled>
         <img sui-image suiAvatar
              sui-popup suiPopupTitle="Elliot Fu" suiPopupContent="Elliot has been a member since July 2012"
              src="/assets/images/elliot.jpg"/>
@@ -44,12 +42,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="html"
         [templateCode]="snippetHtml">
       <h3 sui-header>HTML</h3>
       <p>An element can specify template HTML for a popup</p>
 
-      <ng-template #html>
+      <ng-template docDemo #html>
         <div sui-card
              sui-popup suiPopupTitle="User Rating" [suiPopupContent]="popupContent">
           <div suiCardImage>
@@ -85,12 +82,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Basic</h3>
       <p>A popup can provide more basic formatting</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <button sui-button suiIcon
                 sui-popup suiPopupBasic suiPopupContent="The default theme's basic popup removes the pointing arrow.">
           <i sui-icon suiIconType="add"></i>
@@ -99,12 +95,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="width"
         [templateCode]="snippetWidth">
       <h3 sui-header>Width</h3>
       <p>A popup can be extra wide to allow for longer content</p>
 
-      <ng-template #width>
+      <ng-template docDemo #width>
         <i sui-icon suiCircular suiLink suiIconType="heart"
            sui-popup suiPopupWidth="wide"
            suiPopupContent="Hello. This is a wide pop-up which allows for lots of content with additional space. You can fit a lot of words here and the paragraphs will be pretty wide."></i>
@@ -115,12 +110,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>A fluid popup will take up the entire width of its offset container</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <div sui-button
              sui-popup [suiPopupContent]="fluidPopup">
           Show fluid popup
@@ -137,12 +131,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="size"
         [templateCode]="snippetSize">
       <h3 sui-header>Size</h3>
       <p>A popup can vary in size</p>
 
-      <ng-template #size>
+      <ng-template docDemo #size>
         <i sui-icon suiCircular suiLink suiIconType="heart"
            sui-popup suiPopupSize="mini"
            suiPopupContent="Hello. This is a mini popup"></i>
@@ -162,12 +155,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="flowing"
         [templateCode]="snippetFlowing">
       <h3 sui-header>Flowing</h3>
       <p>A popup can have no maximum width and continue to flow to fit its content</p>
 
-      <ng-template #flowing>
+      <ng-template docDemo #flowing>
         <div sui-button
              sui-popup suiPopupFlowing [suiPopupContent]="flowingTemplate">
           Show flowing popup
@@ -195,12 +187,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="inverted"
         [templateCode]="snippetInverted">
       <h3 sui-header>Inverted</h3>
       <p>A popup can have its colors inverted</p>
 
-      <ng-template #inverted>
+      <ng-template docDemo #inverted>
         <i sui-icon suiCircular suiLink suiIconType="heart"
            sui-popup suiPopupInverted suiPopupContent="Hello. This is an inverted popup"></i>
         <button sui-button suiIcon
@@ -211,12 +202,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="position"
         [templateCode]="snippetPosition">
       <h3 sui-header>Position</h3>
       <p>A popup can be position around its trigger</p>
 
-      <ng-template #position>
+      <ng-template docDemo #position>
         <i sui-icon suiCircular suiColour="red" suiSize="big" suiIconType="heart"
            sui-popup suiPopupPlacement="bottom left" suiPopupContent="This is a bottom left popup"></i>
         <i sui-icon suiCircular suiColour="teal" suiSize="big" suiIconType="heart"

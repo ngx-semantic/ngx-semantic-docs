@@ -6,12 +6,11 @@
         suiDividing>Type</h2>
 
     <doc-code-sample
-        [content]="basic"
         [templateCode]="snippetBasic">
       <h3 sui-header>Search</h3>
       <p>A basic search element</p>
 
-      <ng-template #basic>
+      <ng-template docDemo #basic>
         <sui-search
             suiPlaceholder="Common passwords..."
             [suiOptionsLookup]="searchText">
@@ -20,9 +19,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="basicAlt"
         [templateCode]="snippetBasicAlt">
-      <ng-template #basicAlt>
+      <ng-template docDemo #basicAlt>
         <sui-search
             suiShowIcon
             suiPlaceholder="Common passwords..."
@@ -32,12 +30,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="category"
         [templateCode]="snippetCategory">
       <h3 sui-header>Category</h3>
       <p>A search can display results from remote content ordered by categories</p>
 
-      <ng-template #category>
+      <ng-template docDemo #category>
         <sui-search
             suiShowIcon
             suiPlaceholder="Common animals..."
@@ -47,13 +44,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="localSearch"
         [templateCode]="snippetLocalSearch"
         [componentCode]="snippetLocalSearchTs">
       <h3 sui-header>Local Search</h3>
       <p>A search can look for results inside a static local source.</p>
 
-      <ng-template #localSearch>
+      <ng-template docDemo #localSearch>
         <sui-search
             suiShowIcon
             suiPlaceholder="Search countries..."
@@ -63,13 +59,12 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="localCategorySearch"
         [templateCode]="snippetLocalCategorySearch"
         [componentCode]="snippetLocalCategorySearchTs">
       <h3 sui-header>Local Category Search</h3>
       <p>A search can look for category results inside a static local source.</p>
 
-      <ng-template #localCategorySearch>
+      <ng-template docDemo #localCategorySearch>
         <sui-search
             suiShowIcon
             suiPlaceholder="Search countries..."
@@ -84,12 +79,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="loading"
         [templateCode]="snippetLoading">
       <h3 sui-header>Loading</h3>
       <p>A search can show a loading indicator.</p>
 
-      <ng-template #loading>
+      <ng-template docDemo #loading>
         <sui-search
             suiLoading
             suiPlaceholder="Search..."
@@ -104,12 +98,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A search can show it is currently unable to be interacted with.</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <sui-search
             disabled
             suiShowIcon
@@ -120,12 +113,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>A search can have its results take up the width of its container.</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <sui-search
             suiFluid
             suiShowIcon
@@ -136,12 +128,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="aligned"
         [templateCode]="snippetAligned">
       <h3 sui-header>Aligned</h3>
       <p>A search can have its results aligned to its left or right container edge.</p>
 
-      <ng-template #aligned>
+      <ng-template docDemo #aligned>
         <sui-search
             suiShowIcon
             suiAlignment="right"

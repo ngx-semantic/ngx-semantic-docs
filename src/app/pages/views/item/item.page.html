@@ -6,7 +6,6 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="standard"
         [templateCode]="snippetStandard">
       <h3 sui-header>Items <span sui-label suiColour="teal">Flexbox</span></h3>
       <p>A group of items</p>
@@ -19,7 +18,7 @@
         </div>
       </div>
 
-      <ng-template #standard>
+      <ng-template docDemo #standard>
         <div sui-items>
           <div sui-item>
             <div suiItemImage>
@@ -63,12 +62,11 @@
         suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="imageContent"
         [templateCode]="snippetImageContent">
       <h3 sui-header>Image</h3>
       <p>An item can contain an image</p>
 
-      <ng-template #imageContent>
+      <ng-template docDemo #imageContent>
         <div sui-items suiDivided>
           <div sui-item>
             <div suiItemImage>
@@ -90,12 +88,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="content"
         [templateCode]="snippetContent">
       <h3 sui-header>Content</h3>
       <p>An item can contain content</p>
 
-      <ng-template #content>
+      <ng-template docDemo #content>
         <div sui-items suiDivided>
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -126,12 +123,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="header"
         [templateCode]="snippetHeader">
       <h3 sui-header>Header</h3>
       <p>An item can contain a header</p>
 
-      <ng-template #header>
+      <ng-template docDemo #header>
         <div sui-items suiDivided>
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -162,7 +158,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="metadata"
         [templateCode]="snippetMetadata">
       <h3 sui-header>Metadata</h3>
       <p>An item can contain content metadata</p>
@@ -173,7 +168,7 @@
         automatically be spaced
       </div>
 
-      <ng-template #metadata>
+      <ng-template docDemo #metadata>
         <div sui-items suiDivided>
           <div sui-item>
             <div sui-image suiSize="small">
@@ -225,7 +220,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="link"
         [templateCode]="snippetLink">
       <h3 sui-header>Link</h3>
       <p>An item can contain links as images, headers, or inside content</p>
@@ -235,7 +229,7 @@
         To make the entire content of an item link, check out the link variation below
       </div>
 
-      <ng-template #link>
+      <ng-template docDemo #link>
         <div sui-items>
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -277,12 +271,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="description"
         [templateCode]="snippetDescription">
       <h3 sui-header>Description</h3>
       <p>An item can contain a description with a single or multiple paragraphs</p>
 
-      <ng-template #description>
+      <ng-template docDemo #description>
         <div sui-items>
           <div sui-item>
             <div sui-image suiSize="small">
@@ -302,12 +295,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="extraContent"
         [templateCode]="snippetExtraContent">
       <h3 sui-header>Extra Content</h3>
       <p>An item can contain extra content meant to be formatted separately from the main content</p>
 
-      <ng-template #extraContent>
+      <ng-template docDemo #extraContent>
         <div sui-items>
           <div sui-item>
             <div suiItemContent>
@@ -326,7 +318,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="rating"
         [templateCode]="snippetRating">
       <h3 sui-header>Rating</h3>
       <p>An item can contain icons signifying a 'like' or 'favorite' action</p>
@@ -335,7 +326,7 @@
         You can use the rating component to attach events to like and favorite icons
       </div>
 
-      <ng-template #rating>
+      <ng-template docDemo #rating>
         <div sui-items>
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -367,12 +358,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="unstackable"
         [templateCode]="snippetUnstackable">
       <h3 sui-header>Stacking</h3>
       <p>A table can specify how it stacks items responsively</p>
 
-      <ng-template #unstackable>
+      <ng-template docDemo #unstackable>
         <div sui-items suiUnstackable>
           <div sui-item>
             <div suiItemImage>
@@ -413,12 +403,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="divided"
         [templateCode]="snippetDivided">
       <h3 sui-header>Divided</h3>
       <p>Items can be divided to better distinguish between grouped content</p>
 
-      <ng-template #divided>
+      <ng-template docDemo #divided>
         <div sui-items suiDivided>
           <div sui-item>
             <div suiItemImage>
@@ -484,12 +473,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="relaxed"
         [templateCode]="snippetRelaxed">
       <h3 sui-header>Relaxed</h3>
       <p>A group of items can relax its padding to provide more negative space</p>
 
-      <ng-template #relaxed>
+      <ng-template docDemo #relaxed>
         <div sui-items suiRelaxed="relaxed">
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -520,9 +508,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="veryRelaxed"
         [templateCode]="snippetVeryRelaxed">
-      <ng-template #veryRelaxed>
+      <ng-template docDemo #veryRelaxed>
         <div sui-items suiRelaxed="very relaxed">
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -553,12 +540,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="linkItem"
         [templateCode]="snippetLinkItem">
       <h3 sui-header>Link Item</h3>
       <p>An item can be formatted so that the entire contents link to another page</p>
 
-      <ng-template #linkItem>
+      <ng-template docDemo #linkItem>
         <div sui-items suiLink>
           <div sui-item>
             <div sui-image suiSize="tiny">
@@ -598,7 +584,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="verticalAlignment"
         [templateCode]="snippetVerticalAlignment">
       <h3 sui-header>Vertical Alignment</h3>
       <p>Content can specify its vertical alignment</p>
@@ -609,7 +594,7 @@
         automatically be spaced
       </div>
 
-      <ng-template #verticalAlignment>
+      <ng-template docDemo #verticalAlignment>
         <div sui-items>
           <div sui-item>
             <div sui-image suiSize="small">
@@ -640,7 +625,6 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="floatedContent"
         [templateCode]="snippetFloatedContent">
       <h3 sui-header>Floated Content</h3>
       <p>Any content element can be floated left or right</p>
@@ -651,7 +635,7 @@
         automatically be spaced
       </div>
 
-      <ng-template #floatedContent>
+      <ng-template docDemo #floatedContent>
         <div sui-items>
           <div sui-item>
             <div suiItemImage>

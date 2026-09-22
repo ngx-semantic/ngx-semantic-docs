@@ -7,12 +7,11 @@
         suiDividing>Types</h2>
 
     <doc-code-sample
-        [content]="single"
         [templateCode]="snippetSingle">
       <h3 sui-header>Step</h3>
       <p>A single step</p>
 
-      <ng-template #single>
+      <ng-template docDemo #single>
         <div sui-steps>
           <div sui-step>
             Shipping
@@ -27,7 +26,6 @@
         suiDividing>Groups</h2>
 
     <doc-code-sample
-        [content]="set"
         [templateCode]="snippetSet">
       <h3 sui-header>Steps</h3>
       <p>A set of steps</p>
@@ -47,7 +45,7 @@
         </div>
       </div>
 
-      <ng-template #set>
+      <ng-template docDemo #set>
         <div sui-steps>
           <div sui-step>
             <i sui-icon
@@ -79,12 +77,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="ordered"
         [templateCode]="snippetOrdered">
       <h3 sui-header>Ordered</h3>
       <p>A step can show a ordered sequence of steps</p>
 
-      <ng-template #ordered>
+      <ng-template docDemo #ordered>
         <div sui-steps
              suiOrdered>
           <div sui-step
@@ -113,12 +110,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="vertical"
         [templateCode]="snippetVertical">
       <h3 sui-header>Vertical</h3>
       <p>A step can be displayed stacked vertically</p>
 
-      <ng-template #vertical>
+      <ng-template docDemo #vertical>
         <div sui-steps
              suiVertical>
           <div sui-step
@@ -158,12 +154,11 @@
         suiDividing>Content</h2>
 
     <doc-code-sample
-        [content]="description"
         [templateCode]="snippetDescription">
       <h3 sui-header>Description</h3>
       <p>A step can contain a description</p>
 
-      <ng-template #description>
+      <ng-template docDemo #description>
         <div sui-steps>
           <div sui-step>
             <div suiStepContent>
@@ -176,12 +171,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="icon"
         [templateCode]="snippetIcon">
       <h3 sui-header>Icon</h3>
       <p>A step can contain an icon</p>
 
-      <ng-template #icon>
+      <ng-template docDemo #icon>
         <div sui-steps>
           <div sui-step>
             <i sui-icon
@@ -196,12 +190,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="link"
         [templateCode]="snippetLink">
       <h3 sui-header>Link</h3>
       <p>A step can link</p>
 
-      <ng-template #link>
+      <ng-template docDemo #link>
         <div sui-steps>
           <a sui-step
              suiActive>
@@ -223,9 +216,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="linkAlt"
         [templateCode]="snippetLinkAlt">
-      <ng-template #linkAlt>
+      <ng-template docDemo #linkAlt>
         <div sui-steps>
           <div sui-step
                suiLink>
@@ -253,12 +245,11 @@
         suiDividing>States</h2>
 
     <doc-code-sample
-        [content]="active"
         [templateCode]="snippetActive">
       <h3 sui-header>Active</h3>
       <p>A step can be highlighted as active</p>
 
-      <ng-template #active>
+      <ng-template docDemo #active>
         <div sui-steps>
           <div sui-step
                suiActive>
@@ -274,12 +265,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="completed"
         [templateCode]="snippetCompleted">
       <h3 sui-header>Completed</h3>
       <p>A step can show that a user has completed it</p>
 
-      <ng-template #completed>
+      <ng-template docDemo #completed>
         <div sui-steps>
           <div sui-step
                suiCompleted>
@@ -295,9 +285,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="completedAlt"
         [templateCode]="snippetCompletedAlt">
-      <ng-template #completedAlt>
+      <ng-template docDemo #completedAlt>
         <div sui-steps
              suiOrdered>
           <div sui-step
@@ -312,12 +301,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="disabled"
         [templateCode]="snippetDisabled">
       <h3 sui-header>Disabled</h3>
       <p>A step can show that it cannot be selected</p>
 
-      <ng-template #disabled>
+      <ng-template docDemo #disabled>
         <div sui-steps>
           <div sui-step
                disabled>
@@ -333,12 +321,11 @@
         suiDividing>Variations</h2>
 
     <doc-code-sample
-        [content]="stackable"
         [templateCode]="snippetStackable">
       <h3 sui-header>Stackable</h3>
       <p>A step can stack vertically only on smaller screens</p>
 
-      <ng-template #stackable>
+      <ng-template docDemo #stackable>
         <div sui-steps
              suiTabletStackable>
           <div sui-step>
@@ -372,12 +359,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="fluid"
         [templateCode]="snippetFluid">
       <h3 sui-header>Fluid</h3>
       <p>A fluid step takes up the width of its container</p>
 
-      <ng-template #fluid>
+      <ng-template docDemo #fluid>
         <div sui-grid
              suiWidth="two">
           <div suiGridColumn>
@@ -412,12 +398,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="unstackable"
         [templateCode]="snippetUnstackable">
       <h3 sui-header>Unstackable</h3>
       <p>A step can prevent itself from stacking on mobile</p>
 
-      <ng-template #unstackable>
+      <ng-template docDemo #unstackable>
         <div sui-steps
              suiUnstackable>
           <div sui-step>
@@ -451,12 +436,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="attached"
         [templateCode]="snippetAttached">
       <h3 sui-header>Attached</h3>
       <p>Steps can be attached to other elements</p>
 
-      <ng-template #attached>
+      <ng-template docDemo #attached>
         <div sui-steps
              suiWidth="three"
              suiAttached="top attached">
@@ -525,12 +509,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="evenlyDivided"
         [templateCode]="snippetEvenlyDivided">
       <h3 sui-header>Evenly Divided</h3>
       <p>Steps can be divided evenly inside their parent</p>
 
-      <ng-template #evenlyDivided>
+      <ng-template docDemo #evenlyDivided>
         <div sui-steps
              suiWidth="three">
           <div sui-step>
@@ -561,9 +544,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="evenlyDividedAlt"
         [templateCode]="snippetEvenlyDividedAlt">
-      <ng-template #evenlyDividedAlt>
+      <ng-template docDemo #evenlyDividedAlt>
         <div sui-steps
              suiWidth="two">
           <div sui-step
@@ -587,12 +569,11 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeMini"
         [templateCode]="snippetSizeMini">
       <h3 sui-header>Size</h3>
       <p>Steps can have different sizes</p>
 
-      <ng-template #sizeMini>
+      <ng-template docDemo #sizeMini>
         <div sui-steps
              suiSize="mini">
           <div sui-step>
@@ -626,9 +607,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeTiny"
         [templateCode]="snippetSizeTiny">
-      <ng-template #sizeTiny>
+      <ng-template docDemo #sizeTiny>
         <div sui-steps
              suiSize="tiny">
           <div sui-step>
@@ -662,9 +642,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeSmall"
         [templateCode]="snippetSizeSmall">
-      <ng-template #sizeSmall>
+      <ng-template docDemo #sizeSmall>
         <div sui-steps
              suiSize="small">
           <div sui-step>
@@ -698,9 +677,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeLarge"
         [templateCode]="snippetSizeLarge">
-      <ng-template #sizeLarge>
+      <ng-template docDemo #sizeLarge>
         <div sui-steps
              suiSize="large">
           <div sui-step>
@@ -723,9 +701,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeBig"
         [templateCode]="snippetSizeBig">
-      <ng-template #sizeBig>
+      <ng-template docDemo #sizeBig>
         <div sui-steps
              suiSize="big">
           <div sui-step>
@@ -748,9 +725,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeHuge"
         [templateCode]="snippetSizeHuge">
-      <ng-template #sizeHuge>
+      <ng-template docDemo #sizeHuge>
         <div sui-steps
              suiSize="huge">
           <div sui-step>
@@ -773,9 +749,8 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [content]="sizeMassive"
         [templateCode]="snippetSizeMassive">
-      <ng-template #sizeMassive>
+      <ng-template docDemo #sizeMassive>
         <div sui-steps
              suiSize="massive">
           <div sui-step>

@@ -9,14 +9,13 @@
     suiDividing>States</h2>
 
     <doc-code-sample
-      [content]="standard"
       [templateCode]="snippetStandard"
       [componentCode]="snippetStandardTs">
       <h3 sui-header>Modal</h3>
       <p>A standard modal</p>
       <button sui-button (click)="isStandardModalVisible = true">Show Modal</button>
 
-      <ng-template #standard>
+      <ng-template docDemo #standard>
         <sui-modal
           suiHeaderText="Select a Photo"
           [(visible)]="isStandardModalVisible">
@@ -46,14 +45,13 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="basic"
     [templateCode]="snippetBasic"
     [componentCode]="snippetBasicTs">
     <h3 sui-header>Basic</h3>
     <p>A modal can reduce its complexity</p>
     <button sui-button (click)="isBasicModalVisible = true">Show Modal</button>
 
-    <ng-template #basic>
+    <ng-template docDemo #basic>
       <sui-modal
         suiBasic
         suiHeaderIcon="archive"
@@ -80,14 +78,13 @@
   suiDividing>Variations</h2>
 
   <doc-code-sample
-    [content]="fullScreen"
     [templateCode]="snippetFullScreen"
     [componentCode]="snippetFullScreenTs">
     <h3 sui-header>Full Screen</h3>
     <p>A modal can use the entire size of the screen</p>
     <button sui-button (click)="isFullScreenModalVisible = true">Show Modal</button>
 
-    <ng-template #fullScreen>
+    <ng-template docDemo #fullScreen>
       <sui-modal
         suiFullScreen
         suiHeaderText="Update Your Settings"
@@ -117,14 +114,13 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="size"
     [templateCode]="snippetSize"
     [componentCode]="snippetSizeTs">
     <h3 sui-header>Size</h3>
     <p>A modal can vary in size</p>
     <button sui-button (click)="isSizeModalVisible = true">Show Modal</button>
 
-    <ng-template #size>
+    <ng-template docDemo #size>
       <sui-modal
         suiSize="mini"
         suiHeaderText="Delete Your Account"
@@ -146,14 +142,13 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="scrolling"
     [templateCode]="snippetScrolling"
     [componentCode]="snippetScrollingTs">
     <h3 sui-header>Scrolling Content</h3>
     <p>A modal can use the entire size of the screen.</p>
     <button sui-button (click)="isScrollingModalVisible = true">Show Modal</button>
 
-    <ng-template #scrolling>
+    <ng-template docDemo #scrolling>
       <sui-modal
         suiHeaderText="Profile Picture"
         [(visible)]="isScrollingModalVisible">
@@ -183,7 +178,6 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="closable"
     [templateCode]="snippetClosable"
     [componentCode]="snippetClosableTs">
     <h3 sui-header>Closable</h3>
@@ -191,7 +185,7 @@
     the close button</p>
     <button sui-button (click)="isClosableModalVisible = true">Show Modal</button>
 
-    <ng-template #closable>
+    <ng-template docDemo #closable>
       <sui-modal
         suiClosable="false"
         suiHeaderText="Delete Your Account"
@@ -213,7 +207,6 @@
   </doc-code-sample>
 
   <doc-code-sample
-    [content]="maskClosable"
     [templateCode]="snippetMaskClosable"
     [componentCode]="snippetMaskClosableTs">
     <h3 sui-header>Mask Closable</h3>
@@ -221,7 +214,7 @@
     configurable</p>
     <button sui-button (click)="isMaskClosableModalVisible = true">Show Modal</button>
 
-    <ng-template #maskClosable>
+    <ng-template docDemo #maskClosable>
       <sui-modal
         suiMaskClosable="false"
         suiHeaderText="Delete Your Account"
