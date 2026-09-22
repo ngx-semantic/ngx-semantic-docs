@@ -1,0 +1,7 @@
+countries: ISelectOption[] = [
+  { text: 'Albania', value: 'al', flag: 'al' },
+  { text: 'Angola', value: 'ao', flag: 'ao' },
+  { text: 'Azerbaijan', value: 'az', flag: 'az' },
+  { text: 'Botswana', value: 'bw', flag: 'bw' },
+  { text: 'Nigeria', value: 'ng', flag: 'ng' },
+];

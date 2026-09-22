@@ -10,22 +10,15 @@
       <h3 sui-header>Search</h3>
       <p>A basic search element</p>
 
-      <ng-template docDemo #basic>
-        <sui-search
-            suiPlaceholder="Common passwords..."
-            [suiOptionsLookup]="searchText">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-basic-example></doc-search-basic-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetBasicAlt">
-      <ng-template docDemo #basicAlt>
-        <sui-search
-            suiShowIcon
-            suiPlaceholder="Common passwords..."
-            [suiOptionsLookup]="searchText">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-basic-alt-example></doc-search-basic-alt-example>
       </ng-template>
     </doc-code-sample>
 
@@ -34,12 +27,8 @@
       <h3 sui-header>Category</h3>
       <p>A search can display results from remote content ordered by categories</p>
 
-      <ng-template docDemo #category>
-        <sui-search
-            suiShowIcon
-            suiPlaceholder="Common animals..."
-            [suiOptionsLookup]="searchCategories">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-category-example></doc-search-category-example>
       </ng-template>
     </doc-code-sample>
 
@@ -49,12 +38,8 @@
       <h3 sui-header>Local Search</h3>
       <p>A search can look for results inside a static local source.</p>
 
-      <ng-template docDemo #localSearch>
-        <sui-search
-            suiShowIcon
-            suiPlaceholder="Search countries..."
-            [suiOptions]="countries">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-local-search-example></doc-search-local-search-example>
       </ng-template>
     </doc-code-sample>
 
@@ -64,12 +49,8 @@
       <h3 sui-header>Local Category Search</h3>
       <p>A search can look for category results inside a static local source.</p>
 
-      <ng-template docDemo #localCategorySearch>
-        <sui-search
-            suiShowIcon
-            suiPlaceholder="Search countries..."
-            [suiOptions]="categoryContent">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-local-category-search-example></doc-search-local-category-search-example>
       </ng-template>
     </doc-code-sample>
 
@@ -83,12 +64,8 @@
       <h3 sui-header>Loading</h3>
       <p>A search can show a loading indicator.</p>
 
-      <ng-template docDemo #loading>
-        <sui-search
-            suiLoading
-            suiPlaceholder="Search..."
-            [suiOptions]="blankOptions">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-loading-example></doc-search-loading-example>
       </ng-template>
     </doc-code-sample>
 
@@ -102,13 +79,8 @@
       <h3 sui-header>Disabled</h3>
       <p>A search can show it is currently unable to be interacted with.</p>
 
-      <ng-template docDemo #disabled>
-        <sui-search
-            disabled
-            suiShowIcon
-            suiPlaceholder="Search animals..."
-            [suiOptions]="blankOptions">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-disabled-example></doc-search-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -117,13 +89,8 @@
       <h3 sui-header>Fluid</h3>
       <p>A search can have its results take up the width of its container.</p>
 
-      <ng-template docDemo #fluid>
-        <sui-search
-            suiFluid
-            suiShowIcon
-            suiPlaceholder="Search animals..."
-            [suiOptionsLookup]="searchCategories">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-fluid-example></doc-search-fluid-example>
       </ng-template>
     </doc-code-sample>
 
@@ -132,13 +99,8 @@
       <h3 sui-header>Aligned</h3>
       <p>A search can have its results aligned to its left or right container edge.</p>
 
-      <ng-template docDemo #aligned>
-        <sui-search
-            suiShowIcon
-            suiAlignment="right"
-            suiPlaceholder="Search animals..."
-            [suiOptionsLookup]="searchCategories">
-        </sui-search>
+      <ng-template docDemo>
+        <doc-search-aligned-example></doc-search-aligned-example>
       </ng-template>
     </doc-code-sample>
   </div>

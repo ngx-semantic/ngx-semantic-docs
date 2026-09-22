@@ -15,33 +15,9 @@
       <p>A standard modal</p>
       <button sui-button (click)="isStandardModalVisible = true">Show Modal</button>
 
-      <ng-template docDemo #standard>
-        <sui-modal
-          suiHeaderText="Select a Photo"
-          [(visible)]="isStandardModalVisible">
-          <div sui-image suiModalContent>
-            <div sui-image suiSize="medium">
-              <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
-            </div>
-            <div suiCardDescription>
-              <div sui-header>We've auto-chosen a profile image for you.</div>
-              <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
-              target="_blank">gravatar</a> image
-            associated with your registered e-mail address.</p>
-            <p>Is it okay to use this photo?</p>
-          </div>
-        </div>
-        <div suiModalActions>
-          <div sui-button suiEmphasis="secondary" suiColour="black">
-            Nope
-          </div>
-          <div sui-button suiEmphasis="positive" suiIcon suiLabeled="right labeled">
-            Yep, that's me
-            <i sui-icon suiIconType="checkmark"></i>
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+      <ng-template docDemo>
+        <doc-modal-standard-example></doc-modal-standard-example>
+      </ng-template>
   </doc-code-sample>
 
   <doc-code-sample
@@ -51,27 +27,9 @@
     <p>A modal can reduce its complexity</p>
     <button sui-button (click)="isBasicModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #basic>
-      <sui-modal
-        suiBasic
-        suiHeaderIcon="archive"
-        suiHeaderText="Archive Old Messages"
-        [(visible)]="isBasicModalVisible">
-        <div sui-image suiModalContent>
-          <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
-        </div>
-        <div suiModalActions>
-          <div sui-button suiBasic suiInverted suiColour="red">
-            <i sui-icon suiIconType="remove"></i>
-            No
-          </div>
-          <div sui-button suiInverted suiColour="green" (click)="isStandardModalVisible = false">
-            <i sui-icon suiIconType="checkmark"></i>
-            Yes
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-basic-example></doc-modal-basic-example>
+      </ng-template>
   </doc-code-sample>
 
   <h2 sui-header
@@ -84,33 +42,9 @@
     <p>A modal can use the entire size of the screen</p>
     <button sui-button (click)="isFullScreenModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #fullScreen>
-      <sui-modal
-        suiFullScreen
-        suiHeaderText="Update Your Settings"
-        [(visible)]="isFullScreenModalVisible">
-        <div suiModalContent>
-          <div sui-form>
-            <h4 sui-header suiDividing>Give us your feedback</h4>
-            <div suiFormField>
-              <label>Feedback</label>
-              <textarea></textarea>
-            </div>
-            <div suiFormField>
-              <sui-checkbox [checked]="true">It's okay to contact me.</sui-checkbox>
-            </div>
-          </div>
-        </div>
-        <div suiModalActions>
-          <div sui-button>
-            Cancel
-          </div>
-          <div sui-button suiEmphasis="positive">
-            Send
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-full-screen-example></doc-modal-full-screen-example>
+      </ng-template>
   </doc-code-sample>
 
   <doc-code-sample
@@ -120,25 +54,9 @@
     <p>A modal can vary in size</p>
     <button sui-button (click)="isSizeModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #size>
-      <sui-modal
-        suiSize="mini"
-        suiHeaderText="Delete Your Account"
-        [(visible)]="isSizeModalVisible">
-        <div suiModalContent>
-          <p>Are you sure you want to delete your account</p>
-        </div>
-        <div suiModalActions>
-          <div sui-button suiColour="red">
-            No
-          </div>
-          <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
-            Yes
-            <i sui-icon suiIconType="checkmark"></i>
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-size-example></doc-modal-size-example>
+      </ng-template>
   </doc-code-sample>
 
   <doc-code-sample
@@ -148,33 +66,9 @@
     <p>A modal can use the entire size of the screen.</p>
     <button sui-button (click)="isScrollingModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #scrolling>
-      <sui-modal
-        suiHeaderText="Profile Picture"
-        [(visible)]="isScrollingModalVisible">
-        <div suiModalContent suiScrollable suiImage>
-          <div sui-image suiSize="medium">
-            <img src="/assets/images/wireframes/image.png"/>
-          </div>
-          <div suiModalDescription>
-            <div sui-header>Modal Header</div>
-            <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
-
-            <img sui-image src="/assets/images/wireframes/paragraph.png"/>
-            @for (d of dummyList; track d) {
-              <div sui-divider></div>
-              <img sui-image src="/assets/images/wireframes/paragraph.png"/>
-            }
-          </div>
-        </div>
-        <div suiModalActions>
-          <div class="black deny" sui-button suiEmphasis="secondary"
-            (click)="isScrollingModalVisible = false">
-            Close
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-scrolling-example></doc-modal-scrolling-example>
+      </ng-template>
   </doc-code-sample>
 
   <doc-code-sample
@@ -185,25 +79,9 @@
     the close button</p>
     <button sui-button (click)="isClosableModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #closable>
-      <sui-modal
-        suiClosable="false"
-        suiHeaderText="Delete Your Account"
-        [(visible)]="isClosableModalVisible">
-        <div suiModalContent>
-          <p>Are you sure you want to delete your account</p>
-        </div>
-        <div suiModalActions>
-          <div sui-button suiColour="red">
-            No
-          </div>
-          <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
-            Yes
-            <i sui-icon suiIconType="checkmark"></i>
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-closable-example></doc-modal-closable-example>
+      </ng-template>
   </doc-code-sample>
 
   <doc-code-sample
@@ -214,25 +92,9 @@
     configurable</p>
     <button sui-button (click)="isMaskClosableModalVisible = true">Show Modal</button>
 
-    <ng-template docDemo #maskClosable>
-      <sui-modal
-        suiMaskClosable="false"
-        suiHeaderText="Delete Your Account"
-        [(visible)]="isMaskClosableModalVisible">
-        <div suiModalContent>
-          <p>Are you sure you want to delete your account</p>
-        </div>
-        <div suiModalActions>
-          <div sui-button suiColour="red">
-            No
-          </div>
-          <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
-            Yes
-            <i sui-icon suiIconType="checkmark"></i>
-          </div>
-        </div>
-      </sui-modal>
-    </ng-template>
+    <ng-template docDemo>
+        <doc-modal-mask-closable-example></doc-modal-mask-closable-example>
+      </ng-template>
   </doc-code-sample>
 </div>
 

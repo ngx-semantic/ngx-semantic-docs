@@ -10,46 +10,8 @@
       <h3 sui-header>Tab</h3>
       <p>A basic tab</p>
 
-      <ng-template docDemo #basic>
-        <sui-tabs>
-          <sui-tab
-            suiTitle="HTML">
-            <h3>HTML</h3>
-            <p>
-              HTML (HyperText Markup Language) is the most basic building block of
-              the Web. It describes and defines the content of a webpage along with
-              the basic layout of the webpage. Other technologies besides HTML are
-              generally used to describe a web page's appearance/presentation (CSS)
-              or functionality/ behavior (JavaScript).
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a>
-          </sui-tab>
-          <sui-tab
-            suiTitle="CSS">
-            <h3>CSS</h3>
-            <p>
-              Cascading Style Sheets (CSS) is a stylesheet language used to describe
-              the presentation of a document written in HTML or XML (including XML
-              dialects such as SVG or XHTML). CSS describes how elements should be
-              rendered on screen, on paper, in speech, or on other media.
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">developer.mozilla.org</a>
-          </sui-tab>
-          <sui-tab
-            suiTitle="JavaScript">
-            <h3>JavaScript</h3>
-            <p>
-              JavaScript (JS) is a lightweight interpreted or JIT-compiled
-              programming language with first-class functions. While it is most
-              well-known as the scripting language for Web pages, many non-browser
-              environments also use it, such as Node.js, Apache CouchDB and Adobe
-              Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic
-              language, supporting object-oriented, imperative, and declarative
-              (e.g. functional programming) styles.
-            </p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">developer.mozilla.org</a>
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-basic-example></doc-tab-basic-example>
       </ng-template>
     </doc-code-sample>
 
@@ -58,22 +20,8 @@
       <h3 sui-header>Pointing Menu</h3>
       <p>A tab menu can point to its tab panes</p>
 
-      <ng-template docDemo #pointingMenu>
-        <sui-tabs
-          suiTabType="pointing">
-          <sui-tab
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            suiTitle="Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-pointing-menu-example></doc-tab-pointing-menu-example>
       </ng-template>
     </doc-code-sample>
 
@@ -82,22 +30,8 @@
       <h3 sui-header>Text Menu</h3>
       <p>A tab menu can be formatted for text content</p>
 
-      <ng-template docDemo #textMenu>
-        <sui-tabs
-          suiTabType="text">
-          <sui-tab
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            suiTitle="Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-text-menu-example></doc-tab-text-menu-example>
       </ng-template>
     </doc-code-sample>
 
@@ -111,22 +45,8 @@
       <h3 sui-header>Loading</h3>
       <p>A tab can display a loading indicator.</p>
 
-      <ng-template docDemo #loading>
-        <sui-tabs>
-          <sui-tab
-            suiLoading
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            suiTitle="Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-loading-example></doc-tab-loading-example>
       </ng-template>
     </doc-code-sample>
 
@@ -135,22 +55,8 @@
       <h3 sui-header>Disabled</h3>
       <p>A tab can be disabled</p>
 
-      <ng-template docDemo #disabled>
-        <sui-tabs>
-          <sui-tab
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            disabled
-            suiTitle="Secret Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-disabled-example></doc-tab-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -164,23 +70,8 @@
       <h3 sui-header>Position</h3>
       <p>A tab can be positioned.</p>
 
-      <ng-template docDemo #positioned>
-        <sui-tabs
-          suiTabType="secondary"
-          suiTabMenuPosition="bottom">
-          <sui-tab
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            suiTitle="Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-positioned-example></doc-tab-positioned-example>
       </ng-template>
     </doc-code-sample>
 
@@ -189,31 +80,8 @@
       <h3 sui-header>Coloured</h3>
       <p>A tab can be coloured.</p>
 
-      <ng-template docDemo #coloured>
-        <select name="tab-colour"
-          [(ngModel)]="tabColour">
-          @for (colour of colours; track colour) {
-            <option
-            [value]="colour">{{colour}}</option>
-          }
-        </select>
-
-        <sui-tabs
-          suiTabType="pointing"
-          [suiColour]="tabColour">
-          <sui-tab
-            suiTitle="Circle">
-            Circle
-          </sui-tab>
-          <sui-tab
-            suiTitle="Box">
-            Box
-          </sui-tab>
-          <sui-tab
-            suiTitle="Triangle">
-            Triangle
-          </sui-tab>
-        </sui-tabs>
+      <ng-template docDemo>
+        <doc-tab-coloured-example></doc-tab-coloured-example>
       </ng-template>
     </doc-code-sample>
   </div>

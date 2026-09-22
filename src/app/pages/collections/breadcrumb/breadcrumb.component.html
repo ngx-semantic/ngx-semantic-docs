@@ -9,27 +9,15 @@
       <h3 sui-header>Breadcrumb</h3>
       <p>A standard breadcrumb</p>
 
-      <ng-template docDemo #breadcrumbStd>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Home</a>
-          <div suiBreadcrumbDivider> /</div>
-          <a suiBreadcrumbSection>Store</a>
-          <div suiBreadcrumbDivider> /</div>
-          <div suiBreadcrumbSection suiActive>T-Shirt</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-std-example></doc-breadcrumb-breadcrumb-std-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetStd1">
-      <ng-template docDemo #breadcrumbStd1>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon="right angle" suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Store</a>
-          <i suiIcon="right angle" suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>T-Shirt</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-std1-example></doc-breadcrumb-breadcrumb-std1-example>
       </ng-template>
     </doc-code-sample>
 
@@ -43,27 +31,15 @@
       <p>A breadcrumb can contain a divider to show the relationship between sections, this can be formatted as an
         icon or text</p>
 
-      <ng-template docDemo #breadcrumbContent>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Home</a>
-          <div suiBreadcrumbDivider> /</div>
-          <a suiBreadcrumbSection>Registration</a>
-          <div suiBreadcrumbDivider> /</div>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-content-example></doc-breadcrumb-breadcrumb-content-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetContent2">
-      <ng-template docDemo #breadcrumbContent1>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-content1-example></doc-breadcrumb-breadcrumb-content1-example>
       </ng-template>
     </doc-code-sample>
 
@@ -72,12 +48,8 @@
       <h3 sui-header>Section</h3>
       <p>A breadcrumb can contain sections that can either be formatted as a link or text</p>
 
-      <ng-template docDemo #breadcrumbSection>
-        <div sui-breadcrumb>
-          <span suiBreadcrumbSection>Home</span>
-          <div suiBreadcrumbDivider> /</div>
-          <div suiBreadcrumbSection suiActive>Search</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-section-example></doc-breadcrumb-breadcrumb-section-example>
       </ng-template>
     </doc-code-sample>
 
@@ -86,12 +58,8 @@
       <h3 sui-header>Link</h3>
       <p>A section may be linkable or contain a link</p>
 
-      <ng-template docDemo #breadcrumbLink>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Home</a>
-          <div suiBreadcrumbDivider> /</div>
-          <div suiBreadcrumbSection suiActive>Search for: <a href="#">paper towels</a></div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-link-example></doc-breadcrumb-breadcrumb-link-example>
       </ng-template>
     </doc-code-sample>
 
@@ -104,12 +72,8 @@
       <h3 sui-header>Active</h3>
       <p>A section can be active</p>
 
-      <ng-template docDemo #breadcrumbActive>
-        <div sui-breadcrumb>
-          <a suiBreadcrumbSection>Products</a>
-          <div suiBreadcrumbDivider> /</div>
-          <div suiBreadcrumbSection suiActive>Paper Towels</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-active-example></doc-breadcrumb-breadcrumb-active-example>
       </ng-template>
     </doc-code-sample>
 
@@ -122,92 +86,50 @@
       <h3 sui-header>Size</h3>
       <p>A breadcrumb can vary in size</p>
 
-      <ng-template docDemo #breadcrumbSize>
-        <div sui-breadcrumb suiSize='mini'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size-example></doc-breadcrumb-breadcrumb-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize1">
-      <ng-template docDemo #breadcrumbSize1>
-        <div sui-breadcrumb suiSize='tiny'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size1-example></doc-breadcrumb-breadcrumb-size1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize2">
-      <ng-template docDemo #breadcrumbSize2>
-        <div sui-breadcrumb suiSize='small'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size2-example></doc-breadcrumb-breadcrumb-size2-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize3">
-      <ng-template docDemo #breadcrumbSize3>
-        <div sui-breadcrumb suiSize='large'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size3-example></doc-breadcrumb-breadcrumb-size3-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize4">
-      <ng-template docDemo #breadcrumbSize4>
-        <div sui-breadcrumb suiSize='big'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size4-example></doc-breadcrumb-breadcrumb-size4-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize5">
-      <ng-template docDemo #breadcrumbSize5>
-        <div sui-breadcrumb suiSize='huge'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size5-example></doc-breadcrumb-breadcrumb-size5-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSize6">
-      <ng-template docDemo #breadcrumbSize6>
-        <div sui-breadcrumb suiSize='massive'>
-          <a suiBreadcrumbSection>Home</a>
-          <i suiIcon='right chevron' suiBreadcrumbDivider></i>
-          <a suiBreadcrumbSection>Registration</a>
-          <i suiIconType="right arrow" sui-icon suiBreadcrumbDivider></i>
-          <div suiBreadcrumbSection suiActive>Personal Information</div>
-        </div>
+      <ng-template docDemo>
+        <doc-breadcrumb-breadcrumb-size6-example></doc-breadcrumb-breadcrumb-size6-example>
       </ng-template>
     </doc-code-sample>
   </div>

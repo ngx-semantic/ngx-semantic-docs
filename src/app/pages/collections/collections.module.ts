@@ -29,8 +29,14 @@ import {SuiSelectModule} from 'ngx-semantic/modules/select';
 
 import { FORM_EXAMPLES } from './form/form-examples.component';
 
+import { BREADCRUMB_EXAMPLES } from './breadcrumb/breadcrumb-examples.component';
+
+import { MESSAGES_EXAMPLES } from './messages/messages-examples.component';
+
 @NgModule({
   declarations: [
+    ...MESSAGES_EXAMPLES,
+    ...BREADCRUMB_EXAMPLES,
     ...FORM_EXAMPLES,
     FormComponent,
     GridComponent,

@@ -1,5 +1,16 @@
 import { AfterViewChecked, Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import snippetSimpleSrc from './snippets/simple.sample.html' with { loader: 'text' };
+import snippetSharedTsSrc from './snippets/simple.sample.txt' with { loader: 'text' };
+import snippetContentSrc from './snippets/content.sample.html' with { loader: 'text' };
+import snippetPageSrc from './snippets/page.sample.html' with { loader: 'text' };
+import snippetActiveSrc from './snippets/active.sample.html' with { loader: 'text' };
+import snippetDisabledSrc from './snippets/disabled.sample.html' with { loader: 'text' };
+import snippetBlurringSrc from './snippets/blurring.sample.html' with { loader: 'text' };
+import snippetBlurringInvertedSrc from './snippets/blurring-inverted.sample.html' with { loader: 'text' };
+import snippetTopAlignedSrc from './snippets/top-alignment.sample.html' with { loader: 'text' };
+import snippetBottomAlignedSrc from './snippets/bottom-alignment.sample.html' with { loader: 'text' };
+import snippetInvertedSrc from './snippets/inverted.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-dimmer',
@@ -12,6 +23,18 @@ import { Title } from '@angular/platform-browser';
     standalone: false
 })
 export class DimmerComponent {
+  snippetSimple = snippetSimpleSrc;
+  snippetSharedTs = snippetSharedTsSrc;
+  snippetContent = snippetContentSrc;
+  snippetPage = snippetPageSrc;
+  snippetActive = snippetActiveSrc;
+  snippetDisabled = snippetDisabledSrc;
+  snippetBlurring = snippetBlurringSrc;
+  snippetBlurringInverted = snippetBlurringInvertedSrc;
+  snippetTopAligned = snippetTopAlignedSrc;
+  snippetBottomAligned = snippetBottomAlignedSrc;
+  snippetInverted = snippetInvertedSrc;
+
   simpleDimmerVisible = false;
   contentDimmerVisible = false;
   pageDimmerVisible = false;
@@ -21,122 +44,16 @@ export class DimmerComponent {
   bottomAlignmentDimmerVisible = false;
   invertedDimmerVisible = false;
 
-  snippetSimple = `
-  <div sui-segment
-       sui-dimmer
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetSharedTs = `
-  dimmerVisible: boolean = false;`;
 
-  snippetContent = `
-  <div sui-segment
-       sui-dimmer
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
 
-    <ng-template suiDimmerContent>
-      <h2 sui-header
-          suiInverted>
-        <i sui-icon
-           suiIconType="heart"></i>
-        Dimmed Message!
-      </h2>
-    </ng-template>
-  </div>`;
 
-  snippetPage = `
-  <div sui-dimmer
-       suiDimmerFullPage
-       [(dimmed)]="dimmerVisible">
-    <ng-template suiDimmerContent>
-      <h2 sui-header
-          suiIcon
-          suiInverted>
-        <i sui-icon
-           suiIconType="mail"></i>
-        Dimmed Message
-      </h2>
-      <div suiSubHeader>Dimmer sub-header</div>
-    </ng-template>
-  </div>`;
 
-  snippetActive = `
-  <div sui-segment
-       sui-dimmer
-       dimmed>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetDisabled = `
-  <<div sui-segment
-       sui-dimmer
-       disabled>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetBlurring = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerBlurring
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetBlurringInverted = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerBlurring
-       suiDimmerInverted
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetTopAligned = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerAlignment="top"
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
 
-    <ng-template suiDimmerContent>
-      <h2 sui-header
-          suiInverted>
-        Title
-      </h2>
-      <div sui-button
-           suiEmphasis="primary">Add</div>
-      <div sui-button>View</div>
-    </ng-template>
-  </div>`;
-
-  snippetBottomAligned = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerAlignment="top"
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-
-    <ng-template suiDimmerContent>
-      <h2 sui-header
-          suiInverted>
-        Title
-      </h2>
-      <div sui-button
-           suiEmphasis="primary">Add</div>
-      <div sui-button>View</div>
-    </ng-template>
-  </div>`;
-
-  snippetInverted = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       [(dimmed)]="dimmerVisible">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
   constructor(title: Title) {
     title.setTitle('Dimmer | Ngx Semantic');

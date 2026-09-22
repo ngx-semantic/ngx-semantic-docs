@@ -1,0 +1,25 @@
+<sui-modal
+    suiHeaderText="Select a Photo"
+    [(visible)]="isStandardModalVisible">
+    <div sui-image suiModalContent>
+      <div sui-image suiSize="medium">
+        <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
+      </div>
+      <div suiCardDescription>
+        <div sui-header>We've auto-chosen a profile image for you.</div>
+        <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
+        target="_blank">gravatar</a> image
+      associated with your registered e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </div>
+  <div suiModalActions>
+    <div sui-button suiEmphasis="secondary" suiColour="black">
+      Nope
+    </div>
+    <div sui-button suiEmphasis="positive" suiIcon suiLabeled="right labeled">
+      Yep, that's me
+      <i sui-icon suiIconType="checkmark"></i>
+    </div>
+  </div>
+</sui-modal>

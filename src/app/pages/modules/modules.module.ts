@@ -46,8 +46,38 @@ import { ModalPage } from './modal/modal.page';
 import { SuiFormModule } from 'ngx-semantic/collections/form';
 import { SuiDividerModule } from 'ngx-semantic/elements/divider';
 
+import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
+
+import { DIMMER_EXAMPLES } from './dimmer/dimmer-examples.component';
+
+import { EMBED_EXAMPLES } from './embed/embed-examples.component';
+
+import { MODAL_EXAMPLES } from './modal/modal-examples.component';
+
+import { POPUP_EXAMPLES } from './popup/popup-examples.component';
+
+import { PROGRESS_EXAMPLES } from './progress/progress-examples.component';
+
+import { RATING_EXAMPLES } from './rating/rating-examples.component';
+
+import { SEARCH_EXAMPLES } from './search/search-examples.component';
+
+import { SELECT_EXAMPLES } from './select/select-examples.component';
+
+import { TAB_EXAMPLES } from './tab/tab-examples.component';
+
 @NgModule({
   declarations: [
+    ...TAB_EXAMPLES,
+    ...SELECT_EXAMPLES,
+    ...SEARCH_EXAMPLES,
+    ...RATING_EXAMPLES,
+    ...PROGRESS_EXAMPLES,
+    ...POPUP_EXAMPLES,
+    ...MODAL_EXAMPLES,
+    ...EMBED_EXAMPLES,
+    ...DIMMER_EXAMPLES,
+    ...ACCORDION_EXAMPLES,
     TabComponent,
     EmbedComponent,
     RatingComponent,

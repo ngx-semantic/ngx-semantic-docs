@@ -10,12 +10,8 @@
       <h3 sui-header>Standard</h3>
       <p>A standard progress bar</p>
 
-      <ng-template docDemo #standard>
-        <sui-progress
-            suiShowProgress
-            [suiValue]="standardValue">
-          Uploading Files
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-standard-example></doc-progress-standard-example>
       </ng-template>
     </doc-code-sample>
 
@@ -36,13 +32,8 @@
       <h3 sui-header>Indicating</h3>
       <p>An indicating progress bar visually indicates the current level of progress of a task</p>
 
-      <ng-template docDemo #indicating>
-        <sui-progress
-            suiIndicating
-            suiState="active"
-            [suiValue]="indicatingValue">
-          {{ indicatingValue }}% Funded
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-indicating-example></doc-progress-indicating-example>
       </ng-template>
     </doc-code-sample>
 
@@ -65,10 +56,8 @@
       <h3 sui-header>Bar</h3>
       <p>A progress element can contain a bar visually indicating progress</p>
 
-      <ng-template docDemo #bar>
-        <sui-progress
-            [suiValue]="28">
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-bar-example></doc-progress-bar-example>
       </ng-template>
     </doc-code-sample>
 
@@ -77,11 +66,8 @@
       <h3 sui-header>Progress</h3>
       <p>A progress bar can contain a text value indicating current progress</p>
 
-      <ng-template docDemo #progress>
-        <sui-progress
-            suiShowProgress
-            [suiValue]="35">
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-progress-example></doc-progress-progress-example>
       </ng-template>
     </doc-code-sample>
 
@@ -90,12 +76,8 @@
       <h3 sui-header>Label</h3>
       <p>A progress element can contain a label</p>
 
-      <ng-template docDemo #label>
-        <sui-progress
-            suiShowProgress
-            [suiValue]="45">
-          Uploading Files
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-label-example></doc-progress-label-example>
       </ng-template>
     </doc-code-sample>
 
@@ -107,12 +89,8 @@
       <h3 sui-header>Active</h3>
       <p>A progress bar can show activity</p>
 
-      <ng-template docDemo #active>
-        <sui-progress
-            suiState="active"
-            [suiValue]="51">
-          Uploading Files
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-active-example></doc-progress-active-example>
       </ng-template>
     </doc-code-sample>
 
@@ -121,12 +99,8 @@
       <h3 sui-header>Success</h3>
       <p>A progress bar can show a success state</p>
 
-      <ng-template docDemo #success>
-        <sui-progress
-            suiState="success"
-            [suiValue]="100">
-          Everything worked, your file is all ready.
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-success-example></doc-progress-success-example>
       </ng-template>
     </doc-code-sample>
 
@@ -135,12 +109,8 @@
       <h3 sui-header>Warning</h3>
       <p>A progress bar can show a warning state</p>
 
-      <ng-template docDemo #warning>
-        <sui-progress
-            suiState="warning"
-            [suiValue]="100">
-          Your file didn't meet the minimum resolution requirements.
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-warning-example></doc-progress-warning-example>
       </ng-template>
     </doc-code-sample>
 
@@ -149,12 +119,8 @@
       <h3 sui-header>Error</h3>
       <p>A progress bar can show an error state</p>
 
-      <ng-template docDemo #error>
-        <sui-progress
-            suiState="error"
-            [suiValue]="100">
-          There was an error.
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-error-example></doc-progress-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -163,11 +129,8 @@
       <h3 sui-header>Disabled</h3>
       <p>A progress bar can show an error state</p>
 
-      <ng-template docDemo #disabled>
-        <sui-progress
-            disabled
-            [suiValue]="38">
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-disabled-example></doc-progress-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -179,36 +142,8 @@
       <h3 sui-header>Inverted</h3>
       <p>A progress bar can have its colors inverted</p>
 
-      <ng-template docDemo #inverted>
-        <div sui-segment suiInverted>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              [suiValue]="15">
-            Uploading Files
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiState="success"
-              [suiValue]="100">
-            Success
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiState="warning"
-              [suiValue]="100">
-            Warning
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiState="error"
-              [suiValue]="100">
-            Error
-          </sui-progress>
-        </div>
+      <ng-template docDemo>
+        <doc-progress-inverted-example></doc-progress-inverted-example>
       </ng-template>
     </doc-code-sample>
 
@@ -217,45 +152,15 @@
       <h3 sui-header>Attached</h3>
       <p>AA progress bar can show progress of an element</p>
 
-      <ng-template docDemo #attached>
-        <div sui-segment>
-          <sui-progress
-              suiAttached="top"
-              [suiValue]="21">
-          </sui-progress>
-          <p style="margin: 20px">La la la la</p>
-          <sui-progress
-              suiAttached="bottom"
-              [suiValue]="31">
-          </sui-progress>
-        </div>
+      <ng-template docDemo>
+        <doc-progress-attached-example></doc-progress-attached-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCardAttached">
-      <ng-template docDemo #cardAttached>
-        <div sui-card>
-          <div suiCardImage>
-            <img src="/assets/images/wireframes/image.png"/>
-          </div>
-          <div suiCardContent>
-            <a suiCardHeader>Project</a>
-            <div suiCardMeta>
-              <span class="date">Started in 2014</span>
-            </div>
-          </div>
-          <div suiCardExtra>
-            <a>
-              <i sui-icon suiIconType="user"></i>
-              22 Friends
-            </a>
-          </div>
-          <sui-progress
-              suiAttached="bottom"
-              [suiValue]="31">
-          </sui-progress>
-        </div>
+      <ng-template docDemo>
+        <doc-progress-card-attached-example></doc-progress-card-attached-example>
       </ng-template>
     </doc-code-sample>
 
@@ -268,31 +173,8 @@
         Some small sizes may not be able to fit an inlined label
       </div>
 
-      <ng-template docDemo #size>
-        <sui-progress
-            suiSize="tiny"
-            [suiValue]="61">
-          Tiny
-        </sui-progress>
-        <sui-progress
-            suiSize="small"
-            [suiValue]="21">
-          Small
-        </sui-progress>
-        <sui-progress
-            [suiValue]="41">
-          Standard
-        </sui-progress>
-        <sui-progress
-            suiSize="large"
-            [suiValue]="5">
-          Large
-        </sui-progress>
-        <sui-progress
-            suiSize="big"
-            [suiValue]="14">
-          Big
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-size-example></doc-progress-size-example>
       </ng-template>
     </doc-code-sample>
 
@@ -301,59 +183,8 @@
       <h3 sui-header>Colours</h3>
       <p>Can have different colours</p>
 
-      <ng-template docDemo #colour>
-        <sui-progress
-            suiColour="red"
-            [suiValue]="59">
-        </sui-progress>
-        <sui-progress
-            suiColour="orange"
-            [suiValue]="31">
-        </sui-progress>
-        <sui-progress
-            suiColour="yellow"
-            [suiValue]="48">
-        </sui-progress>
-        <sui-progress
-            suiColour="olive"
-            [suiValue]="35">
-        </sui-progress>
-        <sui-progress
-            suiColour="green"
-            [suiValue]="35">
-        </sui-progress>
-        <sui-progress
-            suiColour="teal"
-            [suiValue]="31">
-        </sui-progress>
-        <sui-progress
-            suiColour="blue"
-            [suiValue]="35">
-        </sui-progress>
-        <sui-progress
-            suiColour="violet"
-            [suiValue]="18">
-        </sui-progress>
-        <sui-progress
-            suiColour="purple"
-            [suiValue]="22">
-        </sui-progress>
-        <sui-progress
-            suiColour="pink"
-            [suiValue]="50">
-        </sui-progress>
-        <sui-progress
-            suiColour="brown"
-            [suiValue]="18">
-        </sui-progress>
-        <sui-progress
-            suiColour="grey"
-            [suiValue]="56">
-        </sui-progress>
-        <sui-progress
-            suiColour="black"
-            [suiValue]="45">
-        </sui-progress>
+      <ng-template docDemo>
+        <doc-progress-colour-example></doc-progress-colour-example>
       </ng-template>
     </doc-code-sample>
 
@@ -362,87 +193,8 @@
       <h3 sui-header>Inverted Colours</h3>
       <p>These colors can also be inverted for improved contrast on dark backgrounds</p>
 
-      <ng-template docDemo #invertedColour>
-        <div sui-segment suiInverted>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="red"
-              [suiValue]="59">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="orange"
-              [suiValue]="31">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="yellow"
-              [suiValue]="48">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="olive"
-              [suiValue]="35">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="green"
-              [suiValue]="35">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="teal"
-              [suiValue]="31">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="blue"
-              [suiValue]="35">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="violet"
-              [suiValue]="18">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="purple"
-              [suiValue]="22">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="pink"
-              [suiValue]="50">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="brown"
-              [suiValue]="18">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="grey"
-              [suiValue]="56">
-          </sui-progress>
-          <sui-progress
-              suiInverted
-              suiShowProgress
-              suiColour="black"
-              [suiValue]="45">
-          </sui-progress>
-        </div>
+      <ng-template docDemo>
+        <doc-progress-inverted-colour-example></doc-progress-inverted-colour-example>
       </ng-template>
     </doc-code-sample>
   </div>

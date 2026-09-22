@@ -1,0 +1,5 @@
+options: ISelectOption[] = [
+  { text: 'Option 1', value: 'one' },
+  { text: 'Option 2', value: 'two' },
+  { text: 'Option 3', value: 'three' },
+];

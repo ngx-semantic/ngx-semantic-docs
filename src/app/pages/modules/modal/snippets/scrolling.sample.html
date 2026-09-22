@@ -1,0 +1,25 @@
+<sui-modal
+  suiHeaderText="Profile Picture"
+  [(visible)]="isScrollingModalVisible">
+  <div suiModalContent suiScrollable suiImage>
+    <div sui-image suiSize="medium">
+      <img src="/assets/images/wireframes/image.png"/>
+    </div>
+    <div suiModalDescription>
+      <div sui-header>Modal Header</div>
+      <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
+
+      <img sui-image src="/assets/images/wireframes/paragraph.png"/>
+      @for (d of dummyList; track d) {
+        <div sui-divider></div>
+        <img sui-image src="/assets/images/wireframes/paragraph.png"/>
+      }
+    </div>
+  </div>
+  <div suiModalActions>
+    <div class="black deny" sui-button suiEmphasis="secondary"
+      (click)="isScrollingModalVisible = false">
+      Close
+    </div>
+  </div>
+</sui-modal>

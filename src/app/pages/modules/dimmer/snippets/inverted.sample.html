@@ -1,0 +1,11 @@
+<button sui-button
+        (click)="invertedDimmerVisible = !invertedDimmerVisible">
+  Toggle Dimmer
+</button>
+
+<div sui-segment
+     sui-dimmer
+     suiDimmerInverted
+     [(dimmed)]="invertedDimmerVisible">
+  <doc-wireframe type="short-paragraph"></doc-wireframe>
+</div>

@@ -8,13 +8,8 @@
       <h3 sui-header>Message</h3>
       <p>A basic message</p>
 
-      <ng-template docDemo #msgStd>
-        <div sui-message suiSize="small">
-          <div suiMessageHeader>
-            Changes in Service
-          </div>
-          <p>We updated our privacy policy here to better service our customers. We recommend reviewing the changes.</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-std-example></doc-messages-msg-std-example>
       </ng-template>
     </doc-code-sample>
 
@@ -22,16 +17,8 @@
       <h3 sui-header>List Message</h3>
       <p>A message with a list</p>
 
-      <ng-template docDemo #msgList>
-        <div sui-message>
-          <div suiMessageHeader>
-            New Site Features
-          </div>
-          <ul suiMessageList>
-            <li>You can now have cover images on blog pages</li>
-            <li>Drafts will now auto-save while writing</li>
-          </ul>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-list-example></doc-messages-msg-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -39,30 +26,14 @@
       <h3 sui-header>Icon Message</h3>
       <p>A message can contain an icon</p>
 
-      <ng-template docDemo #msgIcon>
-        <div sui-message suiIcon>
-          <i suiIconType="inbox" sui-icon></i>
-          <div suiMessageContent>
-            <div sui-header>
-              Have you heard about our mailing list?
-            </div>
-            <p>Get the best news in your e-mail every day.</p>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-icon-example></doc-messages-msg-icon-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample [templateCode]="snippetIcon2">
-      <ng-template docDemo #msgIcon2>
-        <div sui-message suiIcon>
-          <i suiIconType="notched circle" suiLoading sui-icon></i>
-          <div suiMessageContent>
-            <div sui-header>
-              Just one second
-            </div>
-            <p>We're fetching that content for you.</p>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-icon2-example></doc-messages-msg-icon2-example>
       </ng-template>
     </doc-code-sample>
 
@@ -70,13 +41,8 @@
       <h3 sui-header>Dissmissable Block</h3>
       <p>A message that the user can choose to hide</p>
 
-      <ng-template docDemo #msgDissmisable>
-        <div sui-message suiDismissible>
-          <div suiMessageHeader>
-            Welcome back!
-          </div>
-          <p>This is a special notification which you can dismiss if you're bored with it.</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-dissmisable-example></doc-messages-msg-dissmisable-example>
       </ng-template>
     </doc-code-sample>
 
@@ -86,10 +52,8 @@
       <h3 sui-header>Hidden</h3>
       <p>A message can be hidden</p>
 
-      <ng-template docDemo #msgHidden>
-        <div sui-message suiHidden>
-          <p>You can't see me</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-hidden-example></doc-messages-msg-hidden-example>
       </ng-template>
     </doc-code-sample>
 
@@ -97,10 +61,8 @@
       <h3 sui-header>Visible</h3>
       <p>A message can be set to visible to force itself to be shown</p>
 
-      <ng-template docDemo #msgVisible>
-        <div sui-message suiVisible>
-          <p>You can always see me</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-visible-example></doc-messages-msg-visible-example>
       </ng-template>
     </doc-code-sample>
 
@@ -111,10 +73,8 @@
       <h3 sui-header>Floating</h3>
       <p>A message can float above content that it is related to</p>
 
-      <ng-template docDemo #msgFloating>
-        <div sui-message suiFloating>
-          <p>Way to go!</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-floating-example></doc-messages-msg-floating-example>
       </ng-template>
     </doc-code-sample>
 
@@ -122,10 +82,8 @@
       <h3 sui-header>Compact</h3>
       <p>A message can only take up the width of its content</p>
 
-      <ng-template docDemo #msgCompact>
-        <div sui-message suiCompact>
-          <p>Get all the best inventions in your e-mail every day. Sign up now!</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-compact-example></doc-messages-msg-compact-example>
       </ng-template>
     </doc-code-sample>
 
@@ -133,44 +91,8 @@
       <h3 sui-header>Attached</h3>
       <p>A message can be formatted to attach itself to other content</p>
 
-      <ng-template docDemo #msgAttached>
-        <div sui-message suiAttached='attached'>
-          <div sui-header>
-            Welcome to our site!
-          </div>
-          <p>Fill out the form below to sign-up for a new account</p>
-        </div>
-        <form sui-form class="attached fluid segment">
-          <div suiFormFields class="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div suiFormField>
-            <label>Username</label>
-            <input placeholder="Username" type="text">
-          </div>
-          <div suiFormField>
-            <label>Password</label>
-            <input type="password">
-          </div>
-          <div suiFormField suiInline>
-            <div class="ui checkbox">
-              <input type="checkbox" id="terms">
-              <label for="terms">I agree to the terms and conditions</label>
-            </div>
-          </div>
-          <div sui-button suiColour='blue'>Submit</div>
-        </form>
-        <div sui-message suiAttached='bottom attached' suiColour='warning'>
-          <i suiIconType="help" sui-icon></i>
-          Already signed up? <a href="#">Login here</a> instead.
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-attached-example></doc-messages-msg-attached-example>
       </ng-template>
     </doc-code-sample>
 
@@ -178,13 +100,8 @@
       <h3 sui-header>Warning</h3>
       <p>A message may be formatted to display warning messages.</p>
 
-      <ng-template docDemo #msgWarning>
-        <div sui-message suiColour='warning' suiDismissible>
-          <div suiMessageHeader>
-            You must register before you can do that!
-          </div>
-          <p>Visit our registration page, then try again</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-warning-example></doc-messages-msg-warning-example>
       </ng-template>
     </doc-code-sample>
 
@@ -192,13 +109,8 @@
       <h3 sui-header>Info</h3>
       <p>A message may be formatted to display information</p>
 
-      <ng-template docDemo #msgInfo>
-        <div sui-message suiColour='info' suiDismissible>
-          <div suiMessageHeader>
-            Was this what you wanted?
-          </div>
-          <p>It's good to see you again</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-info-example></doc-messages-msg-info-example>
       </ng-template>
     </doc-code-sample>
 
@@ -206,13 +118,8 @@
       <h3 sui-header>Positive/Success</h3>
       <p>A message may be formatted to display a positive message</p>
 
-      <ng-template docDemo #msgSuccess>
-        <div sui-message suiColour='positive' suiDismissible>
-          <div suiMessageHeader>
-            You are eligible for a reward
-          </div>
-          <p>Go to your special offers page to see now</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-success-example></doc-messages-msg-success-example>
       </ng-template>
     </doc-code-sample>
 
@@ -220,13 +127,8 @@
       <h3 sui-header>Negative/Error</h3>
       <p>A message may be formatted to display a negative message</p>
 
-      <ng-template docDemo #msgError>
-        <div sui-message suiColour='negative' suiDismissible>
-          <div suiMessageHeader>
-            We're sorry we can't apply that discount
-          </div>
-          <p>That offer has expired</p>
-        </div>
+      <ng-template docDemo>
+        <doc-messages-msg-error-example></doc-messages-msg-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -234,19 +136,8 @@
       <h3 sui-header>Coloured</h3>
       <p>A message can be formatted to be different colours</p>
 
-      <ng-template docDemo #msgColoured>
-        <div sui-message suiColour='red'>Red</div>
-        <div sui-message suiColour='orange'>Orange</div>
-        <div sui-message suiColour='yellow'>Yellow</div>
-        <div sui-message suiColour='olive'>Olive</div>
-        <div sui-message suiColour='green'>Green</div>
-        <div sui-message suiColour='teal'>Teal</div>
-        <div sui-message suiColour='blue'>Blue</div>
-        <div sui-message suiColour='violet'>Violet</div>
-        <div sui-message suiColour='purple'>Purple</div>
-        <div sui-message suiColour='pink'>Pink</div>
-        <div sui-message suiColour='brown'>Brown</div>
-        <div sui-message suiColour='black'>Black</div>
+      <ng-template docDemo>
+        <doc-messages-msg-coloured-example></doc-messages-msg-coloured-example>
       </ng-template>
     </doc-code-sample>
 
@@ -254,14 +145,8 @@
       <h3 sui-header>Size</h3>
       <p>A message can have different sizes</p>
 
-      <ng-template docDemo #msgSizes>
-        <div sui-message suiSize='mini'>This is a mini message</div>
-        <div sui-message suiSize='tiny'>This is a tiny message</div>
-        <div sui-message suiSize='small'>This is a small message</div>
-        <div sui-message suiSize='large'>This is a large message</div>
-        <div sui-message suiSize='big'>This is a big message</div>
-        <div sui-message suiSize='huge'>This is a huge message</div>
-        <div sui-message suiSize='massive'>This is a massive message</div>
+      <ng-template docDemo>
+        <doc-messages-msg-sizes-example></doc-messages-msg-sizes-example>
       </ng-template>
     </doc-code-sample>
   </div>

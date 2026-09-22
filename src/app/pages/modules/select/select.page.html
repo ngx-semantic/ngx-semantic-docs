@@ -11,24 +11,16 @@
       <h3 sui-header>Select</h3>
       <p>A standard select can be used to pick between choices in a form</p>
 
-      <ng-template docDemo #standard>
-        <sui-select
-            suiPlaceholder="Gender"
-            [suiOptions]="genderOptions">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-standard-example></doc-select-standard-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetFluid"
         [componentCode]="snippetStandardTs">
-      <ng-template docDemo #fluid>
-        <sui-select
-            suiFluid
-            name="fluid"
-            suiPlaceholder="Gender"
-            [suiOptions]="genderOptions">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-fluid-example></doc-select-fluid-example>
       </ng-template>
     </doc-code-sample>
 
@@ -38,12 +30,8 @@
       <h3 sui-header>Multiple Selection</h3>
       <p>A selection dropdown can allow multiple selections</p>
 
-      <ng-template docDemo #multiple>
-        <sui-select
-            name="multiple"
-            suiPlaceholder="State"
-            [suiOptions]="states">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-multiple-example></doc-select-multiple-example>
       </ng-template>
     </doc-code-sample>
 
@@ -53,13 +41,8 @@
       <h3 sui-header>Multiple Search Selection</h3>
       <p>A selection dropdown can allow multiple search selections</p>
 
-      <ng-template docDemo #multipleSearch>
-        <sui-select
-            suiSearch
-            name="multiple-search"
-            suiPlaceholder="State"
-            [suiOptions]="states">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-multiple-search-example></doc-select-multiple-search-example>
       </ng-template>
     </doc-code-sample>
 
@@ -69,12 +52,8 @@
       <h3 sui-header>Flag Selection</h3>
       <p>A selection can include flag icons</p>
 
-      <ng-template docDemo #flag>
-        <sui-select
-            name="flag"
-            suiPlaceholder="Select Country"
-            [suiOptions]="countries">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-flag-example></doc-select-flag-example>
       </ng-template>
     </doc-code-sample>
 
@@ -84,12 +63,8 @@
       <h3 sui-header>Image Selection</h3>
       <p>A selection can include images</p>
 
-      <ng-template docDemo #images>
-        <sui-select
-            name="images"
-            suiPlaceholder="Select User"
-            [suiOptions]="persons">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-images-example></doc-select-images-example>
       </ng-template>
     </doc-code-sample>
 
@@ -102,14 +77,8 @@
       <h3 sui-header>Loading</h3>
       <p>A dropdown can show that it is currently loading data</p>
 
-      <ng-template docDemo #loading>
-        <sui-select
-            suiFluid
-            suiMultiple
-            suiLoading
-            suiPlaceholder="Dropdown"
-            [suiOptions]="options">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-loading-example></doc-select-loading-example>
       </ng-template>
     </doc-code-sample>
 
@@ -119,12 +88,8 @@
       <h3 sui-header>Error</h3>
       <p>An errored dropdown can alert a user to a problem</p>
 
-      <ng-template docDemo #error>
-        <sui-select
-            suiError
-            suiPlaceholder="Dropdown"
-            [suiOptions]="options">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-error-example></doc-select-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -134,12 +99,8 @@
       <h3 sui-header>Disabled</h3>
       <p>A disabled dropdown menu or item does not allow user interaction</p>
 
-      <ng-template docDemo #disabled>
-        <sui-select
-            disabled
-            suiPlaceholder="Dropdown"
-            [suiOptions]="options">
-        </sui-select>
+      <ng-template docDemo>
+        <doc-select-disabled-example></doc-select-disabled-example>
       </ng-template>
     </doc-code-sample>
   </div>
