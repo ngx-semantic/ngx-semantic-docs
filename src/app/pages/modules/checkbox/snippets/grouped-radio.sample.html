@@ -1,0 +1,37 @@
+<div sui-form>
+  <div suiFormFields suiGrouped>
+    <label>How often do you use checkboxes?</label>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="once-a-week"
+          [(ngModel)]="groupedRadioValue">
+        Once a week
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="2-3-a-week"
+          [(ngModel)]="groupedRadioValue">
+        2-3 times a week
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="once-a-day"
+          [(ngModel)]="groupedRadioValue">
+        Once a day
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="twice-a-day"
+          [(ngModel)]="groupedRadioValue">
+        Twice a day
+      </sui-checkbox>
+    </div>
+  </div>
+</div>

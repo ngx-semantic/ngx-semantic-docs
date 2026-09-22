@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import snippetFlag from './snippets/flag.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-flags',
@@ -8,11 +9,7 @@ import {Title} from '@angular/platform-browser';
     standalone: false
 })
 export class FlagComponent {
-  snippetFlag = `
-  <i sui-flag suiCountry="ae"></i>
-  <i sui-flag suiCountry="nigeria"></i>
-  <i sui-flag suiCountry="burkina faso"></i>
-  <i sui-flag suiCountry="czech republic"></i>`;
+  snippetFlag = snippetFlag;
 
   constructor(title: Title) {
     title.setTitle('Flag | Ngx Semantic');

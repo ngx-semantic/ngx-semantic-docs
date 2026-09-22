@@ -8,6 +8,7 @@ import {CommonModule} from '@angular/common';
 import {IconComponent} from './icon/icon.component';
 import {ListComponent} from './list/list.component';
 import {FlagComponent} from './flag/flag.component';
+import {FlagExampleComponent} from './flag/flag-example.component';
 import {RailComponent} from './rail/rail.component';
 import {StepComponent} from './step/step.component';
 import {SuiCardModule} from 'ngx-semantic/views/card';
@@ -52,6 +53,7 @@ import {PlaceholderComponent} from './placeholder/placeholder.component';
 @NgModule({
   declarations: [
     FlagComponent,
+    FlagExampleComponent,
     StepComponent,
     ListComponent,
     RailComponent,

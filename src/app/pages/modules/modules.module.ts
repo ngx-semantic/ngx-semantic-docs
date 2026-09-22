@@ -28,6 +28,7 @@ import { SearchComponent } from './search/search.component';
 import { SuiSearchModule } from 'ngx-semantic/modules/search';
 import { AccordionPage } from './accordion/accordion.page';
 import { CheckboxPage } from './checkbox/checkbox.page';
+import { CHECKBOX_EXAMPLES } from './checkbox/checkbox-examples.component';
 import { ProgressPage } from './progress/progress.page';
 import { SuiProgressModule } from 'ngx-semantic/modules/progress';
 import { SuiModalModule } from 'ngx-semantic/modules/modal';
@@ -55,6 +56,7 @@ import { SuiDividerModule } from 'ngx-semantic/elements/divider';
     ModalPage,
     AccordionPage,
     CheckboxPage,
+    ...CHECKBOX_EXAMPLES,
     ProgressPage,
     PopupPage,
     SelectPage,

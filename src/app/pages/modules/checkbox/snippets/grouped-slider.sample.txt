@@ -1,0 +1,1 @@
+groupedSliderValue: string = null;
