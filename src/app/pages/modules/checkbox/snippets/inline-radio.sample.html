@@ -1,0 +1,37 @@
+<div sui-form>
+  <div suiFormFields suiInline>
+    <label>How often do you use checkboxes?</label>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="once-a-week"
+          [(ngModel)]="inlineRadioValue">
+        Once a week
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="2-3-a-week"
+          [(ngModel)]="inlineRadioValue">
+        2-3 times a week
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="once-a-day"
+          [(ngModel)]="inlineRadioValue">
+        Once a day
+      </sui-checkbox>
+    </div>
+    <div suiFormField>
+      <sui-checkbox
+          suiType="radio"
+          suiValue="twice-a-day"
+          [(ngModel)]="inlineRadioValue">
+        Twice a day
+      </sui-checkbox>
+    </div>
+  </div>
+</div>

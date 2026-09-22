@@ -10,168 +10,52 @@
       <h3 sui-header>Checkbox</h3>
       <p>A standard checkbox</p>
 
-      <ng-template docDemo #standard>
-        <sui-checkbox>
-          Make my profile visible
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-standard-example></doc-checkbox-standard-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
-        [templateCode]="snippetBasic">
+        [templateCode]="snippetBasicRadio">
       <h3 sui-header>Radio</h3>
       <p>A checkbox can be formatted as a radio element. This means it is an exclusive option</p>
 
-      <ng-template docDemo #basicRadio>
-        <sui-checkbox
-            suiType="radio">
-          Radio choice
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-basic-radio-example></doc-checkbox-basic-radio-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetInlineRadio"
         [componentCode]="snippetInlineRadioTs">
-      <ng-template docDemo #inlineRadio>
-        <div sui-form>
-          <div suiFormFields suiInline>
-            <label>How often do you use checkboxes?</label>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="once-a-week"
-                  [(ngModel)]="inlineRadioValue">
-                Once a week
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="2-3-a-week"
-                  [(ngModel)]="inlineRadioValue">
-                2-3 times a week
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="once-a-day"
-                  [(ngModel)]="inlineRadioValue">
-                Once a day
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="twice-a-day"
-                  [(ngModel)]="inlineRadioValue">
-                Twice a day
-              </sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-checkbox-inline-radio-example></doc-checkbox-inline-radio-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetGroupedRadio"
         [componentCode]="snippetGroupedRadioTs">
-      <ng-template docDemo #groupedRadio>
-        <div sui-form>
-          <div suiFormFields suiGrouped>
-            <label>How often do you use checkboxes?</label>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="once-a-week"
-                  [(ngModel)]="groupedRadioValue">
-                Once a week
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="2-3-a-week"
-                  [(ngModel)]="groupedRadioValue">
-                2-3 times a week
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="once-a-day"
-                  [(ngModel)]="groupedRadioValue">
-                Once a day
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="radio"
-                  suiValue="twice-a-day"
-                  [(ngModel)]="groupedRadioValue">
-                Twice a day
-              </sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-checkbox-grouped-radio-example></doc-checkbox-grouped-radio-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
-        [templateCode]="snippetBasic">
+        [templateCode]="snippetBasicSlider">
       <h3 sui-header>Slider</h3>
       <p>A checkbox can be formatted to emphasize the current selection state</p>
 
-      <ng-template docDemo #basicSlider>
-        <sui-checkbox
-            suiType="slider">
-          Accept terms and conditions
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-basic-slider-example></doc-checkbox-basic-slider-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetGroupedSlider"
         [componentCode]="snippetGroupedSliderTs">
-      <ng-template docDemo #groupedSlider>
-        <div sui-form>
-          <div suiFormFields suiGrouped>
-            <label>Outbound Throughput</label>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="slider"
-                  suiValue="20mb"
-                  [(ngModel)]="groupedSliderValue">
-                20 mbps max
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="slider"
-                  suiValue="10mb"
-                  [(ngModel)]="groupedSliderValue">
-                10 mbps max
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="slider"
-                  suiValue="5mb"
-                  [(ngModel)]="groupedSliderValue">
-                5 mbps max
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox
-                  suiType="slider"
-                  suiValue="~mb"
-                  [(ngModel)]="groupedSliderValue">
-                Unmetered
-              </sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-checkbox-grouped-slider-example></doc-checkbox-grouped-slider-example>
       </ng-template>
     </doc-code-sample>
 
@@ -180,11 +64,8 @@
       <h3 sui-header>Toggle</h3>
       <p>A checkbox can be formatted to show an on or off choice</p>
 
-      <ng-template docDemo #toggle>
-        <sui-checkbox
-            suiType="toggle">
-          Subscribe to weekly newsletter
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-toggle-example></doc-checkbox-toggle-example>
       </ng-template>
     </doc-code-sample>
 
@@ -196,11 +77,8 @@
       <h3 sui-header>Read-only</h3>
       <p>A checkbox can be read-only and unable to change states</p>
 
-      <ng-template docDemo #readOnly>
-        <sui-checkbox
-            suiReadOnly>
-          Read Only
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-read-only-example></doc-checkbox-read-only-example>
       </ng-template>
     </doc-code-sample>
 
@@ -209,11 +87,8 @@
       <h3 sui-header>Checked</h3>
       <p>A checkbox can be checked</p>
 
-      <ng-template docDemo #checked>
-        <sui-checkbox
-            [checked]="true">
-          Active
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-checked-example></doc-checkbox-checked-example>
       </ng-template>
     </doc-code-sample>
 
@@ -222,10 +97,8 @@
       <h3 sui-header>Indeterminate</h3>
       <p>A checkbox can be indeterminate</p>
 
-      <ng-template docDemo #indeterminate>
-        <sui-checkbox>
-          Indeterminate
-        </sui-checkbox>
+      <ng-template docDemo>
+        <doc-checkbox-indeterminate-example></doc-checkbox-indeterminate-example>
       </ng-template>
     </doc-code-sample>
 
@@ -234,17 +107,8 @@
       <h3 sui-header>Disabled</h3>
       <p>A checkbox can be read-only and unable to change states</p>
 
-      <ng-template docDemo #disabled>
-        <div>
-          <sui-checkbox disabled>
-            Disabled
-          </sui-checkbox>
-        </div>
-        <div>
-          <sui-checkbox disabled suiType="toggle">
-            Disabled
-          </sui-checkbox>
-        </div>
+      <ng-template docDemo>
+        <doc-checkbox-disabled-example></doc-checkbox-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -256,16 +120,8 @@
       <h3 sui-header>Fitted</h3>
       <p>A fitted checkbox does not leave padding for a label</p>
 
-      <ng-template docDemo #fitted>
-        <div sui-segment suiCompact suiFloated="left floated">
-          <sui-checkbox suiFitted></sui-checkbox>
-        </div>
-        <div sui-segment suiCompact suiFloated="left floated">
-          <sui-checkbox suiFitted suiType="slider"></sui-checkbox>
-        </div>
-        <div sui-segment suiCompact suiFloated="left floated">
-          <sui-checkbox suiFitted suiType="toggle"></sui-checkbox>
-        </div>
+      <ng-template docDemo>
+        <doc-checkbox-fitted-example></doc-checkbox-fitted-example>
       </ng-template>
     </doc-code-sample>
   </div>
