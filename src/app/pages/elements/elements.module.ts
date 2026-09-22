@@ -50,8 +50,20 @@ import {SuiContainerModule} from 'ngx-semantic/elements/container';
 import {SuiPlaceholderModule} from 'ngx-semantic/elements/placeholder';
 import {PlaceholderComponent} from './placeholder/placeholder.component';
 
+import { BUTTONS_EXAMPLES } from './buttons/buttons-examples.component';
+
+import { LIST_EXAMPLES } from './list/list-examples.component';
+
+import { SEGMENT_EXAMPLES } from './segment/segment-examples.component';
+
+import { INPUT_EXAMPLES } from './input/input-examples.component';
+
 @NgModule({
   declarations: [
+    ...INPUT_EXAMPLES,
+    ...SEGMENT_EXAMPLES,
+    ...LIST_EXAMPLES,
+    ...BUTTONS_EXAMPLES,
     FlagComponent,
     FlagExampleComponent,
     StepComponent,

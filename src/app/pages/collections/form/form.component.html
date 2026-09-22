@@ -9,99 +9,15 @@
       <h3 sui-header>Form</h3>
       <p>A form</p>
 
-      <ng-template docDemo #basic>
-        <form sui-form>
-          <div suiFormField>
-            <label>First Name</label>
-            <input type="text" name="first-name" placeholder="First Name">
-          </div>
-          <div suiFormField>
-            <label>Last Name</label>
-            <input type="text" name="last-name" placeholder="Last Name">
-          </div>
-          <div suiFormField>
-            <sui-checkbox>I agree to the terms and conditions</sui-checkbox>
-          </div>
-          <button sui-button type="submit">Submit</button>
-        </form>
+      <ng-template docDemo>
+        <doc-form-basic-example></doc-form-basic-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetBasicAlt">
-      <ng-template docDemo #basicAlt>
-        <form sui-form>
-          <h4 sui-header suiDividing>Shipping Information</h4>
-          <div suiFormField>
-            <label>Name</label>
-            <div suiFormFields suiWidth="two">
-              <div suiFormField>
-                <input type="text" name="shipping[first-name]" placeholder="First Name">
-              </div>
-              <div suiFormField>
-                <input type="text" name="shipping[last-name]" placeholder="Last Name">
-              </div>
-            </div>
-          </div>
-          <div suiFormField>
-            <label>Billing Address</label>
-            <div suiFormFields>
-              <div suiFormField suiWidth="twelve">
-                <input type="text" name="shipping[address]" placeholder="Street Address">
-              </div>
-              <div suiFormField suiWidth="four">
-                <input type="text" name="shipping[address-2]" placeholder="Apt #">
-              </div>
-            </div>
-          </div>
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>State</label>
-              <sui-select suiPlaceholder="State" [suiOptions]="states"></sui-select>
-            </div>
-            <div suiFormField>
-              <label>Country</label>
-              <sui-select suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
-            </div>
-          </div>
-          <h4 sui-header suiDividing>Billing Information</h4>
-          <div suiFormField>
-            <label>Card Type</label>
-            <sui-select suiPlaceholder="Type" [suiOptions]="cards"></sui-select>
-          </div>
-          <div suiFormFields>
-            <div suiFormField suiWidth="seven">
-              <label>Card Number</label>
-              <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
-            </div>
-            <div suiFormField suiWidth="three">
-              <label>CVC</label>
-              <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
-            </div>
-            <div suiFormField suiWidth="six">
-              <label>Expiration</label>
-              <div suiFormFields suiWidth="two">
-                <div suiFormField>
-                  <sui-select suiPlaceholder="Month" [suiOptions]="months"></sui-select>
-                </div>
-                <div suiFormField>
-                  <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
-                </div>
-              </div>
-            </div>
-          </div>
-          <h4 sui-header suiDividing>Receipt</h4>
-          <div suiFormField>
-            <label>Send Receipt To:</label>
-            <sui-select suiPlaceholder="Saved Contacts" [suiOptions]="contacts"></sui-select>
-          </div>
-          <div sui-segment>
-            <div suiFormField>
-              <sui-checkbox suiType="toggle">Do not include a receipt in the package</sui-checkbox>
-            </div>
-          </div>
-          <div sui-button tabindex="0">Submit Order</div>
-        </form>
+      <ng-template docDemo>
+        <doc-form-basic-alt-example></doc-form-basic-alt-example>
       </ng-template>
     </doc-code-sample>
 
@@ -114,13 +30,8 @@
       <h3 sui-header>Field</h3>
       <p>A field is a form element containing a label and an input</p>
 
-      <ng-template docDemo #userInput>
-        <div sui-form>
-          <div suiFormField>
-            <label>User Input</label>
-            <input type="text">
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-user-input-example></doc-form-user-input-example>
       </ng-template>
     </doc-code-sample>
 
@@ -133,65 +44,22 @@
         Field groups automatically receive responsive styling, swapping to one field per row on mobile devices.
       </div>
 
-      <ng-template docDemo #fields>
-        <div sui-form>
-          <div suiFormFields>
-            <div suiFormField>
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField>
-              <label>Middle name</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField>
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-fields-example></doc-form-fields-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetFieldsWidth">
-      <ng-template docDemo #fieldsWidth>
-        <div sui-form>
-          <div suiFormFields suiWidth="three">
-            <div suiFormField>
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField>
-              <label>Middle name</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField>
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-fields-width-example></doc-form-fields-width-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetFieldsInline">
-      <ng-template docDemo #fieldsInline>
-        <div sui-form>
-          <div suiFormFields suiInline>
-            <div suiFormField suiWidth="eight">
-              <label>Name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField suiWidth="three">
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField suiWidth="five">
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-fields-inline-example></doc-form-fields-inline-example>
       </ng-template>
     </doc-code-sample>
 
@@ -204,17 +72,8 @@
         To specify an approximate text area size use the rows attribute.
       </div>
 
-      <ng-template docDemo #textArea>
-        <div sui-form>
-          <div suiFormField>
-            <label>Text</label>
-            <textarea></textarea>
-          </div>
-          <div suiFormField>
-            <label>Short Text</label>
-            <textarea rows="2"></textarea>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-text-area-example></doc-form-text-area-example>
       </ng-template>
     </doc-code-sample>
 
@@ -227,19 +86,8 @@
         UI checkbox are special, styled versions of standard HTML checkboxes
       </div>
 
-      <ng-template docDemo #checkbox>
-        <div sui-form>
-          <div suiFormField suiInline>
-            <sui-checkbox>Checkbox</sui-checkbox>
-          </div>
-          <div suiFormField suiInline>
-            <sui-checkbox suiType="slider">Slider</sui-checkbox>
-            <label></label>
-          </div>
-          <div suiFormField suiInline>
-            <sui-checkbox suiType="toggle">Toggle</sui-checkbox>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-checkbox-example></doc-form-checkbox-example>
       </ng-template>
     </doc-code-sample>
 
@@ -248,39 +96,8 @@
       <h3 sui-header>Radio Checkbox</h3>
       <p>A form can contain a <a routerLink="/modules/checkbox">radio checkbox</a></p>
 
-      <ng-template docDemo #radio>
-        <div sui-form>
-          <div suiFormFields>
-            <label>Select your favorite fruit:</label>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Apples</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Oranges</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Pears</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
-            </div>
-          </div>
-          <div suiFormFields suiGrouped>
-            <label>Select your second favorite fruit:</label>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Apples</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Oranges</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Pears</sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">Grapefruit</sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-radio-example></doc-form-radio-example>
       </ng-template>
     </doc-code-sample>
 
@@ -289,25 +106,15 @@
       <h3 sui-header>Dropdown</h3>
       <p>A form can contain a <a routerLink="/modules/dropdown">dropdown</a></p>
 
-      <ng-template docDemo #dropdown>
-        <div sui-form>
-          <div suiFormField>
-            <label>Gender</label>
-            <sui-select suiPlaceholder="Gender" [suiOptions]="gender"></sui-select>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-dropdown-example></doc-form-dropdown-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetDropdownAlt">
-      <ng-template docDemo #dropdownAlt>
-        <div sui-form>
-          <div suiFormField>
-            <label>Country</label>
-            <sui-select suiSearch suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-dropdown-alt-example></doc-form-dropdown-alt-example>
       </ng-template>
     </doc-code-sample>
 
@@ -316,13 +123,8 @@
       <h3 sui-header>Multiple Select</h3>
       <p>A multiple select is used to include several choices with one form field</p>
 
-      <ng-template docDemo #multipleSelect>
-        <div sui-form>
-          <div suiFormField>
-            <label>Country</label>
-            <sui-select suiMultiple suiPlaceholder="Country" [suiOptions]="countries"></sui-select>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-multiple-select-example></doc-form-multiple-select-example>
       </ng-template>
     </doc-code-sample>
 
@@ -331,16 +133,8 @@
       <h3 sui-header>HTML Select</h3>
       <p>A multiple select is used to include several choices with one form field</p>
 
-      <ng-template docDemo #htmlSelect>
-        <div sui-form>
-          <div suiFormField>
-            <select>
-              <option value="">Gender</option>
-              <option value="1">Male</option>
-              <option value="0">Female</option>
-            </select>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-html-select-example></doc-form-html-select-example>
       </ng-template>
     </doc-code-sample>
 
@@ -355,16 +149,8 @@
         inside a form are hidden by default.
       </div>
 
-      <ng-template docDemo #message>
-        <div sui-form>
-          <div sui-message>
-            <div class="header">We had some issues</div>
-            <ul class="list">
-              <li>Please enter your first name</li>
-              <li>Please enter your last name</li>
-            </ul>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-message-example></doc-form-message-example>
       </ng-template>
     </doc-code-sample>
 
@@ -377,14 +163,8 @@
       <h3 sui-header>Loading</h3>
       <p>If a form is in loading state, it will automatically show a loading indicator.</p>
 
-      <ng-template docDemo #loading>
-        <div sui-form suiLoading>
-          <div suiFormField>
-            <label>E-mail</label>
-            <input type="email" placeholder="joe@schmoe.com">
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-loading-example></doc-form-loading-example>
       </ng-template>
     </doc-code-sample>
 
@@ -393,18 +173,8 @@
       <h3 sui-header>Success</h3>
       <p>If a form is in an success state, it will automatically show any success message blocks.</p>
 
-      <ng-template docDemo #success>
-        <div sui-form suiState="success">
-          <div suiFormField>
-            <label>E-mail</label>
-            <input type="email" placeholder="joe@schmoe.com">
-          </div>
-          <div sui-message suiState="success">
-            <div suiMessageHeader>Form Completed</div>
-            <p>Youre all signed up for the newsletter.</p>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-success-example></doc-form-success-example>
       </ng-template>
     </doc-code-sample>
 
@@ -413,18 +183,8 @@
       <h3 sui-header>Error</h3>
       <p>If a form is in an error state, it will automatically show any error message blocks.</p>
 
-      <ng-template docDemo #error>
-        <div sui-form suiState="error">
-          <div suiFormField>
-            <label>E-mail</label>
-            <input type="email" placeholder="joe@schmoe.com">
-          </div>
-          <div sui-message suiState="error">
-            <div suiMessageHeader>Action Forbidden</div>
-            <p>You can only sign up for an account once with a given e-mail address.</p>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-error-example></doc-form-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -433,21 +193,8 @@
       <h3 sui-header>Warning</h3>
       <p>If a form is in warning state, it will automatically show any warning message block.</p>
 
-      <ng-template docDemo #warning>
-        <div sui-form suiState="warning">
-          <div suiFormField>
-            <label>E-mail</label>
-            <input type="email" placeholder="joe@schmoe.com">
-          </div>
-          <div sui-message suiState="warning">
-            <div suiMessageHeader>Action Forbidden</div>
-            <ul suiMessageList>
-              <li>That e-mail has been subscribed, but you have not yet clicked the verification link in your e-mail.
-              </li>
-            </ul>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-warning-example></doc-form-warning-example>
       </ng-template>
     </doc-code-sample>
 
@@ -456,28 +203,8 @@
       <h3 sui-header>Field Error</h3>
       <p>Individual fields may display an error state</p>
 
-      <ng-template docDemo #fieldError>
-        <div sui-form>
-          <div suiFormFields suiWidth="two">
-            <div suiFormField suiError>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div suiFormField suiError>
-            <label>Gender</label>
-            <sui-select suiPlaceholder="Gender" [suiOptions]="gender"></sui-select>
-          </div>
-          <div suiFormField suiError suiInline>
-            <sui-checkbox>
-              I agree to the Terms and Conditions
-            </sui-checkbox>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-field-error-example></doc-form-field-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -486,19 +213,8 @@
       <h3 sui-header>Disabled Field</h3>
       <p>Individual fields may be disabled</p>
 
-      <ng-template docDemo #disabled>
-        <div sui-form>
-          <div suiFormFields suiWidth="two">
-            <div suiFormField disabled>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField disabled>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-disabled-example></doc-form-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -507,19 +223,8 @@
       <h3 sui-header>Read-Only Field</h3>
       <p>Individual fields may be read only</p>
 
-      <ng-template docDemo #readOnly>
-        <div sui-form>
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="Read Only" readonly="" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Read Only" readonly="" type="text">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-read-only-example></doc-form-read-only-example>
       </ng-template>
     </doc-code-sample>
 
@@ -532,134 +237,50 @@
       <h3 sui-header>Size</h3>
       <p>A form can vary in size</p>
 
-      <ng-template docDemo #sizeMini>
-        <div sui-form suiSize="mini">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-mini-example></doc-form-size-mini-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeTiny">
-      <ng-template docDemo #sizeTiny>
-        <div sui-form suiSize="tiny">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-tiny-example></doc-form-size-tiny-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeSmall">
-      <ng-template docDemo #sizeSmall>
-        <div sui-form suiSize="small">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-small-example></doc-form-size-small-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeLarge">
-      <ng-template docDemo #sizeLarge>
-        <div sui-form suiSize="large">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-large-example></doc-form-size-large-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeBig">
-      <ng-template docDemo #sizeBig>
-        <div sui-form suiSize="big">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-big-example></doc-form-size-big-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeHuge">
-      <ng-template docDemo #sizeHuge>
-        <div sui-form suiSize="huge">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-huge-example></doc-form-size-huge-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeMassive">
-      <ng-template docDemo #sizeMassive>
-        <div sui-form suiSize="massive">
-          <div suiFormFields suiWidth="two">
-            <div suiFormField>
-              <label>First Name</label>
-              <input placeholder="First Name" type="text">
-            </div>
-            <div suiFormField>
-              <label>Last Name</label>
-              <input placeholder="Last Name" type="text">
-            </div>
-          </div>
-          <div sui-button>Submit</div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-size-massive-example></doc-form-size-massive-example>
       </ng-template>
     </doc-code-sample>
 
@@ -668,33 +289,8 @@
       <h3 sui-header>Equal Width Form</h3>
       <p>Forms can automatically divide fields to be equal width</p>
 
-      <ng-template docDemo #equalWidth>
-        <div sui-form suiEqualWidth>
-          <div suiFormFields>
-            <div suiFormField>
-              <label>Username</label>
-              <input type="text" placeholder="Username">
-            </div>
-            <div suiFormField>
-              <label>Password</label>
-              <input type="password">
-            </div>
-          </div>
-          <div suiFormFields>
-            <div suiFormField>
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField>
-              <label>Middle name</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField>
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-equal-width-example></doc-form-equal-width-example>
       </ng-template>
     </doc-code-sample>
 
@@ -703,25 +299,8 @@
       <h3 sui-header>Inverted</h3>
       <p>A form on a dark background may have to invert its colour scheme</p>
 
-      <ng-template docDemo #inverted>
-        <div sui-segment suiInverted>
-          <div sui-form suiInverted>
-            <div suiFormFields suiWidth="two">
-              <div suiFormField>
-                <label>Username</label>
-                <input type="text" placeholder="Username">
-              </div>
-              <div suiFormField>
-                <label>Password</label>
-                <input type="password">
-              </div>
-            </div>
-            <div suiFormField suiInline>
-              <sui-checkbox>I agree to terms and conditions</sui-checkbox>
-            </div>
-            <div sui-button>Submit</div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-inverted-example></doc-form-inverted-example>
       </ng-template>
     </doc-code-sample>
 
@@ -734,13 +313,8 @@
       <h3 sui-header>Inline Field</h3>
       <p>A field can have its label next to instead of above it.</p>
 
-      <ng-template docDemo #inline>
-        <div sui-form>
-          <div suiFormField suiInline>
-            <label>Last name</label>
-            <input type="text" placeholder="Full Name">
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-inline-example></doc-form-inline-example>
       </ng-template>
     </doc-code-sample>
 
@@ -749,45 +323,8 @@
       <h3 sui-header>Width</h3>
       <p>A field can specify its width in grid columns</p>
 
-      <ng-template docDemo #width>
-        <div sui-form>
-          <div suiFormFields>
-            <div suiFormField suiWidth="six">
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField suiWidth="four">
-              <label>Middle</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField suiWidth="six">
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-          <div suiFormFields>
-            <div suiFormField suiWidth="two">
-              <input type="text" placeholder="2 Wide">
-            </div>
-            <div suiFormField suiWidth="twelve">
-              <input type="text" placeholder="12 Wide">
-            </div>
-            <div suiFormField suiWidth="two">
-              <input type="text" placeholder="2 Wide">
-            </div>
-          </div>
-          <div suiFormFields>
-            <div suiFormField suiWidth="eight">
-              <input type="text" placeholder="8 Wide">
-            </div>
-            <div suiFormField suiWidth="six">
-              <input type="text" placeholder="6 Wide">
-            </div>
-            <div suiFormField suiWidth="two">
-              <input type="text" placeholder="2 Wide">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-width-example></doc-form-width-example>
       </ng-template>
     </doc-code-sample>
 
@@ -796,16 +333,8 @@
       <h3 sui-header>Required</h3>
       <p>A field can show that input is mandatory</p>
 
-      <ng-template docDemo #required>
-        <div sui-form>
-          <div suiFormField suiRequired>
-            <label>Last name</label>
-            <input type="text" placeholder="Full Name">
-          </div>
-          <div suiFormField suiInline suiRequired>
-            <sui-checkbox>I agree to terms and conditions</sui-checkbox>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-required-example></doc-form-required-example>
       </ng-template>
     </doc-code-sample>
 
@@ -818,23 +347,8 @@
       <h3 sui-header>Evenly Divided</h3>
       <p>Fields can have their widths divided evenly.</p>
 
-      <ng-template docDemo #evenlyDivided>
-        <div sui-form>
-          <div suiFormFields suiWidth="three">
-            <div suiFormField>
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField>
-              <label>Middle name</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField>
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-evenly-divided-example></doc-form-evenly-divided-example>
       </ng-template>
     </doc-code-sample>
 
@@ -843,31 +357,8 @@
       <h3 sui-header>Grouped Fields</h3>
       <p>Fields can show related choices.</p>
 
-      <ng-template docDemo #grouped>
-        <div sui-form>
-          <div suiFormFields suiGrouped>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Apples
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Oranges
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Pears
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Grapefruit
-              </sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-grouped-example></doc-form-grouped-example>
       </ng-template>
     </doc-code-sample>
 
@@ -876,33 +367,8 @@
       <h3 sui-header>Equal Width Fields</h3>
       <p>Fields can automatically divide fields to be equal width.</p>
 
-      <ng-template docDemo #equalWidthGroup>
-        <div sui-form>
-          <div suiFormFields>
-            <div suiFormField>
-              <label>Username</label>
-              <input type="text" placeholder="Username">
-            </div>
-            <div suiFormField>
-              <label>Password</label>
-              <input type="password">
-            </div>
-          </div>
-          <div suiFormFields suiEqualWidth>
-            <div suiFormField>
-              <label>First name</label>
-              <input type="text" placeholder="First Name">
-            </div>
-            <div suiFormField>
-              <label>Middle name</label>
-              <input type="text" placeholder="Middle Name">
-            </div>
-            <div suiFormField>
-              <label>Last name</label>
-              <input type="text" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-equal-width-group-example></doc-form-equal-width-group-example>
       </ng-template>
     </doc-code-sample>
 
@@ -911,52 +377,15 @@
       <h3 sui-header>Inline Fields</h3>
       <p>Multiple fields may be inline in a row.</p>
 
-      <ng-template docDemo #inlineGroup>
-        <div sui-form>
-          <div suiFormFields suiInline>
-            <label>Phone Number</label>
-            <div suiFormField>
-              <input type="text" placeholder="(xxx)">
-            </div>
-            <div suiFormField>
-              <input type="text" placeholder="xxx">
-            </div>
-            <div suiFormField>
-              <input type="text" placeholder="xxxx">
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-inline-group-example></doc-form-inline-group-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetInlineGroupAlt">
-      <ng-template docDemo #inlineGroupAlt>
-        <div sui-form>
-          <div suiFormFields suiInline>
-            <label>What's your favourite fruit?</label>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Apples
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Oranges
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Pears
-              </sui-checkbox>
-            </div>
-            <div suiFormField>
-              <sui-checkbox suiType="radio">
-                Grapefruit
-              </sui-checkbox>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-form-inline-group-alt-example></doc-form-inline-group-alt-example>
       </ng-template>
     </doc-code-sample>
   </div>

@@ -12,159 +12,32 @@
         A list groups related content
       </p>
 
-      <ng-template docDemo #divStandard>
-        <div  sui-list>
-          <div suiListItem>
-            Apples
-          </div>
-          <div suiListItem>
-            Pears
-          </div>
-          <div suiListItem>
-            Oranges
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-div-standard-example></doc-list-div-standard-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetList1">
 
-      <ng-template docDemo #divStandard1>
-        <div  sui-list>
-          <div suiListItem>
-            <i sui-icon suiIconType="users"></i>
-            <div suiMessageContent>
-              Semantic UI
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="marker"></i>
-            <div suiMessageContent>
-              New York, NY
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="mail"></i>
-            <div suiMessageContent>
-              <a href="mailto:jack@semantic-ui.com">jack&#64;semantic-ui.com</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="linkify"></i>
-            <div suiMessageContent>
-              <a href="http://www.semantic-ui.com">semantic-ui.com</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-div-standard1-example></doc-list-div-standard1-example>
       </ng-template>
     </doc-code-sample>
     
     <doc-code-sample
         [templateCode]="snippetList2">
 
-      <ng-template docDemo #divStandard2>
-        <div sui-list suiDivided="true" SuiRelaxation="relaxed">
-          <div suiListItem>
-            <i sui-icon suiIconType="github" suiSize="large"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Semantic-Org/Semantic-UI</a>
-              <div>Updated 10 mins ago</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="github" suiSize="large"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Docs</a>
-              <div>Updated 22 mins ago</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="github" suiSize="large"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Semantic-Org/Semantic-UI-Meteor</a>
-              <div>Updated 34 mins ago</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-div-standard2-example></doc-list-div-standard2-example>
       </ng-template>
     </doc-code-sample>
     
     <doc-code-sample
         [templateCode]="snippetList3">
 
-      <ng-template docDemo #divStandard3>
-        <div sui-list>
-          <div suiListItem>
-            <i sui-icon suiIconType="folder"></i>
-            <div suiMessageContent>
-              <div sui-header suiSize="tiny">src</div>
-              <div>Source files for project</div>
-              <div sui-list>
-                <div suiListItem>
-                  <i sui-icon suiIconType="folder"></i>
-                  <div suiMessageContent>
-                    <div sui-header suiSize="tiny">site</div>
-                    <div>Your site's theme</div>
-                  </div>
-                </div>
-                <div suiListItem>
-                  <i sui-icon suiIconType="folder"></i>
-                  <div suiMessageContent>
-                    <div sui-header suiSize="tiny">themes</div>
-                    <div>Packaged theme files</div>
-                    <div sui-list>
-                      <div suiListItem>
-                        <i sui-icon suiIconType="folder"></i>
-                        <div suiMessageContent>
-                          <div sui-header suiSize="tiny">default</div>
-                          <div>Default packaged theme</div>
-                        </div>
-                      </div>
-                      <div suiListItem>
-                        <i sui-icon suiIconType="folder"></i>
-                        <div suiMessageContent>
-                          <div sui-header suiSize="tiny">my_theme</div>
-                          <div>Packaged themes are also available in this folder</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div suiListItem>
-                  <i sui-icon suiIconType="file"></i>
-                  <div suiMessageContent>
-                    <div sui-header suiSize="tiny">theme.config</div>
-                    <div>Config file for setting packaged themes</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="folder"></i>
-            <div suiMessageContent>
-              <div sui-header suiSize="tiny">dist</div>
-              <div>Compiled CSS and JS files</div>
-              <div sui-list>
-                <div suiListItem>
-                  <i sui-icon suiIconType="folder"></i>
-                  <div suiMessageContent>
-                    <div sui-header suiSize="tiny">components</div>
-                    <div>Individual component CSS and JS</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="file"></i>
-            <div suiMessageContent>
-              <div sui-header suiSize="tiny">semantic.json</div>
-              <div>Contains build settings for gulp</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-div-standard3-example></doc-list-div-standard3-example>
       </ng-template>
     </doc-code-sample>
 
@@ -175,20 +48,8 @@
         A list can mark items with a bullet
       </p>
 
-      <ng-template docDemo #bulletedList>
-        <div sui-list suiBulleted="true">
-          <div suiListItem>Gaining Access</div>
-          <div suiListItem>Inviting Friends</div>
-          <div suiListItem>
-            <div>Benefits</div>
-            <div sui-list>
-              <a suiListItem href="#">Link to somewhere</a>
-              <div suiListItem>Rebates</div>
-              <div suiListItem>Discounts</div>
-            </div>
-          </div>
-          <div suiListItem>Warranty</div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-bulleted-list-example></doc-list-bulleted-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -200,37 +61,16 @@
         For convenience, a simple bulleted list can also use <code><b>ul</b></code> tag.
       </div>
 
-      <ng-template docDemo #bulletedList1>
-        <ul sui-list>
-          <li>Gaining Access</li>
-          <li>Inviting Friends</li>
-          <li>Benefits
-            <ul>
-              <li>Use Anywhere</li>
-              <li>Rebates</li>
-              <li>Discounts</li>
-            </ul>
-          </li>
-          <li>Warranty</li>
-        </ul>
+      <ng-template docDemo>
+        <doc-list-bulleted-list1-example></doc-list-bulleted-list1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetBulleted2">
 
-      <ng-template docDemo #bulletedList2>
-        <div sui-list suiBulleted="true" suiHorizontal="true">
-          <a suiListItem>
-            About Us
-          </a>
-          <a suiListItem>
-            Sitemap
-          </a>
-          <a suiListItem>
-            Contact
-          </a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-bulleted-list2-example></doc-list-bulleted-list2-example>
       </ng-template>
     </doc-code-sample>
     
@@ -241,20 +81,8 @@
         A list can be ordered numerically
       </p>
 
-      <ng-template docDemo #orderedList>
-        <div sui-list suiOrdered="true">
-          <a suiListItem>Getting Started</a>
-          <a suiListItem>Introduction</a>
-          <div suiListItem>
-            <a>Languages</a>
-            <div sui-list>
-              <a suiListItem>HTML</a>
-              <a suiListItem>Javascript</a>
-              <a suiListItem>CSS</a>
-            </div>
-          </div>
-          <a suiListItem>Review</a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-ordered-list-example></doc-list-ordered-list-example>
       </ng-template>
     </doc-code-sample>
     
@@ -266,19 +94,8 @@
         An ordered list can also use the <code><b>ol</b></code> tag.
      </div>
 
-      <ng-template docDemo #orderedList1>
-        <ol sui-list>
-          <li>Signing Up</li>
-          <li>User Benefits</li>
-          <li>User Types
-            <ol>
-              <li>Admin</li>
-              <li>Power User</li>
-              <li>Regular User</li>
-            </ol>
-          </li>
-          <li>Deleting Your Account</li>
-        </ol>
+      <ng-template docDemo>
+        <doc-list-ordered-list1-example></doc-list-ordered-list1-example>
       </ng-template>
     </doc-code-sample>
     
@@ -290,19 +107,8 @@
         You can also manually specify a value for an ordered list using <code><b>data-value</b></code> on a <code><b>div</b></code>, or <code><b>value</b></code> on a <code><b>li</b></code>
      </div>
 
-      <ng-template docDemo #orderedList2>
-        <ol sui-list>
-          <li value="*">Signing Up</li>
-          <li value="*">User Benefits</li>
-          <li value="*">User Types
-            <ol>
-              <li value="-">Admin</li>
-              <li value="-">Power User</li>
-              <li value="-">Regular User</li>
-            </ol>
-          </li>
-          <li value="*">Deleting Your Account</li>
-        </ol>
+      <ng-template docDemo>
+        <doc-list-ordered-list2-example></doc-list-ordered-list2-example>
       </ng-template>
     </doc-code-sample>
 
@@ -313,13 +119,8 @@
         A list can be specially formatted for navigation links
       </p>
 
-      <ng-template docDemo #linkList>
-        <div sui-list suiLink="true">
-          <div suiListItem class="active">Home</div>
-          <a suiListItem>About</a>
-          <a suiListItem>Jobs</a>
-          <a suiListItem>Team</a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-link-list-example></doc-list-link-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -332,18 +133,8 @@
         A list item can contain a set of items
       </p>
 
-      <ng-template docDemo #itemList>
-        <div sui-list>
-          <div suiListItem>
-            1
-          </div>
-          <div suiListItem>
-            2
-          </div>
-          <div suiListItem>
-            3
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-item-list-example></doc-list-item-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -354,27 +145,8 @@
         A list item can contain an icon
       </p>
 
-      <ng-template docDemo #iconList>
-        <div sui-list>
-          <a suiListItem>
-            <i sui-icon suiIconType="help"></i>
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Floated Icon</div>
-              <div>This text will always have a left margin to make sure it sits alongside your icon</div>
-            </div>
-          </a>
-          <a suiListItem>
-            <i sui-icon suiIconType="right triangle"></i>
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Icon Alignment</div>
-              <div>Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
-            </div>
-          </a>
-          <div suiListItem>
-            <i sui-icon suiIconType="help"></i>
-            Inline Text
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-icon-list-example></doc-list-icon-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -385,37 +157,8 @@
         A list item can contain an image
       </p>
 
-      <ng-template docDemo #imageList>
-        <div sui-list>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/rachel.png">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Rachel</a>
-              <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Lindsay</a>
-              <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/matthew.png">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Matthew</a>
-              <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Jenny Hess</a>
-              <div>Last seen watching <a><b>Twin Peaks</b></a> 3 days ago.</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-image-list-example></doc-list-image-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -426,32 +169,15 @@
         A list can contain links
       </p>
 
-      <ng-template docDemo #linkList1>
-        <div sui-list>
-          <a suiListItem>What is a FAQ?</a>
-          <a suiListItem>Who is our user?</a>
-          <a suiListItem>Where is our office located?</a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-link-list1-example></doc-list-link-list1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLink2">
-      <ng-template docDemo #linkList2>
-        <div sui-list>
-          <div suiListItem>
-            <a sui-header suiSize="small">Header</a>
-            <div>
-              Click a link in our <a>description</a>.
-            </div>
-          </div>
-          <div suiListItem>
-            <a sui-header suiSize="small">Learn More</a>
-            <div>
-              Learn more about this site on <a>our FAQ page</a>.
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-link-list2-example></doc-list-link-list2-example>
       </ng-template>
     </doc-code-sample>
 
@@ -462,25 +188,8 @@
         A list item can contain a header
       </p>
 
-      <ng-template docDemo #headerList>
-        <div sui-list>
-          <div suiListItem>
-            <div sui-header suiSize="small">New York City</div>
-            A lovely city
-          </div>
-          <div suiListItem>
-            <div sui-header suiSize="small">Chicago</div>
-            Also quite a lovely city
-          </div>
-          <div suiListItem>
-            <div sui-header suiSize="small">Los Angeles</div>
-            Sometimes can be a lovely city
-          </div>
-          <div suiListItem>
-            <div sui-header suiSize="small">San Francisco</div>
-            What a lovely city
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-header-list-example></doc-list-header-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -491,37 +200,8 @@
         A list item can contain a description
       </p>
 
-      <ng-template docDemo #descriptionList>
-        <div sui-list>
-          <div suiListItem>
-            <i sui-icon suiIconType="map marker"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Krolewskie Jadlo</a>
-              <div>An excellent polish restaurant, quick delivery and hearty, filling meals.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="map marker"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Xian Famous Foods</a>
-              <div>A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles and lamb burgers.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="map marker"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Sapporo Haru</a>
-              <div>Greenpoint's best choice for quick and delicious sushi.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <i sui-icon suiIconType="map marker"></i>
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Enid's</a>
-              <div>At night a bar, during the day a delicious brunch spot.</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-description-list-example></doc-list-description-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -534,78 +214,24 @@
         A list can be formatted to have items appear horizontally
       </p>
 
-      <ng-template docDemo #horizontalList>
-        <div sui-list suiHorizontal="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Tom</div>
-              Top Contributor
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian Rocha</div>
-              Admin
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/matt.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Matt</div>
-              Top Rated User
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-horizontal-list-example></doc-list-horizontal-list-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetHorizontal1">
 
-      <ng-template docDemo #horizontalList1>
-        <div sui-list suiHorizontal="true" suiOrdered="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/tom.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Tom</div>
-              Top Contributor
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian Rocha</div>
-              Admin
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/matt.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Matt</div>
-              Top Rated User
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-horizontal-list1-example></doc-list-horizontal-list1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetHorizontal2">
 
-      <ng-template docDemo #horizontalList2>
-        <div sui-list suiHorizontal="true" suiBulleted="true" suiLink="true">
-          <a suiListItem>
-            Terms and Conditions
-          </a>
-          <a suiListItem>
-            Privacy Policy
-          </a>
-          <a suiListItem>
-            Contact Us
-          </a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-horizontal-list2-example></doc-list-horizontal-list2-example>
       </ng-template>
     </doc-code-sample>
 
@@ -616,29 +242,8 @@
         A list can be inverted to appear on a dark background
       </p>
 
-      <ng-template docDemo #invertedList>
-        <div sui-segment suiInverted="true">
-          <div sui-list suiRelaxation="relaxed" suiDivided="true" suiInverted="true">
-            <div suiListItem>
-              <div suiMessageContent>
-                <div sui-header suiSize="small">Snickerdoodle</div>
-                An excellent companion
-              </div>
-            </div>
-            <div suiListItem>
-              <div suiMessageContent>
-                <div sui-header suiSize="small">Poodle</div>
-                A poodle, its pretty basic
-              </div>
-            </div>
-            <div suiListItem>
-              <div suiMessageContent>
-                <div sui-header suiSize="small">Paulo</div>
-                He's also a dog
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-inverted-list-example></doc-list-inverted-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -649,27 +254,8 @@
         A selection list formats list items as possible choices
       </p>
 
-      <ng-template docDemo #selectionList>
-        <div sui-list suiSelection="true" suiAlignment="middle aligned">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-selection-list-example></doc-list-selection-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -685,27 +271,8 @@
          Be sure content can fit on one line when using the animated variation, otherwise text content will reflow when hovered.
       </div>
 
-      <ng-template docDemo #animatedList>
-        <div sui-list suiSelection="true" suiAlignment="middle aligned" suiAnimated="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-animated-list-example></doc-list-animated-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -716,114 +283,32 @@
         A list can relax its padding to provide more negative space
       </p>
 
-      <ng-template docDemo #relaxedList>
-        <div sui-list suiRelaxed="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Daniel Louise</a>
-              <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Stevie Feliciano</a>
-              <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Elliot Fu</a>
-              <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-relaxed-list-example></doc-list-relaxed-list-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRelaxed1">
 
-      <ng-template docDemo #relaxedList1>
-        <div sui-list suiRelaxed="true" suiHorizontal="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Daniel Louise</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Stevie Feliciano</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Elliot Fu</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-relaxed-list1-example></doc-list-relaxed-list1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRelaxed2">
 
-      <ng-template docDemo #relaxedList2>
-        <div sui-list suiRelaxed="true" suiRelaxation="very relaxed">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Daniel Louise</a>
-              <div>Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Stevie Feliciano</a>
-              <div>Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Elliot Fu</a>
-              <div>Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-relaxed-list2-example></doc-list-relaxed-list2-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRelaxed3">
 
-      <ng-template docDemo #relaxedList3>
-        <div sui-list suiRelaxed="true" suiHorizontal="true" suiRelaxation="very relaxed">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Daniel Louise</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Stevie Feliciano</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Elliot Fu</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-relaxed-list3-example></doc-list-relaxed-list3-example>
       </ng-template>
     </doc-code-sample>
 
@@ -834,27 +319,8 @@
         A list can show divisions between content
       </p>
 
-      <ng-template docDemo #dividedList>
-        <div sui-list suiDivided="true" suiAlignment="middle aligned">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Daniel Louise</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Stevie Feliciano</a>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <a sui-header suiSize="small">Elliot Fu</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-divided-list-example></doc-list-divided-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -865,58 +331,22 @@
         A list can divide its items into cells
       </p>
 
-      <ng-template docDemo #celledList>
-        <div sui-list suiCelled="true">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Snickerdoodle</div>
-              An excellent companion
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Poodle</div>
-              A poodle, its pretty basic
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Paulo</div>
-              He's also a dog
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-celled-list-example></doc-list-celled-list-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCelled1">
-      <ng-template docDemo #celledList1>
-        <div sui-list suiOrdered="true" suiCelled="true">
-          <div suiListItem>Cats</div>
-          <div suiListItem>Horses</div>
-          <div suiListItem>Dogs
-            <div sui-list>
-              <div suiListItem>Labradoodles</div>
-              <div suiListItem>Shiba Inu</div>
-              <div suiListItem>Mastiff</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-celled-list1-example></doc-list-celled-list1-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCelled2">
-      <ng-template docDemo #celledList2>
-        <div sui-list suiCelled="true" suiHorizontal="true">
-          <div suiListItem>About Us</div>
-          <div suiListItem>Contact</div>
-          <div suiListItem>Support</div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-celled-list2-example></doc-list-celled-list2-example>
       </ng-template>
     </doc-code-sample>
 
@@ -927,189 +357,56 @@
         A list can vary in size
       </p>
 
-      <ng-template docDemo #sizedList>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="mini">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-example></doc-list-sized-list-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeTiny">
 
-      <ng-template docDemo #sizedListTiny>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="tiny">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-tiny-example></doc-list-sized-list-tiny-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeSmall">
 
-      <ng-template docDemo #sizedListSmall>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="small">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-small-example></doc-list-sized-list-small-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeLarge">
 
-      <ng-template docDemo #sizedListLarge>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="large">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-large-example></doc-list-sized-list-large-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeBig">
 
-      <ng-template docDemo #sizedListBig>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="big">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-big-example></doc-list-sized-list-big-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeHuge">
 
-      <ng-template docDemo #sizedListHuge>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="huge">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-huge-example></doc-list-sized-list-huge-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSizeMassive">
 
-      <ng-template docDemo #sizedListMassive>
-        <div sui-list suiHorizontal="true" suiDivided="true" suiSize="massive">
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Helen</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/christian.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Christian</div>
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar/small/daniel.jpg">
-            <div suiMessageContent>
-              <div sui-header suiSize="small">Daniel</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-sized-list-massive-example></doc-list-sized-list-massive-example>
       </ng-template>
     </doc-code-sample>
 
@@ -1122,27 +419,8 @@
         An element inside a list can be vertically aligned
       </p>
 
-      <ng-template docDemo #verticalList>
-        <div sui-list suiHorizontal="true">
-          <div suiListItem>
-            <img sui-image suiAvatar suiAlignment="top aligned" src="https://semantic-ui.com/images/wireframe/square-image.png">
-            <div suiMessageContent>
-              Top Aligned
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar suiAlignment="middle aligned" src="https://semantic-ui.com/images/wireframe/square-image.png">
-            <div suiMessageContent>
-              Middle
-            </div>
-          </div>
-          <div suiListItem>
-            <img sui-image suiAvatar suiAlignment="bottom aligned" src="https://semantic-ui.com/images/wireframe/square-image.png">
-            <div suiMessageContent>
-              Bottom
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-vertical-list-example></doc-list-vertical-list-example>
       </ng-template>
     </doc-code-sample>
 
@@ -1153,62 +431,16 @@
         A list, or an element inside a list can be floated left or right
       </p>
 
-      <ng-template docDemo #floatedList>
-        <div sui-list suiAlignment="middle aligned" suiDivided="true">
-          <div suiListItem>
-            <div suiMessageContent>
-              <div sui-button suiFloated="right floated">Add</div>
-            </div>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/lena.png">
-            <div suiMessageContent>
-              Lena
-            </div>
-          </div>
-          <div suiListItem>
-            <div suiMessageContent>
-              <div sui-button suiFloated="right floated">Add</div>
-            </div>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
-            <div suiMessageContent>
-              Lindsay
-            </div>
-          </div>
-          <div suiListItem>
-            <div suiMessageContent>
-              <div sui-button suiFloated="right floated">Add</div>
-            </div>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/mark.png">
-            <div suiMessageContent>
-              Mark
-            </div>
-          </div>
-          <div suiListItem>
-            <div suiMessageContent>
-              <div sui-button suiFloated="right floated">Add</div>
-            </div>
-            <img sui-image suiAvatar src="https://semantic-ui.com/images/avatar2/small/molly.png">
-            <div suiMessageContent>
-              Molly
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-list-floated-list-example></doc-list-floated-list-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetFloated1">
 
-      <ng-template docDemo #floatedList1>
-        <div sui-list suiHorizontal="true" suiFloated="right floated">
-          <div suiListItem href="#">© GitHub, Inc.</div>
-          <a suiListItem href="#">Terms</a>
-          <a suiListItem href="#">Privacy</a>
-          <a suiListItem href="#">Contact</a>
-        </div>
-        <div sui-list suiHorizontal="true">
-          <a suiListItem href="#">About Us</a>
-          <a suiListItem href="#">Jobs</a>
-        </div>
+      <ng-template docDemo>
+        <doc-list-floated-list1-example></doc-list-floated-list1-example>
       </ng-template>
     </doc-code-sample>
   </div>

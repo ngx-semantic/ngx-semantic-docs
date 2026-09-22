@@ -3,6 +3,7 @@
  */
 
 import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 
 import {FormComponent} from "./form/form.component";
@@ -26,8 +27,11 @@ import {SuiButtonModule} from 'ngx-semantic/elements/button';
 import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
 import {SuiSelectModule} from 'ngx-semantic/modules/select';
 
+import { FORM_EXAMPLES } from './form/form-examples.component';
+
 @NgModule({
   declarations: [
+    ...FORM_EXAMPLES,
     FormComponent,
     GridComponent,
     MenuComponent,
@@ -37,6 +41,7 @@ import {SuiSelectModule} from 'ngx-semantic/modules/select';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     SuiFormModule,
     SuiIconModule,
