@@ -8,6 +8,9 @@
     "build": "ng build --configuration production --base-href \"https://ngx-semantic.github.io/\""
   },
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "@angular/animations": "^21.2.7",
     "@angular/cdk": "^21.2.5",
@@ -31,7 +34,7 @@
     "@angular/cli": "^21.2.6",
     "@angular/compiler-cli": "^21.2.7",
     "@angular/language-service": "^21.2.7",
-    "@types/node": "20.12.7",
+    "@types/node": "^22.20.4",
     "ts-node": "~10.9.2",
     "tslint": "~6.1.0",
     "typescript": "~5.9.3"

@@ -7,6 +7,17 @@ on:
   pull_request:
     branches:
       - master
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '22'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
   build:
@@ -18,27 +29,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - name: Install dependencies
@@ -50,21 +41,32 @@ jobs:
       - name: Create 404 page
         run: cp dist/browser/index.html dist/browser/404.html
 
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-site
+          path: dist/browser
+          if-no-files-found: error
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages-site
+          path: dist/browser
+
       - name: Deploy to GitHub Pages
-        env:
-          OUTPUT_DIR: /home/runner/work/ngx-semantic-docs/ngx-semantic-docs
-          GITHUB_TOKEN: ${{ secrets.GH_IO_ACCESS_TOKEN }}
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-
-          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/ngx-semantic/ngx-semantic.github.io.git
-          cd ngx-semantic.github.io
-          git checkout master
-
-          rm -r *
-          cp -r ../dist/browser/* .
-
-          git add .
-          git commit -m "deploy: ${{ github.sha }} - ${{ github.event.head_commit.message }}"
-          git push origin master
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_IO_ACCESS_TOKEN }}
+          external_repository: ngx-semantic/ngx-semantic.github.io
+          publish_branch: master
+          publish_dir: dist/browser
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: 'deploy: ${{ github.sha }}'
