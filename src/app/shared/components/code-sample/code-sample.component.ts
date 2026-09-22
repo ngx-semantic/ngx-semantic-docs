@@ -1,5 +1,5 @@
 import { Component, Input, TemplateRef } from '@angular/core';
-import { ClipboardService } from 'ngx-clipboard';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
     selector: 'doc-code-sample',
@@ -14,11 +14,15 @@ export class CodeSampleComponent {
 
   codeShown = false;
 
-  constructor(private clipService: ClipboardService) {
+  constructor(private clipboard: Clipboard) {
   }
 
   copyCode(): void {
-    this.clipService.copy(this.templateCode);
+    const html = this.templateCode ?? '';
+    const text = this.componentCode
+      ? `${html.trim()}\n\n${this.componentCode.trim()}`
+      : html;
+    this.clipboard.copy(text);
   }
 
   toggleCodeDisplay(): void {

@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --hmr",
-    "lint": "ng lint",
     "build": "ng build --configuration production --base-href \"https://ngx-semantic.github.io/\""
   },
   "private": true,
@@ -12,31 +11,29 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@angular/animations": "^21.2.7",
-    "@angular/cdk": "^21.2.5",
-    "@angular/common": "^21.2.7",
-    "@angular/compiler": "^21.2.7",
-    "@angular/core": "^21.2.7",
-    "@angular/forms": "^21.2.7",
-    "@angular/platform-browser": "^21.2.7",
-    "@angular/platform-browser-dynamic": "^21.2.7",
-    "@angular/router": "^21.2.7",
-    "highlight.js": "^11.9.0",
-    "ngx-clipboard": "^16.0.0",
-    "ngx-highlightjs": "^11.0.0-beta.1",
+    "@angular/animations": "^21.2.23",
+    "@angular/cdk": "^21.2.14",
+    "@angular/common": "^21.2.23",
+    "@angular/compiler": "^21.2.23",
+    "@angular/core": "^21.2.23",
+    "@angular/forms": "^21.2.23",
+    "@angular/platform-browser": "^21.2.23",
+    "@angular/platform-browser-dynamic": "^21.2.23",
+    "@angular/router": "^21.2.23",
+    "highlight.js": "^11.11.1",
+    "ngx-highlightjs": "^14.0.1",
     "ngx-semantic": "2.0.7-beta.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "^21.2.6",
-    "@angular/cli": "^21.2.6",
-    "@angular/compiler-cli": "^21.2.7",
-    "@angular/language-service": "^21.2.7",
+    "@angular/build": "^21.2.24",
+    "@angular/cli": "^21.2.24",
+    "@angular/compiler-cli": "^21.2.23",
+    "@angular/language-service": "^21.2.23",
     "@types/node": "^22.20.4",
     "ts-node": "~10.9.2",
-    "tslint": "~6.1.0",
     "typescript": "~5.9.3"
   }
 }
