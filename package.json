@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^21.2.7",
     "@angular/platform-browser-dynamic": "^21.2.7",
     "@angular/router": "^21.2.7",
-    "highlight.js": "^11.9.0",
+    "highlight.js": "^11.12.0",
     "ngx-clipboard": "^16.0.0",
     "ngx-highlightjs": "^11.0.0-beta.1",
     "ngx-semantic": "2.0.7-beta.2",
