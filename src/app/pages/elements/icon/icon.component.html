@@ -10,10 +10,8 @@
       <h3 sui-header>Disabled</h3>
       <p>An icon can show that it is disabled</p>
 
-      <ng-template docDemo #disabled>
-        <i sui-icon
-           disabled
-           suiIconType="users"></i>
+      <ng-template docDemo>
+        <doc-icon-disabled-example></doc-icon-disabled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -22,16 +20,8 @@
       <h3 sui-header>Loading</h3>
       <p>An icon can be used as a simple loader</p>
 
-      <ng-template docDemo #loading>
-        <i sui-icon
-           suiLoading
-           suiIconType="spinner"></i>
-        <i sui-icon
-           suiLoading
-           suiIconType="notched circle"></i>
-        <i sui-icon
-           suiLoading
-           suiIconType="asterisk"></i>
+      <ng-template docDemo>
+        <doc-icon-loading-example></doc-icon-loading-example>
       </ng-template>
     </doc-code-sample>
 
@@ -43,14 +33,8 @@
       <h3 sui-header>Fitted</h3>
       <p>An icon can be fitted, without any space to the left or right of it. </p>
 
-      <ng-template docDemo #fitted>
-        <div>
-          Tight Spacing
-          <i sui-icon
-             suiFitted
-             suiIconType="help"></i>
-          Tight Spacing
-        </div>
+      <ng-template docDemo>
+        <doc-icon-fitted-example></doc-icon-fitted-example>
       </ng-template>
     </doc-code-sample>
 
@@ -59,30 +43,8 @@
       <h3 sui-header>Size</h3>
       <p>An icon can vary in size</p>
 
-      <ng-template docDemo #size>
-        <i sui-icon
-           suiSize="mini"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="tiny"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="small"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="large"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="big"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="huge"
-           suiIconType="home"></i>
-        <i sui-icon
-           suiSize="massive"
-           suiIconType="home"></i>
+      <ng-template docDemo>
+        <doc-icon-size-example></doc-icon-size-example>
       </ng-template>
     </doc-code-sample>
 
@@ -91,13 +53,8 @@
       <h3 sui-header>Link</h3>
       <p>An icon can be formatted as a link</p>
 
-      <ng-template docDemo #link>
-        <i sui-icon
-           suiLink
-           suiIconType="close"></i>
-        <i sui-icon
-           suiLink
-           suiIconType="help"></i>
+      <ng-template docDemo>
+        <doc-icon-link-example></doc-icon-link-example>
       </ng-template>
     </doc-code-sample>
 
@@ -106,13 +63,8 @@
       <h3 sui-header>Flipped</h3>
       <p>An icon can be flipped</p>
 
-      <ng-template docDemo #flipped>
-        <i sui-icon
-           suiFlip="horizontal"
-           suiIconType="cloud"></i>
-        <i sui-icon
-           suiFlip="vertical"
-           suiIconType="cloud"></i>
+      <ng-template docDemo>
+        <doc-icon-flipped-example></doc-icon-flipped-example>
       </ng-template>
     </doc-code-sample>
 
@@ -121,13 +73,8 @@
       <h3 sui-header>Rotated</h3>
       <p>An icon can be rotated</p>
 
-      <ng-template docDemo #rotated>
-        <i sui-icon
-           suiRotation="clockwise"
-           suiIconType="cloud"></i>
-        <i sui-icon
-           suiRotation="counterclockwise"
-           suiIconType="cloud"></i>
+      <ng-template docDemo>
+        <doc-icon-rotated-example></doc-icon-rotated-example>
       </ng-template>
     </doc-code-sample>
 
@@ -136,23 +83,8 @@
       <h3 sui-header>Circular</h3>
       <p>An icon can be formatted to appear circular</p>
 
-      <ng-template docDemo #circular>
-        <i sui-icon
-           suiCircular
-           suiIconType="users"></i>
-        <i sui-icon
-           suiCircular
-           suiColour="teal"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiCircular
-           suiInverted
-           suiIconType="users"></i>
-        <i sui-icon
-           suiCircular
-           suiInverted
-           suiColour="teal"
-           suiIconType="users"></i>
+      <ng-template docDemo>
+        <doc-icon-circular-example></doc-icon-circular-example>
       </ng-template>
     </doc-code-sample>
 
@@ -161,23 +93,8 @@
       <h3 sui-header>Bordered</h3>
       <p>An icon can be formatted to appear bordered</p>
 
-      <ng-template docDemo #bordered>
-        <i sui-icon
-           suiBordered
-           suiIconType="users"></i>
-        <i sui-icon
-           suiBordered
-           suiColour="teal"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiBordered
-           suiInverted
-           suiIconType="users"></i>
-        <i sui-icon
-           suiBordered
-           suiInverted
-           suiColour="teal"
-           suiIconType="users"></i>
+      <ng-template docDemo>
+        <doc-icon-bordered-example></doc-icon-bordered-example>
       </ng-template>
     </doc-code-sample>
 
@@ -186,46 +103,8 @@
       <h3 sui-header>Coloured</h3>
       <p>An icon can be formatted with different colours</p>
 
-      <ng-template docDemo #coloured>
-        <i sui-icon
-           suiColour="red"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="orange"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="yellow"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="olive"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="green"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="teal"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="blue"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="violet"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="purple"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="pink"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="brown"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="grey"
-           suiIconType="users"></i>
-        <i sui-icon
-           suiColour="black"
-           suiIconType="users"></i>
+      <ng-template docDemo>
+        <doc-icon-coloured-example></doc-icon-coloured-example>
       </ng-template>
     </doc-code-sample>
 
@@ -234,62 +113,8 @@
       <h3 sui-header>Inverted</h3>
       <p>An icon can have its colours inverted for contrast</p>
 
-      <ng-template docDemo #invertedColoured>
-        <div sui-segment
-             suiInverted>
-          <i sui-icon
-             suiInverted
-             suiColour="red"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="orange"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="yellow"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="olive"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="green"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="teal"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="blue"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="violet"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="purple"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="pink"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="brown"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="grey"
-             suiIconType="users"></i>
-          <i sui-icon
-             suiInverted
-             suiColour="black"
-             suiIconType="users"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-icon-inverted-coloured-example></doc-icon-inverted-coloured-example>
       </ng-template>
     </doc-code-sample>
 
@@ -301,30 +126,15 @@
       <h3 sui-header>Icons</h3>
       <p>Several icons can be used together as a group</p>
 
-      <ng-template docDemo #firstIconGroup>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiSize="big"
-             suiIconType="circle outline"></i>
-          <i sui-icon
-             suiIconType="user"></i>
-        </i>
+      <ng-template docDemo>
+        <doc-icon-first-icon-group-example></doc-icon-first-icon-group-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconsSecond">
-      <ng-template docDemo #secondIconGroup>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiSize="big"
-             suiColour="red"
-             suiIconType="dont"></i>
-          <i sui-icon
-             suiIconType="user"></i>
-        </i>
+      <ng-template docDemo>
+        <doc-icon-second-icon-group-example></doc-icon-second-icon-group-example>
       </ng-template>
     </doc-code-sample>
 
@@ -333,70 +143,22 @@
       <h3 sui-header>Corner Icon</h3>
       <p>A group of icons can display a smaller corner icon</p>
 
-      <ng-template docDemo #cornerIcon>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiIconType="puzzle"></i>
-          <i sui-icon
-             suiCorner="bottom right"
-             suiIconType="add"></i>
-        </i>
+      <ng-template docDemo>
+        <doc-icon-corner-icon-example></doc-icon-corner-icon-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconsCornerOptions">
-      <ng-template docDemo #cornerIconOptions>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiIconType="puzzle"></i>
-          <i sui-icon
-             suiCorner="top left"
-             suiIconType="add"></i>
-        </i>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiIconType="puzzle"></i>
-          <i sui-icon
-             suiCorner="top right"
-             suiIconType="add"></i>
-        </i>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiIconType="puzzle"></i>
-          <i sui-icon
-             suiCorner="bottom left"
-             suiIconType="add"></i>
-        </i>
-        <i sui-icons
-           suiSize="huge">
-          <i sui-icon
-             suiIconType="puzzle"></i>
-          <i sui-icon
-             suiCorner="bottom right"
-             suiIconType="add"></i>
-        </i>
+      <ng-template docDemo>
+        <doc-icon-corner-icon-options-example></doc-icon-corner-icon-options-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconsInline">
-      <ng-template docDemo #inlineCornerIcon>
-        <div sui-header>
-          <i sui-icons>
-            <i sui-icon
-               suiIconType="twitter"></i>
-            <i sui-icon
-               suiInverted
-               suiCorner="bottom right"
-               suiIconType="add"></i>
-          </i>
-          Add on Twitter
-        </div>
+      <ng-template docDemo>
+        <doc-icon-inline-corner-icon-example></doc-icon-inline-corner-icon-example>
       </ng-template>
     </doc-code-sample>
   </div>

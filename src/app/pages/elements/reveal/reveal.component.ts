@@ -1,5 +1,18 @@
 import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import snippetFadeSrc from './snippets/fade.sample.html' with { loader: 'text' };
+import snippetFadeAltSrc from './snippets/fade-alt.sample.html' with { loader: 'text' };
+import snippetMoveSrc from './snippets/move.sample.html' with { loader: 'text' };
+import snippetMoveRightSrc from './snippets/move-right.sample.html' with { loader: 'text' };
+import snippetMoveUpSrc from './snippets/move-up.sample.html' with { loader: 'text' };
+import snippetMoveDownSrc from './snippets/move-down.sample.html' with { loader: 'text' };
+import snippetRotateSrc from './snippets/rotate.sample.html' with { loader: 'text' };
+import snippetRotateLeftSrc from './snippets/rotate-left.sample.html' with { loader: 'text' };
+import snippetVisibleContentSrc from './snippets/visible-content.sample.html' with { loader: 'text' };
+import snippetHiddenContentSrc from './snippets/hidden-content.sample.html' with { loader: 'text' };
+import snippetActiveSrc from './snippets/active.sample.html' with { loader: 'text' };
+import snippetInstantSrc from './snippets/instant.sample.html' with { loader: 'text' };
+import snippetDisabledSrc from './snippets/disabled.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-reveals',
@@ -7,231 +20,32 @@ import {Title} from '@angular/platform-browser';
     standalone: false
 })
 export class RevealComponent {
-  snippetFade = `
-  <div sui-reveal
-       suiFade>
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
-    </div>
-  </div>`;
+  snippetFade = snippetFadeSrc;
+  snippetFadeAlt = snippetFadeAltSrc;
+  snippetMove = snippetMoveSrc;
+  snippetMoveRight = snippetMoveRightSrc;
+  snippetMoveUp = snippetMoveUpSrc;
+  snippetMoveDown = snippetMoveDownSrc;
+  snippetRotate = snippetRotateSrc;
+  snippetRotateLeft = snippetRotateLeftSrc;
+  snippetVisibleContent = snippetVisibleContentSrc;
+  snippetHiddenContent = snippetHiddenContentSrc;
+  snippetActive = snippetActiveSrc;
+  snippetInstant = snippetInstantSrc;
+  snippetDisabled = snippetDisabledSrc;
 
-  snippetFadeAlt = `
-  <div sui-reveal
-       suiFade
-       suiImage
-       suiSize="small">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
-    </div>
-  </div>`;
 
-  snippetMove = `
-  <div sui-reveal
-       suiMove="left">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
-    </div>
-  </div>`;
 
-  snippetMoveRight = `
-  <div sui-reveal
-             suiMove="right">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
-    </div>
-  </div>`;
 
-  snippetMoveUp = `
-  <div sui-reveal
-       suiMove="up">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
-    </div>
-  </div>`;
 
-  snippetMoveDown = `
-  <div sui-reveal
-             suiMove="down">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
-    </div>
-  </div>`;
 
-  snippetRotate = `
-  <div sui-image
-       suiCircular
-       suiSize="small"
-       sui-reveal
-       suiRotate="right">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
-    </div>
-  </div>`;
 
-  snippetRotateLeft = `
-  <div sui-image
-       suiCircular
-       suiSize="small"
-       sui-reveal
-       suiRotate="left">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
-    </div>
-  </div>`;
 
-  snippetVisibleContent = `
-  <div sui-reveal
-       suiFade>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
-    </div>
-  </div>`;
 
-  snippetHiddenContent = `
-  <div sui-reveal
-       suiFade>
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/ade.jpg"/>
-    </div>
-  </div>`;
 
-  snippetActive = `
-  <div sui-reveal
-       [suiActive]="true"
-       suiMove="left">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/nan.jpg"/>
-    </div>
-  </div>`;
 
-  snippetInstant = `
-  <div sui-reveal
-       suiInstant
-       suiMove="left">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
-    </div>
-  </div>`;
 
-  snippetDisabled = `
-  <div sui-reveal
-       disabled
-       suiMove="left">
-    <div suiRevealContent
-         suiVisible="visible">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-    </div>
-    <div suiRevealContent
-         suiVisible="hidden">
-      <img sui-image
-           suiSize="small"
-           src="https://semantic-ui.com/images/avatar/large/chris.jpg"/>
-    </div>
-  </div>`;
+
 
   constructor(title: Title) {
     title.setTitle('Reveal | Ngx Semantic');

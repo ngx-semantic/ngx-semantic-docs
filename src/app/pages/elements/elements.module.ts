@@ -58,8 +58,41 @@ import { SEGMENT_EXAMPLES } from './segment/segment-examples.component';
 
 import { INPUT_EXAMPLES } from './input/input-examples.component';
 
+import { CONTAINER_EXAMPLES } from './container/container-examples.component';
+
+import { DIVIDER_EXAMPLES } from './divider/divider-examples.component';
+
+import { HEADER_EXAMPLES } from './header/header-examples.component';
+
+import { ICON_EXAMPLES } from './icon/icon-examples.component';
+
+import { IMAGE_EXAMPLES } from './image/image-examples.component';
+
+import { LABEL_EXAMPLES } from './label/label-examples.component';
+
+import { LOADER_EXAMPLES } from './loader/loader-examples.component';
+
+import { PLACEHOLDER_EXAMPLES } from './placeholder/placeholder-examples.component';
+
+import { RAIL_EXAMPLES } from './rail/rail-examples.component';
+
+import { REVEAL_EXAMPLES } from './reveal/reveal-examples.component';
+
+import { STEP_EXAMPLES } from './step/step-examples.component';
+
 @NgModule({
   declarations: [
+    ...STEP_EXAMPLES,
+    ...REVEAL_EXAMPLES,
+    ...RAIL_EXAMPLES,
+    ...PLACEHOLDER_EXAMPLES,
+    ...LOADER_EXAMPLES,
+    ...LABEL_EXAMPLES,
+    ...IMAGE_EXAMPLES,
+    ...ICON_EXAMPLES,
+    ...HEADER_EXAMPLES,
+    ...DIVIDER_EXAMPLES,
+    ...CONTAINER_EXAMPLES,
     ...INPUT_EXAMPLES,
     ...SEGMENT_EXAMPLES,
     ...LIST_EXAMPLES,

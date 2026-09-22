@@ -1,5 +1,19 @@
 import {Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import snippetBasicSrc from './snippets/placeholder.sample.html' with { loader: 'text' };
+import snippetGridSrc from './snippets/grid-placeholder.sample.html' with { loader: 'text' };
+import snippetCardSrc from './snippets/card-placeholder.sample.html' with { loader: 'text' };
+import snippetLinesSrc from './snippets/lines.sample.html' with { loader: 'text' };
+import snippetImageHeaderSrc from './snippets/image-header.sample.html' with { loader: 'text' };
+import snippetHeaderSrc from './snippets/header.sample.html' with { loader: 'text' };
+import snippetParagraphSrc from './snippets/paragraph.sample.html' with { loader: 'text' };
+import snippetImageSrc from './snippets/image.sample.html' with { loader: 'text' };
+import snippetSquareImageSrc from './snippets/square-images.sample.html' with { loader: 'text' };
+import snippetRectangularImageSrc from './snippets/rectangular-images.sample.html' with { loader: 'text' };
+import snippetLineLengthSrc from './snippets/line-length.sample.html' with { loader: 'text' };
+import snippetComplexLineLengthSrc from './snippets/complex-line-length.sample.html' with { loader: 'text' };
+import snippetFluidSrc from './snippets/fluid.sample.html' with { loader: 'text' };
+import snippetInvertedSrc from './snippets/inverted.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-placeholders',
@@ -13,292 +27,34 @@ import {Title} from '@angular/platform-browser';
     standalone: false
 })
 export class PlaceholderComponent {
-  snippetBasic = `
-  <div sui-placeholder>
-    <div suiPlaceholderHeader
-         suiImage>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-  </div>`;
+  snippetBasic = snippetBasicSrc;
+  snippetGrid = snippetGridSrc;
+  snippetCard = snippetCardSrc;
+  snippetLines = snippetLinesSrc;
+  snippetImageHeader = snippetImageHeaderSrc;
+  snippetHeader = snippetHeaderSrc;
+  snippetParagraph = snippetParagraphSrc;
+  snippetImage = snippetImageSrc;
+  snippetSquareImage = snippetSquareImageSrc;
+  snippetRectangularImage = snippetRectangularImageSrc;
+  snippetLineLength = snippetLineLengthSrc;
+  snippetComplexLineLength = snippetComplexLineLengthSrc;
+  snippetFluid = snippetFluidSrc;
+  snippetInverted = snippetInvertedSrc;
 
-  snippetGrid = `
-  <div sui-grid
-       suiStackable
-       suiWidth="three">
-    <div suiGridColumn>
-      <div sui-segment
-           suiRaised>
-        <div sui-placeholder>
-          <div suiPlaceholderHeader
-               suiImage>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine
-                 suiLength="medium"></div>
-            <div suiPlaceholderLine
-                 suiLength="short"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div suiGridColumn>
-      <div sui-segment
-           suiRaised>
-        <div sui-placeholder>
-          <div suiPlaceholderHeader
-               suiImage>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine
-                 suiLength="medium"></div>
-            <div suiPlaceholderLine
-                 suiLength="short"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div suiGridColumn>
-      <div sui-segment
-           suiRaised>
-        <div sui-placeholder>
-          <div suiPlaceholderHeader
-               suiImage>
-            <div suiPlaceholderLine></div>
-            <div suiPlaceholderLine></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine
-                 suiLength="medium"></div>
-            <div suiPlaceholderLine
-                 suiLength="short"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetCard = `
-  <div sui-grid
-       suiStackable
-       suiDoubling
-       suiWidth="three">
-    <div sui-card>
-      <div suiCardImage>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiSquare></div>
-        </div>
-      </div>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiCardHeader>
-            <div suiPlaceholderLine
-                 suiLength="very short"></div>
-            <div suiPlaceholderLine
-                 suiLength="medium"></div>
-          </div>
-          <div suiPlaceholderParagraph>
-            <div suiPlaceholderLine
-                 suiLength="short"></div>
-          </div>
-        </div>
-      </div>
-      <div suiCardExtra>
-        <div sui-button
-             disabled
-             suiEmphasis="primary">
-          Add
-        </div>
-        <div sui-button
-             disabled>
-          Delete
-        </div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetLines = `
-  <div sui-placeholder>
-    <div suiPlaceholderLine></div>
-    <div suiPlaceholderLine></div>
-    <div suiPlaceholderLine></div>
-    <div suiPlaceholderLine></div>
-    <div suiPlaceholderLine></div>
-  </div>`;
 
-  snippetImageHeader = `
-  <div sui-placeholder>
-    <div suiPlaceholderHeader
-         suiImage>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-  </div>`;
 
-  snippetHeader = `
-  <div sui-placeholder>
-    <div suiPlaceholderHeader>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-  </div>`;
 
-  snippetParagraph = `
-  <div sui-placeholder>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-  </div>`;
 
-  snippetImage = `
-  <div sui-placeholder>
-    <div suiPlaceholderImage></div>
-  </div>`;
 
-  snippetSquareImage = `
-  <div sui-cards
-       suiWidth="three">
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiSquare></div>
-        </div>
-      </div>
-    </div>
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiSquare></div>
-        </div>
-      </div>
-    </div>
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiSquare></div>
-        </div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetRectangularImage = `
-  <div sui-cards
-       suiWidth="three">
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiRectangular></div>
-        </div>
-      </div>
-    </div>
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiRectangular></div>
-        </div>
-      </div>
-    </div>
-    <div sui-card>
-      <div suiCardContent>
-        <div sui-placeholder>
-          <div suiPlaceholderImage
-               suiRectangular></div>
-        </div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetLineLength = `
-  <div sui-placeholder>
-    <div suiPlaceholderLine
-         suiLength="full"></div>
-    <div suiPlaceholderLine
-         suiLength="very long"></div>
-    <div suiPlaceholderLine
-         suiLength="long"></div>
-    <div suiPlaceholderLine
-         suiLength="medium"></div>
-    <div suiPlaceholderLine
-         suiLength="short"></div>
-    <div suiPlaceholderLine
-         suiLength="very short"></div>
-  </div>`;
 
-  snippetComplexLineLength = `
-  <div sui-placeholder>
-    <div suiPlaceholderHeader
-         suiImage>
-      <div suiPlaceholderLine
-           suiLength="medium"></div>
-      <div suiPlaceholderLine
-           suiLength="full"></div>
-    </div>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine
-           suiLength="medium"></div>
-      <div suiPlaceholderLine
-           suiLength="full"></div>
-    </div>
-  </div>`;
 
-  snippetFluid = `
-  <div sui-placeholder
-       suiFluid>
-    <div suiPlaceholderHeader
-         suiImage>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-    <div suiPlaceholderParagraph>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-      <div suiPlaceholderLine></div>
-    </div>
-  </div>`;
 
-  snippetInverted = `
-  <div sui-segment
-       suiInverted>
-    <div sui-placeholder
-         suiInverted>
-      <div suiPlaceholderHeader
-           suiImage>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-      <div suiPlaceholderParagraph>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-        <div suiPlaceholderLine></div>
-      </div>
-    </div>
-  </div>`;
+
 
   constructor(title: Title) {
     title.setTitle('Placeholder | Ngx Semantic');

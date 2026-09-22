@@ -1,5 +1,30 @@
 import {Component, AfterViewChecked} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import snippetSingleSrc from './snippets/single.sample.html' with { loader: 'text' };
+import snippetSetSrc from './snippets/set.sample.html' with { loader: 'text' };
+import snippetOrderedSrc from './snippets/ordered.sample.html' with { loader: 'text' };
+import snippetVerticalSrc from './snippets/vertical.sample.html' with { loader: 'text' };
+import snippetDescriptionSrc from './snippets/description.sample.html' with { loader: 'text' };
+import snippetIconSrc from './snippets/icon.sample.html' with { loader: 'text' };
+import snippetLinkSrc from './snippets/link.sample.html' with { loader: 'text' };
+import snippetLinkAltSrc from './snippets/link-alt.sample.html' with { loader: 'text' };
+import snippetActiveSrc from './snippets/active.sample.html' with { loader: 'text' };
+import snippetCompletedSrc from './snippets/completed.sample.html' with { loader: 'text' };
+import snippetCompletedAltSrc from './snippets/completed-alt.sample.html' with { loader: 'text' };
+import snippetDisabledSrc from './snippets/disabled.sample.html' with { loader: 'text' };
+import snippetStackableSrc from './snippets/stackable.sample.html' with { loader: 'text' };
+import snippetFluidSrc from './snippets/fluid.sample.html' with { loader: 'text' };
+import snippetUnstackableSrc from './snippets/unstackable.sample.html' with { loader: 'text' };
+import snippetAttachedSrc from './snippets/attached.sample.html' with { loader: 'text' };
+import snippetEvenlyDividedSrc from './snippets/evenly-divided.sample.html' with { loader: 'text' };
+import snippetEvenlyDividedAltSrc from './snippets/evenly-divided-alt.sample.html' with { loader: 'text' };
+import snippetSizeMiniSrc from './snippets/size-mini.sample.html' with { loader: 'text' };
+import snippetSizeTinySrc from './snippets/size-tiny.sample.html' with { loader: 'text' };
+import snippetSizeSmallSrc from './snippets/size-small.sample.html' with { loader: 'text' };
+import snippetSizeLargeSrc from './snippets/size-large.sample.html' with { loader: 'text' };
+import snippetSizeBigSrc from './snippets/size-big.sample.html' with { loader: 'text' };
+import snippetSizeHugeSrc from './snippets/size-huge.sample.html' with { loader: 'text' };
+import snippetSizeMassiveSrc from './snippets/size-massive.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-steps',
@@ -8,588 +33,56 @@ import {Title} from '@angular/platform-browser';
     standalone: false
 })
 export class StepComponent {
-  snippetSingle = `
-  <div sui-steps>
-    <div sui-step>
-      Shipping
-    </div>
-  </div>`;
+  snippetSingle = snippetSingleSrc;
+  snippetSet = snippetSetSrc;
+  snippetOrdered = snippetOrderedSrc;
+  snippetVertical = snippetVerticalSrc;
+  snippetDescription = snippetDescriptionSrc;
+  snippetIcon = snippetIconSrc;
+  snippetLink = snippetLinkSrc;
+  snippetLinkAlt = snippetLinkAltSrc;
+  snippetActive = snippetActiveSrc;
+  snippetCompleted = snippetCompletedSrc;
+  snippetCompletedAlt = snippetCompletedAltSrc;
+  snippetDisabled = snippetDisabledSrc;
+  snippetStackable = snippetStackableSrc;
+  snippetFluid = snippetFluidSrc;
+  snippetUnstackable = snippetUnstackableSrc;
+  snippetAttached = snippetAttachedSrc;
+  snippetEvenlyDivided = snippetEvenlyDividedSrc;
+  snippetEvenlyDividedAlt = snippetEvenlyDividedAltSrc;
+  snippetSizeMini = snippetSizeMiniSrc;
+  snippetSizeTiny = snippetSizeTinySrc;
+  snippetSizeSmall = snippetSizeSmallSrc;
+  snippetSizeLarge = snippetSizeLargeSrc;
+  snippetSizeBig = snippetSizeBigSrc;
+  snippetSizeHuge = snippetSizeHugeSrc;
+  snippetSizeMassive = snippetSizeMassiveSrc;
 
-  snippetSet = `
-  <div sui-steps>
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetOrdered = `
-  <div sui-steps
-       suiOrdered>
-    <div sui-step
-         suiCompleted>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiCompleted>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetVertical = `
-  <div sui-steps
-       suiVertical>
-    <div sui-step
-         suiCompleted>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiCompleted>
-      <i sui-icon
-         suiIconType="credit card"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="info"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetDescription = `
-  <div sui-steps>
-    <div sui-step>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetIcon = `
-  <div sui-steps>
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetLink = `
-  <div sui-steps>
-    <a sui-step
-       suiActive>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </a>
-    <a sui-step>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </a>
-  </div>`;
 
-  snippetLinkAlt = `
-  <div sui-steps>
-    <div sui-step
-         suiLink>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiLink>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetActive = `
-  <div sui-steps>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetCompleted = `
-  <div sui-steps>
-    <div sui-step
-         suiCompleted>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetCompletedAlt = `
-  <div sui-steps
-       suiOrdered>
-    <div sui-step
-         suiCompleted>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetDisabled = `
-  <div sui-steps>
-    <div sui-step
-         disabled>
-      Billing
-    </div>
-  </div>`;
 
-  snippetStackable = `
-  <div sui-steps
-       suiTabletStackable>
-    <div sui-step>
-      <i sui-icon
-         suiIconType="plane"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="dollar"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetFluid = `
-  <div sui-grid
-       suiWidth="two">
-    <div suiGridColumn>
-      <div sui-steps
-           suiFluid
-           suiVertical>
-        <div sui-step
-             suiCompleted>
-          <i sui-icon
-             suiIconType="truck"></i>
-          <div suiStepContent>
-            <div suiStepTitle>Shipping</div>
-            <div suiStepDescription>Choose your shipping options</div>
-          </div>
-        </div>
-        <div sui-step
-             suiActive>
-          <i sui-icon
-             suiIconType="dollar"></i>
-          <div suiStepContent>
-            <div suiStepTitle>Billing</div>
-            <div suiStepDescription>Enter billing information</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div suiGridColumn>
-      <p>The steps take up the entire column width</p>
-    </div>
-  </div>`;
 
-  snippetUnstackable = `
-  <div sui-steps
-       suiUnstackable>
-    <div sui-step>
-      <i sui-icon
-         suiIconType="plane"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="dollar"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetAttached = `
-  <div sui-steps
-       suiWidth="three"
-       suiAttached="top attached">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>
-  <div sui-segment
-       suiAttached="attached">
-    <doc-wireframe type="paragraph"></doc-wireframe>
-  </div>
-  <div sui-steps
-       suiWidth="three"
-       suiAttached="bottom attached">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetEvenlyDivided = `
-  <div sui-steps
-       suiWidth="three">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetEvenlyDividedAlt = `
-  <div sui-steps
-       suiWidth="two">
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeMini = `
-  <div sui-steps
-       suiSize="mini">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="dollar"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeTiny = `
-  <div sui-steps
-       suiSize="tiny">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="dollar"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeSmall = `
-  <div sui-steps
-       suiSize="small">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-        <div suiStepDescription>Choose your shipping options</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="dollar"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-        <div suiStepDescription>Enter billing information</div>
-      </div>
-    </div>
-    <div sui-step
-         disabled>
-      <i sui-icon
-         suiIconType="info circle"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Confirm Order</div>
-        <div suiStepDescription>Verify order details</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeLarge = `
-  <div sui-steps
-       suiSize="large">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeBig = `
-  <div sui-steps
-       suiSize="big">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeHuge = `
-  <div sui-steps
-       suiSize="huge">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-  </div>`;
 
-  snippetSizeMassive = `
-  <div sui-steps
-       suiSize="massive">
-    <div sui-step>
-      <i sui-icon
-         suiIconType="truck"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Shipping</div>
-      </div>
-    </div>
-    <div sui-step
-         suiActive>
-      <i sui-icon
-         suiIconType="payment"></i>
-      <div suiStepContent>
-        <div suiStepTitle>Billing</div>
-      </div>
-    </div>
-  </div>`;
+
 
   constructor(title: Title) {
     title.setTitle('Step | Ngx Semantic');

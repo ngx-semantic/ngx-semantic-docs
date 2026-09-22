@@ -11,29 +11,8 @@
       <h3 sui-header>Rail</h3>
       <p>A rail can be presented on the left or right side of a container</p>
 
-      <ng-template docDemo #basic>
-        <div sui-grid
-             suiCentered
-             suiWidth="three">
-          <div suiGridColumn>
-            <div sui-segment>
-              <doc-wireframe type="paragraph"></doc-wireframe>
-
-              <div sui-rail
-                   suiLocation="left">
-                <div sui-segment>
-                  Left Rail Content
-                </div>
-              </div>
-              <div sui-rail
-                   suiLocation="right">
-                <div sui-segment>
-                  Right Rail Content
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-rail-basic-example></doc-rail-basic-example>
       </ng-template>
     </doc-code-sample>
 
@@ -42,24 +21,8 @@
       <h3 sui-header>Internal</h3>
       <p>A rail can attach itself to the inside of a container</p>
 
-      <ng-template docDemo #internal>
-        <div sui-segment
-             sui-container>
-          <div sui-rail
-               suiInternal
-               suiLocation="left">
-            <div sui-segment>
-              Left Rail Content
-            </div>
-          </div>
-          <div sui-rail
-               suiInternal
-               suiLocation="right">
-            <div sui-segment>
-              Right Rail Content
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-rail-internal-example></doc-rail-internal-example>
       </ng-template>
     </doc-code-sample>
 
@@ -68,31 +31,8 @@
       <h3 sui-header>Dividing</h3>
       <p>A rail can create a division between itself and a container</p>
 
-      <ng-template docDemo #dividing>
-        <div sui-grid
-             suiCentered
-             suiWidth="three">
-          <div suiGridColumn>
-            <div sui-segment>
-              <doc-wireframe type="paragraph"></doc-wireframe>
-
-              <div sui-rail
-                   suiDividing
-                   suiLocation="left">
-                <div sui-segment>
-                  Left Rail Content
-                </div>
-              </div>
-              <div sui-rail
-                   suiDividing
-                   suiLocation="right">
-                <div sui-segment>
-                  Right Rail Content
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-rail-dividing-example></doc-rail-dividing-example>
       </ng-template>
     </doc-code-sample>
 
@@ -106,31 +46,8 @@
       <h3 sui-header>Attached</h3>
       <p>A rail can appear attached to the main viewport</p>
 
-      <ng-template docDemo #attached>
-        <div sui-grid
-             suiCentered
-             suiWidth="three">
-          <div suiGridColumn>
-            <div sui-segment>
-              <doc-wireframe type="paragraph"></doc-wireframe>
-
-              <div sui-rail
-                   suiAttached
-                   suiLocation="left">
-                <div sui-segment>
-                  Left Rail Content
-                </div>
-              </div>
-              <div sui-rail
-                   suiAttached
-                   suiLocation="right">
-                <div sui-segment>
-                  Right Rail Content
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-rail-attached-example></doc-rail-attached-example>
       </ng-template>
     </doc-code-sample>
   </div>
