@@ -9,10 +9,8 @@
       <h3 sui-header>Input</h3>
       <p>A standard input</p>
 
-      <ng-template docDemo #standard>
-        <div sui-input>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-standard-example></doc-input-standard-example>
       </ng-template>
     </doc-code-sample>
 
@@ -25,11 +23,8 @@
       <h3 sui-header>Focus</h3>
       <p>An input field can show a user is currently interacting with it</p>
 
-      <ng-template docDemo #focus>
-        <div sui-input
-             suiFocus>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-focus-example></doc-input-focus-example>
       </ng-template>
     </doc-code-sample>
 
@@ -44,27 +39,15 @@
 
       <br/>
 
-      <ng-template docDemo #loading>
-        <div sui-input
-             suiLoading
-             suiIcon="left icon">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon
-             suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-loading-example></doc-input-loading-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLoadingRight">
-      <ng-template docDemo #loadingRight>
-        <div sui-input
-             suiLoading
-             suiIcon="icon">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon
-             suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-loading-right-example></doc-input-loading-right-example>
       </ng-template>
     </doc-code-sample>
 
@@ -73,33 +56,22 @@
       <h3 sui-header>Disabled</h3>
       <p>An input field can show that it is disabled</p>
 
-      <ng-template docDemo #disabled>
-        <div sui-input
-             disabled>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-disabled-example></doc-input-disabled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetDisabledIcon">
-      <ng-template docDemo #disabledIcon>
-        <div sui-input
-             disabled
-             suiIcon="icon">
-          <i sui-icon
-             suiIconType="search"></i>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-disabled-icon-example></doc-input-disabled-icon-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetDisabledInput">
-      <ng-template docDemo #disabledInput>
-        <div sui-input>
-          <input disabled type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-disabled-input-example></doc-input-disabled-input-example>
       </ng-template>
     </doc-code-sample>
 
@@ -108,11 +80,8 @@
       <h3 sui-header>Error</h3>
       <p>An input field can show the data contains errors</p>
 
-      <ng-template docDemo #error>
-        <div sui-input
-             suiError>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-error-example></doc-input-error-example>
       </ng-template>
     </doc-code-sample>
 
@@ -131,50 +100,29 @@
 
       <br/>
 
-      <ng-template docDemo #icon>
-        <div sui-input
-             suiIcon="icon">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon
-             suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-example></doc-input-icon-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconPosition">
-      <ng-template docDemo #iconPosition>
-        <div sui-input
-             suiIcon="left icon">
-          <input type="text" placeholder="Search users..."/>
-          <i sui-icon
-             suiIconType="users"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-position-example></doc-input-icon-position-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconCircular">
-      <ng-template docDemo #iconCircular>
-        <div sui-input
-             suiIcon="icon">
-          <input type="text" placeholder="Search users..."/>
-          <i sui-icon
-             suiIconType="circular search link"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-circular-example></doc-input-icon-circular-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconCircularInverted">
-      <ng-template docDemo #iconCircularInverted>
-        <div sui-input
-             suiIcon="icon">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon
-             suiInverted
-             suiIconType="circular search link"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-circular-inverted-example></doc-input-icon-circular-inverted-example>
       </ng-template>
     </doc-code-sample>
 
@@ -183,114 +131,50 @@
       <h3 sui-header>Labeled</h3>
       <p>An input can be formatted with a label</p>
 
-      <ng-template docDemo #labeled>
-        <div sui-input
-             suiLabeled="labeled">
-          <div sui-label>
-            http://
-          </div>
-          <input type="text" placeholder="mysite.com"/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-labeled-example></doc-input-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRightLabeled">
-      <ng-template docDemo #rightLabeled>
-        <div sui-input
-             suiLabeled="right labeled">
-          <input type="text" placeholder="Find domain"/>
-          <div sui-label
-               sui-dropdown>
-            <div class="text">.com</div>
-            <i sui-icon
-               suiIconType="dropdown"></i>
-            <div suiDropdownMenu>
-              <div suiDropdownMenuItem>.com</div>
-              <div suiDropdownMenuItem>.net</div>
-              <div suiDropdownMenuItem>.org</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-right-labeled-example></doc-input-right-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetBasicLabeled">
-      <ng-template docDemo #basicLabeled>
-        <div sui-input
-             suiLabeled="right labeled">
-          <input type="text" placeholder="Enter weight.."/>
-          <div sui-label
-               suiBasic>
-            kg
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-basic-labeled-example></doc-input-basic-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCombinedLabeled">
-      <ng-template docDemo #combinedLabeled>
-        <div sui-input
-             suiLabeled="right labeled">
-          <label sui-label
-                 for="amount">
-            $
-          </label>
-          <input id="amount" type="text" placeholder="Amount"/>
-          <div sui-label
-               suiBasic>
-            .00
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-combined-labeled-example></doc-input-combined-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetAngledLabeled">
-      <ng-template docDemo #angledLabeled>
-        <div sui-input
-             suiIcon="left icon"
-             suiLabeled="right labeled">
-          <i sui-icon
-             suiIconType="tags"></i>
-          <input type="text" placeholder="Enter tags"/>
-          <div sui-label
-               suiTag>
-            Add Tag
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-angled-labeled-example></doc-input-angled-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLeftCornerLabeled">
-      <ng-template docDemo #leftCornerLabeled>
-        <div sui-input
-             suiLabeled="left corner labeled">
-          <input type="text" placeholder="Search..."/>
-          <div sui-label
-               suiCorner="left">
-            <i sui-icon
-               suiIconType="asterisk"></i>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-left-corner-labeled-example></doc-input-left-corner-labeled-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCornerLabeled">
-      <ng-template docDemo #cornerLabeled>
-        <div sui-input
-             suiLabeled="corner labeled">
-          <input type="text" placeholder="Search..."/>
-          <div sui-label
-               suiCorner="left">
-            <i sui-icon
-               suiIconType="asterisk"></i>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-corner-labeled-example></doc-input-corner-labeled-example>
       </ng-template>
     </doc-code-sample>
 
@@ -299,107 +183,43 @@
       <h3 sui-header>Action</h3>
       <p>An input can be formatted to alert the user to an action they may perform</p>
 
-      <ng-template docDemo #action>
-        <div sui-input
-             suiAction="action">
-          <input type="text" placeholder="Search..."/>
-          <button sui-button>Search</button>
-        </div>
+      <ng-template docDemo>
+        <doc-input-action-example></doc-input-action-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLeftAction">
-      <ng-template docDemo #leftAction>
-        <div sui-input
-             suiAction="left action">
-          <button sui-button
-                  suiIcon
-                  suiColour="teal"
-                  suiLabeled="labeled">
-            <i sui-icon
-               suiIconType="cart"></i>
-            Checkout
-          </button>
-          <input type="text" value="$52.03"/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-left-action-example></doc-input-left-action-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRightAction">
-      <ng-template docDemo #rightAction>
-        <div sui-input
-             suiIcon="left icon"
-             suiAction="right action">
-          <i sui-icon
-             suiIconType="search"></i>
-          <input type="text" placeholder="Search..."/>
-          <div sui-button
-               suiBasic
-               sui-dropdown
-               suiFloating>
-            <div class="text">This Page</div>
-            <i sui-icon
-               suiIconType="dropdown"></i>
-            <div suiDropdownMenu>
-              <div suiDropdownMenuItem>This Organization</div>
-              <div suiDropdownMenuItem>Entire Site</div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-right-action-example></doc-input-right-action-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetCombinedAction">
-      <ng-template docDemo #combinedAction>
-        <div sui-input
-             suiAction="action">
-          <input type="text" placeholder="Search..."/>
-          <sui-select
-              suiCompact
-              suiPlaceholder="All"
-              [suiOptions]="options"
-              [(ngModel)]="selectedOption">
-          </sui-select>
-          <div sui-button>
-            Search
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-combined-action-example></doc-input-combined-action-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetRightLabeledAction">
-      <ng-template docDemo #rightLabelAction>
-        <div sui-input
-             suiAction="action">
-          <input type="text" value="http://ww.short.url/c0opq"/>
-          <button sui-button
-                  suiIcon
-                  suiColour="teal"
-                  suiLabeled="right labeled">
-            <i sui-icon
-               suiIconType="copy"></i>
-            Copy
-          </button>
-        </div>
+      <ng-template docDemo>
+        <doc-input-right-label-action-example></doc-input-right-label-action-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconAction">
-      <ng-template docDemo #iconAction>
-        <div sui-input
-             suiAction="action">
-          <input type="text" placeholder="Search..."/>
-          <button sui-button
-                  suiIcon>
-            <i sui-icon
-               suiIconType="search"></i>
-          </button>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-action-example></doc-input-icon-action-example>
       </ng-template>
     </doc-code-sample>
 
@@ -408,36 +228,22 @@
       <h3 sui-header>Transparent</h3>
       <p>A transparent input has no background</p>
 
-      <ng-template docDemo #transparent>
-        <div sui-input
-             suiTransparent>
-          <input type="text" placeholder="Search..."/>
-        </div>
+      <ng-template docDemo>
+        <doc-input-transparent-example></doc-input-transparent-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetIconTransparent">
-      <ng-template docDemo #iconTransparent>
-        <div sui-input
-             suiIcon="icon"
-             suiTransparent>
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-icon-transparent-example></doc-input-icon-transparent-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLeftIconTransparent">
-      <ng-template docDemo #leftIconTransparent>
-        <div sui-input
-             suiIcon="icon"
-             suiTransparent
-             suiIconPosition="left">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-left-icon-transparent-example></doc-input-left-icon-transparent-example>
       </ng-template>
     </doc-code-sample>
 
@@ -446,31 +252,8 @@
       <h3 sui-header>Inverted</h3>
       <p>An input can be formatted to appear on dark backgrounds</p>
 
-      <ng-template docDemo #inverted>
-        <div sui-segment
-             suiInverted>
-          <div sui-input
-               suiInverted>
-            <input type="text" placeholder="Search..."/>
-          </div>
-          <div sui-divider
-               suiInverted></div>
-          <div sui-input
-               suiInverted
-               suiIcon="left icon">
-            <input type="text" placeholder="Search..."/>
-            <i sui-icon suiIconType="search"></i>
-          </div>
-          <div sui-divider
-               suiInverted></div>
-          <div sui-input
-               suiIcon="icon"
-               suiInverted
-               suiTransparent>
-            <input type="text" placeholder="Search..."/>
-            <i sui-icon suiIconType="search"></i>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-input-inverted-example></doc-input-inverted-example>
       </ng-template>
     </doc-code-sample>
 
@@ -479,22 +262,8 @@
       <h3 sui-header>Fluid</h3>
       <p>An input can take the size of its container</p>
 
-      <ng-template docDemo #fluid>
-        <div sui-input
-             suiFluid
-             suiIcon="icon">
-          <input type="text" placeholder="Search a very wide input..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
-
-        <br/>
-
-        <div sui-input
-             suiFluid
-             suiAction="action">
-          <input type="text" placeholder="Search..."/>
-          <button sui-button>Search</button>
-        </div>
+      <ng-template docDemo>
+        <doc-input-fluid-example></doc-input-fluid-example>
       </ng-template>
     </doc-code-sample>
 
@@ -510,73 +279,43 @@
 
       <br/>
 
-      <ng-template docDemo #miniSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="mini">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-mini-size-example></doc-input-mini-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetSmallSize">
-      <ng-template docDemo #smallSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="small">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-small-size-example></doc-input-small-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetLargeSize">
-      <ng-template docDemo #largeSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="large">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-large-size-example></doc-input-large-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetBigSize">
-      <ng-template docDemo #bigSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="big">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-big-size-example></doc-input-big-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetHugeSize">
-      <ng-template docDemo #hugeSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="huge">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-huge-size-example></doc-input-huge-size-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetMassiveSize">
-      <ng-template docDemo #massiveSize>
-        <div sui-input
-             suiIcon="icon"
-             suiSize="massive">
-          <input type="text" placeholder="Search..."/>
-          <i sui-icon suiIconType="search"></i>
-        </div>
+      <ng-template docDemo>
+        <doc-input-massive-size-example></doc-input-massive-size-example>
       </ng-template>
     </doc-code-sample>
   </div>

@@ -1,0 +1,13 @@
+<div sui-input
+     suiAction="action">
+  <input type="text" placeholder="Search..."/>
+  <sui-select
+      suiCompact
+      suiPlaceholder="All"
+      [suiOptions]="options"
+      [(ngModel)]="selectedOption">
+  </sui-select>
+  <div sui-button>
+    Search
+  </div>
+</div>
