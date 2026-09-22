@@ -1,0 +1,17 @@
+<sui-modal
+  suiMaskClosable="false"
+  suiHeaderText="Delete Your Account"
+  [(visible)]="isMaskClosableModalVisible">
+  <div suiModalContent>
+    <p>Are you sure you want to delete your account</p>
+  </div>
+  <div suiModalActions>
+    <div sui-button suiColour="red">
+      No
+    </div>
+    <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
+      Yes
+      <i sui-icon suiIconType="checkmark"></i>
+    </div>
+  </div>
+</sui-modal>

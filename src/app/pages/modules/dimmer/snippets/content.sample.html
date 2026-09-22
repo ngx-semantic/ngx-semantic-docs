@@ -1,0 +1,20 @@
+<button sui-button
+        (click)="contentDimmerVisible = !contentDimmerVisible">
+  Toggle Dimmer
+</button>
+
+<div sui-segment
+     sui-dimmer
+     [(dimmed)]="contentDimmerVisible">
+  <doc-wireframe type="short-paragraph"></doc-wireframe>
+
+  <ng-template suiDimmerContent>
+    <h2 sui-header
+        suiIcon
+        suiInverted>
+      <i sui-icon
+         suiIconType="heart"></i>
+      Dimmed Message!
+    </h2>
+  </ng-template>
+</div>

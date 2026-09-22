@@ -1,0 +1,10 @@
+persons: ISelectOption[] = [
+  { text: 'Elliot', value: null, image: { avatar: true, src: '/assets/images/elliot.jpg'} },
+  { text: 'Helen', value: null, image: { avatar: true, src: '/assets/images/helen.jpg'} },
+  { text: 'Jenny', value: null, image: { avatar: true, src: '/assets/images/jenny.jpg'} },
+  { text: 'Joe', value: null, image: { avatar: true, src: '/assets/images/joe.jpg'} },
+  { text: 'Justen', value: null, image: { avatar: true, src: '/assets/images/justen.jpg'} },
+  { text: 'Laura', value: null, image: { avatar: true, src: '/assets/images/laura.jpg'} },
+  { text: 'Matt', value: null, image: { avatar: true, src: '/assets/images/matt.jpg'} },
+  { text: 'Stevie', value: null, image: { avatar: true, src: '/assets/images/stevie.jpg'} },
+];

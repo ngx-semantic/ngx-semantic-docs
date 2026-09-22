@@ -11,8 +11,8 @@
                                   suiColour="teal">Flexbox</span></h3>
       <p>A basic rating</p>
 
-      <ng-template docDemo #basic>
-        <sui-rating suiMaxValue="1"></sui-rating>
+      <ng-template docDemo>
+        <doc-rating-basic-example></doc-rating-basic-example>
       </ng-template>
     </doc-code-sample>
 
@@ -21,11 +21,8 @@
       <h3 sui-header>Star</h3>
       <p>A rating can use a set of star icons</p>
 
-      <ng-template docDemo #star>
-        <sui-rating
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
+      <ng-template docDemo>
+        <doc-rating-star-example></doc-rating-star-example>
       </ng-template>
     </doc-code-sample>
 
@@ -34,11 +31,8 @@
       <h3 sui-header>Heart</h3>
       <p>A rating can use a set of heart icons</p>
 
-      <ng-template docDemo #heart>
-        <sui-rating
-            suiType="heart"
-            suiValue="1"
-            suiMaxValue="3"></sui-rating>
+      <ng-template docDemo>
+        <doc-rating-heart-example></doc-rating-heart-example>
       </ng-template>
     </doc-code-sample>
 
@@ -50,53 +44,8 @@
       <h3 sui-header>Size</h3>
       <p>A rating can vary in size</p>
 
-      <ng-template docDemo #sizes>
-        <sui-rating
-            suiSize="mini"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="tiny"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="small"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="large"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="huge"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="huge"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
-        <br><br>
-        <sui-rating
-            suiSize="massive"
-            suiType="star"
-            suiValue="3"
-            suiMaxValue="4"></sui-rating>
+      <ng-template docDemo>
+        <doc-rating-sizes-example></doc-rating-sizes-example>
       </ng-template>
     </doc-code-sample>
   </div>

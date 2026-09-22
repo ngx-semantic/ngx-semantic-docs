@@ -1,0 +1,25 @@
+<sui-modal
+  suiFullScreen
+  suiHeaderText="Update Your Settings"
+  [(visible)]="isFullScreenModalVisible">
+  <div suiModalContent>
+    <div sui-form>
+      <h4 sui-header suiDividing>Give us your feedback</h4>
+      <div suiFormField>
+        <label>Feedback</label>
+        <textarea></textarea>
+      </div>
+      <div suiFormField>
+        <sui-checkbox [checked]="true">It's okay to contact me.</sui-checkbox>
+      </div>
+    </div>
+  </div>
+  <div suiModalActions>
+    <div sui-button>
+      Cancel
+    </div>
+    <div sui-button suiEmphasis="positive">
+      Send
+    </div>
+  </div>
+</sui-modal>

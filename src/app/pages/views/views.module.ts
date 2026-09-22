@@ -28,8 +28,26 @@ import { SuiCommentModule } from 'ngx-semantic/views/comment';
 import { SuiAccordionModule } from 'ngx-semantic/modules/accordion';
 import { SuiButtonModule } from 'ngx-semantic/elements/button';
 
+import { ADVERTISEMENT_EXAMPLES } from './advertisement/advertisement-examples.component';
+
+import { CARD_EXAMPLES } from './card/card-examples.component';
+
+import { COMMENT_EXAMPLES } from './comment/comment-examples.component';
+
+import { FEED_EXAMPLES } from './feed/feed-examples.component';
+
+import { ITEM_EXAMPLES } from './item/item-examples.component';
+
+import { STATISTIC_EXAMPLES } from './statistic/statistic-examples.component';
+
 @NgModule({
   declarations: [
+    ...STATISTIC_EXAMPLES,
+    ...ITEM_EXAMPLES,
+    ...FEED_EXAMPLES,
+    ...COMMENT_EXAMPLES,
+    ...CARD_EXAMPLES,
+    ...ADVERTISEMENT_EXAMPLES,
     AdvertisementPage,
     CardsComponent,
     CommentPage,

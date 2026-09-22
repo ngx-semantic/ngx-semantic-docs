@@ -1,5 +1,9 @@
 import {AfterViewChecked, Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import snippetYoutubeSrc from './snippets/youtube.sample.html' with { loader: 'text' };
+import snippetVimeoSrc from './snippets/vimeo.sample.html' with { loader: 'text' };
+import snippetCustomContentSrc from './snippets/custom-content.sample.html' with { loader: 'text' };
+import snippetAspectRatioSrc from './snippets/aspect-ratio.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-embed',
@@ -8,33 +12,17 @@ import {Title} from "@angular/platform-browser";
     standalone: false
 })
 export class EmbedComponent {
+  snippetYoutube = snippetYoutubeSrc;
+  snippetVimeo = snippetVimeoSrc;
+  snippetCustomContent = snippetCustomContentSrc;
+  snippetAspectRatio = snippetAspectRatioSrc;
+
   isDefinitionsActive = true;
   isApiActive: boolean;
 
-  snippetYoutube = `
-   <sui-embed
-      suiSource="youtube"
-      suiId="O6Xo21L0ybE"
-      suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>`;
 
-  snippetVimeo = `
-   <sui-embed
-      suiSource="vimeo"
-      suiId="125292332"
-      suiPlaceHolder="https://semantic-ui.com/images/vimeo-example.jpg"></sui-embed>`;
 
-  snippetCustomContent = `
-   <sui-embed
-      suiIcon="right circle arrow"
-      suiSourceUrl="http://www.myfav.es/jack"
-      suiPlaceHolder="https://semantic-ui.com/images/image-16by9.png"></sui-embed>`;
 
-  snippetAspectRatio = `
-   <sui-embed
-      suiAspectRatio="4:3"
-      suiSource="youtube"
-      suiId="HTZudKi36bo"
-      suiPlaceHolder="https://semantic-ui.com/images/4by3.jpg"></sui-embed>`;
 
   constructor(title: Title) {
     title.setTitle('Embed | Ngx Semantic');

@@ -18,43 +18,8 @@
         </div>
       </div>
 
-      <ng-template docDemo #standard>
-        <div sui-items>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Header</a>
-              <div suiItemMeta>
-                <span>Description</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                Additional Details
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Header</a>
-              <div suiItemMeta>
-                <span>Description</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                Additional Details
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-standard-example></doc-item-standard-example>
       </ng-template>
     </doc-code-sample>
 
@@ -66,24 +31,8 @@
       <h3 sui-header>Image</h3>
       <p>An item can contain an image</p>
 
-      <ng-template docDemo #imageContent>
-        <div sui-items suiDivided>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-image-content-example></doc-item-image-content-example>
       </ng-template>
     </doc-code-sample>
 
@@ -92,33 +41,8 @@
       <h3 sui-header>Content</h3>
       <p>An item can contain content</p>
 
-      <ng-template docDemo #content>
-        <div sui-items suiDivided>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              Content A
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              Content B
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              Content C
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-content-example></doc-item-content-example>
       </ng-template>
     </doc-code-sample>
 
@@ -127,33 +51,8 @@
       <h3 sui-header>Header</h3>
       <p>An item can contain a header</p>
 
-      <ng-template docDemo #header>
-        <div sui-items suiDivided>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>12 Years a Slave</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>My Neighbour Totoro</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>Watchmen</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-header-example></doc-item-header-example>
       </ng-template>
     </doc-code-sample>
 
@@ -168,54 +67,8 @@
         automatically be spaced
       </div>
 
-      <ng-template docDemo #metadata>
-        <div sui-items suiDivided>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Arrowhead Valley Camp</a>
-              <div suiItemMeta>
-                <span>$1200</span>
-                <span>1 Month</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Buck's Homebrew Stayaway</a>
-              <div suiItemMeta>
-                <span>$1000</span>
-                <span>2 Weeks</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Astrology Camp</a>
-              <div suiItemMeta>
-                <span>$1600</span>
-                <span>6 Weeks</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-metadata-example></doc-item-metadata-example>
       </ng-template>
     </doc-code-sample>
 
@@ -229,44 +82,8 @@
         To make the entire content of an item link, check out the link variation below
       </div>
 
-      <ng-template docDemo #link>
-        <div sui-items>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Stevie Feliciano</a>
-              <div suiItemDescription>
-                <p>Stevie Feliciano is a <a>library scientist</a> living in New York City. She likes to spend her time
-                  reading, running, and writing.</p>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Veronika Ossi</a>
-              <div suiItemDescription>
-                <p>Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.</p>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Jenny Hess</a>
-              <div suiItemDescription>
-                <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-link-example></doc-item-link-example>
       </ng-template>
     </doc-code-sample>
 
@@ -275,22 +92,8 @@
       <h3 sui-header>Description</h3>
       <p>An item can contain a description with a single or multiple paragraphs</p>
 
-      <ng-template docDemo #description>
-        <div sui-items>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Cute Dog</a>
-              <div suiItemDescription>
-                <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces,
-                  others for their tiny stature, and even others for their massive size.</p>
-                <p>Many people also have their own barometers for what makes a cute dog.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-description-example></doc-item-description-example>
       </ng-template>
     </doc-code-sample>
 
@@ -299,21 +102,8 @@
       <h3 sui-header>Extra Content</h3>
       <p>An item can contain extra content meant to be formatted separately from the main content</p>
 
-      <ng-template docDemo #extraContent>
-        <div sui-items>
-          <div sui-item>
-            <div suiItemContent>
-              <a suiItemHeader>Cute Dog</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <i sui-icon suiIconType="green check"></i>
-                121 Votes
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-extra-content-example></doc-item-extra-content-example>
       </ng-template>
     </doc-code-sample>
 
@@ -326,31 +116,8 @@
         You can use the rating component to attach events to like and favorite icons
       </div>
 
-      <ng-template docDemo #rating>
-        <div sui-items>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>
-                <i sui-icon suiIconType="like"></i>
-                Veronika Ossi
-              </a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/justen.jpg"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>
-                <i sui-icon suiIconType="favorite"></i>
-                Justen Kitsune
-              </a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-rating-example></doc-item-rating-example>
       </ng-template>
     </doc-code-sample>
 
@@ -362,43 +129,8 @@
       <h3 sui-header>Stacking</h3>
       <p>A table can specify how it stacks items responsively</p>
 
-      <ng-template docDemo #unstackable>
-        <div sui-items suiUnstackable>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Header</a>
-              <div suiItemMeta>
-                <span>Description</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                Additional Details
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Header</a>
-              <div suiItemMeta>
-                <span>Description</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                Additional Details
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-unstackable-example></doc-item-unstackable-example>
       </ng-template>
     </doc-code-sample>
 
@@ -407,68 +139,8 @@
       <h3 sui-header>Divided</h3>
       <p>Items can be divided to better distinguish between grouped content</p>
 
-      <ng-template docDemo #divided>
-        <div sui-items suiDivided>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>12 Years a Slave</a>
-              <div suiItemMeta>
-                <span>Union Square 14</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-label>IMAX</div>
-                <div sui-label><i sui-icon suiIconType="globe"></i> Additional Languages</div>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>My Neighbor Totoro</a>
-              <div suiItemMeta>
-                <span>IFC Cinema</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-button suiEmphasis="primary" suiFloated="right floated">
-                  Buy tickets
-                  <i sui-icon suiIconType="right chevron"></i>
-                </div>
-                <div sui-label>Limited</div>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Watchmen</a>
-              <div suiItemMeta>
-                <span>IFC</span>
-              </div>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-button suiEmphasis="primary" suiFloated="right floated">
-                  Buy tickets
-                  <i sui-icon suiIconType="right chevron"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-divided-example></doc-item-divided-example>
       </ng-template>
     </doc-code-sample>
 
@@ -477,65 +149,15 @@
       <h3 sui-header>Relaxed</h3>
       <p>A group of items can relax its padding to provide more negative space</p>
 
-      <ng-template docDemo #relaxed>
-        <div sui-items suiRelaxed="relaxed">
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>12 Years a Slave</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>My Neighbor Totoro</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>Watchmen</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-relaxed-example></doc-item-relaxed-example>
       </ng-template>
     </doc-code-sample>
 
     <doc-code-sample
         [templateCode]="snippetVeryRelaxed">
-      <ng-template docDemo #veryRelaxed>
-        <div sui-items suiRelaxed="very relaxed">
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>12 Years a Slave</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>My Neighbor Totoro</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>Watchmen</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-very-relaxed-example></doc-item-very-relaxed-example>
       </ng-template>
     </doc-code-sample>
 
@@ -544,42 +166,8 @@
       <h3 sui-header>Link Item</h3>
       <p>An item can be formatted so that the entire contents link to another page</p>
 
-      <ng-template docDemo #linkItem>
-        <div sui-items suiLink>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Stevie Feliciano</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/veronika.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Veronika Ossi</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="tiny">
-              <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Jenny Hess</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-link-item-example></doc-item-link-item-example>
       </ng-template>
     </doc-code-sample>
 
@@ -594,33 +182,8 @@
         automatically be spaced
       </div>
 
-      <ng-template docDemo #verticalAlignment>
-        <div sui-items>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Top Aligned</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="middle aligned">
-              <a suiItemHeader>Middle Aligned</a>
-            </div>
-          </div>
-          <div sui-item>
-            <div sui-image suiSize="small">
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent suiAlignment="bottom aligned">
-              <a suiItemHeader>Bottom Aligned</a>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-vertical-alignment-example></doc-item-vertical-alignment-example>
       </ng-template>
     </doc-code-sample>
 
@@ -635,57 +198,8 @@
         automatically be spaced
       </div>
 
-      <ng-template docDemo #floatedContent>
-        <div sui-items>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Content A</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-button suiFloated="right floated">
-                  Action
-                </div>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Content B</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-button suiFloated="right floated">
-                  Action
-                </div>
-              </div>
-            </div>
-          </div>
-          <div sui-item>
-            <div suiItemImage>
-              <img src="/assets/images/wireframes/image.png"/>
-            </div>
-            <div suiItemContent>
-              <a suiItemHeader>Content C</a>
-              <div suiItemDescription>
-                <img src="/assets/images/wireframes/short-paragraph.png"/>
-              </div>
-              <div suiItemExtra>
-                <div sui-button suiFloated="right floated">
-                  Action
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-template docDemo>
+        <doc-item-floated-content-example></doc-item-floated-content-example>
       </ng-template>
     </doc-code-sample>
   </div>
