@@ -1,5 +1,16 @@
 import {AfterViewChecked, Component} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
+import snippetTextSrc from './snippets/text.sample.html' with { loader: 'text' };
+import snippetTextInvertedSrc from './snippets/text-inverted.sample.html' with { loader: 'text' };
+import snippetIndeterminateSrc from './snippets/indeterminate.sample.html' with { loader: 'text' };
+import snippetActiveSrc from './snippets/active.sample.html' with { loader: 'text' };
+import snippetDisabledSrc from './snippets/disabled.sample.html' with { loader: 'text' };
+import snippetInlineSrc from './snippets/inline.sample.html' with { loader: 'text' };
+import snippetInlineCenteredSrc from './snippets/inline-centered.sample.html' with { loader: 'text' };
+import snippetSizesSrc from './snippets/size.sample.html' with { loader: 'text' };
+import snippetInvertedSrc from './snippets/inverted.sample.html' with { loader: 'text' };
+import snippetInvertedDimmerSrc from './snippets/inverted-dimmer.sample.html' with { loader: 'text' };
 
 @Component({
     selector: 'doc-loaders',
@@ -8,248 +19,28 @@ import {Title} from '@angular/platform-browser';
     standalone: false
 })
 export class LoaderComponent {
-  snippetBasic = `
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader></div>
-    </ng-template>
-  </div>`;
+  snippetBasic = snippetBasicSrc;
+  snippetText = snippetTextSrc;
+  snippetTextInverted = snippetTextInvertedSrc;
+  snippetIndeterminate = snippetIndeterminateSrc;
+  snippetActive = snippetActiveSrc;
+  snippetDisabled = snippetDisabledSrc;
+  snippetInline = snippetInlineSrc;
+  snippetInlineCentered = snippetInlineCenteredSrc;
+  snippetSizes = snippetSizesSrc;
+  snippetInverted = snippetInvertedSrc;
+  snippetInvertedDimmer = snippetInvertedDimmerSrc;
 
-  snippetText = `
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText>
-        Loading
-      </div>
-    </ng-template>
-  </div>`;
 
-  snippetTextInverted = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText>
-        Loading
-      </div>
-    </ng-template>
-  </div>`;
 
-  snippetIndeterminate = `
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiIndeterminate
-           suiText>
-        Preparing Files
-      </div>
-    </ng-template>
-  </div>`;
 
-  snippetActive = `
-  <div sui-segment>
-    <div sui-loader
-         suiActive></div>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetDisabled = `
-  <div sui-segment>
-    <div sui-loader
-         disabled></div>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-  </div>`;
 
-  snippetInline = `
-  <div sui-loader
-       suiActive
-       suiInline="normal">
-  </div>`;
 
-  snippetInlineCentered = `
-  <div sui-loader
-       suiActive
-       suiInline="centered">
-  </div>`;
 
-  snippetSizes = `
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="mini">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="tiny">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="small">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="medium">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="large">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="big">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="huge">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       dimmed="true">
-    <doc-wireframe type="paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="massive">
-        Loading
-      </div>
-    </ng-template>
-  </div>`;
 
-  snippetInverted = `
-  <div sui-segment
-       suiInverted>
-    <div sui-loader
-         suiActive
-         suiInverted>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>`;
 
-  snippetInvertedDimmer = `
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="mini">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText>
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       dimmed="true">
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <doc-wireframe type="short-paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="medium">
-        Loading
-      </div>
-    </ng-template>
-  </div>
-  <div sui-segment
-       sui-dimmer
-       suiDimmerInverted
-       dimmed="true">
-    <doc-wireframe type="paragraph"></doc-wireframe>
-    <ng-template suiDimmerContent>
-      <div sui-loader
-           suiText
-           suiSize="large">
-        Loading
-      </div>
-    </ng-template>
-  </div>`;
+
 
   constructor(title: Title) {
     title.setTitle('Loader | Ngx Semantic');

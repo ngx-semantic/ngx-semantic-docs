@@ -54,15 +54,48 @@ function extractState(ts) {
   return body.trim();
 }
 
+function extractBalanced(html, startTagRe) {
+  const start = html.search(startTagRe);
+  if (start < 0) return null;
+  const openEnd = html.indexOf('>', start);
+  if (openEnd < 0) return null;
+  const tagMatch = html.slice(start, openEnd + 1).match(/^<([a-zA-Z0-9:-]+)/);
+  const tag = tagMatch[1];
+  let i = openEnd + 1;
+  let depth = 1;
+  while (i < html.length && depth > 0) {
+    const nextOpen = html.slice(i).search(new RegExp(`<${tag}\\b`));
+    const nextClose = html.slice(i).search(new RegExp(`</${tag}>`));
+    if (nextClose < 0) return null;
+    if (nextOpen >= 0 && nextOpen < nextClose) {
+      depth++;
+      i += nextOpen + tag.length + 1;
+    } else {
+      depth--;
+      if (depth === 0) {
+        return {
+          start,
+          end: i + nextClose + tag.length + 3,
+          attrs: html.slice(start + tag.length + 1, openEnd),
+          inner: html.slice(openEnd + 1, i + nextClose),
+        };
+      }
+      i += nextClose + tag.length + 3;
+    }
+  }
+  return null;
+}
+
 function processPage(htmlPath) {
   if (htmlPath.includes(`${path.sep}flag${path.sep}`) || htmlPath.includes(`${path.sep}checkbox${path.sep}`)) {
     return null;
   }
+  const dir = path.dirname(htmlPath);
+  if (fs.existsSync(path.join(dir, `${path.basename(dir)}-examples.component.ts`))) {
+    return null;
+  }
   let html = fs.readFileSync(htmlPath, 'utf8');
   if (!html.includes('doc-code-sample') || !html.includes('docDemo')) return null;
-  if (html.includes('-example>')) return null;
-
-  const dir = path.dirname(htmlPath);
   const tsPath = fs.existsSync(htmlPath.replace(/\.html$/, '.ts'))
     ? htmlPath.replace(/\.html$/, '.ts')
     : fs.readdirSync(dir).map((f) => path.join(dir, f)).find((f) => f.endsWith('.ts') && !f.includes('example') && !f.includes('.sample.'));
@@ -82,11 +115,30 @@ function processPage(htmlPath) {
   const stateBody = extractState(ts);
 
   const samples = [];
-  const sampleRe = /<doc-code-sample\b([^>]*)>([\s\S]*?)<ng-template([^>]*)>([\s\S]*?)<\/ng-template>/g;
-  html = html.replace(sampleRe, (full, attrs, before, tplAttrs, inner) => {
-    if (!/\bdocDemo\b/.test(tplAttrs) && !/\bdocDemo\b/.test(full)) {
-      return full;
+  let rebuilt = '';
+  let cursor = 0;
+  while (true) {
+    const rel = html.slice(cursor).search(/<doc-code-sample\b/);
+    if (rel < 0) {
+      rebuilt += html.slice(cursor);
+      break;
     }
+    rebuilt += html.slice(cursor, cursor + rel);
+    const sample = extractBalanced(html.slice(cursor + rel), /^<doc-code-sample\b/);
+    if (!sample) {
+      rebuilt += html.slice(cursor + rel);
+      break;
+    }
+    const demo = extractBalanced(sample.inner, /<ng-template[^>]*\bdocDemo\b/);
+    if (!demo) {
+      rebuilt += html.slice(cursor + rel, cursor + rel + sample.end);
+      cursor = cursor + rel + sample.end;
+      continue;
+    }
+    const attrs = sample.attrs;
+    const before = sample.inner.slice(0, demo.start);
+    const tplAttrs = demo.attrs;
+    const inner = demo.inner;
     const refMatch = tplAttrs.match(/#(\w+)/);
     const codeMatch = attrs.match(/\[templateCode\]="(\w+)"/);
     const tsMatch = attrs.match(/\[componentCode\]="(\w+)"/);
@@ -104,8 +156,10 @@ function processPage(htmlPath) {
     const varTs = tsMatch ? tsMatch[1] : null;
     samples.push({ name, selector, className, htmlFile, txtFile, varHtml, varTs });
     const newTplAttrs = tplAttrs.replace(/\s*#\w+/, '');
-    return `<doc-code-sample${attrs}>${before}<ng-template${newTplAttrs}>\n        <${selector}></${selector}>\n      </ng-template>`;
-  });
+    rebuilt += `<doc-code-sample${attrs}>${before}<ng-template${newTplAttrs}>\n        <${selector}></${selector}>\n      </ng-template>${sample.inner.slice(demo.end)}</doc-code-sample>`;
+    cursor = cursor + rel + sample.end;
+  }
+  html = rebuilt;
 
   if (!samples.length) return null;
 
@@ -127,11 +181,21 @@ function processPage(htmlPath) {
     }
   }
   ts = ts.replace(/\r\n/g, '\n');
-  ts = ts.replace(/\n  \w+\s*=\s*`[\s\S]*?`;\s*/g, '\n');
-  if (!ts.includes("with { loader: 'text' }")) {
-    ts = ts.replace(/(import [^\n]+;\n)(?!import )/, `$1${importLines.join('\n')}\n`);
+  const classMatch = ts.match(/(@Component\([\s\S]*?\)\s*export class \w+[^{]*\{)/);
+  if (!classMatch) {
+    console.warn('could not parse class', tsPath);
+    return null;
   }
-  ts = ts.replace(/export class \w+[^{]*\{/, (m) => `${m}\n${assignments.join('\n')}\n`);
+  const keepImports = ts
+    .slice(0, ts.indexOf(classMatch[1]))
+    .split('\n')
+    .filter((l) => !l.includes("with { loader: 'text' }"))
+    .join('\n')
+    .replace(/\n+$/, '\n');
+  let body = ts.slice(ts.indexOf(classMatch[1]) + classMatch[1].length);
+  body = body.replace(/\n  \w+\s*=\s*`[\s\S]*?`;/g, '');
+  body = body.replace(/\n  snippet\w+\s*=\s*snippet\w+Src;/g, '');
+  ts = `${keepImports}${importLines.join('\n')}\n\n${classMatch[1]}\n${assignments.join('\n')}\n${body}`;
   fs.writeFileSync(tsPath, ts);
 
   const stateClass = stateBody
