@@ -1,0 +1,55 @@
+<div sui-grid
+     suiWidth="four"
+     suiDivided="divided"
+     suiReversed="computer reversed">
+  <div suiGridRow>
+    <div suiGridColumn>
+      Computer First
+    </div>
+    <div suiGridColumn>
+      Computer Second
+    </div>
+    <div suiGridColumn>
+      Computer Third
+    </div>
+    <div suiGridColumn>
+      Computer Fourth
+    </div>
+  </div>
+</div>
+<div sui-grid
+     suiWidth="three"
+     suiDivided="divided">
+  <div suiGridRow
+       [suiReversed]="['tablet reversed', 'mobile reversed']">
+    <div suiGridColumn>
+      Tablet &amp; Mobile First
+    </div>
+    <div suiGridColumn>
+      Tablet &amp; Mobile Second
+    </div>
+    <div suiGridColumn>
+      Tablet &amp; Mobile Third
+    </div>
+  </div>
+</div>
+<div sui-grid
+     suiWidth="one"
+     suiDivided="vertically divided"
+     suiReversed="computer vertically reversed">
+  <div suiGridRow>
+    <div suiGridColumn>
+      Computer Row 1
+    </div>
+  </div>
+  <div suiGridRow>
+    <div suiGridColumn>
+      Computer Row 2
+    </div>
+  </div>
+  <div suiGridRow>
+    <div suiGridColumn>
+      Computer Row 3
+    </div>
+  </div>
+</div>
