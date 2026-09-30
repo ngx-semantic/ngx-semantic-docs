@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 
-export type DocWireframeType = 'paragraph' | 'short-paragraph';
+export type DocWireframeType = 'paragraph' | 'short-paragraph' | 'image';
 
 @Component({
     selector: 'doc-wireframe',
