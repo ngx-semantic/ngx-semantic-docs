@@ -1,15 +1,15 @@
 <doc-page
     header="Select"
-    subHeader="A tab is a hidden section of content activated by a menu">
+    subHeader="A select is a dropdown used to pick one or more values from a list of options">
   <div *docPageContent="'definition'">
     <h2 sui-header
-        suiDividing>Type</h2>
+        suiDividing>Types</h2>
 
     <doc-code-sample
         [templateCode]="snippetStandard"
         [componentCode]="snippetStandardTs">
-      <h3 sui-header>Select</h3>
-      <p>A standard select can be used to pick between choices in a form</p>
+      <h3 sui-header>Selection</h3>
+      <p>A standard select can be used to pick between choices in a form.</p>
 
       <ng-template docDemo>
         <doc-select-standard-example></doc-select-standard-example>
@@ -19,8 +19,20 @@
     <doc-code-sample
         [templateCode]="snippetFluid"
         [componentCode]="snippetStandardTs">
+
       <ng-template docDemo>
         <doc-select-fluid-example></doc-select-fluid-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSearch"
+        [componentCode]="snippetSearchTs">
+      <h3 sui-header>Search Selection</h3>
+      <p>A selection dropdown can allow a user to search through a large list of choices.</p>
+
+      <ng-template docDemo>
+        <doc-select-search-example></doc-select-search-example>
       </ng-template>
     </doc-code-sample>
 
@@ -28,7 +40,13 @@
         [templateCode]="snippetMultiple"
         [componentCode]="snippetMultipleTs">
       <h3 sui-header>Multiple Selection</h3>
-      <p>A selection dropdown can allow multiple selections</p>
+      <p>A selection dropdown can allow multiple selections.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Selected values are emitted as an array.</p>
+        </div>
+      </div>
 
       <ng-template docDemo>
         <doc-select-multiple-example></doc-select-multiple-example>
@@ -39,7 +57,7 @@
         [templateCode]="snippetMultipleSearch"
         [componentCode]="snippetMultipleTs">
       <h3 sui-header>Multiple Search Selection</h3>
-      <p>A selection dropdown can allow multiple search selections</p>
+      <p>A selection dropdown can allow multiple search selections.</p>
 
       <ng-template docDemo>
         <doc-select-multiple-search-example></doc-select-multiple-search-example>
@@ -47,10 +65,16 @@
     </doc-code-sample>
 
     <doc-code-sample
-        [templateCode]="snippetFlags"
+        [templateCode]="snippetFlag"
         [componentCode]="snippetFlagsTs">
       <h3 sui-header>Flag Selection</h3>
-      <p>A selection can include flag icons</p>
+      <p>A selection can include flag icons.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Set <span sui-label>flag</span> on an option to the two-letter country code of the flag to show.</p>
+        </div>
+      </div>
 
       <ng-template docDemo>
         <doc-select-flag-example></doc-select-flag-example>
@@ -61,10 +85,30 @@
         [templateCode]="snippetImages"
         [componentCode]="snippetImagesTs">
       <h3 sui-header>Image Selection</h3>
-      <p>A selection can include images</p>
+      <p>A selection can include images.</p>
 
       <ng-template docDemo>
         <doc-select-images-example></doc-select-images-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Forms</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetTwoWay"
+        [componentCode]="snippetTwoWayTs">
+      <h3 sui-header>Form Binding</h3>
+      <p>A select is a form control. Use it with <span sui-label>ngModel</span>, or with <span sui-label>formControl</span> / <span sui-label>formControlName</span> in reactive forms. The <span sui-label>suiSelectionChanged</span> event also fires whenever the selection changes.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Form binding with <span sui-label>ngModel</span> and reactive forms requires <span sui-label>FormsModule</span> or <span sui-label>ReactiveFormsModule</span>. Programmatic value writes are supported for single selection.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-select-two-way-example></doc-select-two-way-example>
       </ng-template>
     </doc-code-sample>
 
@@ -75,7 +119,7 @@
         [templateCode]="snippetLoading"
         [componentCode]="snippetStatesTs">
       <h3 sui-header>Loading</h3>
-      <p>A dropdown can show that it is currently loading data</p>
+      <p>A dropdown can show that it is currently loading data.</p>
 
       <ng-template docDemo>
         <doc-select-loading-example></doc-select-loading-example>
@@ -86,7 +130,7 @@
         [templateCode]="snippetError"
         [componentCode]="snippetStatesTs">
       <h3 sui-header>Error</h3>
-      <p>An errored dropdown can alert a user to a problem</p>
+      <p>An errored dropdown can alert a user to a problem.</p>
 
       <ng-template docDemo>
         <doc-select-error-example></doc-select-error-example>
@@ -97,17 +141,55 @@
         [templateCode]="snippetDisabled"
         [componentCode]="snippetStatesTs">
       <h3 sui-header>Disabled</h3>
-      <p>A disabled dropdown menu or item does not allow user interaction</p>
+      <p>A disabled dropdown menu or item does not allow user interaction.</p>
 
       <ng-template docDemo>
         <doc-select-disabled-example></doc-select-disabled-example>
       </ng-template>
     </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetScrolling"
+        [componentCode]="snippetScrollingTs">
+      <h3 sui-header>Scrolling</h3>
+      <p>A selection dropdown can have its menu scroll.</p>
+
+      <ng-template docDemo>
+        <doc-select-scrolling-example></doc-select-scrolling-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCompact"
+        [componentCode]="snippetCompactTs">
+      <h3 sui-header>Compact</h3>
+      <p>A compact selection dropdown has no minimum width.</p>
+
+      <ng-template docDemo>
+        <doc-select-compact-example></doc-select-compact-example>
+      </ng-template>
+    </doc-code-sample>
   </div>
 
   <div *docPageContent="'api'">
+    <div sui-message suiIcon>
+      <i sui-icon suiIconType="info circle"></i>
+      <div suiMessageContent>
+        <p>
+          Import <span sui-label>SuiSelectModule</span> from <span sui-label>ngx-semantic/modules/select</span>.
+          The select builds its own menu from <span sui-label>suiOptions</span>, so you do not need to write menu markup.
+          Looking for a menu of actions? See <a routerLink="/modules/dropdown">Dropdown</a>.
+        </p>
+      </div>
+    </div>
+
     <h2 sui-header
         suiDividing>sui-select</h2>
+
+    <p>Selector: <span sui-label>sui-select</span>. Implements <span sui-label>ControlValueAccessor</span> so it can be used with template-driven and reactive forms.</p>
 
     <h4 sui-header>Properties</h4>
 
@@ -124,9 +206,24 @@
       </thead>
       <tbody>
       <tr>
-        <td>suiPlaceholder</td>
-        <td>The select's placeholder
+        <td>suiOptions</td>
+        <td>The options to choose from. See <span sui-label>ISelectOption</span> below.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            ISelectOption[]
+          </div>
         </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            []
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPlaceholder</td>
+        <td>The select&rsquo;s placeholder text.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -142,110 +239,7 @@
       </tr>
       <tr>
         <td>suiSearch</td>
-        <td>Determines if the select supports searching.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiFluid</td>
-        <td>Determines if the select is rendered as fluid.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiInline</td>
-        <td>Determines if the select is rendered inline.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiLoading</td>
-        <td>Determines if the select is rendered as loading.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiError</td>
-        <td>Determines if the select is rendered to depict an error.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>disabled</td>
-        <td>Determines if the select is disabled.
-        </td>
-        <td>
-          <div sui-label
-               suiColour="teal">
-            boolean
-          </div>
-        </td>
-        <td>
-          <div sui-label
-               suiColour="grey">
-            false
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>suiScrolling</td>
-        <td>Determines if the select is rendered as scrollable.
-        </td>
+        <td>Determines if the select supports searching through its options.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -261,8 +255,103 @@
       </tr>
       <tr>
         <td>suiMultiple</td>
-        <td>Determines if the select allows for multiple selection.
+        <td>Determines if the select allows for multiple selection. The selection is then an array of option values.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
         </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>Determines if the select is rendered as fluid, taking the full width of its parent.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInline</td>
+        <td>Determines if the select is rendered inline.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLoading</td>
+        <td>Determines if the select is rendered as loading.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiError</td>
+        <td>Determines if the select is rendered to depict an error.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Determines if the select is disabled.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrolling</td>
+        <td>Determines if the select&rsquo;s menu is rendered as scrollable.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -278,8 +367,7 @@
       </tr>
       <tr>
         <td>suiCompact</td>
-        <td>Determines if the select is rendered as compact.
-        </td>
+        <td>Determines if the select is rendered as compact, with no minimum width.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -295,8 +383,7 @@
       </tr>
       <tr>
         <td>name</td>
-        <td>The components name.
-        </td>
+        <td>The component&rsquo;s name.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -320,7 +407,7 @@
            suiDefinition>
       <thead>
       <tr>
-        <th>Property</th>
+        <th>Event</th>
         <th>Description</th>
         <th>Type</th>
       </tr>
@@ -328,12 +415,151 @@
       <tbody>
       <tr>
         <td>suiSelectionChanged</td>
-        <td>Fired when a the selection is changed.
+        <td>Fired when the selection changes. Emits the selected option value, or an array of values when <span sui-label>suiMultiple</span> is set.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            any | any[]
+          </div>
         </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>ISelectOption</h2>
+
+    <p>The shape of each entry in <span sui-label>suiOptions</span>. Import it from <span sui-label>ngx-semantic/modules/select</span>.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>text</td>
+        <td>The text displayed for the option. This is also what the search filters on.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            -
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>value</td>
+        <td>The value emitted when the option is selected.</td>
         <td>
           <div sui-label
                suiColour="teal">
             any
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            -
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>image</td>
+        <td>Shows an image next to the option text. See <span sui-label>ISelectOptionImage</span>.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            ISelectOptionImage
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            undefined
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td>The country code of a flag to show next to the option text, for example <span sui-label>ng</span>.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            undefined
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>ISelectOptionImage</h2>
+
+    <p>The shape of <span sui-label>ISelectOption.image</span>.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>src</td>
+        <td>The image source.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            -
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>avatar</td>
+        <td>When true, renders the image as a small avatar.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            -
           </div>
         </td>
       </tr>
@@ -342,6 +568,8 @@
 
     <h2 sui-header
         suiDividing>suiSelectMenu</h2>
+
+    <p>Selector: <span sui-label>[suiSelectMenu]</span>. The options menu rendered inside <span sui-label>sui-select</span>. You do not normally use this directly.</p>
 
     <h4 sui-header>Properties</h4>
 
@@ -359,9 +587,7 @@
       <tbody>
       <tr>
         <td>suiDirection</td>
-        <td>Set the select's direction. Allowed values could be
-          <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>null</span>
-        </td>
+        <td>Sets the direction the menu opens. Allowed values are <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>null</span></td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -377,8 +603,23 @@
       </tr>
       <tr>
         <td>suiScrolling</td>
-        <td>Determines if the menu is scrollable or not
+        <td>Determines if the menu is scrollable or not.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
         </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIsOpen</td>
+        <td>Sets whether the menu is open. This is managed by the select.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -398,6 +639,8 @@
     <h2 sui-header
         suiDividing>suiSelectMenuItem</h2>
 
+    <p>Selector: <span sui-label>[suiSelectMenuItem]</span>. An option inside the menu rendered by <span sui-label>sui-select</span>. You do not normally use this directly.</p>
+
     <h4 sui-header>Properties</h4>
 
     <table sui-table
@@ -414,9 +657,7 @@
       <tbody>
       <tr>
         <td>suiValue</td>
-        <td>
-          The value to be emitted if this menu item is selected.
-        </td>
+        <td>The value to be emitted if this menu item is selected.</td>
         <td>
           <div sui-label
                suiColour="teal">
@@ -431,9 +672,24 @@
         </td>
       </tr>
       <tr>
-        <td>suiMultiple</td>
-        <td>Determines if this menu allows for selecting multiple items
+        <td>suiSelected</td>
+        <td>Determines if the menu item is shown as selected.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
         </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMultiple</td>
+        <td>Determines if this menu allows for selecting multiple items.</td>
         <td>
           <div sui-label
                suiColour="teal">

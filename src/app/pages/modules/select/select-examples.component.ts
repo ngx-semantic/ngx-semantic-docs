@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import { ISelectOption } from 'ngx-semantic/modules/select';
 
 export class SelectSampleState {
+  selectedGender: number | null = 1;
+  lastChange: number | null = null;
+
+  onSelectionChanged(value: number): void {
+    this.lastChange = value;
+  }
+
   genderOptions: ISelectOption[] = [ { text: 'Male', value: 0 }, { text: 'Female', value: 1 } ];
   countries: ISelectOption[] = [
     { text: 'Albania', value: 'al', flag: 'al' },
@@ -105,6 +112,38 @@ export class SelectErrorExampleComponent extends SelectSampleState {
 })
 export class SelectDisabledExampleComponent extends SelectSampleState {
 }
+@Component({
+  selector: 'doc-select-search-example',
+  templateUrl: './snippets/search.sample.html',
+  standalone: false
+})
+export class SelectSearchExampleComponent extends SelectSampleState {
+}
+
+@Component({
+  selector: 'doc-select-scrolling-example',
+  templateUrl: './snippets/scrolling.sample.html',
+  standalone: false
+})
+export class SelectScrollingExampleComponent extends SelectSampleState {
+}
+
+@Component({
+  selector: 'doc-select-compact-example',
+  templateUrl: './snippets/compact.sample.html',
+  standalone: false
+})
+export class SelectCompactExampleComponent extends SelectSampleState {
+}
+
+@Component({
+  selector: 'doc-select-two-way-example',
+  templateUrl: './snippets/two-way.sample.html',
+  standalone: false
+})
+export class SelectTwoWayExampleComponent extends SelectSampleState {
+}
+
 export const SELECT_EXAMPLES = [
   SelectStandardExampleComponent,
   SelectFluidExampleComponent,
@@ -115,4 +154,8 @@ export const SELECT_EXAMPLES = [
   SelectLoadingExampleComponent,
   SelectErrorExampleComponent,
   SelectDisabledExampleComponent,
+  SelectSearchExampleComponent,
+  SelectScrollingExampleComponent,
+  SelectCompactExampleComponent,
+  SelectTwoWayExampleComponent,
 ];
