@@ -3,7 +3,7 @@
  */
 
 import { NgModule } from '@angular/core';
-import { CardsComponent } from './card/cards.component';
+import { CardPage } from './card/card.page';
 import { CommonModule } from '@angular/common';
 import { ViewsRoutingModule } from './views-routing.module';
 import { SharedModule } from '../../shared/shared.module';
@@ -49,7 +49,7 @@ import { STATISTIC_EXAMPLES } from './statistic/statistic-examples.component';
     ...CARD_EXAMPLES,
     ...ADVERTISEMENT_EXAMPLES,
     AdvertisementPage,
-    CardsComponent,
+    CardPage,
     CommentPage,
     FeedPage,
     StatisticsComponent,
