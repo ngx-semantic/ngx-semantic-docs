@@ -1,0 +1,11 @@
+<sui-select
+    suiPlaceholder="Gender"
+    [suiOptions]="genderOptions"
+    [(ngModel)]="selectedGender"
+    (suiSelectionChanged)="onSelectionChanged($event)">
+</sui-select>
+
+<p>
+  Selected value: <strong>{{ selectedGender }}</strong><br>
+  Last change event: <strong>{{ lastChange }}</strong>
+</p>

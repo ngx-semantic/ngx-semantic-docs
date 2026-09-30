@@ -1,0 +1,8 @@
+selectedGender: number | null = 1;
+lastChange: number | null = null;
+
+genderOptions: ISelectOption[] = [ { text: 'Male', value: 0 }, { text: 'Female', value: 1 } ];
+
+onSelectionChanged(value: number): void {
+  this.lastChange = value;
+}
