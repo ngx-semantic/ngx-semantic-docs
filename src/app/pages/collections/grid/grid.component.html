@@ -1,1 +1,1087 @@
-grid works
+<doc-page
+    header="Grid"
+    subHeader="A grid is used to harmonize negative space in a layout"
+    semanticUrl="https://semantic-ui.com/collections/grid.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetGrid">
+      <h3 sui-header>Grid</h3>
+      <p>A basic grid</p>
+
+      <div sui-message
+           suiState="info">
+        Grids divide horizontal space into <b>16 columns</b>. Four <code>four wide</code> columns fit in a single row, <code>16 / 4 = 4</code>.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-grid-example></doc-grid-grid-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDivided">
+      <h3 sui-header>
+        Divided
+        <div sui-label
+             suiColour="teal"
+             suiSize="tiny">Requires Rows</div>
+      </h3>
+      <p>A grid can have dividers between its columns</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-divided-example></doc-grid-divided-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetVerticallyDivided">
+      <h3 sui-header>
+        Vertically Divided
+        <div sui-label
+             suiColour="teal"
+             suiSize="tiny">Requires Rows</div>
+      </h3>
+      <p>A grid can have dividers between rows</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-vertically-divided-example></doc-grid-vertically-divided-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCelled">
+      <h3 sui-header>
+        Celled
+        <div sui-label
+             suiColour="teal"
+             suiSize="tiny">Requires Rows</div>
+      </h3>
+      <p>A grid can have rows divided into cells</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-celled-example></doc-grid-celled-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInternallyCelled">
+      <h3 sui-header>
+        Internally Celled
+        <div sui-label
+             suiColour="teal"
+             suiSize="tiny">Requires Rows</div>
+      </h3>
+      <p>A grid can have rows divisions only between internal rows</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-internally-celled-example></doc-grid-internally-celled-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetRows">
+      <h3 sui-header>Rows</h3>
+      <p>A row is a horizontal grouping of columns</p>
+
+      <div sui-message
+           suiState="info">
+        Row wrappers automatically clear previous columns and allow you to apply variations to a group of columns.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-rows-example></doc-grid-rows-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumns">
+      <h3 sui-header>Columns</h3>
+      <p>Columns each contain gutters giving them equal spacing from other columns</p>
+
+      <div sui-message
+           suiState="warning">
+        Since columns use padding to create gutters, content stylings should not be applied directly to columns, but to elements inside of columns.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-columns-example></doc-grid-columns-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetFloated">
+      <h3 sui-header>Floated</h3>
+      <p>A column can sit flush against the left or right edge of a row</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-floated-example></doc-grid-floated-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumnWidth">
+      <h3 sui-header>Column Width</h3>
+      <p>A column can vary in width taking up more than a single grid column</p>
+
+      <div sui-message
+           suiState="info">
+        If a column cannot fit in a row it will automatically flow to the next row.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-column-width-example></doc-grid-column-width-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumnCount">
+      <h3 sui-header>Column Count</h3>
+      <p>A grid can have a different number of columns per row</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-column-count-example></doc-grid-column-count-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetEqualWidth">
+      <h3 sui-header>Equal Width</h3>
+      <p>A grid can automatically resize all elements to split the available width evenly</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-equal-width-example></doc-grid-equal-width-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStretched">
+      <h3 sui-header>Stretched</h3>
+      <p>A row can stretch its contents to take up the entire column height</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-stretched-example></doc-grid-stretched-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPadded">
+      <h3 sui-header>Padded</h3>
+      <p>A grid can preserve its vertical and horizontal gutters on first and last columns</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-padded-example></doc-grid-padded-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRelaxed">
+      <h3 sui-header>Relaxed</h3>
+      <p>A grid can increase its gutters to allow for more negative space</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-relaxed-example></doc-grid-relaxed-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColored">
+      <h3 sui-header>Colored</h3>
+      <p>A row or column can be colored</p>
+
+      <div sui-message
+           suiState="warning">
+        Colored rows or columns should be used with a <code>padded</code> grid, which does not include negative margins.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-colored-example></doc-grid-colored-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCentered">
+      <h3 sui-header>Centered</h3>
+      <p>A grid can have its columns centered</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-centered-example></doc-grid-centered-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTextAlignment">
+      <h3 sui-header>Text Alignment</h3>
+      <p>A grid, row, or column can specify its text alignment</p>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-text-alignment-example></doc-grid-text-alignment-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetVerticalAlignment">
+      <h3 sui-header>Vertical Alignment</h3>
+      <p>A grid, row, or column can specify its vertical alignment to have all its columns vertically centered</p>
+
+      <div sui-message
+           suiState="info">
+        Use <code>suiVerticalAlignment</code> when you need to combine a vertical alignment with a text alignment set through <code>suiAlignment</code>.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-vertical-alignment-example></doc-grid-vertical-alignment-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Responsive Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetDoubling">
+      <h3 sui-header>Doubling</h3>
+      <p>A grid can double its column width on tablet and mobile sizes</p>
+
+      <div sui-message
+           suiState="info">
+        A grid will round its columns to the closest reasonable value when doubling, for example a <code>five column grid</code> will use <code>2 mobile, 3 tablet, 5 desktop</code>. To force 1 column on mobile you can add <code>suiStackable</code>.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-doubling-example></doc-grid-doubling-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStackable">
+      <h3 sui-header>Stackable</h3>
+      <p>A grid can have its columns stack on-top of each other after reaching mobile breakpoints</p>
+
+      <div sui-message
+           suiState="info">
+        To see a grid stack, try resizing your browser to a small width.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-stackable-example></doc-grid-stackable-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetReversed">
+      <h3 sui-header>Reversed</h3>
+      <p>A grid or row can specify that its columns should reverse order at different device sizes</p>
+
+      <div sui-message
+           suiState="info">
+        Reversed grids are compatible with <code>divided</code> grids and other complex grid types. Bind an array to <code>suiReversed</code> to reverse on more than one device.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-reversed-example></doc-grid-reversed-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDeviceVisibility">
+      <h3 sui-header>Device Visibility</h3>
+      <p>A column or row can appear only for a specific device, or screen sizes</p>
+
+      <div sui-message
+           suiState="info">
+        See the container documentation for information on breakpoint calculations.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-device-visibility-example></doc-grid-device-visibility-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetResponsiveWidth">
+      <h3 sui-header>Responsive Width</h3>
+      <p>A column can specify a width for a specific device</p>
+
+      <div sui-message
+           suiState="warning">
+        It's recommended to use a responsive pattern like <code>doubling</code> or <code>stackable</code> to reduce complexity when designing responsively, however in some circumstances specifying exact widths for screen sizes may be necessary.
+      </div>
+
+      <ng-template docDemo>
+        <div class="grid-demo">
+          <doc-grid-responsive-width-example></doc-grid-responsive-width-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-grid</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>
+          Set the number of columns in the grid. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>
+          Set the text alignment of the grid. Allowed values are <span sui-label>'left aligned'</span> | <span sui-label>'center aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'justified'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVerticalAlignment</td>
+        <td>
+          Set the vertical alignment of the grid. Allowed values are <span sui-label>'top aligned'</span> | <span sui-label>'middle aligned'</span> | <span sui-label>'bottom aligned'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDivided</td>
+        <td>
+          Set dividers between columns or rows. Allowed values are <span sui-label>'divided'</span> | <span sui-label>'vertically divided'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCelled</td>
+        <td>
+          Divide rows into cells. Allowed values are <span sui-label>'celled'</span> | <span sui-label>'internally celled'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPadded</td>
+        <td>
+          Preserve gutters on first and last columns. Allowed values are <span sui-label>'padded'</span> | <span sui-label>'vertically padded'</span> | <span sui-label>'horizontally padded'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRelaxation</td>
+        <td>
+          Increase the size of the gutters. Allowed values are <span sui-label>'relaxed'</span> | <span sui-label>'very relaxed'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiReversed</td>
+        <td>
+          Reverse the order of columns or rows by device. Accepts one value or an array of <span sui-label>'computer reversed'</span> | <span sui-label>'tablet reversed'</span> | <span sui-label>'mobile reversed'</span> | <span sui-label>'computer vertically reversed'</span> | <span sui-label>'tablet vertically reversed'</span> | <span sui-label>'mobile vertically reversed'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string | string[]
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiEqual</td>
+        <td>
+          Set whether columns should automatically split the available width evenly
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCentered</td>
+        <td>
+          Set whether the columns should be centered
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStretched</td>
+        <td>
+          Set whether columns should stretch to take up the entire row height
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStackable</td>
+        <td>
+          Set whether columns should stack on mobile devices
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDoubling</td>
+        <td>
+          Set whether column widths should double for each device jump
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiContainer</td>
+        <td>
+          Set whether the grid should also be a responsive container
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiGridRow</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>
+          Set the number of columns in the row. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>
+          Set the text (or vertical) alignment of the row. Allowed values are <span sui-label>'left aligned'</span> | <span sui-label>'center aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'justified'</span> | <span sui-label>'top aligned'</span> | <span sui-label>'middle aligned'</span> | <span sui-label>'bottom aligned'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVerticalAlignment</td>
+        <td>
+          Set the vertical alignment of the row. Allowed values are <span sui-label>'top aligned'</span> | <span sui-label>'middle aligned'</span> | <span sui-label>'bottom aligned'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>
+          Set the background colour of the row. Allowed values are <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiReversed</td>
+        <td>
+          Reverse the order of columns by device. Accepts one value or an array of <span sui-label>'computer reversed'</span> | <span sui-label>'tablet reversed'</span> | <span sui-label>'mobile reversed'</span> | <span sui-label>'computer vertically reversed'</span> | <span sui-label>'tablet vertically reversed'</span> | <span sui-label>'mobile vertically reversed'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string | string[]
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDeviceVisibility</td>
+        <td>
+          Only show the row on specific devices. Allowed values are <span sui-label>'mobile only'</span> | <span sui-label>'tablet only'</span> | <span sui-label>'computer only'</span> | <span sui-label>'large screen only'</span> | <span sui-label>'widescreen only'</span> | <span sui-label>'tablet mobile only'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiEqual</td>
+        <td>
+          Set whether columns should automatically split the available width evenly
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCentered</td>
+        <td>
+          Set whether the columns should be centered
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStretched</td>
+        <td>
+          Set whether columns should stretch to take up the entire row height
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDoubling</td>
+        <td>
+          Set whether column widths should double for each device jump
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiGridColumn</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>
+          Set the width of the column. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiMobileWidth</td>
+        <td>
+          Set the width of the column on mobile devices. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiTabletWidth</td>
+        <td>
+          Set the width of the column on tablets. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiComputerWidth</td>
+        <td>
+          Set the width of the column on computers. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLargeScreenWidth</td>
+        <td>
+          Set the width of the column on large screens. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiWidescreenWidth</td>
+        <td>
+          Set the width of the column on widescreens. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloated</td>
+        <td>
+          Float the column to the edge of the row. Allowed values are <span sui-label>'left floated'</span> | <span sui-label>'right floated'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiAlignment</td>
+        <td>
+          Set the text (or vertical) alignment of the column. Allowed values are <span sui-label>'left aligned'</span> | <span sui-label>'center aligned'</span> | <span sui-label>'right aligned'</span> | <span sui-label>'justified'</span> | <span sui-label>'top aligned'</span> | <span sui-label>'middle aligned'</span> | <span sui-label>'bottom aligned'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiVerticalAlignment</td>
+        <td>
+          Set the vertical alignment of the column. Allowed values are <span sui-label>'top aligned'</span> | <span sui-label>'middle aligned'</span> | <span sui-label>'bottom aligned'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiColour</td>
+        <td>
+          Set the background colour of the column. Allowed values are <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDeviceVisibility</td>
+        <td>
+          Only show the column on specific devices. Allowed values are <span sui-label>'mobile only'</span> | <span sui-label>'tablet only'</span> | <span sui-label>'computer only'</span> | <span sui-label>'large screen only'</span> | <span sui-label>'widescreen only'</span> | <span sui-label>'tablet mobile only'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStretched</td>
+        <td>
+          Set whether the column contents should stretch to the column height
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</doc-page>

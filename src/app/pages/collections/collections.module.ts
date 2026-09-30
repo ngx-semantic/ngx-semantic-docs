@@ -26,6 +26,7 @@ import {SuiCheckboxModule} from 'ngx-semantic/modules/checkbox';
 import {SuiButtonModule} from 'ngx-semantic/elements/button';
 import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
 import {SuiSelectModule} from 'ngx-semantic/modules/select';
+import {SuiGridModule} from 'ngx-semantic/collections/grid';
 
 import { FORM_EXAMPLES } from './form/form-examples.component';
 
@@ -33,11 +34,14 @@ import { BREADCRUMB_EXAMPLES } from './breadcrumb/breadcrumb-examples.component'
 
 import { MESSAGES_EXAMPLES } from './messages/messages-examples.component';
 
+import { GRID_EXAMPLES } from './grid/grid-examples.component';
+
 @NgModule({
   declarations: [
     ...MESSAGES_EXAMPLES,
     ...BREADCRUMB_EXAMPLES,
     ...FORM_EXAMPLES,
+    ...GRID_EXAMPLES,
     FormComponent,
     GridComponent,
     MenuComponent,
@@ -60,7 +64,8 @@ import { MESSAGES_EXAMPLES } from './messages/messages-examples.component';
     SuiCheckboxModule,
     SuiButtonModule,
     SuiSegmentModule,
-    SuiSelectModule
+    SuiSelectModule,
+    SuiGridModule
   ]
 })
 export class CollectionsModule {

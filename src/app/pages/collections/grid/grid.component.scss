@@ -1,0 +1,12 @@
+// Outline the columns of demo grids so the layout is visible, mirroring the Semantic UI docs.
+:host ::ng-deep .grid-demo {
+  .ui.grid:not(.divided):not(.celled):not(.padded) > .column:not(.row),
+  .ui.grid:not(.divided):not(.celled):not(.padded) > .row > .column {
+    box-shadow: inset 0 0 0 1px rgba(34, 36, 38, 0.1);
+  }
+
+  .ui.grid + .ui.grid,
+  .ui.grid + p {
+    margin-top: 1.5rem;
+  }
+}
