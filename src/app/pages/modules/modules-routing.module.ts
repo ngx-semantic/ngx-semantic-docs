@@ -16,6 +16,7 @@ import { ProgressPage } from './progress/progress.page';
 import { PopupPage } from './popup/popup.page';
 import { SelectPage } from './select/select.page';
 import { ModalPage } from './modal/modal.page';
+import { DropdownPage } from './dropdown/dropdown.page';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'dimmer',
     component: DimmerComponent
+  },
+  {
+    path: 'dropdown',
+    component: DropdownPage
   },
   {
     path: 'embed',
