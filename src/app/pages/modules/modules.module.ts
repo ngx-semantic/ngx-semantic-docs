@@ -41,6 +41,8 @@ import { SuiPopupModule } from 'ngx-semantic/modules/popup';
 import { SuiImageModule } from 'ngx-semantic/elements/image';
 import { SuiGridModule } from 'ngx-semantic/collections/grid';
 import { SelectPage } from './select/select.page';
+import { DropdownPage } from './dropdown/dropdown.page';
+import { SuiDropdownModule } from 'ngx-semantic/modules/dropdown';
 import { SuiSelectModule } from 'ngx-semantic/modules/select';
 import { ModalPage } from './modal/modal.page';
 import { SuiFormModule } from 'ngx-semantic/collections/form';
@@ -49,6 +51,8 @@ import { SuiDividerModule } from 'ngx-semantic/elements/divider';
 import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
 
 import { DIMMER_EXAMPLES } from './dimmer/dimmer-examples.component';
+
+import { DROPDOWN_EXAMPLES } from './dropdown/dropdown-examples.component';
 
 import { EMBED_EXAMPLES } from './embed/embed-examples.component';
 
@@ -77,6 +81,7 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     ...MODAL_EXAMPLES,
     ...EMBED_EXAMPLES,
     ...DIMMER_EXAMPLES,
+    ...DROPDOWN_EXAMPLES,
     ...ACCORDION_EXAMPLES,
     TabComponent,
     EmbedComponent,
@@ -90,6 +95,7 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     ProgressPage,
     PopupPage,
     SelectPage,
+    DropdownPage,
   ],
   imports: [
     CommonModule,
@@ -106,6 +112,7 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiTabsModule,
     SuiButtonModule,
     SuiDimmerModule,
+    SuiDropdownModule,
     SuiIconModule,
     SuiGridModule,
     SuiDividerModule,

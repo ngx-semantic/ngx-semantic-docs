@@ -1,0 +1,694 @@
+<doc-page
+    header="Dropdown"
+    subHeader="A dropdown allows a user to select a value from a series of options">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetDropdown">
+      <h3 sui-header>Dropdown</h3>
+      <p>A dropdown.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>A dropdown opens its menu when clicked. To pick a value in a form, use the selection dropdown provided by <a routerLink="/modules/select">sui-select</a> instead.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-dropdown-example></doc-dropdown-dropdown-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInline">
+      <h3 sui-header>Inline</h3>
+      <p>A dropdown can be formatted to appear inline in other content.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-inline-example></doc-dropdown-inline-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPointing">
+      <h3 sui-header>Pointing</h3>
+      <p>A dropdown can be formatted so that its menu is pointing.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Set <span sui-label>suiPointing</span> to enable the pointing arrow, and optionally <span sui-label>suiPointingDirection</span> to choose where the arrow sits.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-pointing-example></doc-dropdown-pointing-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFloating">
+      <h3 sui-header>Floating</h3>
+      <p>A dropdown menu can appear to be floating below an element.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-floating-example></doc-dropdown-floating-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSimple">
+      <h3 sui-header>Simple</h3>
+      <p>A simple dropdown can open on hover using only CSS.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-simple-example></doc-dropdown-simple-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetHeader">
+      <h3 sui-header>Header</h3>
+      <p>A dropdown menu can contain a header.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-header-example></doc-dropdown-header-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDivider">
+      <h3 sui-header>Divider</h3>
+      <p>A dropdown menu can contain dividers to separate related content.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-divider-example></doc-dropdown-divider-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetIcon">
+      <h3 sui-header>Icon</h3>
+      <p>A dropdown menu can contain an <a routerLink="/elements/icon">icon</a>.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-icon-example></doc-dropdown-icon-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDescription">
+      <h3 sui-header>Description</h3>
+      <p>A dropdown menu can contain a description.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Using a description may require setting a minimum width on the menu to prevent content overlap.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-description-example></doc-dropdown-description-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLabel">
+      <h3 sui-header>Label</h3>
+      <p>A dropdown menu can contain a <a routerLink="/elements/label">label</a>.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-label-example></doc-dropdown-label-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetMessage">
+      <h3 sui-header>Message</h3>
+      <p>A dropdown menu can contain a <a routerLink="/collections/messages">message</a>.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-message-example></doc-dropdown-message-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFloated">
+      <h3 sui-header>Floated Content</h3>
+      <p>A dropdown menu can contain floated content.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Floated content may stack to two lines without manually setting a width or using a fluid dropdown.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-floated-example></doc-dropdown-floated-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInput">
+      <h3 sui-header>Input</h3>
+      <p>A dropdown menu can contain an <a routerLink="/elements/input">input</a>.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Stop click propagation on the input so that typing or clicking it does not close the menu.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-input-example></doc-dropdown-input-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetImage">
+      <h3 sui-header>Image</h3>
+      <p>A dropdown menu can contain an <a routerLink="/elements/image">image</a>.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-image-example></doc-dropdown-image-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetLoading">
+      <h3 sui-header>Loading</h3>
+      <p>A dropdown can show that it is currently loading data.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-loading-example></doc-dropdown-loading-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetError">
+      <h3 sui-header>Error</h3>
+      <p>An errored dropdown can alert a user to a problem.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-error-example></doc-dropdown-error-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A disabled dropdown menu or item does not allow user interaction.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-disabled-example></doc-dropdown-disabled-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetScrolling">
+      <h3 sui-header>Scrolling</h3>
+      <p>A dropdown can have its menu scroll.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Scrolling dropdowns are incompatible with the usage of sub menus.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-scrolling-example></doc-dropdown-scrolling-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCompact">
+      <h3 sui-header>Compact</h3>
+      <p>A compact dropdown has no minimum width.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-compact-example></doc-dropdown-compact-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>A dropdown can take the full width of its parent.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-fluid-example></doc-dropdown-fluid-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetMenuDirection">
+      <h3 sui-header>Menu Direction</h3>
+      <p>A dropdown menu or sub-menu can specify the direction it should open.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Specifying <span sui-label>left</span> on a menu makes all child menus open in the same direction implicitly. To have the dropdown icon appear on the left side of a child item, set <span sui-label>suiDirection</span> on the item as well.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-menu-direction-example></doc-dropdown-menu-direction-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Menus</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetMultipleLevels">
+      <h3 sui-header>Multiple Levels</h3>
+      <p>A dropdown menu can contain multiple levels.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Nest a <span sui-label>suiDropdownMenu</span> inside a <span sui-label>suiDropdownMenuItem</span>. The sub menu opens when the item is hovered.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-dropdown-multiple-levels-example></doc-dropdown-multiple-levels-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <h2 sui-header
+        suiDividing>Coupling</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetButtonGroup">
+      <h3 sui-header>Button Group</h3>
+      <p>A dropdown can be attached to a <a routerLink="/elements/button">button group</a>.</p>
+
+      <ng-template docDemo>
+        <doc-dropdown-button-group-example></doc-dropdown-button-group-example>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <div sui-message suiIcon>
+      <i sui-icon suiIconType="info circle"></i>
+      <div suiMessageContent>
+        <p>
+          Import <span sui-label>SuiDropdownModule</span> from <span sui-label>ngx-semantic/modules/dropdown</span>
+          to use the component and every directive below. Looking for the selection dropdown?
+          See <a routerLink="/modules/select">Select</a>.
+        </p>
+      </div>
+    </div>
+
+    <h2 sui-header
+        suiDividing>sui-dropdown</h2>
+
+    <p>Selector: <span sui-label>sui-dropdown, [sui-dropdown]</span>. Clicking the dropdown toggles its <span sui-label>suiDropdownMenu</span>. The dropdown is focusable and does nothing when disabled.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiPointing</td>
+        <td>When true, renders the dropdown menu with a pointing arrow.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiPointingDirection</td>
+        <td>Sets where the pointing arrow sits. Use together with <span sui-label>suiPointing</span>. Allowed values are <span sui-label>top left</span> | <span sui-label>top right</span> | <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>bottom left</span> | <span sui-label>bottom right</span> | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>When true, the dropdown takes the full width of its parent.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiInline</td>
+        <td>When true, the dropdown appears inline with surrounding content.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLoading</td>
+        <td>When true, shows that the dropdown is loading data.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiError</td>
+        <td>When true, renders the dropdown in an error state.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>When true, the dropdown cannot be opened.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrolling</td>
+        <td>When true, applies the scrolling style to the dropdown. You can also set <span sui-label>suiScrolling</span> on the menu.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCompact</td>
+        <td>When true, removes the minimum width of the dropdown.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFloating</td>
+        <td>When true, the menu appears to float below the element.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiSimple</td>
+        <td>When true, the dropdown opens on hover using CSS only.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiDropdownMenu</h2>
+
+    <p>Selector: <span sui-label>[suiDropdownMenu]</span>. The menu of a dropdown or of a dropdown menu item (sub menu).</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiDirection</td>
+        <td>Sets the direction the menu opens. Allowed values are <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiScrolling</td>
+        <td>When true, the menu scrolls when it has many items.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiIsOpen</td>
+        <td>Sets whether the menu is open. This is managed by the parent dropdown or menu item but can be bound to if needed.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiDropdownMenuItem</h2>
+
+    <p>Selector: <span sui-label>[suiDropdownMenuItem]</span>. An item in a dropdown menu. If it contains a <span sui-label>suiDropdownMenu</span>, that sub menu opens while the item is hovered.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiDirection</td>
+        <td>Sets the side the item&rsquo;s sub menu icon appears on. Allowed values are <span sui-label>left</span> | <span sui-label>right</span> | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>When true, the item does not allow user interaction.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiDropdownMenuHeader</h2>
+
+    <p>Selector: <span sui-label>[suiDropdownMenuHeader]</span>. A header that groups the items below it.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiDropdownMenuDivider</h2>
+
+    <p>Selector: <span sui-label>[suiDropdownMenuDivider]</span>. A divider that separates related items.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>
