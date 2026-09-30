@@ -1,0 +1,648 @@
+<doc-page
+    header="Card"
+    subHeader="A card displays site content in a manner similar to a playing card">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetCard">
+      <h3 sui-header>Card</h3>
+      <p>A single card.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>To ensure cards are equal height use the plural, <span sui-label>sui-cards</span>. Card groups automatically use <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">flex</a> styles to match height between cards in the same row.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-card-example></doc-card-card-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCards">
+      <h3 sui-header>Cards</h3>
+      <p>A group of cards.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Cards are designed to be flexible to your content. <span sui-label>suiCardContent</span> blocks can include any custom elements related to your content.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-cards-example></doc-card-cards-example>
+      </ng-template>
+    </doc-code-sample>
+
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetContentBlock">
+      <h3 sui-header>Content Block</h3>
+      <p>A card can contain blocks of content.</p>
+
+      <ng-template docDemo>
+        <doc-card-content-block-example></doc-card-content-block-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetImage">
+      <h3 sui-header>Image</h3>
+      <p>A card can contain an image.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Cards can use <a routerLink="/elements/reveal">reveal</a> or <a routerLink="/modules/dimmer">dimmers</a> to easily show additional content, or options on hover.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-image-example></doc-card-image-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetHeader">
+      <h3 sui-header>Header</h3>
+      <p>A card can contain a header.</p>
+
+      <ng-template docDemo>
+        <doc-card-header-example></doc-card-header-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetMetadata">
+      <h3 sui-header>Metadata</h3>
+      <p>A card can contain content metadata.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>You can include an arbitrary amount of metadata using your own class conventions; all child elements will automatically be spaced.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-metadata-example></doc-card-metadata-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLink">
+      <h3 sui-header>Link</h3>
+      <p>A card can contain links as images, headers, or inside content.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>To make the entire content of a card link, check out the link card variation below.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-link-example></doc-card-link-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetButtons">
+      <h3 sui-header>Buttons</h3>
+      <p>A card can contain buttons.</p>
+
+      <ng-template docDemo>
+        <doc-card-buttons-example></doc-card-buttons-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetApproval">
+      <h3 sui-header>Approval</h3>
+      <p>A card can contain a like or star action.</p>
+
+      <ng-template docDemo>
+        <doc-card-approval-example></doc-card-approval-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDescription">
+      <h3 sui-header>Description</h3>
+      <p>A card can contain a description with one or more paragraphs.</p>
+
+      <ng-template docDemo>
+        <doc-card-description-example></doc-card-description-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetExtraContent">
+      <h3 sui-header>Extra Content</h3>
+      <p>A card can contain extra content meant to be formatted separately from the main content.</p>
+
+      <ng-template docDemo>
+        <doc-card-extra-content-example></doc-card-extra-content-example>
+      </ng-template>
+    </doc-code-sample>
+
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid Card</h3>
+      <p>A fluid card takes up the width of its container.</p>
+
+      <ng-template docDemo>
+        <doc-card-fluid-example></doc-card-fluid-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCentered">
+      <h3 sui-header>Centered Card</h3>
+      <p>A card can center itself inside its container.</p>
+
+      <ng-template docDemo>
+        <doc-card-centered-example></doc-card-centered-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRaised">
+      <h3 sui-header>Raised Card</h3>
+      <p>A card may be formatted to raise above the page.</p>
+
+      <ng-template docDemo>
+        <doc-card-raised-example></doc-card-raised-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLinkCard">
+      <h3 sui-header>Link Card</h3>
+      <p>A card can be formatted so that the entire contents link to another page.</p>
+
+      <ng-template docDemo>
+        <doc-card-link-card-example></doc-card-link-card-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFloated">
+      <h3 sui-header>Floated Content</h3>
+      <p>Any content element can be floated left or right.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>You can include an arbitrary amount of metadata using your own class conventions; all child elements will automatically be spaced.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-floated-example></doc-card-floated-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTextAlignment">
+      <h3 sui-header>Text Alignment</h3>
+      <p>Any element inside a card can have its text alignment specified.</p>
+
+      <ng-template docDemo>
+        <doc-card-text-alignment-example></doc-card-text-alignment-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColoured">
+      <h3 sui-header>Coloured</h3>
+      <p>A card can specify a colour.</p>
+
+      <ng-template docDemo>
+        <doc-card-coloured-example></doc-card-coloured-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumnCount">
+      <h3 sui-header>Column Count</h3>
+      <p>A group of cards can set how many cards should exist in a row.</p>
+
+      <ng-template docDemo>
+        <doc-card-column-count-example></doc-card-column-count-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStackable">
+      <h3 sui-header>Stackable</h3>
+      <p>A group of cards can automatically stack rows to a single column on mobile devices.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Resize your browser to a smaller size to see the cards stack after reaching mobile breakpoints.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-stackable-example></doc-card-stackable-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDoubling">
+      <h3 sui-header>Doubling</h3>
+      <p>A group of cards can double its column width for mobile.</p>
+      <div sui-message suiIcon>
+        <i sui-icon suiIconType="info circle"></i>
+        <div suiMessageContent>
+          <p>Resize your browser to a smaller size to see the cards stack after reaching mobile breakpoints.</p>
+        </div>
+      </div>
+
+      <ng-template docDemo>
+        <doc-card-doubling-example></doc-card-doubling-example>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <div sui-message suiIcon>
+      <i sui-icon suiIconType="info circle"></i>
+      <div suiMessageContent>
+        <p>
+          Import <span sui-label>SuiCardModule</span> from <span sui-label>ngx-semantic/views/card</span>
+          to use every directive documented below. Each directive is also standalone and can be imported on its own.
+        </p>
+      </div>
+    </div>
+
+    <h2 sui-header
+        suiDividing>sui-cards</h2>
+
+    <p>Selector: <span sui-label>[sui-cards]</span>. Renders a <span sui-label>ui cards</span> group so cards in the same row share equal height.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiWidth</td>
+        <td>Sets how many cards appear per row. Allowed values are <span sui-label>one</span> | <span sui-label>two</span> | <span sui-label>three</span> | <span sui-label>four</span> | <span sui-label>five</span> | <span sui-label>six</span> | <span sui-label>seven</span> | <span sui-label>eight</span> | <span sui-label>nine</span> | <span sui-label>ten</span> | <span sui-label>eleven</span> | <span sui-label>twelve</span> | <span sui-label>thirteen</span> | <span sui-label>fourteen</span> | <span sui-label>fifteen</span> | <span sui-label>sixteen</span> | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiStackable</td>
+        <td>When true, stacks the cards into a single column on mobile devices.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiDoubling</td>
+        <td>When true, doubles the card column width on mobile devices.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLink</td>
+        <td>When true, applies the link style to every card in the group.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-card</h2>
+
+    <p>Selector: <span sui-label>[sui-card]</span>. When placed inside <span sui-label>sui-cards</span> the card omits the standalone <span sui-label>ui</span> class and inherits the group layout.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>suiColour</td>
+        <td>Sets the card colour. Allowed values are <span sui-label>red</span> | <span sui-label>orange</span> | <span sui-label>yellow</span> | <span sui-label>olive</span> | <span sui-label>green</span> | <span sui-label>teal</span> | <span sui-label>blue</span> | <span sui-label>violet</span> | <span sui-label>purple</span> | <span sui-label>pink</span> | <span sui-label>brown</span> | <span sui-label>grey</span> | <span sui-label>black</span> | <span sui-label>null</span></td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiLink</td>
+        <td>When true, the entire card behaves as a link. Use on an anchor element.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiCentered</td>
+        <td>When true, centres the card inside its container.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiFluid</td>
+        <td>When true, the card takes up the full width of its container.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>suiRaised</td>
+        <td>When true, raises the card above the page.</td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardImage</h2>
+
+    <p>Selector: <span sui-label>[suiCardImage]</span>. Marks the element as the card image block (<span sui-label>image</span>). Can be a div or an anchor wrapping an <span sui-label>img</span>.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardContent</h2>
+
+    <p>Selector: <span sui-label>[suiCardContent]</span>. Marks the element as a block of card content (<span sui-label>content</span>). A card may have several.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardHeader</h2>
+
+    <p>Selector: <span sui-label>[suiCardHeader]</span>. Marks the element as the card header (<span sui-label>header</span>).</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardMeta</h2>
+
+    <p>Selector: <span sui-label>[suiCardMeta]</span>. Marks the element as card metadata (<span sui-label>meta</span>). Child elements are spaced automatically.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardDescription</h2>
+
+    <p>Selector: <span sui-label>[suiCardDescription]</span>. Marks the element as the card description (<span sui-label>description</span>).</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiCardExtra</h2>
+
+    <p>Selector: <span sui-label>[suiCardExtra]</span>. Marks the element as extra content (<span sui-label>extra content</span>), formatted separately from the main content.</p>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot class="full-width">
+      <tr>
+        <th colspan="4">
+          <div style="text-align: center">No properties for this directive</div>
+        </th>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</doc-page>
