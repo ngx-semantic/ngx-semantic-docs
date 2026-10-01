@@ -1,0 +1,13 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="run('zoom')">Zoom</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      [suiAnimation]="animation"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

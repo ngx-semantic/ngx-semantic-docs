@@ -1,0 +1,16 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="duration = 200; visible = !visible">200ms</button>
+  <button sui-button (click)="duration = '1s'; visible = !visible">1s</button>
+  <button sui-button (click)="duration = '3s'; visible = !visible">3s</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      suiAnimation="fade up"
+      [suiDuration]="duration"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

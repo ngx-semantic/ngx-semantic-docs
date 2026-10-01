@@ -1,0 +1,16 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="run('slide down')">Slide Down</button>
+  <button sui-button (click)="run('slide up')">Slide Up</button>
+  <button sui-button (click)="run('slide left')">Slide Left</button>
+  <button sui-button (click)="run('slide right')">Slide Right</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      [suiAnimation]="animation"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

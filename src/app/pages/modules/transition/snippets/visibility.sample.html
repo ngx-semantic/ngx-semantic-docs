@@ -1,0 +1,13 @@
+<button sui-button
+        (click)="visible = !visible">
+  {{ visible ? 'Hide' : 'Show' }}
+</button>
+<div class="transition-stage">
+  <sui-transition
+      suiAnimation="scale"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

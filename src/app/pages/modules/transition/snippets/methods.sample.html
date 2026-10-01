@@ -1,0 +1,18 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="leaf.show()">Show</button>
+  <button sui-button (click)="leaf.hide()">Hide</button>
+  <button sui-button (click)="leaf.toggle()">Toggle</button>
+  <button sui-button (click)="leaf.stop()">Stop</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      #leaf="suiTransition"
+      suiAnimation="swing down"
+      suiDuration="2s"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

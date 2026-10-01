@@ -1,0 +1,19 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="play('jiggle')">Jiggle</button>
+  <button sui-button (click)="play('flash')">Flash</button>
+  <button sui-button (click)="play('shake')">Shake</button>
+  <button sui-button (click)="play('pulse')">Pulse</button>
+  <button sui-button (click)="play('tada')">Tada</button>
+  <button sui-button (click)="play('bounce')">Bounce</button>
+  <button sui-button (click)="play('glow')">Glow</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      [suiAnimation]="animation"
+      [suiPlay]="playCount">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

@@ -1,0 +1,20 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="visible = !visible">Toggle</button>
+  <button sui-button
+          [suiActive]="disabled"
+          suiToggle
+          (click)="disabled = !disabled">
+    {{ disabled ? 'Animations disabled' : 'Animations enabled' }}
+  </button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      suiAnimation="fly left"
+      [suiDisabled]="disabled"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>
