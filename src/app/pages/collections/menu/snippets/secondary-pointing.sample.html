@@ -1,0 +1,26 @@
+<div sui-menu
+     suiSecondary
+     suiPointing>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+  <div suiSubMenu
+       suiRight>
+    <a suiMenuItem>Logout</a>
+  </div>
+</div>
+<div sui-segment>
+  <doc-wireframe type="paragraph"></doc-wireframe>
+</div>

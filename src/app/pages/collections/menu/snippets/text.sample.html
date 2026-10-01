@@ -1,0 +1,19 @@
+<div sui-menu
+     suiText>
+  <div suiMenuItem suiHeader>Sort By</div>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'closest'"
+     (click)="select('closest')">
+    Closest
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'most-comments'"
+     (click)="select('most-comments')">
+    Most Comments
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'most-popular'"
+     (click)="select('most-popular')">
+    Most Popular
+  </a>
+</div>
