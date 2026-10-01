@@ -1,0 +1,32 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <p>Your tickets are all ready to print. Where would you like to send a receipt?</p>
+  <div suiFormField>
+    <label for="optional-email">E-mail</label>
+    <input id="optional-email"
+           name="email"
+           type="text"
+           placeholder="joe@schmoe.com">
+  </div>
+  <div suiFormField>
+    <label for="optional-cc-email">Additional E-mail</label>
+    <input id="optional-cc-email"
+           name="cc-email"
+           type="text"
+           placeholder="mom@schmoe.com">
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

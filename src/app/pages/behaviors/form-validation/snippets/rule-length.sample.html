@@ -1,0 +1,39 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <label for="len-minLength">minLength</label>
+    <input id="len-minLength"
+           name="minLength"
+           type="text"
+           placeholder="At least 10 characters">
+  </div>
+  <div suiFormField>
+    <label for="len-exactLength">Exact Length</label>
+    <input id="len-exactLength"
+           name="exactLength"
+           type="text"
+           placeholder="Exactly 6 characters">
+  </div>
+  <div suiFormField>
+    <label for="len-maxLength">maxLength</label>
+    <input id="len-maxLength"
+           name="maxLength"
+           type="text"
+           placeholder="At most 10 characters">
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

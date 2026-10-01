@@ -1,0 +1,33 @@
+<form sui-form
+      suiFormValidation
+      suiInline
+      [formGroup]="profile"
+      [suiFields]="fields"
+      (suiOnSuccess)="submitted = profile.value">
+  <div suiFormField>
+    <label for="email">E-mail</label>
+    <input id="email"
+           formControlName="email"
+           placeholder="joe@schmoe.com">
+  </div>
+  <div suiFormField>
+    <label for="age">Age</label>
+    <input id="age"
+           formControlName="age"
+           placeholder="18 to 120">
+  </div>
+  @if (profile.controls.email.errors?.['suiFormValidation']; as message) {
+    <div sui-message
+         suiState="warning">
+      The e-mail control has the error: {{ message }}
+    </div>
+  }
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  @if (submitted) {
+    <pre>{{ submitted | json }}</pre>
+  }
+</form>

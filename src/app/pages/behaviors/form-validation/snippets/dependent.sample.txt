@@ -1,0 +1,8 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  yearsPracticed: {
+    identifier: 'yearsPracticed',
+    depends: 'isDoctor',
+    rules: [{ type: 'empty', prompt: 'Please enter the number of years you have been a doctor' }]
+  }
+};

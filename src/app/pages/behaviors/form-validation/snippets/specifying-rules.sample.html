@@ -1,0 +1,74 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <h4 sui-header
+      suiDividing>Tell Us About Yourself</h4>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="rules-name">Name</label>
+      <input id="rules-name"
+             name="name"
+             type="text"
+             placeholder="Name">
+    </div>
+    <div suiFormField>
+      <label for="rules-gender">Gender</label>
+      <select id="rules-gender"
+              name="gender">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+  <div suiFormField>
+    <label for="rules-username">Username</label>
+    <input id="rules-username"
+           name="username"
+           type="text"
+           placeholder="Username">
+  </div>
+  <div suiFormField>
+    <label for="rules-password">Password</label>
+    <input id="rules-password"
+           name="password"
+           type="password"
+           placeholder="Password">
+  </div>
+  <div suiFormField>
+    <label for="rules-skills">Skills</label>
+    <select id="rules-skills"
+            name="skills"
+            multiple>
+      <option value="css">CSS</option>
+      <option value="html">HTML</option>
+      <option value="javascript">Javascript</option>
+      <option value="design">Graphic Design</option>
+      <option value="plumbing">Plumbing</option>
+      <option value="engineering">Mechanical Engineering</option>
+      <option value="repair">Kitchen Repair</option>
+    </select>
+  </div>
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="rules-terms"
+             name="terms"
+             type="checkbox">
+      <label for="rules-terms">I agree to the terms and conditions</label>
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

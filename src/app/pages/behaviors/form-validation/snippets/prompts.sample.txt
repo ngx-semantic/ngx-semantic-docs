@@ -1,0 +1,18 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  field1: {
+    rules: [{ type: 'empty' }]
+  },
+  field2: {
+    rules: [{
+      type: 'exactly[dog]',
+      prompt: '{name} is set to "{value}" that is totally wrong. It should be {ruleValue}'
+    }]
+  },
+  field3: {
+    rules: [{
+      type: 'exactly[cat]',
+      prompt: (value: unknown) => value === 'dog' ? 'I told you to put cat, not dog!' : 'That is not cat'
+    }]
+  }
+};

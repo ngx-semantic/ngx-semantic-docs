@@ -1,0 +1,86 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="content-is">is</label>
+      <input id="content-is"
+             name="is"
+             type="text"
+             placeholder="is">
+    </div>
+    <div suiFormField>
+      <label for="content-isExactly">isExactly</label>
+      <input id="content-isExactly"
+             name="isExactly"
+             type="text"
+             placeholder="isExactly">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="content-not">not</label>
+      <input id="content-not"
+             name="not"
+             type="text"
+             placeholder="not">
+    </div>
+    <div suiFormField>
+      <label for="content-notExactly">notExactly</label>
+      <input id="content-notExactly"
+             name="notExactly"
+             type="text"
+             placeholder="notExactly">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="content-contains">contains</label>
+      <input id="content-contains"
+             name="contains"
+             type="text"
+             placeholder="contains">
+    </div>
+    <div suiFormField>
+      <label for="content-containsExactly">containsExactly</label>
+      <input id="content-containsExactly"
+             name="containsExactly"
+             type="text"
+             placeholder="containsExactly">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="content-doesntContain">doesntContain</label>
+      <input id="content-doesntContain"
+             name="doesntContain"
+             type="text"
+             placeholder="doesntContain">
+    </div>
+    <div suiFormField>
+      <label for="content-doesntContainExactly">doesntContainExactly</label>
+      <input id="content-doesntContainExactly"
+             name="doesntContainExactly"
+             type="text"
+             placeholder="doesntContainExactly">
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

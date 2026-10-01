@@ -5,6 +5,7 @@ import { CollectionsComponent } from './pages/collections/collections.component'
 import { ViewsComponent } from './pages/views/views.component';
 import { GeneralComponent } from './pages/general/general.component';
 import { ModulesComponent } from './pages/modules/modules.component';
+import { BehaviorsComponent } from './pages/behaviors/behaviors.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,11 @@ const routes: Routes = [
     path: 'modules',
     component: ModulesComponent,
     loadChildren: () => import('./pages/modules/modules.module').then(m => m.ModulesModule)
+  },
+  {
+    path: 'behaviors',
+    component: BehaviorsComponent,
+    loadChildren: () => import('./pages/behaviors/behaviors.module').then(m => m.BehaviorsModule)
   },
   {
     path: '**',

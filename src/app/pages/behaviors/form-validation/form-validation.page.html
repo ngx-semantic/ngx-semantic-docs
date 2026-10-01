@@ -1,0 +1,750 @@
+<doc-page
+    header="Form Validation"
+    subHeader="A form validation behavior checks data against a set of criteria before passing it along to the server"
+    semanticUrl="https://semantic-ui.com/behaviors/form.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Usage</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetSpecifyingRules"
+        [componentCode]="snippetSpecifyingRulesTs">
+      <h3 sui-header>Specifying Validation Rules</h3>
+      <p>Pass validation rules for each field to <code>suiFields</code>. Fields are matched by their <code>id</code>, <code>name</code> or <code>data-validate</code> attribute, in that order</p>
+
+      <div sui-message
+           suiState="info">
+        Rules can be written in shorthand, as a rule name or a list of rule names.
+      </div>
+
+      <ng-template docDemo>
+        <doc-form-validation-specifying-rules-example></doc-form-validation-specifying-rules-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLonghand"
+        [componentCode]="snippetLonghandTs">
+      <h3 sui-header>Longhand Rules</h3>
+      <p>Rules can also be written in longhand, which lets you set the identifier and a custom prompt for each rule</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-longhand-example></doc-form-validation-longhand-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetParameters"
+        [componentCode]="snippetParametersTs">
+      <h3 sui-header>Passing Parameters to Rules</h3>
+      <p>Rules usually take a parameter in brackets, like <code>minLength[2]</code>. If brackets are awkward, pass the parameter as <code>value</code> instead</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-parameters-example></doc-form-validation-parameters-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPrompts"
+        [componentCode]="snippetPromptsTs">
+      <h3 sui-header>Customizing Prompts</h3>
+      <p>Set <code>prompt</code> on a rule to replace the default message. Prompts can use the templates <code>&#123;name&#125;</code>, <code>&#123;identifier&#125;</code>, <code>&#123;value&#125;</code> and <code>&#123;ruleValue&#125;</code>, or be a function of the field value</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-prompts-example></doc-form-validation-prompts-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetMatchingFields"
+        [componentCode]="snippetMatchingFieldsTs">
+      <h3 sui-header>Matching Fields</h3>
+      <p>Use <code>identifier</code> when a field's key should not be used to find it, or match fields with a <code>data-validate</code> attribute when the server needs a specific <code>name</code></p>
+
+      <ng-template docDemo>
+        <doc-form-validation-matching-fields-example></doc-form-validation-matching-fields-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInline"
+        [componentCode]="snippetInlineTs">
+      <h3 sui-header>Validating on Blur and Other Events</h3>
+      <p>Set <code>suiInline</code> to show errors in a label next to each field, and <code>suiOn</code> to validate on <code>blur</code> or <code>change</code> instead of submit</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-inline-example></doc-form-validation-inline-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDependent"
+        [componentCode]="snippetDependentTs">
+      <h3 sui-header>Dependent Fields</h3>
+      <p>Add <code>depends</code> with the identifier of another field to only validate a field when that other field has a value</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-dependent-example></doc-form-validation-dependent-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetOptional"
+        [componentCode]="snippetOptionalTs">
+      <h3 sui-header>Optional Fields</h3>
+      <p>Add <code>optional: true</code> to only validate a field when it is not empty</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-optional-example></doc-form-validation-optional-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetProgrammatic"
+        [componentCode]="snippetProgrammaticTs">
+      <h3 sui-header>Validating Programmatically</h3>
+      <p>Export the directive with <code>#ref="suiFormValidation"</code> to validate, read and write values, reset or clear the form</p>
+
+      <div sui-message
+           suiState="info">
+        <code>reset()</code> restores the values the fields had when the form was first validated.
+      </div>
+
+      <ng-template docDemo>
+        <doc-form-validation-programmatic-example></doc-form-validation-programmatic-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetReactive"
+        [componentCode]="snippetReactiveTs">
+      <h3 sui-header>Reactive Forms</h3>
+      <p><code>suiFormValidation</code> works with <code>[formGroup]</code> and <code>ngModel</code>. Rule failures are added to the matching control's errors under the <code>suiFormValidation</code> key, next to any Angular validator errors</p>
+
+      <div sui-message
+           suiState="info">
+        With reactive forms, the input's <code>id</code> or <code>name</code> must match the field identifier so errors can be shown next to it.
+      </div>
+
+      <ng-template docDemo>
+        <doc-form-validation-reactive-example></doc-form-validation-reactive-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Rules</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleEmpty"
+        [componentCode]="snippetRuleEmptyTs">
+      <h3 sui-header>Empty</h3>
+      <p>Check that a field has a value, or that a checkbox is checked</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-empty-example></doc-form-validation-rule-empty-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleContentType"
+        [componentCode]="snippetRuleContentTypeTs">
+      <h3 sui-header>Content Type</h3>
+      <p>Inputs can match common content types, or your own regular expression</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-content-type-example></doc-form-validation-rule-content-type-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRulePayment"
+        [componentCode]="snippetRulePaymentTs">
+      <h3 sui-header>Payment</h3>
+      <p>Inputs can validate credit card numbers, optionally limited to some card types</p>
+
+      <div sui-message
+           suiState="info">
+        Supported types are <code>visa</code>, <code>amex</code>, <code>mastercard</code>, <code>discover</code>, <code>unionpay</code>, <code>jcb</code>, <code>dinersClub</code>, <code>maestro</code>, <code>laser</code> and <code>visaElectron</code>.
+      </div>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-payment-example></doc-form-validation-rule-payment-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleMatching"
+        [componentCode]="snippetRuleMatchingTs">
+      <h3 sui-header>Matching Fields</h3>
+      <p>Fields can be required to match, or differ from, other fields</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-matching-example></doc-form-validation-rule-matching-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleLength"
+        [componentCode]="snippetRuleLengthTs">
+      <h3 sui-header>Length</h3>
+      <p>Inputs can match against the length of their content</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-length-example></doc-form-validation-rule-length-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleSpecifiedContent"
+        [componentCode]="snippetRuleSpecifiedContentTs">
+      <h3 sui-header>Specified Content</h3>
+      <p>Rules can specify content that should or should not appear in an input</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-specified-content-example></doc-form-validation-rule-specified-content-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetRuleSelectionCount"
+        [componentCode]="snippetRuleSelectionCountTs">
+      <h3 sui-header>Selection Count</h3>
+      <p>Multiple selects can specify how many options should be chosen</p>
+
+      <ng-template docDemo>
+        <doc-form-validation-rule-selection-count-example></doc-form-validation-rule-selection-count-example>
+      </ng-template>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <div sui-message
+         suiState="info">
+      <code>suiFormValidation</code> is part of <code>SuiFormModule</code> from <code>ngx-semantic/collections/form</code>. Use it on a <code>&lt;form&gt;</code> together with <code>sui-form</code>.
+    </div>
+
+    <h2 sui-header
+        suiDividing>suiFormValidation</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiFields
+        </td>
+        <td>
+          Validation rules keyed by field. Each value is a rule, a list of rules, or a longhand field definition
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            SuiFormValidationFieldsInput
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOn
+        </td>
+        <td>
+          When fields are validated
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            &#x27;submit&#x27; | &#x27;blur&#x27; | &#x27;change&#x27;
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            &#x27;submit&#x27;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiInline
+        </td>
+        <td>
+          Show each error in a label next to its field
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiRevalidate
+        </td>
+        <td>
+          Revalidate fields with errors as their value changes
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiDelay
+        </td>
+        <td>
+          Milliseconds to wait after typing before validating with <code>change</code> or revalidation. <code>true</code> uses 300ms
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number | boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiKeyboardShortcuts
+        </td>
+        <td>
+          Blur the focused field when <code>Escape</code> is pressed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiMarkControlsTouchedOnInvalid
+        </td>
+        <td>
+          With <code>NgForm</code> or <code>[formGroup]</code>, mark every control as touched after a failed submit
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiOnSuccess
+        </td>
+        <td>
+          Emitted when the form is submitted or validated and every field is valid
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;Event&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnFailure
+        </td>
+        <td>
+          Emitted when validation fails, with the error messages and the identifiers of the invalid fields
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;&#123;errors: string[]; fields: string[]&#125;&amp;gt;
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Methods</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          validateForm()
+        </td>
+        <td>
+          Validates the whole form, shows errors and emits <code>suiOnSuccess</code> or <code>suiOnFailure</code>. Returns whether the form is valid
+        </td>
+      </tr>
+      <tr>
+        <td>
+          validateField(identifier)
+        </td>
+        <td>
+          Validates one field and shows its error. Returns whether it is valid
+        </td>
+      </tr>
+      <tr>
+        <td>
+          isValid(identifier?)
+        </td>
+        <td>
+          Returns whether the form, or one field, passes its rules without updating the UI
+        </td>
+      </tr>
+      <tr>
+        <td>
+          getFieldElement(identifier)
+        </td>
+        <td>
+          Returns the element matching an id, name or <code>data-validate</code> value
+        </td>
+      </tr>
+      <tr>
+        <td>
+          getValue(identifier)
+        </td>
+        <td>
+          Returns the value of a field
+        </td>
+      </tr>
+      <tr>
+        <td>
+          getValues(identifiers?)
+        </td>
+        <td>
+          Returns the values of the given fields, or of every validated field
+        </td>
+      </tr>
+      <tr>
+        <td>
+          setValue(identifier, value)
+        </td>
+        <td>
+          Sets the value of a field
+        </td>
+      </tr>
+      <tr>
+        <td>
+          setValues(values)
+        </td>
+        <td>
+          Sets several field values from an object
+        </td>
+      </tr>
+      <tr>
+        <td>
+          reset()
+        </td>
+        <td>
+          Restores every field to the value it had when the form was first validated
+        </td>
+      </tr>
+      <tr>
+        <td>
+          clear()
+        </td>
+        <td>
+          Clears every field in the form
+        </td>
+      </tr>
+      <tr>
+        <td>
+          getAngularForm()
+        </td>
+        <td>
+          Returns the <code>FormGroup</code> of a <code>[formGroup]</code> or <code>NgForm</code> on the form, if there is one
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Field Definition</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          identifier
+        </td>
+        <td>
+          The id, name or <code>data-validate</code> value of the field. Defaults to the key in <code>suiFields</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          rules
+        </td>
+        <td>
+          The rules to check, as rule names or <code>&#123; type, prompt, value &#125;</code> objects
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            SuiFormValidationRuleSpec[] | string | string[]
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          optional
+        </td>
+        <td>
+          Only validate the field when it is not empty
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          depends
+        </td>
+        <td>
+          Only validate the field when this other field has a value
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Rules</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Rule</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          empty
+        </td>
+        <td>
+          A field is not empty
+        </td>
+      </tr>
+      <tr>
+        <td>
+          checked
+        </td>
+        <td>
+          A checkbox field is checked
+        </td>
+      </tr>
+      <tr>
+        <td>
+          email
+        </td>
+        <td>
+          A field is a valid e-mail address
+        </td>
+      </tr>
+      <tr>
+        <td>
+          url
+        </td>
+        <td>
+          A field is a url
+        </td>
+      </tr>
+      <tr>
+        <td>
+          integer
+        </td>
+        <td>
+          A field is an integer, or in a range: <code>integer[1..10]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          decimal
+        </td>
+        <td>
+          A field is a decimal number
+        </td>
+      </tr>
+      <tr>
+        <td>
+          number
+        </td>
+        <td>
+          A field is any number, decimal or not
+        </td>
+      </tr>
+      <tr>
+        <td>
+          regExp[expression]
+        </td>
+        <td>
+          A field matches a regular expression: <code>regExp[/^[a-z0-9_-]&#123;3,16&#125;$/]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          creditCard
+        </td>
+        <td>
+          A field is a valid credit card, optionally of some types: <code>creditCard[visa,mastercard]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          contains / containsExactly
+        </td>
+        <td>
+          A field contains text, case insensitive or sensitive: <code>contains[foo]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          doesntContain / doesntContainExactly
+        </td>
+        <td>
+          A field does not contain text: <code>doesntContain[foo]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          is / isExactly
+        </td>
+        <td>
+          A field is a value: <code>is[foo]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          not / notExactly
+        </td>
+        <td>
+          A field is not a value: <code>not[foo]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          minLength / exactLength / maxLength
+        </td>
+        <td>
+          A field's length: <code>minLength[5]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          match / different
+        </td>
+        <td>
+          A field matches, or differs from, another field: <code>match[password]</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          minCount / exactCount / maxCount
+        </td>
+        <td>
+          A multiple select has a number of selections: <code>minCount[2]</code>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>

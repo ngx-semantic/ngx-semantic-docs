@@ -1,0 +1,12 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  email: {
+    identifier: 'email',
+    rules: [{ type: 'email', prompt: 'Please enter a valid e-mail' }]
+  },
+  ccEmail: {
+    identifier: 'cc-email',
+    optional: true,
+    rules: [{ type: 'email', prompt: 'Please enter a valid second e-mail' }]
+  }
+};

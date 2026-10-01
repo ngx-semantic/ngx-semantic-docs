@@ -1,0 +1,391 @@
+<doc-page
+    header="Sticky"
+    subHeader="Sticky content stays fixed to the browser viewport while another column of content is visible on the page"
+    semanticUrl="https://semantic-ui.com/modules/sticky.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetSticky">
+      <h3 sui-header>Sticky</h3>
+      <p>Sticky content stays fixed to the viewport while its context is visible</p>
+
+      <div sui-message
+           suiState="info">
+        Scroll the page to see the content stick. A sticky is usually placed in a <code>rail</code>, and its <code>suiContext</code> is the element whose bounds it stays within.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sticky-demo">
+          <doc-sticky-sticky-example></doc-sticky-sticky-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetPushing">
+      <h3 sui-header>Pushing</h3>
+      <p>Sticky content can push the page up when you scroll back, instead of returning to its original position straight away</p>
+
+      <ng-template docDemo>
+        <div class="sticky-demo">
+          <doc-sticky-pushing-example></doc-sticky-pushing-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetOffset">
+      <h3 sui-header>Offset</h3>
+      <p>Sticky content can be offset from the top of the viewport, for example to sit below a fixed menu</p>
+
+      <ng-template docDemo>
+        <div class="sticky-demo">
+          <doc-sticky-offset-example></doc-sticky-offset-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetEvents">
+      <h3 sui-header>Events</h3>
+      <p>A sticky element reports when it sticks and unsticks</p>
+
+      <ng-template docDemo>
+        <div class="sticky-demo">
+          <doc-sticky-events-example></doc-sticky-events-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetScrollContext">
+      <h3 sui-header>Scroll Context</h3>
+      <p>A sticky can stick inside a scrolling element instead of the page</p>
+
+      <div sui-message
+           suiState="info">
+        <code>suiScrollContext</code> takes a CSS selector for the scrolling element.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sticky-demo">
+          <doc-sticky-scroll-context-example></doc-sticky-scroll-context-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>suiSticky</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiContext
+        </td>
+        <td>
+          The element (or CSS selector) the sticky stays within. Defaults to the sticky's offset parent
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string | HTMLElement
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiScrollContext
+        </td>
+        <td>
+          The scrolling element, as a CSS selector, or <code>'window'</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            'window'
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOffset
+        </td>
+        <td>
+          Pixels between the sticky and the top of the scroll context when stuck
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            0
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiBottomOffset
+        </td>
+        <td>
+          Pixels between the sticky and the bottom of the scroll context when pushing
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            0
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiPushing
+        </td>
+        <td>
+          Push the page up when scrolling back instead of returning to its position
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSetSize
+        </td>
+        <td>
+          Keep the sticky's width and height when it becomes fixed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiJitter
+        </td>
+        <td>
+          Pixel tolerance before the container height is corrected
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            5
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiObserveChanges
+        </td>
+        <td>
+          Recalculate positions when the content of the sticky or its context changes
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiOnStick
+        </td>
+        <td>
+          Emitted when the element becomes fixed to the viewport
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnUnstick
+        </td>
+        <td>
+          Emitted when the element is no longer fixed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnTop
+        </td>
+        <td>
+          Emitted when the element returns to the top of its context
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnBottom
+        </td>
+        <td>
+          Emitted when the element is bound to the bottom of its context
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnScroll
+        </td>
+        <td>
+          Emitted on every scroll of the scroll context
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnReposition
+        </td>
+        <td>
+          Emitted when positions are recalculated
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;void&gt;
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Methods</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          refresh(hard?)
+        </td>
+        <td>
+          Recalculates the sticky positions, e.g. after the page layout changes
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</doc-page>

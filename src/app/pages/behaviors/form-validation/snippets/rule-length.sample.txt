@@ -1,0 +1,6 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  minLength: { rules: [{ type: 'minLength[10]', prompt: 'Please enter at least 10 characters' }] },
+  exactLength: { rules: [{ type: 'exactLength[6]', prompt: 'Please enter exactly 6 characters' }] },
+  maxLength: { rules: [{ type: 'maxLength[10]', prompt: 'Please enter at most 10 characters' }] }
+};

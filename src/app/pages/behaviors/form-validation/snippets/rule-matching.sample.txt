@@ -1,0 +1,11 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  match: {
+    identifier: 'match2',
+    rules: [{ type: 'match[match1]', prompt: 'Please put the same value in both fields' }]
+  },
+  different: {
+    identifier: 'different2',
+    rules: [{ type: 'different[different1]', prompt: 'Please put different values for each field' }]
+  }
+};

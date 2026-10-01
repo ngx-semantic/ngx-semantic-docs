@@ -54,6 +54,10 @@ import { SuiSidebarModule } from 'ngx-semantic/modules/sidebar';
 import { SuiMenuModule } from 'ngx-semantic/collections/menu';
 import { SidebarPage } from './sidebar/sidebar.page';
 import { SIDEBAR_EXAMPLES } from './sidebar/sidebar-examples.component';
+import { SuiStickyModule } from 'ngx-semantic/modules/sticky';
+import { SuiRailModule } from 'ngx-semantic/elements/rail';
+import { StickyPage } from './sticky/sticky.page';
+import { STICKY_EXAMPLES } from './sticky/sticky-examples.component';
 import { SuiTransitionModule } from 'ngx-semantic/modules/transition';
 import { TransitionPage } from './transition/transition.page';
 import { TRANSITION_EXAMPLES } from './transition/transition-examples.component';
@@ -86,6 +90,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     ShapePage,
     ...SIDEBAR_EXAMPLES,
     SidebarPage,
+    ...STICKY_EXAMPLES,
+    StickyPage,
     ...TRANSITION_EXAMPLES,
     TransitionPage,
     ...TAB_EXAMPLES,
@@ -146,6 +152,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiShapeModule,
     SuiSidebarModule,
     SuiMenuModule,
+    SuiStickyModule,
+    SuiRailModule,
     SuiTransitionModule,
   ]
 })

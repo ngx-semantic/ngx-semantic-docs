@@ -4,6 +4,7 @@
       suiVertical="true"
       suiInverted="true"
       sui-sidebar
+      suiSidebarAnimation="overlay"
       [visible]>
     <div suiMenuItem>
       <img sui-image
@@ -270,6 +271,11 @@
           Sidebar
         </a>
         <a suiMenuItem
+           routerLink="modules/sticky"
+           routerLinkActive="active">
+          Sticky
+        </a>
+        <a suiMenuItem
            routerLink="modules/tab"
            routerLinkActive="active">
           Tab
@@ -278,6 +284,21 @@
            routerLink="modules/transition"
            routerLinkActive="active">
           Transition
+        </a>
+      </div>
+    </div>
+    <div suiMenuItem>
+      <div suiMenuHeader>Behaviors</div>
+      <div suiSubMenu>
+        <a suiMenuItem
+           routerLink="behaviors/form"
+           routerLinkActive="active">
+          Form Validation
+        </a>
+        <a suiMenuItem
+           routerLink="behaviors/visibility"
+           routerLinkActive="active">
+          Visibility
         </a>
       </div>
     </div>

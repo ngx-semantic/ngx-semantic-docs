@@ -1,0 +1,19 @@
+<div class="visibility-scroller"
+     #scroller>
+  @for (person of people; track person) {
+    <h4 sui-header>
+      <img sui-image
+           suiSize="tiny"
+           suiRounded
+           suiVisibility
+           suiType="image"
+           [suiContext]="scroller"
+           src="assets/images/wireframes/image.png"
+           [attr.data-src]="'assets/images/' + person + '.jpg'"
+           (suiOnLoad)="loaded = loaded + 1">
+      {{ person | titlecase }}
+    </h4>
+    <doc-wireframe type="short-paragraph"></doc-wireframe>
+  }
+</div>
+<p>Images loaded: {{ loaded }} / {{ people.length }}</p>

@@ -1,0 +1,52 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="m-match1">Match 1</label>
+      <input id="m-match1"
+             name="match1"
+             type="text"
+             placeholder="Match 1">
+    </div>
+    <div suiFormField>
+      <label for="m-match2">Match 2</label>
+      <input id="m-match2"
+             name="match2"
+             type="text"
+             placeholder="Match 2">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="m-different1">Different 1</label>
+      <input id="m-different1"
+             name="different1"
+             type="text"
+             placeholder="Different 1">
+    </div>
+    <div suiFormField>
+      <label for="m-different2">Different 2</label>
+      <input id="m-different2"
+             name="different2"
+             type="text"
+             placeholder="Different 2">
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

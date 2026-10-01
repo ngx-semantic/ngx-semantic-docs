@@ -1,0 +1,42 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <label for="empty-empty">Empty</label>
+    <input id="empty-empty"
+           name="empty"
+           type="text"
+           placeholder="Empty">
+  </div>
+  <div suiFormField>
+    <label for="empty-dropdown">Dropdown</label>
+    <select id="empty-dropdown"
+            name="dropdown">
+      <option value="">Select</option>
+      <option value="1">Choice 1</option>
+      <option value="2">Choice 2</option>
+    </select>
+  </div>
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="empty-checkbox"
+             name="checkbox"
+             type="checkbox">
+      <label for="empty-checkbox">Checkbox</label>
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>
