@@ -1,0 +1,26 @@
+<table sui-table
+       suiCelled
+       suiSortable>
+  <thead>
+  <tr>
+    <th suiTableHeaderCell
+        [suiSorted]="sortedBy('name')"
+        (click)="sort('name')">Name</th>
+    <th suiTableHeaderCell
+        [suiSorted]="sortedBy('age')"
+        (click)="sort('age')">Age</th>
+    <th suiTableHeaderCell
+        [suiSorted]="sortedBy('job')"
+        (click)="sort('job')">Job</th>
+  </tr>
+  </thead>
+  <tbody>
+  @for (person of people; track person.name) {
+    <tr>
+      <td>{{ person.name }}</td>
+      <td>{{ person.age }}</td>
+      <td>{{ person.job }}</td>
+    </tr>
+  }
+  </tbody>
+</table>
