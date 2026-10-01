@@ -1,0 +1,25 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="shape.flipLeft()"><i sui-icon suiIconType="left long arrow"></i> Left</button>
+  <button sui-button (click)="shape.flipUp()"><i sui-icon suiIconType="up long arrow"></i> Up</button>
+  <button sui-button (click)="shape.flipDown()"><i sui-icon suiIconType="down long arrow"></i> Down</button>
+  <button sui-button (click)="shape.flipRight()"><i sui-icon suiIconType="right long arrow"></i> Right</button>
+  <button sui-button (click)="shape.flipOver()">Over</button>
+  <button sui-button (click)="shape.flipBack()">Back</button>
+</div>
+<div sui-divider suiHidden></div>
+<sui-shape #shape="suiShape"
+           suiText>
+  <sui-shape-side>
+    <h2 sui-header>Hello there!</h2>
+  </sui-shape-side>
+  <sui-shape-side>
+    <h2 sui-header>Flip me</h2>
+  </sui-shape-side>
+  <sui-shape-side>
+    <h2 sui-header>Shapes can hold text</h2>
+  </sui-shape-side>
+  <sui-shape-side>
+    <h2 sui-header>Have a nice day</h2>
+  </sui-shape-side>
+</sui-shape>

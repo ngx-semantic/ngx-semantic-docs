@@ -1,0 +1,39 @@
+<div sui-menu
+     suiColour="blue"
+     suiWidth="three">
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+</div>
+<div sui-menu
+     suiColour="teal"
+     suiInverted
+     suiWidth="three">
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+</div>
