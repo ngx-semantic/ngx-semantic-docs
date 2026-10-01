@@ -13,6 +13,7 @@ import {ModulesComponent} from "./pages/modules/modules.component";
 import {GeneralComponent} from "./pages/general/general.component";
 import {ElementsComponent} from './pages/elements/elements.component';
 import {CollectionsComponent} from './pages/collections/collections.component';
+import {BehaviorsComponent} from './pages/behaviors/behaviors.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CollectionsComponent} from './pages/collections/collections.component';
     ViewsComponent,
     CollectionsComponent,
     GeneralComponent,
-    ModulesComponent
+    ModulesComponent,
+    BehaviorsComponent
   ],
   imports: [
     BrowserModule,

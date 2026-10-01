@@ -1,0 +1,94 @@
+<form sui-form
+      suiFormValidation
+      #validation="suiFormValidation"
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="prog-name">Name</label>
+      <input id="prog-name"
+             name="name"
+             type="text"
+             placeholder="Name">
+    </div>
+    <div suiFormField>
+      <label for="prog-gender">Gender</label>
+      <select id="prog-gender"
+              name="gender">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+  <div suiFormField>
+    <label for="prog-username">Username</label>
+    <input id="prog-username"
+           name="username"
+           type="text"
+           placeholder="Username">
+  </div>
+  <div suiFormField>
+    <label for="prog-colors">Favorite Colors</label>
+    <select id="prog-colors"
+            name="colors"
+            multiple>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="grey">Grey</option>
+    </select>
+  </div>
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="prog-terms"
+             name="terms"
+             type="checkbox">
+      <label for="prog-terms">I agree to the terms and conditions</label>
+    </div>
+  </div>
+  <div sui-buttons
+       suiSize="small">
+    <button sui-button
+            type="button"
+            (click)="validation.validateForm()">
+      Validate Form
+    </button>
+    <button sui-button
+            type="button"
+            (click)="output = validation.isValid('name') ? 'Name is valid' : 'Name is invalid'">
+      Is Name Valid?
+    </button>
+    <button sui-button
+            type="button"
+            (click)="validation.setValues(sample)">
+      Set Values
+    </button>
+    <button sui-button
+            type="button"
+            (click)="output = validation.getValues()">
+      Get Values
+    </button>
+    <button sui-button
+            type="button"
+            (click)="validation.reset(); state = null">
+      Reset
+    </button>
+    <button sui-button
+            type="button"
+            (click)="validation.clear(); state = null">
+      Clear
+    </button>
+  </div>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+  @if (output) {
+    <pre>{{ output | json }}</pre>
+  }
+</form>

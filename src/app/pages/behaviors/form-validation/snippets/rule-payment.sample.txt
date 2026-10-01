@@ -1,0 +1,8 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  card: { rules: [{ type: 'creditCard', prompt: 'Please enter a valid credit card' }] },
+  exactCard: {
+    identifier: 'exact-card',
+    rules: [{ type: 'creditCard[visa,amex]', prompt: 'Please enter a visa or amex card' }]
+  }
+};

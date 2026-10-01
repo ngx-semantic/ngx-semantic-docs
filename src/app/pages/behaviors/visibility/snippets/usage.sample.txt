@@ -1,0 +1,7 @@
+import { SuiVisibilityCalculations } from 'ngx-semantic/modules/visibility';
+
+calculations: SuiVisibilityCalculations | null = null;
+keys: (keyof SuiVisibilityCalculations)[] = [
+  'pixelsPassed', 'percentagePassed', 'fits', 'width', 'height', 'direction',
+  'onScreen', 'offScreen', 'passing', 'topVisible', 'bottomVisible', 'topPassed', 'bottomPassed'
+];

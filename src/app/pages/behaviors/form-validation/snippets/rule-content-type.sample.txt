@@ -1,0 +1,9 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  integer: { rules: [{ type: 'integer[1..100]', prompt: 'Please enter an integer value' }] },
+  decimal: { rules: [{ type: 'decimal', prompt: 'Please enter a valid decimal' }] },
+  number: { rules: [{ type: 'number', prompt: 'Please enter a valid number' }] },
+  email: { rules: [{ type: 'email', prompt: 'Please enter a valid e-mail' }] },
+  url: { rules: [{ type: 'url', prompt: 'Please enter a url' }] },
+  regex: { rules: [{ type: 'regExp[/^[a-z0-9_-]{4,16}$/]', prompt: 'Please enter a 4-16 letter username' }] }
+};

@@ -1,0 +1,2 @@
+people = ['elliot', 'helen', 'jenny', 'joe', 'justen', 'laura', 'matt', 'stevie'];
+loaded = 0;

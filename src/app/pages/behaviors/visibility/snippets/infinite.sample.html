@@ -1,0 +1,24 @@
+<div class="visibility-scroller"
+     #scroller>
+  <div sui-segment
+       suiVisibility
+       [suiContext]="scroller"
+       [suiOnce]="false"
+       suiObserveChanges
+       (suiOnBottomVisible)="loadMore()">
+    @for (item of items; track $index) {
+      <doc-wireframe [type]="item"></doc-wireframe>
+    }
+    @if (loading) {
+      <div sui-message
+           suiState="info">
+        Adding more content...
+      </div>
+    }
+    @if (loads >= maxLoads) {
+      <div sui-message>
+        That's everything.
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,17 @@
+items: string[] = ['paragraph', 'short-paragraph', 'paragraph', 'short-paragraph'];
+loading = false;
+loads = 0;
+maxLoads = 5;
+
+loadMore(): void {
+  if (this.loading || this.loads >= this.maxLoads) {
+    return;
+  }
+  this.loading = true;
+  // simulate a request for more content
+  setTimeout(() => {
+    this.items = [...this.items, 'paragraph', 'short-paragraph', 'paragraph'];
+    this.loads++;
+    this.loading = false;
+  }, 800);
+}

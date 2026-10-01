@@ -1,0 +1,11 @@
+import { FormControl, FormGroup } from '@angular/forms';
+
+submitted: unknown = null;
+profile = new FormGroup({
+  email: new FormControl(''),
+  age: new FormControl('')
+});
+fields = {
+  email: ['empty', 'email'],
+  age: 'integer[18..120]'
+};

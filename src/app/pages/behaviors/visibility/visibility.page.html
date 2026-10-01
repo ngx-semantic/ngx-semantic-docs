@@ -1,0 +1,824 @@
+<doc-page
+    header="Visibility"
+    subHeader="Visibility provides a set of callbacks for when a content appears in the viewport"
+    semanticUrl="https://semantic-ui.com/behaviors/visibility.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Usage</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetUsage"
+        [componentCode]="snippetUsageTs">
+      <h3 sui-header>How To Use</h3>
+      <p>Add <code>suiVisibility</code> to any element to receive events as it moves through the viewport. Every event receives the element calculations</p>
+
+      <div sui-message
+           suiState="info">
+        These examples scroll inside a container passed to <code>suiContext</code>. Leave it out to track scrolling of the whole page.
+      </div>
+
+      <ng-template docDemo>
+        <doc-visibility-usage-example></doc-visibility-usage-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFrequency"
+        [componentCode]="snippetFrequencyTs">
+      <h3 sui-header>Changing Callback Frequency</h3>
+      <p>By default each event only fires <b>the first time</b> its condition is met. Set <code>suiOnce</code> to <code>false</code> to fire each time a condition <b>becomes true</b>, or <code>suiContinuous</code> to fire on <b>every scroll</b> while it holds</p>
+
+      <div sui-message
+           suiState="info">
+        Call <code>refresh()</code> to reset which events have already fired.
+      </div>
+
+      <ng-template docDemo>
+        <doc-visibility-frequency-example></doc-visibility-frequency-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPassed"
+        [componentCode]="snippetPassedTs">
+      <h3 sui-header>Passed Amounts</h3>
+      <p><code>suiPassed</code> takes a list of distances, as percentages or pixels, and <code>suiOnPassed</code> fires as each one is scrolled past</p>
+
+      <ng-template docDemo>
+        <doc-visibility-passed-example></doc-visibility-passed-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Examples</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetInfinite"
+        [componentCode]="snippetInfiniteTs">
+      <h3 sui-header>Infinite Scroll</h3>
+      <p>As an alternative to pagination you can use <code>suiOnBottomVisible</code> to load content when the bottom of a container is reached</p>
+
+      <div sui-message
+           suiState="info">
+        <code>suiObserveChanges</code> recalculates positions after new content is added.
+      </div>
+
+      <ng-template docDemo>
+        <doc-visibility-infinite-example></doc-visibility-infinite-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLazyImages"
+        [componentCode]="snippetLazyImagesTs">
+      <h3 sui-header>Lazy Loading Images</h3>
+      <p>Setting <code>suiType</code> to <code>image</code> swaps an image's <code>data-src</code> into its <code>src</code> once its top is visible. Keep a placeholder in <code>src</code> so the layout does not jump when the image loads</p>
+
+      <ng-template docDemo>
+        <doc-visibility-lazy-images-example></doc-visibility-lazy-images-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetGradual">
+      <h3 sui-header>Gradual Changes</h3>
+      <p>Each event receives the calculated values, so you can adjust an element as it is scrolled past</p>
+
+      <ng-template docDemo>
+        <doc-visibility-gradual-example></doc-visibility-gradual-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFixed">
+      <h3 sui-header>Fixing Content To Viewport</h3>
+      <p>Setting <code>suiType</code> to <code>fixed</code> fixes an element to the viewport once its top is passed, adds the class <code>fixed</code>, and inserts a placeholder so the page does not shift. It is unfixed when you scroll back</p>
+
+      <div sui-message
+           suiState="warning">
+        This example is not run here because this site is wrapped in a sidebar container, and a transformed ancestor stops <code>position: fixed</code> from attaching to the viewport. Use <code>suiZIndex</code> to keep fixed content above the rest of the page.
+      </div>
+    </doc-code-sample>
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>suiVisibility</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiOnce
+        </td>
+        <td>
+          Fire each event only the first time its condition is met, until <code>refresh()</code> is called
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiContinuous
+        </td>
+        <td>
+          Fire events on every check while their condition holds
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiType
+        </td>
+        <td>
+          <code>image</code> loads <code>data-src</code> into <code>src</code> when visible. <code>fixed</code> fixes the element to the viewport once passed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            false | &#x27;image&#x27; | &#x27;fixed&#x27;
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiContext
+        </td>
+        <td>
+          The scroll context: <code>'window'</code>, a CSS selector or an element
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            &#x27;window&#x27; | string | HTMLElement
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            &#x27;window&#x27;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiScrollContext
+        </td>
+        <td>
+          Alias of <code>suiContext</code>; takes precedence when set
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            &#x27;window&#x27; | string | HTMLElement
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOffset
+        </td>
+        <td>
+          Pixels to adjust the scroll position by, e.g. to account for a fixed menu. Also the top offset for <code>fixed</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            0
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiIncludeMargin
+        </td>
+        <td>
+          Include the element's margins in its calculations
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiInitialCheck
+        </td>
+        <td>
+          Check visibility conditions as soon as the element initializes
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiObserveChanges
+        </td>
+        <td>
+          Refresh automatically when the element's content changes
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiThrottle
+        </td>
+        <td>
+          Debounce scroll checks by this many milliseconds. <code>false</code> uses <code>requestAnimationFrame</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number | false
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiPassed
+        </td>
+        <td>
+          Distances, as percentages or pixels, that fire <code>suiOnPassed</code> when scrolled past, e.g. <code>['50%', '200px']</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string[] | Record&amp;lt;string, unknown&amp;gt;
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiZIndex
+        </td>
+        <td>
+          The z-index applied when using <code>suiType="fixed"</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            1
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiOnOnScreen
+        </td>
+        <td>
+          Any part of the element is in the scroll viewport
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnOffScreen
+        </td>
+        <td>
+          No part of the element is in the scroll viewport
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnTopVisible
+        </td>
+        <td>
+          The element's top edge has passed the bottom of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnTopPassed
+        </td>
+        <td>
+          The element's top edge has passed the top of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnBottomVisible
+        </td>
+        <td>
+          The element's bottom edge has passed the bottom of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnBottomPassed
+        </td>
+        <td>
+          The element's bottom edge has passed the top of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnPassing
+        </td>
+        <td>
+          The element's top has passed the top of the screen but its bottom has not
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnTopVisibleReverse
+        </td>
+        <td>
+          Scrolling back up, the element's top edge is no longer visible
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnTopPassedReverse
+        </td>
+        <td>
+          Scrolling back up, the element's top edge is no longer passed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnBottomVisibleReverse
+        </td>
+        <td>
+          Scrolling back up, the element's bottom edge is no longer visible
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnBottomPassedReverse
+        </td>
+        <td>
+          Scrolling back up, the element's bottom edge is no longer passed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnPassingReverse
+        </td>
+        <td>
+          Scrolling back up, the element is no longer being passed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnPassed
+        </td>
+        <td>
+          A distance listed in <code>suiPassed</code> has been scrolled past
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityPassedEvent&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnUpdate
+        </td>
+        <td>
+          Emitted every time the calculations are updated
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnRefresh
+        </td>
+        <td>
+          Emitted when the directive is refreshed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;void&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnLoad
+        </td>
+        <td>
+          With <code>suiType="image"</code>, emitted when the image source is swapped in
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnFixed
+        </td>
+        <td>
+          With <code>suiType="fixed"</code>, emitted when the element becomes fixed
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiOnUnfixed
+        </td>
+        <td>
+          With <code>suiType="fixed"</code>, emitted when the element returns to its position
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&amp;lt;SuiVisibilityCalculations&amp;gt;
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Methods</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          check()
+        </td>
+        <td>
+          Recalculates and fires any events whose conditions are met
+        </td>
+      </tr>
+      <tr>
+        <td>
+          refresh()
+        </td>
+        <td>
+          Resets which events have fired, then checks again
+        </td>
+      </tr>
+      <tr>
+        <td>
+          disable()
+        </td>
+        <td>
+          Stops events temporarily, e.g. while you adjust the scroll position
+        </td>
+      </tr>
+      <tr>
+        <td>
+          enable()
+        </td>
+        <td>
+          Turns events back on and checks again
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>SuiVisibilityCalculations</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Field</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          pixelsPassed
+        </td>
+        <td>
+          Pixels of the element scrolled past the top of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          percentagePassed
+        </td>
+        <td>
+          Fraction of the element scrolled past, from 0 to 1
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          fits
+        </td>
+        <td>
+          Whether the element is shorter than the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          width / height
+        </td>
+        <td>
+          Size of the element
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            number
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          direction
+        </td>
+        <td>
+          Scroll direction since the last check
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            &#x27;up&#x27; | &#x27;down&#x27;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          onScreen / offScreen
+        </td>
+        <td>
+          Whether any part of the element is in the viewport
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          passing
+        </td>
+        <td>
+          Whether the element is being scrolled past
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          topVisible / bottomVisible
+        </td>
+        <td>
+          Whether the top or bottom edge has passed the bottom of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          topPassed / bottomPassed
+        </td>
+        <td>
+          Whether the top or bottom edge has passed the top of the screen
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</doc-page>
