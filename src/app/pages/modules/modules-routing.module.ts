@@ -17,6 +17,7 @@ import { PopupPage } from './popup/popup.page';
 import { SelectPage } from './select/select.page';
 import { ModalPage } from './modal/modal.page';
 import { DropdownPage } from './dropdown/dropdown.page';
+import { ShapePage } from './shape/shape.page';
 import { StickyPage } from './sticky/sticky.page';
 
 const routes: Routes = [
@@ -63,6 +64,10 @@ const routes: Routes = [
   {
     path: 'select',
     component: SelectPage
+  },
+  {
+    path: 'shape',
+    component: ShapePage
   },
   {
     path: 'sticky',

@@ -1,0 +1,38 @@
+<div sui-menu
+     suiVertical
+     suiSecondary>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'account'"
+     (click)="select('account')">
+    Account
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'settings'"
+     (click)="select('settings')">
+    Settings
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'display-options'"
+     (click)="select('display-options')">
+    Display Options
+  </a>
+</div>
+<div sui-menu
+     suiVertical
+     suiPointing>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+</div>

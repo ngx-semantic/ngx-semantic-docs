@@ -1,0 +1,18 @@
+<div sui-menu
+     suiWidth="three">
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+</div>

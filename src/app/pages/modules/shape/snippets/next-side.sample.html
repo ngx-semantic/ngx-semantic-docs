@@ -1,0 +1,19 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="shape.setNextSide('.first'); shape.flipUp()">First</button>
+  <button sui-button (click)="shape.setNextSide('.second'); shape.flipUp()">Second</button>
+  <button sui-button (click)="shape.setNextSide('.third'); shape.flipUp()">Third</button>
+</div>
+<div sui-divider suiHidden></div>
+<sui-shape #shape="suiShape"
+           suiText>
+  <sui-shape-side class="first">
+    <h2 sui-header>First side</h2>
+  </sui-shape-side>
+  <sui-shape-side class="second">
+    <h2 sui-header>Second side</h2>
+  </sui-shape-side>
+  <sui-shape-side class="third">
+    <h2 sui-header>Third side</h2>
+  </sui-shape-side>
+</sui-shape>
