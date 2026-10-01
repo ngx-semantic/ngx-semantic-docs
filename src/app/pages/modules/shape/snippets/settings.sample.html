@@ -1,0 +1,15 @@
+<button sui-button
+        suiSize="small"
+        (click)="shape.flipRight()">Flip Right</button>
+<div sui-divider suiHidden></div>
+<sui-shape #shape="suiShape"
+           suiText
+           suiWidth="next"
+           [suiDuration]="1500">
+  <sui-shape-side>
+    <h2 sui-header>Short</h2>
+  </sui-shape-side>
+  <sui-shape-side>
+    <h2 sui-header>A much longer side of text</h2>
+  </sui-shape-side>
+</sui-shape>

@@ -51,7 +51,7 @@ import { DocPageContentDirective } from '../directives/doc-page-content.directiv
                 suiPopupPlacement="bottom center"
                 suiPopupContent="View on Semantic UI"
                 target="_blank"
-                href="https://github.com/ngx-semantic/ngx-semantic">
+                [href]="semanticUrl">
                 <i sui-icon
                 suiIconType="book"></i>
               </a>
@@ -96,6 +96,7 @@ export class DocPageComponent {
 
   @Input() header: string = null;
   @Input() subHeader: string = null;
+  @Input() semanticUrl = 'https://semantic-ui.com';
 
   public currentView = 'definition';
 
