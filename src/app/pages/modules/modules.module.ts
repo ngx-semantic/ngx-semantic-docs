@@ -47,6 +47,10 @@ import { SuiSelectModule } from 'ngx-semantic/modules/select';
 import { ModalPage } from './modal/modal.page';
 import { SuiFormModule } from 'ngx-semantic/collections/form';
 import { SuiDividerModule } from 'ngx-semantic/elements/divider';
+import { SuiStickyModule } from 'ngx-semantic/modules/sticky';
+import { SuiRailModule } from 'ngx-semantic/elements/rail';
+import { StickyPage } from './sticky/sticky.page';
+import { STICKY_EXAMPLES } from './sticky/sticky-examples.component';
 
 import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
 
@@ -72,6 +76,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
 
 @NgModule({
   declarations: [
+    ...STICKY_EXAMPLES,
+    StickyPage,
     ...TAB_EXAMPLES,
     ...SELECT_EXAMPLES,
     ...SEARCH_EXAMPLES,
@@ -127,6 +133,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiCheckboxModule,
     SuiAccordionModule,
     SuiPlaceholderModule,
+    SuiStickyModule,
+    SuiRailModule,
   ]
 })
 export class ModulesModule {
