@@ -50,6 +50,10 @@ import { SuiDividerModule } from 'ngx-semantic/elements/divider';
 import { SuiShapeModule } from 'ngx-semantic/modules/shape';
 import { ShapePage } from './shape/shape.page';
 import { SHAPE_EXAMPLES } from './shape/shape-examples.component';
+import { SuiSidebarModule } from 'ngx-semantic/modules/sidebar';
+import { SuiMenuModule } from 'ngx-semantic/collections/menu';
+import { SidebarPage } from './sidebar/sidebar.page';
+import { SIDEBAR_EXAMPLES } from './sidebar/sidebar-examples.component';
 import { SuiTransitionModule } from 'ngx-semantic/modules/transition';
 import { TransitionPage } from './transition/transition.page';
 import { TRANSITION_EXAMPLES } from './transition/transition-examples.component';
@@ -80,6 +84,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
   declarations: [
     ...SHAPE_EXAMPLES,
     ShapePage,
+    ...SIDEBAR_EXAMPLES,
+    SidebarPage,
     ...TRANSITION_EXAMPLES,
     TransitionPage,
     ...TAB_EXAMPLES,
@@ -138,6 +144,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiAccordionModule,
     SuiPlaceholderModule,
     SuiShapeModule,
+    SuiSidebarModule,
+    SuiMenuModule,
     SuiTransitionModule,
   ]
 })

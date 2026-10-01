@@ -1,0 +1,14 @@
+<sui-sidebar-container>
+  <div sui-sidebar
+       sui-menu
+       suiVertical
+       suiInverted
+       [(visible)]="visible">
+    <a suiMenuItem>Item 1</a>
+    <a suiMenuItem>Item 2</a>
+  </div>
+  <sui-sidebar-pusher>
+    <button sui-button
+            (click)="visible = !visible">Toggle Sidebar</button>
+  </sui-sidebar-pusher>
+</sui-sidebar-container>
