@@ -19,6 +19,7 @@ import { ModalPage } from './modal/modal.page';
 import { DropdownPage } from './dropdown/dropdown.page';
 import { ShapePage } from './shape/shape.page';
 import { SidebarPage } from './sidebar/sidebar.page';
+import { StickyPage } from './sticky/sticky.page';
 
 const routes: Routes = [
   {
@@ -72,6 +73,10 @@ const routes: Routes = [
   {
     path: 'sidebar',
     component: SidebarPage
+  },
+  {
+    path: 'sticky',
+    component: StickyPage
   },
   {
     path: 'tab',

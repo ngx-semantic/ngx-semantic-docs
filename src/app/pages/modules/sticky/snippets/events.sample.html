@@ -1,0 +1,24 @@
+<div sui-segment
+     #context>
+  <div class="sticky-content">
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+    <doc-wireframe type="paragraph"></doc-wireframe>
+  </div>
+  <div sui-rail
+       suiLocation="right"
+       suiInternal>
+    <div sui-segment
+         suiSticky
+         [suiContext]="context"
+         (suiOnStick)="stuck = true"
+         (suiOnUnstick)="stuck = false">
+      <h3 sui-header>{{ stuck ? 'Stuck' : 'Not stuck' }}</h3>
+    </div>
+  </div>
+</div>

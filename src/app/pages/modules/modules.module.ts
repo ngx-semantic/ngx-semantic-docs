@@ -54,6 +54,10 @@ import { SuiSidebarModule } from 'ngx-semantic/modules/sidebar';
 import { SuiMenuModule } from 'ngx-semantic/collections/menu';
 import { SidebarPage } from './sidebar/sidebar.page';
 import { SIDEBAR_EXAMPLES } from './sidebar/sidebar-examples.component';
+import { SuiStickyModule } from 'ngx-semantic/modules/sticky';
+import { SuiRailModule } from 'ngx-semantic/elements/rail';
+import { StickyPage } from './sticky/sticky.page';
+import { STICKY_EXAMPLES } from './sticky/sticky-examples.component';
 
 import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
 
@@ -83,6 +87,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     ShapePage,
     ...SIDEBAR_EXAMPLES,
     SidebarPage,
+    ...STICKY_EXAMPLES,
+    StickyPage,
     ...TAB_EXAMPLES,
     ...SELECT_EXAMPLES,
     ...SEARCH_EXAMPLES,
@@ -141,6 +147,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiShapeModule,
     SuiSidebarModule,
     SuiMenuModule,
+    SuiStickyModule,
+    SuiRailModule,
   ]
 })
 export class ModulesModule {
