@@ -1,0 +1,30 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="show('left')">Left</button>
+  <button sui-button (click)="show('right')">Right</button>
+  <button sui-button (click)="show('top')">Top</button>
+  <button sui-button (click)="show('bottom')">Bottom</button>
+</div>
+<div sui-divider suiHidden></div>
+<sui-sidebar-container suiPushable
+                       class="ui bottom attached segment">
+  <div sui-sidebar
+       sui-menu
+       suiInverted
+       [suiVertical]="isVertical"
+       [suiSidebarPosition]="direction"
+       suiSidebarAnimation="overlay"
+       [(visible)]="visible">
+    <a suiMenuItem><i sui-icon suiIconType="home"></i> Home</a>
+    <a suiMenuItem><i sui-icon suiIconType="block layout"></i> Topics</a>
+    <a suiMenuItem><i sui-icon suiIconType="smile"></i> Friends</a>
+  </div>
+  <sui-sidebar-pusher>
+    <div sui-segment
+         suiBasic>
+      <h3 sui-header>Application Content</h3>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </sui-sidebar-pusher>
+</sui-sidebar-container>

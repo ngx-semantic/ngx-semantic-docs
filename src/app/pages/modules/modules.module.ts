@@ -47,6 +47,10 @@ import { SuiSelectModule } from 'ngx-semantic/modules/select';
 import { ModalPage } from './modal/modal.page';
 import { SuiFormModule } from 'ngx-semantic/collections/form';
 import { SuiDividerModule } from 'ngx-semantic/elements/divider';
+import { SuiSidebarModule } from 'ngx-semantic/modules/sidebar';
+import { SuiMenuModule } from 'ngx-semantic/collections/menu';
+import { SidebarPage } from './sidebar/sidebar.page';
+import { SIDEBAR_EXAMPLES } from './sidebar/sidebar-examples.component';
 
 import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
 
@@ -72,6 +76,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
 
 @NgModule({
   declarations: [
+    ...SIDEBAR_EXAMPLES,
+    SidebarPage,
     ...TAB_EXAMPLES,
     ...SELECT_EXAMPLES,
     ...SEARCH_EXAMPLES,
@@ -127,6 +133,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiCheckboxModule,
     SuiAccordionModule,
     SuiPlaceholderModule,
+    SuiSidebarModule,
+    SuiMenuModule,
   ]
 })
 export class ModulesModule {

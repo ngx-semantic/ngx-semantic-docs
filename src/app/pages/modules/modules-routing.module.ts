@@ -17,6 +17,7 @@ import { PopupPage } from './popup/popup.page';
 import { SelectPage } from './select/select.page';
 import { ModalPage } from './modal/modal.page';
 import { DropdownPage } from './dropdown/dropdown.page';
+import { SidebarPage } from './sidebar/sidebar.page';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'select',
     component: SelectPage
+  },
+  {
+    path: 'sidebar',
+    component: SidebarPage
   },
   {
     path: 'tab',

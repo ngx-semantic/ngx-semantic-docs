@@ -1,0 +1,31 @@
+<div sui-menu
+     suiAttached="top">
+  <a suiMenuItem
+     (click)="visible = !visible">
+    <i sui-icon suiIconType="sidebar"></i>
+    Menu
+  </a>
+</div>
+<sui-sidebar-container suiPushable
+                       class="ui bottom attached segment">
+  <div sui-sidebar
+       sui-menu
+       suiInverted
+       suiVertical
+       suiIcon="labeled icon"
+       suiSidebarWidth="thin"
+       suiSidebarAnimation="overlay"
+       [(visible)]="visible">
+    <a suiMenuItem><i sui-icon suiIconType="home"></i> Home</a>
+    <a suiMenuItem><i sui-icon suiIconType="block layout"></i> Topics</a>
+    <a suiMenuItem><i sui-icon suiIconType="smile"></i> Friends</a>
+  </div>
+  <sui-sidebar-pusher>
+    <div sui-segment
+         suiBasic>
+      <h3 sui-header>Application Content</h3>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </sui-sidebar-pusher>
+</sui-sidebar-container>
