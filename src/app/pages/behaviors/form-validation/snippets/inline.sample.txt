@@ -1,0 +1,8 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  'first-name': 'empty',
+  'last-name': 'empty',
+  username: 'empty',
+  password: ['minLength[6]', 'empty'],
+  terms: 'checked'
+};

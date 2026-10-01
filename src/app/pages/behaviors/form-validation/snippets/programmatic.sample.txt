@@ -1,0 +1,15 @@
+state: 'success' | 'error' | null = null;
+output: unknown = null;
+fields = {
+  name: 'empty',
+  gender: 'empty',
+  username: 'empty',
+  terms: 'checked'
+};
+sample = {
+  name: 'Jack',
+  gender: 'male',
+  username: 'jlukic',
+  colors: ['red', 'grey'],
+  terms: true
+};

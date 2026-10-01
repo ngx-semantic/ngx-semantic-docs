@@ -1,0 +1,69 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="type-integer">Integer</label>
+      <input id="type-integer"
+             name="integer"
+             type="text"
+             placeholder="1 to 100">
+    </div>
+    <div suiFormField>
+      <label for="type-email">E-mail</label>
+      <input id="type-email"
+             name="email"
+             type="text"
+             placeholder="E-mail">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="type-decimal">Decimal</label>
+      <input id="type-decimal"
+             name="decimal"
+             type="text"
+             placeholder="Decimal">
+    </div>
+    <div suiFormField>
+      <label for="type-number">Number</label>
+      <input id="type-number"
+             name="number"
+             type="text"
+             placeholder="Number">
+    </div>
+  </div>
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="type-url">URL</label>
+      <input id="type-url"
+             name="url"
+             type="text"
+             placeholder="URL">
+    </div>
+    <div suiFormField>
+      <label for="type-regex">RegEx</label>
+      <input id="type-regex"
+             name="regex"
+             type="text"
+             placeholder="4-16 letter username">
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

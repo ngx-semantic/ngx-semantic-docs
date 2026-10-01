@@ -1,0 +1,46 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <label for="longhand-name">Name</label>
+    <input id="longhand-name"
+           name="name"
+           type="text"
+           placeholder="Name">
+  </div>
+  <div suiFormField>
+    <label for="longhand-username">Username</label>
+    <input id="longhand-username"
+           name="username"
+           type="text"
+           placeholder="Username">
+  </div>
+  <div suiFormField>
+    <label for="longhand-password">Password</label>
+    <input id="longhand-password"
+           name="password"
+           type="password"
+           placeholder="Password">
+  </div>
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="longhand-terms"
+             name="terms"
+             type="checkbox">
+      <label for="longhand-terms">I agree to the terms and conditions</label>
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

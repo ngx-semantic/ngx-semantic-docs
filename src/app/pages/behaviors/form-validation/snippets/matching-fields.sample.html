@@ -1,0 +1,32 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <label for="match-special-name">Special Field</label>
+    <input id="match-special-name"
+           name="special-name"
+           type="text"
+           placeholder="Special Field">
+  </div>
+  <div suiFormField>
+    <label for="match-server">Server Name</label>
+    <input id="match-server"
+           name="user[name]"
+           data-validate="serverName"
+           type="text"
+           placeholder="Server Name">
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

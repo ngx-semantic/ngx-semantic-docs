@@ -1,0 +1,61 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button
+          (click)="events = []; tracker.refresh()">
+    Clear
+  </button>
+  <button sui-button
+          suiToggle
+          [suiActive]="once"
+          (click)="once = !once">
+    Once
+  </button>
+  <button sui-button
+          suiToggle
+          [suiActive]="continuous"
+          (click)="continuous = !continuous">
+    Continuous
+  </button>
+</div>
+<div sui-grid>
+  <div suiGridColumn
+       suiWidth="ten">
+    <div class="visibility-scroller"
+         #scroller>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <div sui-segment
+           suiVisibility
+           #tracker="suiVisibility"
+           [suiContext]="scroller"
+           [suiOnce]="once"
+           [suiContinuous]="continuous"
+           (suiOnTopVisible)="log('Top visible')"
+           (suiOnTopPassed)="log('Top passed')"
+           (suiOnBottomVisible)="log('Bottom visible')"
+           (suiOnBottomPassed)="log('Bottom passed')"
+           (suiOnTopVisibleReverse)="log('Top not visible')"
+           (suiOnBottomPassedReverse)="log('Bottom not passed')">
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+      </div>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </div>
+  <div suiGridColumn
+       suiWidth="six">
+    <div sui-segment>
+      <h4 sui-header>Event Log</h4>
+      @for (event of events; track $index) {
+        <div>{{ event }}</div>
+      } @empty {
+        <em>Scroll the content to log events</em>
+      }
+    </div>
+  </div>
+</div>

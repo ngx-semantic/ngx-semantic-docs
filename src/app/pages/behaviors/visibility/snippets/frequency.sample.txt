@@ -1,0 +1,7 @@
+once = true;
+continuous = false;
+events: string[] = [];
+
+log(event: string): void {
+  this.events = [event, ...this.events].slice(0, 10);
+}

@@ -1,0 +1,57 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="inline-first-name">First Name</label>
+      <input id="inline-first-name"
+             name="first-name"
+             type="text"
+             placeholder="First Name">
+    </div>
+    <div suiFormField>
+      <label for="inline-last-name">Last Name</label>
+      <input id="inline-last-name"
+             name="last-name"
+             type="text"
+             placeholder="Last Name">
+    </div>
+  </div>
+  <div suiFormField>
+    <label for="inline-username">Username</label>
+    <input id="inline-username"
+           name="username"
+           type="text"
+           placeholder="Username">
+  </div>
+  <div suiFormField>
+    <label for="inline-password">Password</label>
+    <input id="inline-password"
+           name="password"
+           type="password"
+           placeholder="Password">
+  </div>
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="inline-terms"
+             name="terms"
+             type="checkbox">
+      <label for="inline-terms">I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

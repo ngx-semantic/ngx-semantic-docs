@@ -1,0 +1,32 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <div class="ui checkbox">
+      <input id="depends-isDoctor"
+             name="isDoctor"
+             type="checkbox">
+      <label for="depends-isDoctor">Are you a doctor?</label>
+    </div>
+  </div>
+  <div suiFormField>
+    <label for="depends-yearsPracticed">How long have you been a medical professional</label>
+    <input id="depends-yearsPracticed"
+           name="yearsPracticed"
+           type="text"
+           placeholder="Years">
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

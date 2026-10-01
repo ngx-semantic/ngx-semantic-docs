@@ -1,0 +1,38 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormField>
+    <label for="prompts-field1">Field 1</label>
+    <input id="prompts-field1"
+           name="field1"
+           type="text"
+           placeholder="Field 1">
+  </div>
+  <div suiFormField>
+    <label for="prompts-field2">Field 2</label>
+    <input id="prompts-field2"
+           name="field2"
+           type="text"
+           placeholder="Field 2">
+  </div>
+  <div suiFormField>
+    <label for="prompts-field3">Field 3</label>
+    <input id="prompts-field3"
+           name="field3"
+           type="text"
+           placeholder="Field 3">
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+  <div class="ui error message"></div>
+</form>

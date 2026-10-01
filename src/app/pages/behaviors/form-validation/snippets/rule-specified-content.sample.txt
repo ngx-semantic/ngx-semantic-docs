@@ -1,0 +1,11 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  is: { rules: [{ type: 'is[dog]', prompt: 'Please enter exactly "dog"' }] },
+  isExactly: { rules: [{ type: 'isExactly[dog]', prompt: 'Please enter exactly "dog"' }] },
+  not: { rules: [{ type: 'not[dog]', prompt: 'Please enter a value, but not "dog"' }] },
+  notExactly: { rules: [{ type: 'notExactly[dog]', prompt: 'Please enter a value, but not exactly "dog"' }] },
+  contains: { rules: [{ type: 'contains[dog]', prompt: 'Please enter a value containing "dog"' }] },
+  containsExactly: { rules: [{ type: 'containsExactly[dog]', prompt: 'Please enter a value containing exactly "dog"' }] },
+  doesntContain: { rules: [{ type: 'doesntContain[dog]', prompt: 'Please enter a value not containing "dog"' }] },
+  doesntContainExactly: { rules: [{ type: 'doesntContainExactly[dog]', prompt: 'Please enter a value not containing exactly "dog"' }] }
+};

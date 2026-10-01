@@ -1,0 +1,35 @@
+<div sui-grid>
+  <div suiGridColumn
+       suiWidth="ten">
+    <div class="visibility-scroller"
+         #scroller>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <div sui-segment
+           suiVisibility
+           [suiContext]="scroller"
+           [suiPassed]="['25%', '50%', '75%', '100%']"
+           (suiOnPassed)="log($event.amount + ' passed')">
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+      </div>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </div>
+  <div suiGridColumn
+       suiWidth="six">
+    <div sui-segment>
+      <h4 sui-header>Event Log</h4>
+      @for (event of events; track $index) {
+        <div>{{ event }}</div>
+      } @empty {
+        <em>Scroll the content to log events</em>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<form sui-form
+      suiFormValidation
+      [suiState]="state"
+      [suiFields]="fields"
+      suiInline
+      suiOn="blur"
+      (suiOnSuccess)="state = 'success'"
+      (suiOnFailure)="state = 'error'">
+  <div suiFormFields
+       suiWidth="two">
+    <div suiFormField>
+      <label for="pay-card">Credit Card</label>
+      <input id="pay-card"
+             name="card"
+             type="text"
+             placeholder="4565340519181845">
+    </div>
+    <div suiFormField>
+      <label for="pay-exact-card">Certain Type</label>
+      <input id="pay-exact-card"
+             name="exact-card"
+             type="text"
+             placeholder="Visa or American Express">
+    </div>
+  </div>
+  <button sui-button
+          suiColour="primary"
+          type="submit">
+    Submit
+  </button>
+  <div class="ui success message">
+    <div class="header">Form Submitted</div>
+    <p>Every field passed validation.</p>
+  </div>
+</form>

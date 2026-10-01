@@ -1,0 +1,46 @@
+<div sui-grid>
+  <div suiGridColumn
+       suiWidth="ten">
+    <div class="visibility-scroller"
+         #scroller>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <div sui-segment
+           suiVisibility
+           [suiContext]="scroller"
+           [suiOnce]="false"
+           (suiOnUpdate)="calculations = $event">
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+      </div>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </div>
+  <div suiGridColumn
+       suiWidth="six">
+    <table sui-table
+           suiCelled
+           suiCompact="very compact">
+      <thead>
+      <tr>
+        <th>Calculation</th>
+        <th>Value</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (key of keys; track key) {
+          <tr>
+            <td>{{ key }}</td>
+            <td>{{ calculations?.[key] }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

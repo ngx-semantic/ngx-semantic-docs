@@ -1,0 +1,6 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  minCount: { rules: [{ type: 'minCount[2]', prompt: 'Please select at least 2 values' }] },
+  maxCount: { rules: [{ type: 'maxCount[2]', prompt: 'Please select a max of 2 values' }] },
+  exactCount: { rules: [{ type: 'exactCount[2]', prompt: 'Please select 2 values' }] }
+};

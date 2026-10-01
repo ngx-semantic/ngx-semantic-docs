@@ -1,0 +1,9 @@
+state: 'success' | 'error' | null = null;
+fields = {
+  // fields are matched by id, then name, then data-validate
+  name: {
+    identifier: 'special-name',
+    rules: [{ type: 'empty' }]
+  },
+  serverName: 'empty'
+};

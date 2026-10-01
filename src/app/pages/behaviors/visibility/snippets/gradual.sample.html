@@ -1,0 +1,21 @@
+<div class="visibility-scroller"
+     #scroller>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+  <div sui-segment
+       suiVisibility
+       [suiContext]="scroller"
+       [suiOnce]="false"
+       suiContinuous
+       (suiOnPassing)="shade = $event.percentagePassed"
+       (suiOnTopPassedReverse)="shade = 0"
+       [style.background-color]="'rgba(0, 0, 0, ' + shade + ')'">
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="short-paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+        <doc-wireframe type="paragraph"></doc-wireframe>
+  </div>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="short-paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+</div>
