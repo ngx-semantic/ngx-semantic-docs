@@ -1,0 +1,24 @@
+<button sui-button
+        (click)="visible = !visible">
+  Toggle
+</button>
+<div class="transition-stage">
+  <sui-transition
+      suiAnimation="drop"
+      [(suiVisible)]="visible"
+      (suiAnimationStart)="log('Animation started')"
+      (suiAnimationComplete)="log('Animation complete')"
+      (suiOnShow)="log('Shown')"
+      (suiOnHide)="log('Hidden')">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>
+<div sui-segment>
+  @for (entry of events; track $index) {
+    <div>{{ entry }}</div>
+  } @empty {
+    <em>No events yet</em>
+  }
+</div>

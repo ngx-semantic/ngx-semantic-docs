@@ -1,0 +1,8 @@
+animation = 'pulse';
+playCount = 0;
+
+play(animation: string): void {
+  this.animation = animation;
+  // incrementing suiPlay replays the current static animation
+  this.playCount++;
+}

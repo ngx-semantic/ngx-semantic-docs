@@ -1,0 +1,14 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="run('horizontal flip in')">Horizontal Flip In</button>
+  <button sui-button (click)="run('vertical flip out')">Vertical Flip Out</button>
+</div>
+<div class="transition-stage">
+  <sui-transition
+      [suiAnimation]="animation"
+      [(suiVisible)]="visible">
+    <img sui-image
+         suiSize="small"
+         src="assets/images/wireframes/image.png">
+  </sui-transition>
+</div>

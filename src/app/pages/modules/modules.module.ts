@@ -47,6 +47,9 @@ import { SuiSelectModule } from 'ngx-semantic/modules/select';
 import { ModalPage } from './modal/modal.page';
 import { SuiFormModule } from 'ngx-semantic/collections/form';
 import { SuiDividerModule } from 'ngx-semantic/elements/divider';
+import { SuiTransitionModule } from 'ngx-semantic/modules/transition';
+import { TransitionPage } from './transition/transition.page';
+import { TRANSITION_EXAMPLES } from './transition/transition-examples.component';
 
 import { ACCORDION_EXAMPLES } from './accordion/accordion-examples.component';
 
@@ -72,6 +75,8 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
 
 @NgModule({
   declarations: [
+    ...TRANSITION_EXAMPLES,
+    TransitionPage,
     ...TAB_EXAMPLES,
     ...SELECT_EXAMPLES,
     ...SEARCH_EXAMPLES,
@@ -127,6 +132,7 @@ import { TAB_EXAMPLES } from './tab/tab-examples.component';
     SuiCheckboxModule,
     SuiAccordionModule,
     SuiPlaceholderModule,
+    SuiTransitionModule,
   ]
 })
 export class ModulesModule {

@@ -17,6 +17,7 @@ import { PopupPage } from './popup/popup.page';
 import { SelectPage } from './select/select.page';
 import { ModalPage } from './modal/modal.page';
 import { DropdownPage } from './dropdown/dropdown.page';
+import { TransitionPage } from './transition/transition.page';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
   {
     path: 'tab',
     component: TabComponent
+  },
+  {
+    path: 'transition',
+    component: TransitionPage
   },
 ];
 
