@@ -1,0 +1,43 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="shape.flipLeft()"><i sui-icon suiIconType="left long arrow"></i> Left</button>
+  <button sui-button (click)="shape.flipUp()"><i sui-icon suiIconType="up long arrow"></i> Up</button>
+  <button sui-button (click)="shape.flipDown()"><i sui-icon suiIconType="down long arrow"></i> Down</button>
+  <button sui-button (click)="shape.flipRight()"><i sui-icon suiIconType="right long arrow"></i> Right</button>
+  <button sui-button (click)="shape.flipOver()">Over</button>
+  <button sui-button (click)="shape.flipBack()">Back</button>
+</div>
+<div sui-divider suiHidden></div>
+<sui-shape #shape="suiShape"
+           suiCube>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">1</div>
+    </div>
+  </sui-shape-side>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">2</div>
+    </div>
+  </sui-shape-side>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">3</div>
+    </div>
+  </sui-shape-side>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">4</div>
+    </div>
+  </sui-shape-side>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">5</div>
+    </div>
+  </sui-shape-side>
+  <sui-shape-side>
+    <div class="content">
+      <div class="center">6</div>
+    </div>
+  </sui-shape-side>
+</sui-shape>
