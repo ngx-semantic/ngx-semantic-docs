@@ -1,1 +1,979 @@
-menu works
+<doc-page
+    header="Menu"
+    subHeader="A menu displays grouped navigation actions"
+    semanticUrl="https://semantic-ui.com/collections/menu.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetMenu">
+      <h3 sui-header>Menu</h3>
+      <p>A menu</p>
+
+      <ng-template docDemo>
+        <doc-menu-menu-example></doc-menu-menu-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetMenuEvenly"
+        [componentCode]="snippetMenuEvenlyTs">
+
+      <p>A menu can have its items divided evenly</p>
+
+      <ng-template docDemo>
+        <doc-menu-menu-evenly-example></doc-menu-menu-evenly-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSecondary"
+        [componentCode]="snippetSecondaryTs">
+      <h3 sui-header>Secondary Menu</h3>
+      <p>A menu can adjust its appearance to de-emphasize its contents</p>
+
+      <ng-template docDemo>
+        <doc-menu-secondary-example></doc-menu-secondary-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPointing"
+        [componentCode]="snippetPointingTs">
+      <h3 sui-header>Pointing</h3>
+      <p>A menu can point to show its relationship to nearby content</p>
+
+      <ng-template docDemo>
+        <doc-menu-pointing-example></doc-menu-pointing-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSecondaryPointing"
+        [componentCode]="snippetSecondaryPointingTs">
+
+      <p>A secondary menu can also point</p>
+
+      <ng-template docDemo>
+        <doc-menu-secondary-pointing-example></doc-menu-secondary-pointing-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTabular"
+        [componentCode]="snippetTabularTs">
+      <h3 sui-header>Tabular</h3>
+      <p>A menu can be formatted to show tabs of information</p>
+
+      <ng-template docDemo>
+        <doc-menu-tabular-example></doc-menu-tabular-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTabularAttached"
+        [componentCode]="snippetTabularAttachedTs">
+
+      <p>A tabular menu can be attached to a segment</p>
+
+      <ng-template docDemo>
+        <doc-menu-tabular-attached-example></doc-menu-tabular-attached-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetText"
+        [componentCode]="snippetTextTs">
+      <h3 sui-header>Text</h3>
+      <p>A menu can be formatted for text content</p>
+
+      <ng-template docDemo>
+        <doc-menu-text-example></doc-menu-text-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetVertical">
+      <h3 sui-header>Vertical Menu</h3>
+      <p>A vertical menu displays elements vertically</p>
+
+      <ng-template docDemo>
+        <doc-menu-vertical-example></doc-menu-vertical-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetVerticalSecondary"
+        [componentCode]="snippetVerticalSecondaryTs">
+
+      <p>Vertical menus can be secondary, pointing or text menus</p>
+
+      <ng-template docDemo>
+        <doc-menu-vertical-secondary-example></doc-menu-vertical-secondary-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPagination">
+      <h3 sui-header>Pagination</h3>
+      <p>A pagination menu is specially formatted to present links to pages of content</p>
+
+      <ng-template docDemo>
+        <doc-menu-pagination-example></doc-menu-pagination-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Content</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetHeader">
+      <h3 sui-header>Header</h3>
+      <p>A menu item may include a header or may itself be a header</p>
+
+      <div sui-message
+           suiState="info">
+        Use <code>suiHeader</code> on an item, or <code>suiMenuHeader</code> inside an item, to add a header.
+      </div>
+
+      <ng-template docDemo>
+        <doc-menu-header-example></doc-menu-header-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTextContent">
+      <h3 sui-header>Text</h3>
+      <p>A vertical menu item can include any type of text content</p>
+
+      <ng-template docDemo>
+        <doc-menu-text-content-example></doc-menu-text-content-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInput">
+      <h3 sui-header>Input</h3>
+      <p>A menu item can contain an input inside of it</p>
+
+      <ng-template docDemo>
+        <doc-menu-input-example></doc-menu-input-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetButton">
+      <h3 sui-header>Button</h3>
+      <p>A menu item can contain a button inside of it</p>
+
+      <ng-template docDemo>
+        <doc-menu-button-example></doc-menu-button-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLinkItem">
+      <h3 sui-header>Link Item</h3>
+      <p>A menu may contain a link item, or an item formatted as if it is a link</p>
+
+      <ng-template docDemo>
+        <doc-menu-link-item-example></doc-menu-link-item-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDropdownItem">
+      <h3 sui-header>Dropdown Item</h3>
+      <p>An item may contain a nested menu in a dropdown</p>
+
+      <ng-template docDemo>
+        <doc-menu-dropdown-item-example></doc-menu-dropdown-item-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSubMenu">
+      <h3 sui-header>Menu</h3>
+      <p>A menu may contain another menu group in the same level as menu items</p>
+
+      <div sui-message
+           suiState="info">
+        Use <code>suiSubMenu</code> with <code>suiRight</code> to float a group of items to the right of the menu.
+      </div>
+
+      <ng-template docDemo>
+        <doc-menu-sub-menu-example></doc-menu-sub-menu-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetHover">
+      <h3 sui-header>Hover</h3>
+      <p>A menu item can be hovered</p>
+
+      <div sui-message
+           suiState="info">
+        Menu items are only hoverable if they are links, <code>&lt;a&gt;</code> or <code>suiLink</code>.
+      </div>
+
+      <ng-template docDemo>
+        <doc-menu-hover-example></doc-menu-hover-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>A menu item can be active</p>
+
+      <ng-template docDemo>
+        <doc-menu-active-example></doc-menu-active-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A menu item can be disabled</p>
+
+      <ng-template docDemo>
+        <doc-menu-disabled-example></doc-menu-disabled-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetStackable">
+      <h3 sui-header>Stackable</h3>
+      <p>A menu can stack at mobile resolutions</p>
+
+      <ng-template docDemo>
+        <doc-menu-stackable-example></doc-menu-stackable-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInverted"
+        [componentCode]="snippetInvertedTs">
+      <h3 sui-header>Inverted</h3>
+      <p>A menu may have its colors inverted to show greater contrast</p>
+
+      <ng-template docDemo>
+        <doc-menu-inverted-example></doc-menu-inverted-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColored"
+        [componentCode]="snippetColoredTs">
+      <h3 sui-header>Colored</h3>
+      <p>Additional colors can be specified</p>
+
+      <ng-template docDemo>
+        <doc-menu-colored-example></doc-menu-colored-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColoredMenu"
+        [componentCode]="snippetColoredMenuTs">
+
+      <p>A whole menu can also be coloured, or coloured and inverted</p>
+
+      <ng-template docDemo>
+        <doc-menu-colored-menu-example></doc-menu-colored-menu-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetIcons">
+      <h3 sui-header>Icons</h3>
+      <p>A menu may have just icons</p>
+
+      <ng-template docDemo>
+        <doc-menu-icons-example></doc-menu-icons-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetLabeledIcon">
+      <h3 sui-header>Labeled Icon</h3>
+      <p>A menu may have labeled icons</p>
+
+      <ng-template docDemo>
+        <doc-menu-labeled-icon-example></doc-menu-labeled-icon-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFluid">
+      <h3 sui-header>Fluid</h3>
+      <p>A vertical menu may take the size of its container</p>
+
+      <div sui-message
+           suiState="info">
+        A horizontal menu will be fluid by default.
+      </div>
+
+      <ng-template docDemo>
+        <doc-menu-fluid-example></doc-menu-fluid-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCompact">
+      <h3 sui-header>Compact</h3>
+      <p>A menu can take up only the space necessary to fit its content</p>
+
+      <ng-template docDemo>
+        <doc-menu-compact-example></doc-menu-compact-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetEvenlyDivided">
+      <h3 sui-header>Evenly Divided</h3>
+      <p>A menu can have its items divided evenly</p>
+
+      <ng-template docDemo>
+        <doc-menu-evenly-divided-example></doc-menu-evenly-divided-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>A menu may be attached to other content segments</p>
+
+      <ng-template docDemo>
+        <doc-menu-attached-example></doc-menu-attached-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSize">
+      <h3 sui-header>Size</h3>
+      <p>A menu can vary in size</p>
+
+      <ng-template docDemo>
+        <doc-menu-size-example></doc-menu-size-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFitted">
+      <h3 sui-header>Fitted</h3>
+      <p>A menu item or menu can remove element padding, vertically or horizontally</p>
+
+      <ng-template docDemo>
+        <doc-menu-fitted-example></doc-menu-fitted-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetBorderless">
+      <h3 sui-header>Borderless</h3>
+      <p>A menu item or menu can have no borders</p>
+
+      <ng-template docDemo>
+        <doc-menu-borderless-example></doc-menu-borderless-example>
+      </ng-template>
+    </doc-code-sample>
+
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-menu</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiWidth
+        </td>
+        <td>
+          Divide the menu into a number of evenly sized items. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiColour
+        </td>
+        <td>
+          Set the colour of the menu. Allowed values are <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSize
+        </td>
+        <td>
+          Set the size of the menu. Allowed values are <span sui-label>'mini'</span> | <span sui-label>'tiny'</span> | <span sui-label>'small'</span> | <span sui-label>'large'</span> | <span sui-label>'huge'</span> | <span sui-label>'massive'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiAttached
+        </td>
+        <td>
+          Attach the menu to other content. Allowed values are <span sui-label>'top'</span> | <span sui-label>'bottom'</span> | <span sui-label>'attached'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiFixed
+        </td>
+        <td>
+          Fix the menu to a side of the viewport. Allowed values are <span sui-label>'top'</span> | <span sui-label>'bottom'</span> | <span sui-label>'left'</span> | <span sui-label>'right'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiIcon
+        </td>
+        <td>
+          Format the menu for icon items. Allowed values are <span sui-label>'icon'</span> | <span sui-label>'labeled icon'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSecondary
+        </td>
+        <td>
+          De-emphasize the contents of the menu
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiPointing
+        </td>
+        <td>
+          Point to show the relationship to nearby content
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiTabular
+        </td>
+        <td>
+          Format the menu as tabs
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiText
+        </td>
+        <td>
+          Format the menu for text content
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiVertical
+        </td>
+        <td>
+          Display the items vertically
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiPagination
+        </td>
+        <td>
+          Format the menu for pagination links
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiInverted
+        </td>
+        <td>
+          Invert the colours of the menu
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiFluid
+        </td>
+        <td>
+          Make a vertical menu take the width of its container
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCompact
+        </td>
+        <td>
+          Only take up the space needed to fit the items
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiStackable
+        </td>
+        <td>
+          Stack the items at mobile resolutions
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiBorderless
+        </td>
+        <td>
+          Remove the item borders
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiRight
+        </td>
+        <td>
+          Position the menu on the right
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiMenuItem</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiColour
+        </td>
+        <td>
+          Set the colour of the item. Allowed values are <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiFitted
+        </td>
+        <td>
+          Remove the padding from the item. Allowed values are <span sui-label>'fitted'</span> | <span sui-label>'horizontally fitted'</span> | <span sui-label>'vertically fitted'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiActive
+        </td>
+        <td>
+          Mark the item as active
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiHeader
+        </td>
+        <td>
+          Format the item as a header
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiLink
+        </td>
+        <td>
+          Format the item as a link
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiBrowser
+        </td>
+        <td>
+          Format the item as a browser item
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          disabled
+        </td>
+        <td>
+          Disable the item
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiSubMenu</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiRight
+        </td>
+        <td>
+          Float the group of items to the right of the parent menu
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</doc-page>
