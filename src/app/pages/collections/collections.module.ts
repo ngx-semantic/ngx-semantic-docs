@@ -41,6 +41,8 @@ import { GRID_EXAMPLES } from './grid/grid-examples.component';
 
 import { MENU_EXAMPLES } from './menu/menu-examples.component';
 
+import { TABLE_EXAMPLES } from './table/table-examples.component';
+
 @NgModule({
   declarations: [
     ...MESSAGES_EXAMPLES,
@@ -48,6 +50,7 @@ import { MENU_EXAMPLES } from './menu/menu-examples.component';
     ...FORM_EXAMPLES,
     ...GRID_EXAMPLES,
     ...MENU_EXAMPLES,
+    ...TABLE_EXAMPLES,
     FormComponent,
     GridComponent,
     MenuComponent,

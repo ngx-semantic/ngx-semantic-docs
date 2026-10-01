@@ -1,0 +1,33 @@
+import { Component } from '@angular/core';
+
+interface Person {
+  name: string;
+  age: number;
+  job: string;
+}
+
+@Component({
+  selector: 'app-sortable-table',
+  templateUrl: './sortable-table.component.html'
+})
+export class SortableTableComponent {
+  people: Person[] = [
+    { name: 'John', age: 15, job: 'Student' },
+    { name: 'Jamie', age: 42, job: 'Engineer' },
+    { name: 'Jill', age: 29, job: 'Designer' },
+    { name: 'Ahmed', age: 34, job: 'Accountant' }
+  ];
+  sortColumn: keyof Person | null = null;
+  sortDirection: 'ascending' | 'descending' = 'ascending';
+
+  sort(column: keyof Person): void {
+    this.sortDirection = this.sortColumn === column && this.sortDirection === 'ascending' ? 'descending' : 'ascending';
+    this.sortColumn = column;
+    const factor = this.sortDirection === 'ascending' ? 1 : -1;
+    this.people = [...this.people].sort((a, b) => (a[column] > b[column] ? 1 : a[column] < b[column] ? -1 : 0) * factor);
+  }
+
+  sortedBy(column: keyof Person): 'ascending' | 'descending' | null {
+    return this.sortColumn === column ? this.sortDirection : null;
+  }
+}

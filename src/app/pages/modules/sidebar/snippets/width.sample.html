@@ -1,0 +1,31 @@
+<div sui-buttons
+     suiSize="small">
+  <button sui-button (click)="width = 'very thin'; visible = true">Very Thin</button>
+  <button sui-button (click)="width = 'thin'; visible = true">Thin</button>
+  <button sui-button (click)="width = null; visible = true">Default</button>
+  <button sui-button (click)="width = 'wide'; visible = true">Wide</button>
+  <button sui-button (click)="width = 'very wide'; visible = true">Very Wide</button>
+</div>
+<div sui-divider suiHidden></div>
+<sui-sidebar-container suiPushable
+                       class="ui bottom attached segment">
+  <div sui-sidebar
+       sui-menu
+       suiInverted
+       suiVertical
+       [suiSidebarWidth]="width"
+       suiSidebarAnimation="overlay"
+       [(visible)]="visible">
+    <a suiMenuItem><i sui-icon suiIconType="home"></i> Home</a>
+    <a suiMenuItem><i sui-icon suiIconType="block layout"></i> Topics</a>
+    <a suiMenuItem><i sui-icon suiIconType="smile"></i> Friends</a>
+  </div>
+  <sui-sidebar-pusher>
+    <div sui-segment
+         suiBasic>
+      <h3 sui-header>Application Content</h3>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+      <doc-wireframe type="paragraph"></doc-wireframe>
+    </div>
+  </sui-sidebar-pusher>
+</sui-sidebar-container>

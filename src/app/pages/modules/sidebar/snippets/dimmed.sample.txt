@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+import { SuiSidebarAnimation, SuiSidebarPosition, SuiSidebarWidth } from 'ngx-semantic/modules/sidebar';
+
+@Component({
+  selector: 'app-sidebar-example',
+  templateUrl: './sidebar-example.component.html'
+})
+export class SidebarExampleComponent {
+  visible = false;
+  direction: SuiSidebarPosition = 'left';
+  animation: SuiSidebarAnimation = 'overlay';
+  width: SuiSidebarWidth = null;
+
+  show(direction: SuiSidebarPosition, animation: SuiSidebarAnimation = 'overlay'): void {
+    this.direction = direction;
+    this.animation = animation;
+    this.visible = true;
+  }
+
+  get isVertical(): boolean {
+    return this.direction === 'left' || this.direction === 'right';
+  }
+}
