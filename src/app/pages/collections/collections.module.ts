@@ -28,6 +28,8 @@ import {SuiSegmentModule} from 'ngx-semantic/elements/segment';
 import {SuiSelectModule} from 'ngx-semantic/modules/select';
 import {SuiGridModule} from 'ngx-semantic/collections/grid';
 import {SuiMenuModule} from 'ngx-semantic/collections/menu';
+import {SuiInputModule} from 'ngx-semantic/elements/input';
+import {SuiDropdownModule} from 'ngx-semantic/modules/dropdown';
 
 import { FORM_EXAMPLES } from './form/form-examples.component';
 
@@ -37,6 +39,8 @@ import { MESSAGES_EXAMPLES } from './messages/messages-examples.component';
 
 import { GRID_EXAMPLES } from './grid/grid-examples.component';
 
+import { MENU_EXAMPLES } from './menu/menu-examples.component';
+
 import { TABLE_EXAMPLES } from './table/table-examples.component';
 
 @NgModule({
@@ -45,6 +49,7 @@ import { TABLE_EXAMPLES } from './table/table-examples.component';
     ...BREADCRUMB_EXAMPLES,
     ...FORM_EXAMPLES,
     ...GRID_EXAMPLES,
+    ...MENU_EXAMPLES,
     ...TABLE_EXAMPLES,
     FormComponent,
     GridComponent,
@@ -70,7 +75,9 @@ import { TABLE_EXAMPLES } from './table/table-examples.component';
     SuiSegmentModule,
     SuiSelectModule,
     SuiGridModule,
-    SuiMenuModule
+    SuiMenuModule,
+    SuiInputModule,
+    SuiDropdownModule
   ]
 })
 export class CollectionsModule {

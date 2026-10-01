@@ -1,0 +1,29 @@
+<div sui-menu
+     suiSecondary>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'home'"
+     (click)="select('home')">
+    Home
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'messages'"
+     (click)="select('messages')">
+    Messages
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'friends'"
+     (click)="select('friends')">
+    Friends
+  </a>
+  <div suiSubMenu
+       suiRight>
+    <div suiMenuItem>
+      <div sui-input
+           suiIcon="icon">
+        <input type="text" placeholder="Search...">
+        <i sui-icon suiIconType="search link"></i>
+      </div>
+    </div>
+    <a suiMenuItem>Logout</a>
+  </div>
+</div>
