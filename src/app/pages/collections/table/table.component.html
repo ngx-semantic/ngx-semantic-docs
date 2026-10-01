@@ -1,1 +1,1174 @@
-table works
+<doc-page
+    header="Table"
+    subHeader="A table displays a collections of data grouped into rows"
+    semanticUrl="https://semantic-ui.com/collections/table.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetTable">
+      <h3 sui-header>Table</h3>
+      <p>A standard table</p>
+
+      <ng-template docDemo>
+        <doc-table-table-example></doc-table-table-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDefinition">
+      <h3 sui-header>Definition</h3>
+      <p>A table may be formatted to emphasize a first column that defines a rows content</p>
+
+      <ng-template docDemo>
+        <doc-table-definition-example></doc-table-definition-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStructured">
+      <h3 sui-header>Structured</h3>
+      <p>A table can be formatted to display complex structured data</p>
+
+      <ng-template docDemo>
+        <doc-table-structured-example></doc-table-structured-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetPositiveNegative">
+      <h3 sui-header>Positive / Negative</h3>
+      <p>A cell or row may let a user know whether a value is good or bad</p>
+
+      <ng-template docDemo>
+        <doc-table-positive-negative-example></doc-table-positive-negative-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetError">
+      <h3 sui-header>Error</h3>
+      <p>A cell or row may call attention to an error or a negative value</p>
+
+      <ng-template docDemo>
+        <doc-table-error-example></doc-table-error-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetWarning">
+      <h3 sui-header>Warning</h3>
+      <p>A cell or row may warn a user</p>
+
+      <ng-template docDemo>
+        <doc-table-warning-example></doc-table-warning-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetActive">
+      <h3 sui-header>Active</h3>
+      <p>A cell or row can be active or selected by a user</p>
+
+      <ng-template docDemo>
+        <doc-table-active-example></doc-table-active-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDisabled">
+      <h3 sui-header>Disabled</h3>
+      <p>A cell can be disabled</p>
+
+      <ng-template docDemo>
+        <doc-table-disabled-example></doc-table-disabled-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetSingleLine">
+      <h3 sui-header>Single Line</h3>
+      <p>A table can specify that its cell contents should remain on a single line and not wrap</p>
+
+      <ng-template docDemo>
+        <doc-table-single-line-example></doc-table-single-line-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFixed">
+      <h3 sui-header>Fixed</h3>
+      <p>A table can use table-layout: fixed a special faster form of table rendering that does not resize table cells based on content</p>
+
+      <div sui-message
+           suiState="info">
+        Fixed tables will automatically ellipsis overflowing text. Use <code>suiSingleLine</code> to prevent wrapping.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-fixed-example></doc-table-fixed-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStacking">
+      <h3 sui-header>Stacking</h3>
+      <p>A table can specify how it stacks table content responsively</p>
+
+      <div sui-message
+           suiState="info">
+        Tables are stackable on mobile by default. Use <code>unstackable</code> to prevent this, or <code>tablet stackable</code> to also stack on tablets.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-stacking-example></doc-table-stacking-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSelectableRow">
+      <h3 sui-header>Selectable Row</h3>
+      <p>A table can have its rows appear selectable</p>
+
+      <ng-template docDemo>
+        <doc-table-selectable-row-example></doc-table-selectable-row-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSelectableCell">
+      <h3 sui-header>Selectable Cell</h3>
+      <p>A table cell can be selectable</p>
+
+      <div sui-message
+           suiState="info">
+        A selectable cell requires a link inside it to size the click area.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-selectable-cell-example></doc-table-selectable-cell-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetVerticalAlignment">
+      <h3 sui-header>Vertical Alignment</h3>
+      <p>A table header, row, or cell can adjust its vertical alignment</p>
+
+      <ng-template docDemo>
+        <doc-table-vertical-alignment-example></doc-table-vertical-alignment-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTextAlignment">
+      <h3 sui-header>Text Alignment</h3>
+      <p>A table header, row, or cell can adjust its text alignment</p>
+
+      <ng-template docDemo>
+        <doc-table-text-alignment-example></doc-table-text-alignment-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetStriped">
+      <h3 sui-header>Striped</h3>
+      <p>A table can stripe alternate rows of content with a darker color to increase contrast</p>
+
+      <ng-template docDemo>
+        <doc-table-striped-example></doc-table-striped-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCelled">
+      <h3 sui-header>Celled</h3>
+      <p>A table may be divided each row into separate cells</p>
+
+      <ng-template docDemo>
+        <doc-table-celled-example></doc-table-celled-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetBasic">
+      <h3 sui-header>Basic</h3>
+      <p>A table can reduce its complexity to increase readability</p>
+
+      <ng-template docDemo>
+        <doc-table-basic-example></doc-table-basic-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCollapsingCell">
+      <h3 sui-header>Collapsing Cell</h3>
+      <p>A cell can be collapsing so that it only uses as much space as required</p>
+
+      <ng-template docDemo>
+        <doc-table-collapsing-cell-example></doc-table-collapsing-cell-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumnWidth">
+      <h3 sui-header>Column Width</h3>
+      <p>A table can specify the width of individual columns independently</p>
+
+      <ng-template docDemo>
+        <doc-table-column-width-example></doc-table-column-width-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColumnCount">
+      <h3 sui-header>Column Count</h3>
+      <p>A table can specify its column count to divide its content evenly</p>
+
+      <ng-template docDemo>
+        <doc-table-column-count-example></doc-table-column-count-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCollapsing">
+      <h3 sui-header>Collapsing</h3>
+      <p>A table can be collapsing, taking up only as much space as its rows</p>
+
+      <ng-template docDemo>
+        <doc-table-collapsing-example></doc-table-collapsing-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetColored">
+      <h3 sui-header>Colored</h3>
+      <p>A table can be given a color to distinguish it from other tables</p>
+
+      <div sui-message
+           suiState="info">
+        Any of the colours <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> can be used.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-colored-example></doc-table-colored-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetInverted">
+      <h3 sui-header>Inverted</h3>
+      <p>A table's colors can be inverted</p>
+
+      <ng-template docDemo>
+        <doc-table-inverted-example></doc-table-inverted-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSortable"
+        [componentCode]="snippetSortableTs">
+      <h3 sui-header>Sortable</h3>
+      <p>A table may allow a user to sort contents by clicking on a table header</p>
+
+      <div sui-message
+           suiState="info">
+        Sorting is done by your component; <code>suiSorted</code> only shows the current sort direction on the header.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-sortable-example></doc-table-sortable-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetFullWidth">
+      <h3 sui-header>Full-Width Header / Footer</h3>
+      <p>A definition table can have a full width header or footer, filling in the gap left by the first column</p>
+
+      <div sui-message
+           suiState="info">
+        Add the <code>full-width</code> class to a <code>thead</code> or <code>tfoot</code>.
+      </div>
+
+      <ng-template docDemo>
+        <doc-table-full-width-example></doc-table-full-width-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetPadded">
+      <h3 sui-header>Padded</h3>
+      <p>A table may sometimes need to be more padded for legibility</p>
+
+      <ng-template docDemo>
+        <doc-table-padded-example></doc-table-padded-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetCompact">
+      <h3 sui-header>Compact</h3>
+      <p>A table may sometimes need to be more compact to make more rows visible at a time</p>
+
+      <ng-template docDemo>
+        <doc-table-compact-example></doc-table-compact-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetSize">
+      <h3 sui-header>Size</h3>
+      <p>A table can also be small or large</p>
+
+      <ng-template docDemo>
+        <doc-table-size-example></doc-table-size-example>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetAttached">
+      <h3 sui-header>Attached</h3>
+      <p>A table can be attached to other content on a page</p>
+
+      <ng-template docDemo>
+        <doc-table-attached-example></doc-table-attached-example>
+      </ng-template>
+    </doc-code-sample>
+
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-table</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiBasic
+        </td>
+        <td>
+          Reduce the complexity of the table. Allowed values are <span sui-label>'basic'</span> | <span sui-label>'very basic'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiWidth
+        </td>
+        <td>
+          Divide the table into a number of equal columns. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiColour
+        </td>
+        <td>
+          Set the colour of the table. Allowed values are <span sui-label>'red'</span> | <span sui-label>'orange'</span> | <span sui-label>'yellow'</span> | <span sui-label>'olive'</span> | <span sui-label>'green'</span> | <span sui-label>'teal'</span> | <span sui-label>'blue'</span> | <span sui-label>'violet'</span> | <span sui-label>'purple'</span> | <span sui-label>'pink'</span> | <span sui-label>'brown'</span> | <span sui-label>'grey'</span> | <span sui-label>'black'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiPadded
+        </td>
+        <td>
+          Increase the padding of the cells. Allowed values are <span sui-label>'padded'</span> | <span sui-label>'very padded'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCompact
+        </td>
+        <td>
+          Reduce the padding of the cells. Allowed values are <span sui-label>'compact'</span> | <span sui-label>'very compact'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSize
+        </td>
+        <td>
+          Set the size of the table. Allowed values are <span sui-label>'small'</span> | <span sui-label>'large'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiStacking
+        </td>
+        <td>
+          Control how the table stacks responsively. Allowed values are <span sui-label>'unstackable'</span> | <span sui-label>'tablet stackable'</span> | <span sui-label>'mobile stackable'</span> | <span sui-label>'computer stackable'</span> | <span sui-label>'large screen stackable'</span> | <span sui-label>'tablet mobile stackable'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiAttached
+        </td>
+        <td>
+          Attach the table to other content. Allowed values are <span sui-label>'top attached'</span> | <span sui-label>'attached'</span> | <span sui-label>'bottom attached'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCelled
+        </td>
+        <td>
+          Divide each row into separate cells
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiStriped
+        </td>
+        <td>
+          Stripe alternate rows
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiDefinition
+        </td>
+        <td>
+          Emphasize the first column
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiStructured
+        </td>
+        <td>
+          Format the table for complex structured data
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSingleLine
+        </td>
+        <td>
+          Prevent cell contents from wrapping
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiFixed
+        </td>
+        <td>
+          Use a fixed table layout
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSelectable
+        </td>
+        <td>
+          Make the rows appear selectable
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSortable
+        </td>
+        <td>
+          Format the headers as sortable
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiInverted
+        </td>
+        <td>
+          Invert the colours of the table
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCollapsing
+        </td>
+        <td>
+          Only take up as much space as the rows need
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiTableRow</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiState
+        </td>
+        <td>
+          Set the state of the row. Allowed values are <span sui-label>'positive'</span> | <span sui-label>'negative'</span> | <span sui-label>'warning'</span> | <span sui-label>'error'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiTextAlignment
+        </td>
+        <td>
+          Set the text alignment of the row. Allowed values are <span sui-label>'left'</span> | <span sui-label>'center'</span> | <span sui-label>'right'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiVerticalAlignment
+        </td>
+        <td>
+          Set the vertical alignment of the row. Allowed values are <span sui-label>'top'</span> | <span sui-label>'middle'</span> | <span sui-label>'bottom'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiActive
+        </td>
+        <td>
+          Mark the row as active
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          disabled
+        </td>
+        <td>
+          Disable the row
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiTableHeaderCell</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiWidth
+        </td>
+        <td>
+          Set the width of the column. Allowed values are <span sui-label>'one'</span> through <span sui-label>'sixteen'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiTextAlignment
+        </td>
+        <td>
+          Set the text alignment of the header. Allowed values are <span sui-label>'left'</span> | <span sui-label>'center'</span> | <span sui-label>'right'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiVerticalAlignment
+        </td>
+        <td>
+          Set the vertical alignment of the header. Allowed values are <span sui-label>'top'</span> | <span sui-label>'middle'</span> | <span sui-label>'bottom'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSorted
+        </td>
+        <td>
+          Show the current sort direction. Allowed values are <span sui-label>'ascending'</span> | <span sui-label>'descending'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSingleLine
+        </td>
+        <td>
+          Prevent the header contents from wrapping
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCollapsing
+        </td>
+        <td>
+          Only take up as much space as the contents need
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>suiTableCell</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiState
+        </td>
+        <td>
+          Set the state of the cell. Allowed values are <span sui-label>'positive'</span> | <span sui-label>'negative'</span> | <span sui-label>'warning'</span> | <span sui-label>'error'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiTextAlignment
+        </td>
+        <td>
+          Set the text alignment of the cell. Allowed values are <span sui-label>'left'</span> | <span sui-label>'center'</span> | <span sui-label>'right'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiVerticalAlignment
+        </td>
+        <td>
+          Set the vertical alignment of the cell. Allowed values are <span sui-label>'top'</span> | <span sui-label>'middle'</span> | <span sui-label>'bottom'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiActive
+        </td>
+        <td>
+          Mark the cell as active
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiCollapsing
+        </td>
+        <td>
+          Only take up as much space as the contents need
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSelectable
+        </td>
+        <td>
+          Make the cell selectable
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSingleLine
+        </td>
+        <td>
+          Prevent the cell contents from wrapping
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          disabled
+        </td>
+        <td>
+          Disable the cell
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</doc-page>
