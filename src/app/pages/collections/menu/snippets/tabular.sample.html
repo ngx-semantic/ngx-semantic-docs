@@ -1,0 +1,13 @@
+<div sui-menu
+     suiTabular>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'bio'"
+     (click)="select('bio')">
+    Bio
+  </a>
+  <a suiMenuItem
+     [suiActive]="activeItem === 'photos'"
+     (click)="select('photos')">
+    Photos
+  </a>
+</div>
