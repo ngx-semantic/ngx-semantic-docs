@@ -1,0 +1,437 @@
+<doc-page
+    header="Sidebar"
+    subHeader="A sidebar hides additional content beside a page"
+    semanticUrl="https://semantic-ui.com/modules/sidebar.html">
+  <div *docPageContent="'definition'">
+    <h2 sui-header
+        suiDividing>Types</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetSidebar"
+        [componentCode]="snippetSidebarTs">
+      <h3 sui-header>Sidebar</h3>
+      <p>A sidebar, usually an inverted vertical menu</p>
+
+      <div sui-message
+           suiState="info">
+        Bind <code>[(visible)]</code> to show and hide the sidebar. When it is two-way bound, clicking the page content hides the sidebar.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-sidebar-example></doc-sidebar-sidebar-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>States</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetVisible">
+      <h3 sui-header>Visible</h3>
+      <p>A sidebar can be visible on the page</p>
+
+      <div sui-message
+           suiState="info">
+        A sidebar that is not two-way bound stays visible when the page is clicked.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-visible-example></doc-sidebar-visible-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetDimmed"
+        [componentCode]="snippetDimmedTs">
+      <h3 sui-header>Dimmed</h3>
+      <p>A pusher can be dimmed while the sidebar is visible</p>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-dimmed-example></doc-sidebar-dimmed-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Variations</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetDirection"
+        [componentCode]="snippetDirectionTs">
+      <h3 sui-header>Direction</h3>
+      <p>A sidebar can appear on different sides of the page</p>
+
+      <div sui-message
+           suiState="info">
+        Top and bottom sidebars should be horizontal menus, so <code>suiVertical</code> is only set for left and right sidebars.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-direction-example></doc-sidebar-direction-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetWidth"
+        [componentCode]="snippetWidthTs">
+      <h3 sui-header>Width</h3>
+      <p>A sidebar can specify its width</p>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-width-example></doc-sidebar-width-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <doc-code-sample
+        [templateCode]="snippetTransitions"
+        [componentCode]="snippetTransitionsTs">
+      <h3 sui-header>Transitions</h3>
+      <p>A sidebar can use different transitions to appear</p>
+
+      <div sui-message
+           suiState="warning">
+        <code>uncover</code>, <code>slide along</code> and <code>slide out</code> only support left and right sidebars.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-transitions-example></doc-sidebar-transitions-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+    <br/>
+
+    <h2 sui-header
+        suiDividing>Usage</h2>
+
+    <doc-code-sample
+        [templateCode]="snippetPage"
+        [componentCode]="snippetPageTs">
+      <h3 sui-header>Page Structure</h3>
+      <p>A sidebar requires a container with a sidebar and a pusher holding the page content</p>
+
+      <div sui-message
+           suiState="info">
+        Without <code>suiPushable</code> the page body is the context and the sidebar is fixed to the viewport. Add <code>suiPushable</code> to keep the sidebar inside the container, as in the examples above.
+      </div>
+
+      <div sui-message
+           suiState="warning">
+        A pushable container cannot have padding.
+      </div>
+
+      <ng-template docDemo>
+        <div class="sidebar-demo">
+          <doc-sidebar-page-example></doc-sidebar-page-example>
+        </div>
+      </ng-template>
+    </doc-code-sample>
+
+  </div>
+
+  <div *docPageContent="'api'">
+    <h2 sui-header
+        suiDividing>sui-sidebar-container</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiPushable
+        </td>
+        <td>
+          Make the container the sidebar's context instead of the page. Always applied when the pusher is dimmable
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-sidebar</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          visible
+        </td>
+        <td>
+          Whether the sidebar is shown. Supports two-way binding with <code>[(visible)]</code>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSidebarPosition
+        </td>
+        <td>
+          The side of the page the sidebar appears on. Allowed values are <span sui-label>'left'</span> | <span sui-label>'right'</span> | <span sui-label>'top'</span> | <span sui-label>'bottom'</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            'left'
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSidebarWidth
+        </td>
+        <td>
+          Set the width of the sidebar. Allowed values are <span sui-label>'very thin'</span> | <span sui-label>'thin'</span> | <span sui-label>'wide'</span> | <span sui-label>'very wide'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiSidebarAnimation
+        </td>
+        <td>
+          Set the transition used to show the sidebar. Allowed values are <span sui-label>'overlay'</span> | <span sui-label>'push'</span> | <span sui-label>'scale down'</span> | <span sui-label>'uncover'</span> | <span sui-label>'slide along'</span> | <span sui-label>'slide out'</span> | <span sui-label>null</span>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            string
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            null
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiInverted
+        </td>
+        <td>
+          Invert the colours of the sidebar
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          suiClosable
+        </td>
+        <td>
+          Hide a two-way bound sidebar when the pusher is clicked
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            true
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Events</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          visibleChange
+        </td>
+        <td>
+          Emitted when the sidebar is shown or hidden
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            EventEmitter&lt;boolean&gt;
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h4 sui-header>Methods</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          show()
+        </td>
+        <td>
+          Shows the sidebar
+        </td>
+      </tr>
+      <tr>
+        <td>
+          hide()
+        </td>
+        <td>
+          Hides the sidebar
+        </td>
+      </tr>
+      <tr>
+        <td>
+          toggle()
+        </td>
+        <td>
+          Toggles the visibility of the sidebar
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2 sui-header
+        suiDividing>sui-sidebar-pusher</h2>
+
+    <h4 sui-header>Properties</h4>
+
+    <table sui-table
+           suiCelled
+           suiDefinition>
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          suiDimmable
+        </td>
+        <td>
+          Dim the page content while the sidebar is visible
+        </td>
+        <td>
+          <div sui-label
+               suiColour="teal">
+            boolean
+          </div>
+        </td>
+        <td>
+          <div sui-label
+               suiColour="grey">
+            false
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</doc-page>
