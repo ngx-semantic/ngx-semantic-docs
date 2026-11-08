@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-placeholder-placeholder-example',
   templateUrl: './snippets/placeholder.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderPlaceholderExampleComponent {
@@ -11,6 +12,7 @@ export class PlaceholderPlaceholderExampleComponent {
 @Component({
   selector: 'doc-placeholder-grid-placeholder-example',
   templateUrl: './snippets/grid-placeholder.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderGridPlaceholderExampleComponent {
@@ -19,6 +21,7 @@ export class PlaceholderGridPlaceholderExampleComponent {
 @Component({
   selector: 'doc-placeholder-card-placeholder-example',
   templateUrl: './snippets/card-placeholder.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderCardPlaceholderExampleComponent {
@@ -27,6 +30,7 @@ export class PlaceholderCardPlaceholderExampleComponent {
 @Component({
   selector: 'doc-placeholder-lines-example',
   templateUrl: './snippets/lines.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderLinesExampleComponent {
@@ -35,6 +39,7 @@ export class PlaceholderLinesExampleComponent {
 @Component({
   selector: 'doc-placeholder-image-header-example',
   templateUrl: './snippets/image-header.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderImageHeaderExampleComponent {
@@ -43,6 +48,7 @@ export class PlaceholderImageHeaderExampleComponent {
 @Component({
   selector: 'doc-placeholder-header-example',
   templateUrl: './snippets/header.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderHeaderExampleComponent {
@@ -51,6 +57,7 @@ export class PlaceholderHeaderExampleComponent {
 @Component({
   selector: 'doc-placeholder-paragraph-example',
   templateUrl: './snippets/paragraph.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderParagraphExampleComponent {
@@ -59,6 +66,7 @@ export class PlaceholderParagraphExampleComponent {
 @Component({
   selector: 'doc-placeholder-image-example',
   templateUrl: './snippets/image.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderImageExampleComponent {
@@ -67,6 +75,7 @@ export class PlaceholderImageExampleComponent {
 @Component({
   selector: 'doc-placeholder-square-images-example',
   templateUrl: './snippets/square-images.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderSquareImagesExampleComponent {
@@ -75,6 +84,7 @@ export class PlaceholderSquareImagesExampleComponent {
 @Component({
   selector: 'doc-placeholder-rectangular-images-example',
   templateUrl: './snippets/rectangular-images.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderRectangularImagesExampleComponent {
@@ -83,6 +93,7 @@ export class PlaceholderRectangularImagesExampleComponent {
 @Component({
   selector: 'doc-placeholder-line-length-example',
   templateUrl: './snippets/line-length.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderLineLengthExampleComponent {
@@ -91,6 +102,7 @@ export class PlaceholderLineLengthExampleComponent {
 @Component({
   selector: 'doc-placeholder-complex-line-length-example',
   templateUrl: './snippets/complex-line-length.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderComplexLineLengthExampleComponent {
@@ -99,6 +111,7 @@ export class PlaceholderComplexLineLengthExampleComponent {
 @Component({
   selector: 'doc-placeholder-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderFluidExampleComponent {
@@ -107,6 +120,7 @@ export class PlaceholderFluidExampleComponent {
 @Component({
   selector: 'doc-placeholder-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class PlaceholderInvertedExampleComponent {

@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetStandardSrc from './snippets/div-standard.sample.html' with { loader: 'text' };
 import snippetVerticalSrc from './snippets/div-vertical.sample.html' with { loader: 'text' };
@@ -15,6 +15,7 @@ import snippetDividerClearingSrc from './snippets/div-clearing.sample.html' with
     selector: 'doc-divider',
     templateUrl: './divider.component.html',
     styleUrls: ['./divider.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DividerComponent {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import snippetListSrc from './snippets/div-standard.sample.html' with { loader: 'text' };
 import snippetList1Src from './snippets/div-standard1.sample.html' with { loader: 'text' };
 import snippetList2Src from './snippets/div-standard2.sample.html' with { loader: 'text' };
@@ -46,6 +46,7 @@ import snippetFloated1Src from './snippets/floated-list1.sample.html' with { loa
     selector: 'doc-lists',
     templateUrl: './list.component.html',
     styleUrls: ['./list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ListComponent implements OnInit {

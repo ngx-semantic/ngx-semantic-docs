@@ -1,4 +1,4 @@
-import {Component, AfterViewChecked} from '@angular/core';
+import {Component, AfterViewChecked, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetSingleSrc from './snippets/single.sample.html' with { loader: 'text' };
 import snippetSetSrc from './snippets/set.sample.html' with { loader: 'text' };
@@ -30,6 +30,7 @@ import snippetSizeMassiveSrc from './snippets/size-massive.sample.html' with { l
     selector: 'doc-steps',
     templateUrl: './step.component.html',
     styleUrls: ['./step.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class StepComponent {

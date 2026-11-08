@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-dropdown-dropdown-example',
   templateUrl: './snippets/dropdown.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownDropdownExampleComponent {
@@ -11,6 +12,7 @@ export class DropdownDropdownExampleComponent {
 @Component({
   selector: 'doc-dropdown-inline-example',
   templateUrl: './snippets/inline.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownInlineExampleComponent {
@@ -19,6 +21,7 @@ export class DropdownInlineExampleComponent {
 @Component({
   selector: 'doc-dropdown-pointing-example',
   templateUrl: './snippets/pointing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownPointingExampleComponent {
@@ -27,6 +30,7 @@ export class DropdownPointingExampleComponent {
 @Component({
   selector: 'doc-dropdown-floating-example',
   templateUrl: './snippets/floating.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownFloatingExampleComponent {
@@ -35,6 +39,7 @@ export class DropdownFloatingExampleComponent {
 @Component({
   selector: 'doc-dropdown-simple-example',
   templateUrl: './snippets/simple.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownSimpleExampleComponent {
@@ -43,6 +48,7 @@ export class DropdownSimpleExampleComponent {
 @Component({
   selector: 'doc-dropdown-header-example',
   templateUrl: './snippets/header.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownHeaderExampleComponent {
@@ -51,6 +57,7 @@ export class DropdownHeaderExampleComponent {
 @Component({
   selector: 'doc-dropdown-divider-example',
   templateUrl: './snippets/divider.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownDividerExampleComponent {
@@ -59,6 +66,7 @@ export class DropdownDividerExampleComponent {
 @Component({
   selector: 'doc-dropdown-icon-example',
   templateUrl: './snippets/icon.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownIconExampleComponent {
@@ -67,6 +75,7 @@ export class DropdownIconExampleComponent {
 @Component({
   selector: 'doc-dropdown-description-example',
   templateUrl: './snippets/description.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownDescriptionExampleComponent {
@@ -75,6 +84,7 @@ export class DropdownDescriptionExampleComponent {
 @Component({
   selector: 'doc-dropdown-label-example',
   templateUrl: './snippets/label.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownLabelExampleComponent {
@@ -83,6 +93,7 @@ export class DropdownLabelExampleComponent {
 @Component({
   selector: 'doc-dropdown-message-example',
   templateUrl: './snippets/message.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownMessageExampleComponent {
@@ -91,6 +102,7 @@ export class DropdownMessageExampleComponent {
 @Component({
   selector: 'doc-dropdown-floated-example',
   templateUrl: './snippets/floated.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownFloatedExampleComponent {
@@ -99,6 +111,7 @@ export class DropdownFloatedExampleComponent {
 @Component({
   selector: 'doc-dropdown-input-example',
   templateUrl: './snippets/input.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownInputExampleComponent {
@@ -107,6 +120,7 @@ export class DropdownInputExampleComponent {
 @Component({
   selector: 'doc-dropdown-image-example',
   templateUrl: './snippets/image.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownImageExampleComponent {
@@ -115,6 +129,7 @@ export class DropdownImageExampleComponent {
 @Component({
   selector: 'doc-dropdown-loading-example',
   templateUrl: './snippets/loading.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownLoadingExampleComponent {
@@ -123,6 +138,7 @@ export class DropdownLoadingExampleComponent {
 @Component({
   selector: 'doc-dropdown-error-example',
   templateUrl: './snippets/error.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownErrorExampleComponent {
@@ -131,6 +147,7 @@ export class DropdownErrorExampleComponent {
 @Component({
   selector: 'doc-dropdown-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownDisabledExampleComponent {
@@ -139,6 +156,7 @@ export class DropdownDisabledExampleComponent {
 @Component({
   selector: 'doc-dropdown-scrolling-example',
   templateUrl: './snippets/scrolling.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownScrollingExampleComponent {
@@ -147,6 +165,7 @@ export class DropdownScrollingExampleComponent {
 @Component({
   selector: 'doc-dropdown-compact-example',
   templateUrl: './snippets/compact.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownCompactExampleComponent {
@@ -155,6 +174,7 @@ export class DropdownCompactExampleComponent {
 @Component({
   selector: 'doc-dropdown-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownFluidExampleComponent {
@@ -163,6 +183,7 @@ export class DropdownFluidExampleComponent {
 @Component({
   selector: 'doc-dropdown-menu-direction-example',
   templateUrl: './snippets/menu-direction.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownMenuDirectionExampleComponent {
@@ -171,6 +192,7 @@ export class DropdownMenuDirectionExampleComponent {
 @Component({
   selector: 'doc-dropdown-multiple-levels-example',
   templateUrl: './snippets/multiple-levels.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownMultipleLevelsExampleComponent {
@@ -179,6 +201,7 @@ export class DropdownMultipleLevelsExampleComponent {
 @Component({
   selector: 'doc-dropdown-button-group-example',
   templateUrl: './snippets/button-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownButtonGroupExampleComponent {

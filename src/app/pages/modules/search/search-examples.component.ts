@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class SearchSampleState {
   blankOptions = [];
@@ -68,6 +68,7 @@ export class SearchSampleState {
 @Component({
   selector: 'doc-search-basic-example',
   templateUrl: './snippets/basic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchBasicExampleComponent extends SearchSampleState {
@@ -76,6 +77,7 @@ export class SearchBasicExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-basic-alt-example',
   templateUrl: './snippets/basic-alt.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchBasicAltExampleComponent extends SearchSampleState {
@@ -84,6 +86,7 @@ export class SearchBasicAltExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-category-example',
   templateUrl: './snippets/category.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchCategoryExampleComponent extends SearchSampleState {
@@ -92,6 +95,7 @@ export class SearchCategoryExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-local-search-example',
   templateUrl: './snippets/local-search.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchLocalSearchExampleComponent extends SearchSampleState {
@@ -100,6 +104,7 @@ export class SearchLocalSearchExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-local-category-search-example',
   templateUrl: './snippets/local-category-search.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchLocalCategorySearchExampleComponent extends SearchSampleState {
@@ -108,6 +113,7 @@ export class SearchLocalCategorySearchExampleComponent extends SearchSampleState
 @Component({
   selector: 'doc-search-loading-example',
   templateUrl: './snippets/loading.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchLoadingExampleComponent extends SearchSampleState {
@@ -116,6 +122,7 @@ export class SearchLoadingExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchDisabledExampleComponent extends SearchSampleState {
@@ -124,6 +131,7 @@ export class SearchDisabledExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchFluidExampleComponent extends SearchSampleState {
@@ -132,6 +140,7 @@ export class SearchFluidExampleComponent extends SearchSampleState {
 @Component({
   selector: 'doc-search-aligned-example',
   templateUrl: './snippets/aligned.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SearchAlignedExampleComponent extends SearchSampleState {

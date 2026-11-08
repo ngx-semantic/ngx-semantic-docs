@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetStdSrc from './snippets/std-container.sample.html' with { loader: 'text' };
 import snippetTextSrc from './snippets/text-container.sample.html' with { loader: 'text' };
@@ -9,6 +9,7 @@ import snippetFluidSrc from './snippets/fluid.sample.html' with { loader: 'text'
     selector: 'doc-container',
     templateUrl: './container.component.html',
     styleUrls: ['./container.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ContainerComponent {

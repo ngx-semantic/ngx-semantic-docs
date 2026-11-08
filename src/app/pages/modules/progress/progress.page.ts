@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetIndicatingSrc from './snippets/indicating.sample.html' with { loader: 'text' };
@@ -20,6 +20,7 @@ import snippetInvertedColourSrc from './snippets/inverted-colour.sample.html' wi
 @Component({
     selector: 'doc-progress',
     templateUrl: 'progress.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ProgressPage {

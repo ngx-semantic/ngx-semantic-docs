@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-grid-grid-example',
   templateUrl: './snippets/grid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridGridExampleComponent {
@@ -11,6 +12,7 @@ export class GridGridExampleComponent {
 @Component({
   selector: 'doc-grid-divided-example',
   templateUrl: './snippets/divided.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridDividedExampleComponent {
@@ -19,6 +21,7 @@ export class GridDividedExampleComponent {
 @Component({
   selector: 'doc-grid-vertically-divided-example',
   templateUrl: './snippets/vertically-divided.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridVerticallyDividedExampleComponent {
@@ -27,6 +30,7 @@ export class GridVerticallyDividedExampleComponent {
 @Component({
   selector: 'doc-grid-celled-example',
   templateUrl: './snippets/celled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridCelledExampleComponent {
@@ -35,6 +39,7 @@ export class GridCelledExampleComponent {
 @Component({
   selector: 'doc-grid-internally-celled-example',
   templateUrl: './snippets/internally-celled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridInternallyCelledExampleComponent {
@@ -43,6 +48,7 @@ export class GridInternallyCelledExampleComponent {
 @Component({
   selector: 'doc-grid-rows-example',
   templateUrl: './snippets/rows.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridRowsExampleComponent {
@@ -51,6 +57,7 @@ export class GridRowsExampleComponent {
 @Component({
   selector: 'doc-grid-columns-example',
   templateUrl: './snippets/columns.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridColumnsExampleComponent {
@@ -59,6 +66,7 @@ export class GridColumnsExampleComponent {
 @Component({
   selector: 'doc-grid-floated-example',
   templateUrl: './snippets/floated.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridFloatedExampleComponent {
@@ -67,6 +75,7 @@ export class GridFloatedExampleComponent {
 @Component({
   selector: 'doc-grid-column-width-example',
   templateUrl: './snippets/column-width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridColumnWidthExampleComponent {
@@ -75,6 +84,7 @@ export class GridColumnWidthExampleComponent {
 @Component({
   selector: 'doc-grid-column-count-example',
   templateUrl: './snippets/column-count.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridColumnCountExampleComponent {
@@ -83,6 +93,7 @@ export class GridColumnCountExampleComponent {
 @Component({
   selector: 'doc-grid-equal-width-example',
   templateUrl: './snippets/equal-width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridEqualWidthExampleComponent {
@@ -91,6 +102,7 @@ export class GridEqualWidthExampleComponent {
 @Component({
   selector: 'doc-grid-stretched-example',
   templateUrl: './snippets/stretched.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridStretchedExampleComponent {
@@ -99,6 +111,7 @@ export class GridStretchedExampleComponent {
 @Component({
   selector: 'doc-grid-padded-example',
   templateUrl: './snippets/padded.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridPaddedExampleComponent {
@@ -107,6 +120,7 @@ export class GridPaddedExampleComponent {
 @Component({
   selector: 'doc-grid-relaxed-example',
   templateUrl: './snippets/relaxed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridRelaxedExampleComponent {
@@ -115,6 +129,7 @@ export class GridRelaxedExampleComponent {
 @Component({
   selector: 'doc-grid-colored-example',
   templateUrl: './snippets/colored.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridColoredExampleComponent {
@@ -123,6 +138,7 @@ export class GridColoredExampleComponent {
 @Component({
   selector: 'doc-grid-centered-example',
   templateUrl: './snippets/centered.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridCenteredExampleComponent {
@@ -131,6 +147,7 @@ export class GridCenteredExampleComponent {
 @Component({
   selector: 'doc-grid-text-alignment-example',
   templateUrl: './snippets/text-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridTextAlignmentExampleComponent {
@@ -139,6 +156,7 @@ export class GridTextAlignmentExampleComponent {
 @Component({
   selector: 'doc-grid-vertical-alignment-example',
   templateUrl: './snippets/vertical-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridVerticalAlignmentExampleComponent {
@@ -147,6 +165,7 @@ export class GridVerticalAlignmentExampleComponent {
 @Component({
   selector: 'doc-grid-doubling-example',
   templateUrl: './snippets/doubling.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridDoublingExampleComponent {
@@ -155,6 +174,7 @@ export class GridDoublingExampleComponent {
 @Component({
   selector: 'doc-grid-stackable-example',
   templateUrl: './snippets/stackable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridStackableExampleComponent {
@@ -163,6 +183,7 @@ export class GridStackableExampleComponent {
 @Component({
   selector: 'doc-grid-reversed-example',
   templateUrl: './snippets/reversed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridReversedExampleComponent {
@@ -171,6 +192,7 @@ export class GridReversedExampleComponent {
 @Component({
   selector: 'doc-grid-device-visibility-example',
   templateUrl: './snippets/device-visibility.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridDeviceVisibilityExampleComponent {
@@ -179,6 +201,7 @@ export class GridDeviceVisibilityExampleComponent {
 @Component({
   selector: 'doc-grid-responsive-width-example',
   templateUrl: './snippets/responsive-width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridResponsiveWidthExampleComponent {

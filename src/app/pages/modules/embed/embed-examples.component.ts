@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class EmbedSampleState {
   isDefinitionsActive = true;
@@ -8,6 +8,7 @@ export class EmbedSampleState {
 @Component({
   selector: 'doc-embed-youtube-example',
   templateUrl: './snippets/youtube.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class EmbedYoutubeExampleComponent extends EmbedSampleState {
@@ -16,6 +17,7 @@ export class EmbedYoutubeExampleComponent extends EmbedSampleState {
 @Component({
   selector: 'doc-embed-vimeo-example',
   templateUrl: './snippets/vimeo.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class EmbedVimeoExampleComponent extends EmbedSampleState {
@@ -24,6 +26,7 @@ export class EmbedVimeoExampleComponent extends EmbedSampleState {
 @Component({
   selector: 'doc-embed-custom-content-example',
   templateUrl: './snippets/custom-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class EmbedCustomContentExampleComponent extends EmbedSampleState {
@@ -32,6 +35,7 @@ export class EmbedCustomContentExampleComponent extends EmbedSampleState {
 @Component({
   selector: 'doc-embed-aspect-ratio-example',
   templateUrl: './snippets/aspect-ratio.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class EmbedAspectRatioExampleComponent extends EmbedSampleState {

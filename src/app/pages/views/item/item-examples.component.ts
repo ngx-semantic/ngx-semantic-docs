@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-item-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemStandardExampleComponent {
@@ -11,6 +12,7 @@ export class ItemStandardExampleComponent {
 @Component({
   selector: 'doc-item-image-content-example',
   templateUrl: './snippets/image-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemImageContentExampleComponent {
@@ -19,6 +21,7 @@ export class ItemImageContentExampleComponent {
 @Component({
   selector: 'doc-item-content-example',
   templateUrl: './snippets/content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemContentExampleComponent {
@@ -27,6 +30,7 @@ export class ItemContentExampleComponent {
 @Component({
   selector: 'doc-item-header-example',
   templateUrl: './snippets/header.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemHeaderExampleComponent {
@@ -35,6 +39,7 @@ export class ItemHeaderExampleComponent {
 @Component({
   selector: 'doc-item-metadata-example',
   templateUrl: './snippets/metadata.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemMetadataExampleComponent {
@@ -43,6 +48,7 @@ export class ItemMetadataExampleComponent {
 @Component({
   selector: 'doc-item-link-example',
   templateUrl: './snippets/link.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemLinkExampleComponent {
@@ -51,6 +57,7 @@ export class ItemLinkExampleComponent {
 @Component({
   selector: 'doc-item-description-example',
   templateUrl: './snippets/description.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemDescriptionExampleComponent {
@@ -59,6 +66,7 @@ export class ItemDescriptionExampleComponent {
 @Component({
   selector: 'doc-item-extra-content-example',
   templateUrl: './snippets/extra-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemExtraContentExampleComponent {
@@ -67,6 +75,7 @@ export class ItemExtraContentExampleComponent {
 @Component({
   selector: 'doc-item-rating-example',
   templateUrl: './snippets/rating.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemRatingExampleComponent {
@@ -75,6 +84,7 @@ export class ItemRatingExampleComponent {
 @Component({
   selector: 'doc-item-unstackable-example',
   templateUrl: './snippets/unstackable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemUnstackableExampleComponent {
@@ -83,6 +93,7 @@ export class ItemUnstackableExampleComponent {
 @Component({
   selector: 'doc-item-divided-example',
   templateUrl: './snippets/divided.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemDividedExampleComponent {
@@ -91,6 +102,7 @@ export class ItemDividedExampleComponent {
 @Component({
   selector: 'doc-item-relaxed-example',
   templateUrl: './snippets/relaxed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemRelaxedExampleComponent {
@@ -99,6 +111,7 @@ export class ItemRelaxedExampleComponent {
 @Component({
   selector: 'doc-item-very-relaxed-example',
   templateUrl: './snippets/very-relaxed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemVeryRelaxedExampleComponent {
@@ -107,6 +120,7 @@ export class ItemVeryRelaxedExampleComponent {
 @Component({
   selector: 'doc-item-link-item-example',
   templateUrl: './snippets/link-item.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemLinkItemExampleComponent {
@@ -115,6 +129,7 @@ export class ItemLinkItemExampleComponent {
 @Component({
   selector: 'doc-item-vertical-alignment-example',
   templateUrl: './snippets/vertical-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemVerticalAlignmentExampleComponent {
@@ -123,6 +138,7 @@ export class ItemVerticalAlignmentExampleComponent {
 @Component({
   selector: 'doc-item-floated-content-example',
   templateUrl: './snippets/floated-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ItemFloatedContentExampleComponent {

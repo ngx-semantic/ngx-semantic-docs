@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetSpecifyingRules from './snippets/specifying-rules.sample.html' with { loader: 'text' };
 import snippetSpecifyingRulesTs from './snippets/specifying-rules.sample.txt' with { loader: 'text' };
@@ -38,6 +38,7 @@ import snippetRuleSelectionCountTs from './snippets/rule-selection-count.sample.
 @Component({
   selector: 'doc-form-validation',
   templateUrl: './form-validation.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationPage {

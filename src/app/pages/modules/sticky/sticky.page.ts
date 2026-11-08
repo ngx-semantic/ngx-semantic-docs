@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStickySrc from './snippets/sticky.sample.html' with { loader: 'text' };
 import snippetPushingSrc from './snippets/pushing.sample.html' with { loader: 'text' };
@@ -19,6 +19,7 @@ import snippetScrollContextSrc from './snippets/scroll-context.sample.html' with
       overflow-y: auto;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyPage {

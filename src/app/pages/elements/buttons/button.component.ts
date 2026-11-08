@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBtnSrc from './snippets/btn-standard.sample.html' with { loader: 'text' };
 import snippetBtnFocusableSrc from './snippets/btn-focusable.sample.html' with { loader: 'text' };
@@ -51,6 +51,7 @@ import snippetBtnGroupSizesOrSrc from './snippets/btn-group-sizes-or.sample.html
     selector: 'doc-buttons',
     templateUrl: './button.component.html',
     styleUrls: ['./button.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ButtonComponent {

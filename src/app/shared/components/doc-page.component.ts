@@ -2,7 +2,7 @@
  * Created by bolor on 10/7/2020
  */
 
-import { Component, Input, ContentChildren, QueryList } from '@angular/core';
+import { Component, Input, ContentChildren, QueryList, ChangeDetectionStrategy } from '@angular/core';
 import { DocPageContentDirective } from '../directives/doc-page-content.directive';
 
 @Component({
@@ -89,6 +89,7 @@ import { DocPageContentDirective } from '../directives/doc-page-content.directiv
       }
     </div>
     `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DocPageComponent {

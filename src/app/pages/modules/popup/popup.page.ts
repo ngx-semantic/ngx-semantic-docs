@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetTitledSrc from './snippets/titled.sample.html' with { loader: 'text' };
@@ -14,6 +14,7 @@ import snippetPositionSrc from './snippets/position.sample.html' with { loader: 
 @Component({
     selector: 'doc-popup',
     templateUrl: 'popup.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class PopupPage {

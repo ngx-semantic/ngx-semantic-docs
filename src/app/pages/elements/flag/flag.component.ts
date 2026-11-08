@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetFlag from './snippets/flag.sample.html' with { loader: 'text' };
 
@@ -6,6 +6,7 @@ import snippetFlag from './snippets/flag.sample.html' with { loader: 'text' };
     selector: 'doc-flags',
     templateUrl: './flag.component.html',
     styleUrls: ['./flag.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class FlagComponent {

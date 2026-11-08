@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-statistic-basic-example',
   templateUrl: './snippets/basic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticBasicExampleComponent {
@@ -11,6 +12,7 @@ export class StatisticBasicExampleComponent {
 @Component({
   selector: 'doc-statistic-basic-alternate-example',
   templateUrl: './snippets/basic-alternate.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticBasicAlternateExampleComponent {
@@ -19,6 +21,7 @@ export class StatisticBasicAlternateExampleComponent {
 @Component({
   selector: 'doc-statistic-group-example',
   templateUrl: './snippets/group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticGroupExampleComponent {
@@ -27,6 +30,7 @@ export class StatisticGroupExampleComponent {
 @Component({
   selector: 'doc-statistic-value-example',
   templateUrl: './snippets/value.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticValueExampleComponent {
@@ -35,6 +39,7 @@ export class StatisticValueExampleComponent {
 @Component({
   selector: 'doc-statistic-label-example',
   templateUrl: './snippets/label.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticLabelExampleComponent {
@@ -43,6 +48,7 @@ export class StatisticLabelExampleComponent {
 @Component({
   selector: 'doc-statistic-horizontal-stat-example',
   templateUrl: './snippets/horizontal-stat.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticHorizontalStatExampleComponent {
@@ -51,6 +57,7 @@ export class StatisticHorizontalStatExampleComponent {
 @Component({
   selector: 'doc-statistic-horizontal-stat-group-example',
   templateUrl: './snippets/horizontal-stat-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticHorizontalStatGroupExampleComponent {
@@ -59,6 +66,7 @@ export class StatisticHorizontalStatGroupExampleComponent {
 @Component({
   selector: 'doc-statistic-coloured-example',
   templateUrl: './snippets/coloured.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticColouredExampleComponent {
@@ -67,6 +75,7 @@ export class StatisticColouredExampleComponent {
 @Component({
   selector: 'doc-statistic-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticInvertedExampleComponent {
@@ -75,6 +84,7 @@ export class StatisticInvertedExampleComponent {
 @Component({
   selector: 'doc-statistic-evenly-divided-example',
   templateUrl: './snippets/evenly-divided.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticEvenlyDividedExampleComponent {
@@ -83,6 +93,7 @@ export class StatisticEvenlyDividedExampleComponent {
 @Component({
   selector: 'doc-statistic-floated-example',
   templateUrl: './snippets/floated.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticFloatedExampleComponent {
@@ -91,6 +102,7 @@ export class StatisticFloatedExampleComponent {
 @Component({
   selector: 'doc-statistic-size-example',
   templateUrl: './snippets/size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticSizeExampleComponent {
@@ -99,6 +111,7 @@ export class StatisticSizeExampleComponent {
 @Component({
   selector: 'doc-statistic-size-horizontal-example',
   templateUrl: './snippets/size-horizontal.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StatisticSizeHorizontalExampleComponent {

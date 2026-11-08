@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetBasicAltSrc from './snippets/basic-alt.sample.html' with { loader: 'text' };
@@ -15,6 +15,7 @@ import snippetAlignedSrc from './snippets/aligned.sample.html' with { loader: 't
 @Component({
     selector: 'doc-search',
     templateUrl: './search.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class SearchComponent {

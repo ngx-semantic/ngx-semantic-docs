@@ -1,10 +1,11 @@
 import { Title } from '@angular/platform-browser';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'doc-home',
     templateUrl: './quick-start.component.html',
     styleUrls: ['./quick-start.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class QuickStartComponent {

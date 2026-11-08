@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetShapeSrc from './snippets/shape.sample.html' with { loader: 'text' };
 import snippetCubeSrc from './snippets/cube.sample.html' with { loader: 'text' };
@@ -15,6 +15,7 @@ import snippetSettingsSrc from './snippets/settings.sample.html' with { loader: 
       margin: 0;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ShapePage {

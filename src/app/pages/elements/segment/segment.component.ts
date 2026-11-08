@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetSegmentSrc from './snippets/segment.sample.html' with { loader: 'text' };
 import snippetPlaceholderSrc from './snippets/placeholder.sample.html' with { loader: 'text' };
@@ -41,6 +41,7 @@ import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text'
     selector: 'doc-segment',
     templateUrl: './segment.component.html',
     styleUrls: ['./segment.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class SegmentComponent {

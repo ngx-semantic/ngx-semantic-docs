@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetBasicAlternateSrc from './snippets/basic-alternate.sample.html' with { loader: 'text' };
@@ -17,6 +17,7 @@ import snippetHorizontalSizesSrc from './snippets/size-horizontal.sample.html' w
 @Component({
     selector: 'doc-statistics',
     templateUrl: './statistics.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class StatisticsComponent {

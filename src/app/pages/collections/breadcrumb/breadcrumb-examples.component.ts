@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-std-example',
   templateUrl: './snippets/breadcrumb-std.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbStdExampleComponent {
@@ -11,6 +12,7 @@ export class BreadcrumbBreadcrumbStdExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-std1-example',
   templateUrl: './snippets/breadcrumb-std1.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbStd1ExampleComponent {
@@ -19,6 +21,7 @@ export class BreadcrumbBreadcrumbStd1ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-content-example',
   templateUrl: './snippets/breadcrumb-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbContentExampleComponent {
@@ -27,6 +30,7 @@ export class BreadcrumbBreadcrumbContentExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-content1-example',
   templateUrl: './snippets/breadcrumb-content1.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbContent1ExampleComponent {
@@ -35,6 +39,7 @@ export class BreadcrumbBreadcrumbContent1ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-section-example',
   templateUrl: './snippets/breadcrumb-section.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSectionExampleComponent {
@@ -43,6 +48,7 @@ export class BreadcrumbBreadcrumbSectionExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-link-example',
   templateUrl: './snippets/breadcrumb-link.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbLinkExampleComponent {
@@ -51,6 +57,7 @@ export class BreadcrumbBreadcrumbLinkExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-active-example',
   templateUrl: './snippets/breadcrumb-active.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbActiveExampleComponent {
@@ -59,6 +66,7 @@ export class BreadcrumbBreadcrumbActiveExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size-example',
   templateUrl: './snippets/breadcrumb-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSizeExampleComponent {
@@ -67,6 +75,7 @@ export class BreadcrumbBreadcrumbSizeExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size1-example',
   templateUrl: './snippets/breadcrumb-size1.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize1ExampleComponent {
@@ -75,6 +84,7 @@ export class BreadcrumbBreadcrumbSize1ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size2-example',
   templateUrl: './snippets/breadcrumb-size2.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize2ExampleComponent {
@@ -83,6 +93,7 @@ export class BreadcrumbBreadcrumbSize2ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size3-example',
   templateUrl: './snippets/breadcrumb-size3.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize3ExampleComponent {
@@ -91,6 +102,7 @@ export class BreadcrumbBreadcrumbSize3ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size4-example',
   templateUrl: './snippets/breadcrumb-size4.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize4ExampleComponent {
@@ -99,6 +111,7 @@ export class BreadcrumbBreadcrumbSize4ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size5-example',
   templateUrl: './snippets/breadcrumb-size5.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize5ExampleComponent {
@@ -107,6 +120,7 @@ export class BreadcrumbBreadcrumbSize5ExampleComponent {
 @Component({
   selector: 'doc-breadcrumb-breadcrumb-size6-example',
   templateUrl: './snippets/breadcrumb-size6.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class BreadcrumbBreadcrumbSize6ExampleComponent {

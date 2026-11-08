@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetBasicAltSrc from './snippets/basic-alt.sample.html' with { loader: 'text' };
@@ -42,6 +42,7 @@ import snippetInlineGroupAltSrc from './snippets/inline-group-alt.sample.html' w
 @Component({
     selector: 'doc-form',
     templateUrl: './form.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class FormComponent {

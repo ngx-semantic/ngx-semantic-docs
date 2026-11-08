@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class ModalSampleState {
   isStandardModalVisible = false;
@@ -15,6 +15,7 @@ export class ModalSampleState {
 @Component({
   selector: 'doc-modal-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalStandardExampleComponent extends ModalSampleState {
@@ -23,6 +24,7 @@ export class ModalStandardExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-basic-example',
   templateUrl: './snippets/basic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalBasicExampleComponent extends ModalSampleState {
@@ -31,6 +33,7 @@ export class ModalBasicExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-full-screen-example',
   templateUrl: './snippets/full-screen.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalFullScreenExampleComponent extends ModalSampleState {
@@ -39,6 +42,7 @@ export class ModalFullScreenExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-size-example',
   templateUrl: './snippets/size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalSizeExampleComponent extends ModalSampleState {
@@ -47,6 +51,7 @@ export class ModalSizeExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-scrolling-example',
   templateUrl: './snippets/scrolling.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalScrollingExampleComponent extends ModalSampleState {
@@ -55,6 +60,7 @@ export class ModalScrollingExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-closable-example',
   templateUrl: './snippets/closable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalClosableExampleComponent extends ModalSampleState {
@@ -63,6 +69,7 @@ export class ModalClosableExampleComponent extends ModalSampleState {
 @Component({
   selector: 'doc-modal-mask-closable-example',
   templateUrl: './snippets/mask-closable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ModalMaskClosableExampleComponent extends ModalSampleState {

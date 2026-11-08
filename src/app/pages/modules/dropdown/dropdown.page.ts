@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetDropdownSrc from './snippets/dropdown.sample.html' with { loader: 'text' };
 import snippetInlineSrc from './snippets/inline.sample.html' with { loader: 'text' };
@@ -27,6 +27,7 @@ import snippetButtonGroupSrc from './snippets/button-group.sample.html' with { l
 @Component({
   selector: 'doc-dropdown',
   templateUrl: 'dropdown.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class DropdownPage {

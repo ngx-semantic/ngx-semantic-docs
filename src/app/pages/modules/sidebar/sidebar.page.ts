@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetSidebarSrc from './snippets/sidebar.sample.html' with { loader: 'text' };
 import snippetSidebarTsSrc from './snippets/sidebar.sample.txt' with { loader: 'text' };
@@ -23,6 +23,7 @@ import snippetPageTsSrc from './snippets/page.sample.txt' with { loader: 'text' 
       margin-top: 0;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarPage {

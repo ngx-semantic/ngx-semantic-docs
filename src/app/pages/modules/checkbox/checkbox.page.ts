@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandard from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetBasicRadio from './snippets/basic-radio.sample.html' with { loader: 'text' };
@@ -19,6 +19,7 @@ import snippetFitted from './snippets/fitted.sample.html' with { loader: 'text' 
 @Component({
     selector: 'doc-checkbox',
     templateUrl: 'checkbox.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class CheckboxPage {

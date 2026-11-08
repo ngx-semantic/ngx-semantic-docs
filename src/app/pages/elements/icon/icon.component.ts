@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetIconDisabledSrc from './snippets/disabled.sample.html' with { loader: 'text' };
 import snippetIconLoadingSrc from './snippets/loading.sample.html' with { loader: 'text' };
@@ -21,6 +21,7 @@ import snippetIconsInlineSrc from './snippets/inline-corner-icon.sample.html' wi
     selector: 'doc-icons',
     templateUrl: './icon.component.html',
     styleUrls: ['./icon.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class IconComponent {

@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component } from '@angular/core';
+import { AfterViewChecked, Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetSimpleSrc from './snippets/simple.sample.html' with { loader: 'text' };
 import snippetSharedTsSrc from './snippets/simple.sample.txt' with { loader: 'text' };
@@ -20,6 +20,7 @@ import snippetInvertedSrc from './snippets/inverted.sample.html' with { loader: 
           margin-bottom: 1.2rem !important;
       }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DimmerComponent {

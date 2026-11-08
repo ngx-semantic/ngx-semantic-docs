@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class StickySampleState {
   stuck = false;
@@ -7,6 +7,7 @@ export class StickySampleState {
 @Component({
   selector: 'doc-sticky-sticky-example',
   templateUrl: './snippets/sticky.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyStickyExampleComponent extends StickySampleState {
@@ -15,6 +16,7 @@ export class StickyStickyExampleComponent extends StickySampleState {
 @Component({
   selector: 'doc-sticky-pushing-example',
   templateUrl: './snippets/pushing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyPushingExampleComponent extends StickySampleState {
@@ -23,6 +25,7 @@ export class StickyPushingExampleComponent extends StickySampleState {
 @Component({
   selector: 'doc-sticky-offset-example',
   templateUrl: './snippets/offset.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyOffsetExampleComponent extends StickySampleState {
@@ -31,6 +34,7 @@ export class StickyOffsetExampleComponent extends StickySampleState {
 @Component({
   selector: 'doc-sticky-events-example',
   templateUrl: './snippets/events.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyEventsExampleComponent extends StickySampleState {
@@ -39,6 +43,7 @@ export class StickyEventsExampleComponent extends StickySampleState {
 @Component({
   selector: 'doc-sticky-scroll-context-example',
   templateUrl: './snippets/scroll-context.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class StickyScrollContextExampleComponent extends StickySampleState {
