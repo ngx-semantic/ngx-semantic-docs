@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStdSrc from './snippets/breadcrumb-std.sample.html' with { loader: 'text' };
 import snippetStd1Src from './snippets/breadcrumb-std1.sample.html' with { loader: 'text' };
@@ -19,6 +19,7 @@ import snippetSize6Src from './snippets/breadcrumb-size6.sample.html' with { loa
     selector: 'doc-breadcrumb',
     templateUrl: './breadcrumb.component.html',
     styleUrls: ['./breadcrumb.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class BreadcrumbComponent {

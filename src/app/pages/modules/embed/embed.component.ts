@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {AfterViewChecked, Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetYoutubeSrc from './snippets/youtube.sample.html' with { loader: 'text' };
 import snippetVimeoSrc from './snippets/vimeo.sample.html' with { loader: 'text' };
@@ -9,6 +9,7 @@ import snippetAspectRatioSrc from './snippets/aspect-ratio.sample.html' with { l
     selector: 'doc-embed',
     templateUrl: './embed.component.html',
     styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class EmbedComponent {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { SuiSidebarAnimation, SuiSidebarPosition, SuiSidebarWidth } from 'ngx-semantic/modules/sidebar';
 
@@ -22,6 +22,7 @@ export class SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-sidebar-example',
   templateUrl: './snippets/sidebar.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarSidebarExampleComponent extends SidebarSampleState {
@@ -30,6 +31,7 @@ export class SidebarSidebarExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-visible-example',
   templateUrl: './snippets/visible.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarVisibleExampleComponent extends SidebarSampleState {
@@ -38,6 +40,7 @@ export class SidebarVisibleExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-dimmed-example',
   templateUrl: './snippets/dimmed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarDimmedExampleComponent extends SidebarSampleState {
@@ -46,6 +49,7 @@ export class SidebarDimmedExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-direction-example',
   templateUrl: './snippets/direction.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarDirectionExampleComponent extends SidebarSampleState {
@@ -54,6 +58,7 @@ export class SidebarDirectionExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-width-example',
   templateUrl: './snippets/width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarWidthExampleComponent extends SidebarSampleState {
@@ -62,6 +67,7 @@ export class SidebarWidthExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-transitions-example',
   templateUrl: './snippets/transitions.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarTransitionsExampleComponent extends SidebarSampleState {
@@ -70,6 +76,7 @@ export class SidebarTransitionsExampleComponent extends SidebarSampleState {
 @Component({
   selector: 'doc-sidebar-page-example',
   templateUrl: './snippets/page.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SidebarPageExampleComponent extends SidebarSampleState {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetUsage from './snippets/usage.sample.html' with { loader: 'text' };
 import snippetUsageTs from './snippets/usage.sample.txt' with { loader: 'text' };
@@ -23,6 +23,7 @@ import snippetFixed from './snippets/fixed.sample.html' with { loader: 'text' };
       padding-right: 0.5rem;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityPage {

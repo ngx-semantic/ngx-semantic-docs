@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-container-std-container-example',
   templateUrl: './snippets/std-container.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ContainerStdContainerExampleComponent {
@@ -11,6 +12,7 @@ export class ContainerStdContainerExampleComponent {
 @Component({
   selector: 'doc-container-text-container-example',
   templateUrl: './snippets/text-container.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ContainerTextContainerExampleComponent {
@@ -19,6 +21,7 @@ export class ContainerTextContainerExampleComponent {
 @Component({
   selector: 'doc-container-text-alignment-example',
   templateUrl: './snippets/text-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ContainerTextAlignmentExampleComponent {
@@ -27,6 +30,7 @@ export class ContainerTextAlignmentExampleComponent {
 @Component({
   selector: 'doc-container-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ContainerFluidExampleComponent {

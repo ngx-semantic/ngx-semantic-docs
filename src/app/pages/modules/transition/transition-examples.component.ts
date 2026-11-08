@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class TransitionSampleState {
   animation = 'fade';
@@ -26,6 +26,7 @@ export class TransitionSampleState {
 @Component({
   selector: 'doc-transition-scale-example',
   templateUrl: './snippets/scale.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionScaleExampleComponent extends TransitionSampleState {
@@ -34,6 +35,7 @@ export class TransitionScaleExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-zoom-example',
   templateUrl: './snippets/zoom.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionZoomExampleComponent extends TransitionSampleState {
@@ -42,6 +44,7 @@ export class TransitionZoomExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-fade-example',
   templateUrl: './snippets/fade.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionFadeExampleComponent extends TransitionSampleState {
@@ -50,6 +53,7 @@ export class TransitionFadeExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-flip-example',
   templateUrl: './snippets/flip.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionFlipExampleComponent extends TransitionSampleState {
@@ -58,6 +62,7 @@ export class TransitionFlipExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-drop-example',
   templateUrl: './snippets/drop.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionDropExampleComponent extends TransitionSampleState {
@@ -66,6 +71,7 @@ export class TransitionDropExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-fly-example',
   templateUrl: './snippets/fly.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionFlyExampleComponent extends TransitionSampleState {
@@ -74,6 +80,7 @@ export class TransitionFlyExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-swing-example',
   templateUrl: './snippets/swing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionSwingExampleComponent extends TransitionSampleState {
@@ -82,6 +89,7 @@ export class TransitionSwingExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-browse-example',
   templateUrl: './snippets/browse.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionBrowseExampleComponent extends TransitionSampleState {
@@ -90,6 +98,7 @@ export class TransitionBrowseExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-slide-example',
   templateUrl: './snippets/slide.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionSlideExampleComponent extends TransitionSampleState {
@@ -98,6 +107,7 @@ export class TransitionSlideExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-static-example',
   templateUrl: './snippets/static.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionStaticExampleComponent extends TransitionSampleState {
@@ -106,6 +116,7 @@ export class TransitionStaticExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-visibility-example',
   templateUrl: './snippets/visibility.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionVisibilityExampleComponent extends TransitionSampleState {
@@ -114,6 +125,7 @@ export class TransitionVisibilityExampleComponent extends TransitionSampleState 
 @Component({
   selector: 'doc-transition-direction-example',
   templateUrl: './snippets/direction.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionDirectionExampleComponent extends TransitionSampleState {
@@ -122,6 +134,7 @@ export class TransitionDirectionExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-duration-example',
   templateUrl: './snippets/duration.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionDurationExampleComponent extends TransitionSampleState {
@@ -130,6 +143,7 @@ export class TransitionDurationExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-methods-example',
   templateUrl: './snippets/methods.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionMethodsExampleComponent extends TransitionSampleState {
@@ -138,6 +152,7 @@ export class TransitionMethodsExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-events-example',
   templateUrl: './snippets/events.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionEventsExampleComponent extends TransitionSampleState {
@@ -146,6 +161,7 @@ export class TransitionEventsExampleComponent extends TransitionSampleState {
 @Component({
   selector: 'doc-transition-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionDisabledExampleComponent extends TransitionSampleState {

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/placeholder.sample.html' with { loader: 'text' };
 import snippetGridSrc from './snippets/grid-placeholder.sample.html' with { loader: 'text' };
@@ -24,6 +24,7 @@ import snippetInvertedSrc from './snippets/inverted.sample.html' with { loader: 
       margin-right: 0.25em;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class PlaceholderComponent {

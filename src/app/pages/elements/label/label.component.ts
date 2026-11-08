@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetStdSrc from './snippets/std-label.sample.html' with { loader: 'text' };
 import snippetImgSrc from './snippets/img-label.sample.html' with { loader: 'text' };
@@ -31,6 +31,7 @@ import snippetGroupCircularSrc from './snippets/label-group-circular.sample.html
     selector: 'doc-labels',
     templateUrl: './label.component.html',
     styleUrls: ['./label.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class LabelComponent {

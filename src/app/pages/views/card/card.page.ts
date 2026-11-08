@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetCardSrc from './snippets/card.sample.html' with { loader: 'text' };
 import snippetCardsSrc from './snippets/cards.sample.html' with { loader: 'text' };
@@ -25,6 +25,7 @@ import snippetDoublingSrc from './snippets/doubling.sample.html' with { loader: 
 @Component({
   selector: 'doc-card',
   templateUrl: 'card.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CardPage {

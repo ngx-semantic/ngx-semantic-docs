@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetStandardTsSrc from './snippets/standard.sample.txt' with { loader: 'text' };
@@ -19,6 +19,7 @@ import snippetMaskClosableTsSrc from './snippets/mask-closable.sample.txt' with 
     selector: 'doc-modal',
     templateUrl: './modal.page.html',
     styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ModalPage {

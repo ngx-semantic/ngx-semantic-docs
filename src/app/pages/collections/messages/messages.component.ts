@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetBasicSrc from './snippets/msg-std.sample.html' with { loader: 'text' };
 import snippetListSrc from './snippets/msg-list.sample.html' with { loader: 'text' };
@@ -21,6 +21,7 @@ import snippetSizesSrc from './snippets/msg-sizes.sample.html' with { loader: 't
     selector: 'doc-messages',
     templateUrl: './messages.component.html',
     styleUrls: ['./messages.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class MessagesComponent {

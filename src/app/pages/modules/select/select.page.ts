@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetFluidSrc from './snippets/fluid.sample.html' with { loader: 'text' };
@@ -26,6 +26,7 @@ import snippetCompactTsSrc from './snippets/compact.sample.txt' with { loader: '
 @Component({
   selector: 'doc-select',
   templateUrl: 'select.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectPage {

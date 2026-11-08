@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export interface TableSamplePerson {
   name: string;
@@ -31,6 +31,7 @@ export class TableSampleState {
 @Component({
   selector: 'doc-table-table-example',
   templateUrl: './snippets/table.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableTableExampleComponent extends TableSampleState {
@@ -39,6 +40,7 @@ export class TableTableExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-definition-example',
   templateUrl: './snippets/definition.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableDefinitionExampleComponent extends TableSampleState {
@@ -47,6 +49,7 @@ export class TableDefinitionExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-structured-example',
   templateUrl: './snippets/structured.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableStructuredExampleComponent extends TableSampleState {
@@ -55,6 +58,7 @@ export class TableStructuredExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-positive-negative-example',
   templateUrl: './snippets/positive-negative.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TablePositiveNegativeExampleComponent extends TableSampleState {
@@ -63,6 +67,7 @@ export class TablePositiveNegativeExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-error-example',
   templateUrl: './snippets/error.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableErrorExampleComponent extends TableSampleState {
@@ -71,6 +76,7 @@ export class TableErrorExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-warning-example',
   templateUrl: './snippets/warning.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableWarningExampleComponent extends TableSampleState {
@@ -79,6 +85,7 @@ export class TableWarningExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-active-example',
   templateUrl: './snippets/active.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableActiveExampleComponent extends TableSampleState {
@@ -87,6 +94,7 @@ export class TableActiveExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableDisabledExampleComponent extends TableSampleState {
@@ -95,6 +103,7 @@ export class TableDisabledExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-single-line-example',
   templateUrl: './snippets/single-line.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableSingleLineExampleComponent extends TableSampleState {
@@ -103,6 +112,7 @@ export class TableSingleLineExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-fixed-example',
   templateUrl: './snippets/fixed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableFixedExampleComponent extends TableSampleState {
@@ -111,6 +121,7 @@ export class TableFixedExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-stacking-example',
   templateUrl: './snippets/stacking.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableStackingExampleComponent extends TableSampleState {
@@ -119,6 +130,7 @@ export class TableStackingExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-selectable-row-example',
   templateUrl: './snippets/selectable-row.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableSelectableRowExampleComponent extends TableSampleState {
@@ -127,6 +139,7 @@ export class TableSelectableRowExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-selectable-cell-example',
   templateUrl: './snippets/selectable-cell.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableSelectableCellExampleComponent extends TableSampleState {
@@ -135,6 +148,7 @@ export class TableSelectableCellExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-vertical-alignment-example',
   templateUrl: './snippets/vertical-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableVerticalAlignmentExampleComponent extends TableSampleState {
@@ -143,6 +157,7 @@ export class TableVerticalAlignmentExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-text-alignment-example',
   templateUrl: './snippets/text-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableTextAlignmentExampleComponent extends TableSampleState {
@@ -151,6 +166,7 @@ export class TableTextAlignmentExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-striped-example',
   templateUrl: './snippets/striped.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableStripedExampleComponent extends TableSampleState {
@@ -159,6 +175,7 @@ export class TableStripedExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-celled-example',
   templateUrl: './snippets/celled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableCelledExampleComponent extends TableSampleState {
@@ -167,6 +184,7 @@ export class TableCelledExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-basic-example',
   templateUrl: './snippets/basic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableBasicExampleComponent extends TableSampleState {
@@ -175,6 +193,7 @@ export class TableBasicExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-collapsing-cell-example',
   templateUrl: './snippets/collapsing-cell.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableCollapsingCellExampleComponent extends TableSampleState {
@@ -183,6 +202,7 @@ export class TableCollapsingCellExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-column-width-example',
   templateUrl: './snippets/column-width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableColumnWidthExampleComponent extends TableSampleState {
@@ -191,6 +211,7 @@ export class TableColumnWidthExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-column-count-example',
   templateUrl: './snippets/column-count.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableColumnCountExampleComponent extends TableSampleState {
@@ -199,6 +220,7 @@ export class TableColumnCountExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-collapsing-example',
   templateUrl: './snippets/collapsing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableCollapsingExampleComponent extends TableSampleState {
@@ -207,6 +229,7 @@ export class TableCollapsingExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-colored-example',
   templateUrl: './snippets/colored.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableColoredExampleComponent extends TableSampleState {
@@ -215,6 +238,7 @@ export class TableColoredExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableInvertedExampleComponent extends TableSampleState {
@@ -223,6 +247,7 @@ export class TableInvertedExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-sortable-example',
   templateUrl: './snippets/sortable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableSortableExampleComponent extends TableSampleState {
@@ -231,6 +256,7 @@ export class TableSortableExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-full-width-example',
   templateUrl: './snippets/full-width.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableFullWidthExampleComponent extends TableSampleState {
@@ -239,6 +265,7 @@ export class TableFullWidthExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-padded-example',
   templateUrl: './snippets/padded.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TablePaddedExampleComponent extends TableSampleState {
@@ -247,6 +274,7 @@ export class TablePaddedExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-compact-example',
   templateUrl: './snippets/compact.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableCompactExampleComponent extends TableSampleState {
@@ -255,6 +283,7 @@ export class TableCompactExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-size-example',
   templateUrl: './snippets/size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableSizeExampleComponent extends TableSampleState {
@@ -263,6 +292,7 @@ export class TableSizeExampleComponent extends TableSampleState {
 @Component({
   selector: 'doc-table-attached-example',
   templateUrl: './snippets/attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableAttachedExampleComponent extends TableSampleState {

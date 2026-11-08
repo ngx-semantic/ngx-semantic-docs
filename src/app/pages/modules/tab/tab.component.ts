@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetPointingSrc from './snippets/pointing-menu.sample.html' with { loader: 'text' };
@@ -16,6 +16,7 @@ import snippetColouredSrc from './snippets/coloured.sample.html' with { loader: 
         margin-bottom: 1rem;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class TabComponent {

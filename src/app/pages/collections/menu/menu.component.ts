@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetMenuSrc from './snippets/menu.sample.html' with { loader: 'text' };
 import snippetMenuEvenlySrc from './snippets/menu-evenly.sample.html' with { loader: 'text' };
@@ -50,6 +50,7 @@ import snippetBorderlessSrc from './snippets/borderless.sample.html' with { load
   selector: 'doc-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuComponent {

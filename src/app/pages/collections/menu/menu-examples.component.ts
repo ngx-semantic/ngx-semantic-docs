@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class MenuSampleState {
   activeItem = 'home';
@@ -11,6 +11,7 @@ export class MenuSampleState {
 @Component({
   selector: 'doc-menu-menu-example',
   templateUrl: './snippets/menu.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuMenuExampleComponent extends MenuSampleState {
@@ -19,6 +20,7 @@ export class MenuMenuExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-menu-evenly-example',
   templateUrl: './snippets/menu-evenly.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuMenuEvenlyExampleComponent extends MenuSampleState {
@@ -27,6 +29,7 @@ export class MenuMenuEvenlyExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-secondary-example',
   templateUrl: './snippets/secondary.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuSecondaryExampleComponent extends MenuSampleState {
@@ -35,6 +38,7 @@ export class MenuSecondaryExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-pointing-example',
   templateUrl: './snippets/pointing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuPointingExampleComponent extends MenuSampleState {
@@ -43,6 +47,7 @@ export class MenuPointingExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-secondary-pointing-example',
   templateUrl: './snippets/secondary-pointing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuSecondaryPointingExampleComponent extends MenuSampleState {
@@ -51,6 +56,7 @@ export class MenuSecondaryPointingExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-tabular-example',
   templateUrl: './snippets/tabular.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuTabularExampleComponent extends MenuSampleState {
@@ -59,6 +65,7 @@ export class MenuTabularExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-tabular-attached-example',
   templateUrl: './snippets/tabular-attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuTabularAttachedExampleComponent extends MenuSampleState {
@@ -67,6 +74,7 @@ export class MenuTabularAttachedExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-text-example',
   templateUrl: './snippets/text.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuTextExampleComponent extends MenuSampleState {
@@ -75,6 +83,7 @@ export class MenuTextExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-vertical-example',
   templateUrl: './snippets/vertical.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuVerticalExampleComponent extends MenuSampleState {
@@ -83,6 +92,7 @@ export class MenuVerticalExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-vertical-secondary-example',
   templateUrl: './snippets/vertical-secondary.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuVerticalSecondaryExampleComponent extends MenuSampleState {
@@ -91,6 +101,7 @@ export class MenuVerticalSecondaryExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-pagination-example',
   templateUrl: './snippets/pagination.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuPaginationExampleComponent extends MenuSampleState {
@@ -99,6 +110,7 @@ export class MenuPaginationExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-header-example',
   templateUrl: './snippets/header.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuHeaderExampleComponent extends MenuSampleState {
@@ -107,6 +119,7 @@ export class MenuHeaderExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-text-content-example',
   templateUrl: './snippets/text-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuTextContentExampleComponent extends MenuSampleState {
@@ -115,6 +128,7 @@ export class MenuTextContentExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-input-example',
   templateUrl: './snippets/input.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuInputExampleComponent extends MenuSampleState {
@@ -123,6 +137,7 @@ export class MenuInputExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-button-example',
   templateUrl: './snippets/button.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuButtonExampleComponent extends MenuSampleState {
@@ -131,6 +146,7 @@ export class MenuButtonExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-link-item-example',
   templateUrl: './snippets/link-item.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuLinkItemExampleComponent extends MenuSampleState {
@@ -139,6 +155,7 @@ export class MenuLinkItemExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-dropdown-item-example',
   templateUrl: './snippets/dropdown-item.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuDropdownItemExampleComponent extends MenuSampleState {
@@ -147,6 +164,7 @@ export class MenuDropdownItemExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-sub-menu-example',
   templateUrl: './snippets/sub-menu.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuSubMenuExampleComponent extends MenuSampleState {
@@ -155,6 +173,7 @@ export class MenuSubMenuExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-hover-example',
   templateUrl: './snippets/hover.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuHoverExampleComponent extends MenuSampleState {
@@ -163,6 +182,7 @@ export class MenuHoverExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-active-example',
   templateUrl: './snippets/active.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuActiveExampleComponent extends MenuSampleState {
@@ -171,6 +191,7 @@ export class MenuActiveExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuDisabledExampleComponent extends MenuSampleState {
@@ -179,6 +200,7 @@ export class MenuDisabledExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-stackable-example',
   templateUrl: './snippets/stackable.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuStackableExampleComponent extends MenuSampleState {
@@ -187,6 +209,7 @@ export class MenuStackableExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuInvertedExampleComponent extends MenuSampleState {
@@ -195,6 +218,7 @@ export class MenuInvertedExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-colored-example',
   templateUrl: './snippets/colored.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuColoredExampleComponent extends MenuSampleState {
@@ -203,6 +227,7 @@ export class MenuColoredExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-colored-menu-example',
   templateUrl: './snippets/colored-menu.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuColoredMenuExampleComponent extends MenuSampleState {
@@ -211,6 +236,7 @@ export class MenuColoredMenuExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-icons-example',
   templateUrl: './snippets/icons.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuIconsExampleComponent extends MenuSampleState {
@@ -219,6 +245,7 @@ export class MenuIconsExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-labeled-icon-example',
   templateUrl: './snippets/labeled-icon.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuLabeledIconExampleComponent extends MenuSampleState {
@@ -227,6 +254,7 @@ export class MenuLabeledIconExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuFluidExampleComponent extends MenuSampleState {
@@ -235,6 +263,7 @@ export class MenuFluidExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-compact-example',
   templateUrl: './snippets/compact.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuCompactExampleComponent extends MenuSampleState {
@@ -243,6 +272,7 @@ export class MenuCompactExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-evenly-divided-example',
   templateUrl: './snippets/evenly-divided.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuEvenlyDividedExampleComponent extends MenuSampleState {
@@ -251,6 +281,7 @@ export class MenuEvenlyDividedExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-attached-example',
   templateUrl: './snippets/attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuAttachedExampleComponent extends MenuSampleState {
@@ -259,6 +290,7 @@ export class MenuAttachedExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-size-example',
   templateUrl: './snippets/size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuSizeExampleComponent extends MenuSampleState {
@@ -267,6 +299,7 @@ export class MenuSizeExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-fitted-example',
   templateUrl: './snippets/fitted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuFittedExampleComponent extends MenuSampleState {
@@ -275,6 +308,7 @@ export class MenuFittedExampleComponent extends MenuSampleState {
 @Component({
   selector: 'doc-menu-borderless-example',
   templateUrl: './snippets/borderless.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class MenuBorderlessExampleComponent extends MenuSampleState {

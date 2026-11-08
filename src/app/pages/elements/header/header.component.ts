@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetPageHeaderSrc from './snippets/page-headers.sample.html' with { loader: 'text' };
 import snippetContentHeaderSrc from './snippets/content-headers.sample.html' with { loader: 'text' };
@@ -24,6 +24,7 @@ import snippetInvertedSrc from './snippets/header-coloured-inverted.sample.html'
     selector: 'doc-headers',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class HeaderComponent {

@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetTextSrc from './snippets/text.sample.html' with { loader: 'text' };
@@ -16,6 +16,7 @@ import snippetInvertedDimmerSrc from './snippets/inverted-dimmer.sample.html' wi
     selector: 'doc-loaders',
     templateUrl: './loader.component.html',
     styleUrls: ['./loader.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class LoaderComponent {

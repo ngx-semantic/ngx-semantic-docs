@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetImageContentSrc from './snippets/image-content.sample.html' with { loader: 'text' };
@@ -20,6 +20,7 @@ import snippetFloatedContentSrc from './snippets/floated-content.sample.html' wi
 @Component({
     selector: 'doc-item',
     templateUrl: 'item.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ItemPage {

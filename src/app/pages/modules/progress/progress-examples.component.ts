@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class ProgressSampleState {
   standardValue = 31;
@@ -32,6 +32,7 @@ export class ProgressSampleState {
 @Component({
   selector: 'doc-progress-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressStandardExampleComponent extends ProgressSampleState {
@@ -40,6 +41,7 @@ export class ProgressStandardExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-indicating-example',
   templateUrl: './snippets/indicating.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressIndicatingExampleComponent extends ProgressSampleState {
@@ -48,6 +50,7 @@ export class ProgressIndicatingExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-bar-example',
   templateUrl: './snippets/bar.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressBarExampleComponent extends ProgressSampleState {
@@ -56,6 +59,7 @@ export class ProgressBarExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-progress-example',
   templateUrl: './snippets/progress.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressProgressExampleComponent extends ProgressSampleState {
@@ -64,6 +68,7 @@ export class ProgressProgressExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-label-example',
   templateUrl: './snippets/label.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressLabelExampleComponent extends ProgressSampleState {
@@ -72,6 +77,7 @@ export class ProgressLabelExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-active-example',
   templateUrl: './snippets/active.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressActiveExampleComponent extends ProgressSampleState {
@@ -80,6 +86,7 @@ export class ProgressActiveExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-success-example',
   templateUrl: './snippets/success.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressSuccessExampleComponent extends ProgressSampleState {
@@ -88,6 +95,7 @@ export class ProgressSuccessExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-warning-example',
   templateUrl: './snippets/warning.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressWarningExampleComponent extends ProgressSampleState {
@@ -96,6 +104,7 @@ export class ProgressWarningExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-error-example',
   templateUrl: './snippets/error.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressErrorExampleComponent extends ProgressSampleState {
@@ -104,6 +113,7 @@ export class ProgressErrorExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressDisabledExampleComponent extends ProgressSampleState {
@@ -112,6 +122,7 @@ export class ProgressDisabledExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressInvertedExampleComponent extends ProgressSampleState {
@@ -120,6 +131,7 @@ export class ProgressInvertedExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-attached-example',
   templateUrl: './snippets/attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressAttachedExampleComponent extends ProgressSampleState {
@@ -128,6 +140,7 @@ export class ProgressAttachedExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-card-attached-example',
   templateUrl: './snippets/card-attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressCardAttachedExampleComponent extends ProgressSampleState {
@@ -136,6 +149,7 @@ export class ProgressCardAttachedExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-size-example',
   templateUrl: './snippets/size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressSizeExampleComponent extends ProgressSampleState {
@@ -144,6 +158,7 @@ export class ProgressSizeExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-colour-example',
   templateUrl: './snippets/colour.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressColourExampleComponent extends ProgressSampleState {
@@ -152,6 +167,7 @@ export class ProgressColourExampleComponent extends ProgressSampleState {
 @Component({
   selector: 'doc-progress-inverted-colour-example',
   templateUrl: './snippets/inverted-colour.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class ProgressInvertedColourExampleComponent extends ProgressSampleState {

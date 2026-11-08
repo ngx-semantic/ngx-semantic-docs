@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetGridSrc from './snippets/grid.sample.html' with { loader: 'text' };
 import snippetDividedSrc from './snippets/divided.sample.html' with { loader: 'text' };
@@ -28,6 +28,7 @@ import snippetResponsiveWidthSrc from './snippets/responsive-width.sample.html' 
   selector: 'doc-grid',
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class GridComponent {

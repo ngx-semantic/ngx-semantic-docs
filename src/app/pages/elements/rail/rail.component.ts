@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetInternalSrc from './snippets/internal.sample.html' with { loader: 'text' };
@@ -14,6 +14,7 @@ import snippetAttachedSrc from './snippets/attached.sample.html' with { loader: 
       width: 960px;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class RailComponent {

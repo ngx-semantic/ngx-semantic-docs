@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetCommonUnitsSrc from './snippets/common-units.sample.html' with { loader: 'text' };
@@ -15,6 +15,7 @@ import snippetTestSrc from './snippets/test.sample.html' with { loader: 'text' }
 @Component({
     selector: 'doc-advertisement',
     templateUrl: 'advertisement.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AdvertisementPage {

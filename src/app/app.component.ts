@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
     selector: 'doc-root',
@@ -9,6 +9,7 @@ import {Component} from '@angular/core';
       padding: 2rem 2rem 2rem 6rem;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent {

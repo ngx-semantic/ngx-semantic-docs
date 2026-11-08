@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'doc-form-validation-specifying-rules-example',
   templateUrl: './snippets/specifying-rules.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationSpecifyingRulesExampleComponent {
@@ -21,6 +22,7 @@ export class FormValidationSpecifyingRulesExampleComponent {
 @Component({
   selector: 'doc-form-validation-longhand-example',
   templateUrl: './snippets/longhand.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationLonghandExampleComponent {
@@ -51,6 +53,7 @@ export class FormValidationLonghandExampleComponent {
 @Component({
   selector: 'doc-form-validation-parameters-example',
   templateUrl: './snippets/parameters.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationParametersExampleComponent {
@@ -70,6 +73,7 @@ export class FormValidationParametersExampleComponent {
 @Component({
   selector: 'doc-form-validation-prompts-example',
   templateUrl: './snippets/prompts.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationPromptsExampleComponent {
@@ -96,6 +100,7 @@ export class FormValidationPromptsExampleComponent {
 @Component({
   selector: 'doc-form-validation-matching-fields-example',
   templateUrl: './snippets/matching-fields.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationMatchingFieldsExampleComponent {
@@ -113,6 +118,7 @@ export class FormValidationMatchingFieldsExampleComponent {
 @Component({
   selector: 'doc-form-validation-inline-example',
   templateUrl: './snippets/inline.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationInlineExampleComponent {
@@ -129,6 +135,7 @@ export class FormValidationInlineExampleComponent {
 @Component({
   selector: 'doc-form-validation-dependent-example',
   templateUrl: './snippets/dependent.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationDependentExampleComponent {
@@ -145,6 +152,7 @@ export class FormValidationDependentExampleComponent {
 @Component({
   selector: 'doc-form-validation-optional-example',
   templateUrl: './snippets/optional.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationOptionalExampleComponent {
@@ -165,6 +173,7 @@ export class FormValidationOptionalExampleComponent {
 @Component({
   selector: 'doc-form-validation-programmatic-example',
   templateUrl: './snippets/programmatic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationProgrammaticExampleComponent {
@@ -188,6 +197,7 @@ export class FormValidationProgrammaticExampleComponent {
 @Component({
   selector: 'doc-form-validation-reactive-example',
   templateUrl: './snippets/reactive.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationReactiveExampleComponent {
@@ -205,6 +215,7 @@ export class FormValidationReactiveExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-empty-example',
   templateUrl: './snippets/rule-empty.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleEmptyExampleComponent {
@@ -219,6 +230,7 @@ export class FormValidationRuleEmptyExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-content-type-example',
   templateUrl: './snippets/rule-content-type.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleContentTypeExampleComponent {
@@ -236,6 +248,7 @@ export class FormValidationRuleContentTypeExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-payment-example',
   templateUrl: './snippets/rule-payment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRulePaymentExampleComponent {
@@ -252,6 +265,7 @@ export class FormValidationRulePaymentExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-matching-example',
   templateUrl: './snippets/rule-matching.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleMatchingExampleComponent {
@@ -271,6 +285,7 @@ export class FormValidationRuleMatchingExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-length-example',
   templateUrl: './snippets/rule-length.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleLengthExampleComponent {
@@ -285,6 +300,7 @@ export class FormValidationRuleLengthExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-specified-content-example',
   templateUrl: './snippets/rule-specified-content.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleSpecifiedContentExampleComponent {
@@ -304,6 +320,7 @@ export class FormValidationRuleSpecifiedContentExampleComponent {
 @Component({
   selector: 'doc-form-validation-rule-selection-count-example',
   templateUrl: './snippets/rule-selection-count.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class FormValidationRuleSelectionCountExampleComponent {

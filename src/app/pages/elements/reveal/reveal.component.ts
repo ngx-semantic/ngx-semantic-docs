@@ -1,4 +1,4 @@
-import {Component, AfterViewChecked} from '@angular/core';
+import {Component, AfterViewChecked, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetFadeSrc from './snippets/fade.sample.html' with { loader: 'text' };
 import snippetFadeAltSrc from './snippets/fade-alt.sample.html' with { loader: 'text' };
@@ -17,6 +17,7 @@ import snippetDisabledSrc from './snippets/disabled.sample.html' with { loader: 
 @Component({
     selector: 'doc-reveals',
     templateUrl: './reveal.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class RevealComponent {

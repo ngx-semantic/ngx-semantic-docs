@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ISelectOption } from 'ngx-semantic/modules/select';
 
 export class SelectSampleState {
@@ -44,6 +44,7 @@ export class SelectSampleState {
 @Component({
   selector: 'doc-select-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectStandardExampleComponent extends SelectSampleState {
@@ -52,6 +53,7 @@ export class SelectStandardExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectFluidExampleComponent extends SelectSampleState {
@@ -60,6 +62,7 @@ export class SelectFluidExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-multiple-example',
   templateUrl: './snippets/multiple.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectMultipleExampleComponent extends SelectSampleState {
@@ -68,6 +71,7 @@ export class SelectMultipleExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-multiple-search-example',
   templateUrl: './snippets/multiple-search.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectMultipleSearchExampleComponent extends SelectSampleState {
@@ -76,6 +80,7 @@ export class SelectMultipleSearchExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-flag-example',
   templateUrl: './snippets/flag.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectFlagExampleComponent extends SelectSampleState {
@@ -84,6 +89,7 @@ export class SelectFlagExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-images-example',
   templateUrl: './snippets/images.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectImagesExampleComponent extends SelectSampleState {
@@ -92,6 +98,7 @@ export class SelectImagesExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-loading-example',
   templateUrl: './snippets/loading.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectLoadingExampleComponent extends SelectSampleState {
@@ -100,6 +107,7 @@ export class SelectLoadingExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-error-example',
   templateUrl: './snippets/error.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectErrorExampleComponent extends SelectSampleState {
@@ -108,6 +116,7 @@ export class SelectErrorExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectDisabledExampleComponent extends SelectSampleState {
@@ -115,6 +124,7 @@ export class SelectDisabledExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-search-example',
   templateUrl: './snippets/search.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectSearchExampleComponent extends SelectSampleState {
@@ -123,6 +133,7 @@ export class SelectSearchExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-scrolling-example',
   templateUrl: './snippets/scrolling.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectScrollingExampleComponent extends SelectSampleState {
@@ -131,6 +142,7 @@ export class SelectScrollingExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-compact-example',
   templateUrl: './snippets/compact.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectCompactExampleComponent extends SelectSampleState {
@@ -139,6 +151,7 @@ export class SelectCompactExampleComponent extends SelectSampleState {
 @Component({
   selector: 'doc-select-two-way-example',
   templateUrl: './snippets/two-way.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SelectTwoWayExampleComponent extends SelectSampleState {

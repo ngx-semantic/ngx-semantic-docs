@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ChangeDetectionStrategy} from '@angular/core';
 
 export type DocWireframeType = 'paragraph' | 'short-paragraph' | 'image';
 
@@ -15,6 +15,7 @@ export type DocWireframeType = 'paragraph' | 'short-paragraph' | 'image';
         margin-bottom: 0.4rem;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DocWireframeComponent {

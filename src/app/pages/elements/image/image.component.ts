@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetBasicInnerImgSrc from './snippets/basic-inner-img.sample.html' with { loader: 'text' };
@@ -29,6 +29,7 @@ import snippetGroupSizeAltSrc from './snippets/group-size-alt.sample.html' with 
       margin-bottom: 1.5rem;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ImageComponent {

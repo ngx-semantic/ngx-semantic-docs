@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component} from '@angular/core';
+import {AfterViewChecked, Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetStarSrc from './snippets/star.sample.html' with { loader: 'text' };
@@ -9,6 +9,7 @@ import snippetSizesSrc from './snippets/sizes.sample.html' with { loader: 'text'
     selector: 'doc-rating',
     templateUrl: './rating.component.html',
     styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class RatingComponent {

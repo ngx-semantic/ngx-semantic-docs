@@ -1,4 +1,4 @@
-import { Component, ContentChild, Input } from '@angular/core';
+import { Component, ContentChild, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { DocDemoDirective } from '../../directives/doc-demo.directive';
 
@@ -6,6 +6,7 @@ import { DocDemoDirective } from '../../directives/doc-demo.directive';
     selector: 'doc-code-sample',
     templateUrl: 'code-sample.component.html',
     styleUrl: 'code-sample.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class CodeSampleComponent {

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-checkbox-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxStandardExampleComponent {
@@ -11,6 +12,7 @@ export class CheckboxStandardExampleComponent {
 @Component({
   selector: 'doc-checkbox-basic-radio-example',
   templateUrl: './snippets/basic-radio.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxBasicRadioExampleComponent {
@@ -19,6 +21,7 @@ export class CheckboxBasicRadioExampleComponent {
 @Component({
   selector: 'doc-checkbox-inline-radio-example',
   templateUrl: './snippets/inline-radio.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxInlineRadioExampleComponent {
@@ -28,6 +31,7 @@ export class CheckboxInlineRadioExampleComponent {
 @Component({
   selector: 'doc-checkbox-grouped-radio-example',
   templateUrl: './snippets/grouped-radio.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxGroupedRadioExampleComponent {
@@ -37,6 +41,7 @@ export class CheckboxGroupedRadioExampleComponent {
 @Component({
   selector: 'doc-checkbox-basic-slider-example',
   templateUrl: './snippets/basic-slider.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxBasicSliderExampleComponent {
@@ -45,6 +50,7 @@ export class CheckboxBasicSliderExampleComponent {
 @Component({
   selector: 'doc-checkbox-grouped-slider-example',
   templateUrl: './snippets/grouped-slider.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxGroupedSliderExampleComponent {
@@ -54,6 +60,7 @@ export class CheckboxGroupedSliderExampleComponent {
 @Component({
   selector: 'doc-checkbox-toggle-example',
   templateUrl: './snippets/toggle.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxToggleExampleComponent {
@@ -62,6 +69,7 @@ export class CheckboxToggleExampleComponent {
 @Component({
   selector: 'doc-checkbox-read-only-example',
   templateUrl: './snippets/read-only.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxReadOnlyExampleComponent {
@@ -70,6 +78,7 @@ export class CheckboxReadOnlyExampleComponent {
 @Component({
   selector: 'doc-checkbox-checked-example',
   templateUrl: './snippets/checked.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxCheckedExampleComponent {
@@ -78,6 +87,7 @@ export class CheckboxCheckedExampleComponent {
 @Component({
   selector: 'doc-checkbox-indeterminate-example',
   templateUrl: './snippets/indeterminate.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxIndeterminateExampleComponent {
@@ -86,6 +96,7 @@ export class CheckboxIndeterminateExampleComponent {
 @Component({
   selector: 'doc-checkbox-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxDisabledExampleComponent {
@@ -94,6 +105,7 @@ export class CheckboxDisabledExampleComponent {
 @Component({
   selector: 'doc-checkbox-fitted-example',
   templateUrl: './snippets/fitted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CheckboxFittedExampleComponent {

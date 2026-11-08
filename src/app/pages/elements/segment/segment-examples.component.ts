@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'doc-segment-segment-example',
   templateUrl: './snippets/segment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentSegmentExampleComponent {
@@ -11,6 +12,7 @@ export class SegmentSegmentExampleComponent {
 @Component({
   selector: 'doc-segment-placeholder-example',
   templateUrl: './snippets/placeholder.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPlaceholderExampleComponent {
@@ -19,6 +21,7 @@ export class SegmentPlaceholderExampleComponent {
 @Component({
   selector: 'doc-segment-placeholder-alt-example',
   templateUrl: './snippets/placeholder-alt.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPlaceholderAltExampleComponent {
@@ -27,6 +30,7 @@ export class SegmentPlaceholderAltExampleComponent {
 @Component({
   selector: 'doc-segment-placeholder-alt-too-example',
   templateUrl: './snippets/placeholder-alt-too.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPlaceholderAltTooExampleComponent {
@@ -35,6 +39,7 @@ export class SegmentPlaceholderAltTooExampleComponent {
 @Component({
   selector: 'doc-segment-raised-example',
   templateUrl: './snippets/raised.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentRaisedExampleComponent {
@@ -43,6 +48,7 @@ export class SegmentRaisedExampleComponent {
 @Component({
   selector: 'doc-segment-stacked-example',
   templateUrl: './snippets/stacked.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentStackedExampleComponent {
@@ -51,6 +57,7 @@ export class SegmentStackedExampleComponent {
 @Component({
   selector: 'doc-segment-tall-stacked-example',
   templateUrl: './snippets/tall-stacked.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentTallStackedExampleComponent {
@@ -59,6 +66,7 @@ export class SegmentTallStackedExampleComponent {
 @Component({
   selector: 'doc-segment-piled-example',
   templateUrl: './snippets/piled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPiledExampleComponent {
@@ -67,6 +75,7 @@ export class SegmentPiledExampleComponent {
 @Component({
   selector: 'doc-segment-vertical-example',
   templateUrl: './snippets/vertical.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentVerticalExampleComponent {
@@ -75,6 +84,7 @@ export class SegmentVerticalExampleComponent {
 @Component({
   selector: 'doc-segment-segments-example',
   templateUrl: './snippets/segments.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentSegmentsExampleComponent {
@@ -83,6 +93,7 @@ export class SegmentSegmentsExampleComponent {
 @Component({
   selector: 'doc-segment-coloured-group-example',
   templateUrl: './snippets/coloured-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentColouredGroupExampleComponent {
@@ -91,6 +102,7 @@ export class SegmentColouredGroupExampleComponent {
 @Component({
   selector: 'doc-segment-secondary-example',
   templateUrl: './snippets/secondary.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentSecondaryExampleComponent {
@@ -99,6 +111,7 @@ export class SegmentSecondaryExampleComponent {
 @Component({
   selector: 'doc-segment-nested-example',
   templateUrl: './snippets/nested.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentNestedExampleComponent {
@@ -107,6 +120,7 @@ export class SegmentNestedExampleComponent {
 @Component({
   selector: 'doc-segment-horizontal-example',
   templateUrl: './snippets/horizontal.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentHorizontalExampleComponent {
@@ -115,6 +129,7 @@ export class SegmentHorizontalExampleComponent {
 @Component({
   selector: 'doc-segment-raised-group-example',
   templateUrl: './snippets/raised-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentRaisedGroupExampleComponent {
@@ -123,6 +138,7 @@ export class SegmentRaisedGroupExampleComponent {
 @Component({
   selector: 'doc-segment-stacked-group-example',
   templateUrl: './snippets/stacked-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentStackedGroupExampleComponent {
@@ -131,6 +147,7 @@ export class SegmentStackedGroupExampleComponent {
 @Component({
   selector: 'doc-segment-piled-group-example',
   templateUrl: './snippets/piled-group.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPiledGroupExampleComponent {
@@ -139,6 +156,7 @@ export class SegmentPiledGroupExampleComponent {
 @Component({
   selector: 'doc-segment-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentDisabledExampleComponent {
@@ -147,6 +165,7 @@ export class SegmentDisabledExampleComponent {
 @Component({
   selector: 'doc-segment-loading-example',
   templateUrl: './snippets/loading.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentLoadingExampleComponent {
@@ -155,6 +174,7 @@ export class SegmentLoadingExampleComponent {
 @Component({
   selector: 'doc-segment-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentInvertedExampleComponent {
@@ -163,6 +183,7 @@ export class SegmentInvertedExampleComponent {
 @Component({
   selector: 'doc-segment-attached-example',
   templateUrl: './snippets/attached.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentAttachedExampleComponent {
@@ -171,6 +192,7 @@ export class SegmentAttachedExampleComponent {
 @Component({
   selector: 'doc-segment-attached-alt-example',
   templateUrl: './snippets/attached-alt.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentAttachedAltExampleComponent {
@@ -179,6 +201,7 @@ export class SegmentAttachedAltExampleComponent {
 @Component({
   selector: 'doc-segment-padded-example',
   templateUrl: './snippets/padded.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPaddedExampleComponent {
@@ -187,6 +210,7 @@ export class SegmentPaddedExampleComponent {
 @Component({
   selector: 'doc-segment-padding-alt-example',
   templateUrl: './snippets/padding-alt.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentPaddingAltExampleComponent {
@@ -195,6 +219,7 @@ export class SegmentPaddingAltExampleComponent {
 @Component({
   selector: 'doc-segment-compact-example',
   templateUrl: './snippets/compact.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentCompactExampleComponent {
@@ -203,6 +228,7 @@ export class SegmentCompactExampleComponent {
 @Component({
   selector: 'doc-segment-compact-alt-example',
   templateUrl: './snippets/compact-alt.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentCompactAltExampleComponent {
@@ -211,6 +237,7 @@ export class SegmentCompactAltExampleComponent {
 @Component({
   selector: 'doc-segment-coloured-example',
   templateUrl: './snippets/coloured.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentColouredExampleComponent {
@@ -219,6 +246,7 @@ export class SegmentColouredExampleComponent {
 @Component({
   selector: 'doc-segment-coloured-inverted-example',
   templateUrl: './snippets/coloured-inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentColouredInvertedExampleComponent {
@@ -227,6 +255,7 @@ export class SegmentColouredInvertedExampleComponent {
 @Component({
   selector: 'doc-segment-emphasis-example',
   templateUrl: './snippets/emphasis.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentEmphasisExampleComponent {
@@ -235,6 +264,7 @@ export class SegmentEmphasisExampleComponent {
 @Component({
   selector: 'doc-segment-emphasis-inverted-example',
   templateUrl: './snippets/emphasis-inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentEmphasisInvertedExampleComponent {
@@ -243,6 +273,7 @@ export class SegmentEmphasisInvertedExampleComponent {
 @Component({
   selector: 'doc-segment-emphasis-inverted-coloured-example',
   templateUrl: './snippets/emphasis-inverted-coloured.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentEmphasisInvertedColouredExampleComponent {
@@ -251,6 +282,7 @@ export class SegmentEmphasisInvertedColouredExampleComponent {
 @Component({
   selector: 'doc-segment-circular-example',
   templateUrl: './snippets/circular.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentCircularExampleComponent {
@@ -259,6 +291,7 @@ export class SegmentCircularExampleComponent {
 @Component({
   selector: 'doc-segment-clearing-example',
   templateUrl: './snippets/clearing.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentClearingExampleComponent {
@@ -267,6 +300,7 @@ export class SegmentClearingExampleComponent {
 @Component({
   selector: 'doc-segment-floated-example',
   templateUrl: './snippets/floated.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentFloatedExampleComponent {
@@ -275,6 +309,7 @@ export class SegmentFloatedExampleComponent {
 @Component({
   selector: 'doc-segment-text-alignment-example',
   templateUrl: './snippets/text-alignment.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentTextAlignmentExampleComponent {
@@ -283,6 +318,7 @@ export class SegmentTextAlignmentExampleComponent {
 @Component({
   selector: 'doc-segment-basic-example',
   templateUrl: './snippets/basic.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SegmentBasicExampleComponent {

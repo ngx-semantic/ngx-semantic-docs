@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SuiVisibilityCalculations } from 'ngx-semantic/modules/visibility';
 
 export class VisibilitySampleState {
@@ -44,6 +44,7 @@ export class VisibilitySampleState {
 @Component({
   selector: 'doc-visibility-usage-example',
   templateUrl: './snippets/usage.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityUsageExampleComponent extends VisibilitySampleState {
@@ -52,6 +53,7 @@ export class VisibilityUsageExampleComponent extends VisibilitySampleState {
 @Component({
   selector: 'doc-visibility-frequency-example',
   templateUrl: './snippets/frequency.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityFrequencyExampleComponent extends VisibilitySampleState {
@@ -60,6 +62,7 @@ export class VisibilityFrequencyExampleComponent extends VisibilitySampleState {
 @Component({
   selector: 'doc-visibility-passed-example',
   templateUrl: './snippets/passed.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityPassedExampleComponent extends VisibilitySampleState {
@@ -68,6 +71,7 @@ export class VisibilityPassedExampleComponent extends VisibilitySampleState {
 @Component({
   selector: 'doc-visibility-infinite-example',
   templateUrl: './snippets/infinite.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityInfiniteExampleComponent extends VisibilitySampleState {
@@ -76,6 +80,7 @@ export class VisibilityInfiniteExampleComponent extends VisibilitySampleState {
 @Component({
   selector: 'doc-visibility-lazy-images-example',
   templateUrl: './snippets/lazy-images.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityLazyImagesExampleComponent extends VisibilitySampleState {
@@ -84,6 +89,7 @@ export class VisibilityLazyImagesExampleComponent extends VisibilitySampleState 
 @Component({
   selector: 'doc-visibility-gradual-example',
   templateUrl: './snippets/gradual.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class VisibilityGradualExampleComponent extends VisibilitySampleState {

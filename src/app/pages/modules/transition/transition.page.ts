@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetScale from './snippets/scale.sample.html' with { loader: 'text' };
 import snippetZoom from './snippets/zoom.sample.html' with { loader: 'text' };
@@ -28,6 +28,7 @@ import snippetDisabled from './snippets/disabled.sample.html' with { loader: 'te
       padding-top: 1rem;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TransitionPage {

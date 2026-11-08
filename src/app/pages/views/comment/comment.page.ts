@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetCommentsSrc from './snippets/comments.sample.html' with { loader: 'text' };
 import snippetAvatarSrc from './snippets/avatar.sample.html' with { loader: 'text' };
@@ -14,6 +14,7 @@ import snippetSizeLargeSrc from './snippets/size-large.sample.html' with { loade
 @Component({
   selector: 'doc-comment',
   templateUrl: 'comment.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class CommentPage {

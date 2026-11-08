@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 export class InputSampleState {
   selectedOption = 'articles';
@@ -12,6 +12,7 @@ export class InputSampleState {
 @Component({
   selector: 'doc-input-standard-example',
   templateUrl: './snippets/standard.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputStandardExampleComponent extends InputSampleState {
@@ -20,6 +21,7 @@ export class InputStandardExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-focus-example',
   templateUrl: './snippets/focus.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputFocusExampleComponent extends InputSampleState {
@@ -28,6 +30,7 @@ export class InputFocusExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-loading-example',
   templateUrl: './snippets/loading.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLoadingExampleComponent extends InputSampleState {
@@ -36,6 +39,7 @@ export class InputLoadingExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-loading-right-example',
   templateUrl: './snippets/loading-right.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLoadingRightExampleComponent extends InputSampleState {
@@ -44,6 +48,7 @@ export class InputLoadingRightExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-disabled-example',
   templateUrl: './snippets/disabled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputDisabledExampleComponent extends InputSampleState {
@@ -52,6 +57,7 @@ export class InputDisabledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-disabled-icon-example',
   templateUrl: './snippets/disabled-icon.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputDisabledIconExampleComponent extends InputSampleState {
@@ -60,6 +66,7 @@ export class InputDisabledIconExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-disabled-input-example',
   templateUrl: './snippets/disabled-input.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputDisabledInputExampleComponent extends InputSampleState {
@@ -68,6 +75,7 @@ export class InputDisabledInputExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-error-example',
   templateUrl: './snippets/error.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputErrorExampleComponent extends InputSampleState {
@@ -76,6 +84,7 @@ export class InputErrorExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-example',
   templateUrl: './snippets/icon.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconExampleComponent extends InputSampleState {
@@ -84,6 +93,7 @@ export class InputIconExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-position-example',
   templateUrl: './snippets/icon-position.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconPositionExampleComponent extends InputSampleState {
@@ -92,6 +102,7 @@ export class InputIconPositionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-circular-example',
   templateUrl: './snippets/icon-circular.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconCircularExampleComponent extends InputSampleState {
@@ -100,6 +111,7 @@ export class InputIconCircularExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-circular-inverted-example',
   templateUrl: './snippets/icon-circular-inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconCircularInvertedExampleComponent extends InputSampleState {
@@ -108,6 +120,7 @@ export class InputIconCircularInvertedExampleComponent extends InputSampleState 
 @Component({
   selector: 'doc-input-labeled-example',
   templateUrl: './snippets/labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLabeledExampleComponent extends InputSampleState {
@@ -116,6 +129,7 @@ export class InputLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-right-labeled-example',
   templateUrl: './snippets/right-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputRightLabeledExampleComponent extends InputSampleState {
@@ -124,6 +138,7 @@ export class InputRightLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-basic-labeled-example',
   templateUrl: './snippets/basic-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputBasicLabeledExampleComponent extends InputSampleState {
@@ -132,6 +147,7 @@ export class InputBasicLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-combined-labeled-example',
   templateUrl: './snippets/combined-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputCombinedLabeledExampleComponent extends InputSampleState {
@@ -140,6 +156,7 @@ export class InputCombinedLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-angled-labeled-example',
   templateUrl: './snippets/angled-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputAngledLabeledExampleComponent extends InputSampleState {
@@ -148,6 +165,7 @@ export class InputAngledLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-left-corner-labeled-example',
   templateUrl: './snippets/left-corner-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLeftCornerLabeledExampleComponent extends InputSampleState {
@@ -156,6 +174,7 @@ export class InputLeftCornerLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-corner-labeled-example',
   templateUrl: './snippets/corner-labeled.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputCornerLabeledExampleComponent extends InputSampleState {
@@ -164,6 +183,7 @@ export class InputCornerLabeledExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-action-example',
   templateUrl: './snippets/action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputActionExampleComponent extends InputSampleState {
@@ -172,6 +192,7 @@ export class InputActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-left-action-example',
   templateUrl: './snippets/left-action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLeftActionExampleComponent extends InputSampleState {
@@ -180,6 +201,7 @@ export class InputLeftActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-right-action-example',
   templateUrl: './snippets/right-action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputRightActionExampleComponent extends InputSampleState {
@@ -188,6 +210,7 @@ export class InputRightActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-combined-action-example',
   templateUrl: './snippets/combined-action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputCombinedActionExampleComponent extends InputSampleState {
@@ -196,6 +219,7 @@ export class InputCombinedActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-right-label-action-example',
   templateUrl: './snippets/right-label-action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputRightLabelActionExampleComponent extends InputSampleState {
@@ -204,6 +228,7 @@ export class InputRightLabelActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-action-example',
   templateUrl: './snippets/icon-action.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconActionExampleComponent extends InputSampleState {
@@ -212,6 +237,7 @@ export class InputIconActionExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-transparent-example',
   templateUrl: './snippets/transparent.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputTransparentExampleComponent extends InputSampleState {
@@ -220,6 +246,7 @@ export class InputTransparentExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-icon-transparent-example',
   templateUrl: './snippets/icon-transparent.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputIconTransparentExampleComponent extends InputSampleState {
@@ -228,6 +255,7 @@ export class InputIconTransparentExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-left-icon-transparent-example',
   templateUrl: './snippets/left-icon-transparent.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLeftIconTransparentExampleComponent extends InputSampleState {
@@ -236,6 +264,7 @@ export class InputLeftIconTransparentExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-inverted-example',
   templateUrl: './snippets/inverted.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputInvertedExampleComponent extends InputSampleState {
@@ -244,6 +273,7 @@ export class InputInvertedExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-fluid-example',
   templateUrl: './snippets/fluid.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputFluidExampleComponent extends InputSampleState {
@@ -252,6 +282,7 @@ export class InputFluidExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-mini-size-example',
   templateUrl: './snippets/mini-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputMiniSizeExampleComponent extends InputSampleState {
@@ -260,6 +291,7 @@ export class InputMiniSizeExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-small-size-example',
   templateUrl: './snippets/small-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputSmallSizeExampleComponent extends InputSampleState {
@@ -268,6 +300,7 @@ export class InputSmallSizeExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-large-size-example',
   templateUrl: './snippets/large-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputLargeSizeExampleComponent extends InputSampleState {
@@ -276,6 +309,7 @@ export class InputLargeSizeExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-big-size-example',
   templateUrl: './snippets/big-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputBigSizeExampleComponent extends InputSampleState {
@@ -284,6 +318,7 @@ export class InputBigSizeExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-huge-size-example',
   templateUrl: './snippets/huge-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputHugeSizeExampleComponent extends InputSampleState {
@@ -292,6 +327,7 @@ export class InputHugeSizeExampleComponent extends InputSampleState {
 @Component({
   selector: 'doc-input-massive-size-example',
   templateUrl: './snippets/massive-size.sample.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class InputMassiveSizeExampleComponent extends InputSampleState {

@@ -14,7 +14,7 @@
   <ng-content></ng-content>
 
   <div class="live-demo">
-    <ng-container *ngTemplateOutlet="demo?.template"></ng-container>
+    <ng-container *ngTemplateOutlet="$safeNavigationMigration(demo?.template)"></ng-container>
   </div>
 
   @if (codeShown) {

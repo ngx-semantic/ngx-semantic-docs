@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetTableSrc from './snippets/table.sample.html' with { loader: 'text' };
 import snippetDefinitionSrc from './snippets/definition.sample.html' with { loader: 'text' };
@@ -36,6 +36,7 @@ import snippetAttachedSrc from './snippets/attached.sample.html' with { loader: 
   selector: 'doc-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class TableComponent {

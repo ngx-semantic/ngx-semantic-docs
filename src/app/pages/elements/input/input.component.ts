@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import snippetStandardSrc from './snippets/standard.sample.html' with { loader: 'text' };
 import snippetFocusSrc from './snippets/focus.sample.html' with { loader: 'text' };
@@ -41,6 +41,7 @@ import snippetMassiveSizeSrc from './snippets/massive-size.sample.html' with { l
     selector: 'doc-input',
     templateUrl: './input.component.html',
     styleUrls: ['./input.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class InputComponent {

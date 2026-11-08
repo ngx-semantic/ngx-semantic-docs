@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import snippetBasicSrc from './snippets/basic.sample.html' with { loader: 'text' };
 import snippetImageLabelSrc from './snippets/image-label.sample.html' with { loader: 'text' };
@@ -12,6 +12,7 @@ import snippetSizeLargeSrc from './snippets/size-large.sample.html' with { loade
 @Component({
     selector: 'doc-feed',
     templateUrl: 'feed.page.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class FeedPage {
