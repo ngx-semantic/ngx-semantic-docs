@@ -10,7 +10,7 @@ import snippetCornerSrc from './snippets/corner-label.sample.html' with { loader
 import snippetTagSrc from './snippets/tag-label.sample.html' with { loader: 'text' };
 import snippetRibbonSrc from './snippets/ribbon-label.sample.html' with { loader: 'text' };
 import snippetRibbon2Src from './snippets/ribbon-label2.sample.html' with { loader: 'text' };
-import snippetAttachedSrc from './snippets/attched-label.sample.html' with { loader: 'text' };
+import snippetAttachedSrc from './snippets/attached-label.sample.html' with { loader: 'text' };
 import snippetHorizontalSrc from './snippets/horizontal-label.sample.html' with { loader: 'text' };
 import snippetFloatingSrc from './snippets/floating-label.sample.html' with { loader: 'text' };
 import snippetDetailSrc from './snippets/detail-label.sample.html' with { loader: 'text' };
