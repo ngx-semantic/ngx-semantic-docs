@@ -1,3 +1,5 @@
+<button type="button" sui-button (click)="isMaskClosableModalVisible = true">Show Modal</button>
+
 <sui-modal
   suiMaskClosable="false"
   suiHeaderText="Delete Your Account"
@@ -6,12 +8,12 @@
     <p>Are you sure you want to delete your account</p>
   </div>
   <div suiModalActions>
-    <div sui-button suiColour="red">
+    <button type="button" sui-button suiColour="red" (click)="isMaskClosableModalVisible = false">
       No
-    </div>
-    <div sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive">
+    </button>
+    <button type="button" sui-button suiIcon suiLabeled="right labeled" suiEmphasis="positive" (click)="isMaskClosableModalVisible = false">
       Yes
       <i sui-icon suiIconType="checkmark"></i>
-    </div>
+    </button>
   </div>
 </sui-modal>

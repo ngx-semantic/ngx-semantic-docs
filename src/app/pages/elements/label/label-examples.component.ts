@@ -91,12 +91,12 @@ export class LabelRibbonLabel2ExampleComponent {
 }
 
 @Component({
-  selector: 'doc-label-attched-label-example',
-  templateUrl: './snippets/attched-label.sample.html',
+  selector: 'doc-label-attached-label-example',
+  templateUrl: './snippets/attached-label.sample.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
-export class LabelAttchedLabelExampleComponent {
+export class LabelAttachedLabelExampleComponent {
 }
 
 @Component({
@@ -244,7 +244,7 @@ export const LABEL_EXAMPLES = [
   LabelTagLabelExampleComponent,
   LabelRibbonLabelExampleComponent,
   LabelRibbonLabel2ExampleComponent,
-  LabelAttchedLabelExampleComponent,
+  LabelAttachedLabelExampleComponent,
   LabelHorizontalLabelExampleComponent,
   LabelFloatingLabelExampleComponent,
   LabelDetailLabelExampleComponent,

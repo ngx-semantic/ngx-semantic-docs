@@ -1,1 +1,1 @@
-isMaskClosableModalVisible = true;
+isMaskClosableModalVisible = false;

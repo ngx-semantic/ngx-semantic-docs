@@ -1,19 +1,21 @@
+<button type="button" sui-button (click)="isBasicModalVisible = true">Show Modal</button>
+
 <sui-modal
   suiBasic
   suiHeaderIcon="archive"
   suiHeaderText="Archive Old Messages"
   [(visible)]="isBasicModalVisible">
-  <div sui-image suiModalContent>
+  <div suiModalContent>
     <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
   </div>
   <div suiModalActions>
-    <div sui-button suiBasic suiInverted suiColour="red">
+    <button type="button" sui-button suiBasic suiInverted suiColour="red" (click)="isBasicModalVisible = false">
       <i sui-icon suiIconType="remove"></i>
       No
-    </div>
-    <div sui-button suiInverted suiColour="green" (click)="isStandardModalVisible = false">
+    </button>
+    <button type="button" sui-button suiInverted suiColour="green" (click)="isBasicModalVisible = false">
       <i sui-icon suiIconType="checkmark"></i>
       Yes
-    </div>
+    </button>
   </div>
 </sui-modal>

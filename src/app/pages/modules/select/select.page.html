@@ -99,7 +99,7 @@
         [templateCode]="snippetTwoWay"
         [componentCode]="snippetTwoWayTs">
       <h3 sui-header>Form Binding</h3>
-      <p>A select is a form control. Use it with <span sui-label>ngModel</span>, or with <span sui-label>formControl</span> / <span sui-label>formControlName</span> in reactive forms. The <span sui-label>suiSelectionChanged</span> event also fires whenever the selection changes.</p>
+      <p>A select is a form control. Use it with <span sui-label>ngModel</span>, or with <span sui-label>formControl</span> / <span sui-label>formControlName</span> in reactive forms. The <span sui-label>suiSelectionChanged</span> event fires when the user changes the selection. It does not fire when a value is written from the form model.</p>
       <div sui-message suiIcon>
         <i sui-icon suiIconType="info circle"></i>
         <div suiMessageContent>
@@ -415,7 +415,7 @@
       <tbody>
       <tr>
         <td>suiSelectionChanged</td>
-        <td>Fired when the selection changes. Emits the selected option value, or an array of values when <span sui-label>suiMultiple</span> is set.</td>
+        <td>Fired when the user changes the selection. Emits the selected option value, or an array of values when <span sui-label>suiMultiple</span> is set.</td>
         <td>
           <div sui-label
                suiColour="teal">

@@ -1,1 +1,1 @@
-isStandardModalVisible = true;
+isStandardModalVisible = false;

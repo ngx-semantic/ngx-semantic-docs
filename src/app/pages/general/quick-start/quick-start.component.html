@@ -51,7 +51,10 @@
   </pre>
   <p>
     Next, you'd need to install the <code>NgxSemantic</code> package as well as the <a
-      href="https://material.angular.io/cdk/categories">Angular CDK</a> from the npm registry
+      href="https://material.angular.io/cdk/categories">Angular CDK</a> and <code>&#64;angular/animations</code> from the
+    npm registry. Install the CDK and animations packages at the same major version as <code>&#64;angular/core</code>.
+    The commands below are for an Angular 21 app. If you leave the version out, npm may pick a newer major version
+    than your app uses and the install will fail with a peer dependency conflict.
   </p>
   <pre>
     <code lineNumbers [highlightAuto]="snippetNpmInstaller"></code>
@@ -93,7 +96,8 @@
     Note that you can also import the modules individually.
   </p>
   <ul>
-    <li>Angular (^9.0.0)</li>
+    <li>Angular (>=21.0.0), including <code>&#64;angular/cdk</code> and <code>&#64;angular/animations</code> at the same major
+      version as <code>&#64;angular/core</code></li>
     <li>Semantic UI CSS (^4.2.1) (Remember jQuery and the Semantic UI JS files are not required or used)</li>
   </ul>
 </div>

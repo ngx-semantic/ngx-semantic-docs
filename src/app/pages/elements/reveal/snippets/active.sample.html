@@ -1,16 +1,22 @@
-<div sui-reveal
-     [suiActive]="true"
-     suiMove="left">
-  <div suiRevealContent
-       suiVisible="visible">
-    <img sui-image
-         suiSize="small"
-         src="https://semantic-ui.com/images/wireframe/square-image.png"/>
-  </div>
-  <div suiRevealContent
-       suiVisible="hidden">
-    <img sui-image
-         suiSize="small"
-         src="https://semantic-ui.com/images/avatar/large/nan.jpg"/>
+<div>
+  <div sui-reveal
+       sui-image
+       suiSize="small"
+       [suiActive]="true"
+       suiMove="left">
+    <div suiRevealContent
+         suiVisible="visible">
+      <img sui-image
+           suiSize="small"
+           src="assets/images/elliot.jpg"
+           alt="Elliot">
+    </div>
+    <div suiRevealContent
+         suiVisible="hidden">
+      <img sui-image
+           suiSize="small"
+           src="assets/images/matt.jpg"
+           alt="Matt">
+    </div>
   </div>
 </div>

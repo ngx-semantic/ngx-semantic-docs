@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {OVERLAY_DEFAULT_CONFIG} from '@angular/cdk/overlay';
 
 import {AppComponent} from './app.component';
 import {SharedModule} from "./shared/shared.module";
@@ -36,7 +37,10 @@ import {BehaviorsComponent} from './pages/behaviors/behaviors.component';
     SuiIconModule,
     SuiSidebarModule
   ],
-  providers: [],
+  providers: [
+    // ngx-semantic 2.1.1 leaves the Popup overlay mode to CDK.
+    {provide: OVERLAY_DEFAULT_CONFIG, useValue: {usePopover: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

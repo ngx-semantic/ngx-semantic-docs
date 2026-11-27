@@ -29,6 +29,7 @@ import {SuiLabelModule} from 'ngx-semantic/elements/label';
 import {SuiInputModule} from 'ngx-semantic/elements/input';
 import {SuiStepsModule} from 'ngx-semantic/elements/steps';
 import {SuiGridModule} from 'ngx-semantic/collections/grid';
+import {SuiMenuModule} from 'ngx-semantic/collections/menu';
 import {SuiDimmerModule} from 'ngx-semantic/modules/dimmer';
 import {SuiSearchModule} from 'ngx-semantic/modules/search';
 import {SuiFormModule} from 'ngx-semantic/collections/form';
@@ -122,6 +123,7 @@ import { STEP_EXAMPLES } from './step/step-examples.component';
     SharedModule,
     SuiIconModule,
     SuiGridModule,
+    SuiMenuModule,
     SuiFormModule,
     SuiCardModule,
     SuiFlagModule,

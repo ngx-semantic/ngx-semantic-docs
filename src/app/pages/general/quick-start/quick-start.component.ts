@@ -11,10 +11,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 export class QuickStartComponent {
   snippetCssLink = `  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`;
 
-  snippetNpmInstaller = `  npm install @angular/cdk
+  snippetNpmInstaller = `  npm install @angular/cdk@^21.0.0 @angular/animations@^21.0.0
   npm install ngx-semantic`;
 
-  snippetYarnInstaller = `  yarn add @angular/cdk
+  snippetYarnInstaller = `  yarn add @angular/cdk@^21.0.0 @angular/animations@^21.0.0
   yarn add ngx-semantic`;
 
   snippetAllImport = `  import { NgxSemanticModule } from 'ngx-semantic';

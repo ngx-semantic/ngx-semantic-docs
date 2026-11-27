@@ -38,30 +38,6 @@ export class ModalPage {
   snippetMaskClosable = snippetMaskClosableSrc;
   snippetMaskClosableTs = snippetMaskClosableTsSrc;
 
-  isStandardModalVisible = false;
-  isBasicModalVisible = false;
-  isFullScreenModalVisible = false;
-  isSizeModalVisible = false;
-  isScrollingModalVisible = false;
-  isClosableModalVisible = false;
-  isMaskClosableModalVisible = false;
-
-  dummyList = Array(10).fill(0).map((x, i) => i);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   constructor(title: Title) {
     title.setTitle('Modal | Ngx Semantic');
   }
