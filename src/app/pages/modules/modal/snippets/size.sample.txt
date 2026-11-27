@@ -1,1 +1,1 @@
-isSizeModalVisible = true;
+isSizeModalVisible = false;

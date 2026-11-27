@@ -1,3 +1,5 @@
+<button type="button" sui-button (click)="isFullScreenModalVisible = true">Show Modal</button>
+
 <sui-modal
   suiFullScreen
   suiHeaderText="Update Your Settings"
@@ -15,11 +17,11 @@
     </div>
   </div>
   <div suiModalActions>
-    <div sui-button>
+    <button type="button" sui-button (click)="isFullScreenModalVisible = false">
       Cancel
-    </div>
-    <div sui-button suiEmphasis="positive">
+    </button>
+    <button type="button" sui-button suiEmphasis="positive" (click)="isFullScreenModalVisible = false">
       Send
-    </div>
+    </button>
   </div>
 </sui-modal>

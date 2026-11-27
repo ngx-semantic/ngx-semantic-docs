@@ -1,1 +1,1 @@
-isFullScreenModalVisible = true;
+isFullScreenModalVisible = false;

@@ -1,1 +1,3 @@
-isScrollingModalVisible = true;
+isScrollingModalVisible = false;
+
+readonly dummyList = Array.from({ length: 10 }, (_, index) => index);
